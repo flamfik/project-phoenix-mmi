@@ -1,0 +1,33 @@
+# Proprietary / large artifacts
+firmware/**/*
+!firmware/.gitkeep
+*.iso
+*.img
+*.bin
+*.dump
+*.raw
+*.qcow2
+
+# Extracted proprietary contents
+research/**/extracted/
+research/**/work/
+
+# Vehicle-specific or sensitive data
+**/vin.txt
+**/*eeprom*
+**/*component-protection*
+**/*secret*
+**/*key*
+
+# Tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+build/
+dist/
+*.log
