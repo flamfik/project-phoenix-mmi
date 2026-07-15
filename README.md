@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, media/update model and principal-image fingerprinting are complete. Session 004 confirms the executable SuperH startup layout and adds a read-only control-flow/reference pass to Phoenix SDK.
+The foundation, media/update model and principal-image fingerprinting are complete. Session 005 confirms the embedded browser-resource bundle, tests bounded directory hypotheses and adds publication-safe HTML and pointer-table analysis to Phoenix SDK.
 
 ## First milestone
 
@@ -37,9 +37,10 @@ ui/            Future interface and resource research
 
 - [Session 003 report](docs/sessions/SESSION-003-mmi-bin-static-analysis.md)
 - [Session 004 report](docs/sessions/SESSION-004-superh-vxworks-layout.md)
+- [Session 005 report](docs/sessions/SESSION-005-browser-resource-bundle.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
-- [Session 004 publication-safe evidence](research/firmware-5570/session004/)
+- [Session 005 publication-safe evidence](research/firmware-5570/session005/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

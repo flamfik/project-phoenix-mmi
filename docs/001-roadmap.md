@@ -14,7 +14,8 @@ Progress:
 - Session 002: METAINFO and update-selection model - complete;
 - Session 003: Phoenix SDK, principal-image fingerprinting and 512 KiB checksum map - complete;
 - Session 004: SuperH startup, bounded control flow, VxWorks probes and resource island - complete;
-- remaining M1 work: proprietary resource tables, broader executable boundaries and semantic region map.
+- Session 005: embedded HTML/resource bundle, relative-directory tests and runtime-pointer runs - complete;
+- remaining M1 work: pointer-target ownership, broader executable boundaries and semantic region map.
 
 ## M2 - Analysis Toolkit
 

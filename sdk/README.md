@@ -14,7 +14,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `report` - local full reports and compact publication-safe summaries;
 - `iso9660` - targeted read-only access to one selected ISO member;
 - `superh` - bounded big-endian SH-3 decoding, delayed-branch flow and PC-relative literals;
-- `layout` - startup tracing, VxWorks fixed-name probes and resource-reference/island analysis.
+- `layout` - startup tracing, VxWorks fixed-name probes and resource-reference/island analysis;
+- `resource_bundle` - publication-safe HTML summaries, relative-offset table tests and bounded big-endian pointer-run comparison.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -45,6 +46,18 @@ python tools/session004/analyze_executable_layout.py \
   --public-output research/firmware-5570/session004
 ```
 
-Both runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
+## Reproduce Session 005
+
+```shell
+python tools/session005/analyze_resource_bundle.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/firmware-5570/work/session005 \
+  --public-output research/firmware-5570/session005
+```
+
+All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
+
+The resource-bundle analyzer publishes only structure, counts, hashes and offsets. Raw HTML, URIs, image bytes, firmware bytes and arbitrary strings remain local.

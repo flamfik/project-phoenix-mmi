@@ -1,0 +1,77 @@
+{
+  "core_bundle_equal": true,
+  "core_bundle_length_equal": true,
+  "html_document_count_equal": true,
+  "html_document_hashes_equal": [
+    true,
+    true,
+    true
+  ],
+  "left": "CD1 K942 / MMI 5150",
+  "pointer_runs": {
+    "count_signature": [
+      21,
+      9,
+      3,
+      36
+    ],
+    "pairs": [
+      {
+        "all_values_same_delta": false,
+        "count": 21,
+        "distinct_value_delta_count": 2,
+        "index": 0,
+        "left_offset": 0,
+        "offset_delta": 0,
+        "right_offset": 0,
+        "value_delta_mode": 323804,
+        "value_delta_mode_count": 20
+      },
+      {
+        "all_values_same_delta": true,
+        "count": 9,
+        "distinct_value_delta_count": 1,
+        "index": 1,
+        "left_offset": 2060,
+        "offset_delta": 4,
+        "right_offset": 2064,
+        "value_delta_mode": 324364,
+        "value_delta_mode_count": 9
+      },
+      {
+        "all_values_same_delta": false,
+        "count": 3,
+        "distinct_value_delta_count": 2,
+        "index": 2,
+        "left_offset": 3444,
+        "offset_delta": 8,
+        "right_offset": 3452,
+        "value_delta_mode": 323092,
+        "value_delta_mode_count": 2
+      },
+      {
+        "all_values_same_delta": true,
+        "count": 36,
+        "distinct_value_delta_count": 1,
+        "index": 3,
+        "left_offset": 5040,
+        "offset_delta": 20,
+        "right_offset": 5060,
+        "value_delta_mode": 319568,
+        "value_delta_mode_count": 36
+      }
+    ],
+    "status": "PAIRED_BY_COUNT_SIGNATURE"
+  },
+  "post_cluster_length_delta": 20,
+  "post_cluster_sha256_equal": false,
+  "publication_safety": {
+    "artifact_bytes_included": false
+  },
+  "relative_offset_table_candidates": {
+    "left": 0,
+    "right": 0
+  },
+  "right": "CD3 K1006 / MMI 5570",
+  "schema": "phoenix-mmi.resource-bundle-comparison/v1"
+}

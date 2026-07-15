@@ -7,6 +7,7 @@ The current hashes identify the exact three images used for the first research b
 Publication-safe generated evidence is stored by session:
 
 - `session003/` - principal-image fingerprints, checksum grid and standard resources;
-- `session004/` - SuperH startup semantics, VxWorks probes and resource-island boundaries.
+- `session004/` - SuperH startup semantics, VxWorks probes and resource-island boundaries;
+- `session005/` - embedded HTML/resource structure, bounded directory tests and pointer-run comparisons.
 
 Full local reports remain under ignored `work/` directories.

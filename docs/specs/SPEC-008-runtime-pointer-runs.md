@@ -1,0 +1,29 @@
+# SPEC-008 - Post-cluster runtime pointer runs
+
+- Version: 0.1
+- Maturity: DRAFT
+- Evidence: Session 005, registered CD1/CD3 principal images
+- Related questions: RQ-003, RQ-013, RQ-015
+
+## Detection model
+
+Phoenix scans each byte alignment for runs of at least three consecutive big-endian 32-bit values in the half-open range `0x0C000000`-`0x0D000000`. This range was selected empirically for the post-cluster region. A matching value is not sufficient to prove pointer semantics.
+
+## Cross-version signature
+
+Both releases contain four runs with the count signature `[21, 9, 3, 36]`.
+
+| Run | CD1 offset | CD3 offset | Offset delta | Value delta mode | Support |
+|---:|---:|---:|---:|---:|---:|
+| 0 | `0x0000` | `0x0000` | 0 | `0x4F0DC` | 20/21 |
+| 1 | `0x080C` | `0x0810` | +4 | `0x4F30C` | 9/9 |
+| 2 | `0x0D74` | `0x0D7C` | +8 | `0x4EE14` | 2/3 |
+| 3 | `0x13B0` | `0x13C4` | +20 | `0x4E050` | 36/36 |
+
+Offsets are relative to the post-cluster area. The cumulative `0, +4, +8, +20` offset growth shows that the 20-byte release delta is distributed across the region rather than being one leading or trailing insertion.
+
+## Interpretation
+
+`PROBABLE`: these are absolute runtime/code pointer tables. The stable run cardinalities, regular address range and cross-version relocation-like deltas support the interpretation.
+
+`NOT CONFIRMED`: the address base, load mapping, target owners and record semantics are unknown. The detector can also select non-pointer integers that happen to fall inside the chosen range. Session 006 must map each target back to candidate code/data regions before pointer semantics can be promoted.
