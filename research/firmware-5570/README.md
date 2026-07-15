@@ -8,6 +8,7 @@ Publication-safe generated evidence is stored by session:
 
 - `session003/` - principal-image fingerprints, checksum grid and standard resources;
 - `session004/` - SuperH startup semantics, VxWorks probes and resource-island boundaries;
-- `session005/` - embedded HTML/resource structure, bounded directory tests and pointer-run comparisons.
+- `session005/` - embedded HTML/resource structure, bounded directory tests and pointer-run comparisons;
+- `session006/` - explicit address-model evaluation, bounded link-base evidence and target relocation comparison.
 
 Full local reports remain under ignored `work/` directories.

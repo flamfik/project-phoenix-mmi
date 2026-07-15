@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, media/update model and principal-image fingerprinting are complete. Session 005 confirms the embedded browser-resource bundle, tests bounded directory hypotheses and adds publication-safe HTML and pointer-table analysis to Phoenix SDK.
+The foundation, media/update model and principal-image fingerprinting are complete. Session 006 confirms the bounded `0x0C000000` runtime-address model, maps all post-cluster address runs and confirms one relocated 16-record block without assigning an unproven owner.
 
 ## First milestone
 
@@ -38,9 +38,10 @@ ui/            Future interface and resource research
 - [Session 003 report](docs/sessions/SESSION-003-mmi-bin-static-analysis.md)
 - [Session 004 report](docs/sessions/SESSION-004-superh-vxworks-layout.md)
 - [Session 005 report](docs/sessions/SESSION-005-browser-resource-bundle.md)
+- [Session 006 report](docs/sessions/SESSION-006-runtime-address-map.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
-- [Session 005 publication-safe evidence](research/firmware-5570/session005/)
+- [Session 006 publication-safe evidence](research/firmware-5570/session006/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

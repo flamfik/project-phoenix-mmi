@@ -15,7 +15,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `iso9660` - targeted read-only access to one selected ISO member;
 - `superh` - bounded big-endian SH-3 decoding, delayed-branch flow and PC-relative literals;
 - `layout` - startup tracing, VxWorks fixed-name probes and resource-reference/island analysis;
-- `resource_bundle` - publication-safe HTML summaries, relative-offset table tests and bounded big-endian pointer-run comparison.
+- `resource_bundle` - publication-safe HTML summaries, relative-offset table tests and bounded big-endian pointer-run comparison;
+- `runtime_map` - explicit runtime-address models, bounded link-base code probes, target-region mapping and cross-version relocation evidence.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -56,8 +57,20 @@ python tools/session005/analyze_resource_bundle.py \
   --public-output research/firmware-5570/session005
 ```
 
+## Reproduce Session 006
+
+```shell
+python tools/session006/analyze_runtime_address_map.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/firmware-5570/work/session006 \
+  --public-output research/firmware-5570/session006
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
 
 The resource-bundle analyzer publishes only structure, counts, hashes and offsets. Raw HTML, URIs, image bytes, firmware bytes and arbitrary strings remain local.
+
+The runtime mapper never selects a base by an unconstrained best-score search. Its model set is fixed by the observed runtime range and METAINFO flash base; competing results remain in every report. A mapped address is not automatically labeled as code or assigned to a subsystem.
