@@ -1,0 +1,30 @@
+{
+  "entropy_mean_delta": 0.011352,
+  "fingerprint_count_delta": {
+    "BMP": -3,
+    "JFFS2 big-endian node": -8,
+    "JFFS2 little-endian node": -3,
+    "bzip2": -2,
+    "zlib/deflate 78 5e": 1,
+    "zlib/deflate 78 9c": 15,
+    "zlib/deflate 78 da": -1
+  },
+  "header64_sha256_equal": true,
+  "left": "CD1 K942 / MMI 5150",
+  "publication_safety": {
+    "artifact_bytes_included": false
+  },
+  "right": "CD3 K1006 / MMI 5570",
+  "same_sha256": false,
+  "schema": "phoenix-mmi.comparison/v1",
+  "size_delta_bytes": -263844,
+  "technical_markers_added": [],
+  "technical_markers_removed": [],
+  "validated_resource_hashes": {
+    "added": [],
+    "left_count": 12,
+    "removed": [],
+    "right_count": 12,
+    "shared_count": 12
+  }
+}

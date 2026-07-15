@@ -4,9 +4,9 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 ## Current phase
 
-**Phase 0 — Foundation**
+**M1 — Firmware Archaeology**
 
-The initial repository establishes the research method, evidence model, safety boundaries, artifact policy, session records, and modular project structure required before firmware analysis begins.
+The foundation, ISO inventory and update-model work are complete. Session 003 adds Phoenix SDK and the first reproducible static analysis of the principal MMI 5150/5570 images.
 
 ## First milestone
 
@@ -28,10 +28,18 @@ research/      Firmware-specific research records and reproducible manifests
 tools/         Small, focused analysis utilities
 scripts/       Lab setup and workflow helpers
 tests/         Unit, integration and sanitized fixture data
-sdk/           Future reusable parsers and libraries
+sdk/           Phoenix SDK reusable static-analysis library
 emulator/      Future host-side simulation experiments
 ui/            Future interface and resource research
 ```
+
+## Session 003 results
+
+- [Session report](docs/sessions/SESSION-003-mmi-bin-static-analysis.md)
+- [Research Questions](docs/research-questions/README.md)
+- [Technical specifications](docs/specs/)
+- [Publication-safe evidence](research/firmware-5570/session003/)
+- [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels
 

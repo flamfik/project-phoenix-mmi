@@ -6,6 +6,13 @@ Repository, safety rules, artifact integrity, research templates.
 ## M1 — Firmware Archaeology
 Disc inventory, update flow, formats, dependencies, integrity mechanisms.
 
+Progress:
+
+- Session 001: ISO inventory — complete;
+- Session 002: METAINFO and update-selection model — complete;
+- Session 003: Phoenix SDK, principal-image fingerprinting and 512 KiB checksum map — complete;
+- remaining M1 work: SuperH/VxWorks executable layout, proprietary tables and semantic region map.
+
 ## M2 — Analysis Toolkit
 Parsers, manifests, binary classifiers, diff tooling, checksum research.
 

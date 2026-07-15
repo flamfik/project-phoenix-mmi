@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phoenix-mmi"
+version = "0.1.0"
+description = "Read-only static analysis SDK for Audi MMI 2G research artifacts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Project Phoenix MMI contributors" }]
+dependencies = []
+
+[project.scripts]
+phoenix-mmi = "phoenix_mmi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["sdk"]
