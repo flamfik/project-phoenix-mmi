@@ -1,0 +1,42 @@
+{
+  "direct_resource_reference_candidates": {
+    "left": 0,
+    "right": 0
+  },
+  "left": "CD1 K942 / MMI 5150",
+  "publication_safety": {
+    "artifact_bytes_included": false
+  },
+  "reachable_instruction_count_delta": 0,
+  "resource_cluster_length_equal": true,
+  "resource_cluster_offset_delta": -326412,
+  "resource_filler_gaps": {
+    "left_after": 5184,
+    "left_before": 1588,
+    "right_after": 5204,
+    "right_before": 1588
+  },
+  "resource_island": {
+    "cluster_offset_within_island_equal": true,
+    "left_length": 20444,
+    "length_delta": 20,
+    "right_length": 20464
+  },
+  "right": "CD3 K1006 / MMI 5570",
+  "schema": "phoenix-mmi.executable-layout-comparison/v1",
+  "startup_pattern_confirmed_both": true,
+  "startup_public_trace_equal": true,
+  "startup_region_diff": {
+    "bytes_included": false,
+    "common_prefix_length": 782,
+    "compared_length": 4080,
+    "different_byte_count": 177,
+    "first_difference_offset": 782,
+    "last_difference_offset": 3775
+  },
+  "startup_traced_region_equal": false,
+  "vxworks_symbol_table_status": {
+    "left": "NOT_CONFIRMED",
+    "right": "NOT_CONFIRMED"
+  }
+}

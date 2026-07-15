@@ -1,8 +1,8 @@
-# SPEC-001 — Principal MMI image start and runtime identity
+# SPEC-001 - Principal MMI image start and runtime identity
 
-- Version: 0.2
-- Maturity: ALPHA
-- Evidence: Session 003, registered CD1/CD3 images
+- Version: 0.3
+- Maturity: BETA
+- Evidence: Sessions 003-004, registered CD1/CD3 images
 - Related questions: RQ-001, RQ-002
 
 ## Artifacts
@@ -16,20 +16,23 @@ The hardware-index-43 members have different ISO extents but are byte-identical 
 
 ## Confirmed observations
 
-- The first 64 bytes are identical in 5150 and 5570.
-- No validated ELF, archive or filesystem magic starts at offset zero; the local report retains the first 64 bytes for the future disassembly pass.
-- At file offset `0x20` both images contain `Copyright 1984-1998 Wind River Systems, Inc.`.
+- Executable big-endian SH-3 control flow begins at file offset zero.
+- The entry branch and delayed slot are coherent, and the reached instructions perform PC-relative loads and control-register setup.
+- No validated ELF, archive or filesystem magic starts at offset zero.
+- At file offset `0x20` both images contain the Wind River copyright banner; startup control flow branches over it.
 - Both contain five ASCII `VxWorks` hits and seven `Wind River` hits.
-- Both contain `BECKER AUDID3 MMI` and `SH7709A` at the same early string record around `0x2246`.
+- Both contain `BECKER AUDID3 MMI` and `SH7709A` in the early image.
 - No ASCII `QNX` marker occurs in either complete principal image.
-- METAINFO declares `FlashStartAddress = 393216` (`0x00060000`). This is a target address, not a proven file offset.
+- METAINFO declares `FlashStartAddress = 393216` (`0x00060000`).
 
 ## Interpretation
 
-`PROBABLE`: the principal MMI image is a flat, big-endian SuperH/VxWorks application image rather than a QNX filesystem container. The initial halfwords are consistent with SuperH startup instructions, but instruction-level confirmation remains pending a documented disassembly pass.
+`CONFIRMED`: there is no separate vendor container header before the entry code.
 
-`DISPROVED`: the earlier working assumption that the main MMI 2G High image is demonstrably a QNX payload is not supported by these artifacts. Other components in the platform may still use different runtimes.
+`PROBABLE`: the complete principal payload is a flat SuperH/VxWorks application image rather than a QNX filesystem container. Later proprietary regions and module boundaries are not yet fully mapped.
+
+`DISPROVED`: the earlier working assumption that the principal MMI 2G High image is demonstrably a QNX payload is not supported by these artifacts. Other platform components may use different runtimes.
 
 ## Open structure
 
-No vendor header length, internal table pointer or semantic region directory is yet confirmed. The 512 KiB checksum grid in SPEC-002 is an integrity layout, not proof of application-level segmentation.
+No internal table pointer or semantic region directory is yet confirmed. The 512 KiB checksum grid in SPEC-002 is an integrity layout, not proof of application-level segmentation.
