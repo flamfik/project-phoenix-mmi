@@ -1,8 +1,8 @@
 # SPEC-010 - Reference graph and owner evidence
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: ALPHA
-- Evidence: Session 007, registered CD1/CD3 principal images
+- Evidence: Sessions 007-008, registered CD1/CD3 principal images
 - Related questions: RQ-015, RQ-017, RQ-018, RQ-019
 
 ## Scope
@@ -73,6 +73,10 @@ Cross-version equality of marker count and ordered marker names is structural co
 | `CONFIRMED_*` | Direct code/dataflow referrer or equivalent semantic evidence, also reproduced cross-version. |
 
 For Session 007, source-table location and marker-profile preservation meet the `PROBABLE_BROWSER_SUPPORT_REGION` threshold. The absence of a direct consumer keeps `confirmed = false`.
+
+## Session 008 refinement
+
+All nine normalized descriptor targets fall inside a 71,245-byte relocated sparse-row bitmap region and all nine 64-byte target windows are classifier-positive. This confirms graphics-like target structure but does not promote browser/glyph ownership above `PROBABLE`; a renderer consumer remains required.
 
 ## Publication boundary
 

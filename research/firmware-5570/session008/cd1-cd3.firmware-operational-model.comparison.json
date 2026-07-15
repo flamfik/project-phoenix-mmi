@@ -1,0 +1,320 @@
+{
+  "analysis_mode": "read-only-static",
+  "bitmap_atlas": {
+    "analysis_mode": "read-only-static",
+    "atlas_candidate_window_ratios": [
+      0.712489,
+      0.712489
+    ],
+    "descriptor_target_count": 9,
+    "equal_region": {
+      "anchor_relative_end": 63309,
+      "anchor_relative_start": -7936,
+      "backward_bound_reached": false,
+      "byte_equal": true,
+      "forward_bound_reached": false,
+      "left_end": 768809,
+      "left_offset": 697564,
+      "length": 71245,
+      "raw_bytes_included": false,
+      "right_end": 1092613,
+      "right_offset": 1021368,
+      "sha256": "bb3dc59de9d12e402708eccf169fe236294708298d371aedb67815ecfd0a10ce"
+    },
+    "exact_equal_target_window_count": 9,
+    "interpretation": "Sparse one-byte row morphology and descriptor targeting support a glyph-atlas interpretation, but no decoded font header or renderer consumer is known.",
+    "maximum_control_candidate_window_ratio": 0.067385,
+    "publication_safety": {
+      "firmware_bytes_included": false,
+      "raw_pointer_runs_included": false,
+      "raw_strings_included": false,
+      "rendered_glyphs_included": false
+    },
+    "schema": "phoenix-mmi.relocated-bitmap-atlas-comparison/v1",
+    "semantic_confirmation": false,
+    "semantic_status": "PROBABLE_1BPP_GLYPH_ATLAS",
+    "sparse_row_bitmap_target_window_count": 9,
+    "structural_status": "CONFIRMED_RELOCATED_SPARSE_ROW_BITMAP_REGION"
+  },
+  "external_context": {
+    "note": "Wind River documentation confirms that VxWorks/WindML-era SuperH platforms could integrate embedded browsers and font engines; this does not identify the MMI implementation.",
+    "source": "https://www.windriver.com/news/press/news-277",
+    "used_as_firmware_evidence": false
+  },
+  "left": "CD1 K942 / MMI 5150",
+  "operational_graph": {
+    "confirmed_node_count": 11,
+    "edges": [
+      {
+        "relation": "describes component payloads and policies",
+        "source": "update-media",
+        "status": "CONFIRMED",
+        "target": "metainfo-selector"
+      },
+      {
+        "relation": "contains device-specific application and bootloader payloads",
+        "source": "update-media",
+        "status": "CONFIRMED_PACKAGE_TOPOLOGY",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "provides target tuple for selection",
+        "source": "most-inventory",
+        "status": "PROBABLE",
+        "target": "metainfo-selector"
+      },
+      {
+        "relation": "matches installed hardware to device-specific records",
+        "source": "most-inventory",
+        "status": "PROBABLE_RUNTIME_BEHAVIOR",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "selects, checks and stages the head-unit payload",
+        "source": "metainfo-selector",
+        "status": "PROBABLE_RUNTIME_BEHAVIOR",
+        "target": "principal-image"
+      },
+      {
+        "relation": "provides segmented integrity expectations",
+        "source": "metainfo-selector",
+        "status": "CONFIRMED_METADATA_RELATION",
+        "target": "checksum-grid"
+      },
+      {
+        "relation": "begins execution at file offset zero",
+        "source": "principal-image",
+        "status": "CONFIRMED",
+        "target": "startup-runtime"
+      },
+      {
+        "relation": "initializes the linked runtime image",
+        "source": "startup-runtime",
+        "status": "PROBABLE",
+        "target": "runtime-address-space"
+      },
+      {
+        "relation": "hosts network-facing service tasks",
+        "source": "startup-runtime",
+        "status": "PROBABLE",
+        "target": "most-transport"
+      },
+      {
+        "relation": "coordinates device control and staged downloads",
+        "source": "most-transport",
+        "status": "PROBABLE",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "is immediately followed by runtime-address tables",
+        "source": "browser-bundle",
+        "status": "CONFIRMED_PHYSICAL_LAYOUT",
+        "target": "post-cluster-table"
+      },
+      {
+        "relation": "contains two exact edges to the atlas block",
+        "source": "post-cluster-table",
+        "status": "CONFIRMED_STRUCTURE",
+        "target": "bitmap-atlas"
+      },
+      {
+        "relation": "contains additional mapped but semantically unresolved runs",
+        "source": "post-cluster-table",
+        "status": "PARTIAL",
+        "target": "unresolved-runtime-tables"
+      },
+      {
+        "relation": "provides bitmap glyph data",
+        "source": "bitmap-atlas",
+        "status": "PROBABLE",
+        "target": "browser-renderer"
+      },
+      {
+        "relation": "selects a version/CRC-specific migration",
+        "source": "metainfo-selector",
+        "status": "CONFIRMED_METADATA_CHAIN",
+        "target": "eeprom-state"
+      },
+      {
+        "relation": "hosts navigation services",
+        "source": "startup-runtime",
+        "status": "HYPOTHESIS",
+        "target": "navigation-runtime"
+      },
+      {
+        "relation": "loads persistent runtime objects",
+        "source": "startup-runtime",
+        "status": "HYPOTHESIS",
+        "target": "internal-filesystem"
+      }
+    ],
+    "interpretation": "The graph is a confidence-graded working model. OPEN and HYPOTHESIS nodes are explicit gaps, not inferred implementation facts.",
+    "nodes": [
+      {
+        "evidence": [
+          "S001",
+          "S002"
+        ],
+        "id": "update-media",
+        "label": "Three-disc multi-device update set",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S002-01",
+          "S002-02",
+          "S002-03"
+        ],
+        "id": "metainfo-selector",
+        "label": "METAINFO target selection and integrity metadata",
+        "status": "CONFIRMED_STRUCTURE"
+      },
+      {
+        "evidence": [
+          "S002-06"
+        ],
+        "id": "most-inventory",
+        "label": "Installed MOST component discovery",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S001",
+          "S002"
+        ],
+        "id": "peripheral-firmware",
+        "label": "Separate amplifier, tuner, telephone, Bluetooth, AMI and DSP firmware",
+        "status": "CONFIRMED_PACKAGE_TOPOLOGY"
+      },
+      {
+        "evidence": [
+          "S002-06",
+          "S002-08"
+        ],
+        "id": "most-transport",
+        "label": "Head-unit control and update transport over MOST",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S003",
+          "S004-01"
+        ],
+        "id": "principal-image",
+        "label": "Flat big-endian SH-3 principal image",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S004-01",
+          "S004-02",
+          "S004-05"
+        ],
+        "id": "startup-runtime",
+        "label": "SH-3 startup and Wind River/VxWorks runtime fingerprint",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S006-01",
+          "S006-02"
+        ],
+        "id": "runtime-address-space",
+        "label": "Runtime-linked principal image at 0x0C000000",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S003",
+          "RQ-004"
+        ],
+        "id": "checksum-grid",
+        "label": "Twenty-five sequential 512 KiB CRC32 integrity regions",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S007-02",
+          "S008-01",
+          "S008-02"
+        ],
+        "id": "bitmap-atlas",
+        "label": "Relocated sparse-row bitmap region",
+        "semantic_status": "PROBABLE_1BPP_GLYPH_ATLAS",
+        "status": "CONFIRMED_RELOCATED_SPARSE_ROW_BITMAP_REGION"
+      },
+      {
+        "evidence": [
+          "S005"
+        ],
+        "id": "browser-bundle",
+        "label": "Embedded HTML and GIF/JPEG browser bundle",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S005",
+          "S006-03",
+          "S007-01"
+        ],
+        "id": "post-cluster-table",
+        "label": "Post-cluster runtime-address tables",
+        "status": "CONFIRMED_STRUCTURE"
+      },
+      {
+        "evidence": [
+          "S007-03",
+          "S007-05",
+          "S008-03"
+        ],
+        "id": "browser-renderer",
+        "label": "Browser/UI renderer consuming the bitmap atlas",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S006-05",
+          "RQ-015"
+        ],
+        "id": "unresolved-runtime-tables",
+        "label": "Post-cluster address runs 1 and 3",
+        "status": "PARTIAL"
+      },
+      {
+        "evidence": [
+          "S002-05"
+        ],
+        "id": "eeprom-state",
+        "label": "Versioned EEPROM migration state",
+        "status": "CONFIRMED_CHAIN"
+      },
+      {
+        "evidence": [
+          "RQ-009"
+        ],
+        "id": "navigation-runtime",
+        "label": "Navigation engine and map-format boundary",
+        "status": "OPEN"
+      },
+      {
+        "evidence": [
+          "RQ-010"
+        ],
+        "id": "internal-filesystem",
+        "label": "Internal filesystem or proprietary object store",
+        "status": "OPEN"
+      }
+    ],
+    "open_node_count": 2,
+    "probable_node_count": 3,
+    "schema": "phoenix-mmi.operational-graph/v1"
+  },
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "raw_pointer_runs_included": false,
+    "raw_strings_included": false,
+    "rendered_glyphs_included": false
+  },
+  "right": "CD3 K1006 / MMI 5570",
+  "schema": "phoenix-mmi.firmware-operational-model-comparison/v1"
+}

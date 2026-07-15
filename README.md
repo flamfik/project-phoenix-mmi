@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, media/update model and principal-image fingerprinting are complete. Session 007 confirms a relocated descriptor graph around the 16-record block and supports only a conservative `PROBABLE_BROWSER_SUPPORT_REGION` owner label because no direct code referrer has been found.
+The foundation, update model and principal-image fingerprinting are complete. Session 008 confirms a 71,245-byte relocated sparse-row bitmap region and publishes the first confidence-graded end-to-end firmware operational graph. Glyph/browser semantics remain probable until a renderer consumer is decoded.
 
 ## First milestone
 
@@ -40,10 +40,12 @@ ui/            Future interface and resource research
 - [Session 005 report](docs/sessions/SESSION-005-browser-resource-bundle.md)
 - [Session 006 report](docs/sessions/SESSION-006-runtime-address-map.md)
 - [Session 007 report](docs/sessions/SESSION-007-reference-graph-owner-evidence.md)
+- [Session 008 report](docs/sessions/SESSION-008-firmware-operational-model.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
 - [Session 007 publication-safe evidence](research/firmware-5570/session007/)
+- [Session 008 publication-safe evidence](research/firmware-5570/session008/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

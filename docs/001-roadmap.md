@@ -17,7 +17,8 @@ Progress:
 - Session 005: embedded HTML/resource bundle, relative-directory tests and runtime-pointer runs - complete;
 - Session 006: bounded runtime-address model, target mapping and relocated-record confirmation - complete;
 - Session 007: exact reference graph, relocated descriptor topology and conservative browser-support owner evidence - complete;
-- remaining M1 work: descriptor consumers/dataflow, broader executable boundaries and semantic region map.
+- Session 008: relocated bitmap-atlas classification and confidence-graded firmware operational model - complete;
+- remaining M1 work: navigation/storage boundaries, renderer consumer, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

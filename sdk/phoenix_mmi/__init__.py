@@ -6,6 +6,11 @@ from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
 from .entropy import EntropyWindow, entropy_profile, shannon_entropy
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .layout import analyze_executable_layout
+from .operational_model import (
+    analyze_relocated_bitmap_atlas,
+    build_operational_graph,
+    build_public_operational_report,
+)
 from .reference_graph import (
     analyze_reference_graph,
     build_public_reference_graph,
@@ -28,9 +33,12 @@ __all__ = [
     "analyze_file",
     "analyze_executable_layout",
     "analyze_reference_graph",
+    "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
     "analyze_runtime_map",
     "build_candidate_segments",
+    "build_operational_graph",
+    "build_public_operational_report",
     "build_public_reference_graph",
     "build_public_resource_bundle",
     "build_public_runtime_map",
@@ -44,4 +52,4 @@ __all__ = [
     "trace_control_flow",
 ]
 
-__version__ = "0.5.0"
+__version__ = "0.6.0"

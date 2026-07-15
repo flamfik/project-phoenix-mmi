@@ -18,6 +18,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `resource_bundle` - publication-safe HTML summaries, relative-offset table tests and bounded big-endian pointer-run comparison;
 - `runtime_map` - explicit runtime-address models, bounded link-base code probes, target-region mapping and cross-version relocation evidence.
 - `reference_graph` - exact runtime-word edges, normalized descriptor graphs, bounded marker profiles and conservative owner-evidence policy.
+- `operational_model` - relocated equal-region discovery, sparse-row bitmap classification, control comparison and confidence-graded firmware graph.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -78,6 +79,16 @@ python tools/session007/analyze_reference_graph.py \
   --public-output research/firmware-5570/session007
 ```
 
+## Reproduce Session 008
+
+```shell
+python tools/session008/build_firmware_operational_model.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/firmware-5570/work/session008 \
+  --public-output research/firmware-5570/session008
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -87,3 +98,5 @@ The resource-bundle analyzer publishes only structure, counts, hashes and offset
 The runtime mapper never selects a base by an unconstrained best-score search. Its model set is fixed by the observed runtime range and METAINFO flash base; competing results remain in every report. A mapped address is not automatically labeled as code or assigned to a subsystem.
 
 The reference graph keeps structural confirmation separate from semantic ownership. Contextual agreement can produce `PROBABLE`; only a direct consumer or equivalent semantic evidence may produce `CONFIRMED` ownership.
+
+The operational model follows the same rule: bitmap morphology can confirm a structural region, while a glyph/font label remains probable until a format or renderer consumer is decoded.
