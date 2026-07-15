@@ -18,7 +18,8 @@ Progress:
 - Session 006: bounded runtime-address model, target mapping and relocated-record confirmation - complete;
 - Session 007: exact reference graph, relocated descriptor topology and conservative browser-support owner evidence - complete;
 - Session 008: relocated bitmap-atlas classification and confidence-graded firmware operational model - complete;
-- remaining M1 work: navigation/storage boundaries, renderer consumer, unresolved runtime tables and broader executable boundaries.
+- Session 009: navigation subsystem presence, VxWorks storage stack and embedded-volume validation - complete;
+- remaining M1 work: navigation-media dataflow, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

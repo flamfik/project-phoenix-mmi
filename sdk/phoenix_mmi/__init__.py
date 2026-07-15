@@ -6,6 +6,13 @@ from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
 from .entropy import EntropyWindow, entropy_profile, shannon_entropy
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .layout import analyze_executable_layout
+from .navigation_storage import (
+    analyze_navigation_storage_boundary,
+    build_public_navigation_storage_report,
+    compare_navigation_storage_boundaries,
+    scan_storage_signatures,
+    update_operational_graph,
+)
 from .operational_model import (
     analyze_relocated_bitmap_atlas,
     build_operational_graph,
@@ -32,24 +39,29 @@ __all__ = [
     "SHInstruction",
     "analyze_file",
     "analyze_executable_layout",
+    "analyze_navigation_storage_boundary",
     "analyze_reference_graph",
     "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
     "analyze_runtime_map",
     "build_candidate_segments",
     "build_operational_graph",
+    "build_public_navigation_storage_report",
     "build_public_operational_report",
     "build_public_reference_graph",
     "build_public_resource_bundle",
     "build_public_runtime_map",
     "compare_reports",
+    "compare_navigation_storage_boundaries",
     "compare_reference_graphs",
     "crc32_bytes",
     "decode_instruction",
     "entropy_profile",
     "scan_fingerprints",
+    "scan_storage_signatures",
     "shannon_entropy",
     "trace_control_flow",
+    "update_operational_graph",
 ]
 
-__version__ = "0.6.0"
+__version__ = "0.7.0"

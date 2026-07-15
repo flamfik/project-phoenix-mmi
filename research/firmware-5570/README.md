@@ -12,5 +12,6 @@ Publication-safe generated evidence is stored by session:
 - `session006/` - explicit address-model evaluation, bounded link-base evidence and target relocation comparison.
 - `session007/` - exact reference graph, normalized descriptor topology and conservative owner evidence.
 - `session008/` - relocated bitmap-atlas metrics and confidence-graded firmware operational graph.
+- `session009/` - navigation/storage marker bands, bounded code references and embedded-volume validators.
 
 Full local reports remain under ignored `work/` directories.

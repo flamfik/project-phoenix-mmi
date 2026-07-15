@@ -1,9 +1,9 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: ALPHA
-- Evidence: Sessions 001-008
-- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021
+- Evidence: Sessions 001-009
+- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
 
 ## Purpose
 
@@ -51,10 +51,23 @@ Semantic status may be separate from structural status. The bitmap atlas is the 
 
 - direct renderer consumer;
 - address runs 1 and 3;
-- navigation engine/module boundary;
+- exact navigation engine/module boundaries, despite confirmed subsystem presence;
 - map-data format and DVD interface;
-- internal filesystem or proprietary object store;
+- internal backing-volume or proprietary object-store layout, despite confirmed dosFs/FAT/TFFS runtime support;
 - complete VxWorks task/module table.
+
+### Session 009 refinement
+
+Operational graph v2 splits the former navigation/storage hypotheses into independently graded nodes:
+
+- navigation subsystem presence: `CONFIRMED_SUBSYSTEM_PRESENCE`;
+- exact navigation boundary: `PARTIAL`;
+- VxWorks dosFs/FAT/TFFS runtime stack: `CONFIRMED_BOUNDED`;
+- CD-ROM/ISO-9660 reader support: `PROBABLE`;
+- internal backing-volume layout: `OPEN`;
+- map-media schema: `OPEN`.
+
+No edge from the optical reader to map media is promoted above `HYPOTHESIS` without direct dataflow or an independently validated navigation medium.
 
 ## Rule for derived diagrams
 
