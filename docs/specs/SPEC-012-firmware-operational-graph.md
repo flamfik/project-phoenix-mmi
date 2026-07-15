@@ -1,8 +1,8 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.2
+- Version: 0.3
 - Maturity: ALPHA
-- Evidence: Sessions 001-009
+- Evidence: Sessions 001-010
 - Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
 
 ## Purpose
@@ -68,6 +68,19 @@ Operational graph v2 splits the former navigation/storage hypotheses into indepe
 - map-media schema: `OPEN`.
 
 No edge from the optical reader to map media is promoted above `HYPOTHESIS` without direct dataflow or an independently validated navigation medium.
+
+### Session 010 refinement
+
+Operational graph v3 adds independently graded firmware-side contracts:
+
+- navigation-data bounded call-site pair: `CONFIRMED_CROSS_VERSION_CODE_COUPLING`;
+- route-data record neighborhoods: `CONFIRMED_RELOCATED_STRUCTURE`, consumer `OPEN`;
+- CD-ROM event/task record family: `CONFIRMED_RELOCATED_STRUCTURE`, dispatch semantics `OPEN`.
+
+The edge from optical-service records to the probable optical-volume reader is
+only `PROBABLE`. The route-record-to-navigation consumer edge and the
+optical-reader-to-map-media edge remain `HYPOTHESIS`. Storage-marker proximity
+for an indirect call target is not sufficient to promote either edge.
 
 ## Rule for derived diagrams
 

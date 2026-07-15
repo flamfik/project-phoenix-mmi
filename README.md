@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 009 confirms navigation subsystem presence and the VxWorks dosFs/FAT/TFFS runtime stack across MMI 5150 and 5570. The exact navigation boundaries, backing-volume layout and map-media format remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 010 confirms two stable navigation-data call-site windows plus relocated route-data and CD-ROM event/task record contracts across MMI 5150 and 5570. Optical dispatch, sector ABI, backing-volume layout and map-media format remain open.
 
 ## First milestone
 
@@ -42,12 +42,14 @@ ui/            Future interface and resource research
 - [Session 007 report](docs/sessions/SESSION-007-reference-graph-owner-evidence.md)
 - [Session 008 report](docs/sessions/SESSION-008-firmware-operational-model.md)
 - [Session 009 report](docs/sessions/SESSION-009-navigation-storage-boundary.md)
+- [Session 010 report](docs/sessions/SESSION-010-navigation-dataflow-optical-contract.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
 - [Session 007 publication-safe evidence](research/firmware-5570/session007/)
 - [Session 008 publication-safe evidence](research/firmware-5570/session008/)
 - [Session 009 publication-safe evidence](research/firmware-5570/session009/)
+- [Session 010 publication-safe evidence](research/firmware-5570/session010/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

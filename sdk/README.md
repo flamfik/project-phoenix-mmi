@@ -20,6 +20,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `reference_graph` - exact runtime-word edges, normalized descriptor graphs, bounded marker profiles and conservative owner-evidence policy.
 - `operational_model` - relocated equal-region discovery, sparse-row bitmap classification, control comparison and confidence-graded firmware graph.
 - `navigation_storage` - fixed navigation/storage markers, cross-version bands, bounded SH-3 references and structural ISO-9660/FAT/UDF validation.
+- `navigation_dataflow` - fixed navigation/optical-service anchors, relocation-normalized record neighborhoods, bounded SH-3 call-site windows and conservative adjacent `MOV.L`/`JSR` target resolution.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -100,6 +101,16 @@ python tools/session009/analyze_navigation_storage_boundary.py \
   --public-output research/firmware-5570/session009
 ```
 
+## Reproduce Session 010
+
+```shell
+python tools/session010/analyze_navigation_dataflow.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/firmware-5570/work/session010 \
+  --public-output research/firmware-5570/session010
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -113,3 +124,5 @@ The reference graph keeps structural confirmation separate from semantic ownersh
 The operational model follows the same rule: bitmap morphology can confirm a structural region, while a glyph/font label remains probable until a format or renderer consumer is decoded.
 
 The navigation/storage analyzer confirms subsystem presence only when fixed marker families, ordered cross-version bands and bounded code references agree. A bare `CD001` or FAT string never validates an embedded volume, and no result is treated as proof of the map-media format.
+
+The navigation-dataflow analyzer never treats an analysis window as a decoded function. It resolves only an immediately adjacent PC-relative `MOV.L` feeding the same register used by `JSR`; object dispatch, route-data consumers, sector-read semantics and the map-media schema remain open until direct evidence exists.

@@ -6,6 +6,15 @@ from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
 from .entropy import EntropyWindow, entropy_profile, shannon_entropy
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .layout import analyze_executable_layout
+from .navigation_dataflow import (
+    analyze_navigation_dataflow,
+    build_public_navigation_dataflow_report,
+    compare_navigation_dataflow,
+    discover_contract_anchors,
+    summarize_code_window,
+    summarize_runtime_neighborhood,
+    update_operational_graph_v3,
+)
 from .navigation_storage import (
     analyze_navigation_storage_boundary,
     build_public_navigation_storage_report,
@@ -40,6 +49,7 @@ __all__ = [
     "analyze_file",
     "analyze_executable_layout",
     "analyze_navigation_storage_boundary",
+    "analyze_navigation_dataflow",
     "analyze_reference_graph",
     "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
@@ -47,21 +57,27 @@ __all__ = [
     "build_candidate_segments",
     "build_operational_graph",
     "build_public_navigation_storage_report",
+    "build_public_navigation_dataflow_report",
     "build_public_operational_report",
     "build_public_reference_graph",
     "build_public_resource_bundle",
     "build_public_runtime_map",
     "compare_reports",
     "compare_navigation_storage_boundaries",
+    "compare_navigation_dataflow",
     "compare_reference_graphs",
     "crc32_bytes",
     "decode_instruction",
+    "discover_contract_anchors",
     "entropy_profile",
     "scan_fingerprints",
     "scan_storage_signatures",
     "shannon_entropy",
+    "summarize_code_window",
+    "summarize_runtime_neighborhood",
     "trace_control_flow",
     "update_operational_graph",
+    "update_operational_graph_v3",
 ]
 
-__version__ = "0.7.0"
+__version__ = "0.8.0"

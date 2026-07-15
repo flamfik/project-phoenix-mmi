@@ -1,6 +1,6 @@
 # Research Questions
 
-| ID | Question | Status after Session 008 | Evidence / target |
+| ID | Question | Status after Session 010 | Evidence / target |
 |---|---|---|---|
 | RQ-001 | Does the principal BIN have a vendor container header? | CLOSED | Offset zero is executable SH-3 control flow, not a separate container header. SPEC-001, SPEC-005. |
 | RQ-002 | One ELF, several executables or a flat image? | PARTIAL | A flat SH-3/VxWorks executable start is CONFIRMED; later internal module boundaries remain open. SPEC-001, SPEC-005. |
@@ -23,8 +23,11 @@
 | RQ-019 | Which code consumes the source table or descriptor graph? | OPEN | Exact absolute-word and PC-relative `MOV.L` probes found no consumer; bounded register/dataflow analysis is required. SPEC-010. |
 | RQ-020 | Is the Session 006 target code, generic data or graphics? | PARTIAL | A 71,245-byte relocated sparse-row bitmap region is structurally confirmed; 1 bpp glyph-atlas semantics remain probable. SPEC-011. |
 | RQ-021 | What end-to-end firmware operation can be stated from current evidence? | PARTIAL | Operational graph v2 adds confirmed navigation presence and the storage runtime stack while preserving map media, backing volume and renderer consumers as explicit gaps. SPEC-012. |
-| RQ-022 | What format and object schema does the navigation map medium use? | OPEN | CD-ROM/DVD and routing markers exist, but no map medium was parsed and no format consumer is decoded. Session 010 target. |
+| RQ-022 | What format and object schema does the navigation map medium use? | OPEN | Session 010 confirms the firmware-side optical-service and route-data record contracts but not the medium schema. A read-only map-ISO inventory is the next independent evidence source. SPEC-016. |
 | RQ-023 | Which device and volume layout back persistent runtime storage? | OPEN | dosFs/FAT/TFFS support is present, but the mounted device, partitions and proprietary objects are not identified. SPEC-014. |
 | RQ-024 | Does the principal BIN itself embed an ISO-9660 or FAT volume? | CLOSED, BOUNDED NEGATIVE | One `CD001` constant per release fails ECMA-119 descriptor structure; all FAT markers fail boot-sector validation. SPEC-014. |
+| RQ-025 | Which routines consume the internal navigation-data anchor? | PARTIAL | Two bounded cross-version call-site pairs and six adjacent indirect-call pairs are structurally confirmed. Function boundaries, names and ABI remain open. SPEC-015. |
+| RQ-026 | Do the CD-ROM event/task records connect directly to navigation? | OPEN | Five optical-service neighborhoods are relocation-normalized matches inside a nine-anchor family, but no direct navigation-to-optical call or dispatch edge is confirmed. SPEC-016. |
+| RQ-027 | Which code consumes the stable route-data records? | OPEN | Both record neighborhoods are exact matches after runtime-pointer normalization; no exact linked-word/PC-relative consumer exists under the tested model. SPEC-015, SPEC-016. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.
