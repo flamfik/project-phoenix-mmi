@@ -16,7 +16,8 @@ Progress:
 - Session 004: SuperH startup, bounded control flow, VxWorks probes and resource island - complete;
 - Session 005: embedded HTML/resource bundle, relative-directory tests and runtime-pointer runs - complete;
 - Session 006: bounded runtime-address model, target mapping and relocated-record confirmation - complete;
-- remaining M1 work: target referrers/ownership, broader executable boundaries and semantic region map.
+- Session 007: exact reference graph, relocated descriptor topology and conservative browser-support owner evidence - complete;
+- remaining M1 work: descriptor consumers/dataflow, broader executable boundaries and semantic region map.
 
 ## M2 - Analysis Toolkit
 

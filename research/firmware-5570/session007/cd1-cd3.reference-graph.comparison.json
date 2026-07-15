@@ -1,0 +1,98 @@
+{
+  "analysis_mode": "read-only-static",
+  "browser_marker_profile_comparison": {
+    "counts_equal": true,
+    "exact_relative_position_match_count": 10,
+    "left_occurrence_count": 85,
+    "ordered_marker_sequence_equal": true,
+    "ordinal_relative_offset_delta_histogram": {
+      "-56": 66,
+      "236": 16,
+      "720": 2,
+      "776": 1
+    },
+    "raw_strings_included": false,
+    "right_occurrence_count": 85
+  },
+  "descriptor_graph": {
+    "common_normalized_field_count": 9,
+    "common_normalized_fields": [
+      {
+        "field_relative_offset": 0,
+        "target_delta_from_block": 256
+      },
+      {
+        "field_relative_offset": 12,
+        "target_delta_from_block": 3616
+      },
+      {
+        "field_relative_offset": 16,
+        "target_delta_from_block": 3648
+      },
+      {
+        "field_relative_offset": 28,
+        "target_delta_from_block": 3968
+      },
+      {
+        "field_relative_offset": 32,
+        "target_delta_from_block": 3972
+      },
+      {
+        "field_relative_offset": 44,
+        "target_delta_from_block": 4100
+      },
+      {
+        "field_relative_offset": 48,
+        "target_delta_from_block": 4112
+      },
+      {
+        "field_relative_offset": 60,
+        "target_delta_from_block": 4136
+      },
+      {
+        "field_relative_offset": 64,
+        "target_delta_from_block": 5032
+      }
+    ],
+    "descriptor_relocation_delta": 323804,
+    "left_anchor_delta_from_block": -8180,
+    "left_anchor_file_offset": 697320,
+    "record_block_relocation_delta": 323804,
+    "relocates_with_record_block": true,
+    "right_anchor_delta_from_block": -8180,
+    "right_anchor_file_offset": 1021124,
+    "status": "CONFIRMED_RELOCATED_DESCRIPTOR_GRAPH"
+  },
+  "direct_reference_search": {
+    "combined_pc_relative_mov_l_referrer_count": 0,
+    "scope": "exact runtime-address words at declared anchors and descriptor anchors",
+    "status": "CONFIRMED_BOUNDED_NEGATIVE"
+  },
+  "left": "CD1 K942 / MMI 5150",
+  "owner_evidence": {
+    "confirmed": false,
+    "independent_positive_signal_count": 2,
+    "policy": "Two independent contextual signals can support PROBABLE ownership. CONFIRMED requires a direct code/dataflow referrer or equivalent semantic evidence.",
+    "signals": {
+      "browser_marker_counts_and_order_preserved_near_target": true,
+      "direct_code_referrer_identifies_owner": false,
+      "normalized_descriptor_graph_relocated_with_target": true,
+      "source_table_is_inside_confirmed_browser_post_cluster": true
+    },
+    "status": "PROBABLE_BROWSER_SUPPORT_REGION"
+  },
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "raw_pointer_run_values_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false,
+    "target_window_bytes_included": false
+  },
+  "right": "CD3 K1006 / MMI 5570",
+  "schema": "phoenix-mmi.reference-graph-comparison/v1",
+  "source_edge_comparison": {
+    "all_edges_originate_in_browser_post_cluster": true,
+    "edge_count_per_release": 2,
+    "same_source_edges": true
+  }
+}

@@ -1,6 +1,6 @@
 # Research Questions
 
-| ID | Question | Status after Session 006 | Evidence / target |
+| ID | Question | Status after Session 007 | Evidence / target |
 |---|---|---|---|
 | RQ-001 | Does the principal BIN have a vendor container header? | CLOSED | Offset zero is executable SH-3 control flow, not a separate container header. SPEC-001, SPEC-005. |
 | RQ-002 | One ELF, several executables or a flat image? | PARTIAL | A flat SH-3/VxWorks executable start is CONFIRMED; later internal module boundaries remain open. SPEC-001, SPEC-005. |
@@ -18,6 +18,8 @@
 | RQ-014 | Is the stable 1,588-byte pre-resource area a proprietary header? | CLOSED | It is a 1,587-byte HTML document followed by one separator byte. The HTML plus the 12-image cluster is byte-identical across CD1/CD3. SPEC-007. |
 | RQ-015 | What are the `0x0C000000`-range runs after the image cluster? | PARTIAL | All 69 entries map inside the principal image under the independently supported runtime base. Run 0 contains a CONFIRMED relocated 16-record block; runs 1/3 lack exact target matches and remain unresolved. SPEC-008, SPEC-009. |
 | RQ-016 | What runtime base maps linked addresses to principal-image offsets? | CLOSED | `file_offset = runtime_address - 0x0C000000` is supported by two bounded MOV.L/JSR sequences in both releases, maps the base value to the confirmed entry, maps all 69 entries in bounds and is the only tested model with cross-version target matches. SPEC-009. |
-| RQ-017 | Which subsystem owns the post-cluster address runs? | OPEN | No mapped target reaches the browser-resource island. Mapping alone cannot distinguish code, data or owning subsystem; referrer analysis is required. SPEC-009. |
+| RQ-017 | Which subsystem owns the post-cluster address runs? | PARTIAL | Two contextual signals support `PROBABLE_BROWSER_SUPPORT_REGION`, but no direct code/dataflow referrer identifies an owner. SPEC-010. |
+| RQ-018 | Does a normalized relocated descriptor graph surround the confirmed record block? | CLOSED | A nine-field normalized graph remains at block `-0x1FF4` and relocates by the same `0x4F0DC` in both releases. SPEC-010. |
+| RQ-019 | Which code consumes the source table or descriptor graph? | OPEN | Exact absolute-word and PC-relative `MOV.L` probes found no consumer; bounded register/dataflow analysis is required. SPEC-010. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

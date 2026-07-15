@@ -1,8 +1,8 @@
 # SPEC-009 - Principal-image runtime address map
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: ALPHA
-- Evidence: Session 006, registered CD1/CD3 principal images
+- Evidence: Sessions 006-007, registered CD1/CD3 principal images
 - Related questions: RQ-002, RQ-003, RQ-015, RQ-016, RQ-017
 
 ## Selected mapping
@@ -63,6 +63,12 @@ Run 0 contains 20 entries using the dominant `0x4F0DC` release delta. After remo
 | Block length | 256 bytes | 256 bytes |
 
 The two blocks are byte-identical and have SHA-256 `87892b3bb1be58b663a229efaaad2fc5a23e94e139aff77600c4e7a8c7102011`. This confirms relocated target semantics for this subset. It does not identify the record schema or owner.
+
+## Session 007 refinement
+
+Two run-0 entries in each release point exactly to the block start. A separate normalized nine-field descriptor graph is anchored `0x1FF4` bytes before the block and relocates by the same `0x4F0DC` delta. These relationships are specified in SPEC-010.
+
+The current owner label is `PROBABLE_BROWSER_SUPPORT_REGION`, based on two contextual signals. It is explicitly not a confirmed code-level owner.
 
 ## Safety boundary
 
