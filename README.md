@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 011 confirms the navigation medium's ISO-9660/Joliet topology and seven FLDB fixed-record containers, then joins them conservatively with the Session 010 optical-service contract. Inner map payload schemas, optical dispatch, sector ABI, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 012 confirms proprietary payload-family structures, a cross-family 16-partition topology and a speech index/data split. A relocation-stable SH `0x220` constant is probably coupled to the FLDB layout, but the parser, optical dispatch, sector ABI, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -44,6 +44,7 @@ ui/            Future interface and resource research
 - [Session 009 report](docs/sessions/SESSION-009-navigation-storage-boundary.md)
 - [Session 010 report](docs/sessions/SESSION-010-navigation-dataflow-optical-contract.md)
 - [Session 011 report](docs/sessions/SESSION-011-navigation-media-fldb.md)
+- [Session 012 report](docs/sessions/SESSION-012-payload-partitions-parser-constants.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -52,6 +53,7 @@ ui/            Future interface and resource research
 - [Session 009 publication-safe evidence](research/firmware-5570/session009/)
 - [Session 010 publication-safe evidence](research/firmware-5570/session010/)
 - [Session 011 publication-safe evidence](research/navigation-media/session011/)
+- [Session 012 publication-safe evidence](research/navigation-media/session012/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

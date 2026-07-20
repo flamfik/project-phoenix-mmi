@@ -1,0 +1,272 @@
+{
+  "analysis_mode": "read-only-static-single-pass",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "size_bytes": 12690344,
+    "source_path_included": false
+  },
+  "constants": [
+    {
+      "constant_id": "fldb-directory-offset",
+      "mov_l_reference_count": 2,
+      "mov_l_references": [
+        {
+          "flow_counts": {
+            "branch": 6,
+            "conditional": 15,
+            "indirect-call": 8,
+            "linear": 67
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.697917,
+          "literal_word_offset": 8659396,
+          "load_offset": 8659250,
+          "mnemonic_counts": {
+            "add": 5,
+            "bf": 4,
+            "bra": 6,
+            "bt": 4,
+            "bt/s": 7,
+            "jsr": 8,
+            "mov": 15,
+            "mov.l": 12,
+            "mov.w": 2,
+            "nop": 4,
+            "unknown": 29
+          },
+          "nearest_fixed_boundary": {
+            "categories": [
+              "navigation"
+            ],
+            "marker_ids": [
+              "map",
+              "street"
+            ],
+            "maximum_distance": 65536,
+            "raw_string_included": false,
+            "signed_distance": 24566
+          },
+          "normalized_shape_sha256": "0dbdde00ae2795adf6874d7a4baada4267a2889dc5db385169aa00999b175f93"
+        },
+        {
+          "flow_counts": {
+            "branch": 9,
+            "conditional": 10,
+            "indirect-call": 8,
+            "linear": 69
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.65625,
+          "literal_word_offset": 8659396,
+          "load_offset": 8659292,
+          "mnemonic_counts": {
+            "add": 7,
+            "bf": 4,
+            "bra": 9,
+            "bt": 3,
+            "bt/s": 3,
+            "jsr": 8,
+            "mov": 13,
+            "mov.l": 10,
+            "mov.w": 2,
+            "nop": 4,
+            "unknown": 33
+          },
+          "nearest_fixed_boundary": {
+            "categories": [
+              "navigation"
+            ],
+            "marker_ids": [
+              "map",
+              "street"
+            ],
+            "maximum_distance": 65536,
+            "raw_string_included": false,
+            "signed_distance": 24524
+          },
+          "normalized_shape_sha256": "2af2f36c3d6cf7960beaa8008707734e79323ebf2b6dbf1ee0ae29f5ff06297b"
+        }
+      ],
+      "mov_w_reference_count": 127,
+      "signed_immediate_reference_count": 0,
+      "unique_literal_pool_word_count": 1,
+      "value": 544
+    },
+    {
+      "constant_id": "fldb-record-size",
+      "mov_l_reference_count": 4,
+      "mov_l_references": [
+        {
+          "flow_counts": {
+            "call": 1,
+            "conditional": 1,
+            "linear": 94
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.15625,
+          "literal_word_offset": 3567576,
+          "load_offset": 3567046,
+          "mnemonic_counts": {
+            "add": 8,
+            "bf": 1,
+            "bsr": 1,
+            "mov.l": 5,
+            "unknown": 81
+          },
+          "nearest_fixed_boundary": null,
+          "normalized_shape_sha256": "e9b0169c0779a8e50c1a17c63f5a18807baf148e7467fb9065acc50aa7231623"
+        },
+        {
+          "flow_counts": {
+            "conditional": 2,
+            "indirect-call": 1,
+            "linear": 91,
+            "return": 2
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.291667,
+          "literal_word_offset": 3567576,
+          "load_offset": 3567238,
+          "mnemonic_counts": {
+            "bf/s": 2,
+            "jsr": 1,
+            "mov": 3,
+            "mov.l": 18,
+            "mov.w": 1,
+            "nop": 1,
+            "rts": 2,
+            "unknown": 68
+          },
+          "nearest_fixed_boundary": null,
+          "normalized_shape_sha256": "c4f6b45e851a3cc33a1d01c397557ef0b13fc8e746eed48977cbd0eb4f6e7dcc"
+        },
+        {
+          "flow_counts": {
+            "call": 1,
+            "linear": 95
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.114583,
+          "literal_word_offset": 12468576,
+          "load_offset": 12467552,
+          "mnemonic_counts": {
+            "bsr": 1,
+            "mov.l": 2,
+            "mov.w": 8,
+            "unknown": 85
+          },
+          "nearest_fixed_boundary": null,
+          "normalized_shape_sha256": "9a1322c0dd7cba8927e111d038be7587c6808d6338a148a17ea2bf620cd600b2"
+        },
+        {
+          "flow_counts": {
+            "branch": 2,
+            "call": 4,
+            "conditional": 1,
+            "linear": 89
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.239583,
+          "literal_word_offset": 12547328,
+          "load_offset": 12547196,
+          "mnemonic_counts": {
+            "bra": 2,
+            "bsr": 4,
+            "bt/s": 1,
+            "mov": 4,
+            "mov.l": 9,
+            "mov.w": 3,
+            "unknown": 73
+          },
+          "nearest_fixed_boundary": null,
+          "normalized_shape_sha256": "5d710fcd4d2412c567be787e4ede0fab673577b380be8df19216a9728e96ad8b"
+        }
+      ],
+      "mov_w_reference_count": 4,
+      "signed_immediate_reference_count": 541,
+      "unique_literal_pool_word_count": 3,
+      "value": 36
+    },
+    {
+      "constant_id": "logical-sector-size",
+      "mov_l_reference_count": 2,
+      "mov_l_references": [
+        {
+          "flow_counts": {
+            "branch": 2,
+            "conditional": 7,
+            "indirect-call": 1,
+            "linear": 85,
+            "return": 1
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.447917,
+          "literal_word_offset": 8041440,
+          "load_offset": 8041342,
+          "mnemonic_counts": {
+            "add": 6,
+            "bf": 3,
+            "bf/s": 1,
+            "bra": 2,
+            "bt": 3,
+            "jsr": 1,
+            "ldc": 2,
+            "mov": 9,
+            "mov.l": 15,
+            "rte": 1,
+            "unknown": 53
+          },
+          "nearest_fixed_boundary": {
+            "categories": [
+              "navigation"
+            ],
+            "marker_ids": [
+              "map"
+            ],
+            "maximum_distance": 65536,
+            "raw_string_included": false,
+            "signed_distance": -21160
+          },
+          "normalized_shape_sha256": "14e6b9e364f1164da72641b10cf9b91c67d4fe0fa0253595baf2e9f9745425eb"
+        },
+        {
+          "flow_counts": {
+            "linear": 96
+          },
+          "instruction_bytes_included": false,
+          "known_ratio": 0.09375,
+          "literal_word_offset": 11810448,
+          "load_offset": 11810066,
+          "mnemonic_counts": {
+            "mov": 1,
+            "mov.l": 8,
+            "unknown": 87
+          },
+          "nearest_fixed_boundary": {
+            "categories": [
+              "navigation"
+            ],
+            "marker_ids": [
+              "map"
+            ],
+            "maximum_distance": 65536,
+            "raw_string_included": false,
+            "signed_distance": -3688
+          },
+          "normalized_shape_sha256": "de009f0efd33fa9ce0c118204cdf16c08cd8dcbecba4dc24d55b67baf9820b6c"
+        }
+      ],
+      "mov_w_reference_count": 245,
+      "signed_immediate_reference_count": 0,
+      "unique_literal_pool_word_count": 2,
+      "value": 2048
+    }
+  ],
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.parser-constant-probes/v1"
+}

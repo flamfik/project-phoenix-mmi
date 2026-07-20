@@ -22,6 +22,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `navigation_storage` - fixed navigation/storage markers, cross-version bands, bounded SH-3 references and structural ISO-9660/FAT/UDF validation.
 - `navigation_dataflow` - fixed navigation/optical-service anchors, relocation-normalized record neighborhoods, bounded SH-3 call-site windows and conservative adjacent `MOV.L`/`JSR` target resolution.
 - `map_media` - ISO-9660/Joliet inventory, fixed-width FLDB record-table validation, aggregate payload profiling and conservative firmware/media correlation without extraction.
+- `map_payload` - bounded proprietary family headers, B/V directories, speech index/data splits, anonymous partition topology and opaque-field model probes.
+- `parser_contract` - one-pass SH parser-constant loads, relocation-normalized cross-version comparison and operational graph v5 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -124,6 +126,18 @@ python tools/session011/analyze_navigation_media.py \
   --public-output research/navigation-media/session011
 ```
 
+## Reproduce Session 012
+
+```shell
+python tools/session012/analyze_payload_parser_contract.py \
+  "<local-navigation-image>.iso" \
+  --artifact-id nav-dvd-ee-2018-2019-001 \
+  --firmware-cd1 MMI-5570-4L0.998.961-cd1-3.iso \
+  --firmware-cd3 MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session012 \
+  --public-output research/navigation-media/session012
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -145,3 +159,9 @@ publishes only volume structure, generated member IDs, counts, offsets,
 entropy summaries, suffix classes and fixed marker counts. FLDB payload schemas,
 the firmware parser edge and compatibility with modified or newer maps remain
 explicitly unresolved.
+
+The payload-family analyzer reads only bounded prefixes and publishes family
+IDs, sizes, record invariants and anonymous partition counts. It never emits
+names, raw headers, metadata, timestamps, payload bytes or opaque values. The
+parser-constant analyzer treats an exact constant as numeric coupling only;
+without buffer provenance and field-level dataflow it never labels a parser.

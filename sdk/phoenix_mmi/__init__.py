@@ -14,6 +14,11 @@ from .map_media import (
     probe_firmware_media_markers,
     update_operational_graph_v4,
 )
+from .map_payload import (
+    analyze_navigation_payloads,
+    build_public_navigation_payload_report,
+    classify_payload_header,
+)
 from .navigation_dataflow import (
     analyze_navigation_dataflow,
     build_public_navigation_dataflow_report,
@@ -34,6 +39,12 @@ from .operational_model import (
     analyze_relocated_bitmap_atlas,
     build_operational_graph,
     build_public_operational_report,
+)
+from .parser_contract import (
+    compare_parser_constants,
+    correlate_payload_parser_contract,
+    scan_parser_constants,
+    update_operational_graph_v5,
 )
 from .reference_graph import (
     analyze_reference_graph,
@@ -59,6 +70,7 @@ __all__ = [
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
+    "analyze_navigation_payloads",
     "analyze_reference_graph",
     "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
@@ -68,6 +80,7 @@ __all__ = [
     "build_public_navigation_storage_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
+    "build_public_navigation_payload_report",
     "build_public_operational_report",
     "build_public_reference_graph",
     "build_public_resource_bundle",
@@ -75,6 +88,9 @@ __all__ = [
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
+    "compare_parser_constants",
+    "classify_payload_header",
+    "correlate_payload_parser_contract",
     "correlate_firmware_and_media",
     "compare_reference_graphs",
     "crc32_bytes",
@@ -84,6 +100,7 @@ __all__ = [
     "parse_fldb_container",
     "probe_firmware_media_markers",
     "scan_fingerprints",
+    "scan_parser_constants",
     "scan_storage_signatures",
     "shannon_entropy",
     "summarize_code_window",
@@ -92,6 +109,7 @@ __all__ = [
     "update_operational_graph",
     "update_operational_graph_v3",
     "update_operational_graph_v4",
+    "update_operational_graph_v5",
 ]
 
-__version__ = "0.9.0"
+__version__ = "0.10.0"

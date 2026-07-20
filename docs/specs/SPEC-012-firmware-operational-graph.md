@@ -1,8 +1,8 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.4
+- Version: 0.5
 - Maturity: ALPHA
-- Evidence: Sessions 001-011
+- Evidence: Sessions 001-012
 - Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
 
 ## Purpose
@@ -97,6 +97,19 @@ The map-media node is no longer wholly open, but the graph does not connect the
 confirmed FLDB layout to the navigation runtime as confirmed control flow.
 Neither a matching filename nor a fixed FLDB vocabulary was found in the
 principal firmware images under the tested probes.
+
+### Session 012 refinement
+
+Operational graph v5 adds:
+
+- proprietary family headers/directories: `PARTIAL`;
+- a cross-family 16-partition topology: `CONFIRMED_STRUCTURAL_PARTITION_GRAPH`;
+- a declared speech text-index/binary-data split: `CONFIRMED_MEDIA_STRUCTURE`;
+- a cross-version SH `0x220` candidate: `PROBABLE_STATIC_CONSTANT_COUPLING`.
+
+The constant candidate is not promoted to a parser. The partition consumer,
+sector-read ABI, internal backing volume and compatibility with modified map
+data remain open.
 
 ## Rule for derived diagrams
 

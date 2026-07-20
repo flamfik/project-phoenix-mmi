@@ -21,7 +21,8 @@ Progress:
 - Session 009: navigation subsystem presence, VxWorks storage stack and embedded-volume validation - complete;
 - Session 010: navigation-data call-site windows, relocated route-data records and optical-service contract - complete;
 - Session 011: navigation ISO/Joliet topology, FLDB fixed-record containers and conservative firmware/media correlation - complete;
-- remaining M1 work: FLDB inner payload grammars, optical dispatch/sector ABI, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 012: proprietary payload-family structures, cross-family 16-partition topology and bounded firmware parser-constant coupling - complete;
+- remaining M1 work: direct FLDB parser/dataflow, partition consumer, optical dispatch/sector ABI, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 
