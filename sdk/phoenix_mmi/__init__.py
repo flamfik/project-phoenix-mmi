@@ -6,6 +6,14 @@ from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
 from .entropy import EntropyWindow, entropy_profile, shannon_entropy
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .layout import analyze_executable_layout
+from .map_media import (
+    analyze_navigation_media,
+    build_public_navigation_media_report,
+    correlate_firmware_and_media,
+    parse_fldb_container,
+    probe_firmware_media_markers,
+    update_operational_graph_v4,
+)
 from .navigation_dataflow import (
     analyze_navigation_dataflow,
     build_public_navigation_dataflow_report,
@@ -50,6 +58,7 @@ __all__ = [
     "analyze_executable_layout",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
+    "analyze_navigation_media",
     "analyze_reference_graph",
     "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
@@ -58,6 +67,7 @@ __all__ = [
     "build_operational_graph",
     "build_public_navigation_storage_report",
     "build_public_navigation_dataflow_report",
+    "build_public_navigation_media_report",
     "build_public_operational_report",
     "build_public_reference_graph",
     "build_public_resource_bundle",
@@ -65,11 +75,14 @@ __all__ = [
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
+    "correlate_firmware_and_media",
     "compare_reference_graphs",
     "crc32_bytes",
     "decode_instruction",
     "discover_contract_anchors",
     "entropy_profile",
+    "parse_fldb_container",
+    "probe_firmware_media_markers",
     "scan_fingerprints",
     "scan_storage_signatures",
     "shannon_entropy",
@@ -78,6 +91,7 @@ __all__ = [
     "trace_control_flow",
     "update_operational_graph",
     "update_operational_graph_v3",
+    "update_operational_graph_v4",
 ]
 
-__version__ = "0.8.0"
+__version__ = "0.9.0"

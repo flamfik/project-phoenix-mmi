@@ -20,7 +20,8 @@ Progress:
 - Session 008: relocated bitmap-atlas classification and confidence-graded firmware operational model - complete;
 - Session 009: navigation subsystem presence, VxWorks storage stack and embedded-volume validation - complete;
 - Session 010: navigation-data call-site windows, relocated route-data records and optical-service contract - complete;
-- remaining M1 work: map-medium inventory, optical dispatch/sector ABI, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 011: navigation ISO/Joliet topology, FLDB fixed-record containers and conservative firmware/media correlation - complete;
+- remaining M1 work: FLDB inner payload grammars, optical dispatch/sector ABI, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

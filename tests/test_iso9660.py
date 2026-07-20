@@ -39,6 +39,15 @@ def make_iso(path: Path) -> bytes:
     pvd[128:132] = both_u16(SECTOR_SIZE)
     pvd[156 : 156 + 34] = directory_record(b"\x00", 20, SECTOR_SIZE, True)
 
+    svd = memoryview(image)[17 * SECTOR_SIZE : 18 * SECTOR_SIZE]
+    svd[:] = pvd
+    svd[0] = 2
+    svd[88:91] = b"%/E"
+    terminator = memoryview(image)[18 * SECTOR_SIZE : 19 * SECTOR_SIZE]
+    terminator[0] = 255
+    terminator[1:6] = b"CD001"
+    terminator[6] = 1
+
     root = memoryview(image)[20 * SECTOR_SIZE : 21 * SECTOR_SIZE]
     records = (
         directory_record(b"\x00", 20, SECTOR_SIZE, True)
@@ -61,9 +70,20 @@ class ISO9660Tests(unittest.TestCase):
             image = ISO9660Image(iso_path)
 
             self.assertEqual(image.volume_identifier, "TEST_DISC")
+            self.assertEqual(
+                [descriptor.descriptor_type for descriptor in image.descriptors()],
+                [1, 2, 255],
+            )
+            self.assertEqual(image.descriptors()[1].joliet_escape, "%/E")
+            self.assertEqual(image.volume_metadata()["logical_block_size"], SECTOR_SIZE)
             entry = image.find_filename("mmi.bin")
             self.assertEqual(entry.path, "MMI.BIN")
             self.assertEqual(image.find_path("./MMI.BIN"), entry)
+            self.assertEqual(image.read_entry(entry, 6, 5), b"world")
+            self.assertEqual(
+                b"".join(chunk for _, chunk in image.iter_entry_chunks(entry, chunk_size=5)),
+                payload,
+            )
             destination = image.extract(entry, root / "out" / "MMI.BIN")
             self.assertEqual(destination.read_bytes(), payload)
 

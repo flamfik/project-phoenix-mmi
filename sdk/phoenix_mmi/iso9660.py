@@ -28,6 +28,17 @@ class ISOEntry:
     is_directory: bool
 
 
+@dataclass(frozen=True)
+class ISODescriptor:
+    """One validated ECMA-119 volume-descriptor sequence record."""
+
+    sector: int
+    descriptor_type: int
+    identifier: str
+    version: int
+    joliet_escape: str | None = None
+
+
 class ISO9660Image:
     """Walk and extract an explicitly selected ISO 9660 member."""
 
@@ -48,6 +59,64 @@ class ISO9660Image:
             for chunk in iter(lambda: handle.read(1024 * 1024), b""):
                 digest.update(chunk)
         return digest.hexdigest()
+
+    def descriptors(self, *, maximum_sector: int = 255) -> list[ISODescriptor]:
+        """Read the ECMA-119 descriptor sequence without interpreting payloads."""
+
+        if maximum_sector < 16:
+            raise ValueError("maximum_sector must include sector 16")
+        descriptors: list[ISODescriptor] = []
+        with self.path.open("rb") as handle:
+            for sector in range(16, maximum_sector + 1):
+                handle.seek(sector * SECTOR_SIZE)
+                data = handle.read(SECTOR_SIZE)
+                if len(data) != SECTOR_SIZE:
+                    break
+                if data[1:6] != b"CD001":
+                    if descriptors:
+                        break
+                    continue
+                descriptor_type = data[0]
+                joliet_escape = None
+                if descriptor_type == 2 and data[88:91] in (b"%/@", b"%/C", b"%/E"):
+                    joliet_escape = data[88:91].decode("ascii")
+                descriptors.append(
+                    ISODescriptor(
+                        sector=sector,
+                        descriptor_type=descriptor_type,
+                        identifier="CD001",
+                        version=data[6],
+                        joliet_escape=joliet_escape,
+                    )
+                )
+                if descriptor_type == 255:
+                    break
+        return descriptors
+
+    def volume_metadata(self) -> dict[str, object]:
+        """Return validated structural metadata from the primary descriptor."""
+
+        volume_space_size = _both_endian_u32(self._pvd[80:88])
+        logical_block_size = int.from_bytes(self._pvd[128:130], "little")
+        logical_block_size_be = int.from_bytes(self._pvd[130:132], "big")
+        if logical_block_size != logical_block_size_be:
+            raise ValueError("inconsistent ISO both-endian logical block size")
+        path_table_size = _both_endian_u32(self._pvd[132:140])
+        return {
+            "system_identifier": self._pvd[8:40]
+            .decode("ascii", "ignore")
+            .strip(" \x00"),
+            "volume_identifier": self.volume_identifier,
+            "volume_space_size": volume_space_size,
+            "logical_block_size": logical_block_size,
+            "path_table_size": path_table_size,
+            "application_identifier": self._pvd[574:702]
+            .decode("ascii", "ignore")
+            .strip(" \x00"),
+            "creation_time_raw": self._pvd[813:830],
+            "modification_time_raw": self._pvd[830:847],
+            "file_structure_version": self._pvd[881],
+        }
 
     @staticmethod
     def _record(data: bytes, offset: int) -> tuple[ISOEntry | None, int]:
@@ -100,6 +169,38 @@ class ISO9660Image:
 
             walk(root, PurePosixPath("."))
         return entries
+
+    def read_entry(self, entry: ISOEntry, offset: int, length: int) -> bytes:
+        """Read a bounded range from one member without extracting it."""
+
+        if entry.is_directory:
+            raise ValueError("cannot read a directory as a file")
+        if offset < 0 or length < 0 or offset > entry.size:
+            raise ValueError("entry offset and length must be in bounds")
+        with self.path.open("rb") as handle:
+            handle.seek(entry.extent * SECTOR_SIZE + offset)
+            return handle.read(min(length, entry.size - offset))
+
+    def iter_entry_chunks(
+        self, entry: ISOEntry, *, chunk_size: int = 1024 * 1024
+    ):
+        """Yield member-relative offsets and bytes without writing a local copy."""
+
+        if entry.is_directory:
+            raise ValueError("cannot iterate a directory as a file")
+        if chunk_size <= 0:
+            raise ValueError("chunk_size must be positive")
+        remaining = entry.size
+        offset = 0
+        with self.path.open("rb") as handle:
+            handle.seek(entry.extent * SECTOR_SIZE)
+            while remaining:
+                chunk = handle.read(min(chunk_size, remaining))
+                if not chunk:
+                    raise EOFError(f"truncated ISO member at extent {entry.extent}")
+                yield offset, chunk
+                offset += len(chunk)
+                remaining -= len(chunk)
 
     def find_filename(self, filename: str) -> ISOEntry:
         wanted = filename.casefold()

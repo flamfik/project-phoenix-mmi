@@ -1,8 +1,8 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.3
+- Version: 0.4
 - Maturity: ALPHA
-- Evidence: Sessions 001-010
+- Evidence: Sessions 001-011
 - Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
 
 ## Purpose
@@ -81,6 +81,22 @@ The edge from optical-service records to the probable optical-volume reader is
 only `PROBABLE`. The route-record-to-navigation consumer edge and the
 optical-reader-to-map-media edge remain `HYPOTHESIS`. Storage-marker proximity
 for an indirect call target is not sufficient to promote either edge.
+
+### Session 011 refinement
+
+Operational graph v4 adds independently validated media-side layers:
+
+- navigation ISO-9660/Joliet volume: `CONFIRMED_MEDIA_STRUCTURE`;
+- FLDB fixed-record container set: `CONFIRMED_MEDIA_STRUCTURE`;
+- map-media node: `PARTIAL_CONFIRMED_OUTER_FORMAT`;
+- inner FLDB payload schemas and consumer: `OPEN`;
+- firmware optical-reader to ISO-volume relation: `PROBABLE`;
+- image provenance: `UNVERIFIED`.
+
+The map-media node is no longer wholly open, but the graph does not connect the
+confirmed FLDB layout to the navigation runtime as confirmed control flow.
+Neither a matching filename nor a fixed FLDB vocabulary was found in the
+principal firmware images under the tested probes.
 
 ## Rule for derived diagrams
 
