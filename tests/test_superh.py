@@ -5,6 +5,7 @@ import unittest
 from phoenix_mmi.binary import BinaryReader
 from phoenix_mmi.superh import (
     decode_instruction,
+    decode_instruction_extended,
     find_pc_relative_referrers,
     trace_control_flow,
 )
@@ -54,6 +55,28 @@ class SuperHTests(unittest.TestCase):
             reader = BinaryReader(path)
             hits = find_pc_relative_referrers(reader, 0x40)
             self.assertEqual([hit.offset for hit in hits], [0x20])
+
+    def test_probe_dataflow_instruction_families_are_decoded(self):
+        cases = {
+            "2f86": ("mov.l", "r8,@-r15"),
+            "4f22": ("sts.l", "pr,@-r15"),
+            "5291": ("mov.l", "@(4,r9),r2"),
+            "3210": ("cmp/eq", "r1,r2"),
+            "3216": ("cmp/hi", "r1,r2"),
+            "2008": ("tst", "r0,r0"),
+            "2219": ("and", "r1,r2"),
+            "391c": ("add", "r1,r9"),
+            "6ef6": ("mov.l", "@r15+,r14"),
+        }
+        with TemporaryDirectory() as temporary:
+            path = Path(temporary) / "instructions.bin"
+            path.write_bytes(b"".join(bytes.fromhex(word) for word in cases))
+            reader = BinaryReader(path)
+            for ordinal, expected in enumerate(cases.values()):
+                instruction = decode_instruction_extended(reader, ordinal * 2)
+                self.assertEqual(
+                    (instruction.mnemonic, instruction.operands), expected
+                )
 
 
 if __name__ == "__main__":

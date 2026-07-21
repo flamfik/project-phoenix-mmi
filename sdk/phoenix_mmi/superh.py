@@ -136,6 +136,87 @@ def decode_instruction(reader: BinaryReader, offset: int) -> SHInstruction:
     return SHInstruction(offset, "unknown")
 
 
+def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruction:
+    """Decode the documented families required by bounded Session 013 dataflow.
+
+    The legacy decoder remains unchanged so historical report hashes and known
+    ratios stay reproducible.  This opt-in profile extends only instructions
+    with semantics needed by the corrected parser-candidate analysis.
+    """
+
+    instruction = decode_instruction(reader, offset)
+    if instruction.mnemonic != "unknown":
+        return instruction
+    word = int.from_bytes(reader.read(offset, 2), "big")
+    n = (word >> 8) & 0xF
+    m = (word >> 4) & 0xF
+
+    if word & 0xF0FF == 0x4022:
+        return SHInstruction(offset, "sts.l", f"pr,@-r{n}")
+    if word & 0xF0FF == 0x4026:
+        return SHInstruction(offset, "lds.l", f"@r{n}+,pr")
+    if word & 0xF000 == 0x5000:
+        displacement = (word & 0xF) * 4
+        return SHInstruction(offset, "mov.l", f"@({displacement},r{m}),r{n}")
+    if word & 0xF00F == 0x300C:
+        return SHInstruction(offset, "add", f"r{m},r{n}")
+    if word & 0xF00F == 0x3008:
+        return SHInstruction(offset, "sub", f"r{m},r{n}")
+    comparison_names = {
+        0x3000: "cmp/eq",
+        0x3002: "cmp/hs",
+        0x3003: "cmp/ge",
+        0x3006: "cmp/hi",
+        0x3007: "cmp/gt",
+    }
+    comparison_family = word & 0xF00F
+    if comparison_family in comparison_names:
+        return SHInstruction(
+            offset, comparison_names[comparison_family], f"r{m},r{n}"
+        )
+    logic_names = {
+        0x2008: "tst",
+        0x2009: "and",
+        0x200A: "xor",
+        0x200B: "or",
+        0x200C: "cmp/str",
+    }
+    logic_family = word & 0xF00F
+    if logic_family in logic_names:
+        return SHInstruction(offset, logic_names[logic_family], f"r{m},r{n}")
+    if word & 0xFF00 == 0xCB00:
+        return SHInstruction(offset, "or", f"#{word & 0xFF},r0")
+    if word & 0xF0FF == 0x4009:
+        return SHInstruction(offset, "shlr2", f"r{n}")
+    indirect_loads = {
+        0x6000: "mov.b",
+        0x6001: "mov.w",
+        0x6004: "mov.b",
+        0x6005: "mov.w",
+        0x6006: "mov.l",
+    }
+    load_family = word & 0xF00F
+    if load_family in indirect_loads:
+        post_increment = "+" if load_family in {0x6004, 0x6005, 0x6006} else ""
+        return SHInstruction(
+            offset, indirect_loads[load_family], f"@r{m}{post_increment},r{n}"
+        )
+    indirect_stores = {
+        0x2000: "mov.b",
+        0x2001: "mov.w",
+        0x2004: "mov.b",
+        0x2005: "mov.w",
+        0x2006: "mov.l",
+    }
+    store_family = word & 0xF00F
+    if store_family in indirect_stores:
+        pre_decrement = "-" if store_family in {0x2004, 0x2005, 0x2006} else ""
+        return SHInstruction(
+            offset, indirect_stores[store_family], f"r{m},@{pre_decrement}r{n}"
+        )
+    return instruction
+
+
 def trace_control_flow(
     reader: BinaryReader,
     *,

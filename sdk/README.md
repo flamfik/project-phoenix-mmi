@@ -24,6 +24,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `map_media` - ISO-9660/Joliet inventory, fixed-width FLDB record-table validation, aggregate payload profiling and conservative firmware/media correlation without extraction.
 - `map_payload` - bounded proprietary family headers, B/V directories, speech index/data splits, anonymous partition topology and opaque-field model probes.
 - `parser_contract` - one-pass SH parser-constant loads, relocation-normalized cross-version comparison and operational graph v5 correlation.
+- `parser_dataflow` - bounded SH register slicing, expected-value versus pointer discrimination, cross-version probe-block comparison and corrected operational graph v6.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -138,6 +139,16 @@ python tools/session012/analyze_payload_parser_contract.py \
   --public-output research/navigation-media/session012
 ```
 
+## Reproduce Session 013
+
+```shell
+python tools/session013/analyze_fldb_candidate_dataflow.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session013 \
+  --public-output research/navigation-media/session013
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -165,3 +176,9 @@ IDs, sizes, record invariants and anonymous partition counts. It never emits
 names, raw headers, metadata, timestamps, payload bytes or opaque values. The
 parser-constant analyzer treats an exact constant as numeric coupling only;
 without buffer provenance and field-level dataflow it never labels a parser.
+
+The parser-dataflow analyzer is the correction gate for such candidates. It
+follows only documented instructions and supported register writes inside a
+bounded block. Unsupported writes terminate a slice, branch merges are not
+invented, and an attractive numeric match may be explicitly marked
+`DISPROVED` when argument roles contradict the proposed format relation.

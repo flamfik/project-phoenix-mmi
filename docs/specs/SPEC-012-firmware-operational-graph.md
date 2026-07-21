@@ -1,8 +1,8 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.5
+- Version: 0.6
 - Maturity: ALPHA
-- Evidence: Sessions 001-012
+- Evidence: Sessions 001-013
 - Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
 
 ## Purpose
@@ -110,6 +110,19 @@ Operational graph v5 adds:
 The constant candidate is not promoted to a parser. The partition consumer,
 sector-read ABI, internal backing volume and compatibility with modified map
 data remain open.
+
+### Session 013 correction
+
+Operational graph v6 replaces the former probable `0x220` relation with:
+
+- a byte-identical memory-mapped probe structure: `CONFIRMED`;
+- probable boot-memory/hardware semantics: `PROBABLE` semantic property;
+- the former edge from `0x220` to FLDB: `DISPROVED`;
+- an explicit FLDB parser node: `OPEN`;
+- parser-to-navigation and optical-reader-to-parser relations: `HYPOTHESIS`.
+
+The correction prevents a numeric coincidence from silently surviving as a
+runtime edge.
 
 ## Rule for derived diagrams
 

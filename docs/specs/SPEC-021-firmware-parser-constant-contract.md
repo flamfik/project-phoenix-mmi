@@ -1,8 +1,8 @@
 # SPEC-021 - Firmware parser constant contract
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: DRAFT
-- Evidence: Session 012
+- Evidence: Sessions 012-013
 - Related questions: RQ-026, RQ-029, RQ-033, RQ-034
 
 ## Purpose
@@ -19,7 +19,7 @@ only when the complete 32-bit big-endian value equals one of:
 
 | Constant ID | Value | Media meaning | Firmware result |
 |---|---:|---|---|
-| `fldb-directory-offset` | `0x220` | fixed FLDB table offset | PROBABLE code coupling |
+| `fldb-directory-offset` | `0x220` | fixed FLDB table offset | DISPROVED for traced pair |
 | `fldb-record-size` | 36 | fixed FLDB record width | BOUNDED AMBIGUOUS |
 | `logical-sector-size` | 2,048 | ISO logical block/payload alignment | BOUNDED AMBIGUOUS |
 
@@ -27,19 +27,22 @@ only when the complete 32-bit big-endian value equals one of:
 not promote a relation because small constants are common and SH immediates are
 signed.
 
-## Cross-version pairing
+## Cross-version pairing and correction
 
 Windows are paired only when their relocation-normalized decoded instruction
 shape hashes match. For `0x220`, two window pairs have known-instruction ratios
 above 0.5 and both references share one literal-pool word in each release.
 
-This is sufficient for:
+Session 012 correctly established structural pairing and classified numeric
+coupling as probable. Session 013 decoded the entire bounded body and showed
+that `0x220` is passed in `r4` as an expected value while `r5` points to a fixed
+memory-mapped location. `0x204` is passed to the same call at the same pointer.
+The pair is therefore not an FLDB offset consumer.
 
-`PROBABLE_CROSS_VERSION_CODE_COUPLED_CONSTANT`
+Current status: `DISPROVED_FOR_SESSION012_REFERENCE_PAIR`.
 
-It is insufficient for `CONFIRMED_FLDB_PARSER` because no established chain yet
-connects the routine to an optical buffer and validates FLDB field loads,
-36-byte iteration or read-service dispatch.
+The actual parser remains unidentified; no conclusion is made about unrelated
+code elsewhere in the image.
 
 ## Required promotion evidence
 

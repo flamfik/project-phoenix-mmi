@@ -9,6 +9,12 @@
   index/data split, the 16-partition topology and the bounded constant scan.
   Parser semantics, sector ABI and map compatibility remain open.
 
+> **Correction from Session 013:** bounded register dataflow proves that the two
+> `0x220` references described here pass an expected value to a memory-mapped
+> probe call; they do not use it as an FLDB table offset. The historical
+> `PROBABLE` classification below is superseded by
+> `DISPROVED_FOR_SESSION012_REFERENCE_PAIR`. See SPEC-022.
+
 ## Safety gates
 
 The runner verifies the registered map ISO size and SHA-256, both firmware ISO

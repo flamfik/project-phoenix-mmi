@@ -22,7 +22,8 @@ Progress:
 - Session 010: navigation-data call-site windows, relocated route-data records and optical-service contract - complete;
 - Session 011: navigation ISO/Joliet topology, FLDB fixed-record containers and conservative firmware/media correlation - complete;
 - Session 012: proprietary payload-family structures, cross-family 16-partition topology and bounded firmware parser-constant coupling - complete;
-- remaining M1 work: direct FLDB parser/dataflow, partition consumer, optical dispatch/sector ABI, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 013: full bounded dataflow for the former `0x220` candidate, disproof of its FLDB relation and corrected operational graph v6 - complete;
+- remaining M1 work: global multi-signal FLDB parser search, partition consumer, optical dispatch/sector ABI, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

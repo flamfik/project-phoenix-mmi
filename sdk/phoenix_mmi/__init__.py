@@ -46,6 +46,13 @@ from .parser_contract import (
     scan_parser_constants,
     update_operational_graph_v5,
 )
+from .parser_dataflow import (
+    analyze_fldb_candidate_dataflow,
+    build_public_fldb_candidate_report,
+    compare_fldb_candidate_dataflow,
+    correlate_corrected_parser_model,
+    update_operational_graph_v6,
+)
 from .reference_graph import (
     analyze_reference_graph,
     build_public_reference_graph,
@@ -54,7 +61,12 @@ from .reference_graph import (
 from .resource_bundle import analyze_resource_bundle, build_public_resource_bundle
 from .runtime_map import analyze_runtime_map, build_public_runtime_map
 from .segments import CandidateSegment, build_candidate_segments
-from .superh import SHInstruction, decode_instruction, trace_control_flow
+from .superh import (
+    SHInstruction,
+    decode_instruction,
+    decode_instruction_extended,
+    trace_control_flow,
+)
 
 __all__ = [
     "AnalysisConfig",
@@ -67,6 +79,7 @@ __all__ = [
     "SHInstruction",
     "analyze_file",
     "analyze_executable_layout",
+    "analyze_fldb_candidate_dataflow",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
@@ -78,6 +91,7 @@ __all__ = [
     "build_candidate_segments",
     "build_operational_graph",
     "build_public_navigation_storage_report",
+    "build_public_fldb_candidate_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
@@ -89,12 +103,15 @@ __all__ = [
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
     "compare_parser_constants",
+    "compare_fldb_candidate_dataflow",
     "classify_payload_header",
     "correlate_payload_parser_contract",
+    "correlate_corrected_parser_model",
     "correlate_firmware_and_media",
     "compare_reference_graphs",
     "crc32_bytes",
     "decode_instruction",
+    "decode_instruction_extended",
     "discover_contract_anchors",
     "entropy_profile",
     "parse_fldb_container",
@@ -110,6 +127,7 @@ __all__ = [
     "update_operational_graph_v3",
     "update_operational_graph_v4",
     "update_operational_graph_v5",
+    "update_operational_graph_v6",
 ]
 
-__version__ = "0.10.0"
+__version__ = "0.11.0"

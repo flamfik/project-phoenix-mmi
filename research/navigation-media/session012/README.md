@@ -14,3 +14,7 @@ payload-family and firmware constant analyzers:
 No map or firmware bytes, filenames, internal names, raw headers, raw metadata,
 timestamps, opaque values, local paths or extracted resources are included.
 The source ISO remains a local, ignored and provenance-unverified artifact.
+
+Session 013 supersedes the probable FLDB interpretation of the `0x220`
+firmware pair. The Session 012 files remain unchanged as historical evidence;
+the corrected dataflow result is published in `../session013/`.

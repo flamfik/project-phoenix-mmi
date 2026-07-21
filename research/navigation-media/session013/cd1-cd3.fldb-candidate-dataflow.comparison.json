@@ -1,0 +1,33 @@
+{
+  "analysis_mode": "read-only-static-cross-version",
+  "bounded_block": {
+    "call_topology_equal": true,
+    "instruction_bytes_included": false,
+    "left_start": 8984008,
+    "length_equal": true,
+    "normalized_instruction_shape_equal": true,
+    "raw_bytes_identical_by_hash": true,
+    "relocation_delta": -324864,
+    "right_start": 8659144
+  },
+  "classification": {
+    "cross_version_probe_block": "CONFIRMED_BYTE_IDENTICAL_RELOCATED_STRUCTURE",
+    "direct_fldb_parser": "NOT_FOUND_IN_TRACED_CANDIDATE",
+    "former_0x220_fldb_interpretation": "DISPROVED_FOR_SESSION012_REFERENCE_PAIR",
+    "parser_search_elsewhere": "OPEN",
+    "probable_semantics": "PROBABLE_BOOT_MEMORY_OR_HARDWARE_PROBE",
+    "sector_read_abi": "OPEN"
+  },
+  "interpretation": "The two former 0x220 candidates belong to a byte-identical relocated memory-mapped probe block. The value is passed in r4 to a shared call while r5 points 0x1A bytes from a fixed high-address base; 0x204 is an alternative value at the same pointer. It is not used as an FLDB table offset in this block. The actual FLDB parser remains unidentified.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "publication_safety": {
+    "absolute_memory_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.fldb-candidate-dataflow-comparison/v1"
+}
