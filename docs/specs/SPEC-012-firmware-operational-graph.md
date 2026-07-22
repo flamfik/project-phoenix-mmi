@@ -1,9 +1,9 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.7
+- Version: 0.8
 - Maturity: ALPHA
-- Evidence: Sessions 001-014
-- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
+- Evidence: Sessions 001-015
+- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043
 
 ## Purpose
 
@@ -141,6 +141,23 @@ The new `BOUNDED_NEGATIVE` edge records that the tested direct 36-byte loop
 model did not locate the parser. It does not exclude multiplied indexing,
 unrolled iteration, helper-mediated endian conversion or an interprocedural
 consumer elsewhere in the image.
+
+### Session 015 refinement
+
+Operational graph v8 adds the bounded interprocedural search:
+
+- 25 code-gated optical record-pointer seed pairs: `CONFIRMED_BOUNDED`;
+- two unique Session 010 navigation roots: `CONFIRMED_CROSS_VERSION`;
+- 35 node pairs and 20 deduplicated static-call edge pairs:
+  `CONFIRMED_BOUNDED_ANALYSIS`;
+- zero shared cross-domain node pairs and zero direct navigation-to-optical
+  static edges: `BOUNDED_NEGATIVE`;
+- 13 CD1 and 12 CD3 unresolved indirect calls: explicit object-dispatch gap;
+- sector ABI, optical-buffer provenance and buffer owner: `OPEN`.
+
+The negative edge is limited to the registered seeds, depth-two expansion and
+direct/literal-backed call resolver. It does not cover callbacks, event queues,
+vtable targets, computed calls or deeper chains.
 
 ## Rule for derived diagrams
 

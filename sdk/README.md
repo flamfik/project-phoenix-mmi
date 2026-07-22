@@ -26,6 +26,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `parser_contract` - one-pass SH parser-constant loads, relocation-normalized cross-version comparison and operational graph v5 correlation.
 - `parser_dataflow` - bounded SH register slicing, expected-value versus pointer discrimination, cross-version probe-block comparison and corrected operational graph v6.
 - `parser_search` - global role-sensitive 36-byte stride census, backward-loop classification, cross-version pairing, conservative parser promotion gates and operational graph v7 correlation.
+- `optical_callgraph` - code-gated optical record seeds, static SH call resolution, delay-slot-aware argument provenance, bounded cross-version graph expansion and operational graph v8 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -160,6 +161,16 @@ python tools/session014/analyze_global_fldb_parser_search.py \
   --public-output research/navigation-media/session014
 ```
 
+## Reproduce Session 015
+
+```shell
+python tools/session015/analyze_optical_interprocedural_graph.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session015 \
+  --public-output research/navigation-media/session015
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -199,3 +210,9 @@ role. A candidate is not promoted unless record iteration agrees across both
 firmware releases and independent header-access, endian and buffer-provenance
 signals converge. A negative result is explicitly bounded to the decoded
 direct-loop model; it is not proof that no parser exists.
+
+The optical call-graph analyzer treats record pointers as seeds, not function
+claims. It resolves only direct branches and register calls backed by traced
+in-image literals, accounts for call delay slots while tracing `r4`-`r7`, and
+keeps object/vtable dispatch explicit. Depth, node and pairing gates bound every
+negative result; a local return dereference is never labeled a buffer by itself.

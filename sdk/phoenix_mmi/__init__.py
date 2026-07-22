@@ -40,6 +40,15 @@ from .operational_model import (
     build_operational_graph,
     build_public_operational_report,
 )
+from .optical_callgraph import (
+    build_bounded_interprocedural_graph,
+    build_public_optical_callgraph_report,
+    collect_seed_pairs,
+    compare_optical_navigation_callgraph,
+    correlate_optical_sector_model,
+    summarize_bounded_entry,
+    update_operational_graph_v8,
+)
 from .parser_contract import (
     compare_parser_constants,
     correlate_payload_parser_contract,
@@ -97,6 +106,8 @@ __all__ = [
     "analyze_runtime_map",
     "build_candidate_segments",
     "build_operational_graph",
+    "build_bounded_interprocedural_graph",
+    "build_public_optical_callgraph_report",
     "build_public_navigation_storage_report",
     "build_public_fldb_candidate_report",
     "build_public_global_parser_report",
@@ -110,6 +121,7 @@ __all__ = [
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
+    "compare_optical_navigation_callgraph",
     "compare_parser_constants",
     "compare_fldb_candidate_dataflow",
     "compare_global_fldb_parser_search",
@@ -118,8 +130,10 @@ __all__ = [
     "correlate_corrected_parser_model",
     "correlate_global_fldb_parser_search",
     "correlate_firmware_and_media",
+    "correlate_optical_sector_model",
     "compare_reference_graphs",
     "crc32_bytes",
+    "collect_seed_pairs",
     "decode_instruction",
     "decode_instruction_extended",
     "discover_contract_anchors",
@@ -132,6 +146,7 @@ __all__ = [
     "scan_storage_signatures",
     "shannon_entropy",
     "summarize_code_window",
+    "summarize_bounded_entry",
     "summarize_runtime_neighborhood",
     "trace_control_flow",
     "update_operational_graph",
@@ -140,6 +155,7 @@ __all__ = [
     "update_operational_graph_v5",
     "update_operational_graph_v6",
     "update_operational_graph_v7",
+    "update_operational_graph_v8",
 ]
 
-__version__ = "0.12.0"
+__version__ = "0.13.0"

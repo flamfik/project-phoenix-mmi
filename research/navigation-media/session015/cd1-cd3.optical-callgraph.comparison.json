@@ -1,0 +1,1774 @@
+{
+  "analysis_mode": "read-only-static-bounded-interprocedural",
+  "classification": {
+    "cross_domain_shared_node_pair_count": 0,
+    "direct_navigation_to_optical_edge_count": 0,
+    "edge_pair_count": 20,
+    "left_unresolved_indirect_call_count": 13,
+    "navigation_node_pair_count": 4,
+    "node_pair_count": 35,
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "optical_node_pair_count": 31,
+    "paired_argument_constant_counts": [
+      {
+        "edge_count": 3,
+        "left_value": 0,
+        "register": "r5",
+        "right_value": 0
+      },
+      {
+        "edge_count": 1,
+        "left_value": 1,
+        "register": "r5",
+        "right_value": 1
+      },
+      {
+        "edge_count": 3,
+        "left_value": 2,
+        "register": "r5",
+        "right_value": 2
+      },
+      {
+        "edge_count": 1,
+        "left_value": 3,
+        "register": "r5",
+        "right_value": 3
+      }
+    ],
+    "right_unresolved_indirect_call_count": 12,
+    "sector_read_abi": "OPEN",
+    "sector_size_2048_argument_edge_count": 0
+  },
+  "graph": {
+    "analysis_mode": "read-only-static-bounded-interprocedural",
+    "classification": {
+      "cross_domain_shared_node_pair_count": 0,
+      "direct_navigation_to_optical_edge_count": 0,
+      "edge_pair_count": 20,
+      "left_unresolved_indirect_call_count": 13,
+      "navigation_node_pair_count": 4,
+      "node_pair_count": 35,
+      "optical_buffer_owner": "OPEN",
+      "optical_buffer_provenance": "OPEN",
+      "optical_node_pair_count": 31,
+      "paired_argument_constant_counts": [
+        {
+          "edge_count": 3,
+          "left_value": 0,
+          "register": "r5",
+          "right_value": 0
+        },
+        {
+          "edge_count": 1,
+          "left_value": 1,
+          "register": "r5",
+          "right_value": 1
+        },
+        {
+          "edge_count": 3,
+          "left_value": 2,
+          "register": "r5",
+          "right_value": 2
+        },
+        {
+          "edge_count": 1,
+          "left_value": 3,
+          "register": "r5",
+          "right_value": 3
+        }
+      ],
+      "right_unresolved_indirect_call_count": 12,
+      "sector_read_abi": "OPEN",
+      "sector_size_2048_argument_edge_count": 0
+    },
+    "cross_domain_shared_pairs": [],
+    "edges": [
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r6": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455184,
+        "left_callee": 1864264,
+        "left_caller": 1455176,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777700,
+        "right_callee": 2188904,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "NO_DEFINITION",
+            "NO_DEFINITION"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455194,
+        "left_callee": 1864324,
+        "left_caller": 1455176,
+        "paired_argument_constants": {},
+        "result_dereferenced": true,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777710,
+        "right_callee": 2188964,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455238,
+        "left_callee": 1864264,
+        "left_caller": 1455176,
+        "paired_argument_constants": {
+          "r5": [
+            3,
+            3
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777754,
+        "right_callee": 2188904,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455248,
+        "left_callee": 1864324,
+        "left_caller": 1455176,
+        "paired_argument_constants": {
+          "r5": [
+            0,
+            0
+          ]
+        },
+        "result_dereferenced": true,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777764,
+        "right_callee": 2188964,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455288,
+        "left_callee": 1864056,
+        "left_caller": 1455176,
+        "paired_argument_constants": {
+          "r5": [
+            2,
+            2
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777804,
+        "right_callee": 2188696,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455296,
+        "left_callee": 1864056,
+        "left_caller": 1455176,
+        "paired_argument_constants": {
+          "r5": [
+            2,
+            2
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777812,
+        "right_callee": 2188696,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "NO_DEFINITION",
+            "NO_DEFINITION"
+          ],
+          "r5": [
+            "NO_DEFINITION",
+            "NO_DEFINITION"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "navigation",
+        "left_call_site_offset": 1455304,
+        "left_callee": 1860308,
+        "left_caller": 1455176,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1777820,
+        "right_callee": 2184800,
+        "right_caller": 1777692,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "MEMORY_DEREFERENCE",
+            "MEMORY_DEREFERENCE"
+          ],
+          "r5": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r6": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 481456,
+        "left_callee": 505704,
+        "left_caller": 481428,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 468328,
+        "right_callee": 492576,
+        "right_caller": 468300,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "NO_DEFINITION",
+            "NO_DEFINITION"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "NO_DEFINITION",
+            "NO_DEFINITION"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 481470,
+        "left_callee": 486628,
+        "left_caller": 481428,
+        "paired_argument_constants": {
+          "r5": [
+            0,
+            0
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 468342,
+        "right_callee": 473500,
+        "right_caller": 468300,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 481480,
+        "left_callee": 504036,
+        "left_caller": 481428,
+        "paired_argument_constants": {
+          "r5": [
+            0,
+            0
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 468352,
+        "right_callee": 490908,
+        "right_caller": 468300,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "MEMORY_DEREFERENCE",
+            "MEMORY_DEREFERENCE"
+          ],
+          "r5": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r6": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 687806,
+        "left_callee": 822308,
+        "left_caller": 687768,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1011564,
+        "right_callee": 1146276,
+        "right_caller": 1011516,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "UNSUPPORTED_WRITE",
+            "UNSUPPORTED_WRITE"
+          ],
+          "r5": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 929790,
+        "left_callee": 243280,
+        "left_caller": 929692,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 1252652,
+        "right_callee": 2116484,
+        "right_caller": 1252612,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "UNSUPPORTED_WRITE",
+            "UNSUPPORTED_WRITE"
+          ],
+          "r5": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r6": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 1786944,
+        "left_callee": 1788068,
+        "left_caller": 1786932,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2110024,
+        "right_callee": 2111128,
+        "right_caller": 2109992,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "UNSUPPORTED_WRITE",
+            "UNSUPPORTED_WRITE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 1891288,
+        "left_callee": 1820944,
+        "left_caller": 1891264,
+        "paired_argument_constants": {
+          "r5": [
+            1,
+            1
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2216398,
+        "right_callee": 2144384,
+        "right_caller": 2216364,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r5": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 1891306,
+        "left_callee": 1915008,
+        "left_caller": 1891264,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2216416,
+        "right_callee": 2240520,
+        "right_caller": 2216364,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "UNSUPPORTED_WRITE",
+            "UNSUPPORTED_WRITE"
+          ],
+          "r5": [
+            "MEMORY_DEREFERENCE",
+            "MEMORY_DEREFERENCE"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 1891324,
+        "left_callee": 1921760,
+        "left_caller": 1891264,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2216468,
+        "right_callee": 2247328,
+        "right_caller": 2216364,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "UNSUPPORTED_WRITE",
+            "UNSUPPORTED_WRITE"
+          ],
+          "r5": [
+            "MEMORY_DEREFERENCE",
+            "MEMORY_DEREFERENCE"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 1891828,
+        "left_callee": 1925632,
+        "left_caller": 1891768,
+        "paired_argument_constants": {},
+        "result_dereferenced": true,
+        "result_forwarded": false,
+        "right_call_site_offset": 2216958,
+        "right_callee": 2247328,
+        "right_caller": 2216868,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r5": [
+            "UNSUPPORTED_WRITE",
+            "UNSUPPORTED_WRITE"
+          ],
+          "r6": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ],
+          "r7": [
+            "ENTRY_ARGUMENT",
+            "ENTRY_ARGUMENT"
+          ]
+        },
+        "depth": 0,
+        "domain": "optical",
+        "left_call_site_offset": 1917116,
+        "left_callee": 1923224,
+        "left_caller": 1917072,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2242692,
+        "right_callee": 2248792,
+        "right_caller": 2242640,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CONSTANT",
+            "CONSTANT"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 1,
+        "domain": "optical",
+        "left_call_site_offset": 1923272,
+        "left_callee": 1929720,
+        "left_caller": 1923224,
+        "paired_argument_constants": {
+          "r5": [
+            2,
+            2
+          ]
+        },
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2248848,
+        "right_callee": 2255296,
+        "right_caller": 2248792,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      },
+      {
+        "argument_role_classes": {
+          "r4": [
+            "DERIVED_POINTER_OR_VALUE",
+            "DERIVED_POINTER_OR_VALUE"
+          ],
+          "r5": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r6": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ],
+          "r7": [
+            "CALLER_SAVED_CLOBBER",
+            "CALLER_SAVED_CLOBBER"
+          ]
+        },
+        "depth": 1,
+        "domain": "optical",
+        "left_call_site_offset": 1923286,
+        "left_callee": 8062184,
+        "left_caller": 1923224,
+        "paired_argument_constants": {},
+        "result_dereferenced": false,
+        "result_forwarded": false,
+        "right_call_site_offset": 2248862,
+        "right_callee": 574364,
+        "right_caller": 2248792,
+        "sector_size_2048_argument": false,
+        "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+      }
+    ],
+    "limits": {
+      "maximum_depth": 2,
+      "maximum_node_pairs": 128,
+      "object_dispatch_targets_resolved": false,
+      "same_ordinal_and_signature_required": true
+    },
+    "nodes": [
+      {
+        "depth": 0,
+        "domain": "navigation",
+        "function_boundary_asserted": false,
+        "left_call_count": 9,
+        "left_entry_file_offset": 1455176,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 2,
+        "normalized_shape_equal": true,
+        "paired_call_count": 9,
+        "paired_resolved_target_count": 7,
+        "right_call_count": 9,
+        "right_entry_file_offset": 1777692,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 2,
+        "same_signature_call_count": 9,
+        "seed_sources": [
+          "CONFIRMED_SESSION010_CALL_TARGET_PAIR"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "navigation",
+        "function_boundary_asserted": false,
+        "left_call_count": 7,
+        "left_entry_file_offset": 1455220,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 2,
+        "normalized_shape_equal": true,
+        "paired_call_count": 7,
+        "paired_resolved_target_count": 5,
+        "right_call_count": 7,
+        "right_entry_file_offset": 1777736,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 2,
+        "same_signature_call_count": 7,
+        "seed_sources": [
+          "CONFIRMED_SESSION010_CALL_TARGET_PAIR"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "navigation",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1860308,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 2,
+        "right_entry_file_offset": 2184800,
+        "right_known_ratio": 0.958333,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "navigation",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1864056,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2188696,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 3,
+        "left_entry_file_offset": 50756,
+        "left_known_ratio": 0.790698,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 52672,
+        "right_known_ratio": 0.833333,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 2,
+        "left_entry_file_offset": 481120,
+        "left_known_ratio": 0.854839,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 467992,
+        "right_known_ratio": 0.83871,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 3,
+        "left_entry_file_offset": 481428,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": true,
+        "paired_call_count": 3,
+        "paired_resolved_target_count": 3,
+        "right_call_count": 3,
+        "right_entry_file_offset": 468300,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 3,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 2,
+        "left_entry_file_offset": 640720,
+        "left_known_ratio": 0.931034,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 2,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 15,
+        "right_entry_file_offset": 964908,
+        "right_known_ratio": 0.911565,
+        "right_unresolved_indirect_call_count": 1,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 687768,
+        "left_known_ratio": 0.892857,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 1,
+        "right_call_count": 4,
+        "right_entry_file_offset": 1011516,
+        "right_known_ratio": 0.988764,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 1,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 3,
+        "left_entry_file_offset": 815296,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 1,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 1139392,
+        "right_known_ratio": 0.944444,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 7,
+        "left_entry_file_offset": 929108,
+        "left_known_ratio": 0.790476,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 7,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 19,
+        "right_entry_file_offset": 1252028,
+        "right_known_ratio": 0.932292,
+        "right_unresolved_indirect_call_count": 2,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 5,
+        "left_entry_file_offset": 929692,
+        "left_known_ratio": 0.837838,
+        "left_unresolved_indirect_call_count": 2,
+        "normalized_shape_equal": false,
+        "paired_call_count": 4,
+        "paired_resolved_target_count": 1,
+        "right_call_count": 4,
+        "right_entry_file_offset": 1252612,
+        "right_known_ratio": 0.813953,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 1,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 3,
+        "left_entry_file_offset": 930132,
+        "left_known_ratio": 0.803922,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 1253052,
+        "right_known_ratio": 0.923077,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1786932,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 1,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2109992,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 1,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 2,
+        "left_entry_file_offset": 1786960,
+        "left_known_ratio": 0.833333,
+        "left_unresolved_indirect_call_count": 1,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2110020,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 4,
+        "left_entry_file_offset": 1792884,
+        "left_known_ratio": 0.98,
+        "left_unresolved_indirect_call_count": 2,
+        "normalized_shape_equal": false,
+        "paired_call_count": 4,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 9,
+        "right_entry_file_offset": 2115964,
+        "right_known_ratio": 0.767123,
+        "right_unresolved_indirect_call_count": 1,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 2,
+        "left_entry_file_offset": 1806244,
+        "left_known_ratio": 0.9,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2129640,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 2,
+        "left_entry_file_offset": 1813372,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 2,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 4,
+        "right_entry_file_offset": 2136812,
+        "right_known_ratio": 0.9375,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 4,
+        "left_entry_file_offset": 1891232,
+        "left_known_ratio": 0.796875,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 4,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 10,
+        "right_entry_file_offset": 2216328,
+        "right_known_ratio": 0.891473,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 4,
+        "left_entry_file_offset": 1891264,
+        "left_known_ratio": 0.916667,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 4,
+        "paired_resolved_target_count": 3,
+        "right_call_count": 8,
+        "right_entry_file_offset": 2216364,
+        "right_known_ratio": 0.918919,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 3,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 3,
+        "left_entry_file_offset": 1891300,
+        "left_known_ratio": 0.933333,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 3,
+        "paired_resolved_target_count": 2,
+        "right_call_count": 7,
+        "right_entry_file_offset": 2216400,
+        "right_known_ratio": 0.903226,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 2,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 9,
+        "left_entry_file_offset": 1891768,
+        "left_known_ratio": 0.955056,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 5,
+        "paired_resolved_target_count": 1,
+        "right_call_count": 5,
+        "right_entry_file_offset": 2216868,
+        "right_known_ratio": 0.931507,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 1,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 13,
+        "left_entry_file_offset": 1892028,
+        "left_known_ratio": 0.894737,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 10,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 10,
+        "right_entry_file_offset": 2217128,
+        "right_known_ratio": 0.949495,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 11,
+        "left_entry_file_offset": 1892100,
+        "left_known_ratio": 0.917526,
+        "left_unresolved_indirect_call_count": 1,
+        "normalized_shape_equal": false,
+        "paired_call_count": 6,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 6,
+        "right_entry_file_offset": 2217200,
+        "right_known_ratio": 0.936508,
+        "right_unresolved_indirect_call_count": 2,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 8,
+        "left_entry_file_offset": 1892132,
+        "left_known_ratio": 0.91358,
+        "left_unresolved_indirect_call_count": 1,
+        "normalized_shape_equal": false,
+        "paired_call_count": 4,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 4,
+        "right_entry_file_offset": 2217236,
+        "right_known_ratio": 0.933333,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 7,
+        "left_entry_file_offset": 1892168,
+        "left_known_ratio": 0.952381,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 3,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 3,
+        "right_entry_file_offset": 2217272,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 11,
+        "left_entry_file_offset": 1892488,
+        "left_known_ratio": 0.900709,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 3,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 3,
+        "right_entry_file_offset": 2217592,
+        "right_known_ratio": 0.926829,
+        "right_unresolved_indirect_call_count": 1,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1892720,
+        "left_known_ratio": 0.96,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 15,
+        "right_entry_file_offset": 2217824,
+        "right_known_ratio": 0.91411,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 0,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1917072,
+        "left_known_ratio": 0.863636,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 1,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2242640,
+        "right_known_ratio": 0.875,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 1,
+        "seed_sources": [
+          "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 2,
+        "left_entry_file_offset": 243280,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2116484,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 9,
+        "left_entry_file_offset": 505704,
+        "left_known_ratio": 0.982456,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 492576,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1788068,
+        "left_known_ratio": 0.837838,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 1,
+        "right_entry_file_offset": 2111128,
+        "right_known_ratio": 0.823529,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 1,
+        "left_entry_file_offset": 1915008,
+        "left_known_ratio": 0.924528,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 1,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 2,
+        "right_entry_file_offset": 2240520,
+        "right_known_ratio": 0.9375,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 4,
+        "left_entry_file_offset": 1921760,
+        "left_known_ratio": 1.0,
+        "left_unresolved_indirect_call_count": 0,
+        "normalized_shape_equal": false,
+        "paired_call_count": 4,
+        "paired_resolved_target_count": 0,
+        "right_call_count": 5,
+        "right_entry_file_offset": 2247328,
+        "right_known_ratio": 1.0,
+        "right_unresolved_indirect_call_count": 0,
+        "same_signature_call_count": 0,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      },
+      {
+        "depth": 1,
+        "domain": "optical",
+        "function_boundary_asserted": false,
+        "left_call_count": 3,
+        "left_entry_file_offset": 1923224,
+        "left_known_ratio": 0.911111,
+        "left_unresolved_indirect_call_count": 1,
+        "normalized_shape_equal": false,
+        "paired_call_count": 3,
+        "paired_resolved_target_count": 2,
+        "right_call_count": 3,
+        "right_entry_file_offset": 2248792,
+        "right_known_ratio": 0.877551,
+        "right_unresolved_indirect_call_count": 1,
+        "same_signature_call_count": 2,
+        "seed_sources": [
+          "PAIRED_RESOLVED_STATIC_CALL"
+        ]
+      }
+    ],
+    "publication_safety": {
+      "absolute_runtime_addresses_included": false,
+      "firmware_bytes_included": false,
+      "instruction_bytes_included": false,
+      "local_paths_included": false,
+      "map_payload_included": false,
+      "raw_strings_included": false
+    },
+    "schema": "phoenix-mmi.bounded-optical-callgraph/v1"
+  },
+  "interpretation": "The bounded graph includes only cross-version record-pointer seeds and same-ordinal static calls with equal argument/result signatures. It does not resolve object dispatch. A sector ABI or optical buffer owner is promoted only when independent argument and provenance evidence converges.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "navigation_seed_pairs": [
+    {
+      "classification": "CONFIRMED_SESSION010_CALL_TARGET_PAIR",
+      "left_entry_file_offset": 1455176,
+      "occurrence_count": 2,
+      "right_entry_file_offset": 1777692
+    },
+    {
+      "classification": "CONFIRMED_SESSION010_CALL_TARGET_PAIR",
+      "left_entry_file_offset": 1455220,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 1777736
+    }
+  ],
+  "optical_seed_pairs": [
+    {
+      "anchor_ids": [
+        "cdrom-manager"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 50756,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 52672
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-event",
+        "cdrom-access-thread-dispatcher"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 481120,
+      "occurrence_count": 2,
+      "right_entry_file_offset": 467992
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-event",
+        "cdrom-access-thread-dispatcher"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 481428,
+      "occurrence_count": 2,
+      "right_entry_file_offset": 468300
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 640720,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 964908
+    },
+    {
+      "anchor_ids": [
+        "cdrom-thread-dispatcher"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 687768,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 1011516
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-thread-dispatcher"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 815296,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 1139392
+    },
+    {
+      "anchor_ids": [
+        "cdrom-manager-task"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 929108,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 1252028
+    },
+    {
+      "anchor_ids": [
+        "cdrom-manager-task"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 929692,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 1252612
+    },
+    {
+      "anchor_ids": [
+        "cdrom-manager-task"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 930132,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 1253052
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-thread-dispatcher",
+        "cdrom-manager-task"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1786932,
+      "occurrence_count": 2,
+      "right_entry_file_offset": 2109992
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-thread-dispatcher",
+        "cdrom-manager-task"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1786960,
+      "occurrence_count": 2,
+      "right_entry_file_offset": 2110020
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-thread-dispatcher"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1792884,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2115964
+    },
+    {
+      "anchor_ids": [
+        "cdrom-access-event",
+        "cdrom-command-event",
+        "cdrom-event",
+        "cdrom-filesystem-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1806244,
+      "occurrence_count": 4,
+      "right_entry_file_offset": 2129640
+    },
+    {
+      "anchor_ids": [
+        "cdrom-thread-dispatcher"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1813372,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2136812
+    },
+    {
+      "anchor_ids": [
+        "cdrom-command-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1891232,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2216328
+    },
+    {
+      "anchor_ids": [
+        "cdrom-command-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1891264,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2216364
+    },
+    {
+      "anchor_ids": [
+        "cdrom-command-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1891300,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2216400
+    },
+    {
+      "anchor_ids": [
+        "cdrom-command-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1891768,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2216868
+    },
+    {
+      "anchor_ids": [
+        "cdrom-command-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1892028,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2217128
+    },
+    {
+      "anchor_ids": [
+        "cdrom-filesystem-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1892100,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2217200
+    },
+    {
+      "anchor_ids": [
+        "cdrom-filesystem-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1892132,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2217236
+    },
+    {
+      "anchor_ids": [
+        "cdrom-filesystem-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1892168,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2217272
+    },
+    {
+      "anchor_ids": [
+        "cdrom-filesystem-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1892488,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2217592
+    },
+    {
+      "anchor_ids": [
+        "cdrom-filesystem-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1892720,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2217824
+    },
+    {
+      "anchor_ids": [
+        "cdrom-event"
+      ],
+      "classification": "CONFIRMED_RECORD_POINTER_PAIRED_BOUNDED_CODE",
+      "left_entry_file_offset": 1917072,
+      "occurrence_count": 1,
+      "right_entry_file_offset": 2242640
+    }
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.optical-navigation-callgraph-comparison/v1",
+  "seed_census": {
+    "navigation_rejected_shape_unequal_target_count": 3,
+    "navigation_unique_shape_equal_target_pair_count": 2,
+    "optical_bounded_code_seed_pair_count": 25,
+    "optical_paired_pointer_slot_count": 102,
+    "optical_rejected_non_code_or_weak_pair_count": 44,
+    "optical_unique_pointer_pair_count": 69
+  }
+}

@@ -24,7 +24,8 @@ Progress:
 - Session 012: proprietary payload-family structures, cross-family 16-partition topology and bounded firmware parser-constant coupling - complete;
 - Session 013: full bounded dataflow for the former `0x220` candidate, disproof of its FLDB relation and corrected operational graph v6 - complete;
 - Session 014: global role-sensitive 36-byte loop search, cross-version candidate pairing, bounded negative parser result and operational graph v7 - complete;
-- remaining M1 work: interprocedural FLDB parser search, partition consumer, optical dispatch/sector ABI, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 015: code-gated optical record seeds, depth-two cross-version call graph, delay-slot-aware argument roles and operational graph v8 - complete;
+- remaining M1 work: object/event dispatch resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 
