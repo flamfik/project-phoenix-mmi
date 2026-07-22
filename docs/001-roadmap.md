@@ -27,7 +27,8 @@ Progress:
 - Session 015: code-gated optical record seeds, depth-two cross-version call graph, delay-slot-aware argument roles and operational graph v8 - complete;
 - Session 016: bounded predecessor-context recovery, paired literal call targets, dynamic descriptor structure and operational graph v9 - complete;
 - Session 017: paired descriptor-producer calls, cross-version field-12 accessor family, code-gated initializer census and operational graph v10 - complete;
-- remaining M1 work: bilateral producer/accessor edge, event/callback registration resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 018: accessor call-family convergence, five-record CD1 zero-tail slot, bounded negative callback/graph intersection and operational graph v11 - complete;
+- remaining M1 work: runtime writer/loader for the CD1 zero-tail slot, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

@@ -29,6 +29,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `optical_callgraph` - code-gated optical record seeds, static SH call resolution, delay-slot-aware argument provenance, bounded cross-version graph expansion and operational graph v8 correlation.
 - `object_dispatch` - bounded predecessor-context recovery, symbolic call-return and descriptor paths, conservative dynamic-dispatch comparison and operational graph v9 correlation.
 - `descriptor_lineage` - nearest-producer tracing, exact field-12 accessor clustering, optical-target-aware static descriptor census, mixed-width initializer gates and operational graph v10 correlation.
+- `accessor_dispatch` - literal-backed accessor call-family pairing, normalized context consensus, zero-tail runtime-slot detection, direct callback gates and operational graph v11 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -193,6 +194,16 @@ python tools/session017/analyze_descriptor_lineage.py \
   --public-output research/navigation-media/session017
 ```
 
+## Reproduce Session 018
+
+```shell
+python tools/session018/analyze_accessor_dispatch.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session018 \
+  --public-output research/navigation-media/session018
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -252,3 +263,10 @@ accessor shape, a static record and a mixed-width initializer as separate
 evidence classes. A cross-version accessor cluster does not close a producer
 edge, and a raw `+8`/`+12` store pair is never called an initializer unless its
 bounded executable context passes the independent code gate.
+
+The accessor-dispatch analyzer treats raw adjacent PC-relative load/JSR forms
+as a census, not as code proof. Cross-version call-family promotion requires a
+fixed 16-word context, a minimum unique-match count and dominant-target
+consensus. A pointer-plus-zero record run remains structural; runtime patch,
+linkage, trampoline and callback semantics require an independently identified
+writer, loader or runtime observation.

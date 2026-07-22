@@ -1,9 +1,9 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.10
+- Version: 0.11
 - Maturity: ALPHA
-- Evidence: Sessions 001-017
-- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043, RQ-044, RQ-045, RQ-046, RQ-047, RQ-048, RQ-049
+- Evidence: Sessions 001-018
+- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043, RQ-044, RQ-045, RQ-046, RQ-047, RQ-048, RQ-049, RQ-050, RQ-051, RQ-052
 
 ## Purpose
 
@@ -202,6 +202,27 @@ Operational graph v10 adds producer and field-lineage evidence:
 The new node records a bounded analysis, not a runtime object identity. The
 missing CD1 edge prevents promotion from accessor-family equivalence to a
 cross-version producer lineage.
+
+### Session 018 refinement
+
+Operational graph v11 adds accessor call-family and runtime-slot evidence:
+
+- 288 direct CD3 accessor calls and zero direct calls to the paired CD1
+  accessor: `CONFIRMED_LITERAL_BACKED_ACCESSOR_CALL_FAMILY`;
+- 179 unique normalized context matches and 266/288 single-target-consensus
+  contexts: `CONFIRMED_BOUNDED_TARGET_CONVERGENCE`;
+- one unique five-record CD1 `pointer + 12 zero` run containing the dominant
+  target: `CONFIRMED_ZERO_TAIL_RUNTIME_POINTER_RECORD_RUN`;
+- runtime patch, linkage and trampoline semantics: `HYPOTHESIS`;
+- zero data-only target occurrences and zero direct static callback records:
+  `BOUNDED_NEGATIVE`;
+- zero intersections with the same pair among 35 registered graph nodes:
+  `BOUNDED_NEGATIVE`;
+- specific producer edge, optical relation, sector ABI, buffer provenance/
+  owner, FLDB parser and partition consumer: `OPEN`.
+
+The convergent CD1 address is not treated as static executable code. The graph
+records a call-family transition and structural slot, not runtime equivalence.
 
 ## Rule for derived diagrams
 

@@ -1,6 +1,12 @@
 """Phoenix MMI read-only firmware research SDK."""
 
 from .analysis import AnalysisConfig, analyze_file, compare_reports
+from .accessor_dispatch import (
+    analyze_accessor_dispatch,
+    build_public_accessor_dispatch_report,
+    correlate_accessor_dispatch,
+    update_operational_graph_v11,
+)
 from .binary import BinaryReader
 from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
 from .descriptor_lineage import (
@@ -108,6 +114,7 @@ __all__ = [
     "FingerprintHit",
     "SHInstruction",
     "analyze_file",
+    "analyze_accessor_dispatch",
     "analyze_descriptor_lineage",
     "analyze_executable_layout",
     "analyze_fldb_candidate_dataflow",
@@ -121,6 +128,7 @@ __all__ = [
     "analyze_resource_bundle",
     "analyze_runtime_map",
     "build_candidate_segments",
+    "build_public_accessor_dispatch_report",
     "build_operational_graph",
     "build_bounded_interprocedural_graph",
     "build_public_optical_callgraph_report",
@@ -145,6 +153,7 @@ __all__ = [
     "compare_global_fldb_parser_search",
     "classify_payload_header",
     "correlate_payload_parser_contract",
+    "correlate_accessor_dispatch",
     "correlate_corrected_parser_model",
     "correlate_descriptor_lineage",
     "correlate_global_fldb_parser_search",
@@ -180,6 +189,7 @@ __all__ = [
     "update_operational_graph_v8",
     "update_operational_graph_v9",
     "update_operational_graph_v10",
+    "update_operational_graph_v11",
 ]
 
-__version__ = "0.15.0"
+__version__ = "0.16.0"
