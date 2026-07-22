@@ -137,7 +137,7 @@ def decode_instruction(reader: BinaryReader, offset: int) -> SHInstruction:
 
 
 def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruction:
-    """Decode the documented families required by bounded Session 013 dataflow.
+    """Decode documented families required by bounded register/dataflow work.
 
     The legacy decoder remains unchanged so historical report hashes and known
     ratios stay reproducible.  This opt-in profile extends only instructions
@@ -158,6 +158,9 @@ def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruct
     if word & 0xF000 == 0x5000:
         displacement = (word & 0xF) * 4
         return SHInstruction(offset, "mov.l", f"@({displacement},r{m}),r{n}")
+    if word & 0xF000 == 0x1000:
+        displacement = (word & 0xF) * 4
+        return SHInstruction(offset, "mov.l", f"r{m},@({displacement},r{n})")
     if word & 0xF00F == 0x300C:
         return SHInstruction(offset, "add", f"r{m},r{n}")
     if word & 0xF00F == 0x3008:
@@ -186,6 +189,14 @@ def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruct
         return SHInstruction(offset, logic_names[logic_family], f"r{m},r{n}")
     if word & 0xFF00 == 0xCB00:
         return SHInstruction(offset, "or", f"#{word & 0xFF},r0")
+    endian_names = {
+        0x6008: "swap.b",
+        0x6009: "swap.w",
+        0x200D: "xtrct",
+    }
+    endian_family = word & 0xF00F
+    if endian_family in endian_names:
+        return SHInstruction(offset, endian_names[endian_family], f"r{m},r{n}")
     if word & 0xF0FF == 0x4009:
         return SHInstruction(offset, "shlr2", f"r{n}")
     indirect_loads = {

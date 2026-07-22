@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 012 confirmed proprietary payload-family structures and a 16-partition topology. Session 013 then corrected a false positive: the relocation-stable SH `0x220` pair belongs to a memory-mapped probe block, not an FLDB offset consumer. The actual parser, optical dispatch, sector ABI, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 013 corrected a false positive: the relocation-stable SH `0x220` pair belongs to a memory-mapped probe block, not an FLDB offset consumer. Session 014 then performed a global role-sensitive search for 36-byte record loops. Seven cross-version pairs were confirmed, but none met the independent parser-promotion gate. The actual parser, optical dispatch, sector ABI, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -46,6 +46,7 @@ ui/            Future interface and resource research
 - [Session 011 report](docs/sessions/SESSION-011-navigation-media-fldb.md)
 - [Session 012 report](docs/sessions/SESSION-012-payload-partitions-parser-constants.md)
 - [Session 013 report](docs/sessions/SESSION-013-corrected-fldb-parser-dataflow.md)
+- [Session 014 report](docs/sessions/SESSION-014-global-fldb-parser-search.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -56,6 +57,7 @@ ui/            Future interface and resource research
 - [Session 011 publication-safe evidence](research/navigation-media/session011/)
 - [Session 012 publication-safe evidence](research/navigation-media/session012/)
 - [Session 013 publication-safe evidence](research/navigation-media/session013/)
+- [Session 014 publication-safe evidence](research/navigation-media/session014/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

@@ -1,8 +1,8 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.6
+- Version: 0.7
 - Maturity: ALPHA
-- Evidence: Sessions 001-013
+- Evidence: Sessions 001-014
 - Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023
 
 ## Purpose
@@ -18,6 +18,7 @@ The operational graph is a machine-readable synthesis of verified structures, pr
 | `PARTIAL` | A structure is mapped but its full role is unknown. |
 | `HYPOTHESIS` | A plausible relation has no direct chain yet. |
 | `OPEN` | The boundary has not been mapped. |
+| `BOUNDED_NEGATIVE` | A documented search model produced no candidate; alternatives outside that model remain open. |
 
 Semantic status may be separate from structural status. The bitmap atlas is the reference case: its structure is confirmed while glyph semantics remain probable.
 
@@ -123,6 +124,23 @@ Operational graph v6 replaces the former probable `0x220` relation with:
 
 The correction prevents a numeric coincidence from silently surviving as a
 runtime edge.
+
+### Session 014 refinement
+
+Operational graph v7 adds a role-sensitive global search result without
+inventing a parser edge:
+
+- seven relocation-normalized 36-byte loop pairs: `CONFIRMED` structure;
+- one byte-identical write-only fixed-record initializer: `CONFIRMED_BOUNDED`;
+- six generic arithmetic loops: `CONFIRMED_BOUNDED`;
+- one navigation-adjacent numeric pair rejected because `36` is a call-field
+  offset while the actual loops step by `40`: `BOUNDED_NEGATIVE`;
+- FLDB parser, optical-sector ABI and optical-buffer provenance: `OPEN`.
+
+The new `BOUNDED_NEGATIVE` edge records that the tested direct 36-byte loop
+model did not locate the parser. It does not exclude multiplied indexing,
+unrolled iteration, helper-mediated endian conversion or an interprocedural
+consumer elsewhere in the image.
 
 ## Rule for derived diagrams
 

@@ -61,11 +61,15 @@ class SuperHTests(unittest.TestCase):
             "2f86": ("mov.l", "r8,@-r15"),
             "4f22": ("sts.l", "pr,@-r15"),
             "5291": ("mov.l", "@(4,r9),r2"),
+            "1015": ("mov.l", "r1,@(20,r0)"),
             "3210": ("cmp/eq", "r1,r2"),
             "3216": ("cmp/hi", "r1,r2"),
             "2008": ("tst", "r0,r0"),
             "2219": ("and", "r1,r2"),
             "391c": ("add", "r1,r9"),
+            "6108": ("swap.b", "r0,r1"),
+            "6019": ("swap.w", "r1,r0"),
+            "210d": ("xtrct", "r0,r1"),
             "6ef6": ("mov.l", "@r15+,r14"),
         }
         with TemporaryDirectory() as temporary:

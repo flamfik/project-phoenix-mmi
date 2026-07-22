@@ -25,6 +25,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `map_payload` - bounded proprietary family headers, B/V directories, speech index/data splits, anonymous partition topology and opaque-field model probes.
 - `parser_contract` - one-pass SH parser-constant loads, relocation-normalized cross-version comparison and operational graph v5 correlation.
 - `parser_dataflow` - bounded SH register slicing, expected-value versus pointer discrimination, cross-version probe-block comparison and corrected operational graph v6.
+- `parser_search` - global role-sensitive 36-byte stride census, backward-loop classification, cross-version pairing, conservative parser promotion gates and operational graph v7 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -149,6 +150,16 @@ python tools/session013/analyze_fldb_candidate_dataflow.py \
   --public-output research/navigation-media/session013
 ```
 
+## Reproduce Session 014
+
+```shell
+python tools/session014/analyze_global_fldb_parser_search.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session014 \
+  --public-output research/navigation-media/session014
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -182,3 +193,9 @@ follows only documented instructions and supported register writes inside a
 bounded block. Unsupported writes terminate a slice, branch merges are not
 invented, and an attractive numeric match may be explicitly marked
 `DISPROVED` when argument roles contradict the proposed format relation.
+
+The global parser-search analyzer separates numeric occurrence from operand
+role. A candidate is not promoted unless record iteration agrees across both
+firmware releases and independent header-access, endian and buffer-provenance
+signals converge. A negative result is explicitly bounded to the decoded
+direct-loop model; it is not proof that no parser exists.

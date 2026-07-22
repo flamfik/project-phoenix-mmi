@@ -1,6 +1,6 @@
 # Research Questions
 
-| ID | Question | Status after Session 011 | Evidence / target |
+| ID | Question | Current status | Evidence / target |
 |---|---|---|---|
 | RQ-001 | Does the principal BIN have a vendor container header? | CLOSED | Offset zero is executable SH-3 control flow, not a separate container header. SPEC-001, SPEC-005. |
 | RQ-002 | One ELF, several executables or a flat image? | PARTIAL | A flat SH-3/VxWorks executable start is CONFIRMED; later internal module boundaries remain open. SPEC-001, SPEC-005. |
@@ -37,8 +37,10 @@
 | RQ-033 | Does the Session 012 firmware pair couple to the fixed FLDB directory offset? | CLOSED, DISPROVED | Full bounded dataflow shows `0x220` passed as an expected value to a memory-mapped probe call, with `0x204` as an alternative at the same pointer. It is not used as an offset or pointer. SPEC-021, SPEC-022. |
 | RQ-034 | Which firmware routine selects and consumes the 16 partitions? | OPEN | No direct edge connects XAC/B/V partition IDs to navigation-runtime control flow. SPEC-020, SPEC-021. |
 | RQ-035 | What is the speech payload grammar and consumer? | PARTIAL | A declared text-index/binary-data split and in-bounds numeric references are confirmed across eight payloads. Encoding, vocabulary semantics and firmware consumer remain open. SPEC-019. |
-| RQ-036 | Where is the actual FLDB parser? | OPEN | The former `0x220` candidate is rejected. A global multi-signal search must combine buffer provenance, header-field access, endian handling and record iteration. SPEC-022. |
-| RQ-037 | What is the optical sector-read ABI feeding map data? | OPEN | No call chain connects a verified optical buffer to FLDB validation or navigation consumption. SPEC-016, SPEC-022. |
+| RQ-036 | Where is the actual FLDB parser? | OPEN | The former `0x220` candidate is rejected. Session 014 found no cross-version 36-byte loop satisfying the parser promotion gate; other iteration forms and interprocedural consumers remain open. SPEC-022, SPEC-023. |
+| RQ-037 | What is the optical sector-read ABI feeding map data? | OPEN | No call chain connects a verified optical buffer to FLDB validation or navigation consumption. Session 014 found no optical-buffer provenance in the tested 36-byte loop candidates. SPEC-016, SPEC-022, SPEC-023. |
 | RQ-038 | What does the corrected memory-mapped probe block test? | PARTIAL | Its identical structure, high non-image base, six shared calls and seven mixed-bit patterns are confirmed. Boot memory/hardware probe semantics remain probable, not component-specific. SPEC-022. |
+| RQ-039 | Do cross-version 36-byte loops implement FLDB record iteration? | CLOSED, BOUNDED NEGATIVE | Seven relocation-normalized loop pairs were found. One is a byte-identical write-only initializer and six are generic arithmetic loops; none combines stride, header access, endian evidence and optical-buffer provenance. SPEC-023. |
+| RQ-040 | Where are FLDB endian conversion and optical-buffer provenance established? | OPEN | No validated endian operation or buffer-source chain occurs in the promoted Session 014 candidate set. A bounded interprocedural call graph is required. SPEC-023. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

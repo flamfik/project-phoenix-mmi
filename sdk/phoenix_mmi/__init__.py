@@ -53,6 +53,13 @@ from .parser_dataflow import (
     correlate_corrected_parser_model,
     update_operational_graph_v6,
 )
+from .parser_search import (
+    build_public_global_parser_report,
+    compare_global_fldb_parser_search,
+    correlate_global_fldb_parser_search,
+    scan_global_fldb_parser_candidates,
+    update_operational_graph_v7,
+)
 from .reference_graph import (
     analyze_reference_graph,
     build_public_reference_graph,
@@ -92,6 +99,7 @@ __all__ = [
     "build_operational_graph",
     "build_public_navigation_storage_report",
     "build_public_fldb_candidate_report",
+    "build_public_global_parser_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
@@ -104,9 +112,11 @@ __all__ = [
     "compare_navigation_dataflow",
     "compare_parser_constants",
     "compare_fldb_candidate_dataflow",
+    "compare_global_fldb_parser_search",
     "classify_payload_header",
     "correlate_payload_parser_contract",
     "correlate_corrected_parser_model",
+    "correlate_global_fldb_parser_search",
     "correlate_firmware_and_media",
     "compare_reference_graphs",
     "crc32_bytes",
@@ -118,6 +128,7 @@ __all__ = [
     "probe_firmware_media_markers",
     "scan_fingerprints",
     "scan_parser_constants",
+    "scan_global_fldb_parser_candidates",
     "scan_storage_signatures",
     "shannon_entropy",
     "summarize_code_window",
@@ -128,6 +139,7 @@ __all__ = [
     "update_operational_graph_v4",
     "update_operational_graph_v5",
     "update_operational_graph_v6",
+    "update_operational_graph_v7",
 ]
 
-__version__ = "0.11.0"
+__version__ = "0.12.0"
