@@ -27,6 +27,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `parser_dataflow` - bounded SH register slicing, expected-value versus pointer discrimination, cross-version probe-block comparison and corrected operational graph v6.
 - `parser_search` - global role-sensitive 36-byte stride census, backward-loop classification, cross-version pairing, conservative parser promotion gates and operational graph v7 correlation.
 - `optical_callgraph` - code-gated optical record seeds, static SH call resolution, delay-slot-aware argument provenance, bounded cross-version graph expansion and operational graph v8 correlation.
+- `object_dispatch` - bounded predecessor-context recovery, symbolic call-return and descriptor paths, conservative dynamic-dispatch comparison and operational graph v9 correlation.
+- `descriptor_lineage` - nearest-producer tracing, exact field-12 accessor clustering, optical-target-aware static descriptor census, mixed-width initializer gates and operational graph v10 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -181,6 +183,16 @@ python tools/session016/analyze_object_dispatch_context.py \
   --public-output research/navigation-media/session016
 ```
 
+## Reproduce Session 017
+
+```shell
+python tools/session017/analyze_descriptor_lineage.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session017 \
+  --public-output research/navigation-media/session017
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -234,3 +246,9 @@ bounded-code gate passes in both releases. Dynamic load paths are reported as
 structure with explicit `CALL_RETURN`, field-width, displacement and selector
 evidence; they are never named vtables or methods without an independently
 resolved target and producer lineage.
+
+The descriptor-lineage analyzer treats a nearest producer call, a field-12
+accessor shape, a static record and a mixed-width initializer as separate
+evidence classes. A cross-version accessor cluster does not close a producer
+edge, and a raw `+8`/`+12` store pair is never called an initializer unless its
+bounded executable context passes the independent code gate.

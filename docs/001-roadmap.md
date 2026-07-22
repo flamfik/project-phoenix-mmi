@@ -26,7 +26,8 @@ Progress:
 - Session 014: global role-sensitive 36-byte loop search, cross-version candidate pairing, bounded negative parser result and operational graph v7 - complete;
 - Session 015: code-gated optical record seeds, depth-two cross-version call graph, delay-slot-aware argument roles and operational graph v8 - complete;
 - Session 016: bounded predecessor-context recovery, paired literal call targets, dynamic descriptor structure and operational graph v9 - complete;
-- remaining M1 work: descriptor producer/initialization lineage, event dispatch target resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 017: paired descriptor-producer calls, cross-version field-12 accessor family, code-gated initializer census and operational graph v10 - complete;
+- remaining M1 work: bilateral producer/accessor edge, event/callback registration resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

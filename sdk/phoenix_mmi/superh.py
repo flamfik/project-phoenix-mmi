@@ -161,6 +161,18 @@ def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruct
     if word & 0xF000 == 0x1000:
         displacement = (word & 0xF) * 4
         return SHInstruction(offset, "mov.l", f"r{m},@({displacement},r{n})")
+    if word & 0xF00F == 0x8000:
+        displacement = ((word >> 4) & 0xF)
+        return SHInstruction(offset, "mov.b", f"r0,@({displacement},r{n})")
+    if word & 0xF00F == 0x8001:
+        displacement = ((word >> 4) & 0xF) * 2
+        return SHInstruction(offset, "mov.w", f"r0,@({displacement},r{n})")
+    if word & 0xF00F == 0x8004:
+        displacement = ((word >> 4) & 0xF)
+        return SHInstruction(offset, "mov.b", f"@({displacement},r{n}),r0")
+    if word & 0xF00F == 0x8005:
+        displacement = ((word >> 4) & 0xF) * 2
+        return SHInstruction(offset, "mov.w", f"@({displacement},r{n}),r0")
     if word & 0xF00F == 0x300C:
         return SHInstruction(offset, "add", f"r{m},r{n}")
     if word & 0xF00F == 0x3008:

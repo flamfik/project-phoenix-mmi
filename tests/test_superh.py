@@ -71,6 +71,8 @@ class SuperHTests(unittest.TestCase):
             "6019": ("swap.w", "r1,r0"),
             "210d": ("xtrct", "r0,r1"),
             "6ef6": ("mov.l", "@r15+,r14"),
+            "8141": ("mov.w", "r0,@(8,r1)"),
+            "8145": ("mov.w", "@(8,r1),r0"),
         }
         with TemporaryDirectory() as temporary:
             path = Path(temporary) / "instructions.bin"

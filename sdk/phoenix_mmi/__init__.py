@@ -3,6 +3,13 @@
 from .analysis import AnalysisConfig, analyze_file, compare_reports
 from .binary import BinaryReader
 from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
+from .descriptor_lineage import (
+    analyze_descriptor_lineage,
+    build_public_descriptor_lineage_report,
+    correlate_descriptor_lineage,
+    trace_dispatch_producer,
+    update_operational_graph_v10,
+)
 from .entropy import EntropyWindow, entropy_profile, shannon_entropy
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .layout import analyze_executable_layout
@@ -101,6 +108,7 @@ __all__ = [
     "FingerprintHit",
     "SHInstruction",
     "analyze_file",
+    "analyze_descriptor_lineage",
     "analyze_executable_layout",
     "analyze_fldb_candidate_dataflow",
     "analyze_navigation_storage_boundary",
@@ -118,6 +126,7 @@ __all__ = [
     "build_public_optical_callgraph_report",
     "build_public_navigation_storage_report",
     "build_public_fldb_candidate_report",
+    "build_public_descriptor_lineage_report",
     "build_public_global_parser_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
@@ -137,6 +146,7 @@ __all__ = [
     "classify_payload_header",
     "correlate_payload_parser_contract",
     "correlate_corrected_parser_model",
+    "correlate_descriptor_lineage",
     "correlate_global_fldb_parser_search",
     "correlate_firmware_and_media",
     "correlate_optical_sector_model",
@@ -160,6 +170,7 @@ __all__ = [
     "summarize_contextual_dispatch_calls",
     "summarize_runtime_neighborhood",
     "trace_control_flow",
+    "trace_dispatch_producer",
     "update_operational_graph",
     "update_operational_graph_v3",
     "update_operational_graph_v4",
@@ -168,6 +179,7 @@ __all__ = [
     "update_operational_graph_v7",
     "update_operational_graph_v8",
     "update_operational_graph_v9",
+    "update_operational_graph_v10",
 ]
 
-__version__ = "0.14.0"
+__version__ = "0.15.0"

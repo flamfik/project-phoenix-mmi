@@ -1,9 +1,9 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.9
+- Version: 0.10
 - Maturity: ALPHA
-- Evidence: Sessions 001-016
-- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043, RQ-044, RQ-045, RQ-046
+- Evidence: Sessions 001-017
+- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043, RQ-044, RQ-045, RQ-046, RQ-047, RQ-048, RQ-049
 
 ## Purpose
 
@@ -180,6 +180,28 @@ Operational graph v9 adds bounded predecessor and descriptor evidence:
 The descriptor is not labeled a vtable and the literal targets are not labeled
 function boundaries. Context is capped at `0x100` predecessor bytes and no
 branch dominance is asserted.
+
+### Session 017 refinement
+
+Operational graph v10 adds producer and field-lineage evidence:
+
+- two paired nearest-producer call sites with stable argument roles:
+  `CONFIRMED_PAIRED_LITERAL_PRODUCER_CALL_SITES`;
+- one unique producer target pair, but zero cross-version promotions because
+  target evidence is asymmetric;
+- one CD3-only forwarding chain to a field-12 accessor;
+- 12 exact accessor occurrences per release and one paired six-member cluster:
+  `CONFIRMED_CROSS_VERSION_ACCESSOR_CLUSTER`;
+- broad static descriptor grammar around 20 of 31 optical target pairs, with
+  zero bilateral direct base references: structural census only;
+- zero code-gated direct mixed-width initializers among 18 paired analyzable
+  signatures: `BOUNDED_NEGATIVE`;
+- bilateral producer edge, sector ABI, optical-buffer provenance/owner, FLDB
+  parser and partition consumer: `OPEN`.
+
+The new node records a bounded analysis, not a runtime object identity. The
+missing CD1 edge prevents promotion from accessor-family equivalence to a
+cross-version producer lineage.
 
 ## Rule for derived diagrams
 
