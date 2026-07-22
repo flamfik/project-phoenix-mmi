@@ -96,6 +96,12 @@ from .reference_graph import (
 )
 from .resource_bundle import analyze_resource_bundle, build_public_resource_bundle
 from .runtime_map import analyze_runtime_map, build_public_runtime_map
+from .runtime_slot import (
+    analyze_runtime_slot_lineage,
+    build_public_runtime_slot_report,
+    correlate_runtime_slot_lineage,
+    update_operational_graph_v12,
+)
 from .segments import CandidateSegment, build_candidate_segments
 from .superh import (
     SHInstruction,
@@ -127,6 +133,7 @@ __all__ = [
     "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
     "analyze_runtime_map",
+    "analyze_runtime_slot_lineage",
     "build_candidate_segments",
     "build_public_accessor_dispatch_report",
     "build_operational_graph",
@@ -144,6 +151,7 @@ __all__ = [
     "build_public_reference_graph",
     "build_public_resource_bundle",
     "build_public_runtime_map",
+    "build_public_runtime_slot_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
@@ -158,6 +166,7 @@ __all__ = [
     "correlate_descriptor_lineage",
     "correlate_global_fldb_parser_search",
     "correlate_firmware_and_media",
+    "correlate_runtime_slot_lineage",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
     "compare_reference_graphs",
@@ -190,6 +199,7 @@ __all__ = [
     "update_operational_graph_v9",
     "update_operational_graph_v10",
     "update_operational_graph_v11",
+    "update_operational_graph_v12",
 ]
 
-__version__ = "0.16.0"
+__version__ = "0.17.0"

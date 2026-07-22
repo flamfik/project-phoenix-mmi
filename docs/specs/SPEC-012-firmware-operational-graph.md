@@ -224,6 +224,30 @@ Operational graph v11 adds accessor call-family and runtime-slot evidence:
 The convergent CD1 address is not treated as static executable code. The graph
 records a call-family transition and structural slot, not runtime equivalence.
 
+### Session 019 refinement
+
+Operational graph v12 expands the structural slot without naming a runtime
+mechanism:
+
+- three of 15 CD1 zero-tail words have literal-backed adjacent calls:
+  `CONFIRMED_THREE_LITERAL_BACKED_CALL_TARGETS`;
+- three compact CD3 direct entries have byte-identical translated bodies in
+  CD1, all with zero direct calls: `CONFIRMED` static shadow layout;
+- one slot/member mapping passes the fixed Session 018 promotion gate, one is
+  probable below the gate and one remains a structural candidate;
+- slot-to-static-body deltas `-368`, `-360`, `-352` are branch-feasible, but no
+  branch encoding or runtime write is observed;
+- 235,864 syntactic address seeds yield zero bounded direct stores to the run:
+  `BOUNDED_NEGATIVE` search result;
+- the exact 32-byte source/destination-pair model yields zero relocation
+  records: `BOUNDED_NEGATIVE`;
+- writer/loader chain, pointer-field roles, producer edge, sector ABI, buffer
+  provenance/owner, FLDB parser and partition consumer: `OPEN`.
+
+The new graph edge is a confirmed cross-version layout relation. It is not
+runtime control flow. Patch, overlay or linkage behavior remains a strengthened
+hypothesis until a concrete writer/loader chain is recovered.
+
 ## Rule for derived diagrams
 
 Every diagram edge must carry the source/target node status or its own evidence status. Dotted or hypothesis edges must not be rendered as confirmed control flow.

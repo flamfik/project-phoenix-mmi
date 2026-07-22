@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 018 mapped 288 direct CD3 field-12 accessor calls and showed that 266 normalized contexts converge on one CD1 target. That target lies inside a confirmed five-record `in-image pointer + 12 zero` run; runtime patch/linkage semantics remain a hypothesis. No direct static callback record or intersection with the 35 registered graph-node pairs was found. The specific producer edge, runtime writer, actual parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 019 expanded the five-record CD1 zero-tail run and found three active call targets. Their contexts select a compact CD3 direct-accessor cluster, while byte-identical static bodies remain at translated CD1 offsets with zero direct calls. One mapping is confirmed, one probable and one a structural candidate. No direct writer or exact relocation pair was found under the bounded models, so runtime patch/overlay/linkage behavior remains a strengthened hypothesis. The specific writer/loader, producer edge, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -51,6 +51,7 @@ ui/            Future interface and resource research
 - [Session 016 report](docs/sessions/SESSION-016-predecessor-context-object-dispatch.md)
 - [Session 017 report](docs/sessions/SESSION-017-descriptor-producer-lineage.md)
 - [Session 018 report](docs/sessions/SESSION-018-accessor-call-family-runtime-linkage.md)
+- [Session 019 report](docs/sessions/SESSION-019-runtime-slot-shadow-accessors.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -66,6 +67,7 @@ ui/            Future interface and resource research
 - [Session 016 publication-safe evidence](research/navigation-media/session016/)
 - [Session 017 publication-safe evidence](research/navigation-media/session017/)
 - [Session 018 publication-safe evidence](research/navigation-media/session018/)
+- [Session 019 publication-safe evidence](research/navigation-media/session019/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels
