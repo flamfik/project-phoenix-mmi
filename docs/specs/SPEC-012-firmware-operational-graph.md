@@ -1,9 +1,9 @@
 # SPEC-012 - Firmware operational evidence graph
 
-- Version: 0.8
+- Version: 0.9
 - Maturity: ALPHA
-- Evidence: Sessions 001-015
-- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043
+- Evidence: Sessions 001-016
+- Related questions: RQ-002, RQ-009, RQ-010, RQ-015, RQ-017, RQ-019, RQ-021, RQ-022, RQ-023, RQ-037, RQ-041, RQ-042, RQ-043, RQ-044, RQ-045, RQ-046
 
 ## Purpose
 
@@ -158,6 +158,28 @@ Operational graph v8 adds the bounded interprocedural search:
 The negative edge is limited to the registered seeds, depth-two expansion and
 direct/literal-backed call resolver. It does not cover callbacks, event queues,
 vtable targets, computed calls or deeper chains.
+
+### Session 016 refinement
+
+Operational graph v9 adds bounded predecessor and descriptor evidence:
+
+- four unique paired unresolved call sites after overlapping-root
+  deduplication: `CONFIRMED_BOUNDED`;
+- two optical literal-backed call-target pairs recovered before their original
+  seeds: `CONFIRMED_PAIRED_CONTEXTUAL_LITERAL_CALL_TARGET`;
+- zero new graph nodes because both target pairs fail the independent bounded-
+  code expansion gate;
+- two navigation call sites sharing one call-return-backed dynamic descriptor
+  shape: `CONFIRMED_CROSS_VERSION_DYNAMIC_DESCRIPTOR_STRUCTURE`;
+- outer target field displacement `12`, receiver adjustment path constant `8`
+  and delayed selector `r5 = 3`: confirmed structural fields only;
+- zero recovered navigation-to-optical edges: `BOUNDED_NEGATIVE`;
+- dynamic method target, descriptor producer semantics, sector ABI, buffer
+  owner and parser: `OPEN`.
+
+The descriptor is not labeled a vtable and the literal targets are not labeled
+function boundaries. Context is capped at `0x100` predecessor bytes and no
+branch dominance is asserted.
 
 ## Rule for derived diagrams
 

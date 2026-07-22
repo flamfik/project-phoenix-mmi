@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 014 performed a global role-sensitive search for 36-byte record loops without promoting a parser. Session 015 then built a code-gated depth-two SH call graph from confirmed navigation targets and optical-service record pointers. The graphs do not converge under the tested static resolver; object/event dispatch, the actual parser, sector ABI, buffer owner, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 015 built a code-gated depth-two SH call graph from confirmed navigation targets and optical-service record pointers. Session 016 revisited its paired unresolved calls with bounded predecessor context, recovering two optical literal call-target pairs and one repeated dynamic descriptor shape across two navigation call sites. No recovered target passes the graph-expansion gate or connects navigation to the optical graph; the descriptor producer, runtime target, actual parser, sector ABI, buffer owner, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -48,6 +48,7 @@ ui/            Future interface and resource research
 - [Session 013 report](docs/sessions/SESSION-013-corrected-fldb-parser-dataflow.md)
 - [Session 014 report](docs/sessions/SESSION-014-global-fldb-parser-search.md)
 - [Session 015 report](docs/sessions/SESSION-015-optical-interprocedural-callgraph.md)
+- [Session 016 report](docs/sessions/SESSION-016-predecessor-context-object-dispatch.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -60,6 +61,7 @@ ui/            Future interface and resource research
 - [Session 013 publication-safe evidence](research/navigation-media/session013/)
 - [Session 014 publication-safe evidence](research/navigation-media/session014/)
 - [Session 015 publication-safe evidence](research/navigation-media/session015/)
+- [Session 016 publication-safe evidence](research/navigation-media/session016/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

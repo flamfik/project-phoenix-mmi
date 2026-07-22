@@ -171,6 +171,16 @@ python tools/session015/analyze_optical_interprocedural_graph.py \
   --public-output research/navigation-media/session015
 ```
 
+## Reproduce Session 016
+
+```shell
+python tools/session016/analyze_object_dispatch_context.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session016 \
+  --public-output research/navigation-media/session016
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -216,3 +226,11 @@ claims. It resolves only direct branches and register calls backed by traced
 in-image literals, accounts for call delay slots while tracing `r4`-`r7`, and
 keeps object/vtable dispatch explicit. Depth, node and pairing gates bound every
 negative result; a local return dereference is never labeled a buffer by itself.
+
+The predecessor/descriptor analyzer revisits only indirect calls paired as
+unresolved in Session 015. It may recover a literal target loaded before the
+registered seed, but a target becomes graph-expandable only after the separate
+bounded-code gate passes in both releases. Dynamic load paths are reported as
+structure with explicit `CALL_RETURN`, field-width, displacement and selector
+evidence; they are never named vtables or methods without an independently
+resolved target and producer lineage.

@@ -40,6 +40,13 @@ from .operational_model import (
     build_operational_graph,
     build_public_operational_report,
 )
+from .object_dispatch import (
+    analyze_object_dispatch_context,
+    build_public_object_dispatch_report,
+    correlate_dispatch_context,
+    summarize_contextual_dispatch_calls,
+    update_operational_graph_v9,
+)
 from .optical_callgraph import (
     build_bounded_interprocedural_graph,
     build_public_optical_callgraph_report,
@@ -100,6 +107,7 @@ __all__ = [
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
     "analyze_navigation_payloads",
+    "analyze_object_dispatch_context",
     "analyze_reference_graph",
     "analyze_relocated_bitmap_atlas",
     "analyze_resource_bundle",
@@ -115,6 +123,7 @@ __all__ = [
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
     "build_public_operational_report",
+    "build_public_object_dispatch_report",
     "build_public_reference_graph",
     "build_public_resource_bundle",
     "build_public_runtime_map",
@@ -131,6 +140,7 @@ __all__ = [
     "correlate_global_fldb_parser_search",
     "correlate_firmware_and_media",
     "correlate_optical_sector_model",
+    "correlate_dispatch_context",
     "compare_reference_graphs",
     "crc32_bytes",
     "collect_seed_pairs",
@@ -147,6 +157,7 @@ __all__ = [
     "shannon_entropy",
     "summarize_code_window",
     "summarize_bounded_entry",
+    "summarize_contextual_dispatch_calls",
     "summarize_runtime_neighborhood",
     "trace_control_flow",
     "update_operational_graph",
@@ -156,6 +167,7 @@ __all__ = [
     "update_operational_graph_v6",
     "update_operational_graph_v7",
     "update_operational_graph_v8",
+    "update_operational_graph_v9",
 ]
 
-__version__ = "0.13.0"
+__version__ = "0.14.0"
