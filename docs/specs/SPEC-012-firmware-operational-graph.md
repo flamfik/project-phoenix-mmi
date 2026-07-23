@@ -271,6 +271,27 @@ The v13 edge confirms that the normalized record family persists across both
 releases with residual CD3 use. It does not confirm a linker, patch, overlay,
 trampoline or runtime call path.
 
+### Session 021 refinement
+
+Operational graph v14 adds bounded residual-call lineage:
+
+- four residual CD3 calls group into two prologue-backed, code-gated owner
+  windows;
+- two exact call-context mappings select one CD1 target;
+- complete sequence alignment maps all four residual calls to the four CD1
+  calls targeting that location;
+- one owner pair is confirmed at `0.983471` similarity and one is probable at
+  `0.781513`, with fixed uniqueness margins;
+- the CD1 destination is a confirmed literal-backed, 10-byte
+  return-terminated shape, without function semantics;
+- 29 exact prologue-backed owner shapes occur in both releases;
+- function boundaries, semantic owner classes, runtime execution, writer,
+  loader and initializer remain unasserted or `OPEN`.
+
+The v14 edge is `CONFIRMED_AND_PROBABLE_STRUCTURAL_LINEAGE`. It is not runtime
+control flow and does not promote the runtime patch/overlay/linkage hypothesis
+to confirmed.
+
 ## Rule for derived diagrams
 
 Every diagram edge must carry the source/target node status or its own evidence status. Dotted or hypothesis edges must not be rendered as confirmed control flow.

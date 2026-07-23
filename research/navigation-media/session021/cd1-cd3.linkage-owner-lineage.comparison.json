@@ -1,0 +1,408 @@
+{
+  "analysis_mode": "read-only-static-bounded-linkage-owner-lineage",
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "dominant_left_target": "CONFIRMED_BY_TWO_EXACT_CONTEXT_MAPPINGS",
+    "left_target_shape": "CONFIRMED_LITERAL_BACKED_SHORT_RETURN_SHAPE",
+    "memory_loaded_base_writer": "OPEN",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "owner_pairing": {
+      "confirmed": 1,
+      "probable": 1
+    },
+    "residual_call_lineage": "CONFIRMED_TWO_EXACT_PLUS_TWO_PROBABLE_SEQUENCE_ALIGNED",
+    "right_residual_calls": "CONFIRMED_FOUR_CALLS_IN_TWO_PROLOGUE_CODE_GATED_OWNERS",
+    "runtime_linkage_family_owner_semantics": "OPEN",
+    "runtime_patch_overlay_or_linkage_mechanism": "HYPOTHESIS_STRENGTHENED_BY_RESIDUAL_OWNER_LINEAGE",
+    "sector_read_abi": "OPEN",
+    "specific_session017_producer_edge": "OPEN",
+    "specific_writer_or_loader_chain": "OPEN"
+  },
+  "global_owner_census": {
+    "left": {
+      "active_call_count_per_owner_histogram": {
+        "1": 1372,
+        "2": 65,
+        "3": 8,
+        "4": 5,
+        "6": 2,
+        "9": 1
+      },
+      "active_pointer_zero_call_count": 1567,
+      "active_pointer_zero_target_count": 199,
+      "active_target_count_per_owner_histogram": {
+        "1": 1449,
+        "2": 4
+      },
+      "bounded_owner_count": 1453,
+      "code_gated_active_call_count": 1349,
+      "code_gated_owner_count": 1235,
+      "context_start_reason_counts": {
+        "BACKWARD_LIMIT": 245,
+        "LATEST_SAVE_PR_PROLOGUE": 1208
+      },
+      "exact_prologue_owner_shape_count": 485,
+      "function_boundaries_asserted": false,
+      "global_call_census_is_syntactic": true,
+      "prologue_code_gated_active_call_count": 1320,
+      "prologue_code_gated_owner_count": 1206
+    },
+    "left_owner_instances_in_shared_shapes": 235,
+    "right": {
+      "active_call_count_per_owner_histogram": {
+        "1": 302,
+        "2": 7,
+        "3": 1
+      },
+      "active_pointer_zero_call_count": 319,
+      "active_pointer_zero_target_count": 112,
+      "active_target_count_per_owner_histogram": {
+        "1": 307,
+        "2": 3
+      },
+      "bounded_owner_count": 310,
+      "code_gated_active_call_count": 266,
+      "code_gated_owner_count": 257,
+      "context_start_reason_counts": {
+        "BACKWARD_LIMIT": 66,
+        "LATEST_SAVE_PR_PROLOGUE": 244
+      },
+      "exact_prologue_owner_shape_count": 184,
+      "function_boundaries_asserted": false,
+      "global_call_census_is_syntactic": true,
+      "prologue_code_gated_active_call_count": 252,
+      "prologue_code_gated_owner_count": 243
+    },
+    "right_owner_instances_in_shared_shapes": 44,
+    "semantic_owner_classes_asserted": false,
+    "shared_exact_prologue_owner_shape_count": 29
+  },
+  "interpretation": "The four residual CD3 calls belong to two prologue-backed, code-gated owner windows. Two calls have unique fixed-context CD1 matches; complete owner-sequence alignment maps all four to the same CD1 short return-terminated target. One owner pair is confirmed by context and 98% sequence similarity, while the second is probable with a unique 78% match and a wide margin. This establishes bounded residual-call lineage but does not name the owner, observe runtime initialization or identify a writer.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "confirmed_owner_similarity_gate": 0.95,
+    "function_boundaries_asserted": false,
+    "global_call_census_is_syntactic": true,
+    "owner_backward_bytes": 256,
+    "owner_forward_bytes": 384,
+    "path_dominance_asserted": false,
+    "probable_owner_margin_gate": 0.25,
+    "probable_owner_similarity_gate": 0.75,
+    "runtime_execution_observed": false
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "residual_lineage": {
+    "aligned_residual_call_count": 4,
+    "confirmed_owner_pair_count": 1,
+    "exact_context_mapping": {
+      "dominant_left_target_file_offset": 1860824,
+      "rows": [
+        {
+          "left_context_match_count": 1,
+          "right_load_file_offset": 2002906,
+          "single_left_target_consensus": 1860824,
+          "unique_left_call_match": true
+        },
+        {
+          "left_context_match_count": 1,
+          "right_load_file_offset": 2002956,
+          "single_left_target_consensus": 1860824,
+          "unique_left_call_match": true
+        },
+        {
+          "left_context_match_count": 0,
+          "right_load_file_offset": 2012748,
+          "single_left_target_consensus": null,
+          "unique_left_call_match": false
+        },
+        {
+          "left_context_match_count": 0,
+          "right_load_file_offset": 2012760,
+          "single_left_target_consensus": null,
+          "unique_left_call_match": false
+        }
+      ],
+      "single_target_consensus_call_count": 2
+    },
+    "left_target": {
+      "call_count": 0,
+      "function_semantics_asserted": false,
+      "general_bounded_code_gate_passed": false,
+      "instruction_count": 5,
+      "known_ratio": 0.8,
+      "literal_backed_short_return_shape_gate_passed": true,
+      "normalized_shape_sha256": "651573f22553b42e5efe5a78e515e24f3f4b98e2eb4f734a946197e7eb025e6d",
+      "reference_profile": {
+        "adjacent_literal_jsr_count": 4,
+        "aligned_word_occurrence_count": 14,
+        "all_aligned_occurrences_are_pc_relative_literals": true,
+        "data_only_aligned_occurrence_count": 0,
+        "direct_callback_record_semantics_asserted": false,
+        "exact_word_occurrence_count": 14,
+        "image_size": 12954188,
+        "literal_pool_occurrence_used_by_adjacent_jsr_count": 2,
+        "pc_relative_load_reference_count": 17,
+        "target_file_offset": 1860824
+      },
+      "return_count": 1,
+      "target_file_offset": 1860824,
+      "window_length": 10
+    },
+    "left_target_call_count": 4,
+    "left_target_owner_count": 2,
+    "owner_pair_matrix": [
+      {
+        "aligned_calls": [
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1680162,
+            "left_relative_instruction_index": 80,
+            "right_load_file_offset": 2002906,
+            "right_relative_instruction_index": 80
+          },
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1680212,
+            "left_relative_instruction_index": 105,
+            "right_load_file_offset": 2002956,
+            "right_relative_instruction_index": 105
+          }
+        ],
+        "aligned_left_target_call_count": 2,
+        "exact_context_call_count": 2,
+        "left_instruction_count": 121,
+        "left_owner_start_file_offset": 1680002,
+        "matching_instruction_count": 119,
+        "right_instruction_count": 121,
+        "right_owner_start_file_offset": 2002746,
+        "right_residual_call_count": 2,
+        "semantic_equivalence_asserted": false,
+        "sequence_similarity": 0.983471
+      },
+      {
+        "aligned_calls": [
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1690058,
+            "left_relative_instruction_index": 96,
+            "right_load_file_offset": 2002906,
+            "right_relative_instruction_index": 80
+          },
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1690072,
+            "left_relative_instruction_index": 103,
+            "right_load_file_offset": 2002956,
+            "right_relative_instruction_index": 105
+          }
+        ],
+        "aligned_left_target_call_count": 2,
+        "exact_context_call_count": 0,
+        "left_instruction_count": 118,
+        "left_owner_start_file_offset": 1689866,
+        "matching_instruction_count": 44,
+        "right_instruction_count": 121,
+        "right_owner_start_file_offset": 2002746,
+        "right_residual_call_count": 2,
+        "semantic_equivalence_asserted": false,
+        "sequence_similarity": 0.368201
+      },
+      {
+        "aligned_calls": [
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1680212,
+            "left_relative_instruction_index": 105,
+            "right_load_file_offset": 2012748,
+            "right_relative_instruction_index": 99
+          },
+          {
+            "aligned_to_left_target_call": false,
+            "left_load_file_offset": null,
+            "left_relative_instruction_index": null,
+            "right_load_file_offset": 2012760,
+            "right_relative_instruction_index": 105
+          }
+        ],
+        "aligned_left_target_call_count": 1,
+        "exact_context_call_count": 0,
+        "left_instruction_count": 121,
+        "left_owner_start_file_offset": 1680002,
+        "matching_instruction_count": 41,
+        "right_instruction_count": 120,
+        "right_owner_start_file_offset": 2012550,
+        "right_residual_call_count": 2,
+        "semantic_equivalence_asserted": false,
+        "sequence_similarity": 0.340249
+      },
+      {
+        "aligned_calls": [
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1690058,
+            "left_relative_instruction_index": 96,
+            "right_load_file_offset": 2012748,
+            "right_relative_instruction_index": 99
+          },
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1690072,
+            "left_relative_instruction_index": 103,
+            "right_load_file_offset": 2012760,
+            "right_relative_instruction_index": 105
+          }
+        ],
+        "aligned_left_target_call_count": 2,
+        "exact_context_call_count": 0,
+        "left_instruction_count": 118,
+        "left_owner_start_file_offset": 1689866,
+        "matching_instruction_count": 93,
+        "right_instruction_count": 120,
+        "right_owner_start_file_offset": 2012550,
+        "right_residual_call_count": 2,
+        "semantic_equivalence_asserted": false,
+        "sequence_similarity": 0.781513
+      }
+    ],
+    "owner_semantics_asserted": false,
+    "probable_owner_pair_count": 1,
+    "right_residual_call_count": 4,
+    "right_residual_owner_count": 2,
+    "right_residual_target_file_offset": 2185372,
+    "runtime_execution_observed": false,
+    "selected_owner_pairs": [
+      {
+        "aligned_calls": [
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1680162,
+            "left_relative_instruction_index": 80,
+            "right_load_file_offset": 2002906,
+            "right_relative_instruction_index": 80
+          },
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1680212,
+            "left_relative_instruction_index": 105,
+            "right_load_file_offset": 2002956,
+            "right_relative_instruction_index": 105
+          }
+        ],
+        "aligned_left_target_call_count": 2,
+        "classification": "CONFIRMED_CONTEXT_AND_SEQUENCE_OWNER_PAIR",
+        "exact_context_call_count": 2,
+        "left_instruction_count": 121,
+        "left_owner": {
+          "bounded_code_gate_passed": true,
+          "call_count": 10,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "instruction_count": 121,
+          "known_ratio": 0.933884,
+          "normalized_shape_sha256": "f97133dd395c88bf73691a77bf0cb6041e00f2b99dd762e44998b78b192eb790",
+          "owner_start_file_offset": 1680002,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 160,
+          "prologue_code_gate_passed": true,
+          "return_count": 1
+        },
+        "left_owner_start_file_offset": 1680002,
+        "matching_instruction_count": 119,
+        "next_best_sequence_similarity": 0.368201,
+        "right_instruction_count": 121,
+        "right_owner": {
+          "bounded_code_gate_passed": true,
+          "call_count": 10,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "instruction_count": 121,
+          "known_ratio": 0.933884,
+          "normalized_shape_sha256": "a893efd2affb1d4fbffe82d491d726f4d4815f9dc5fdeff6bba80f50147ba3ef",
+          "owner_start_file_offset": 2002746,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 160,
+          "prologue_code_gate_passed": true,
+          "return_count": 1
+        },
+        "right_owner_start_file_offset": 2002746,
+        "right_residual_call_count": 2,
+        "same_call_and_return_counts": true,
+        "semantic_equivalence_asserted": false,
+        "sequence_similarity": 0.983471,
+        "sequence_similarity_margin": 0.61527,
+        "unique_left_owner_assignment": true
+      },
+      {
+        "aligned_calls": [
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1690058,
+            "left_relative_instruction_index": 96,
+            "right_load_file_offset": 2012748,
+            "right_relative_instruction_index": 99
+          },
+          {
+            "aligned_to_left_target_call": true,
+            "left_load_file_offset": 1690072,
+            "left_relative_instruction_index": 103,
+            "right_load_file_offset": 2012760,
+            "right_relative_instruction_index": 105
+          }
+        ],
+        "aligned_left_target_call_count": 2,
+        "classification": "PROBABLE_UNIQUE_SEQUENCE_OWNER_PAIR",
+        "exact_context_call_count": 0,
+        "left_instruction_count": 118,
+        "left_owner": {
+          "bounded_code_gate_passed": true,
+          "call_count": 12,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "instruction_count": 118,
+          "known_ratio": 0.974576,
+          "normalized_shape_sha256": "91f95e07bb581a3b5c8b16eac40ad8871156555668df1304afad2de11a891ac6",
+          "owner_start_file_offset": 1689866,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 192,
+          "prologue_code_gate_passed": true,
+          "return_count": 1
+        },
+        "left_owner_start_file_offset": 1689866,
+        "matching_instruction_count": 93,
+        "next_best_sequence_similarity": 0.340249,
+        "right_instruction_count": 120,
+        "right_owner": {
+          "bounded_code_gate_passed": true,
+          "call_count": 12,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "instruction_count": 120,
+          "known_ratio": 0.975,
+          "normalized_shape_sha256": "2b784b0dd67483d22879aa1ddb4903fd0f02b7b7a38de9da907b648290f9432d",
+          "owner_start_file_offset": 2012550,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 198,
+          "prologue_code_gate_passed": true,
+          "return_count": 1
+        },
+        "right_owner_start_file_offset": 2012550,
+        "right_residual_call_count": 2,
+        "same_call_and_return_counts": true,
+        "semantic_equivalence_asserted": false,
+        "sequence_similarity": 0.781513,
+        "sequence_similarity_margin": 0.441264,
+        "unique_left_owner_assignment": true
+      }
+    ]
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.linkage-owner-lineage-comparison/v1"
+}

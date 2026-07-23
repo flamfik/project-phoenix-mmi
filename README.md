@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 020 found one unique normalized CD3 counterpart for the five-record pointer-zero run. Its start and all five pointer targets translate by the same `+324,860` bytes. CD1 has three syntactically active tail slots with 909 adjacent literal/JSR forms; CD3 retains one with four forms. A global census confirms that zero-filled literal targets are a broad image family, but no writer was found under bounded GBR, exact-address helper, coherent copy-table or named cache-marker models. Runtime patch/overlay/linkage behavior therefore remains a strengthened hypothesis. The specific writer/loader, family owner, producer edge, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 021 groups the four residual CD3 calls into two prologue-backed, code-gated owner windows. Two exact context matches plus full bounded-sequence alignment map all four calls to one short return-terminated CD1 target. One owner pair is confirmed and one remains probable. A global census finds 29 exact prologue-owner shapes shared across releases, but no function boundary, semantic owner, runtime execution or writer/loader is inferred. Runtime patch/overlay/linkage behavior therefore remains a strengthened hypothesis. The specific writer/loader, semantic family owner, producer edge, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -53,6 +53,7 @@ ui/            Future interface and resource research
 - [Session 018 report](docs/sessions/SESSION-018-accessor-call-family-runtime-linkage.md)
 - [Session 019 report](docs/sessions/SESSION-019-runtime-slot-shadow-accessors.md)
 - [Session 020 report](docs/sessions/SESSION-020-bilateral-runtime-linkage-family.md)
+- [Session 021 report](docs/sessions/SESSION-021-residual-linkage-owner-lineage.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -70,6 +71,7 @@ ui/            Future interface and resource research
 - [Session 018 publication-safe evidence](research/navigation-media/session018/)
 - [Session 019 publication-safe evidence](research/navigation-media/session019/)
 - [Session 020 publication-safe evidence](research/navigation-media/session020/)
+- [Session 021 publication-safe evidence](research/navigation-media/session021/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels
