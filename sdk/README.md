@@ -34,6 +34,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `runtime_linkage` - normalized bilateral pointer-zero run pairing, global zero-target census, bounded GBR/helper/coherent-copy probes and operational graph v13 correlation.
 - `linkage_owner` - bounded residual-call owner grouping, fixed-context and full-sequence lineage, short return-shape gates, global owner census and operational graph v14 correlation.
 - `owner_provenance` - bounded direct-ingress tests, address-taken use classification, canonical argument/load-rooted state bases and operational graph v15 correlation.
+- `continuation_contract` - internal-label live-in diagnostics, delayed argument tracing, address-record helper geometry and operational graph v16 correlation.
+- `owner_caller` - bilateral owner-entry argument contracts, fixed indirect-call signature census, compatibility rejection gates and operational graph v17 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -258,6 +260,16 @@ python tools/session023/analyze_internal_continuation_contract.py \
   --public-output research/navigation-media/session023
 ```
 
+## Reproduce Session 024
+
+```shell
+python tools/session024/analyze_owner_caller_compatibility.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session024 \
+  --public-output research/navigation-media/session024
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -338,3 +350,8 @@ keeps field values path-merged across unresolved branches and applies the
 cross-version family gate separately from the selected non-adjacent use.
 Landing-pad, frame and unwind semantics remain probable until an ABI or
 independent runtime evidence is identified.
+
+The owner-caller analyzer tests only previously registered dynamic dispatch
+contracts. A candidate must preserve every bilateral owner entry argument
+after its last preceding call. Exact normalized context equality cannot
+replace a concrete target or prove runtime equivalence.

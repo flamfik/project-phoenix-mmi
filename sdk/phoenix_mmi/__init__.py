@@ -126,6 +126,12 @@ from .owner_provenance import (
     correlate_owner_ingress_state,
     update_operational_graph_v15,
 )
+from .owner_caller import (
+    analyze_owner_caller_compatibility,
+    build_public_owner_caller_report,
+    correlate_owner_caller_compatibility,
+    update_operational_graph_v17,
+)
 from .segments import CandidateSegment, build_candidate_segments
 from .superh import (
     SHInstruction,
@@ -162,6 +168,7 @@ __all__ = [
     "analyze_runtime_linkage_family",
     "analyze_linkage_owner_lineage",
     "analyze_owner_ingress_state",
+    "analyze_owner_caller_compatibility",
     "build_candidate_segments",
     "build_public_accessor_dispatch_report",
     "build_operational_graph",
@@ -183,6 +190,7 @@ __all__ = [
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
     "build_public_owner_ingress_report",
+    "build_public_owner_caller_report",
     "build_public_internal_continuation_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
@@ -202,6 +210,7 @@ __all__ = [
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
     "correlate_owner_ingress_state",
+    "correlate_owner_caller_compatibility",
     "correlate_internal_continuation_contract",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
@@ -240,6 +249,7 @@ __all__ = [
     "update_operational_graph_v14",
     "update_operational_graph_v15",
     "update_operational_graph_v16",
+    "update_operational_graph_v17",
 ]
 
-__version__ = "0.21.0"
+__version__ = "0.22.0"
