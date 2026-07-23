@@ -248,6 +248,16 @@ python tools/session022/analyze_owner_ingress_state.py \
   --public-output research/navigation-media/session022
 ```
 
+## Reproduce Session 023
+
+```shell
+python tools/session023/analyze_internal_continuation_contract.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session023 \
+  --public-output research/navigation-media/session023
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -321,3 +331,10 @@ global call-family census is syntactic. GBR, exact-address helper and coherent
 copy-table results are bounded to their declared address/dataflow models; a
 zero result cannot exclude memory-loaded bases, an external loader or
 runtime-created metadata.
+
+The internal-continuation analyzer never promotes an address inside an owner
+window to an owner entry. It traces delayed arguments and preserved registers,
+keeps field values path-merged across unresolved branches and applies the
+cross-version family gate separately from the selected non-adjacent use.
+Landing-pad, frame and unwind semantics remain probable until an ABI or
+independent runtime evidence is identified.

@@ -9,6 +9,12 @@ from .accessor_dispatch import (
 )
 from .binary import BinaryReader
 from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
+from .continuation_contract import (
+    analyze_internal_continuation_contract,
+    build_public_internal_continuation_report,
+    correlate_internal_continuation_contract,
+    update_operational_graph_v16,
+)
 from .descriptor_lineage import (
     analyze_descriptor_lineage,
     build_public_descriptor_lineage_report,
@@ -138,6 +144,7 @@ __all__ = [
     "FingerprintHit",
     "SHInstruction",
     "analyze_file",
+    "analyze_internal_continuation_contract",
     "analyze_accessor_dispatch",
     "analyze_descriptor_lineage",
     "analyze_executable_layout",
@@ -176,6 +183,7 @@ __all__ = [
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
     "build_public_owner_ingress_report",
+    "build_public_internal_continuation_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
@@ -194,6 +202,7 @@ __all__ = [
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
     "correlate_owner_ingress_state",
+    "correlate_internal_continuation_contract",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
     "compare_reference_graphs",
@@ -230,6 +239,7 @@ __all__ = [
     "update_operational_graph_v13",
     "update_operational_graph_v14",
     "update_operational_graph_v15",
+    "update_operational_graph_v16",
 ]
 
-__version__ = "0.20.0"
+__version__ = "0.21.0"

@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 022 finds no adjacent literal/JSR or direct BSR ingress to the two owner pairs, but confirms one internal address-taken use per release and stable entry-argument-rooted state bases. Owner A preserves 17/17 root classes with four versioned field-expression shifts; Owner B preserves 19/19 aligned expressions. Every owner contains four bases obtained through an `r4`-rooted load, while zero selected-owner bases originate from static image pointers. This supports a runtime-provided state/object contract without identifying its creator, semantic type or writer/loader. The producer edge, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 023 proves that the two Session 022 address-taken seeds are internal labels rather than owner entries. CD1 invokes one label with preserved-register context; CD3 passes another to a stack-local record helper. A broad cross-version helper family has 231/232 adjacent calls and every call carries an in-image `r5` address. Landing-pad/frame/unwind registration is probable, not confirmed. The owner-entry producer, state creator/writer, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -55,6 +55,7 @@ ui/            Future interface and resource research
 - [Session 020 report](docs/sessions/SESSION-020-bilateral-runtime-linkage-family.md)
 - [Session 021 report](docs/sessions/SESSION-021-residual-linkage-owner-lineage.md)
 - [Session 022 report](docs/sessions/SESSION-022-owner-ingress-state-provenance.md)
+- [Session 023 report](docs/sessions/SESSION-023-internal-continuation-contracts.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -74,6 +75,7 @@ ui/            Future interface and resource research
 - [Session 020 publication-safe evidence](research/navigation-media/session020/)
 - [Session 021 publication-safe evidence](research/navigation-media/session021/)
 - [Session 022 publication-safe evidence](research/navigation-media/session022/)
+- [Session 023 publication-safe evidence](research/navigation-media/session023/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels
