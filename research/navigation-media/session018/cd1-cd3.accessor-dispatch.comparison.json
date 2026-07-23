@@ -1,0 +1,140 @@
+{
+  "analysis_mode": "read-only-static-bounded-accessor-call-family",
+  "call_family": {
+    "ambiguous_left_context_match_count": 101,
+    "cross_version_call_family_promoted": true,
+    "dominant_left_target_consensus_count": 266,
+    "dominant_left_target_consensus_coverage": 0.923611,
+    "dominant_left_target_file_offset": 1860500,
+    "minimum_consensus_coverage": 0.9,
+    "minimum_unique_context_matches": 32,
+    "multi_target_ambiguous_context_count": 14,
+    "normalized_context_after_word_count": 6,
+    "normalized_context_before_word_count": 8,
+    "normalized_context_total_word_count": 16,
+    "right_known_accessor_call_count": 288,
+    "runtime_equivalence_asserted": false,
+    "single_target_consensus_context_count": 266,
+    "unique_left_context_match_count": 179,
+    "unmatched_right_context_count": 8
+  },
+  "classification": {
+    "accepted_optical_graph_edge": "NOT_FOUND_UNDER_REGISTERED_NODE_MODEL",
+    "actual_fldb_parser": "OPEN",
+    "cd1_dominant_target_structure": "CONFIRMED_ZERO_TAIL_RUNTIME_POINTER_RECORD_RUN",
+    "cross_version_call_family": "CONFIRMED_BOUNDED_TARGET_CONVERGENCE",
+    "direct_callback_registration": "NOT_FOUND_UNDER_DIRECT_TARGET_WORD_MODEL",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "runtime_patch_or_trampoline_semantics": "HYPOTHESIS",
+    "sector_read_abi": "OPEN",
+    "specific_session017_producer_edge": "OPEN"
+  },
+  "direct_registration_search": {
+    "classification": "NOT_FOUND_UNDER_DIRECT_TARGET_WORD_MODEL",
+    "data_only_aligned_target_occurrence_count": 0,
+    "encoded_or_runtime_registration_excluded": false,
+    "static_callback_record_candidate_count": 0
+  },
+  "dominant_left_target": {
+    "profile": {
+      "adjacent_literal_jsr_count": 286,
+      "aligned_word_occurrence_count": 286,
+      "all_aligned_occurrences_are_pc_relative_literals": true,
+      "data_only_aligned_occurrence_count": 0,
+      "direct_callback_record_semantics_asserted": false,
+      "exact_word_occurrence_count": 286,
+      "image_size": 12954188,
+      "literal_pool_occurrence_used_by_adjacent_jsr_count": 286,
+      "pc_relative_load_reference_count": 287,
+      "target_file_offset": 1860500
+    },
+    "runtime_patch_or_trampoline_semantics": "HYPOTHESIS",
+    "static_executable_target_asserted": false,
+    "zero_tail_record_run": {
+      "all_pointer_fields_resolve_in_image": true,
+      "candidate_run_count": 1,
+      "pointer_target_delta_vector": [
+        -576,
+        -576,
+        -576,
+        -576
+      ],
+      "pointer_width": 4,
+      "record_count": 5,
+      "record_width": 16,
+      "run_end_file_offset": 1860556,
+      "run_start_file_offset": 1860476,
+      "runtime_patch_or_trampoline_semantics": "HYPOTHESIS",
+      "target_offset_within_record": 8,
+      "target_record_ordinal": 1,
+      "zero_bytes_from_target_to_record_end": 8,
+      "zero_tail_width": 12
+    }
+  },
+  "interpretation": "The CD3 field-12 accessor is called through a large literal-backed family. Strong normalized contexts converge on one CD1 target that lies inside a five-record pointer-plus-zero-tail run, while the paired CD1 accessor itself has no direct references. This supports a cross-version call-family change and a runtime-linkage hypothesis, not executable-slot, callback, optical, parser, or sector-ABI semantics.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "function_boundary_asserted": false,
+    "literal_call_form": "ADJACENT_MOVL_PC_JSR_SAME_REGISTER",
+    "minimum_consensus_coverage": 0.9,
+    "minimum_unique_context_matches": 32,
+    "normalized_context_after_words": 6,
+    "normalized_context_before_words": 8,
+    "registered_session015_graph_only": true,
+    "registered_session017_accessor_pair_only": true,
+    "runtime_execution_observed": false
+  },
+  "paired_accessor": {
+    "left": {
+      "adjacent_literal_jsr_count": 0,
+      "aligned_word_occurrence_count": 0,
+      "all_aligned_occurrences_are_pc_relative_literals": false,
+      "data_only_aligned_occurrence_count": 0,
+      "direct_callback_record_semantics_asserted": false,
+      "exact_word_occurrence_count": 0,
+      "image_size": 12954188,
+      "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+      "pc_relative_load_reference_count": 0,
+      "target_file_offset": 1860132
+    },
+    "left_target_file_offset": 1860132,
+    "right": {
+      "adjacent_literal_jsr_count": 288,
+      "aligned_word_occurrence_count": 288,
+      "all_aligned_occurrences_are_pc_relative_literals": true,
+      "data_only_aligned_occurrence_count": 0,
+      "direct_callback_record_semantics_asserted": false,
+      "exact_word_occurrence_count": 288,
+      "image_size": 12690344,
+      "literal_pool_occurrence_used_by_adjacent_jsr_count": 288,
+      "pc_relative_load_reference_count": 290,
+      "target_file_offset": 2184992
+    },
+    "right_target_file_offset": 2184992,
+    "structural_family_confirmed_by_session017": true
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "raw_literal_jsr_census": {
+    "code_semantics_asserted_for_raw_candidates": false,
+    "left_candidate_count": 110614,
+    "right_candidate_count": 106093
+  },
+  "registered_graph_intersection": {
+    "bilateral_call_in_same_paired_node_count": 0,
+    "bilateral_domain_counts": {},
+    "callback_registration_semantics_asserted": false,
+    "navigation_to_optical_edge": "NOT_FOUND",
+    "registered_node_pair_count": 35,
+    "right_accessor_call_in_registered_node_count": 0
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.accessor-call-family-comparison/v1"
+}

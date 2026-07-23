@@ -1,0 +1,157 @@
+{
+  "analysis_mode": "read-only-static-bounded-dataflow",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "size_bytes": 12954188,
+    "source_path_included": false
+  },
+  "bounded_block": {
+    "end": 8984220,
+    "function_boundary_asserted": false,
+    "instruction_bytes_included": false,
+    "instruction_count": 106,
+    "known_instruction_count": 106,
+    "known_ratio": 1.0,
+    "length": 212,
+    "memory_base_class": "HIGH_NON_IMAGE_MEMORY_MAPPED_RANGE",
+    "memory_base_literal_included": false,
+    "normalized_shape_sha256": "3ca218c6a830cad2a3059facf39ebfe66f86d2a85990ca01e90a0df8fc2795bd",
+    "probe_pattern_literal_count": 7,
+    "prologue_pattern_status": "CONFIRMED_BOUNDED_SAVE_SEQUENCE",
+    "raw_sha256": "596c96a20b4cceac5534ea4852178a28c68cf15cbac40836e284e052e6eff23b",
+    "start": 8984008
+  },
+  "classification": {
+    "bounded_block": "CONFIRMED_MEMORY_MAPPED_PROBE_STRUCTURE",
+    "cross_version_status": "PENDING_COMPARISON",
+    "direct_fldb_parser": "NOT_FOUND_IN_TRACED_CANDIDATE",
+    "former_0x220_fldb_interpretation": "DISPROVED_FOR_SESSION012_REFERENCE_PAIR",
+    "logical_sector_size_2048": "NOT_FOUND_IN_TRACED_CANDIDATE",
+    "parser_search_elsewhere": "OPEN",
+    "probable_semantics": "PROBABLE_BOOT_MEMORY_OR_HARDWARE_PROBE",
+    "record_stride_36": "NOT_FOUND_IN_TRACED_CANDIDATE"
+  },
+  "fldb_counterevidence": {
+    "alternative_expected_values_at_same_pointer": [
+      516
+    ],
+    "directory_offset_used_as_additive_offset": false,
+    "directory_offset_used_as_expected_argument": true,
+    "directory_offset_used_as_pointer": false,
+    "fldb_magic_present_in_block": false,
+    "logical_sector_2048_present_in_block_literals": false,
+    "record_stride_36_present_in_block_literals": false
+  },
+  "publication_safety": {
+    "absolute_memory_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.fldb-candidate-dataflow/v1",
+  "shared_call_contract": {
+    "argument_role_evidence": {
+      "calling_convention_status": "CONSISTENT_WITH_SH_REGISTER_ARGUMENT_ABI",
+      "r0_after_call": "IMMEDIATELY_TESTED_RESULT",
+      "r4": "EXPECTED_VALUE_OR_PROBE_SELECTOR",
+      "r5": "FIXED_BASE_RELATIVE_POINTER"
+    },
+    "call_count": 6,
+    "calls": [
+      {
+        "absolute_pointer_or_callee_value_included": false,
+        "call_site_offset": 8984102,
+        "callee_register": "r10",
+        "callee_target_below_confirmed_runtime_base": true,
+        "callee_target_in_confirmed_principal_image_model": false,
+        "constant_load_offset": 8984100,
+        "expected_value": 504,
+        "pointer_delta_from_fixed_base": 16,
+        "pointer_derivation_status": "CONSTANT",
+        "result_register_tested_immediately": true
+      },
+      {
+        "absolute_pointer_or_callee_value_included": false,
+        "call_site_offset": 8984116,
+        "callee_register": "r10",
+        "callee_target_below_confirmed_runtime_base": true,
+        "callee_target_in_confirmed_principal_image_model": false,
+        "constant_load_offset": 8984114,
+        "expected_value": 544,
+        "pointer_delta_from_fixed_base": 26,
+        "pointer_derivation_status": "CONSTANT",
+        "result_register_tested_immediately": true
+      },
+      {
+        "absolute_pointer_or_callee_value_included": false,
+        "call_site_offset": 8984126,
+        "callee_register": "r10",
+        "callee_target_below_confirmed_runtime_base": true,
+        "callee_target_in_confirmed_principal_image_model": false,
+        "constant_load_offset": 8984124,
+        "expected_value": 516,
+        "pointer_delta_from_fixed_base": 26,
+        "pointer_derivation_status": "CONSTANT",
+        "result_register_tested_immediately": true
+      },
+      {
+        "absolute_pointer_or_callee_value_included": false,
+        "call_site_offset": 8984144,
+        "callee_register": "r10",
+        "callee_target_below_confirmed_runtime_base": true,
+        "callee_target_in_confirmed_principal_image_model": false,
+        "constant_load_offset": 8984142,
+        "expected_value": 504,
+        "pointer_delta_from_fixed_base": 16,
+        "pointer_derivation_status": "CONSTANT",
+        "result_register_tested_immediately": true
+      },
+      {
+        "absolute_pointer_or_callee_value_included": false,
+        "call_site_offset": 8984158,
+        "callee_register": "r10",
+        "callee_target_below_confirmed_runtime_base": true,
+        "callee_target_in_confirmed_principal_image_model": false,
+        "constant_load_offset": 8984156,
+        "expected_value": 544,
+        "pointer_delta_from_fixed_base": 26,
+        "pointer_derivation_status": "CONSTANT",
+        "result_register_tested_immediately": true
+      },
+      {
+        "absolute_pointer_or_callee_value_included": false,
+        "call_site_offset": 8984168,
+        "callee_register": "r10",
+        "callee_target_below_confirmed_runtime_base": true,
+        "callee_target_in_confirmed_principal_image_model": false,
+        "constant_load_offset": 8984166,
+        "expected_value": 516,
+        "pointer_delta_from_fixed_base": 26,
+        "pointer_derivation_status": "CONSTANT",
+        "result_register_tested_immediately": true
+      }
+    ],
+    "expected_value_counts": {
+      "value-0x1f8": 2,
+      "value-0x204": 2,
+      "value-0x220": 2
+    },
+    "pointer_groups": [
+      {
+        "expected_values": [
+          504
+        ],
+        "pointer_delta_from_fixed_base": 16
+      },
+      {
+        "expected_values": [
+          516,
+          544
+        ],
+        "pointer_delta_from_fixed_base": 26
+      }
+    ]
+  }
+}

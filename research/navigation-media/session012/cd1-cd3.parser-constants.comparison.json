@@ -1,0 +1,103 @@
+{
+  "analysis_mode": "read-only-static-cross-version",
+  "classification": {
+    "fldb_directory_offset_coupling": "PROBABLE_CROSS_VERSION_CODE_COUPLED_CONSTANT",
+    "fldb_parser_edge": "NOT_CONFIRMED",
+    "fldb_record_size_coupling": "BOUNDED_AMBIGUOUS",
+    "logical_sector_size_coupling": "BOUNDED_AMBIGUOUS",
+    "sector_read_abi": "OPEN"
+  },
+  "constants": [
+    {
+      "constant_id": "fldb-directory-offset",
+      "high_known_ratio_pair_count": 2,
+      "left_mov_l_reference_count": 2,
+      "left_unique_literal_pool_word_count": 1,
+      "paired_window_count": 2,
+      "pairs": [
+        {
+          "high_known_ratio_pair": true,
+          "left_known_ratio": 0.697917,
+          "left_load_offset": 8984114,
+          "normalized_shape_sha256": "0dbdde00ae2795adf6874d7a4baada4267a2889dc5db385169aa00999b175f93",
+          "relocation_delta": -324864,
+          "right_known_ratio": 0.697917,
+          "right_load_offset": 8659250
+        },
+        {
+          "high_known_ratio_pair": true,
+          "left_known_ratio": 0.65625,
+          "left_load_offset": 8984156,
+          "normalized_shape_sha256": "2af2f36c3d6cf7960beaa8008707734e79323ebf2b6dbf1ee0ae29f5ff06297b",
+          "relocation_delta": -324864,
+          "right_known_ratio": 0.65625,
+          "right_load_offset": 8659292
+        }
+      ],
+      "right_mov_l_reference_count": 2,
+      "right_unique_literal_pool_word_count": 1,
+      "value": 544
+    },
+    {
+      "constant_id": "fldb-record-size",
+      "high_known_ratio_pair_count": 0,
+      "left_mov_l_reference_count": 2,
+      "left_unique_literal_pool_word_count": 2,
+      "paired_window_count": 2,
+      "pairs": [
+        {
+          "high_known_ratio_pair": false,
+          "left_known_ratio": 0.114583,
+          "left_load_offset": 12731396,
+          "normalized_shape_sha256": "9a1322c0dd7cba8927e111d038be7587c6808d6338a148a17ea2bf620cd600b2",
+          "relocation_delta": -263844,
+          "right_known_ratio": 0.114583,
+          "right_load_offset": 12467552
+        },
+        {
+          "high_known_ratio_pair": false,
+          "left_known_ratio": 0.239583,
+          "left_load_offset": 12811040,
+          "normalized_shape_sha256": "5d710fcd4d2412c567be787e4ede0fab673577b380be8df19216a9728e96ad8b",
+          "relocation_delta": -263844,
+          "right_known_ratio": 0.239583,
+          "right_load_offset": 12547196
+        }
+      ],
+      "right_mov_l_reference_count": 4,
+      "right_unique_literal_pool_word_count": 3,
+      "value": 36
+    },
+    {
+      "constant_id": "logical-sector-size",
+      "high_known_ratio_pair_count": 0,
+      "left_mov_l_reference_count": 2,
+      "left_unique_literal_pool_word_count": 2,
+      "paired_window_count": 1,
+      "pairs": [
+        {
+          "high_known_ratio_pair": false,
+          "left_known_ratio": 0.09375,
+          "left_load_offset": 12073910,
+          "normalized_shape_sha256": "de009f0efd33fa9ce0c118204cdf16c08cd8dcbecba4dc24d55b67baf9820b6c",
+          "relocation_delta": -263844,
+          "right_known_ratio": 0.09375,
+          "right_load_offset": 11810066
+        }
+      ],
+      "right_mov_l_reference_count": 2,
+      "right_unique_literal_pool_word_count": 2,
+      "value": 2048
+    }
+  ],
+  "interpretation": "Two relocation-paired, high-known-ratio SH windows load the exact FLDB directory offset from one literal-pool word in each release. This is probable static numeric coupling, not proof that the routine parses FLDB. Record-size and sector-size constants remain ambiguous.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.parser-constant-comparison/v1"
+}

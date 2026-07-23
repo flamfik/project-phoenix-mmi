@@ -1,0 +1,730 @@
+{
+  "analysis_mode": "read-only-static",
+  "artifact": {
+    "filename": "H2_HI_EU_R1006_SH3_AUDIHI_5.BIN",
+    "header_length": 64,
+    "header_sha256": "684eaf23c3fe7f72e68f5b4244ac8cc1a780171805a488650d4a8eccf5623c2c",
+    "label": "CD3 K1006 / MMI 5570",
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "size_bytes": 12690344,
+    "source_iso_filename": "MMI-5570-4L0.998.961-cd3-3.iso",
+    "source_iso_sha256": "1cd34e40d65f476f5c5decb6355409c7d716020383767c44b4bbdebd6b88c596",
+    "source_iso_volume": "DISK",
+    "source_member_path": "MMI_HI/MMI/42/DEFAULT/H2_HI_EU_R1006_SH3_AUDIHI_5.BIN"
+  },
+  "checksums": {
+    "algorithm_tested": "CRC32/IEEE",
+    "expected_count": 25,
+    "matched_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "sequential_layouts": [
+      {
+        "algorithm": "CRC32/IEEE",
+        "block_size": 524288,
+        "block_size_hex": "0x80000",
+        "chunk_count": 25,
+        "complete": true,
+        "regions": [
+          {
+            "actual": "0be6c888",
+            "end": 524288,
+            "expected": "0be6c888",
+            "index": 0,
+            "length": 524288,
+            "matched": true,
+            "offset": 0
+          },
+          {
+            "actual": "8cdbf427",
+            "end": 1048576,
+            "expected": "8cdbf427",
+            "index": 1,
+            "length": 524288,
+            "matched": true,
+            "offset": 524288
+          },
+          {
+            "actual": "146b2430",
+            "end": 1572864,
+            "expected": "146b2430",
+            "index": 2,
+            "length": 524288,
+            "matched": true,
+            "offset": 1048576
+          },
+          {
+            "actual": "e85e74d9",
+            "end": 2097152,
+            "expected": "e85e74d9",
+            "index": 3,
+            "length": 524288,
+            "matched": true,
+            "offset": 1572864
+          },
+          {
+            "actual": "1e0ef12d",
+            "end": 2621440,
+            "expected": "1e0ef12d",
+            "index": 4,
+            "length": 524288,
+            "matched": true,
+            "offset": 2097152
+          },
+          {
+            "actual": "a6af4678",
+            "end": 3145728,
+            "expected": "a6af4678",
+            "index": 5,
+            "length": 524288,
+            "matched": true,
+            "offset": 2621440
+          },
+          {
+            "actual": "46be128b",
+            "end": 3670016,
+            "expected": "46be128b",
+            "index": 6,
+            "length": 524288,
+            "matched": true,
+            "offset": 3145728
+          },
+          {
+            "actual": "eda5da77",
+            "end": 4194304,
+            "expected": "eda5da77",
+            "index": 7,
+            "length": 524288,
+            "matched": true,
+            "offset": 3670016
+          },
+          {
+            "actual": "e02ab3f6",
+            "end": 4718592,
+            "expected": "e02ab3f6",
+            "index": 8,
+            "length": 524288,
+            "matched": true,
+            "offset": 4194304
+          },
+          {
+            "actual": "3bd78d0e",
+            "end": 5242880,
+            "expected": "3bd78d0e",
+            "index": 9,
+            "length": 524288,
+            "matched": true,
+            "offset": 4718592
+          },
+          {
+            "actual": "27ae44c4",
+            "end": 5767168,
+            "expected": "27ae44c4",
+            "index": 10,
+            "length": 524288,
+            "matched": true,
+            "offset": 5242880
+          },
+          {
+            "actual": "6e52c697",
+            "end": 6291456,
+            "expected": "6e52c697",
+            "index": 11,
+            "length": 524288,
+            "matched": true,
+            "offset": 5767168
+          },
+          {
+            "actual": "59c279ff",
+            "end": 6815744,
+            "expected": "59c279ff",
+            "index": 12,
+            "length": 524288,
+            "matched": true,
+            "offset": 6291456
+          },
+          {
+            "actual": "b71db824",
+            "end": 7340032,
+            "expected": "b71db824",
+            "index": 13,
+            "length": 524288,
+            "matched": true,
+            "offset": 6815744
+          },
+          {
+            "actual": "0463af72",
+            "end": 7864320,
+            "expected": "0463af72",
+            "index": 14,
+            "length": 524288,
+            "matched": true,
+            "offset": 7340032
+          },
+          {
+            "actual": "014258fa",
+            "end": 8388608,
+            "expected": "014258fa",
+            "index": 15,
+            "length": 524288,
+            "matched": true,
+            "offset": 7864320
+          },
+          {
+            "actual": "fb559556",
+            "end": 8912896,
+            "expected": "fb559556",
+            "index": 16,
+            "length": 524288,
+            "matched": true,
+            "offset": 8388608
+          },
+          {
+            "actual": "947a3c01",
+            "end": 9437184,
+            "expected": "947a3c01",
+            "index": 17,
+            "length": 524288,
+            "matched": true,
+            "offset": 8912896
+          },
+          {
+            "actual": "429f2bb3",
+            "end": 9961472,
+            "expected": "429f2bb3",
+            "index": 18,
+            "length": 524288,
+            "matched": true,
+            "offset": 9437184
+          },
+          {
+            "actual": "31762d64",
+            "end": 10485760,
+            "expected": "31762d64",
+            "index": 19,
+            "length": 524288,
+            "matched": true,
+            "offset": 9961472
+          },
+          {
+            "actual": "24fa3fd2",
+            "end": 11010048,
+            "expected": "24fa3fd2",
+            "index": 20,
+            "length": 524288,
+            "matched": true,
+            "offset": 10485760
+          },
+          {
+            "actual": "e864ca24",
+            "end": 11534336,
+            "expected": "e864ca24",
+            "index": 21,
+            "length": 524288,
+            "matched": true,
+            "offset": 11010048
+          },
+          {
+            "actual": "4786b1fd",
+            "end": 12058624,
+            "expected": "4786b1fd",
+            "index": 22,
+            "length": 524288,
+            "matched": true,
+            "offset": 11534336
+          },
+          {
+            "actual": "a2b20642",
+            "end": 12582912,
+            "expected": "a2b20642",
+            "index": 23,
+            "length": 524288,
+            "matched": true,
+            "offset": 12058624
+          },
+          {
+            "actual": "8b09f692",
+            "end": 12690344,
+            "expected": "8b09f692",
+            "index": 24,
+            "length": 107432,
+            "matched": true,
+            "offset": 12582912
+          }
+        ],
+        "tail_length": 107432
+      }
+    ],
+    "unmatched_indices": []
+  },
+  "entropy": {
+    "step": 65536,
+    "summary": {
+      "bands": {
+        "high": 5,
+        "low": 17,
+        "mixed": 167,
+        "very-low": 5
+      },
+      "maximum": 7.460651,
+      "mean": 6.235292,
+      "median": 6.767227,
+      "minimum": -0.0,
+      "window_count": 194
+    },
+    "transitions": [
+      {
+        "delta": -2.019435,
+        "from": 6.940357,
+        "offset": 65536,
+        "to": 4.920922
+      },
+      {
+        "delta": 1.875868,
+        "from": 4.920922,
+        "offset": 131072,
+        "to": 6.79679
+      },
+      {
+        "delta": 1.661516,
+        "from": 5.307688,
+        "offset": 1114112,
+        "to": 6.969204
+      },
+      {
+        "delta": -5.547575,
+        "from": 5.688523,
+        "offset": 8060928,
+        "to": 0.140948
+      },
+      {
+        "delta": 2.703353,
+        "from": -0.0,
+        "offset": 8192000,
+        "to": 2.703353
+      },
+      {
+        "delta": -2.421671,
+        "from": 2.703353,
+        "offset": 8257536,
+        "to": 0.281682
+      },
+      {
+        "delta": 5.068274,
+        "from": 0.300354,
+        "offset": 8454144,
+        "to": 5.368628
+      },
+      {
+        "delta": -1.850236,
+        "from": 5.071081,
+        "offset": 8650752,
+        "to": 3.220845
+      },
+      {
+        "delta": 1.948671,
+        "from": 3.220845,
+        "offset": 8716288,
+        "to": 5.169516
+      },
+      {
+        "delta": 1.592262,
+        "from": 5.589313,
+        "offset": 10420224,
+        "to": 7.181575
+      },
+      {
+        "delta": 1.662672,
+        "from": 4.893153,
+        "offset": 11599872,
+        "to": 6.555825
+      },
+      {
+        "delta": -2.367141,
+        "from": 6.858848,
+        "offset": 11796480,
+        "to": 4.491707
+      },
+      {
+        "delta": -1.751948,
+        "from": 4.491707,
+        "offset": 11862016,
+        "to": 2.739759
+      },
+      {
+        "delta": 2.253116,
+        "from": 2.739759,
+        "offset": 11927552,
+        "to": 4.992875
+      }
+    ],
+    "window_size": 65536
+  },
+  "filler_runs": [
+    {
+      "end": 8057352,
+      "length": 7912,
+      "offset": 8049440,
+      "value": "0x00"
+    },
+    {
+      "end": 8074124,
+      "length": 11260,
+      "offset": 8062864,
+      "value": "0x00"
+    },
+    {
+      "end": 8091890,
+      "length": 16876,
+      "offset": 8075014,
+      "value": "0x00"
+    },
+    {
+      "end": 8240812,
+      "length": 148040,
+      "offset": 8092772,
+      "value": "0x00"
+    },
+    {
+      "end": 8352427,
+      "length": 91151,
+      "offset": 8261276,
+      "value": "0x00"
+    },
+    {
+      "end": 8439520,
+      "length": 82534,
+      "offset": 8356986,
+      "value": "0x00"
+    },
+    {
+      "end": 8446878,
+      "length": 6438,
+      "offset": 8440440,
+      "value": "0x00"
+    },
+    {
+      "end": 8639944,
+      "length": 4608,
+      "offset": 8635336,
+      "value": "0x00"
+    },
+    {
+      "end": 8674304,
+      "length": 5248,
+      "offset": 8669056,
+      "value": "0x00"
+    }
+  ],
+  "fingerprints": {
+    "validated_counts": {
+      "GIF89a": 9,
+      "JPEG": 3
+    },
+    "validated_non_resource_count": 0,
+    "validated_resources": [
+      {
+        "format": "JPEG",
+        "height": 89,
+        "length": 1480,
+        "offset": 8242400,
+        "sha256": "a7c9f22c07d5f0263bf498bea6b3d417153ddc381df5b641da5160a1d2926496",
+        "width": 65
+      },
+      {
+        "format": "GIF89a",
+        "height": 12,
+        "length": 571,
+        "offset": 8243880,
+        "sha256": "ccd9594d56583662927c16ace8943ed098cc85515fa7db7fab4fbd8d2b8af3c9",
+        "width": 330
+      },
+      {
+        "format": "JPEG",
+        "height": 89,
+        "length": 7522,
+        "offset": 8244452,
+        "sha256": "c8147220cc5cc8016e182a9d8c24eef985ad364efd1f70a35150a1a98b829ba8",
+        "width": 203
+      },
+      {
+        "format": "JPEG",
+        "height": 29,
+        "length": 2770,
+        "offset": 8251976,
+        "sha256": "6f9d7c58222835a62a1741f8ea64da9afe7512ef2ae3ee34f1b3b74301d358ce",
+        "width": 162
+      },
+      {
+        "format": "GIF89a",
+        "height": 15,
+        "length": 82,
+        "offset": 8254748,
+        "sha256": "3b8f609dff4bde9adf8310b32d507f25e8d52eb0c6bf26cfc65ed887698da2fe",
+        "width": 25
+      },
+      {
+        "format": "GIF89a",
+        "height": 60,
+        "length": 961,
+        "offset": 8254832,
+        "sha256": "71041e084d112d5f3ba2a4af1099fa43fd0d2ba4c7c38126717bf1247a633ff3",
+        "width": 112
+      },
+      {
+        "format": "GIF89a",
+        "height": 1,
+        "length": 55,
+        "offset": 8255796,
+        "sha256": "e5ee5205bc9e4b23cbca8079055337f4a5e4954336991b2a5028818a4d31e496",
+        "width": 104
+      },
+      {
+        "format": "GIF89a",
+        "height": 1,
+        "length": 58,
+        "offset": 8255852,
+        "sha256": "4485f364f16c7db4af8b09b6c5428f94545fa73cc0eed0c3b4d07b889e776d5c",
+        "width": 154
+      },
+      {
+        "format": "GIF89a",
+        "height": 10,
+        "length": 36,
+        "offset": 8255912,
+        "sha256": "0a8715a0200c34618cde2b5cee99bd581a1894089368d20567a6f1616041d1f8",
+        "width": 1
+      },
+      {
+        "format": "GIF89a",
+        "height": 18,
+        "length": 51,
+        "offset": 8255948,
+        "sha256": "5a02e935be31fd052475f27a3b4198cee8613113de9a6d65d2b4e52384c81a6b",
+        "width": 1
+      },
+      {
+        "format": "GIF89a",
+        "height": 8,
+        "length": 36,
+        "offset": 8256000,
+        "sha256": "14fdf20856a85aa8c234d3e7e7552f234371f66cd3d2ceacd4575e6244b8efec",
+        "width": 1
+      },
+      {
+        "format": "GIF89a",
+        "height": 9,
+        "length": 36,
+        "offset": 8256036,
+        "sha256": "d8aa7c62959448dbe823161b8aa71aaeb45f8f3ccda96092141747af4553cf88",
+        "width": 1
+      }
+    ]
+  },
+  "header": {
+    "length": 64,
+    "sha256": "684eaf23c3fe7f72e68f5b4244ac8cc1a780171805a488650d4a8eccf5623c2c",
+    "validated_magic_at_offset_zero": []
+  },
+  "publication_safety": {
+    "embedded_resources_exported": false,
+    "payload_bytes_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.public-summary/v1",
+  "strings": {
+    "category_hits": {
+      "diagnostic": 783,
+      "eeprom-checksum": 238,
+      "most": 88,
+      "navigation": 671,
+      "platform": 37,
+      "ui-resource": 214
+    },
+    "encodings": {
+      "ascii": 112652,
+      "utf-16be": 632,
+      "utf-16le": 641
+    },
+    "raw_strings_included": false,
+    "record_count": 113925,
+    "technical_marker_hits": {
+      "AUDID3": {
+        "count": 1,
+        "first_offsets": [
+          8774
+        ]
+      },
+      "BECKER": {
+        "count": 25,
+        "first_offsets": [
+          8774,
+          972115,
+          972140,
+          972288,
+          972308,
+          972328,
+          972344,
+          982740
+        ]
+      },
+      "CRC": {
+        "count": 102,
+        "first_offsets": [
+          32076,
+          582947,
+          749968,
+          755042,
+          839300,
+          2331730,
+          3219644,
+          3245831
+        ]
+      },
+      "EEPROM": {
+        "count": 54,
+        "first_offsets": [
+          839300,
+          1280608,
+          1281171,
+          3790748,
+          3986764,
+          4030080,
+          4030100,
+          4030132
+        ]
+      },
+      "GPS": {
+        "count": 16,
+        "first_offsets": [
+          6916212,
+          6928736,
+          6929313,
+          6934164,
+          9349609,
+          11259397,
+          11303143,
+          11305053
+        ]
+      },
+      "HTML": {
+        "count": 53,
+        "first_offsets": [
+          975456,
+          982740,
+          983236,
+          983743,
+          983850,
+          995247,
+          995296,
+          995352
+        ]
+      },
+      "MMI": {
+        "count": 473,
+        "first_offsets": [
+          8774,
+          156137,
+          403292,
+          403344,
+          548883,
+          548944,
+          1281196,
+          1281224
+        ]
+      },
+      "MOST": {
+        "count": 81,
+        "first_offsets": [
+          184085,
+          856342,
+          1281292,
+          1281569,
+          1281868,
+          1282176,
+          1282556,
+          1282880
+        ]
+      },
+      "NAV": {
+        "count": 350,
+        "first_offsets": [
+          16924,
+          1299940,
+          1390144,
+          1391004,
+          1391020,
+          1391044,
+          1391068,
+          1391424
+        ]
+      },
+      "SH7709A": {
+        "count": 1,
+        "first_offsets": [
+          8774
+        ]
+      },
+      "VxWorks": {
+        "count": 5,
+        "first_offsets": [
+          507252,
+          704656,
+          769260,
+          775976,
+          781436
+        ]
+      },
+      "Wind River": {
+        "count": 7,
+        "first_offsets": [
+          32,
+          781540,
+          3875044,
+          8658972,
+          8737516,
+          8737561,
+          8738800
+        ]
+      }
+    },
+    "technical_markers": [
+      "AUDID3",
+      "BECKER",
+      "CRC",
+      "EEPROM",
+      "GPS",
+      "HTML",
+      "MMI",
+      "MOST",
+      "NAV",
+      "SH7709A",
+      "VxWorks",
+      "Wind River"
+    ]
+  }
+}

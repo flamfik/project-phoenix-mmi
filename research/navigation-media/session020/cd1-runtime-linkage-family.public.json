@@ -1,0 +1,173 @@
+{
+  "analysis_mode": "read-only-static-bounded-runtime-linkage-family",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "cross_version_record_run": "CONFIRMED_UNIQUE_NORMALIZED_BILATERAL_RUN",
+    "optical_buffer_owner": "OPEN",
+    "runtime_patch_overlay_or_linkage_mechanism": "HYPOTHESIS_STRENGTHENED_BY_BILATERAL_RESIDENT_LAYOUT",
+    "sector_read_abi": "OPEN",
+    "specific_writer_or_loader_chain": "OPEN"
+  },
+  "disc": {
+    "cache_marker_census": {
+      "marker_text_included": false,
+      "matched_marker_count": 0,
+      "stripped_imports_or_inlined_cache_operations_modeled": false,
+      "tested_exact_marker_count": 5,
+      "total_marker_occurrence_count": 0
+    },
+    "coherent_copy_table_search": {
+      "candidate_semantics_asserted": false,
+      "coherent_multi_record_table_count": 1823,
+      "covering_coherent_table_count": 21,
+      "maximum_copy_length": 1048576,
+      "record_count_distribution": {
+        "10": 9,
+        "11": 8,
+        "12": 3,
+        "16": 1,
+        "2": 1113,
+        "3": 348,
+        "4": 140,
+        "5": 87,
+        "6": 47,
+        "7": 31,
+        "8": 19,
+        "9": 17
+      },
+      "referenced_coherent_table_count": 33,
+      "referenced_covering_coherent_table_count": 0,
+      "table_start_pc_relative_reference_required": true,
+      "uniform_address_model_pair_required": true,
+      "valid_single_record_offset_count": 22918
+    },
+    "gbr_writer_search": {
+      "backward_instruction_limit": 64,
+      "candidate_store_count": 0,
+      "candidates": [],
+      "forward_byte_limit": 512,
+      "initializer_kind_counts": {
+        "ldc-memory": 173,
+        "ldc-register": 56
+      },
+      "memory_loaded_gbr_base_modeled": false,
+      "path_dominance_asserted": false,
+      "resolved_base_fact_count": 4,
+      "resolved_register_initializer_count": 2,
+      "syntactic_initializer_count": 229
+    },
+    "global_zero_target_family": {
+      "active_pointer_zero_run_count": 195,
+      "adjacent_literal_jsr_count": 110614,
+      "calls_to_zero_filled_targets": 3136,
+      "code_semantics_asserted_for_global_census": false,
+      "largest_active_run_call_count": 909,
+      "pointer_zero_run_count": 7107,
+      "runtime_execution_observed": false,
+      "unique_literal_target_count": 20870,
+      "zero_filled_target_count": 751,
+      "zero_filled_targets_covered_by_pointer_zero_runs": 199,
+      "zero_filled_targets_outside_pointer_zero_runs": 552,
+      "zero_target_call_count_histogram": {
+        "1": 457,
+        "10": 4,
+        "104": 1,
+        "11": 4,
+        "12": 3,
+        "13": 2,
+        "14": 1,
+        "15": 1,
+        "16": 3,
+        "17": 2,
+        "18": 3,
+        "2": 124,
+        "24": 1,
+        "25": 2,
+        "28": 1,
+        "286": 2,
+        "3": 49,
+        "32": 2,
+        "33": 1,
+        "337": 1,
+        "34": 1,
+        "35": 1,
+        "4": 32,
+        "42": 1,
+        "5": 20,
+        "59": 1,
+        "6": 6,
+        "66": 1,
+        "7": 8,
+        "77": 1,
+        "8": 7,
+        "9": 8
+      }
+    },
+    "helper_mediated_destination_search": {
+      "candidates": [],
+      "exact_run_address_seed_count": 931,
+      "forward_instruction_limit": 64,
+      "helper_identity_resolved": false,
+      "helper_mediated_candidate_count": 0,
+      "path_dominance_asserted": false
+    },
+    "selected_run": {
+      "first_pointer_relative_to_run": 7716,
+      "pointer_target_delta_vector": [
+        -576,
+        -576,
+        -576,
+        -576
+      ],
+      "pointer_target_file_offsets": [
+        1868192,
+        1867616,
+        1867040,
+        1866464,
+        1865888
+      ],
+      "record_count": 5,
+      "record_width": 16,
+      "run_end_file_offset": 1860556,
+      "run_start_file_offset": 1860476
+    },
+    "selected_run_activity": {
+      "active_slots": [
+        {
+          "adjacent_literal_jsr_count": 286,
+          "record_ordinal": 1,
+          "slot_file_offset": 1860500,
+          "tail_word_ordinal": 1
+        },
+        {
+          "adjacent_literal_jsr_count": 286,
+          "record_ordinal": 2,
+          "slot_file_offset": 1860512,
+          "tail_word_ordinal": 0
+        },
+        {
+          "adjacent_literal_jsr_count": 337,
+          "record_ordinal": 4,
+          "slot_file_offset": 1860548,
+          "tail_word_ordinal": 1
+        }
+      ],
+      "active_tail_slot_count": 3,
+      "adjacent_literal_jsr_count": 909,
+      "runtime_execution_observed": false,
+      "tail_slot_count": 15
+    }
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.runtime-linkage-family-disc/v1"
+}

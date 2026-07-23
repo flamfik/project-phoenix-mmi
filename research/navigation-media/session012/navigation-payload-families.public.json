@@ -1,0 +1,521 @@
+{
+  "aggregate": {
+    "all_records_match_declared_family_signature": true,
+    "family_count": 15,
+    "payload_record_count": 3599,
+    "standard_start_signature_match_count": 0
+  },
+  "analysis_mode": "read-only-static-bounded-prefixes",
+  "artifact": {
+    "artifact_id": "nav-dvd-ee-2018-2019-001",
+    "hash_verified_against_register": true,
+    "local_filename_or_path_included": false,
+    "sha256": "d11a56b2ee46de0d05548b2d6e8bf3b3b10f8d89e15e117b2ab1bcb4569cb0e3",
+    "size_bytes": 2571048960
+  },
+  "bounded_prefix_limit": 65536,
+  "classification": {
+    "compatibility_with_modified_or_new_maps": "NOT_ESTABLISHED",
+    "inner_payload_schema": "PARTIAL_PROPRIETARY_FAMILY_HEADERS_AND_DIRECTORIES",
+    "partition_model": "CONFIRMED_CROSS_FAMILY_16_PARTITION_TOPOLOGY",
+    "routing_or_coordinate_encoding": "OPEN",
+    "speech_payload_model": "CONFIRMED_DECLARED_TEXT_INDEX_AND_BINARY_DATA_SPLIT"
+  },
+  "families": [
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {
+        "CONFIRMED_BIG_ENDIAN_FIXED_RECORD_DIRECTORY": 33
+      },
+      "internal_directory_summary": {
+        "all_directory_length_formulas_match": true,
+        "all_ranges_in_bounds_nonoverlapping_and_ordered": true,
+        "maximum_record_count": 1731,
+        "minimum_record_count": 28,
+        "record_stride_values": [
+          16
+        ],
+        "unique_record_count_count": 17
+      },
+      "length_model_match_count": 0,
+      "maximum_size": 1610820,
+      "minimum_size": 29688,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 33,
+      "signature_ids": {
+        "verysmart-xac-b-directory": 33
+      },
+      "signature_match_count": 33,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-b",
+      "unique_bounded_prefix_hash_count": 33,
+      "unique_size_count": 33,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": {
+        "model_match_count": 1,
+        "observed_header_sizes": [
+          32
+        ]
+      },
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 1017663210,
+      "minimum_size": 1017663210,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 1,
+      "signature_ids": {
+        "deadbeef-gdb": 1
+      },
+      "signature_match_count": 1,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-gdb",
+      "unique_bounded_prefix_hash_count": 1,
+      "unique_size_count": 1,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 179200,
+      "minimum_size": 179200,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 1,
+      "signature_ids": {
+        "gps3-gp4": 1
+      },
+      "signature_match_count": 1,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-gp4",
+      "unique_bounded_prefix_hash_count": 1,
+      "unique_size_count": 1,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 313600,
+      "minimum_size": 313600,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 1,
+      "signature_ids": {
+        "gps3-gpa": 1
+      },
+      "signature_match_count": 1,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-gpa",
+      "unique_bounded_prefix_hash_count": 1,
+      "unique_size_count": 1,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 16,
+      "maximum_size": 817880,
+      "minimum_size": 52576,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 16,
+      "signature_ids": {
+        "place-name-index": 16
+      },
+      "signature_match_count": 16,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-ort",
+      "unique_bounded_prefix_hash_count": 16,
+      "unique_size_count": 16,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 16,
+      "maximum_size": 1515976,
+      "minimum_size": 61144,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 16,
+      "signature_ids": {
+        "postal-code-index": 16
+      },
+      "signature_match_count": 16,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-plz",
+      "unique_bounded_prefix_hash_count": 16,
+      "unique_size_count": 16,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 16,
+      "maximum_size": 755212,
+      "minimum_size": 10936,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 16,
+      "signature_ids": {
+        "global-poi-index": 16
+      },
+      "signature_match_count": 16,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-poi",
+      "unique_bounded_prefix_hash_count": 16,
+      "unique_size_count": 16,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 1,
+      "maximum_size": 17739116,
+      "minimum_size": 17739116,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 1,
+      "signature_ids": {
+        "raster-info": 1
+      },
+      "signature_match_count": 1,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-ras",
+      "unique_bounded_prefix_hash_count": 1,
+      "unique_size_count": 1,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 1951252,
+      "minimum_size": 852112,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 8,
+      "signature_ids": {
+        "speech-index-data": 8
+      },
+      "signature_match_count": 8,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {
+        "CONFIRMED_DECLARED_TEXT_INDEX_AND_BINARY_DATA_SPLIT": 8
+      },
+      "speech_index_summary": {
+        "all_declared_sizes_match": true,
+        "all_numeric_references_in_bounds": true,
+        "maximum_index_line_count": 530,
+        "maximum_numeric_reference_row_count": 520,
+        "minimum_index_line_count": 230,
+        "minimum_numeric_reference_row_count": 220
+      },
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-sm5",
+      "unique_bounded_prefix_hash_count": 8,
+      "unique_size_count": 8,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 1040424,
+      "minimum_size": 196560,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 7,
+      "signature_ids": {
+        "traffic-location-table": 7
+      },
+      "signature_match_count": 7,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-tlt",
+      "unique_bounded_prefix_hash_count": 7,
+      "unique_size_count": 7,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {
+        "CONFIRMED_BIG_ENDIAN_FIXED_RECORD_DIRECTORY": 32
+      },
+      "internal_directory_summary": {
+        "all_directory_length_formulas_match": true,
+        "all_ranges_in_bounds_nonoverlapping_and_ordered": true,
+        "maximum_record_count": 317,
+        "minimum_record_count": 28,
+        "record_stride_values": [
+          12
+        ],
+        "unique_record_count_count": 16
+      },
+      "length_model_match_count": 0,
+      "maximum_size": 538720,
+      "minimum_size": 13868,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 32,
+      "signature_ids": {
+        "verysmart-xac-v-directory": 32
+      },
+      "signature_match_count": 32,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-v",
+      "unique_bounded_prefix_hash_count": 32,
+      "unique_size_count": 32,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 1638668,
+      "minimum_size": 308,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 3462,
+      "signature_ids": {
+        "xac-tile": 3462
+      },
+      "signature_match_count": 3462,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-xac",
+      "unique_bounded_prefix_hash_count": 3462,
+      "unique_size_count": 3302,
+      "xac_header_summary": {
+        "fixed_header_size_match_count": 3462,
+        "partition_id_in_expected_range_count": 3462,
+        "subrecord_type_values": [
+          2
+        ],
+        "two_timestamp_field_count": 3462
+      }
+    },
+    {
+      "header_size_model_summary": {
+        "model_match_count": 1,
+        "observed_header_sizes": [
+          140
+        ]
+      },
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 0,
+      "maximum_size": 660108,
+      "minimum_size": 660108,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 1,
+      "signature_ids": {
+        "xac-database-header": 1
+      },
+      "signature_match_count": 1,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-xah",
+      "unique_bounded_prefix_hash_count": 1,
+      "unique_size_count": 1,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 2,
+      "maximum_size": 2468560,
+      "minimum_size": 556036,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 2,
+      "signature_ids": {
+        "update-image-code-header": 2
+      },
+      "signature_match_count": 2,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-xb1c",
+      "unique_bounded_prefix_hash_count": 2,
+      "unique_size_count": 2,
+      "xac_header_summary": null
+    },
+    {
+      "header_size_model_summary": null,
+      "internal_directory_status_counts": {},
+      "internal_directory_summary": null,
+      "length_model_match_count": 2,
+      "maximum_size": 2468556,
+      "minimum_size": 556036,
+      "raw_names_headers_or_payloads_included": false,
+      "record_count": 2,
+      "signature_ids": {
+        "update-image-code-header": 2
+      },
+      "signature_match_count": 2,
+      "signature_status": "CONFIRMED_FAMILY_SIGNATURE_AT_OFFSET_ZERO",
+      "speech_index_status_counts": {},
+      "speech_index_summary": null,
+      "standard_start_signature_counts": {},
+      "suffix_class": "suffix-xb7",
+      "unique_bounded_prefix_hash_count": 2,
+      "unique_size_count": 2,
+      "xac_header_summary": null
+    }
+  ],
+  "opaque_field_probe": {
+    "nonzero_match_counts": {},
+    "nonzero_value_count": 3599,
+    "raw_opaque_fields_included": false,
+    "record_count": 3599,
+    "status": "COMMON_NAME_HASH_AND_STRUCTURAL_MODELS_NOT_CONFIRMED",
+    "tested_models": [
+      "adler32-field24",
+      "adler32-lower",
+      "adler32-raw",
+      "adler32-upper",
+      "crc32-field24",
+      "crc32-lower",
+      "crc32-raw",
+      "crc32-upper",
+      "ordinal",
+      "payload-end",
+      "payload-offset",
+      "payload-size"
+    ],
+    "unique_opaque_field_count": 3599,
+    "zero_value_count": 0
+  },
+  "partition_topology": {
+    "complete_triplet_partition_sets": {
+      "suffix-ort": true,
+      "suffix-plz": true,
+      "suffix-poi": true
+    },
+    "complete_two_level_partition_sets": {
+      "suffix-b": true,
+      "suffix-v": true
+    },
+    "exact_stem_overlap_counts": [
+      {
+        "count": 1,
+        "left_suffix": "suffix-b",
+        "right_suffix": "suffix-ort"
+      },
+      {
+        "count": 1,
+        "left_suffix": "suffix-b",
+        "right_suffix": "suffix-plz"
+      },
+      {
+        "count": 1,
+        "left_suffix": "suffix-b",
+        "right_suffix": "suffix-poi"
+      },
+      {
+        "count": 32,
+        "left_suffix": "suffix-b",
+        "right_suffix": "suffix-v"
+      },
+      {
+        "count": 16,
+        "left_suffix": "suffix-ort",
+        "right_suffix": "suffix-plz"
+      },
+      {
+        "count": 16,
+        "left_suffix": "suffix-ort",
+        "right_suffix": "suffix-poi"
+      },
+      {
+        "count": 16,
+        "left_suffix": "suffix-plz",
+        "right_suffix": "suffix-poi"
+      },
+      {
+        "count": 1,
+        "left_suffix": "suffix-ras",
+        "right_suffix": "suffix-xah"
+      },
+      {
+        "count": 2,
+        "left_suffix": "suffix-xb1c",
+        "right_suffix": "suffix-xb7"
+      }
+    ],
+    "partition_count": 16,
+    "partition_id_maximum": 15,
+    "partition_id_minimum": 0,
+    "raw_names_or_partition_labels_included": false,
+    "status": "CONFIRMED_CROSS_FAMILY_16_PARTITION_TOPOLOGY",
+    "unpaired_singleton_counts": {
+      "suffix-b": 1,
+      "suffix-v": 0
+    },
+    "xac_records_by_partition": {
+      "partition-00": 634,
+      "partition-01": 134,
+      "partition-02": 88,
+      "partition-03": 192,
+      "partition-04": 220,
+      "partition-05": 72,
+      "partition-06": 312,
+      "partition-07": 248,
+      "partition-08": 138,
+      "partition-09": 108,
+      "partition-10": 56,
+      "partition-11": 78,
+      "partition-12": 74,
+      "partition-13": 222,
+      "partition-14": 326,
+      "partition-15": 560
+    }
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "local_paths_included": false,
+    "member_or_internal_names_included": false,
+    "payload_bytes_included": false,
+    "raw_headers_or_metadata_included": false,
+    "raw_opaque_fields_included": false
+  },
+  "schema": "phoenix-mmi.navigation-payload-families/v1"
+}

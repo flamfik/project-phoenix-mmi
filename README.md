@@ -4,9 +4,9 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 ## Current phase
 
-**Phase 0 — Foundation**
+**M1 — Firmware Archaeology**
 
-The initial repository establishes the research method, evidence model, safety boundaries, artifact policy, session records, and modular project structure required before firmware analysis begins.
+The foundation, update model and principal-image fingerprinting are complete. Session 024 confirms that both selected owner pairs require runtime entry `r4` and `r6`, then tests the two stable call-return/field-load dispatch contracts registered in Session 016. Each contract is unique and bilateral, but both lose modeled `r6` provenance after a preceding call; the family is therefore excluded as the selected owner caller under the bounded gate. The owner-entry producer, state creator/writer, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -28,10 +28,57 @@ research/      Firmware-specific research records and reproducible manifests
 tools/         Small, focused analysis utilities
 scripts/       Lab setup and workflow helpers
 tests/         Unit, integration and sanitized fixture data
-sdk/           Future reusable parsers and libraries
+sdk/           Phoenix SDK reusable static-analysis library
 emulator/      Future host-side simulation experiments
 ui/            Future interface and resource research
 ```
+
+## Current research results
+
+- [Session 003 report](docs/sessions/SESSION-003-mmi-bin-static-analysis.md)
+- [Session 004 report](docs/sessions/SESSION-004-superh-vxworks-layout.md)
+- [Session 005 report](docs/sessions/SESSION-005-browser-resource-bundle.md)
+- [Session 006 report](docs/sessions/SESSION-006-runtime-address-map.md)
+- [Session 007 report](docs/sessions/SESSION-007-reference-graph-owner-evidence.md)
+- [Session 008 report](docs/sessions/SESSION-008-firmware-operational-model.md)
+- [Session 009 report](docs/sessions/SESSION-009-navigation-storage-boundary.md)
+- [Session 010 report](docs/sessions/SESSION-010-navigation-dataflow-optical-contract.md)
+- [Session 011 report](docs/sessions/SESSION-011-navigation-media-fldb.md)
+- [Session 012 report](docs/sessions/SESSION-012-payload-partitions-parser-constants.md)
+- [Session 013 report](docs/sessions/SESSION-013-corrected-fldb-parser-dataflow.md)
+- [Session 014 report](docs/sessions/SESSION-014-global-fldb-parser-search.md)
+- [Session 015 report](docs/sessions/SESSION-015-optical-interprocedural-callgraph.md)
+- [Session 016 report](docs/sessions/SESSION-016-predecessor-context-object-dispatch.md)
+- [Session 017 report](docs/sessions/SESSION-017-descriptor-producer-lineage.md)
+- [Session 018 report](docs/sessions/SESSION-018-accessor-call-family-runtime-linkage.md)
+- [Session 019 report](docs/sessions/SESSION-019-runtime-slot-shadow-accessors.md)
+- [Session 020 report](docs/sessions/SESSION-020-bilateral-runtime-linkage-family.md)
+- [Session 021 report](docs/sessions/SESSION-021-residual-linkage-owner-lineage.md)
+- [Session 022 report](docs/sessions/SESSION-022-owner-ingress-state-provenance.md)
+- [Session 023 report](docs/sessions/SESSION-023-internal-continuation-contracts.md)
+- [Session 024 report](docs/sessions/SESSION-024-owner-entry-indirect-caller-compatibility.md)
+- [Research Questions](docs/research-questions/README.md)
+- [Technical specifications](docs/specs/)
+- [Session 006 publication-safe evidence](research/firmware-5570/session006/)
+- [Session 007 publication-safe evidence](research/firmware-5570/session007/)
+- [Session 008 publication-safe evidence](research/firmware-5570/session008/)
+- [Session 009 publication-safe evidence](research/firmware-5570/session009/)
+- [Session 010 publication-safe evidence](research/firmware-5570/session010/)
+- [Session 011 publication-safe evidence](research/navigation-media/session011/)
+- [Session 012 publication-safe evidence](research/navigation-media/session012/)
+- [Session 013 publication-safe evidence](research/navigation-media/session013/)
+- [Session 014 publication-safe evidence](research/navigation-media/session014/)
+- [Session 015 publication-safe evidence](research/navigation-media/session015/)
+- [Session 016 publication-safe evidence](research/navigation-media/session016/)
+- [Session 017 publication-safe evidence](research/navigation-media/session017/)
+- [Session 018 publication-safe evidence](research/navigation-media/session018/)
+- [Session 019 publication-safe evidence](research/navigation-media/session019/)
+- [Session 020 publication-safe evidence](research/navigation-media/session020/)
+- [Session 021 publication-safe evidence](research/navigation-media/session021/)
+- [Session 022 publication-safe evidence](research/navigation-media/session022/)
+- [Session 023 publication-safe evidence](research/navigation-media/session023/)
+- [Session 024 publication-safe evidence](research/navigation-media/session024/)
+- [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels
 

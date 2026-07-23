@@ -1,0 +1,385 @@
+{
+  "analysis_mode": "read-only-static-bounded-internal-continuation-contract",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "bilateral_selected_owner_producer": "NOT_ESTABLISHED",
+    "generic_cross_version_address_record_family": "CONFIRMED_STRUCTURAL_CALL_FAMILY",
+    "landing_pad_or_unwind_registration": "PROBABLE_NOT_CONFIRMED",
+    "left_seed_role": "CONFIRMED_INTERNAL_LABEL_INDIRECT_INVOCATION",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "owner_entry_argument_producer": "NOT_ESTABLISHED_SEEDS_ARE_INTERNAL_LABELS",
+    "right_seed_role": "CONFIRMED_INTERNAL_ADDRESS_ARGUMENT_TO_RECORD_HELPER",
+    "sector_read_abi": "OPEN",
+    "selected_addresses_are_owner_entries": "DISPROVED_FOR_THE_TWO_SESSION022_INTERNAL_SEEDS",
+    "semantic_owner_identity": "OPEN",
+    "specific_session017_producer_edge": "OPEN",
+    "state_creator_or_writer": "OPEN"
+  },
+  "generic_address_record_family": {
+    "ambiguous_left_context_match_count": 27,
+    "cross_version_call_family_promoted": true,
+    "dominant_left_target_consensus_count": 215,
+    "dominant_left_target_consensus_coverage": 0.926724,
+    "dominant_left_target_file_offset": 1842544,
+    "dominant_left_target_profile": {
+      "bounded_code_gate_passed": true,
+      "call_count": 2,
+      "calls": [
+        {
+          "arguments": {
+            "r4": {
+              "base_register": "r8",
+              "base_status": "ENTRY_ARGUMENT",
+              "derivation_depth": 2,
+              "displacement": 8,
+              "status": "MEMORY_FIELD"
+            },
+            "r5": {
+              "register": "r5",
+              "status": "ENTRY_ARGUMENT"
+            },
+            "r6": {
+              "register": "r6",
+              "status": "ENTRY_ARGUMENT"
+            },
+            "r7": {
+              "register": "r7",
+              "status": "ENTRY_ARGUMENT"
+            }
+          },
+          "call_site_offset": 1842568,
+          "delay_slot_accounted_for": true,
+          "relative_call_offset": 24,
+          "resolution": {
+            "status": "RESOLVED_REGISTER_FROM_IN_IMAGE_LITERAL",
+            "target_file_offset": 8062184,
+            "target_register": "r1"
+          },
+          "result_forwarded_to": [],
+          "result_use": {
+            "captured_register_count": 0,
+            "dereference_count_before_next_call": 0,
+            "store_count_before_next_call": 0,
+            "tested_immediately_or_locally": false
+          }
+        },
+        {
+          "arguments": {
+            "r4": {
+              "derivation_depth": 2,
+              "register": "r4",
+              "status": "ENTRY_ARGUMENT"
+            },
+            "r5": {
+              "status": "CALLER_SAVED_CLOBBER"
+            },
+            "r6": {
+              "status": "CALLER_SAVED_CLOBBER"
+            },
+            "r7": {
+              "status": "CALLER_SAVED_CLOBBER"
+            }
+          },
+          "call_site_offset": 1842598,
+          "delay_slot_accounted_for": true,
+          "relative_call_offset": 54,
+          "resolution": {
+            "status": "RESOLVED_REGISTER_FROM_IN_IMAGE_LITERAL",
+            "target_file_offset": 8062132,
+            "target_register": "r1"
+          },
+          "result_forwarded_to": [],
+          "result_use": {
+            "captured_register_count": 0,
+            "dereference_count_before_next_call": 0,
+            "store_count_before_next_call": 0,
+            "tested_immediately_or_locally": false
+          }
+        }
+      ],
+      "entry_file_offset": 1842544,
+      "function_boundary_asserted": false,
+      "instruction_bytes_included": false,
+      "instruction_count": 36,
+      "known_instruction_count": 36,
+      "known_ratio": 1.0,
+      "normalized_shape_sha256": "d94d93e1e389d690f199f1a8747e0b8d9fc0877fce00c9c7d958ffa0f194459b",
+      "prologue_save_pr_in_first_12_instructions": false,
+      "resolved_static_call_count": 2,
+      "return_count": 1,
+      "seed_source": "SESSION023_DOMINANT_LEFT_HELPER",
+      "unresolved_indirect_call_count": 0,
+      "window_length": 72
+    },
+    "exact_helper_shape_census": {
+      "left": {
+        "exact_normalized_sequence_match_count": 3,
+        "matches": [
+          {
+            "adjacent_literal_jsr_call_count": 0,
+            "target_file_offset": 1842468
+          },
+          {
+            "adjacent_literal_jsr_call_count": 0,
+            "target_file_offset": 1843748
+          },
+          {
+            "adjacent_literal_jsr_call_count": 0,
+            "target_file_offset": 6002636
+          }
+        ]
+      },
+      "right": {
+        "exact_normalized_sequence_match_count": 3,
+        "matches": [
+          {
+            "adjacent_literal_jsr_call_count": 232,
+            "target_file_offset": 2166960
+          },
+          {
+            "adjacent_literal_jsr_call_count": 0,
+            "target_file_offset": 2168240
+          },
+          {
+            "adjacent_literal_jsr_call_count": 0,
+            "target_file_offset": 6157772
+          }
+        ]
+      }
+    },
+    "left_address_argument_census": {
+      "address_semantics_asserted": false,
+      "adjacent_literal_jsr_call_count": 231,
+      "all_calls_have_r5_in_image_address": true,
+      "r5_in_image_address_count": 231,
+      "r5_unique_in_image_address_count": 150
+    },
+    "minimum_consensus_coverage": 0.9,
+    "minimum_unique_context_matches": 32,
+    "multi_target_ambiguous_context_count": 0,
+    "normalized_context_after_word_count": 6,
+    "normalized_context_before_word_count": 8,
+    "normalized_context_total_word_count": 16,
+    "right_address_argument_census": {
+      "address_semantics_asserted": false,
+      "adjacent_literal_jsr_call_count": 232,
+      "all_calls_have_r5_in_image_address": true,
+      "r5_in_image_address_count": 232,
+      "r5_unique_in_image_address_count": 151
+    },
+    "right_helper_profile": {
+      "bounded_code_gate_passed": true,
+      "call_count": 1,
+      "entry_r4_field_offsets": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        24
+      ],
+      "entry_r4_field_store_count": 6,
+      "field_stores": [
+        {
+          "field_offset": 24,
+          "source_register": "r1",
+          "source_value_path_merged": true
+        },
+        {
+          "field_offset": 0,
+          "source_register": "r1",
+          "source_value_path_merged": true
+        },
+        {
+          "field_offset": 12,
+          "source_register": "r4",
+          "source_value_path_merged": true
+        },
+        {
+          "field_offset": 4,
+          "source_register": "r4",
+          "source_value_path_merged": true
+        },
+        {
+          "field_offset": 8,
+          "source_register": "r0",
+          "source_value_path_merged": true
+        },
+        {
+          "field_offset": 16,
+          "source_register": "r9",
+          "source_value_path_merged": true
+        }
+      ],
+      "function_boundary_asserted": false,
+      "instruction_count": 30,
+      "known_ratio": 0.933333,
+      "landing_pad_or_unwind_semantics": "PROBABLE_NOT_CONFIRMED",
+      "normalized_shape_sha256": "0ee0cb3c857b5382446aedf6711df16c2ef68dd3c6782c2d3643f05565d5b267",
+      "r7_modeled_operand_mention_count": 0,
+      "record_or_frame_semantics": "PROBABLE",
+      "return_count": 1,
+      "target_file_offset": 2166960
+    },
+    "right_known_accessor_call_count": 232,
+    "runtime_equivalence_asserted": false,
+    "selected_non_adjacent_helper_call": {
+      "left_exact_context_match_count": 0,
+      "left_target_consensus": null,
+      "right_helper_load_file_offset": 2004710,
+      "right_helper_target_file_offset": 2166960
+    },
+    "single_target_consensus_context_count": 215,
+    "unique_left_context_match_count": 188,
+    "unmatched_right_context_count": 17
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.internal-continuation-contract-disc/v1",
+  "selected_internal_address_contract": {
+    "internal_address": {
+      "address_classification": "INTERNAL_LABEL_NOT_OWNER_ENTRY",
+      "bounded_code_gate_passed": false,
+      "call_count": 9,
+      "first_instruction_mnemonic": "mov.l",
+      "function_boundary_asserted": false,
+      "known_ratio": 0.96875,
+      "live_in_registers_before_first_call": [
+        "r2",
+        "r14"
+      ],
+      "prologue_save_pr_in_first_12_instructions": false,
+      "return_count": 0,
+      "standalone_abi_entry_asserted": false,
+      "target_file_offset": 2012608,
+      "target_relative_to_owner": 58
+    },
+    "owner_start_file_offset": 2012550,
+    "session022_use_classification": "ARGUMENT_TO_OTHER_INDIRECT_CALL",
+    "use_contract": {
+      "arguments_and_preserved_context": {
+        "r10": {
+          "canonical": "LOAD32[24](ENTRY:r4)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4"
+          ]
+        },
+        "r11": {
+          "canonical": "LOAD32[40](ENTRY:r4)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4"
+          ]
+        },
+        "r12": {
+          "canonical": "ADD(CONST:68,ADD(NO_DEFINITION,CONST:-76))",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "CONSTANT",
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        "r13": {
+          "canonical": "ADD(ADD(NO_DEFINITION,CONST:-76),CONST:16)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        "r14": {
+          "canonical": "ADD(NO_DEFINITION,CONST:-76)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        "r4": {
+          "canonical": "ADD(NO_DEFINITION,CONST:-76)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        "r5": {
+          "canonical": "IN_IMAGE_POINTER",
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 2012608
+        },
+        "r6": {
+          "canonical": "LOAD32[24](ENTRY:r4)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4"
+          ]
+        },
+        "r7": {
+          "canonical": "LOAD32[40](ENTRY:r4)",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4"
+          ]
+        },
+        "r8": {
+          "canonical": "ADD(ADD(ENTRY:r4,CONST:8),LOAD16[0](ADD(LOAD32[8](ENTRY:r4),CONST:16)))",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "ENTRY:r4",
+            "CONSTANT",
+            "LOAD",
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        "r9": {
+          "canonical": "ENTRY:r4",
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "ENTRY:r4"
+          ]
+        }
+      },
+      "call_relative_to_window": 192,
+      "call_site_file_offset": 2004718,
+      "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+      "enclosing_window_start_file_offset": 2004526,
+      "function_boundary_asserted": false,
+      "path_dominance_asserted": false,
+      "target_expression": {
+        "canonical": "IN_IMAGE_POINTER",
+        "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+        "root_classes": [
+          "IN_IMAGE_POINTER"
+        ],
+        "target_file_offset": 2166960
+      },
+      "target_file_offset": 2166960,
+      "target_load_file_offset": 2004710,
+      "target_resolution_status": "RESOLVED_IN_IMAGE_POINTER"
+    }
+  }
+}

@@ -1,0 +1,806 @@
+{
+  "analysis_mode": "read-only-static",
+  "anchor_hits": [
+    {
+      "anchor_id": "cdrom-manager",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 8,
+      "offset": 44572
+    },
+    {
+      "anchor_id": "cdrom-access-event",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 17,
+      "offset": 956716
+    },
+    {
+      "anchor_id": "cdrom-access-thread-dispatcher",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 27,
+      "offset": 1000568
+    },
+    {
+      "anchor_id": "cdrom-thread-dispatcher",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 21,
+      "offset": 1003324
+    },
+    {
+      "anchor_id": "cdrom-access-thread-dispatcher",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 27,
+      "offset": 1131201
+    },
+    {
+      "anchor_id": "cdrom-manager-task",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 19,
+      "offset": 1244860
+    },
+    {
+      "anchor_id": "navigation-internal-data",
+      "category": "navigation-data",
+      "encoding": "ascii",
+      "match_length": 24,
+      "offset": 1781024
+    },
+    {
+      "anchor_id": "cdrom-command-event",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 20,
+      "offset": 2208676
+    },
+    {
+      "anchor_id": "cdrom-filesystem-event",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 23,
+      "offset": 2209400
+    },
+    {
+      "anchor_id": "cdrom-event",
+      "category": "optical-service",
+      "encoding": "ascii",
+      "match_length": 13,
+      "offset": 2234884
+    },
+    {
+      "anchor_id": "routeact-dat",
+      "category": "route-data",
+      "encoding": "ascii",
+      "match_length": 12,
+      "offset": 3295908
+    },
+    {
+      "anchor_id": "routeact-dat",
+      "category": "route-data",
+      "encoding": "ascii",
+      "match_length": 12,
+      "offset": 3334192
+    },
+    {
+      "anchor_id": "map-position",
+      "category": "route-data",
+      "encoding": "ascii",
+      "match_length": 12,
+      "offset": 11358126
+    }
+  ],
+  "anchor_inventory": {
+    "anchor_counts": {
+      "cdrom-access-event": 1,
+      "cdrom-access-thread-dispatcher": 2,
+      "cdrom-command-event": 1,
+      "cdrom-event": 1,
+      "cdrom-filesystem-event": 1,
+      "cdrom-manager": 1,
+      "cdrom-manager-task": 1,
+      "cdrom-thread-dispatcher": 1,
+      "map-position": 1,
+      "navigation-internal-data": 1,
+      "routeact-dat": 2
+    },
+    "category_counts": {
+      "navigation-data": 1,
+      "optical-service": 9,
+      "route-data": 3
+    },
+    "matched_anchor_count": 13,
+    "raw_strings_included": false
+  },
+  "anchor_vocabulary": [
+    {
+      "category": "navigation-data",
+      "id": "navigation-internal-data"
+    },
+    {
+      "category": "route-data",
+      "id": "routeact-dat"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-manager"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-access-event"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-access-thread-dispatcher"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-thread-dispatcher"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-manager-task"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-command-event"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-filesystem-event"
+    },
+    {
+      "category": "optical-service",
+      "id": "cdrom-event"
+    },
+    {
+      "category": "route-data",
+      "id": "map-position"
+    },
+    {
+      "category": "route-data",
+      "id": "navi-stream"
+    },
+    {
+      "category": "route-data",
+      "id": "map-route-task"
+    }
+  ],
+  "artifact": {
+    "filename": "H2_HI_EU_R1006_SH3_AUDIHI_5.BIN",
+    "label": "CD3 K1006 / MMI 5570",
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "size_bytes": 12690344,
+    "source_iso_filename": "MMI-5570-4L0.998.961-cd3-3.iso",
+    "source_iso_sha256": "1cd34e40d65f476f5c5decb6355409c7d716020383767c44b4bbdebd6b88c596"
+  },
+  "classification": {
+    "function_semantics": "OPEN",
+    "map_media_schema": "OPEN",
+    "navigation_data_callsites": "CONFIRMED_BOUNDED_CODE_COUPLING",
+    "navigation_to_optical_direct_edge": "NOT_CONFIRMED",
+    "optical_service_record_family": "CONFIRMED_EMBEDDED_RECORD_FAMILY",
+    "route_data_records": "PRESENT_WITHOUT_DIRECT_CODE_REFERENCE"
+  },
+  "code_coupling": {
+    "edges": [
+      {
+        "anchor_id": "navigation-internal-data",
+        "category": "navigation-data",
+        "literal_word_offset": 1769780,
+        "referrer_windows": [
+          {
+            "center": 1769670,
+            "direct_relative_calls": [],
+            "end": 1769798,
+            "flow_counts": {
+              "conditional": 8,
+              "indirect-call": 3,
+              "linear": 83,
+              "return": 2
+            },
+            "function_boundary_asserted": false,
+            "instruction_bytes_included": false,
+            "instruction_count": 96,
+            "known_instruction_count": 50,
+            "known_ratio": 0.520833,
+            "mnemonic_counts": {
+              "add": 8,
+              "bf": 1,
+              "bf/s": 4,
+              "bt": 3,
+              "jsr": 3,
+              "mov": 20,
+              "mov.l": 8,
+              "nop": 1,
+              "rts": 2,
+              "unknown": 46
+            },
+            "normalized_shape_sha256": "c3ebd80773d0671d6dff8538f98a12bb2312260ed5c99fa5e2f1974e20ab2f0d",
+            "resolved_adjacent_indirect_calls": [
+              {
+                "call_site_offset": 1769680,
+                "literal_word_offset": 1769784,
+                "load_offset": 1769678,
+                "raw_runtime_address_included": false,
+                "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+                "target_file_offset": 1777692,
+                "target_in_image": true
+              },
+              {
+                "call_site_offset": 1769708,
+                "literal_word_offset": 1769788,
+                "load_offset": 1769706,
+                "raw_runtime_address_included": false,
+                "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+                "target_file_offset": 574340,
+                "target_in_image": true
+              },
+              {
+                "call_site_offset": 1769734,
+                "literal_word_offset": 1769784,
+                "load_offset": 1769732,
+                "raw_runtime_address_included": false,
+                "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+                "target_file_offset": 1777692,
+                "target_in_image": true
+              }
+            ],
+            "start": 1769606
+          }
+        ],
+        "target_anchor_offset": 1781024
+      },
+      {
+        "anchor_id": "navigation-internal-data",
+        "category": "navigation-data",
+        "literal_word_offset": 1769928,
+        "referrer_windows": [
+          {
+            "center": 1769808,
+            "direct_relative_calls": [],
+            "end": 1769936,
+            "flow_counts": {
+              "conditional": 6,
+              "indirect-call": 4,
+              "linear": 84,
+              "return": 2
+            },
+            "function_boundary_asserted": false,
+            "instruction_bytes_included": false,
+            "instruction_count": 96,
+            "known_instruction_count": 45,
+            "known_ratio": 0.46875,
+            "mnemonic_counts": {
+              "add": 10,
+              "bf/s": 2,
+              "bt": 1,
+              "bt/s": 3,
+              "jsr": 4,
+              "mov": 16,
+              "mov.l": 6,
+              "nop": 1,
+              "rts": 2,
+              "unknown": 51
+            },
+            "normalized_shape_sha256": "1eda8edd9868bb91c25e35a197b17b9c868cafade4c3eb75b8d5a90a1fd09ee6",
+            "resolved_adjacent_indirect_calls": [
+              {
+                "call_site_offset": 1769868,
+                "literal_word_offset": 1769932,
+                "load_offset": 1769866,
+                "raw_runtime_address_included": false,
+                "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+                "target_file_offset": 574364,
+                "target_in_image": true
+              },
+              {
+                "call_site_offset": 1769894,
+                "literal_word_offset": 1769936,
+                "load_offset": 1769892,
+                "raw_runtime_address_included": false,
+                "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+                "target_file_offset": 1777736,
+                "target_in_image": true
+              },
+              {
+                "call_site_offset": 1769908,
+                "literal_word_offset": 1769940,
+                "load_offset": 1769906,
+                "raw_runtime_address_included": false,
+                "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+                "target_file_offset": 574312,
+                "target_in_image": true
+              }
+            ],
+            "start": 1769744
+          }
+        ],
+        "target_anchor_offset": 1781024
+      }
+    ],
+    "exact_linked_word_count": 2,
+    "pc_relative_referrer_count": 2,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false,
+    "referrer_counts_by_anchor": {
+      "navigation-internal-data": 2
+    },
+    "resolved_target_contexts": [
+      {
+        "code_window": {
+          "center": 574312,
+          "direct_relative_calls": [],
+          "end": 574376,
+          "flow_counts": {
+            "linear": 32
+          },
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 32,
+          "known_instruction_count": 6,
+          "known_ratio": 0.1875,
+          "mnemonic_counts": {
+            "mov": 4,
+            "nop": 2,
+            "unknown": 26
+          },
+          "normalized_shape_sha256": "889c50d1368c8f9771eb5f117f0bb5d2a660af81be13c4ff17b03c1a9f3c878a",
+          "resolved_adjacent_indirect_calls": [],
+          "start": 574312
+        },
+        "nearest_fixed_boundary_marker": {
+          "categories": [
+            "storage"
+          ],
+          "markers": [
+            "sector"
+          ],
+          "maximum_distance": 16384,
+          "raw_string_included": false,
+          "signed_distance": -240
+        },
+        "target_file_offset": 574312
+      },
+      {
+        "code_window": {
+          "center": 574340,
+          "direct_relative_calls": [],
+          "end": 574404,
+          "flow_counts": {
+            "conditional": 1,
+            "linear": 31
+          },
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 32,
+          "known_instruction_count": 9,
+          "known_ratio": 0.28125,
+          "mnemonic_counts": {
+            "add": 1,
+            "bt/s": 1,
+            "mov": 5,
+            "mov.w": 1,
+            "nop": 1,
+            "unknown": 23
+          },
+          "normalized_shape_sha256": "3688e47e30f671637d5bd58d27fd6fd77844fd67cbe610344413346d319808bc",
+          "resolved_adjacent_indirect_calls": [],
+          "start": 574340
+        },
+        "nearest_fixed_boundary_marker": {
+          "categories": [
+            "storage"
+          ],
+          "markers": [
+            "sector"
+          ],
+          "maximum_distance": 16384,
+          "raw_string_included": false,
+          "signed_distance": -268
+        },
+        "target_file_offset": 574340
+      },
+      {
+        "code_window": {
+          "center": 574364,
+          "direct_relative_calls": [],
+          "end": 574428,
+          "flow_counts": {
+            "branch": 1,
+            "conditional": 3,
+            "linear": 28
+          },
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 32,
+          "known_instruction_count": 17,
+          "known_ratio": 0.53125,
+          "mnemonic_counts": {
+            "add": 1,
+            "bra": 1,
+            "bt": 1,
+            "bt/s": 2,
+            "mov": 9,
+            "mov.w": 1,
+            "nop": 2,
+            "unknown": 15
+          },
+          "normalized_shape_sha256": "93dc1af4f9551f470b8b3c569de8a731984366a81f8ae088686526fc467d8cfd",
+          "resolved_adjacent_indirect_calls": [],
+          "start": 574364
+        },
+        "nearest_fixed_boundary_marker": {
+          "categories": [
+            "storage"
+          ],
+          "markers": [
+            "sector"
+          ],
+          "maximum_distance": 16384,
+          "raw_string_included": false,
+          "signed_distance": -292
+        },
+        "target_file_offset": 574364
+      },
+      {
+        "code_window": {
+          "center": 1777692,
+          "direct_relative_calls": [],
+          "end": 1777756,
+          "flow_counts": {
+            "branch": 1,
+            "conditional": 4,
+            "indirect-call": 4,
+            "linear": 23
+          },
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 32,
+          "known_instruction_count": 27,
+          "known_ratio": 0.84375,
+          "mnemonic_counts": {
+            "add": 4,
+            "bra": 1,
+            "bt": 3,
+            "bt/s": 1,
+            "jsr": 4,
+            "mov": 8,
+            "mov.l": 6,
+            "unknown": 5
+          },
+          "normalized_shape_sha256": "d791deb2e1d352080a3130fce0e988dc65a5f70f4fddf48d78b48eccb4633ae9",
+          "resolved_adjacent_indirect_calls": [
+            {
+              "call_site_offset": 1777700,
+              "literal_word_offset": 1777852,
+              "load_offset": 1777698,
+              "raw_runtime_address_included": false,
+              "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+              "target_file_offset": 2188904,
+              "target_in_image": true
+            },
+            {
+              "call_site_offset": 1777754,
+              "literal_word_offset": 1777852,
+              "load_offset": 1777752,
+              "raw_runtime_address_included": false,
+              "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+              "target_file_offset": 2188904,
+              "target_in_image": true
+            }
+          ],
+          "start": 1777692
+        },
+        "nearest_fixed_boundary_marker": {
+          "categories": [
+            "navigation"
+          ],
+          "markers": [
+            "navigation",
+            "navigation-internal-data"
+          ],
+          "maximum_distance": 16384,
+          "raw_string_included": false,
+          "signed_distance": 3332
+        },
+        "target_file_offset": 1777692
+      },
+      {
+        "code_window": {
+          "center": 1777736,
+          "direct_relative_calls": [],
+          "end": 1777800,
+          "flow_counts": {
+            "branch": 2,
+            "conditional": 4,
+            "indirect-call": 4,
+            "linear": 22
+          },
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 32,
+          "known_instruction_count": 27,
+          "known_ratio": 0.84375,
+          "mnemonic_counts": {
+            "add": 4,
+            "bra": 2,
+            "bt": 3,
+            "bt/s": 1,
+            "jsr": 4,
+            "mov": 9,
+            "mov.l": 4,
+            "unknown": 5
+          },
+          "normalized_shape_sha256": "67c1720ca29050960a7e564af6b2444335153951c6524624bc6d973369124e29",
+          "resolved_adjacent_indirect_calls": [
+            {
+              "call_site_offset": 1777754,
+              "literal_word_offset": 1777852,
+              "load_offset": 1777752,
+              "raw_runtime_address_included": false,
+              "resolution_status": "ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+              "target_file_offset": 2188904,
+              "target_in_image": true
+            }
+          ],
+          "start": 1777736
+        },
+        "nearest_fixed_boundary_marker": {
+          "categories": [
+            "navigation"
+          ],
+          "markers": [
+            "navigation",
+            "navigation-internal-data"
+          ],
+          "maximum_distance": 16384,
+          "raw_string_included": false,
+          "signed_distance": 3288
+        },
+        "target_file_offset": 1777736
+      }
+    ]
+  },
+  "normalized_neighborhoods": [
+    {
+      "anchor_id": "cdrom-manager",
+      "anchor_offset": 44572,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 5,
+        "end": 44700,
+        "entropy": 4.105486,
+        "length": 256,
+        "normalized_sha256": "c1e5b92453e31224565cd5a5dbe0cbdafc77ffeb40f3f2657d24bbaba231481e",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "113c452e9b15e0500b405281581df60db19c796a8b5d5916b27c6dd9a3f598a8",
+        "start": 44444
+      }
+    },
+    {
+      "anchor_id": "cdrom-access-event",
+      "anchor_offset": 956716,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 17,
+        "end": 956844,
+        "entropy": 5.437504,
+        "length": 256,
+        "normalized_sha256": "8b46df59bf363db326a56d56da2d53cfd861ea2503f03aba3bd54752c4c5361f",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "cb14cc27412cfe7db5f4f384152afd25c2ede0556d6a9552df817664e9dcff63",
+        "start": 956588
+      }
+    },
+    {
+      "anchor_id": "cdrom-access-thread-dispatcher",
+      "anchor_offset": 1000568,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 3,
+        "end": 1000696,
+        "entropy": 6.462234,
+        "length": 256,
+        "normalized_sha256": "60f2201c6f79cdc7e00169e29ce3237faee989ce4d57b848a728b7cccdc184a6",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "b11f36d0bfe192a5040590b9c86a3064f04f49760ca5b5f4b0841408c3e698cf",
+        "start": 1000440
+      }
+    },
+    {
+      "anchor_id": "cdrom-thread-dispatcher",
+      "anchor_offset": 1003324,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 6,
+        "end": 1003452,
+        "entropy": 6.366359,
+        "length": 256,
+        "normalized_sha256": "052a9397bd7469b150b9ac0a1b5520295194033090e2674b2fa81ac63cd4a57b",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "09db0985ef688c1aa1603d6540cc44216e1a8c780957c7be8638e1a61d6c7851",
+        "start": 1003196
+      }
+    },
+    {
+      "anchor_id": "cdrom-access-thread-dispatcher",
+      "anchor_offset": 1131201,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 16,
+        "end": 1131329,
+        "entropy": 5.981293,
+        "length": 256,
+        "normalized_sha256": "dab8a036da38fb63ae27a4fd3b063dc00e31e115505cc412c7612dd47b27868c",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "bd6e87bd697c178da082b75aa251b76a4ad8cf8f07caa841f6d8cee4ad5fb951",
+        "start": 1131073
+      }
+    },
+    {
+      "anchor_id": "cdrom-manager-task",
+      "anchor_offset": 1244860,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 15,
+        "end": 1244988,
+        "entropy": 5.553194,
+        "length": 256,
+        "normalized_sha256": "bdacc423d97236f5746cd91100e8d13ad9bef23055910660522101118bbe84eb",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "4a0e8d947e3cdc2606ac4d02ae30bf3ec2a51174956d4484cb9964d34680a222",
+        "start": 1244732
+      }
+    },
+    {
+      "anchor_id": "navigation-internal-data",
+      "anchor_offset": 1781024,
+      "category": "navigation-data",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 11,
+        "end": 1781152,
+        "entropy": 6.036143,
+        "length": 256,
+        "normalized_sha256": "b3889711ae2829bd0920788f260ee3591fa8e9d05f2cf2192fd7b2aced952f41",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "9ee9952867cc415051bff66754c2fe40d68760d628b7847831eadf15648211bf",
+        "start": 1780896
+      }
+    },
+    {
+      "anchor_id": "cdrom-command-event",
+      "anchor_offset": 2208676,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 13,
+        "end": 2208804,
+        "entropy": 5.688982,
+        "length": 256,
+        "normalized_sha256": "21fa167feaf4539288f7846eb89a6086fce01b41c20609d83d2acbe39e391399",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "13a0e01ca4816226c0691fdc86564fed19092b2a5e722f2929ba063382f61546",
+        "start": 2208548
+      }
+    },
+    {
+      "anchor_id": "cdrom-filesystem-event",
+      "anchor_offset": 2209400,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 13,
+        "end": 2209528,
+        "entropy": 5.430005,
+        "length": 256,
+        "normalized_sha256": "21c187c732bfc563b97308048b6f9331a7895c72ec7c2375248c778c075d346a",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "64bfb7759587fa6a08a32963ffddcadfda565288fa95e7d5b56b52b22b799f04",
+        "start": 2209272
+      }
+    },
+    {
+      "anchor_id": "cdrom-event",
+      "anchor_offset": 2234884,
+      "category": "optical-service",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 14,
+        "end": 2235012,
+        "entropy": 5.3694,
+        "length": 256,
+        "normalized_sha256": "b1c2176213bf7bbac7dda6a30647604f1533382eaaa0eecc8699f1ac8c1be6e7",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "a7a9aae33ca597354bc2df804e2dbf62cb26b74e773e2b6083a1964e4264ef32",
+        "start": 2234756
+      }
+    },
+    {
+      "anchor_id": "routeact-dat",
+      "anchor_offset": 3295908,
+      "category": "route-data",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 3,
+        "end": 3296036,
+        "entropy": 6.298628,
+        "length": 256,
+        "normalized_sha256": "8c16fa8e2733c412919502cbd7d5f9ed1f3b32306787f0894ae6d9f9617b76a4",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "80fc8dd32acea9d3973b206b2608c560543b72d8137b18dcd84f3415f1fc38da",
+        "start": 3295780
+      }
+    },
+    {
+      "anchor_id": "routeact-dat",
+      "anchor_offset": 3334192,
+      "category": "route-data",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 6,
+        "end": 3334320,
+        "entropy": 6.391057,
+        "length": 256,
+        "normalized_sha256": "5735859cbb253d42eb55df2d7a91e3183b4390c9c4626149afee665634e63028",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "771635e3822263ba57233a81c78653102d9f1bcdfd6593582c881037f57b993a",
+        "start": 3334064
+      }
+    },
+    {
+      "anchor_id": "map-position",
+      "anchor_offset": 11358126,
+      "category": "route-data",
+      "neighborhood": {
+        "aligned_runtime_pointer_count": 0,
+        "end": 11358254,
+        "entropy": 4.53372,
+        "length": 256,
+        "normalized_sha256": "a951e6479f8392b722d99264aae69f2b4fd65275430babc2a3ee118cc3bd928e",
+        "radius": 128,
+        "raw_bytes_included": false,
+        "raw_runtime_addresses_included": false,
+        "raw_sha256": "a951e6479f8392b722d99264aae69f2b4fd65275430babc2a3ee118cc3bd928e",
+        "start": 11357998
+      }
+    }
+  ],
+  "prior_evidence": {
+    "navigation_subsystem_presence": "CONFIRMED_CROSS_VERSION_NAVIGATION_SUBSYSTEM_EVIDENCE",
+    "principal_image_sha256_verified_against_session003": true,
+    "session009_schema": "phoenix-mmi.navigation-storage-boundary-comparison/v1",
+    "storage_runtime_stack": "CONFIRMED_CROSS_VERSION_STORAGE_RUNTIME_EVIDENCE"
+  },
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "map_payload_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false,
+    "route_payload_included": false
+  },
+  "schema": "phoenix-mmi.navigation-dataflow/v1"
+}
