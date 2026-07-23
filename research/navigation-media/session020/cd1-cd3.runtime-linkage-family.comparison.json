@@ -1,0 +1,358 @@
+{
+  "analysis_mode": "read-only-static-bounded-runtime-linkage-family",
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "coherent_section_copy_table": "NOT_FOUND_UNDER_REFERENCED_UNIFORM_MODEL_TRIPLE_GATE",
+    "cross_version_record_run": "CONFIRMED_UNIQUE_NORMALIZED_BILATERAL_RUN",
+    "gbr_writer": "NOT_FOUND_UNDER_BOUNDED_RESOLVED_GBR_MODEL",
+    "global_zero_target_family": "CONFIRMED_SYNTACTIC_FAMILY",
+    "helper_mediated_writer": "NOT_FOUND_UNDER_EXACT_RUN_ADDRESS_ARGUMENT_MODEL",
+    "memory_loaded_base_writer": "OPEN",
+    "named_cache_maintenance_marker": "NOT_FOUND_UNDER_FIVE_EXACT_ASCII_MARKERS",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "pointer_translation": "CONFIRMED_EQUAL_RUN_AND_POINTER_TRANSLATION",
+    "runtime_patch_overlay_or_linkage_mechanism": "HYPOTHESIS_STRENGTHENED_BY_BILATERAL_RESIDENT_LAYOUT",
+    "sector_read_abi": "OPEN",
+    "selected_run_usage_transition": "CONFIRMED_SYNTACTIC_3_TO_1_ACTIVE_SLOTS",
+    "specific_session017_producer_edge": "OPEN",
+    "specific_writer_or_loader_chain": "OPEN"
+  },
+  "interpretation": "The five-record pointer-plus-zero-tail layout is a unique normalized cross-version pair: its run and every pointer target translate by the same file-offset delta. CD1 has three syntactically active tail slots and CD3 retains one with residual calls, so the structure is not CD1-only. Similar zero-filled literal-call targets occur broadly in both images. Bounded GBR, exact-address helper, coherent copy-table and named cache-marker probes identify no writer chain; runtime linkage remains a strengthened hypothesis rather than a mechanism.",
+  "left": {
+    "cache_marker_census": {
+      "marker_text_included": false,
+      "matched_marker_count": 0,
+      "stripped_imports_or_inlined_cache_operations_modeled": false,
+      "tested_exact_marker_count": 5,
+      "total_marker_occurrence_count": 0
+    },
+    "coherent_copy_table_search": {
+      "candidate_semantics_asserted": false,
+      "coherent_multi_record_table_count": 1823,
+      "covering_coherent_table_count": 21,
+      "maximum_copy_length": 1048576,
+      "record_count_distribution": {
+        "10": 9,
+        "11": 8,
+        "12": 3,
+        "16": 1,
+        "2": 1113,
+        "3": 348,
+        "4": 140,
+        "5": 87,
+        "6": 47,
+        "7": 31,
+        "8": 19,
+        "9": 17
+      },
+      "referenced_coherent_table_count": 33,
+      "referenced_covering_coherent_table_count": 0,
+      "table_start_pc_relative_reference_required": true,
+      "uniform_address_model_pair_required": true,
+      "valid_single_record_offset_count": 22918
+    },
+    "gbr_writer_search": {
+      "backward_instruction_limit": 64,
+      "candidate_store_count": 0,
+      "candidates": [],
+      "forward_byte_limit": 512,
+      "initializer_kind_counts": {
+        "ldc-memory": 173,
+        "ldc-register": 56
+      },
+      "memory_loaded_gbr_base_modeled": false,
+      "path_dominance_asserted": false,
+      "resolved_base_fact_count": 4,
+      "resolved_register_initializer_count": 2,
+      "syntactic_initializer_count": 229
+    },
+    "global_zero_target_family": {
+      "active_pointer_zero_run_count": 195,
+      "adjacent_literal_jsr_count": 110614,
+      "calls_to_zero_filled_targets": 3136,
+      "code_semantics_asserted_for_global_census": false,
+      "largest_active_run_call_count": 909,
+      "pointer_zero_run_count": 7107,
+      "runtime_execution_observed": false,
+      "unique_literal_target_count": 20870,
+      "zero_filled_target_count": 751,
+      "zero_filled_targets_covered_by_pointer_zero_runs": 199,
+      "zero_filled_targets_outside_pointer_zero_runs": 552,
+      "zero_target_call_count_histogram": {
+        "1": 457,
+        "10": 4,
+        "104": 1,
+        "11": 4,
+        "12": 3,
+        "13": 2,
+        "14": 1,
+        "15": 1,
+        "16": 3,
+        "17": 2,
+        "18": 3,
+        "2": 124,
+        "24": 1,
+        "25": 2,
+        "28": 1,
+        "286": 2,
+        "3": 49,
+        "32": 2,
+        "33": 1,
+        "337": 1,
+        "34": 1,
+        "35": 1,
+        "4": 32,
+        "42": 1,
+        "5": 20,
+        "59": 1,
+        "6": 6,
+        "66": 1,
+        "7": 8,
+        "77": 1,
+        "8": 7,
+        "9": 8
+      }
+    },
+    "helper_mediated_destination_search": {
+      "candidates": [],
+      "exact_run_address_seed_count": 931,
+      "forward_instruction_limit": 64,
+      "helper_identity_resolved": false,
+      "helper_mediated_candidate_count": 0,
+      "path_dominance_asserted": false
+    },
+    "selected_run": {
+      "first_pointer_relative_to_run": 7716,
+      "pointer_target_delta_vector": [
+        -576,
+        -576,
+        -576,
+        -576
+      ],
+      "pointer_target_file_offsets": [
+        1868192,
+        1867616,
+        1867040,
+        1866464,
+        1865888
+      ],
+      "record_count": 5,
+      "record_width": 16,
+      "run_end_file_offset": 1860556,
+      "run_start_file_offset": 1860476
+    },
+    "selected_run_activity": {
+      "active_slots": [
+        {
+          "adjacent_literal_jsr_count": 286,
+          "record_ordinal": 1,
+          "slot_file_offset": 1860500,
+          "tail_word_ordinal": 1
+        },
+        {
+          "adjacent_literal_jsr_count": 286,
+          "record_ordinal": 2,
+          "slot_file_offset": 1860512,
+          "tail_word_ordinal": 0
+        },
+        {
+          "adjacent_literal_jsr_count": 337,
+          "record_ordinal": 4,
+          "slot_file_offset": 1860548,
+          "tail_word_ordinal": 1
+        }
+      ],
+      "active_tail_slot_count": 3,
+      "adjacent_literal_jsr_count": 909,
+      "runtime_execution_observed": false,
+      "tail_slot_count": 15
+    }
+  },
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "branch_dominance_asserted": false,
+    "compressed_or_section_relative_loader_metadata_modeled": false,
+    "external_loader_or_boot_stage_modeled": false,
+    "global_call_census_is_syntactic": true,
+    "memory_loaded_gbr_base_modeled": false,
+    "runtime_execution_observed": false,
+    "zero_filled_targets_decoded_as_code": false
+  },
+  "normalized_run_pair": {
+    "all_pointer_translations_equal_run_translation": true,
+    "normalized_candidate_count": 1,
+    "pointer_target_translation_deltas": [
+      324860,
+      324860,
+      324860,
+      324860,
+      324860
+    ],
+    "right_run": {
+      "first_pointer_relative_to_run": 7716,
+      "pointer_target_delta_vector": [
+        -576,
+        -576,
+        -576,
+        -576
+      ],
+      "pointer_target_file_offsets": [
+        2193052,
+        2192476,
+        2191900,
+        2191324,
+        2190748
+      ],
+      "record_count": 5,
+      "record_width": 16,
+      "run_end_file_offset": 2185416,
+      "run_start_file_offset": 2185336
+    },
+    "run_start_translation_delta": 324860,
+    "runtime_semantics_asserted": false,
+    "unique_pair_found": true
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "right": {
+    "cache_marker_census": {
+      "marker_text_included": false,
+      "matched_marker_count": 0,
+      "stripped_imports_or_inlined_cache_operations_modeled": false,
+      "tested_exact_marker_count": 5,
+      "total_marker_occurrence_count": 0
+    },
+    "coherent_copy_table_search": {
+      "candidate_semantics_asserted": false,
+      "coherent_multi_record_table_count": 1819,
+      "covering_coherent_table_count": 5,
+      "maximum_copy_length": 1048576,
+      "record_count_distribution": {
+        "10": 9,
+        "11": 8,
+        "12": 3,
+        "16": 1,
+        "2": 1125,
+        "3": 329,
+        "4": 139,
+        "5": 91,
+        "6": 47,
+        "7": 31,
+        "8": 19,
+        "9": 17
+      },
+      "referenced_coherent_table_count": 27,
+      "referenced_covering_coherent_table_count": 0,
+      "table_start_pc_relative_reference_required": true,
+      "uniform_address_model_pair_required": true,
+      "valid_single_record_offset_count": 22889
+    },
+    "gbr_writer_search": {
+      "backward_instruction_limit": 64,
+      "candidate_store_count": 0,
+      "candidates": [],
+      "forward_byte_limit": 512,
+      "initializer_kind_counts": {
+        "ldc-memory": 164,
+        "ldc-register": 54
+      },
+      "memory_loaded_gbr_base_modeled": false,
+      "path_dominance_asserted": false,
+      "resolved_base_fact_count": 4,
+      "resolved_register_initializer_count": 2,
+      "syntactic_initializer_count": 218
+    },
+    "global_zero_target_family": {
+      "active_pointer_zero_run_count": 112,
+      "adjacent_literal_jsr_count": 106093,
+      "calls_to_zero_filled_targets": 1744,
+      "code_semantics_asserted_for_global_census": false,
+      "largest_active_run_call_count": 33,
+      "pointer_zero_run_count": 3896,
+      "runtime_execution_observed": false,
+      "unique_literal_target_count": 20605,
+      "zero_filled_target_count": 606,
+      "zero_filled_targets_covered_by_pointer_zero_runs": 112,
+      "zero_filled_targets_outside_pointer_zero_runs": 494,
+      "zero_target_call_count_histogram": {
+        "1": 351,
+        "10": 3,
+        "11": 6,
+        "12": 3,
+        "13": 1,
+        "15": 4,
+        "16": 1,
+        "17": 2,
+        "18": 1,
+        "2": 106,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "28": 1,
+        "3": 51,
+        "31": 1,
+        "33": 1,
+        "4": 30,
+        "42": 1,
+        "5": 15,
+        "6": 8,
+        "7": 7,
+        "8": 2,
+        "9": 6,
+        "91": 1,
+        "99": 1
+      }
+    },
+    "helper_mediated_destination_search": {
+      "candidates": [],
+      "exact_run_address_seed_count": 17,
+      "forward_instruction_limit": 64,
+      "helper_identity_resolved": false,
+      "helper_mediated_candidate_count": 0,
+      "path_dominance_asserted": false
+    },
+    "selected_run": {
+      "first_pointer_relative_to_run": 7716,
+      "pointer_target_delta_vector": [
+        -576,
+        -576,
+        -576,
+        -576
+      ],
+      "pointer_target_file_offsets": [
+        2193052,
+        2192476,
+        2191900,
+        2191324,
+        2190748
+      ],
+      "record_count": 5,
+      "record_width": 16,
+      "run_end_file_offset": 2185416,
+      "run_start_file_offset": 2185336
+    },
+    "selected_run_activity": {
+      "active_slots": [
+        {
+          "adjacent_literal_jsr_count": 4,
+          "record_ordinal": 2,
+          "slot_file_offset": 2185372,
+          "tail_word_ordinal": 0
+        }
+      ],
+      "active_tail_slot_count": 1,
+      "adjacent_literal_jsr_count": 4,
+      "runtime_execution_observed": false,
+      "tail_slot_count": 15
+    }
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.runtime-linkage-family-comparison/v1"
+}

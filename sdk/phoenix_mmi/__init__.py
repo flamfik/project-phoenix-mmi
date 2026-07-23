@@ -102,6 +102,12 @@ from .runtime_slot import (
     correlate_runtime_slot_lineage,
     update_operational_graph_v12,
 )
+from .runtime_linkage import (
+    analyze_runtime_linkage_family,
+    build_public_runtime_linkage_report,
+    correlate_runtime_linkage_family,
+    update_operational_graph_v13,
+)
 from .segments import CandidateSegment, build_candidate_segments
 from .superh import (
     SHInstruction,
@@ -134,6 +140,7 @@ __all__ = [
     "analyze_resource_bundle",
     "analyze_runtime_map",
     "analyze_runtime_slot_lineage",
+    "analyze_runtime_linkage_family",
     "build_candidate_segments",
     "build_public_accessor_dispatch_report",
     "build_operational_graph",
@@ -152,6 +159,7 @@ __all__ = [
     "build_public_resource_bundle",
     "build_public_runtime_map",
     "build_public_runtime_slot_report",
+    "build_public_runtime_linkage_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
@@ -167,6 +175,7 @@ __all__ = [
     "correlate_global_fldb_parser_search",
     "correlate_firmware_and_media",
     "correlate_runtime_slot_lineage",
+    "correlate_runtime_linkage_family",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
     "compare_reference_graphs",
@@ -200,6 +209,7 @@ __all__ = [
     "update_operational_graph_v10",
     "update_operational_graph_v11",
     "update_operational_graph_v12",
+    "update_operational_graph_v13",
 ]
 
-__version__ = "0.17.0"
+__version__ = "0.18.0"

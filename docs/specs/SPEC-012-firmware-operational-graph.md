@@ -248,6 +248,29 @@ The new graph edge is a confirmed cross-version layout relation. It is not
 runtime control flow. Patch, overlay or linkage behavior remains a strengthened
 hypothesis until a concrete writer/loader chain is recovered.
 
+### Session 020 refinement
+
+Operational graph v13 makes the selected record structure bilateral:
+
+- exactly one CD3 run matches the five-record geometry, pointer-delta vector
+  and first-pointer relationship: `CONFIRMED_UNIQUE_NORMALIZED_BILATERAL_RUN`;
+- the run start and all five pointer targets translate by the same `+324,860`
+  bytes: `CONFIRMED_EQUAL_RUN_AND_POINTER_TRANSLATION`;
+- selected-run use changes from three active slots / 909 adjacent forms in CD1
+  to one active slot / four forms in CD3:
+  `CONFIRMED_SYNTACTIC_3_TO_1_ACTIVE_SLOTS`;
+- the global scanner finds 195/112 active pointer-zero runs in CD1/CD3:
+  `CONFIRMED_SYNTACTIC_FAMILY`, without whole-image code semantics;
+- bounded resolved-GBR, exact-address helper and referenced coherent
+  copy-table models find zero writers, and five exact cache markers are absent;
+- memory-loaded/interprocedural bases, external loader, family owner,
+  producer edge, sector ABI, buffer provenance/owner, FLDB parser and
+  partition consumer remain `OPEN`.
+
+The v13 edge confirms that the normalized record family persists across both
+releases with residual CD3 use. It does not confirm a linker, patch, overlay,
+trampoline or runtime call path.
+
 ## Rule for derived diagrams
 
 Every diagram edge must carry the source/target node status or its own evidence status. Dotted or hypothesis edges must not be rendered as confirmed control flow.

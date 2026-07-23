@@ -31,6 +31,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `descriptor_lineage` - nearest-producer tracing, exact field-12 accessor clustering, optical-target-aware static descriptor census, mixed-width initializer gates and operational graph v10 correlation.
 - `accessor_dispatch` - literal-backed accessor call-family pairing, normalized context consensus, zero-tail runtime-slot detection, direct callback gates and operational graph v11 correlation.
 - `runtime_slot` - complete zero-tail slot census, translated shadow-accessor mapping, bounded direct-writer/relocation probes and operational graph v12 correlation.
+- `runtime_linkage` - normalized bilateral pointer-zero run pairing, global zero-target census, bounded GBR/helper/coherent-copy probes and operational graph v13 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -215,6 +216,16 @@ python tools/session019/analyze_runtime_slot_lineage.py \
   --public-output research/navigation-media/session019
 ```
 
+## Reproduce Session 020
+
+```shell
+python tools/session020/analyze_runtime_linkage_family.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session020 \
+  --public-output research/navigation-media/session020
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -281,3 +292,10 @@ fixed 16-word context, a minimum unique-match count and dominant-target
 consensus. A pointer-plus-zero record run remains structural; runtime patch,
 linkage, trampoline and callback semantics require an independently identified
 writer, loader or runtime observation.
+
+The runtime-linkage analyzer pairs pointer-zero runs only through exact
+normalized geometry and keeps every zero-filled target non-executable. Its
+global call-family census is syntactic. GBR, exact-address helper and coherent
+copy-table results are bounded to their declared address/dataflow models; a
+zero result cannot exclude memory-loaded bases, an external loader or
+runtime-created metadata.
