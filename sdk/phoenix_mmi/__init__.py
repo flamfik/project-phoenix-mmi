@@ -114,6 +114,12 @@ from .linkage_owner import (
     correlate_linkage_owner_lineage,
     update_operational_graph_v14,
 )
+from .owner_provenance import (
+    analyze_owner_ingress_state,
+    build_public_owner_ingress_report,
+    correlate_owner_ingress_state,
+    update_operational_graph_v15,
+)
 from .segments import CandidateSegment, build_candidate_segments
 from .superh import (
     SHInstruction,
@@ -148,6 +154,7 @@ __all__ = [
     "analyze_runtime_slot_lineage",
     "analyze_runtime_linkage_family",
     "analyze_linkage_owner_lineage",
+    "analyze_owner_ingress_state",
     "build_candidate_segments",
     "build_public_accessor_dispatch_report",
     "build_operational_graph",
@@ -168,6 +175,7 @@ __all__ = [
     "build_public_runtime_slot_report",
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
+    "build_public_owner_ingress_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
@@ -185,6 +193,7 @@ __all__ = [
     "correlate_runtime_slot_lineage",
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
+    "correlate_owner_ingress_state",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
     "compare_reference_graphs",
@@ -220,6 +229,7 @@ __all__ = [
     "update_operational_graph_v12",
     "update_operational_graph_v13",
     "update_operational_graph_v14",
+    "update_operational_graph_v15",
 ]
 
-__version__ = "0.19.0"
+__version__ = "0.20.0"

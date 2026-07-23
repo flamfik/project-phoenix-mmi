@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 021 groups the four residual CD3 calls into two prologue-backed, code-gated owner windows. Two exact context matches plus full bounded-sequence alignment map all four calls to one short return-terminated CD1 target. One owner pair is confirmed and one remains probable. A global census finds 29 exact prologue-owner shapes shared across releases, but no function boundary, semantic owner, runtime execution or writer/loader is inferred. Runtime patch/overlay/linkage behavior therefore remains a strengthened hypothesis. The specific writer/loader, semantic family owner, producer edge, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 022 finds no adjacent literal/JSR or direct BSR ingress to the two owner pairs, but confirms one internal address-taken use per release and stable entry-argument-rooted state bases. Owner A preserves 17/17 root classes with four versioned field-expression shifts; Owner B preserves 19/19 aligned expressions. Every owner contains four bases obtained through an `r4`-rooted load, while zero selected-owner bases originate from static image pointers. This supports a runtime-provided state/object contract without identifying its creator, semantic type or writer/loader. The producer edge, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -54,6 +54,7 @@ ui/            Future interface and resource research
 - [Session 019 report](docs/sessions/SESSION-019-runtime-slot-shadow-accessors.md)
 - [Session 020 report](docs/sessions/SESSION-020-bilateral-runtime-linkage-family.md)
 - [Session 021 report](docs/sessions/SESSION-021-residual-linkage-owner-lineage.md)
+- [Session 022 report](docs/sessions/SESSION-022-owner-ingress-state-provenance.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -72,6 +73,7 @@ ui/            Future interface and resource research
 - [Session 019 publication-safe evidence](research/navigation-media/session019/)
 - [Session 020 publication-safe evidence](research/navigation-media/session020/)
 - [Session 021 publication-safe evidence](research/navigation-media/session021/)
+- [Session 022 publication-safe evidence](research/navigation-media/session022/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

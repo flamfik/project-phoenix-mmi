@@ -33,6 +33,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `runtime_slot` - complete zero-tail slot census, translated shadow-accessor mapping, bounded direct-writer/relocation probes and operational graph v12 correlation.
 - `runtime_linkage` - normalized bilateral pointer-zero run pairing, global zero-target census, bounded GBR/helper/coherent-copy probes and operational graph v13 correlation.
 - `linkage_owner` - bounded residual-call owner grouping, fixed-context and full-sequence lineage, short return-shape gates, global owner census and operational graph v14 correlation.
+- `owner_provenance` - bounded direct-ingress tests, address-taken use classification, canonical argument/load-rooted state bases and operational graph v15 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -235,6 +236,16 @@ python tools/session021/analyze_linkage_owner_lineage.py \
   MMI-5570-4L0.998.961-cd3-3.iso \
   --output research/navigation-media/work/session021 \
   --public-output research/navigation-media/session021
+```
+
+## Reproduce Session 022
+
+```shell
+python tools/session022/analyze_owner_ingress_state.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session022 \
+  --public-output research/navigation-media/session022
 ```
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.

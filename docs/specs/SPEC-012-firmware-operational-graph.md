@@ -292,6 +292,30 @@ The v14 edge is `CONFIRMED_AND_PROBABLE_STRUCTURAL_LINEAGE`. It is not runtime
 control flow and does not promote the runtime patch/overlay/linkage hypothesis
 to confirmed.
 
+### Session 022 refinement
+
+Operational graph v15 adds bounded owner ingress and state-base provenance:
+
+- zero adjacent literal/JSR or BSR calls target or externally enter the four
+  selected owner windows: bounded negative under two direct-call models;
+- one PC-relative address-taken internal target occurs per release, but the
+  uses belong to different owner pairs and no bilateral selected-owner use is
+  established;
+- Owner A aligns 17 memory-base rows with identical root classes; four
+  canonical expressions retain their roots while two field families shift by
+  `+8`;
+- Owner B aligns 19 memory-base rows with identical expressions and roots;
+- both owner pairs obtain state bases from entry arguments and
+  argument-rooted loads;
+- zero selected-owner memory bases are rooted in a static image pointer;
+- caller, creator, state-object identity, semantic owner, writer and loader
+  remain `OPEN`.
+
+The v15 edge is
+`CONFIRMED_STATE_PROVENANCE_BOUNDED_NEGATIVE_INGRESS`. It combines a positive
+structural provenance result with a separately scoped negative direct-ingress
+result; it is not an observed runtime edge.
+
 ## Rule for derived diagrams
 
 Every diagram edge must carry the source/target node status or its own evidence status. Dotted or hypothesis edges must not be rendered as confirmed control flow.

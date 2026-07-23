@@ -31,7 +31,8 @@ Progress:
 - Session 019: three active CD1 zero-tail call targets, translated byte-identical static accessor cluster, bounded negative direct-writer/relocation search and operational graph v12 - complete;
 - Session 020: unique bilateral five-record runtime-linkage family, global zero-target census, bounded negative GBR/helper/coherent-copy/cache probes and operational graph v13 - complete;
 - Session 021: two bounded residual-call owner pairs, four-call CD1 lineage, short return-target shape, global owner census and operational graph v14 - complete;
-- remaining M1 work: semantic runtime-linkage owner, incoming caller/state-base provenance, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 022: bounded negative direct owner ingress, two one-sided internal address uses, argument-rooted state-base provenance and operational graph v15 - complete;
+- remaining M1 work: entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

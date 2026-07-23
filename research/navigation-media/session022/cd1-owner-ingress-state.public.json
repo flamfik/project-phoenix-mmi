@@ -1,0 +1,636 @@
+{
+  "analysis_mode": "read-only-static-bounded-owner-ingress-state-provenance",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "bilateral_selected_owner_address_use": "NOT_ESTABLISHED",
+    "entry_argument_rooted_state_bases": "CONFIRMED_IN_BOTH_OWNER_PAIRS",
+    "exact_owner_start_static_callers": "NOT_FOUND_UNDER_ADJACENT_LITERAL_JSR_AND_BSR_MODELS",
+    "external_static_calls_into_owner_windows": "NOT_FOUND_UNDER_ADJACENT_LITERAL_JSR_AND_BSR_MODELS",
+    "memory_load_rooted_state_bases": "CONFIRMED_DYNAMIC_ARGUMENT_DEREFERENCE_BASES",
+    "memory_loaded_base_writer": "OPEN",
+    "one_sided_internal_address_uses": "CONFIRMED_TWO_PC_RELATIVE_ADDRESS_TAKEN_USES",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "runtime_patch_overlay_or_linkage_mechanism": "HYPOTHESIS_STRENGTHENED_BY_ARGUMENT_ROOTED_OWNER_STATE",
+    "sector_read_abi": "OPEN",
+    "semantic_owner_identity": "OPEN",
+    "specific_session017_producer_edge": "OPEN",
+    "specific_writer_or_loader_chain": "OPEN",
+    "static_image_pointer_rooted_state_bases": "NOT_FOUND_IN_SELECTED_OWNER_WINDOWS",
+    "unique_bilateral_incoming_caller": "NOT_ESTABLISHED"
+  },
+  "owner_ingress": [
+    {
+      "address_taken_rows": [
+        {
+          "bilateral_selected_owner_target_established": false,
+          "cross_version_context": [
+            {
+              "opposite_exact_context_match_count": 2,
+              "opposite_matches": [
+                {
+                  "bounded_owner": {
+                    "bounded_code_gate_passed": true,
+                    "call_count": 3,
+                    "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+                    "function_boundary_asserted": false,
+                    "instruction_count": 41,
+                    "known_ratio": 0.97561,
+                    "normalized_shape_sha256": "3d8fb57df8a9fae632f1392a0799e6e2b1739a2ff4a91c7d270e7d1a008f5f20",
+                    "owner_start_file_offset": 1985372,
+                    "path_dominance_asserted": false,
+                    "predecessor_bytes_included": 54,
+                    "prologue_code_gate_passed": true,
+                    "return_count": 1
+                  },
+                  "load_file_offset": 1985426,
+                  "loaded_target_file_offset": 1993864,
+                  "selected_owner_ordinal": null,
+                  "targets_selected_owner_window": false
+                },
+                {
+                  "bounded_owner": {
+                    "bounded_code_gate_passed": true,
+                    "call_count": 3,
+                    "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+                    "function_boundary_asserted": false,
+                    "instruction_count": 41,
+                    "known_ratio": 0.97561,
+                    "normalized_shape_sha256": "3d8fb57df8a9fae632f1392a0799e6e2b1739a2ff4a91c7d270e7d1a008f5f20",
+                    "owner_start_file_offset": 1994228,
+                    "path_dominance_asserted": false,
+                    "predecessor_bytes_included": 54,
+                    "prologue_code_gate_passed": true,
+                    "return_count": 1
+                  },
+                  "load_file_offset": 1994282,
+                  "loaded_target_file_offset": 2002516,
+                  "selected_owner_ordinal": null,
+                  "targets_selected_owner_window": false
+                }
+              ],
+              "referrer_file_offset": 1671802
+            }
+          ],
+          "pc_relative_referrer_count": 1,
+          "pointer_file_offset": 1671840,
+          "target_file_offset": 1680036,
+          "target_relative_to_owner": 34,
+          "uses": [
+            {
+              "classification": "INDIRECT_CONTROL_TARGET",
+              "loaded_register": 0,
+              "referrer_file_offset": 1671802,
+              "relative_use_instruction_index": 2
+            }
+          ]
+        }
+      ],
+      "aligned_address_taken_count": 1,
+      "exact_start_adjacent_literal_jsr_count": 0,
+      "exact_start_bsr_count": 0,
+      "external_adjacent_literal_jsr_into_window_count": 0,
+      "external_bsr_into_window_count": 0,
+      "function_boundary_asserted": false,
+      "owner_end_file_offset": 1680244,
+      "owner_start_file_offset": 1680002,
+      "owner_window_length": 242,
+      "whole_image_executable_map_available": false
+    },
+    {
+      "address_taken_rows": [],
+      "aligned_address_taken_count": 0,
+      "exact_start_adjacent_literal_jsr_count": 0,
+      "exact_start_bsr_count": 0,
+      "external_adjacent_literal_jsr_into_window_count": 0,
+      "external_bsr_into_window_count": 0,
+      "function_boundary_asserted": false,
+      "owner_end_file_offset": 1690102,
+      "owner_start_file_offset": 1689866,
+      "owner_window_length": 236,
+      "whole_image_executable_map_available": false
+    }
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.owner-ingress-state-disc/v1",
+  "state_base_profiles": [
+    {
+      "call_return_rooted_use_count": 0,
+      "canonical_expression_counts": [
+        {
+          "count": 7,
+          "expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)"
+        },
+        {
+          "count": 1,
+          "expression": "ADD(CONST:4124,ADD(NO_DEFINITION,CONST:-4164))"
+        },
+        {
+          "count": 1,
+          "expression": "ADD(ENTRY:r6,CONST:2)"
+        },
+        {
+          "count": 2,
+          "expression": "ADD(LOAD32[8](ENTRY:r4),CONST:104)"
+        },
+        {
+          "count": 2,
+          "expression": "ADD(LOAD32[8](ENTRY:r4),CONST:64)"
+        },
+        {
+          "count": 1,
+          "expression": "ADD(NO_DEFINITION,CONST:-4164)"
+        },
+        {
+          "count": 3,
+          "expression": "ENTRY:r4"
+        }
+      ],
+      "entry_argument_rooted_use_count": 8,
+      "entry_arguments_are_runtime_values": true,
+      "instruction_count": 121,
+      "memory_base_use_count": 17,
+      "memory_load_rooted_use_count": 4,
+      "owner_end_file_offset": 1680244,
+      "owner_start_file_offset": 1680002,
+      "resolved_static_call_count": 8,
+      "root_class_counts": {
+        "CONSTANT": 22,
+        "ENTRY:r4": 7,
+        "ENTRY:r6": 1,
+        "LOAD": 4,
+        "NO_DEFINITION": 9
+      },
+      "rows": [
+        {
+          "base_occurrence": 0,
+          "base_register": 10,
+          "canonical_expression": "ENTRY:r4",
+          "instruction_index": 13,
+          "root_classes": [
+            "ENTRY:r4"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-4164)",
+          "instruction_index": 15,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 10,
+          "canonical_expression": "ENTRY:r4",
+          "instruction_index": 22,
+          "root_classes": [
+            "ENTRY:r4"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[8](ENTRY:r4),CONST:64)",
+          "instruction_index": 24,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[8](ENTRY:r4),CONST:64)",
+          "instruction_index": 26,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 10,
+          "canonical_expression": "ENTRY:r4",
+          "instruction_index": 39,
+          "root_classes": [
+            "ENTRY:r4"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[8](ENTRY:r4),CONST:104)",
+          "instruction_index": 41,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[8](ENTRY:r4),CONST:104)",
+          "instruction_index": 42,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 12,
+          "canonical_expression": "ADD(ENTRY:r6,CONST:2)",
+          "instruction_index": 72,
+          "root_classes": [
+            "ENTRY:r6",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 3,
+          "canonical_expression": "ADD(CONST:4124,ADD(NO_DEFINITION,CONST:-4164))",
+          "instruction_index": 76,
+          "root_classes": [
+            "CONSTANT",
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 113,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 114,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 115,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 116,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 117,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 118,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-4164),CONST:4164)",
+          "instruction_index": 120,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        }
+      ],
+      "state_object_identity_asserted": false,
+      "static_image_pointer_rooted_use_count": 0,
+      "unresolved_indirect_call_count": 2
+    },
+    {
+      "call_return_rooted_use_count": 1,
+      "canonical_expression_counts": [
+        {
+          "count": 7,
+          "expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)"
+        },
+        {
+          "count": 1,
+          "expression": "ADD(ENTRY:r6,CONST:2)"
+        },
+        {
+          "count": 1,
+          "expression": "ADD(LOAD32[0](ENTRY:r4),CONST:16)"
+        },
+        {
+          "count": 2,
+          "expression": "ADD(LOAD32[0](ENTRY:r4),CONST:72)"
+        },
+        {
+          "count": 6,
+          "expression": "ADD(NO_DEFINITION,CONST:-52)"
+        },
+        {
+          "count": 1,
+          "expression": "CALL_RETURN"
+        },
+        {
+          "count": 2,
+          "expression": "ENTRY:r4"
+        },
+        {
+          "count": 1,
+          "expression": "LOAD32[0](ENTRY:r4)"
+        }
+      ],
+      "entry_argument_rooted_use_count": 7,
+      "entry_arguments_are_runtime_values": true,
+      "instruction_count": 118,
+      "memory_base_use_count": 21,
+      "memory_load_rooted_use_count": 4,
+      "owner_end_file_offset": 1690102,
+      "owner_start_file_offset": 1689866,
+      "resolved_static_call_count": 10,
+      "root_class_counts": {
+        "CALL_RETURN": 1,
+        "CONSTANT": 24,
+        "ENTRY:r4": 6,
+        "ENTRY:r6": 1,
+        "LOAD": 4,
+        "NO_DEFINITION": 13
+      },
+      "rows": [
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-52)",
+          "instruction_index": 4,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-52)",
+          "instruction_index": 10,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 9,
+          "canonical_expression": "CALL_RETURN",
+          "instruction_index": 21,
+          "root_classes": [
+            "CALL_RETURN"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 11,
+          "canonical_expression": "ENTRY:r4",
+          "instruction_index": 23,
+          "root_classes": [
+            "ENTRY:r4"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[0](ENTRY:r4),CONST:16)",
+          "instruction_index": 26,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 2,
+          "canonical_expression": "LOAD32[0](ENTRY:r4)",
+          "instruction_index": 28,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-52)",
+          "instruction_index": 29,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-52)",
+          "instruction_index": 32,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-52)",
+          "instruction_index": 35,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 11,
+          "canonical_expression": "ENTRY:r4",
+          "instruction_index": 47,
+          "root_classes": [
+            "ENTRY:r4"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[0](ENTRY:r4),CONST:72)",
+          "instruction_index": 49,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 1,
+          "canonical_expression": "ADD(LOAD32[0](ENTRY:r4),CONST:72)",
+          "instruction_index": 50,
+          "root_classes": [
+            "LOAD",
+            "ENTRY:r4",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 13,
+          "canonical_expression": "ADD(ENTRY:r6,CONST:2)",
+          "instruction_index": 90,
+          "root_classes": [
+            "ENTRY:r6",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 14,
+          "canonical_expression": "ADD(NO_DEFINITION,CONST:-52)",
+          "instruction_index": 92,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 110,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 111,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 112,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 113,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 114,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 115,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        },
+        {
+          "base_occurrence": 0,
+          "base_register": 15,
+          "canonical_expression": "ADD(ADD(NO_DEFINITION,CONST:-52),CONST:52)",
+          "instruction_index": 117,
+          "root_classes": [
+            "NO_DEFINITION",
+            "CONSTANT",
+            "CONSTANT"
+          ]
+        }
+      ],
+      "state_object_identity_asserted": false,
+      "static_image_pointer_rooted_use_count": 0,
+      "unresolved_indirect_call_count": 2
+    }
+  ]
+}
