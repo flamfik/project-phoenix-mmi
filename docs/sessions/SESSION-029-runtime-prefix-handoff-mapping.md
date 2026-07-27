@@ -7,6 +7,17 @@
 - Status: COMPLETE for the two registered handoff pairs and one registered
   producer negative-control pair.
 
+## Session 030 correction
+
+Session 030 proves that each registered target lies inside a complete
+PC-relative literal pool. The Session 029 “prefix” is the suffix of that pool,
+and the code at its end is only a structural successor. No runtime target edge
+to that successor is established.
+
+Accordingly, the entry-`r5` result below applies only to the adjacent
+successor bodies, not to the unresolved handoff callees. The registration
+disproof is withdrawn outside those bodies. See Session 030 and SPEC-039.
+
 ## Safety boundary
 
 The runner verifies the registered CD1/CD3 ISO hashes and the Session 003

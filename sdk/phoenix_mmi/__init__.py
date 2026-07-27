@@ -43,6 +43,12 @@ from .handoff_mapping import (
     update_operational_graph_v22,
 )
 from .layout import analyze_executable_layout
+from .literal_pool_boundary import (
+    analyze_literal_pool_boundaries,
+    build_public_literal_pool_boundary_report,
+    correlate_literal_pool_boundaries,
+    update_operational_graph_v23,
+)
 from .map_media import (
     analyze_navigation_media,
     build_public_navigation_media_report,
@@ -200,6 +206,7 @@ __all__ = [
     "analyze_runtime_slot_lineage",
     "analyze_runtime_linkage_family",
     "analyze_linkage_owner_lineage",
+    "analyze_literal_pool_boundaries",
     "analyze_owner_ingress_state",
     "analyze_owner_caller_compatibility",
     "analyze_owner_producer_candidates",
@@ -226,6 +233,7 @@ __all__ = [
     "build_public_runtime_slot_report",
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
+    "build_public_literal_pool_boundary_report",
     "build_public_owner_ingress_report",
     "build_public_owner_caller_report",
     "build_public_owner_producer_report",
@@ -251,6 +259,7 @@ __all__ = [
     "correlate_runtime_slot_lineage",
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
+    "correlate_literal_pool_boundaries",
     "correlate_owner_ingress_state",
     "correlate_owner_caller_compatibility",
     "correlate_owner_producer_candidates",
@@ -300,6 +309,7 @@ __all__ = [
     "update_operational_graph_v20",
     "update_operational_graph_v21",
     "update_operational_graph_v22",
+    "update_operational_graph_v23",
 ]
 
-__version__ = "0.27.0"
+__version__ = "0.28.0"

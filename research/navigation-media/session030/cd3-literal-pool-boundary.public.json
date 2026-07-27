@@ -1,0 +1,375 @@
+{
+  "analysis_mode": "read-only-static-registered-target-literal-pool-boundary",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "all_pool_entries_have_one_preceding_pc_referrer": true,
+    "all_registered_targets_are_single_indirect_control_targets": true,
+    "bilateral_literal_pool_pair_count": 2,
+    "common_raw_target_relocation_delta": 322528,
+    "common_structural_pool_relocation_delta": 322532,
+    "common_structural_vs_raw_relocation_skew": 4,
+    "entry_r5_disproof_scope": "POOL_END_SUCCESSOR_ONLY_NOT_RUNTIME_CALLEE",
+    "local_loader_or_section_metadata_hypothesis": "DISPROVED_FOR_REGISTERED_WORD_RUNS",
+    "optical_buffer_owner": "OPEN",
+    "pool_end_runtime_callee": "NOT_ESTABLISHED",
+    "pool_end_successor_code_family": "CONFIRMED_BILATERAL_STRUCTURAL_ADJACENCY",
+    "pool_entry_count_per_release": 10,
+    "pool_word_counts": [
+      4,
+      6
+    ],
+    "registered_target_pair_count": 2,
+    "returned_object_type": "OPEN",
+    "right_target_index_shift": -1,
+    "sector_read_abi": "OPEN",
+    "session029_prefix_interpretation": "CORRECTED_TO_LITERAL_POOL_SUFFIX",
+    "static_handoff_registration_path": "OPEN_ACTUAL_TARGET_UNRESOLVED",
+    "universal_runtime_to_file_mapping": "NOT_ESTABLISHED"
+  },
+  "limits": {
+    "arbitrary_code_entry_search_performed": false,
+    "computed_or_loader_created_references_tested": false,
+    "global_direct_bsr_census_per_boundary": true,
+    "global_exact_runtime_word_census_per_boundary": true,
+    "maximum_pool_words_each_direction": 16,
+    "physical_runtime_mapping_recovered": false,
+    "registered_target_pairs_only": true,
+    "runtime_execution_observed": false,
+    "source_session": 29
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.literal-pool-boundary-disc/v1",
+  "targets": [
+    {
+      "flow_ordinal": 12,
+      "pool_end_runtime_callee_established": false,
+      "profile": {
+        "classification": {
+          "pool_end_has_static_runtime_reference": false,
+          "pool_end_is_strict_code_successor": true,
+          "pool_end_runtime_callee_established": false,
+          "registered_target_is_literal_pool_member": true,
+          "session029_prefix_is_literal_pool_suffix": true
+        },
+        "pool": {
+          "backward_bound_exhausted": false,
+          "bytes_from_registered_target_to_pool_end": 16,
+          "forward_bound_exhausted": false,
+          "maximum_words_each_direction": 16,
+          "pool_end_file_offset": 1863348,
+          "pool_found": true,
+          "pool_start_file_offset": 1863332,
+          "pool_word_count": 4,
+          "raw_pointer_values_included": false,
+          "registered_target_file_offset": 1863332,
+          "registered_target_is_pool_member": true,
+          "registered_target_is_pool_start": true,
+          "registered_target_word_index": 0,
+          "target_is_aligned_runtime_word": true,
+          "words_before_registered_target": 0,
+          "words_from_registered_target_to_pool_end": 4
+        },
+        "pool_end_runtime_reference_census": {
+          "aligned_word_occurrence_count": 0,
+          "direct_bsr_target_count": 0,
+          "exact_word_occurrence_count": 0,
+          "file_offset": 1863348,
+          "pc_relative_referrer_count": 0,
+          "runtime_address_value_included": false,
+          "use_classification_counts": {}
+        },
+        "pool_end_successor": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1863348,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 22,
+          "known_ratio": 1.0,
+          "normalized_shape_sha256": "1938c4a7f3414a06bac08bf79ba70f23f6fece2dbfefbb3c4f829a6dd7510d81",
+          "return_count": 1,
+          "runtime_callee_asserted": false,
+          "strict_exact_entry_gate_passed": true
+        },
+        "pool_references": {
+          "all_pool_words_have_one_pc_relative_referrer": true,
+          "all_referrers_precede_pool": true,
+          "entries": [
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 0,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -100,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 0,
+              "word_relative_to_pool_start": 0
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 0,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -80,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 1,
+              "word_relative_to_pool_start": 4
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": 0,
+                  "classification": "ARGUMENT_TO_OTHER_INDIRECT_CALL",
+                  "loaded_register": 5,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -68,
+                  "relative_use_instruction_index": 6
+                }
+              ],
+              "word_index": 2,
+              "word_relative_to_pool_start": 8
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 1,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -22,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 3,
+              "word_relative_to_pool_start": 12
+            }
+          ],
+          "pc_relative_referrer_count": 4,
+          "pool_word_count": 4,
+          "raw_pointer_values_included": false,
+          "relative_role_signature_sha256": "4d929e563f7bb604cee3135c54cd2540615bce22a292a93b00a5fb7f600dea38",
+          "role_signature_uses_raw_pointer_values": false,
+          "use_classification_counts": {
+            "ARGUMENT_TO_OTHER_INDIRECT_CALL": 1,
+            "INDIRECT_CONTROL_TARGET": 3
+          }
+        },
+        "registered_target_file_offset": 1863332,
+        "registered_target_runtime_reference_census": {
+          "aligned_word_occurrence_count": 1,
+          "direct_bsr_target_count": 0,
+          "exact_word_occurrence_count": 1,
+          "file_offset": 1863332,
+          "pc_relative_referrer_count": 1,
+          "runtime_address_value_included": false,
+          "use_classification_counts": {
+            "INDIRECT_CONTROL_TARGET": 1
+          }
+        }
+      }
+    },
+    {
+      "flow_ordinal": 13,
+      "pool_end_runtime_callee_established": false,
+      "profile": {
+        "classification": {
+          "pool_end_has_static_runtime_reference": false,
+          "pool_end_is_strict_code_successor": true,
+          "pool_end_runtime_callee_established": false,
+          "registered_target_is_literal_pool_member": true,
+          "session029_prefix_is_literal_pool_suffix": true
+        },
+        "pool": {
+          "backward_bound_exhausted": false,
+          "bytes_from_registered_target_to_pool_end": 12,
+          "forward_bound_exhausted": false,
+          "maximum_words_each_direction": 16,
+          "pool_end_file_offset": 1863560,
+          "pool_found": true,
+          "pool_start_file_offset": 1863536,
+          "pool_word_count": 6,
+          "raw_pointer_values_included": false,
+          "registered_target_file_offset": 1863548,
+          "registered_target_is_pool_member": true,
+          "registered_target_is_pool_start": false,
+          "registered_target_word_index": 3,
+          "target_is_aligned_runtime_word": true,
+          "words_before_registered_target": 3,
+          "words_from_registered_target_to_pool_end": 3
+        },
+        "pool_end_runtime_reference_census": {
+          "aligned_word_occurrence_count": 0,
+          "direct_bsr_target_count": 0,
+          "exact_word_occurrence_count": 0,
+          "file_offset": 1863560,
+          "pc_relative_referrer_count": 0,
+          "runtime_address_value_included": false,
+          "use_classification_counts": {}
+        },
+        "pool_end_successor": {
+          "bounded_code_gate_passed": true,
+          "call_count": 1,
+          "entry_file_offset": 1863560,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 10,
+          "known_ratio": 1.0,
+          "normalized_shape_sha256": "c39dc5588b270a052772afadacea6af49bd837e5645a4ff652c3f2da56a04dda",
+          "return_count": 1,
+          "runtime_callee_asserted": false,
+          "strict_exact_entry_gate_passed": true
+        },
+        "pool_references": {
+          "all_pool_words_have_one_pc_relative_referrer": true,
+          "all_referrers_precede_pool": true,
+          "entries": [
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 0,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -114,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 0,
+              "word_relative_to_pool_start": 0
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 0,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -96,
+                  "relative_use_instruction_index": 2
+                }
+              ],
+              "word_index": 1,
+              "word_relative_to_pool_start": 4
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 1,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -86,
+                  "relative_use_instruction_index": 2
+                }
+              ],
+              "word_index": 2,
+              "word_relative_to_pool_start": 8
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 0,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -68,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 3,
+              "word_relative_to_pool_start": 12
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 0,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -54,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 4,
+              "word_relative_to_pool_start": 16
+            },
+            {
+              "pc_relative_referrer_count": 1,
+              "raw_pointer_value_included": false,
+              "uses": [
+                {
+                  "call_register": null,
+                  "classification": "INDIRECT_CONTROL_TARGET",
+                  "loaded_register": 1,
+                  "referrer_precedes_pool": true,
+                  "referrer_relative_to_pool_start": -46,
+                  "relative_use_instruction_index": 1
+                }
+              ],
+              "word_index": 5,
+              "word_relative_to_pool_start": 20
+            }
+          ],
+          "pc_relative_referrer_count": 6,
+          "pool_word_count": 6,
+          "raw_pointer_values_included": false,
+          "relative_role_signature_sha256": "f15d5de26dcfddb084678e275855b876d817811512cf7c97c9281ce07446b271",
+          "role_signature_uses_raw_pointer_values": false,
+          "use_classification_counts": {
+            "INDIRECT_CONTROL_TARGET": 6
+          }
+        },
+        "registered_target_file_offset": 1863548,
+        "registered_target_runtime_reference_census": {
+          "aligned_word_occurrence_count": 1,
+          "direct_bsr_target_count": 0,
+          "exact_word_occurrence_count": 1,
+          "file_offset": 1863548,
+          "pc_relative_referrer_count": 1,
+          "runtime_address_value_included": false,
+          "use_classification_counts": {
+            "INDIRECT_CONTROL_TARGET": 1
+          }
+        }
+      }
+    }
+  ]
+}

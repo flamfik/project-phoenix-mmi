@@ -41,6 +41,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `producer_return_family` - exact target-pointer use census, bilateral return-flow classification, static-handoff limits and operational graph v20 correlation.
 - `handoff_field60` - strict exact-entry reassessment, field-60 pointer-store/byte-return contract, bounded selected-owner pointer probe and operational graph v21 correlation.
 - `handoff_mapping` - deterministic leading runtime-pointer-prefix correction, bilateral exact-entry/shape gates, direct CFG entry-`r5` liveness and operational graph v22 correlation.
+- `literal_pool_boundary` - bounded full-pool recovery around registered targets, PC-relative use-role comparison, adjacent-code/runtime-callee separation and operational graph v23 correction.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -323,6 +324,16 @@ python tools/session029/analyze_handoff_mapping.py \
   MMI-5570-4L0.998.961-cd3-3.iso \
   --output research/navigation-media/work/session029 \
   --public-output research/navigation-media/session029
+```
+
+## Reproduce Session 030
+
+```shell
+python tools/session030/analyze_literal_pool_boundaries.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session030 \
+  --public-output research/navigation-media/session030
 ```
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.

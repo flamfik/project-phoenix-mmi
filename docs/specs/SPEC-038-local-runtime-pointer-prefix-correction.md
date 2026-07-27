@@ -1,9 +1,19 @@
 # SPEC-038 - Local runtime-pointer-prefix correction
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: DRAFT
-- Evidence: Sessions 006, 026-029
-- Related questions: RQ-086, RQ-090-RQ-095
+- Evidence: Sessions 006, 026-030
+- Related questions: RQ-086, RQ-090-RQ-099
+
+## Session 030 correction
+
+The Session 029 leading-run rule measured only from the registered target
+forward. Session 030 extends in both directions and proves that both targets
+are interior members of complete PC-relative literal pools.
+
+This specification now documents a historical local boundary heuristic. Its
+pool-end code result remains structurally valid, but it must not be used as a
+runtime target mapping. SPEC-039 supersedes the mapping interpretation.
 
 ## Purpose
 

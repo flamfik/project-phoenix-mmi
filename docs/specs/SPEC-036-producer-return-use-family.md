@@ -1,9 +1,9 @@
 # SPEC-036 - Producer return-use family
 
-- Version: 0.3
+- Version: 0.4
 - Maturity: DRAFT
-- Evidence: Sessions 026-029
-- Related questions: RQ-077-RQ-095
+- Evidence: Sessions 026-030
+- Related questions: RQ-077-RQ-099
 
 ## Purpose
 
@@ -90,6 +90,17 @@ from `RETURN_FORWARDED_TO_STATIC_HELPER` to
 `CALL_RETURN_PRESENT_IN_UNUSED_ENTRY_R5`. Registration or object consumption
 through these two exact callee families is disproved; other dynamic paths
 remain open. See SPEC-038.
+
+## Session 030 correction
+
+The two registered targets are members of complete PC-relative literal pools.
+The code analyzed by Session 029 begins at each pool end, but no exact runtime
+word or direct `BSR` targets those successors. They are not validated callees.
+
+`CALL_RETURN_PRESENT_IN_UNUSED_ENTRY_R5` and the registration disproof are
+therefore retained only as properties of the adjacent successor bodies, not
+as classifications of the actual handoff flows. The flow targets and return
+consumption return to `OPEN`. See SPEC-039.
 
 ## Publication contract
 

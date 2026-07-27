@@ -1,9 +1,9 @@
 # SPEC-037 - Exact handoff entry and field-60 contract
 
-- Version: 0.2
+- Version: 0.3
 - Maturity: DRAFT
-- Evidence: Sessions 006, 021, 027-029
-- Related questions: RQ-085, RQ-086, RQ-088-RQ-095
+- Evidence: Sessions 006, 021, 027-030
+- Related questions: RQ-085, RQ-086, RQ-088-RQ-099
 
 ## Purpose
 
@@ -104,6 +104,16 @@ code families. This is a mapping correction, not semantic promotion. Direct
 CFG analysis finds no read of entry `r5` on any modeled path, so these two
 callees disprove the proposed registration/consumer route through `r5`.
 Loader/section semantics and universal mapping remain open.
+
+## Session 030 correction
+
+The Session 029 correction ends at the boundary of a complete literal pool;
+it does not recover the runtime target. The strict code entries remain valid
+as pool-end successors, but their entry-`r5` behavior cannot be assigned to
+the unresolved handoff callees.
+
+The field-60 contract itself is unchanged. Only the separate static-handoff
+interpretation is corrected. See SPEC-039.
 
 ## Publication contract
 
