@@ -41,7 +41,8 @@ Progress:
 - Session 029: deterministic local runtime-pointer-prefix pass, pool-end code validation and operational graph v22 - complete; callee interpretation corrected by Session 030;
 - Session 030: complete literal-pool recovery, correction of the adjacent-code/callee interpretation and operational graph v23 - complete;
 - Session 031: five-family cross-release link-delta atlas, bounded negative constant-correction map, strict independent-anchor gate and operational graph v24 - complete;
-- remaining M1 work: whole-image relocation breakpoints and loader/section mapping, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 032: revalidated direct-link/data/marker anchor registry, six local plateaus, 23 support zones, 19 breakpoint brackets and operational graph v25 - complete;
+- remaining M1 work: section-reorder descriptor and loader mapping, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

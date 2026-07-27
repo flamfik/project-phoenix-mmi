@@ -43,6 +43,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `handoff_mapping` - deterministic leading runtime-pointer-prefix correction, bilateral exact-entry/shape gates, direct CFG entry-`r5` liveness and operational graph v22 correlation.
 - `literal_pool_boundary` - bounded full-pool recovery around registered targets, PC-relative use-role comparison, adjacent-code/runtime-callee separation and operational graph v23 correction.
 - `piecewise_link_map` - publication-safe link-pair deduplication, relocation-family atlas, structural-delta-preserving bounded correction solver, independent code-anchor gate and operational graph v24.
+- `relocation_breakpoints` - revalidated direct-link/data/marker anchors, non-interpolated code plateaus, monotonic and section-reorder brackets, exact identity-versus-delta reconciliation and operational graph v25.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -354,6 +355,22 @@ raw pointer values. Code anchors preserve the fixed cross-release structural
 delta and require strict, fully decoded, equal bilateral shapes. A family needs
 two distinct pairs with one common correction; repeated literals do not count
 as independent evidence.
+
+## Reproduce Session 032
+
+```bash
+python tools/session032/analyze_relocation_breakpoints.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session032 \
+  --public-output research/navigation-media/session032
+```
+
+Session 032 consumes only prior confirmed evidence classes and revalidates their
+raw hashes or bounded code gates. Code plateaus require repeated exact deltas,
+while breakpoint brackets report only the interval containing a change.
+Unobserved gaps are never filled, and a pool pair sharing only a relocation
+delta with a known anchor is not promoted to target identity.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
