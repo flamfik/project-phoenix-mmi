@@ -1,0 +1,339 @@
+{
+  "analysis_mode": "read-only-static-bounded-piecewise-link-address-map",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_runtime_callee": "OPEN",
+    "all_link_offsets_in_image_both": true,
+    "confirmed_common_corrections": [],
+    "confirmed_piecewise_family_count": 0,
+    "cross_release_link_delta_atlas": "CONFIRMED",
+    "link_relocation_family_count": 5,
+    "piecewise_link_to_file_map": "NOT_ESTABLISHED",
+    "pool_entry_occurrence_count": 10,
+    "single_cross_release_link_relocation_delta": "DISPROVED",
+    "structural_pool_relocation_delta": 322532,
+    "unique_link_pair_count": 8,
+    "universal_runtime_to_file_mapping": "NOT_ESTABLISHED"
+  },
+  "families": [
+    {
+      "code_anchor_eligible_pair_count": 1,
+      "common_matching_corrections": [],
+      "eligible_pair_with_match_count": 0,
+      "family_id": "LF-001",
+      "link_relocation_delta": -7487820,
+      "occurrence_count": 1,
+      "pair_ids": [
+        "LP-007"
+      ],
+      "relative_file_correction": 7810352,
+      "selected_common_correction": null,
+      "status": "BOUNDED_NEGATIVE_NO_CODE_ANCHOR",
+      "unique_pair_count": 1,
+      "use_classification_counts": {
+        "INDIRECT_CONTROL_TARGET": 1
+      }
+    },
+    {
+      "code_anchor_eligible_pair_count": 0,
+      "common_matching_corrections": [],
+      "eligible_pair_with_match_count": 0,
+      "family_id": "LF-002",
+      "link_relocation_delta": -326212,
+      "occurrence_count": 1,
+      "pair_ids": [
+        "LP-003"
+      ],
+      "relative_file_correction": 648744,
+      "selected_common_correction": null,
+      "status": "NOT_APPLICABLE_NON_CONTROL_LITERAL",
+      "unique_pair_count": 1,
+      "use_classification_counts": {
+        "ARGUMENT_TO_OTHER_INDIRECT_CALL": 1
+      }
+    },
+    {
+      "code_anchor_eligible_pair_count": 1,
+      "common_matching_corrections": [],
+      "eligible_pair_with_match_count": 0,
+      "family_id": "LF-003",
+      "link_relocation_delta": 322528,
+      "occurrence_count": 1,
+      "pair_ids": [
+        "LP-008"
+      ],
+      "relative_file_correction": 4,
+      "selected_common_correction": null,
+      "status": "BOUNDED_NEGATIVE_NO_CODE_ANCHOR",
+      "unique_pair_count": 1,
+      "use_classification_counts": {
+        "INDIRECT_CONTROL_TARGET": 1
+      }
+    },
+    {
+      "code_anchor_eligible_pair_count": 2,
+      "common_matching_corrections": [],
+      "eligible_pair_with_match_count": 0,
+      "family_id": "LF-004",
+      "link_relocation_delta": 323440,
+      "occurrence_count": 4,
+      "pair_ids": [
+        "LP-001",
+        "LP-004"
+      ],
+      "relative_file_correction": -908,
+      "selected_common_correction": null,
+      "status": "BOUNDED_NEGATIVE_NO_CODE_ANCHOR",
+      "unique_pair_count": 2,
+      "use_classification_counts": {
+        "INDIRECT_CONTROL_TARGET": 4
+      }
+    },
+    {
+      "code_anchor_eligible_pair_count": 3,
+      "common_matching_corrections": [],
+      "eligible_pair_with_match_count": 0,
+      "family_id": "LF-005",
+      "link_relocation_delta": 324492,
+      "occurrence_count": 3,
+      "pair_ids": [
+        "LP-002",
+        "LP-005",
+        "LP-006"
+      ],
+      "relative_file_correction": -1960,
+      "selected_common_correction": null,
+      "status": "BOUNDED_NEGATIVE_NO_CODE_ANCHOR",
+      "unique_pair_count": 3,
+      "use_classification_counts": {
+        "INDIRECT_CONTROL_TARGET": 3
+      }
+    }
+  ],
+  "limits": {
+    "arbitrary_global_code_search_performed": false,
+    "code_window_bytes": 128,
+    "dynamic_or_loader_mapping_observed": false,
+    "literal_pool_pairs_only": true,
+    "minimum_independent_pairs_for_family_confirmation": 2,
+    "non_control_literals_code_searched": false,
+    "one_dimensional_structural_delta_preserved": true,
+    "pool_entries_paired_by_structural_word_ordinal": true,
+    "runtime_execution_observed": false,
+    "search_radius_bytes": 2048,
+    "search_step_bytes": 2,
+    "source_session": 30
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.piecewise-link-map-disc/v1",
+  "unique_pairs": [
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 7,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": 323440,
+      "occurrences": [
+        {
+          "flow_ordinal": 12,
+          "word_index": 0
+        },
+        {
+          "flow_ordinal": 13,
+          "word_index": 0
+        }
+      ],
+      "pair_id": "LP-001",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 18,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": 324492,
+      "occurrences": [
+        {
+          "flow_ordinal": 12,
+          "word_index": 1
+        }
+      ],
+      "pair_id": "LP-002",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "matching_common_corrections": [],
+        "performed": false,
+        "reason": "NON_CONTROL_LITERAL"
+      },
+      "code_anchor_eligible": false,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": -326212,
+      "occurrences": [
+        {
+          "flow_ordinal": 12,
+          "word_index": 2
+        }
+      ],
+      "pair_id": "LP-003",
+      "raw_pointer_values_included": false,
+      "use_classification": "ARGUMENT_TO_OTHER_INDIRECT_CALL"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 7,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": 323440,
+      "occurrences": [
+        {
+          "flow_ordinal": 12,
+          "word_index": 3
+        },
+        {
+          "flow_ordinal": 13,
+          "word_index": 5
+        }
+      ],
+      "pair_id": "LP-004",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 13,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": 324492,
+      "occurrences": [
+        {
+          "flow_ordinal": 13,
+          "word_index": 1
+        }
+      ],
+      "pair_id": "LP-005",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 14,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": 324492,
+      "occurrences": [
+        {
+          "flow_ordinal": 13,
+          "word_index": 2
+        }
+      ],
+      "pair_id": "LP-006",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 0,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": -7487820,
+      "occurrences": [
+        {
+          "flow_ordinal": 13,
+          "word_index": 3
+        }
+      ],
+      "pair_id": "LP-007",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    },
+    {
+      "absolute_runtime_addresses_included": false,
+      "bounded_search": {
+        "bilateral_code_anchor_count": 0,
+        "bilateral_strict_entry_count": 9,
+        "candidate_correction_count": 2049,
+        "matches": [],
+        "matching_common_corrections": [],
+        "search_radius_bytes": 2048,
+        "search_step_bytes": 2
+      },
+      "code_anchor_eligible": true,
+      "link_offsets_in_image_both": true,
+      "link_relocation_delta": 322528,
+      "occurrences": [
+        {
+          "flow_ordinal": 13,
+          "word_index": 4
+        }
+      ],
+      "pair_id": "LP-008",
+      "raw_pointer_values_included": false,
+      "use_classification": "INDIRECT_CONTROL_TARGET"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 030 proves that the two former handoff “prefixes” are suffixes of complete PC-relative literal pools. Stable code follows each pool, but no runtime target edge to that code is established; the former callee and entry-`r5` disproof claims are therefore withdrawn. Piecewise runtime mapping, producer implementation, object writer, selected-owner linkage, parser, sector ABI, buffer provenance and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 031 confirms that the ten values in the two registered literal pools form eight unique link pairs and five cross-release relocation families. A fixed structural-delta-preserving search finds no bilateral code anchor within `±2048` bytes, so the relocation atlas is confirmed but no link-address/file-layout piece or runtime callee is claimed. Loader/section mapping, producer implementation, object writer, selected-owner linkage, parser, sector ABI, buffer provenance and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -63,6 +63,7 @@ ui/            Future interface and resource research
 - [Session 028 report](docs/sessions/SESSION-028-handoff-field60-contract.md)
 - [Session 029 report](docs/sessions/SESSION-029-runtime-prefix-handoff-mapping.md)
 - [Session 030 report](docs/sessions/SESSION-030-literal-pool-boundary-correction.md)
+- [Session 031 report](docs/sessions/SESSION-031-piecewise-link-address-map.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -90,6 +91,7 @@ ui/            Future interface and resource research
 - [Session 028 publication-safe evidence](research/navigation-media/session028/)
 - [Session 029 publication-safe evidence](research/navigation-media/session029/)
 - [Session 030 publication-safe evidence](research/navigation-media/session030/)
+- [Session 031 publication-safe evidence](research/navigation-media/session031/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

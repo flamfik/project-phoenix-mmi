@@ -40,7 +40,8 @@ Progress:
 - Session 028: documented SH prelude decoding, bilateral field-60 pointer/byte-return contract, strict handoff-entry correction and operational graph v21 - complete;
 - Session 029: deterministic local runtime-pointer-prefix pass, pool-end code validation and operational graph v22 - complete; callee interpretation corrected by Session 030;
 - Session 030: complete literal-pool recovery, correction of the adjacent-code/callee interpretation and operational graph v23 - complete;
-- remaining M1 work: piecewise link-address/file-layout mapping, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 031: five-family cross-release link-delta atlas, bounded negative constant-correction map, strict independent-anchor gate and operational graph v24 - complete;
+- remaining M1 work: whole-image relocation breakpoints and loader/section mapping, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

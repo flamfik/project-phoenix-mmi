@@ -49,6 +49,12 @@ from .literal_pool_boundary import (
     correlate_literal_pool_boundaries,
     update_operational_graph_v23,
 )
+from .piecewise_link_map import (
+    analyze_piecewise_link_map,
+    build_public_piecewise_link_map_report,
+    correlate_piecewise_link_map,
+    update_operational_graph_v24,
+)
 from .map_media import (
     analyze_navigation_media,
     build_public_navigation_media_report,
@@ -207,6 +213,7 @@ __all__ = [
     "analyze_runtime_linkage_family",
     "analyze_linkage_owner_lineage",
     "analyze_literal_pool_boundaries",
+    "analyze_piecewise_link_map",
     "analyze_owner_ingress_state",
     "analyze_owner_caller_compatibility",
     "analyze_owner_producer_candidates",
@@ -234,6 +241,7 @@ __all__ = [
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
     "build_public_literal_pool_boundary_report",
+    "build_public_piecewise_link_map_report",
     "build_public_owner_ingress_report",
     "build_public_owner_caller_report",
     "build_public_owner_producer_report",
@@ -260,6 +268,7 @@ __all__ = [
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
     "correlate_literal_pool_boundaries",
+    "correlate_piecewise_link_map",
     "correlate_owner_ingress_state",
     "correlate_owner_caller_compatibility",
     "correlate_owner_producer_candidates",
@@ -310,6 +319,7 @@ __all__ = [
     "update_operational_graph_v21",
     "update_operational_graph_v22",
     "update_operational_graph_v23",
+    "update_operational_graph_v24",
 ]
 
-__version__ = "0.28.0"
+__version__ = "0.29.0"

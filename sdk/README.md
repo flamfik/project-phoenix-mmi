@@ -42,6 +42,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `handoff_field60` - strict exact-entry reassessment, field-60 pointer-store/byte-return contract, bounded selected-owner pointer probe and operational graph v21 correlation.
 - `handoff_mapping` - deterministic leading runtime-pointer-prefix correction, bilateral exact-entry/shape gates, direct CFG entry-`r5` liveness and operational graph v22 correlation.
 - `literal_pool_boundary` - bounded full-pool recovery around registered targets, PC-relative use-role comparison, adjacent-code/runtime-callee separation and operational graph v23 correction.
+- `piecewise_link_map` - publication-safe link-pair deduplication, relocation-family atlas, structural-delta-preserving bounded correction solver, independent code-anchor gate and operational graph v24.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -335,6 +336,24 @@ python tools/session030/analyze_literal_pool_boundaries.py \
   --output research/navigation-media/work/session030 \
   --public-output research/navigation-media/session030
 ```
+
+## Reproduce Session 031
+
+```bash
+python tools/session031/analyze_piecewise_link_map.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session031 \
+  --public-output research/navigation-media/session031 \
+  --search-radius 0x800
+```
+
+The Session 031 analyzer dereferences only the complete literal pools confirmed
+by Session 030. It publishes generated pair IDs and relocation deltas, never
+raw pointer values. Code anchors preserve the fixed cross-release structural
+delta and require strict, fully decoded, equal bilateral shapes. A family needs
+two distinct pairs with one common correction; repeated literals do not count
+as independent evidence.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
