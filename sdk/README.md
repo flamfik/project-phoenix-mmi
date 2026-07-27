@@ -36,6 +36,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `owner_provenance` - bounded direct-ingress tests, address-taken use classification, canonical argument/load-rooted state bases and operational graph v15 correlation.
 - `continuation_contract` - internal-label live-in diagnostics, delayed argument tracing, address-record helper geometry and operational graph v16 correlation.
 - `owner_caller` - bilateral owner-entry argument contracts, fixed indirect-call signature census, compatibility rejection gates and operational graph v17 correlation.
+- `owner_producer` - registered shared-owner decoding, producer-first `r4`/`r6` gates, bilateral dynamic-call candidate families and operational graph v18 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -270,6 +271,16 @@ python tools/session024/analyze_owner_caller_compatibility.py \
   --public-output research/navigation-media/session024
 ```
 
+## Reproduce Session 025
+
+```shell
+python tools/session025/analyze_owner_producer_candidates.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session025 \
+  --public-output research/navigation-media/session025
+```
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
@@ -355,3 +366,9 @@ The owner-caller analyzer tests only previously registered dynamic dispatch
 contracts. A candidate must preserve every bilateral owner entry argument
 after its last preceding call. Exact normalized context equality cannot
 replace a concrete target or prove runtime equivalence.
+
+The producer-first analyzer reconstructs the Session 021 registry and decodes
+only exact owner shapes present in both releases. It requires explicit,
+available `r4` and `r6` definitions after the last preceding call. A promoted
+family remains structural until its memory-loaded target is independently
+linked to a selected owner entry.
