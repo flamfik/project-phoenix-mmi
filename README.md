@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 025 reproduces the Session 021 owner registry and searches only its 29 shared prologue-backed shapes. A producer-first funnel reduces 26/26 memory-loaded indirect targets to four bilateral families with complete, equal `r4`/`r6` provenance. Their target fields are `28`, `36` and `44`, but every target remains unresolved and none is linked to a selected owner entry. The owner-entry producer, state creator/writer, parser, sector ABI, buffer owner/provenance, partition consumer, backing-volume layout and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 026 traces all four Session 025 dispatches to one resolved producer-reference pair. Its target-specific family contains seven calls per release with equal normalized bilateral contexts; returned-object fields `28`, `36` and `44` preserve a stable receiver-adjustment grammar. The producer target does not pass the bounded code gate, and object type/writer, selected-owner linkage, parser, sector ABI, buffer provenance and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -58,6 +58,7 @@ ui/            Future interface and resource research
 - [Session 023 report](docs/sessions/SESSION-023-internal-continuation-contracts.md)
 - [Session 024 report](docs/sessions/SESSION-024-owner-entry-indirect-caller-compatibility.md)
 - [Session 025 report](docs/sessions/SESSION-025-producer-first-owner-caller-candidates.md)
+- [Session 026 report](docs/sessions/SESSION-026-call-return-producer-family.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -80,6 +81,7 @@ ui/            Future interface and resource research
 - [Session 023 publication-safe evidence](research/navigation-media/session023/)
 - [Session 024 publication-safe evidence](research/navigation-media/session024/)
 - [Session 025 publication-safe evidence](research/navigation-media/session025/)
+- [Session 026 publication-safe evidence](research/navigation-media/session026/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

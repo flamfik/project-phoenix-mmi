@@ -9,6 +9,12 @@ from .accessor_dispatch import (
 )
 from .binary import BinaryReader
 from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
+from .call_return_producer import (
+    analyze_call_return_producer,
+    build_public_call_return_producer_report,
+    correlate_call_return_producer,
+    update_operational_graph_v19,
+)
 from .continuation_contract import (
     analyze_internal_continuation_contract,
     build_public_internal_continuation_report,
@@ -157,6 +163,7 @@ __all__ = [
     "SHInstruction",
     "analyze_file",
     "analyze_internal_continuation_contract",
+    "analyze_call_return_producer",
     "analyze_accessor_dispatch",
     "analyze_descriptor_lineage",
     "analyze_executable_layout",
@@ -200,6 +207,7 @@ __all__ = [
     "build_public_owner_caller_report",
     "build_public_owner_producer_report",
     "build_public_internal_continuation_report",
+    "build_public_call_return_producer_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
@@ -221,6 +229,7 @@ __all__ = [
     "correlate_owner_caller_compatibility",
     "correlate_owner_producer_candidates",
     "correlate_internal_continuation_contract",
+    "correlate_call_return_producer",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
     "compare_reference_graphs",
@@ -260,6 +269,7 @@ __all__ = [
     "update_operational_graph_v16",
     "update_operational_graph_v17",
     "update_operational_graph_v18",
+    "update_operational_graph_v19",
 ]
 
-__version__ = "0.23.0"
+__version__ = "0.24.0"

@@ -32,6 +32,10 @@ Progress:
 - Session 020: unique bilateral five-record runtime-linkage family, global zero-target census, bounded negative GBR/helper/coherent-copy/cache probes and operational graph v13 - complete;
 - Session 021: two bounded residual-call owner pairs, four-call CD1 lineage, short return-target shape, global owner census and operational graph v14 - complete;
 - Session 022: bounded negative direct owner ingress, two one-sided internal address uses, argument-rooted state-base provenance and operational graph v15 - complete;
+- Session 023: internal continuation contracts, address-record family and operational graph v16 - complete;
+- Session 024: owner-entry indirect-caller compatibility and operational graph v17 - complete;
+- Session 025: producer-first owner-caller candidates and operational graph v18 - complete;
+- Session 026: resolved CALL_RETURN producer-reference family, returned-object field geometry and operational graph v19 - complete;
 - remaining M1 work: entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit

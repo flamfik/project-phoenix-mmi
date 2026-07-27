@@ -1,0 +1,557 @@
+{
+  "analysis_mode": "read-only-static-session025-call-return-producer-correlation",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "candidate_producer_contracts": [
+    {
+      "candidate_family_ordinal": 3,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "contract": {
+        "consumer_call_relative_instruction_index": 21,
+        "consumer_call_site_file_offset": 1533200,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533158,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1533176,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5994,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "owner_shape_sha256": "5b469bc254f9df6b3bbf843082a48d8242a970c970683bc5a163cd1a9047f625",
+      "selected_owner_target_link_established": false
+    },
+    {
+      "candidate_family_ordinal": 4,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "contract": {
+        "consumer_call_relative_instruction_index": 21,
+        "consumer_call_site_file_offset": 1533388,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:32)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[36](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 36,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533346,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1533364,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5806,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 32,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 36
+        }
+      },
+      "owner_shape_sha256": "5f049cc9448ace8966ce1a4ae3068bf945bb87b5e28f08e0476b3e707b839c9f",
+      "selected_owner_target_link_established": false
+    },
+    {
+      "candidate_family_ordinal": 5,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "contract": {
+        "consumer_call_relative_instruction_index": 20,
+        "consumer_call_site_file_offset": 1533580,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533540,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 14,
+        "producer_call_relative_instruction_index": 7,
+        "producer_call_site_file_offset": 1533554,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5612,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "owner_shape_sha256": "7be1c2de3cc7cde96d6386b4ee06c6f3283d0853bb12081078146b73a043cdd2",
+      "selected_owner_target_link_established": false
+    },
+    {
+      "candidate_family_ordinal": 11,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "contract": {
+        "consumer_call_relative_instruction_index": 22,
+        "consumer_call_site_file_offset": 1533504,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533460,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1533478,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5692,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "owner_shape_sha256": "e513f41c94f00fd5a1f01ce97f6fd9a130e256f6e6d0a7b9703d5bfdea5e9f6d",
+      "selected_owner_target_link_established": false
+    }
+  ],
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "bilateral_producer_reference_pass_count": 4,
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "producer_target_code_entry": "NOT_VALIDATED",
+    "producer_target_cross_version_shape": "NOT_EQUAL",
+    "producer_target_runtime_equivalence": "NOT_ESTABLISHED",
+    "returned_object_creator_or_writer": "OPEN",
+    "returned_object_field_geometry": "CONFIRMED_STABLE_STRUCTURAL_GRAMMAR",
+    "returned_object_target_fields": [
+      28,
+      36,
+      44
+    ],
+    "returned_object_type": "OPEN",
+    "sector_read_abi": "OPEN",
+    "selected_owner_target_link": "NOT_ESTABLISHED",
+    "semantic_owner_identity": "OPEN",
+    "session025_candidate_reference_pair_count": 4,
+    "session025_promoted_candidate_count": 4,
+    "single_resolved_producer_target_pair": "CONFIRMED",
+    "target_specific_contexts_all_bilateral": "CONFIRMED",
+    "target_specific_literal_jsr_reference_pairs": 7,
+    "unique_bilateral_owner_entry_caller": "NOT_ESTABLISHED"
+  },
+  "producer_target": {
+    "bounded_code_gate_passed": false,
+    "call_count": 1,
+    "entry_file_offset": 1539152,
+    "function_boundary_asserted": false,
+    "instruction_bytes_included": false,
+    "instruction_count": 83,
+    "known_instruction_count": 28,
+    "known_ratio": 0.337349,
+    "normalized_shape_sha256": "d460a120b519c9e4c186eb3717ee2b985275172bae1e57a22bbae0710a3e9c66",
+    "prologue_save_pr_in_first_12_instructions": false,
+    "resolved_static_call_count": 1,
+    "return_count": 1,
+    "unresolved_indirect_call_count": 0,
+    "window_length": 166
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.call-return-producer-disc/v1",
+  "target_specific_literal_jsr_reference_count": 7
+}
