@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 026 traces all four Session 025 dispatches to one resolved producer-reference pair. Its target-specific family contains seven calls per release with equal normalized bilateral contexts; returned-object fields `28`, `36` and `44` preserve a stable receiver-adjustment grammar. The producer target does not pass the bounded code gate, and object type/writer, selected-owner linkage, parser, sector ABI, buffer provenance and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 027 expands the Session 026 producer family to all 18 exact PC-relative call references. Fifteen returns feed a stable object-dispatch grid covering fields `28` through `92`, two are forwarded to static helpers and one is null-tested. All 18 flows have exact bilateral code-gated owners, but the producer implementation, object writer, selected-owner registration, parser, sector ABI, buffer provenance and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -59,6 +59,7 @@ ui/            Future interface and resource research
 - [Session 024 report](docs/sessions/SESSION-024-owner-entry-indirect-caller-compatibility.md)
 - [Session 025 report](docs/sessions/SESSION-025-producer-first-owner-caller-candidates.md)
 - [Session 026 report](docs/sessions/SESSION-026-call-return-producer-family.md)
+- [Session 027 report](docs/sessions/SESSION-027-producer-return-use-family.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -82,6 +83,7 @@ ui/            Future interface and resource research
 - [Session 024 publication-safe evidence](research/navigation-media/session024/)
 - [Session 025 publication-safe evidence](research/navigation-media/session025/)
 - [Session 026 publication-safe evidence](research/navigation-media/session026/)
+- [Session 027 publication-safe evidence](research/navigation-media/session027/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

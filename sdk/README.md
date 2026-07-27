@@ -38,6 +38,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `owner_caller` - bilateral owner-entry argument contracts, fixed indirect-call signature census, compatibility rejection gates and operational graph v17 correlation.
 - `owner_producer` - registered shared-owner decoding, producer-first `r4`/`r6` gates, bilateral dynamic-call candidate families and operational graph v18 correlation.
 - `call_return_producer` - immediate `CALL_RETURN` producer tracing, target-specific literal-call census, returned-object field geometry and operational graph v19 correlation.
+- `producer_return_family` - exact target-pointer use census, bilateral return-flow classification, static-handoff limits and operational graph v20 correlation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -290,6 +291,16 @@ python tools/session026/analyze_call_return_producer.py \
   MMI-5570-4L0.998.961-cd3-3.iso \
   --output research/navigation-media/work/session026 \
   --public-output research/navigation-media/session026
+```
+
+## Reproduce Session 027
+
+```shell
+python tools/session027/analyze_producer_return_family.py \
+  MMI-5570-4L0.998.961-cd1-3.iso \
+  MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session027 \
+  --public-output research/navigation-media/session027
 ```
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.

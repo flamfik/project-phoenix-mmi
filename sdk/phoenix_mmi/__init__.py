@@ -101,6 +101,12 @@ from .parser_search import (
     scan_global_fldb_parser_candidates,
     update_operational_graph_v7,
 )
+from .producer_return_family import (
+    analyze_producer_return_family,
+    build_public_producer_return_report,
+    correlate_producer_return_family,
+    update_operational_graph_v20,
+)
 from .reference_graph import (
     analyze_reference_graph,
     build_public_reference_graph,
@@ -183,6 +189,7 @@ __all__ = [
     "analyze_owner_ingress_state",
     "analyze_owner_caller_compatibility",
     "analyze_owner_producer_candidates",
+    "analyze_producer_return_family",
     "build_candidate_segments",
     "build_public_accessor_dispatch_report",
     "build_operational_graph",
@@ -208,6 +215,7 @@ __all__ = [
     "build_public_owner_producer_report",
     "build_public_internal_continuation_report",
     "build_public_call_return_producer_report",
+    "build_public_producer_return_report",
     "compare_reports",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
@@ -230,6 +238,7 @@ __all__ = [
     "correlate_owner_producer_candidates",
     "correlate_internal_continuation_contract",
     "correlate_call_return_producer",
+    "correlate_producer_return_family",
     "correlate_optical_sector_model",
     "correlate_dispatch_context",
     "compare_reference_graphs",
@@ -270,6 +279,7 @@ __all__ = [
     "update_operational_graph_v17",
     "update_operational_graph_v18",
     "update_operational_graph_v19",
+    "update_operational_graph_v20",
 ]
 
-__version__ = "0.24.0"
+__version__ = "0.25.0"
