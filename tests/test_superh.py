@@ -73,6 +73,17 @@ class SuperHTests(unittest.TestCase):
             "6ef6": ("mov.l", "@r15+,r14"),
             "8141": ("mov.w", "r0,@(8,r1)"),
             "8145": ("mov.w", "@(8,r1),r0"),
+            "0c1c": ("mov.b", "@(r0,r1),r12"),
+            "0c84": ("mov.b", "r8,@(r0,r12)"),
+            "0c17": ("mul.l", "r1,r12"),
+            "0c7f": ("mac.l", "@r7+,@r12+"),
+            "4e1c": ("shad", "r1,r14"),
+            "4e2d": ("shld", "r2,r14"),
+            "680c": ("extu.b", "r0,r8"),
+            "681d": ("extu.w", "r1,r8"),
+            "682e": ("exts.b", "r2,r8"),
+            "683f": ("exts.w", "r3,r8"),
+            "c310": ("trapa", "#16"),
         }
         with TemporaryDirectory() as temporary:
             path = Path(temporary) / "instructions.bin"
@@ -83,6 +94,10 @@ class SuperHTests(unittest.TestCase):
                 self.assertEqual(
                     (instruction.mnemonic, instruction.operands), expected
                 )
+            trap = decode_instruction_extended(
+                reader, (len(cases) - 1) * 2
+            )
+            self.assertEqual(trap.flow, "trap")
 
 
 if __name__ == "__main__":

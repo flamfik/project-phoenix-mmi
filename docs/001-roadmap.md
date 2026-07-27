@@ -37,6 +37,7 @@ Progress:
 - Session 025: producer-first owner-caller candidates and operational graph v18 - complete;
 - Session 026: resolved CALL_RETURN producer-reference family, returned-object field geometry and operational graph v19 - complete;
 - Session 027: complete producer target-pointer topology, 18-flow return-use family, expanded dispatch grid and operational graph v20 - complete;
+- Session 028: documented SH prelude decoding, bilateral field-60 pointer/byte-return contract, strict handoff-entry correction and operational graph v21 - complete;
 - remaining M1 work: entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit

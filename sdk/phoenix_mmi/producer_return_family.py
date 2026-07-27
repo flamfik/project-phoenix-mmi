@@ -241,6 +241,8 @@ def _register_access(
                 "swap.b",
                 "swap.w",
                 "xtrct",
+                "shad",
+                "shld",
             }
         )
     return read, write

@@ -1,0 +1,455 @@
+{
+  "analysis_mode": "read-only-static-session027-bounded-handoff-field60",
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "documented_decoder_additions": [
+      "EXTS.B",
+      "EXTS.W",
+      "EXTU.B",
+      "EXTU.W",
+      "MAC.L",
+      "MOV_INDEXED",
+      "MUL.L",
+      "SHAD",
+      "SHLD",
+      "TRAPA"
+    ],
+    "field60_entry_r5_zero_store_pair": true,
+    "field60_entry_r6_zero_store_pair": true,
+    "field60_owner_fully_decoded_pair": true,
+    "field60_selected_owner_target_link": "NOT_ESTABLISHED",
+    "field60_unsigned_byte_return_pair": true,
+    "optical_buffer_owner": "OPEN",
+    "returned_object_type": "OPEN",
+    "runtime_equivalence": "NOT_ASSERTED",
+    "sector_read_abi": "OPEN",
+    "semantic_owner_identity": "OPEN",
+    "static_handoff_direct_entry_r5_use_pair_count": 0,
+    "static_handoff_exact_target_mapping": "NOT_VALIDATED_UNDER_STRICT_ENTRY_GATE",
+    "static_handoff_registration_path": "NOT_ESTABLISHED",
+    "static_handoff_selected_owner_pointer_pair_count": 0,
+    "strict_static_handoff_exact_entry_pair_count": 0
+  },
+  "field60": {
+    "bilateral_gates": {
+      "dynamic_contract_equal": true,
+      "entry_r5_zero_store_confirmed_both": true,
+      "entry_r6_zero_store_confirmed_both": true,
+      "fully_decoded_bounded_owner_window_both": true,
+      "owner_code_gate_passed_both": true,
+      "owner_shape_equal": true,
+      "unsigned_byte_return_normalization_confirmed_both": true
+    },
+    "flow_ordinal": 3,
+    "left": {
+      "dynamic_arguments": {
+        "r4": {
+          "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:56)))",
+          "load_path": [
+            {
+              "displacement": 0,
+              "width_bits": 16
+            },
+            {
+              "displacement": 0,
+              "width_bits": 32
+            }
+          ],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "CALL_RETURN",
+            "LOAD",
+            "LOAD",
+            "CALL_RETURN",
+            "CONSTANT"
+          ]
+        },
+        "r5": {
+          "canonical": "ENTRY:r5",
+          "load_path": [],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "ENTRY:r5"
+          ]
+        },
+        "r6": {
+          "canonical": "ENTRY:r6",
+          "load_path": [],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "ENTRY:r6"
+          ]
+        },
+        "r7": {
+          "canonical": "CALLER_SAVED_CLOBBER",
+          "load_path": [],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "CALLER_SAVED_CLOBBER"
+          ]
+        }
+      },
+      "dynamic_call_site_file_offset": 1531646,
+      "dynamic_target": {
+        "canonical": "LOAD32[60](LOAD32[0](CALL_RETURN))",
+        "load_path": [
+          {
+            "displacement": 60,
+            "width_bits": 32
+          },
+          {
+            "displacement": 0,
+            "width_bits": 32
+          }
+        ],
+        "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+        "root_classes": [
+          "LOAD",
+          "LOAD",
+          "CALL_RETURN"
+        ]
+      },
+      "entry_argument_preservation": {
+        "r5": "r10",
+        "r6": "r9"
+      },
+      "entry_r5_zero_store_confirmed": true,
+      "entry_r6_zero_store_confirmed": true,
+      "extended_value_returned_in_r0": true,
+      "fully_decoded_bounded_owner_window": true,
+      "instruction_bytes_included": false,
+      "instruction_count": 35,
+      "known_instruction_count": 35,
+      "owner_entry_file_offset": 1531600,
+      "path_dominance_asserted": false,
+      "post_dispatch_extension_file_offset": 1531650,
+      "post_dispatch_return_extension": "extu.b",
+      "pre_producer_zero_stores": {
+        "ENTRY:r5": 1531612,
+        "ENTRY:r6": 1531614
+      },
+      "producer_call_site_file_offset": 1531620,
+      "receiver_adjustment_field_displacement": 56,
+      "return_move_file_offset": 1531652,
+      "selected_owner_target_link_established": false,
+      "target_field_displacement": 60,
+      "unknown_instruction_count": 0
+    },
+    "right": {
+      "dynamic_arguments": {
+        "r4": {
+          "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:56)))",
+          "load_path": [
+            {
+              "displacement": 0,
+              "width_bits": 16
+            },
+            {
+              "displacement": 0,
+              "width_bits": 32
+            }
+          ],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "CALL_RETURN",
+            "LOAD",
+            "LOAD",
+            "CALL_RETURN",
+            "CONSTANT"
+          ]
+        },
+        "r5": {
+          "canonical": "ENTRY:r5",
+          "load_path": [],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "ENTRY:r5"
+          ]
+        },
+        "r6": {
+          "canonical": "ENTRY:r6",
+          "load_path": [],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "ENTRY:r6"
+          ]
+        },
+        "r7": {
+          "canonical": "CALLER_SAVED_CLOBBER",
+          "load_path": [],
+          "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+          "root_classes": [
+            "CALLER_SAVED_CLOBBER"
+          ]
+        }
+      },
+      "dynamic_call_site_file_offset": 1854174,
+      "dynamic_target": {
+        "canonical": "LOAD32[60](LOAD32[0](CALL_RETURN))",
+        "load_path": [
+          {
+            "displacement": 60,
+            "width_bits": 32
+          },
+          {
+            "displacement": 0,
+            "width_bits": 32
+          }
+        ],
+        "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+        "root_classes": [
+          "LOAD",
+          "LOAD",
+          "CALL_RETURN"
+        ]
+      },
+      "entry_argument_preservation": {
+        "r5": "r10",
+        "r6": "r9"
+      },
+      "entry_r5_zero_store_confirmed": true,
+      "entry_r6_zero_store_confirmed": true,
+      "extended_value_returned_in_r0": true,
+      "fully_decoded_bounded_owner_window": true,
+      "instruction_bytes_included": false,
+      "instruction_count": 35,
+      "known_instruction_count": 35,
+      "owner_entry_file_offset": 1854128,
+      "path_dominance_asserted": false,
+      "post_dispatch_extension_file_offset": 1854178,
+      "post_dispatch_return_extension": "extu.b",
+      "pre_producer_zero_stores": {
+        "ENTRY:r5": 1854140,
+        "ENTRY:r6": 1854142
+      },
+      "producer_call_site_file_offset": 1854148,
+      "receiver_adjustment_field_displacement": 56,
+      "return_move_file_offset": 1854180,
+      "selected_owner_target_link_established": false,
+      "target_field_displacement": 60,
+      "unknown_instruction_count": 0
+    }
+  },
+  "interpretation": "The field-60 owner pair is now fully decoded in its bounded window. Both releases preserve entry r5/r6, write zero through those two entry pointers before the producer call, reuse them as r5/r6 for the field-60 dynamic dispatch, and normalize the dispatch result to an unsigned byte returned in r0. The target remains a call-return-rooted memory load, so no selected-owner edge follows. The two handoff pointer mappings fail the stricter exact-entry gate, contain no bilateral modeled entry-r5 use and contain no exact selected-owner pointer in their bounded windows. Session 027's nearby-prologue gate is therefore not sufficient to validate those exact target mappings; static registration remains open.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "arbitrary_raw_image_code_scan_performed": false,
+    "computed_or_encoded_pointer_models_tested": false,
+    "entry_prefix_bytes": 64,
+    "only_registered_handoffs_and_field60_owner_followed": true,
+    "path_dominance_asserted": false,
+    "runtime_base_mapping_assumed_universal": false,
+    "runtime_execution_observed": false,
+    "source_session": 27,
+    "static_target_window_bytes": 384,
+    "strict_entry_gate_is_abi_claim": false
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.handoff-field60-comparison/v1",
+  "static_handoffs": [
+    {
+      "direct_modeled_entry_r5_use_confirmed_both": false,
+      "exact_selected_owner_pointer_confirmed_both": false,
+      "flow_ordinal": 12,
+      "left": {
+        "selected_owner_pointer_probe": {
+          "address_model": "RUNTIME_BASE_PLUS_FILE_OFFSET",
+          "address_model_scope": "SESSION006_BOUNDED_NOT_UNIVERSAL",
+          "bounded_window_bytes": 384,
+          "computed_or_encoded_pointer_models_tested": false,
+          "exact_aligned_selected_owner_word_count": 0,
+          "per_owner_counts": [
+            0,
+            0
+          ],
+          "selected_owner_candidate_count": 2
+        },
+        "target": {
+          "bounded_window_bytes": 64,
+          "call_count_before_save_pr": 0,
+          "control_transfer_count_before_save_pr": 0,
+          "documented_mnemonic_counts_before_save_pr": {
+            "mov.b": 2,
+            "mov.l": 3,
+            "mov.w": 1,
+            "or": 1
+          },
+          "entry_r5_profile": {
+            "direct_entry_value_use_confirmed": false,
+            "modeled_read_count_before_terminal": 0,
+            "modeled_write_count_before_terminal": 0,
+            "register": "r5",
+            "terminal": "CONDITIONAL_CONTROL_SPLIT",
+            "terminal_file_offset": 1540828,
+            "unknown_instruction_count_before_terminal": 1,
+            "unknown_or_control_flow_limits_negative_result": true
+          },
+          "instruction_bytes_included": false,
+          "instruction_count_before_save_pr": 8,
+          "nearby_prologue_does_not_validate_exact_target": true,
+          "save_pr_delta_from_target": 16,
+          "save_pr_file_offset": 1540820,
+          "strict_exact_entry_gate_passed": false,
+          "strict_gate_is_analysis_policy_not_abi_rule": true,
+          "target_file_offset": 1540804,
+          "unknown_instruction_count_before_save_pr": 1
+        }
+      },
+      "registration_path_established": false,
+      "right": {
+        "selected_owner_pointer_probe": {
+          "address_model": "RUNTIME_BASE_PLUS_FILE_OFFSET",
+          "address_model_scope": "SESSION006_BOUNDED_NOT_UNIVERSAL",
+          "bounded_window_bytes": 384,
+          "computed_or_encoded_pointer_models_tested": false,
+          "exact_aligned_selected_owner_word_count": 0,
+          "per_owner_counts": [
+            0,
+            0
+          ],
+          "selected_owner_candidate_count": 2
+        },
+        "target": {
+          "bounded_window_bytes": 64,
+          "call_count_before_save_pr": 2,
+          "control_transfer_count_before_save_pr": 0,
+          "documented_mnemonic_counts_before_save_pr": {
+            "bsr": 2,
+            "mac.l": 1,
+            "mov.l": 2,
+            "mov.w": 1,
+            "shad": 1
+          },
+          "entry_r5_profile": {
+            "direct_entry_value_use_confirmed": false,
+            "modeled_read_count_before_terminal": 0,
+            "modeled_write_count_before_terminal": 0,
+            "register": "r5",
+            "terminal": "CALLER_SAVED_CLOBBER",
+            "terminal_file_offset": 1863334,
+            "unknown_instruction_count_before_terminal": 2,
+            "unknown_or_control_flow_limits_negative_result": true
+          },
+          "instruction_bytes_included": false,
+          "instruction_count_before_save_pr": 10,
+          "nearby_prologue_does_not_validate_exact_target": true,
+          "save_pr_delta_from_target": 20,
+          "save_pr_file_offset": 1863352,
+          "strict_exact_entry_gate_passed": false,
+          "strict_gate_is_analysis_policy_not_abi_rule": true,
+          "target_file_offset": 1863332,
+          "unknown_instruction_count_before_save_pr": 3
+        }
+      },
+      "session027_gate_validates_exact_entry": false,
+      "session027_nearby_code_gate_passed_both": true,
+      "strict_exact_entry_gate_passed_both": false
+    },
+    {
+      "direct_modeled_entry_r5_use_confirmed_both": false,
+      "exact_selected_owner_pointer_confirmed_both": false,
+      "flow_ordinal": 13,
+      "left": {
+        "selected_owner_pointer_probe": {
+          "address_model": "RUNTIME_BASE_PLUS_FILE_OFFSET",
+          "address_model_scope": "SESSION006_BOUNDED_NOT_UNIVERSAL",
+          "bounded_window_bytes": 384,
+          "computed_or_encoded_pointer_models_tested": false,
+          "exact_aligned_selected_owner_word_count": 0,
+          "per_owner_counts": [
+            0,
+            0
+          ],
+          "selected_owner_candidate_count": 2
+        },
+        "target": {
+          "bounded_window_bytes": 64,
+          "call_count_before_save_pr": 0,
+          "control_transfer_count_before_save_pr": 1,
+          "documented_mnemonic_counts_before_save_pr": {
+            "bra": 1,
+            "mov.l": 1,
+            "mul.l": 1,
+            "or": 1
+          },
+          "entry_r5_profile": {
+            "direct_entry_value_use_confirmed": false,
+            "modeled_read_count_before_terminal": 0,
+            "modeled_write_count_before_terminal": 0,
+            "register": "r5",
+            "terminal": "DIRECT_BRANCH_EXIT",
+            "terminal_file_offset": 1541022,
+            "unknown_instruction_count_before_terminal": 1,
+            "unknown_or_control_flow_limits_negative_result": true
+          },
+          "instruction_bytes_included": false,
+          "instruction_count_before_save_pr": 5,
+          "nearby_prologue_does_not_validate_exact_target": true,
+          "save_pr_delta_from_target": 10,
+          "save_pr_file_offset": 1541030,
+          "strict_exact_entry_gate_passed": false,
+          "strict_gate_is_analysis_policy_not_abi_rule": true,
+          "target_file_offset": 1541020,
+          "unknown_instruction_count_before_save_pr": 1
+        }
+      },
+      "registration_path_established": false,
+      "right": {
+        "selected_owner_pointer_probe": {
+          "address_model": "RUNTIME_BASE_PLUS_FILE_OFFSET",
+          "address_model_scope": "SESSION006_BOUNDED_NOT_UNIVERSAL",
+          "bounded_window_bytes": 384,
+          "computed_or_encoded_pointer_models_tested": false,
+          "exact_aligned_selected_owner_word_count": 0,
+          "per_owner_counts": [
+            0,
+            0
+          ],
+          "selected_owner_candidate_count": 2
+        },
+        "target": {
+          "bounded_window_bytes": 64,
+          "call_count_before_save_pr": 1,
+          "control_transfer_count_before_save_pr": 2,
+          "documented_mnemonic_counts_before_save_pr": {
+            "bsr": 1,
+            "bt/s": 1,
+            "mov.b": 1,
+            "mov.l": 1,
+            "trapa": 1
+          },
+          "entry_r5_profile": {
+            "direct_entry_value_use_confirmed": false,
+            "modeled_read_count_before_terminal": 0,
+            "modeled_write_count_before_terminal": 0,
+            "register": "r5",
+            "terminal": "TRAP_TRANSFER",
+            "terminal_file_offset": 1863550,
+            "unknown_instruction_count_before_terminal": 1,
+            "unknown_or_control_flow_limits_negative_result": true
+          },
+          "instruction_bytes_included": false,
+          "instruction_count_before_save_pr": 7,
+          "nearby_prologue_does_not_validate_exact_target": true,
+          "save_pr_delta_from_target": 14,
+          "save_pr_file_offset": 1863562,
+          "strict_exact_entry_gate_passed": false,
+          "strict_gate_is_analysis_policy_not_abi_rule": true,
+          "target_file_offset": 1863548,
+          "unknown_instruction_count_before_save_pr": 2
+        }
+      },
+      "session027_gate_validates_exact_entry": false,
+      "session027_nearby_code_gate_passed_both": true,
+      "strict_exact_entry_gate_passed_both": false
+    }
+  ]
+}

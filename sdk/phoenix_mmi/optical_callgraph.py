@@ -73,7 +73,26 @@ def _destination_register(instruction: SHInstruction) -> int | None:
         return None
     if instruction.mnemonic == "mova":
         return 0
-    if instruction.mnemonic in {"add", "sub", "and", "or", "xor", "mov", "mov.b", "mov.w", "mov.l", "swap.b", "swap.w", "xtrct"}:
+    if instruction.mnemonic in {
+        "add",
+        "sub",
+        "and",
+        "or",
+        "xor",
+        "mov",
+        "mov.b",
+        "mov.w",
+        "mov.l",
+        "swap.b",
+        "swap.w",
+        "xtrct",
+        "extu.b",
+        "extu.w",
+        "exts.b",
+        "exts.w",
+        "shad",
+        "shld",
+    }:
         match = re.search(r",r(\d+)$", instruction.operands)
         return int(match.group(1)) if match is not None else None
     if instruction.mnemonic == "shlr2":

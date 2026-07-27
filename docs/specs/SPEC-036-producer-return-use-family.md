@@ -1,9 +1,9 @@
 # SPEC-036 - Producer return-use family
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: DRAFT
-- Evidence: Sessions 026-027
-- Related questions: RQ-077-RQ-087
+- Evidence: Sessions 026-028
+- Related questions: RQ-077-RQ-091
 
 ## Purpose
 
@@ -67,6 +67,15 @@ callee reads or stores it.
 
 No producer implementation, object writer, static registration path or
 selected-owner target edge is established.
+
+## Session 028 exact-entry correction
+
+The Session 027 static-handoff code gate establishes only a nearby prologue.
+Session 028's stricter exact-entry gate rejects all four mapped handoff
+targets because documented unknown/control-transfer/call evidence occurs
+before a sufficiently early save-PR. The handoffs remain structural pointer
+candidates; they are not validated code entries or registration helpers.
+See SPEC-037.
 
 ## Publication contract
 

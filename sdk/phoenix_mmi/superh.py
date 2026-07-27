@@ -177,6 +177,10 @@ def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruct
         return SHInstruction(offset, "add", f"r{m},r{n}")
     if word & 0xF00F == 0x3008:
         return SHInstruction(offset, "sub", f"r{m},r{n}")
+    if word & 0xF00F == 0x0007:
+        return SHInstruction(offset, "mul.l", f"r{m},r{n}")
+    if word & 0xF00F == 0x000F:
+        return SHInstruction(offset, "mac.l", f"@r{m}+,@r{n}+")
     comparison_names = {
         0x3000: "cmp/eq",
         0x3002: "cmp/hs",
@@ -201,6 +205,10 @@ def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruct
         return SHInstruction(offset, logic_names[logic_family], f"r{m},r{n}")
     if word & 0xFF00 == 0xCB00:
         return SHInstruction(offset, "or", f"#{word & 0xFF},r0")
+    if word & 0xFF00 == 0xC300:
+        return SHInstruction(
+            offset, "trapa", f"#{word & 0xFF}", flow="trap"
+        )
     endian_names = {
         0x6008: "swap.b",
         0x6009: "swap.w",
@@ -211,6 +219,50 @@ def decode_instruction_extended(reader: BinaryReader, offset: int) -> SHInstruct
         return SHInstruction(offset, endian_names[endian_family], f"r{m},r{n}")
     if word & 0xF0FF == 0x4009:
         return SHInstruction(offset, "shlr2", f"r{n}")
+    dynamic_shifts = {
+        0x400C: "shad",
+        0x400D: "shld",
+    }
+    shift_family = word & 0xF00F
+    if shift_family in dynamic_shifts:
+        return SHInstruction(
+            offset, dynamic_shifts[shift_family], f"r{m},r{n}"
+        )
+    indexed_loads = {
+        0x000C: "mov.b",
+        0x000D: "mov.w",
+        0x000E: "mov.l",
+    }
+    indexed_load_family = word & 0xF00F
+    if indexed_load_family in indexed_loads:
+        return SHInstruction(
+            offset,
+            indexed_loads[indexed_load_family],
+            f"@(r0,r{m}),r{n}",
+        )
+    indexed_stores = {
+        0x0004: "mov.b",
+        0x0005: "mov.w",
+        0x0006: "mov.l",
+    }
+    indexed_store_family = word & 0xF00F
+    if indexed_store_family in indexed_stores:
+        return SHInstruction(
+            offset,
+            indexed_stores[indexed_store_family],
+            f"r{m},@(r0,r{n})",
+        )
+    extensions = {
+        0x600C: "extu.b",
+        0x600D: "extu.w",
+        0x600E: "exts.b",
+        0x600F: "exts.w",
+    }
+    extension_family = word & 0xF00F
+    if extension_family in extensions:
+        return SHInstruction(
+            offset, extensions[extension_family], f"r{m},r{n}"
+        )
     indirect_loads = {
         0x6000: "mov.b",
         0x6001: "mov.w",
@@ -284,6 +336,8 @@ def trace_control_flow(
                 continue
             if instruction.flow in ("return", "indirect-branch"):
                 include_delay_slot(offset + 2)
+                break
+            if instruction.flow == "trap":
                 break
             if instruction.flow == "indirect-call":
                 include_delay_slot(offset + 2)
