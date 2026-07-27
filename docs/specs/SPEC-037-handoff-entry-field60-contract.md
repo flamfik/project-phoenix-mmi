@@ -1,9 +1,9 @@
 # SPEC-037 - Exact handoff entry and field-60 contract
 
-- Version: 0.1
+- Version: 0.2
 - Maturity: DRAFT
-- Evidence: Sessions 006, 021, 027-028
-- Related questions: RQ-085, RQ-086, RQ-088-RQ-091
+- Evidence: Sessions 006, 021, 027-029
+- Related questions: RQ-085, RQ-086, RQ-088-RQ-095
 
 ## Purpose
 
@@ -91,6 +91,19 @@ section-relative, encoded, computed, copied or runtime-created pointers.
 - zero bilateral modeled handoff entry-`r5` consumers;
 - zero exact selected-owner pointer pairs;
 - no registration path or selected-owner target link.
+
+## Session 029 correction
+
+The Session 028 raw targets are not code entries because they begin with
+short runtime-pointer-range prefixes. SPEC-038 defines a non-searching local
+correction: advance by the complete maximal prefix, then reapply the strict
+entry gate.
+
+All four corrected entries pass that gate and form two bilateral normalized
+code families. This is a mapping correction, not semantic promotion. Direct
+CFG analysis finds no read of entry `r5` on any modeled path, so these two
+callees disprove the proposed registration/consumer route through `r5`.
+Loader/section semantics and universal mapping remain open.
 
 ## Publication contract
 

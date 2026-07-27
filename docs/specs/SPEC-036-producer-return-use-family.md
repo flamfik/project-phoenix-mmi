@@ -1,9 +1,9 @@
 # SPEC-036 - Producer return-use family
 
-- Version: 0.2
+- Version: 0.3
 - Maturity: DRAFT
-- Evidence: Sessions 026-028
-- Related questions: RQ-077-RQ-091
+- Evidence: Sessions 026-029
+- Related questions: RQ-077-RQ-095
 
 ## Purpose
 
@@ -76,6 +76,20 @@ targets because documented unknown/control-transfer/call evidence occurs
 before a sufficiently early save-PR. The handoffs remain structural pointer
 candidates; they are not validated code entries or registration helpers.
 See SPEC-037.
+
+## Session 029 local-prefix correction
+
+Both handoff pairs begin with bounded runs of runtime-range words. Advancing
+by the complete run produces strict, fully decoded entries with equal
+cross-version normalized shapes. This corrects the exact local mapping, but
+does not restore the Session 027 semantic label.
+
+Direct CFG analysis proves that all four corrected callees ignore entry `r5`
+on every modeled path. The two flow classifications are therefore refined
+from `RETURN_FORWARDED_TO_STATIC_HELPER` to
+`CALL_RETURN_PRESENT_IN_UNUSED_ENTRY_R5`. Registration or object consumption
+through these two exact callee families is disproved; other dynamic paths
+remain open. See SPEC-038.
 
 ## Publication contract
 

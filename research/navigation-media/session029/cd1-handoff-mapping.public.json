@@ -1,0 +1,215 @@
+{
+  "analysis_mode": "read-only-static-registered-runtime-prefix-correction",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "all_handoff_correction_gates_passed": true,
+    "bilateral_corrected_handoff_pair_count": 2,
+    "common_corrected_entry_delta": 322532,
+    "entry_r5_ignored_pair_count": 2,
+    "loader_or_section_mechanism": "OPEN",
+    "optical_buffer_owner": "OPEN",
+    "refined_static_flow_classification_counts": {
+      "CALL_RETURN_PRESENT_IN_UNUSED_ENTRY_R5": 2
+    },
+    "registered_handoff_pair_count": 2,
+    "returned_object_type": "OPEN",
+    "right_prefix_additional_word_pair_count": 2,
+    "sector_read_abi": "OPEN",
+    "selected_owner_target_link": "NOT_ESTABLISHED",
+    "session026_producer_prefix_correction": "NOT_APPLICABLE",
+    "static_handoff_registration_path": "DISPROVED_FOR_TWO_CALLEES",
+    "universal_runtime_to_file_mapping": "NOT_ESTABLISHED"
+  },
+  "handoff_targets": [
+    {
+      "flow_ordinal": 12,
+      "refined_return_use_classification": "CALL_RETURN_PRESENT_IN_UNUSED_ENTRY_R5",
+      "registration_path_established": false,
+      "target": {
+        "corrected_entry": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1540816,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 22,
+          "known_instruction_count": 22,
+          "known_ratio": 1.0,
+          "normalized_shape_sha256": "1938c4a7f3414a06bac08bf79ba70f23f6fece2dbfefbb3c4f829a6dd7510d81",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 2,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 0,
+          "window_length": 44
+        },
+        "entry_r5_cfg": {
+          "bounded_direct_cfg_complete": true,
+          "bounded_window_bytes": 384,
+          "callee_calls_not_followed": true,
+          "caller_saved_r5_clobber_applied_after_delay_slot": true,
+          "entry_file_offset": 1540816,
+          "entry_r5_ignored_on_all_modeled_paths": true,
+          "entry_r5_read_confirmed": false,
+          "entry_r5_read_file_offsets": [],
+          "entry_r5_read_instruction_count": 0,
+          "indirect_or_external_transfer_count": 0,
+          "instruction_bytes_included": false,
+          "path_dominance_asserted": false,
+          "reachable_state_count": 23,
+          "reachable_unknown_instruction_count": 0,
+          "terminal_path_counts": {
+            "RETURN_AFTER_ENTRY_R5_KILL": 1
+          }
+        },
+        "loader_or_section_mechanism_asserted": false,
+        "local_prefix_correction_validated": true,
+        "prefix": {
+          "aligned_target": true,
+          "corrected_entry_file_offset": 1540816,
+          "maximum_words": 8,
+          "prefix_bytes": 12,
+          "prefix_is_maximal_under_bound": true,
+          "raw_pointer_values_included": false,
+          "runtime_pointer_word_count": 3,
+          "target_file_offset": 1540804
+        },
+        "raw_target_file_offset": 1540804,
+        "strict_entry_gate": {
+          "call_count_before_save_pr": 0,
+          "control_transfer_count_before_save_pr": 0,
+          "passed": true,
+          "save_pr_delta_from_entry": 4,
+          "unknown_instruction_count_before_save_pr": 0
+        }
+      }
+    },
+    {
+      "flow_ordinal": 13,
+      "refined_return_use_classification": "CALL_RETURN_PRESENT_IN_UNUSED_ENTRY_R5",
+      "registration_path_established": false,
+      "target": {
+        "corrected_entry": {
+          "bounded_code_gate_passed": true,
+          "call_count": 1,
+          "entry_file_offset": 1541028,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 10,
+          "known_instruction_count": 10,
+          "known_ratio": 1.0,
+          "normalized_shape_sha256": "c39dc5588b270a052772afadacea6af49bd837e5645a4ff652c3f2da56a04dda",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 0,
+          "window_length": 20
+        },
+        "entry_r5_cfg": {
+          "bounded_direct_cfg_complete": true,
+          "bounded_window_bytes": 384,
+          "callee_calls_not_followed": true,
+          "caller_saved_r5_clobber_applied_after_delay_slot": true,
+          "entry_file_offset": 1541028,
+          "entry_r5_ignored_on_all_modeled_paths": true,
+          "entry_r5_read_confirmed": false,
+          "entry_r5_read_file_offsets": [],
+          "entry_r5_read_instruction_count": 0,
+          "indirect_or_external_transfer_count": 0,
+          "instruction_bytes_included": false,
+          "path_dominance_asserted": false,
+          "reachable_state_count": 8,
+          "reachable_unknown_instruction_count": 0,
+          "terminal_path_counts": {
+            "RETURN_AFTER_ENTRY_R5_KILL": 1
+          }
+        },
+        "loader_or_section_mechanism_asserted": false,
+        "local_prefix_correction_validated": true,
+        "prefix": {
+          "aligned_target": true,
+          "corrected_entry_file_offset": 1541028,
+          "maximum_words": 8,
+          "prefix_bytes": 8,
+          "prefix_is_maximal_under_bound": true,
+          "raw_pointer_values_included": false,
+          "runtime_pointer_word_count": 2,
+          "target_file_offset": 1541020
+        },
+        "raw_target_file_offset": 1541020,
+        "strict_entry_gate": {
+          "call_count_before_save_pr": 0,
+          "control_transfer_count_before_save_pr": 0,
+          "passed": true,
+          "save_pr_delta_from_entry": 2,
+          "unknown_instruction_count_before_save_pr": 0
+        }
+      }
+    }
+  ],
+  "limits": {
+    "arbitrary_raw_image_code_scan_performed": false,
+    "callee_calls_followed": false,
+    "forward_code_entry_search_performed": false,
+    "function_window_bytes": 384,
+    "handoff_source_session": 27,
+    "loader_or_section_parser_available": false,
+    "maximum_prefix_words": 8,
+    "only_registered_target_pairs_followed": true,
+    "prefix_end_is_deterministic_correction": true,
+    "producer_negative_control_source_session": 26,
+    "runtime_execution_observed": false
+  },
+  "producer_negative_control": {
+    "corrected_entry": {
+      "bounded_code_gate_passed": false,
+      "call_count": 1,
+      "entry_file_offset": 1539152,
+      "function_boundary_asserted": false,
+      "instruction_bytes_included": false,
+      "instruction_count": 83,
+      "known_instruction_count": 29,
+      "known_ratio": 0.349398,
+      "normalized_shape_sha256": "29646d913fa0accb62ec73e700e22f43bcdc60f3fc4178ca76c1a483a3c94f14",
+      "prologue_save_pr_in_first_12_instructions": false,
+      "resolved_static_call_count": 1,
+      "return_count": 1,
+      "unresolved_indirect_call_count": 0,
+      "window_length": 166
+    },
+    "entry_r5_cfg": null,
+    "loader_or_section_mechanism_asserted": false,
+    "local_prefix_correction_validated": false,
+    "prefix": {
+      "aligned_target": true,
+      "corrected_entry_file_offset": 1539152,
+      "maximum_words": 8,
+      "prefix_bytes": 0,
+      "prefix_is_maximal_under_bound": true,
+      "raw_pointer_values_included": false,
+      "runtime_pointer_word_count": 0,
+      "target_file_offset": 1539152
+    },
+    "raw_target_file_offset": 1539152,
+    "strict_entry_gate": {
+      "call_count_before_save_pr": 0,
+      "control_transfer_count_before_save_pr": 0,
+      "passed": false,
+      "save_pr_delta_from_entry": null,
+      "unknown_instruction_count_before_save_pr": 30
+    }
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.handoff-mapping-disc/v1"
+}

@@ -36,6 +36,12 @@ from .handoff_field60 import (
     correlate_handoff_field60,
     update_operational_graph_v21,
 )
+from .handoff_mapping import (
+    analyze_handoff_mapping,
+    build_public_handoff_mapping_report,
+    correlate_handoff_mapping,
+    update_operational_graph_v22,
+)
 from .layout import analyze_executable_layout
 from .map_media import (
     analyze_navigation_media,
@@ -181,6 +187,7 @@ __all__ = [
     "analyze_executable_layout",
     "analyze_fldb_candidate_dataflow",
     "analyze_handoff_field60",
+    "analyze_handoff_mapping",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
@@ -207,6 +214,7 @@ __all__ = [
     "build_public_descriptor_lineage_report",
     "build_public_global_parser_report",
     "build_public_handoff_field60_report",
+    "build_public_handoff_mapping_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
@@ -238,6 +246,7 @@ __all__ = [
     "correlate_descriptor_lineage",
     "correlate_global_fldb_parser_search",
     "correlate_handoff_field60",
+    "correlate_handoff_mapping",
     "correlate_firmware_and_media",
     "correlate_runtime_slot_lineage",
     "correlate_runtime_linkage_family",
@@ -290,6 +299,7 @@ __all__ = [
     "update_operational_graph_v19",
     "update_operational_graph_v20",
     "update_operational_graph_v21",
+    "update_operational_graph_v22",
 ]
 
-__version__ = "0.26.0"
+__version__ = "0.27.0"
