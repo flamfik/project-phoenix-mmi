@@ -36,6 +36,14 @@ from .exact_block_map import (
     correlate_exact_block_map,
     update_operational_graph_v27,
 )
+from .dual_delta_similarity import (
+    analyze_dual_delta_similarity,
+    build_public_dual_delta_similarity_report,
+    compare_similarity_grid_control,
+    correlate_dual_delta_similarity,
+    finalize_dual_delta_similarity,
+    update_operational_graph_v28,
+)
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .handoff_field60 import (
     analyze_handoff_field60,
@@ -217,6 +225,7 @@ __all__ = [
     "analyze_descriptor_lineage",
     "analyze_executable_layout",
     "analyze_exact_block_map",
+    "analyze_dual_delta_similarity",
     "analyze_fldb_candidate_dataflow",
     "analyze_handoff_field60",
     "analyze_handoff_mapping",
@@ -249,6 +258,7 @@ __all__ = [
     "build_public_fldb_candidate_report",
     "build_public_descriptor_lineage_report",
     "build_public_exact_block_map_report",
+    "build_public_dual_delta_similarity_report",
     "build_public_global_parser_report",
     "build_public_handoff_field60_report",
     "build_public_handoff_mapping_report",
@@ -275,6 +285,7 @@ __all__ = [
     "build_public_producer_return_report",
     "compare_reports",
     "compare_exact_block_seed_control",
+    "compare_similarity_grid_control",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
     "compare_optical_navigation_callgraph",
@@ -287,6 +298,8 @@ __all__ = [
     "correlate_corrected_parser_model",
     "correlate_descriptor_lineage",
     "correlate_exact_block_map",
+    "correlate_dual_delta_similarity",
+    "finalize_dual_delta_similarity",
     "correlate_global_fldb_parser_search",
     "correlate_handoff_field60",
     "correlate_handoff_mapping",
@@ -352,6 +365,7 @@ __all__ = [
     "update_operational_graph_v25",
     "update_operational_graph_v26",
     "update_operational_graph_v27",
+    "update_operational_graph_v28",
 ]
 
-__version__ = "0.32.0"
+__version__ = "0.33.0"

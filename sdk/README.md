@@ -406,6 +406,23 @@ second 128-byte run must reproduce the transition bounds. Exact file-layout
 correspondence does not establish runtime execution, loader behavior or
 semantic ownership.
 
+## Reproduce Session 035
+
+```bash
+python tools/session035/analyze_dual_delta_similarity.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session035 \
+  --public-output research/navigation-media/session035
+```
+
+Session 035 reads only the remaining Session 034 envelope under the two prior
+relocation deltas. It uses fixed 256/512/1024-byte windows, a 128-byte step,
+predeclared match/advantage gates and a 64-byte half-step grid control. It does
+not discover new deltas or tune thresholds after seeing the result. A
+dominance crossing is descriptive file similarity, not an exact section or
+runtime boundary.
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.

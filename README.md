@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 032 confirms a sparse relocation support map and one section reorder; Session 033 closes a simple internal descriptor-table model as bounded-negative. Session 034 adds exact byte support for both reordered content families and narrows the transition envelope from 183,523 to 146,841 bytes, stable under 64/128-byte seeds. The exact boundary and compile/link placement versus loader transformation remain open, together with producer implementation, object writer, parser, sector ABI and dynamic compatibility.
+The foundation, update model and principal-image fingerprinting are complete. Session 032 confirms a sparse relocation support map and one section reorder; Session 033 closes a simple internal descriptor-table model as bounded-negative. Session 034 adds exact byte support for both reordered content families and narrows the transition envelope from 183,523 to 146,841 bytes. Session 035 closes one monotonic dual-delta similarity-transition model as a replicated bounded negative, leaving the Session 034 envelope authoritative. The exact boundary and compile/link placement versus loader transformation remain open, together with producer implementation, object writer, parser, sector ABI and dynamic compatibility.
 
 ## First milestone
 
@@ -67,6 +67,7 @@ ui/            Future interface and resource research
 - [Session 032 report](docs/sessions/SESSION-032-relocation-anchor-breakpoints.md)
 - [Session 033 report](docs/sessions/SESSION-033-bounded-reorder-descriptor-search.md)
 - [Session 034 report](docs/sessions/SESSION-034-exact-block-reorder-map.md)
+- [Session 035 report](docs/sessions/SESSION-035-dual-delta-similarity-profile.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -98,6 +99,7 @@ ui/            Future interface and resource research
 - [Session 032 publication-safe evidence](research/navigation-media/session032/)
 - [Session 033 publication-safe evidence](research/navigation-media/session033/)
 - [Session 034 publication-safe evidence](research/navigation-media/session034/)
+- [Session 035 publication-safe evidence](research/navigation-media/session035/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

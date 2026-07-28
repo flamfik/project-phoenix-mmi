@@ -1,0 +1,219 @@
+{
+  "analysis_mode": "read-only-static-bounded-fixed-two-delta-similarity-profile",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "compile_link_layout_explanation": "CONSISTENT_NOT_PROVEN",
+    "dual_delta_profile": "NOT_STABLE_ACROSS_WINDOW_SIZES",
+    "exact_block_support": "CONFIRMED_PRIOR_AT_EXACT_BLOCKS",
+    "exact_section_boundary": "OPEN",
+    "grid_control": "REPLICATED_BOUNDED_NEGATIVE",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "section_reorder_anchor": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL",
+    "similarity_transition": "NOT_LOCATED_UNDER_FIXED_MODEL",
+    "single_dominance_change_model": "CLOSED_BOUNDED_NEGATIVE",
+    "transition_envelope": "UNCHANGED_FROM_SESSION034"
+  },
+  "grid_control": {
+    "both_grids_multiscale": false,
+    "classification": "REPLICATED_BOUNDED_NEGATIVE",
+    "crossing_hulls_overlap": false,
+    "negative_topology_replicated": true,
+    "overlap_lower": null,
+    "overlap_upper": null,
+    "overlap_width": null,
+    "primary_grid_offset": 0,
+    "primary_multiscale_classification": "NOT_STABLE_ACROSS_WINDOW_SIZES",
+    "profiles": [
+      {
+        "primary": {
+          "classification": "MULTIPLE_OR_REVERSED_DOMINANCE_CHANGES",
+          "classification_counts": {
+            "AMBIGUOUS": 1067,
+            "LEFT_DELTA_DOMINANT": 67,
+            "RIGHT_DELTA_DOMINANT": 12
+          },
+          "forward_crossing_count": 8,
+          "reverse_crossing_count": 7
+        },
+        "shifted": {
+          "classification": "MULTIPLE_OR_REVERSED_DOMINANCE_CHANGES",
+          "classification_counts": {
+            "AMBIGUOUS": 1062,
+            "LEFT_DELTA_DOMINANT": 71,
+            "RIGHT_DELTA_DOMINANT": 12
+          },
+          "forward_crossing_count": 6,
+          "reverse_crossing_count": 6
+        },
+        "window_size": 256
+      },
+      {
+        "primary": {
+          "classification": "MULTIPLE_OR_REVERSED_DOMINANCE_CHANGES",
+          "classification_counts": {
+            "AMBIGUOUS": 1079,
+            "LEFT_DELTA_DOMINANT": 62,
+            "RIGHT_DELTA_DOMINANT": 3
+          },
+          "forward_crossing_count": 1,
+          "reverse_crossing_count": 1
+        },
+        "shifted": {
+          "classification": "MULTIPLE_OR_REVERSED_DOMINANCE_CHANGES",
+          "classification_counts": {
+            "AMBIGUOUS": 1078,
+            "LEFT_DELTA_DOMINANT": 62,
+            "RIGHT_DELTA_DOMINANT": 3
+          },
+          "forward_crossing_count": 1,
+          "reverse_crossing_count": 1
+        },
+        "window_size": 512
+      },
+      {
+        "primary": {
+          "classification": "ONE_SIDED_DOMINANCE_ONLY",
+          "classification_counts": {
+            "AMBIGUOUS": 1095,
+            "LEFT_DELTA_DOMINANT": 45,
+            "RIGHT_DELTA_DOMINANT": 0
+          },
+          "forward_crossing_count": 0,
+          "reverse_crossing_count": 0
+        },
+        "shifted": {
+          "classification": "ONE_SIDED_DOMINANCE_ONLY",
+          "classification_counts": {
+            "AMBIGUOUS": 1094,
+            "LEFT_DELTA_DOMINANT": 45,
+            "RIGHT_DELTA_DOMINANT": 0
+          },
+          "forward_crossing_count": 0,
+          "reverse_crossing_count": 0
+        },
+        "window_size": 1024
+      }
+    ],
+    "same_fixed_contract_except_grid_offset": true,
+    "schema": "phoenix-mmi.dual-delta-grid-control/v1",
+    "shifted_full_report_published": false,
+    "shifted_grid_offset": 64,
+    "shifted_multiscale_classification": "NOT_STABLE_ACROSS_WINDOW_SIZES"
+  },
+  "limits": [
+    "Only the Session 034 open envelope is read from CD1.",
+    "Only the two prior relocation deltas are read from CD3.",
+    "The fixed thresholds are descriptive gates, not a decoded format.",
+    "Window overlap introduces scale-dependent spatial uncertainty.",
+    "Similarity can reflect shared bytes without semantic ownership.",
+    "A dominance crossing is not an exact section boundary.",
+    "Compile/link placement and loader transformation remain unresolved."
+  ],
+  "mapped_envelopes": {
+    "source": {
+      "lower": 7832267,
+      "upper": 7979108,
+      "width": 146841
+    }
+  },
+  "multiscale": {
+    "all_window_sizes_single_forward": false,
+    "classification": "NOT_STABLE_ACROSS_WINDOW_SIZES",
+    "crossing_bands_intersect": false,
+    "crossing_hull_lower": null,
+    "crossing_hull_upper": null,
+    "crossing_hull_width": null,
+    "crossing_intersection_lower": null,
+    "crossing_intersection_upper": null,
+    "crossing_intersection_width": null,
+    "exact_breakpoint_asserted": false,
+    "single_forward_change_profile_count": 0,
+    "tested_window_size_count": 3
+  },
+  "profiles": [
+    {
+      "classification": "MULTIPLE_OR_REVERSED_DOMINANCE_CHANGES",
+      "classification_counts": {
+        "AMBIGUOUS": 1067,
+        "LEFT_DELTA_DOMINANT": 67,
+        "RIGHT_DELTA_DOMINANT": 12
+      },
+      "forward_crossing_count": 8,
+      "grid_offset": 0,
+      "reverse_crossing_count": 7,
+      "step": 128,
+      "window_count": 1146,
+      "window_size": 256
+    },
+    {
+      "classification": "MULTIPLE_OR_REVERSED_DOMINANCE_CHANGES",
+      "classification_counts": {
+        "AMBIGUOUS": 1079,
+        "LEFT_DELTA_DOMINANT": 62,
+        "RIGHT_DELTA_DOMINANT": 3
+      },
+      "forward_crossing_count": 1,
+      "grid_offset": 0,
+      "reverse_crossing_count": 1,
+      "step": 128,
+      "window_count": 1144,
+      "window_size": 512
+    },
+    {
+      "classification": "ONE_SIDED_DOMINANCE_ONLY",
+      "classification_counts": {
+        "AMBIGUOUS": 1095,
+        "LEFT_DELTA_DOMINANT": 45,
+        "RIGHT_DELTA_DOMINANT": 0
+      },
+      "forward_crossing_count": 0,
+      "grid_offset": 0,
+      "reverse_crossing_count": 0,
+      "step": 128,
+      "window_count": 1140,
+      "window_size": 1024
+    }
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false,
+    "raw_window_bytes_included": false
+  },
+  "schema": "phoenix-mmi.dual-delta-similarity-disc/v1",
+  "search_contract": {
+    "adaptive_threshold_used": false,
+    "envelope_lower": 7832267,
+    "envelope_upper": 7979108,
+    "envelope_width": 146841,
+    "grid_offset": 0,
+    "left_delta": 61136,
+    "left_zone_id": "RZ-012",
+    "minimum_advantage_ratio": {
+      "denominator": 32,
+      "numerator": 1
+    },
+    "minimum_distinct_exclusive_values": 4,
+    "minimum_match_ratio": {
+      "denominator": 16,
+      "numerator": 1
+    },
+    "new_delta_search_performed": false,
+    "right_delta": -7488776,
+    "right_zone_id": "RZ-013",
+    "step": 128,
+    "whole_image_search_performed": false,
+    "window_sizes": [
+      256,
+      512,
+      1024
+    ]
+  }
+}
