@@ -44,6 +44,7 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `literal_pool_boundary` - bounded full-pool recovery around registered targets, PC-relative use-role comparison, adjacent-code/runtime-callee separation and operational graph v23 correction.
 - `piecewise_link_map` - publication-safe link-pair deduplication, relocation-family atlas, structural-delta-preserving bounded correction solver, independent code-anchor gate and operational graph v24.
 - `relocation_breakpoints` - revalidated direct-link/data/marker anchors, non-interpolated code plateaus, monotonic and section-reorder brackets, exact identity-versus-delta reconciliation and operational graph v25.
+- `micro_island` - strict 2 KiB overlap derivation, exact-run and naturally aligned unit profiles, two-phase microbins, fixed mapped negative control, anonymous SH decoder morphology and operational graph v30.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -438,6 +439,22 @@ inside the unchanged Session 034 envelope. Exact-byte and exact-word support
 are kept separate from entropy/histogram morphology. Repeated unequal-word
 differences are counted anonymously and never labeled relocations without
 independent evidence.
+
+## Reproduce Session 037
+
+```bash
+python tools/session037/analyze_micro_island.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session037 \
+  --public-output research/navigation-media/session037
+```
+
+Session 037 derives the only replicated 2 KiB overlap from Session 036 and
+reads it under the prior `RZ-012` mapping plus the prior `RZ-013` negative
+control. Fixed 256-byte bins, a 128-byte phase shift, exact runs and natural
+word alignment distinguish clustered correspondence from scattered equality.
+Anonymous SH decoder morphology never constitutes code proof.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

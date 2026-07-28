@@ -1,0 +1,990 @@
+{
+  "analysis_mode": "read-only-static-bounded-2k-rz012-micro-island-with-rz013-control",
+  "classification": {
+    "byte_equality_enrichment": "CONFIRMED_UNDER_FIXED_CONTROL",
+    "exact_section_boundary": "OPEN",
+    "micro_island_correspondence": "STRUCTURED_CORRESPONDENCE_SUPPORTED",
+    "micro_island_spatial_topology": "CLUSTERED_PHASE_STABLE",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "section_reorder_anchor": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL",
+    "sh_decoder_morphology": "NOT_ESTABLISHED",
+    "sparse_rz012_island": "CONFIRMED_PRIOR_BYTE_LEVEL"
+  },
+  "interpretation": "The fixed micro-atlas distinguishes byte/run/word clustering from decoder morphology under RZ-012, using RZ-013 as the only negative mapped control. No result establishes code, section ownership, loader behavior or an exact boundary.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": [
+    "Only the derived 2 KiB Session 036 overlap is read from CD1.",
+    "Only RZ-012 and the prior RZ-013 negative mapping are read from CD3.",
+    "Microbin and phase thresholds are fixed before artifact inspection.",
+    "Decoder coverage is morphology and cannot establish executable code.",
+    "Exact-byte runs prove local equality only at their listed offsets.",
+    "No exact section or runtime boundary is inferred."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "mnemonic_names_included": false,
+    "raw_overlap_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "rz012": {
+    "aligned_halfwords": {
+      "alignment": 2,
+      "eligible_unit_count": 1023,
+      "exact_unit_count": 92,
+      "exact_unit_offsets": [
+        7906034,
+        7906544,
+        7906546,
+        7906548,
+        7906550,
+        7906552,
+        7906554,
+        7906556,
+        7906558,
+        7906560,
+        7906562,
+        7906564,
+        7906566,
+        7906570,
+        7906574,
+        7906576,
+        7906578,
+        7906580,
+        7906582,
+        7906584,
+        7906586,
+        7906588,
+        7906590,
+        7906592,
+        7906594,
+        7906596,
+        7906600,
+        7906606,
+        7906608,
+        7906610,
+        7906614,
+        7906616,
+        7906618,
+        7906620,
+        7906626,
+        7906630,
+        7906632,
+        7906638,
+        7906642,
+        7906646,
+        7906648,
+        7906650,
+        7906652,
+        7906654,
+        7906656,
+        7906658,
+        7906660,
+        7906662,
+        7906664,
+        7906666,
+        7906668,
+        7906674,
+        7906678,
+        7906682,
+        7906684,
+        7906686,
+        7906688,
+        7906690,
+        7906692,
+        7906694,
+        7906696,
+        7906698,
+        7906700,
+        7906702,
+        7906704,
+        7906710,
+        7906716,
+        7906718,
+        7906720,
+        7906726,
+        7906730,
+        7906734,
+        7906738,
+        7906740,
+        7906742,
+        7906744,
+        7906746,
+        7906748,
+        7906750,
+        7906752,
+        7906754,
+        7906756,
+        7906758,
+        7906760,
+        7906764,
+        7906768,
+        7906770,
+        7906772,
+        7906774,
+        7906776,
+        7906778,
+        7906780
+      ],
+      "exact_unit_ratio": 0.08993157
+    },
+    "aligned_words": {
+      "alignment": 4,
+      "eligible_unit_count": 511,
+      "exact_unit_count": 32,
+      "exact_unit_offsets": [
+        7906544,
+        7906548,
+        7906552,
+        7906556,
+        7906560,
+        7906564,
+        7906576,
+        7906580,
+        7906584,
+        7906588,
+        7906592,
+        7906608,
+        7906616,
+        7906648,
+        7906652,
+        7906656,
+        7906660,
+        7906664,
+        7906684,
+        7906688,
+        7906692,
+        7906696,
+        7906700,
+        7906716,
+        7906740,
+        7906744,
+        7906748,
+        7906752,
+        7906756,
+        7906768,
+        7906772,
+        7906776
+      ],
+      "exact_unit_ratio": 0.06262231
+    },
+    "bytes_in_runs_at_least_2": 207,
+    "decoder_morphology": {
+      "aligned_halfword_count": 1023,
+      "both_known_decoder_count": 729,
+      "code_execution_asserted": false,
+      "instruction_bytes_included": false,
+      "mapped_known_decoder_count": 846,
+      "mnemonic_names_included": false,
+      "same_flow_class_count": 610,
+      "same_flow_class_ratio": 0.59628543,
+      "same_known_mnemonic_count": 238,
+      "same_known_mnemonic_ratio": 0.23264907,
+      "same_mnemonic_class_count": 7,
+      "source_known_decoder_count": 843
+    },
+    "distinct_equal_value_count": 53,
+    "equal_byte_count": 236,
+    "equal_byte_ratio": 0.11523438,
+    "maximum_run_length": 25,
+    "microbin_phases": [
+      {
+        "bin_size": 256,
+        "bins": [
+          {
+            "bin_id": "RZ012-P000-B01",
+            "end": 7906251,
+            "equal_byte_count": 5,
+            "equal_byte_ratio": 0.01953125,
+            "length": 256,
+            "start": 7905995
+          },
+          {
+            "bin_id": "RZ012-P000-B02",
+            "end": 7906507,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7906251
+          },
+          {
+            "bin_id": "RZ012-P000-B03",
+            "end": 7906763,
+            "equal_byte_count": 194,
+            "equal_byte_ratio": 0.7578125,
+            "length": 256,
+            "start": 7906507
+          },
+          {
+            "bin_id": "RZ012-P000-B04",
+            "end": 7907019,
+            "equal_byte_count": 18,
+            "equal_byte_ratio": 0.0703125,
+            "length": 256,
+            "start": 7906763
+          },
+          {
+            "bin_id": "RZ012-P000-B05",
+            "end": 7907275,
+            "equal_byte_count": 4,
+            "equal_byte_ratio": 0.015625,
+            "length": 256,
+            "start": 7907019
+          },
+          {
+            "bin_id": "RZ012-P000-B06",
+            "end": 7907531,
+            "equal_byte_count": 2,
+            "equal_byte_ratio": 0.0078125,
+            "length": 256,
+            "start": 7907275
+          },
+          {
+            "bin_id": "RZ012-P000-B07",
+            "end": 7907787,
+            "equal_byte_count": 7,
+            "equal_byte_ratio": 0.02734375,
+            "length": 256,
+            "start": 7907531
+          },
+          {
+            "bin_id": "RZ012-P000-B08",
+            "end": 7908043,
+            "equal_byte_count": 5,
+            "equal_byte_ratio": 0.01953125,
+            "length": 256,
+            "start": 7907787
+          }
+        ],
+        "classification": "CLUSTERED_IN_TWO_ADJACENT_BINS",
+        "covered_end": 7908043,
+        "covered_equal_byte_count": 236,
+        "covered_start": 7905995,
+        "maximum_adjacent_bin_equal_byte_count": 212,
+        "maximum_adjacent_bin_share": 0.89830508,
+        "minimum_adjacent_share_for_cluster": 0.5,
+        "minimum_equal_bytes_for_cluster": 64,
+        "phase_offset": 0
+      },
+      {
+        "bin_size": 256,
+        "bins": [
+          {
+            "bin_id": "RZ012-P128-B01",
+            "end": 7906379,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7906123
+          },
+          {
+            "bin_id": "RZ012-P128-B02",
+            "end": 7906635,
+            "equal_byte_count": 84,
+            "equal_byte_ratio": 0.328125,
+            "length": 256,
+            "start": 7906379
+          },
+          {
+            "bin_id": "RZ012-P128-B03",
+            "end": 7906891,
+            "equal_byte_count": 129,
+            "equal_byte_ratio": 0.50390625,
+            "length": 256,
+            "start": 7906635
+          },
+          {
+            "bin_id": "RZ012-P128-B04",
+            "end": 7907147,
+            "equal_byte_count": 0,
+            "equal_byte_ratio": 0.0,
+            "length": 256,
+            "start": 7906891
+          },
+          {
+            "bin_id": "RZ012-P128-B05",
+            "end": 7907403,
+            "equal_byte_count": 5,
+            "equal_byte_ratio": 0.01953125,
+            "length": 256,
+            "start": 7907147
+          },
+          {
+            "bin_id": "RZ012-P128-B06",
+            "end": 7907659,
+            "equal_byte_count": 5,
+            "equal_byte_ratio": 0.01953125,
+            "length": 256,
+            "start": 7907403
+          },
+          {
+            "bin_id": "RZ012-P128-B07",
+            "end": 7907915,
+            "equal_byte_count": 6,
+            "equal_byte_ratio": 0.0234375,
+            "length": 256,
+            "start": 7907659
+          }
+        ],
+        "classification": "CLUSTERED_IN_TWO_ADJACENT_BINS",
+        "covered_end": 7907915,
+        "covered_equal_byte_count": 230,
+        "covered_start": 7906123,
+        "maximum_adjacent_bin_equal_byte_count": 213,
+        "maximum_adjacent_bin_share": 0.92608696,
+        "minimum_adjacent_share_for_cluster": 0.5,
+        "minimum_equal_bytes_for_cluster": 64,
+        "phase_offset": 128
+      }
+    ],
+    "run_count": 53,
+    "runs": [
+      {
+        "end": 7906032,
+        "length": 1,
+        "run_id": "RZ012-RUN-001",
+        "start": 7906031
+      },
+      {
+        "end": 7906036,
+        "length": 2,
+        "run_id": "RZ012-RUN-002",
+        "start": 7906034
+      },
+      {
+        "end": 7906077,
+        "length": 1,
+        "run_id": "RZ012-RUN-003",
+        "start": 7906076
+      },
+      {
+        "end": 7906182,
+        "length": 1,
+        "run_id": "RZ012-RUN-004",
+        "start": 7906181
+      },
+      {
+        "end": 7906390,
+        "length": 1,
+        "run_id": "RZ012-RUN-005",
+        "start": 7906389
+      },
+      {
+        "end": 7906543,
+        "length": 1,
+        "run_id": "RZ012-RUN-006",
+        "start": 7906542
+      },
+      {
+        "end": 7906569,
+        "length": 25,
+        "run_id": "RZ012-RUN-007",
+        "start": 7906544
+      },
+      {
+        "end": 7906573,
+        "length": 3,
+        "run_id": "RZ012-RUN-008",
+        "start": 7906570
+      },
+      {
+        "end": 7906599,
+        "length": 25,
+        "run_id": "RZ012-RUN-009",
+        "start": 7906574
+      },
+      {
+        "end": 7906603,
+        "length": 3,
+        "run_id": "RZ012-RUN-010",
+        "start": 7906600
+      },
+      {
+        "end": 7906605,
+        "length": 1,
+        "run_id": "RZ012-RUN-011",
+        "start": 7906604
+      },
+      {
+        "end": 7906613,
+        "length": 7,
+        "run_id": "RZ012-RUN-012",
+        "start": 7906606
+      },
+      {
+        "end": 7906623,
+        "length": 9,
+        "run_id": "RZ012-RUN-013",
+        "start": 7906614
+      },
+      {
+        "end": 7906625,
+        "length": 1,
+        "run_id": "RZ012-RUN-014",
+        "start": 7906624
+      },
+      {
+        "end": 7906629,
+        "length": 3,
+        "run_id": "RZ012-RUN-015",
+        "start": 7906626
+      },
+      {
+        "end": 7906635,
+        "length": 5,
+        "run_id": "RZ012-RUN-016",
+        "start": 7906630
+      },
+      {
+        "end": 7906637,
+        "length": 1,
+        "run_id": "RZ012-RUN-017",
+        "start": 7906636
+      },
+      {
+        "end": 7906641,
+        "length": 3,
+        "run_id": "RZ012-RUN-018",
+        "start": 7906638
+      },
+      {
+        "end": 7906645,
+        "length": 3,
+        "run_id": "RZ012-RUN-019",
+        "start": 7906642
+      },
+      {
+        "end": 7906671,
+        "length": 25,
+        "run_id": "RZ012-RUN-020",
+        "start": 7906646
+      },
+      {
+        "end": 7906673,
+        "length": 1,
+        "run_id": "RZ012-RUN-021",
+        "start": 7906672
+      },
+      {
+        "end": 7906677,
+        "length": 3,
+        "run_id": "RZ012-RUN-022",
+        "start": 7906674
+      },
+      {
+        "end": 7906681,
+        "length": 3,
+        "run_id": "RZ012-RUN-023",
+        "start": 7906678
+      },
+      {
+        "end": 7906707,
+        "length": 25,
+        "run_id": "RZ012-RUN-024",
+        "start": 7906682
+      },
+      {
+        "end": 7906709,
+        "length": 1,
+        "run_id": "RZ012-RUN-025",
+        "start": 7906708
+      },
+      {
+        "end": 7906713,
+        "length": 3,
+        "run_id": "RZ012-RUN-026",
+        "start": 7906710
+      },
+      {
+        "end": 7906715,
+        "length": 1,
+        "run_id": "RZ012-RUN-027",
+        "start": 7906714
+      },
+      {
+        "end": 7906723,
+        "length": 7,
+        "run_id": "RZ012-RUN-028",
+        "start": 7906716
+      },
+      {
+        "end": 7906725,
+        "length": 1,
+        "run_id": "RZ012-RUN-029",
+        "start": 7906724
+      },
+      {
+        "end": 7906729,
+        "length": 3,
+        "run_id": "RZ012-RUN-030",
+        "start": 7906726
+      },
+      {
+        "end": 7906733,
+        "length": 3,
+        "run_id": "RZ012-RUN-031",
+        "start": 7906730
+      },
+      {
+        "end": 7906737,
+        "length": 3,
+        "run_id": "RZ012-RUN-032",
+        "start": 7906734
+      },
+      {
+        "end": 7906763,
+        "length": 25,
+        "run_id": "RZ012-RUN-033",
+        "start": 7906738
+      },
+      {
+        "end": 7906767,
+        "length": 3,
+        "run_id": "RZ012-RUN-034",
+        "start": 7906764
+      },
+      {
+        "end": 7906782,
+        "length": 14,
+        "run_id": "RZ012-RUN-035",
+        "start": 7906768
+      },
+      {
+        "end": 7906877,
+        "length": 1,
+        "run_id": "RZ012-RUN-036",
+        "start": 7906876
+      },
+      {
+        "end": 7907190,
+        "length": 1,
+        "run_id": "RZ012-RUN-037",
+        "start": 7907189
+      },
+      {
+        "end": 7907197,
+        "length": 2,
+        "run_id": "RZ012-RUN-038",
+        "start": 7907195
+      },
+      {
+        "end": 7907204,
+        "length": 1,
+        "run_id": "RZ012-RUN-039",
+        "start": 7907203
+      },
+      {
+        "end": 7907381,
+        "length": 1,
+        "run_id": "RZ012-RUN-040",
+        "start": 7907380
+      },
+      {
+        "end": 7907437,
+        "length": 1,
+        "run_id": "RZ012-RUN-041",
+        "start": 7907436
+      },
+      {
+        "end": 7907565,
+        "length": 1,
+        "run_id": "RZ012-RUN-042",
+        "start": 7907564
+      },
+      {
+        "end": 7907568,
+        "length": 1,
+        "run_id": "RZ012-RUN-043",
+        "start": 7907567
+      },
+      {
+        "end": 7907608,
+        "length": 1,
+        "run_id": "RZ012-RUN-044",
+        "start": 7907607
+      },
+      {
+        "end": 7907623,
+        "length": 1,
+        "run_id": "RZ012-RUN-045",
+        "start": 7907622
+      },
+      {
+        "end": 7907736,
+        "length": 1,
+        "run_id": "RZ012-RUN-046",
+        "start": 7907735
+      },
+      {
+        "end": 7907759,
+        "length": 1,
+        "run_id": "RZ012-RUN-047",
+        "start": 7907758
+      },
+      {
+        "end": 7907762,
+        "length": 1,
+        "run_id": "RZ012-RUN-048",
+        "start": 7907761
+      },
+      {
+        "end": 7907802,
+        "length": 1,
+        "run_id": "RZ012-RUN-049",
+        "start": 7907801
+      },
+      {
+        "end": 7907818,
+        "length": 1,
+        "run_id": "RZ012-RUN-050",
+        "start": 7907817
+      },
+      {
+        "end": 7907851,
+        "length": 1,
+        "run_id": "RZ012-RUN-051",
+        "start": 7907850
+      },
+      {
+        "end": 7907989,
+        "length": 1,
+        "run_id": "RZ012-RUN-052",
+        "start": 7907988
+      },
+      {
+        "end": 7908034,
+        "length": 1,
+        "run_id": "RZ012-RUN-053",
+        "start": 7908033
+      }
+    ],
+    "runs_at_least_2_bytes": 24,
+    "runs_at_least_4_bytes": 10,
+    "runs_at_least_8_bytes": 7,
+    "spatial_classification": "CLUSTERED_PHASE_STABLE"
+  },
+  "rz013_negative_control": {
+    "aligned_halfwords": {
+      "alignment": 2,
+      "eligible_unit_count": 1023,
+      "exact_unit_count": 1,
+      "exact_unit_offsets": [
+        7906608
+      ],
+      "exact_unit_ratio": 0.00097752
+    },
+    "aligned_words": {
+      "alignment": 4,
+      "eligible_unit_count": 511,
+      "exact_unit_count": 0,
+      "exact_unit_offsets": [],
+      "exact_unit_ratio": 0.0
+    },
+    "bytes_in_runs_at_least_2": 3,
+    "decoder_morphology": {
+      "aligned_halfword_count": 1023,
+      "both_known_decoder_count": 789,
+      "code_execution_asserted": false,
+      "instruction_bytes_included": false,
+      "mapped_known_decoder_count": 952,
+      "mnemonic_names_included": false,
+      "same_flow_class_count": 571,
+      "same_flow_class_ratio": 0.55816227,
+      "same_known_mnemonic_count": 126,
+      "same_known_mnemonic_ratio": 0.12316716,
+      "same_mnemonic_class_count": 5,
+      "source_known_decoder_count": 843
+    },
+    "distinct_equal_value_count": 10,
+    "equal_byte_count": 15,
+    "equal_byte_ratio": 0.00732422,
+    "maximum_run_length": 3,
+    "microbin_phases": [
+      {
+        "bin_size": 256,
+        "bins": [
+          {
+            "bin_id": "RZ013-P000-B01",
+            "end": 7906251,
+            "equal_byte_count": 2,
+            "equal_byte_ratio": 0.0078125,
+            "length": 256,
+            "start": 7905995
+          },
+          {
+            "bin_id": "RZ013-P000-B02",
+            "end": 7906507,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7906251
+          },
+          {
+            "bin_id": "RZ013-P000-B03",
+            "end": 7906763,
+            "equal_byte_count": 4,
+            "equal_byte_ratio": 0.015625,
+            "length": 256,
+            "start": 7906507
+          },
+          {
+            "bin_id": "RZ013-P000-B04",
+            "end": 7907019,
+            "equal_byte_count": 3,
+            "equal_byte_ratio": 0.01171875,
+            "length": 256,
+            "start": 7906763
+          },
+          {
+            "bin_id": "RZ013-P000-B05",
+            "end": 7907275,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7907019
+          },
+          {
+            "bin_id": "RZ013-P000-B06",
+            "end": 7907531,
+            "equal_byte_count": 3,
+            "equal_byte_ratio": 0.01171875,
+            "length": 256,
+            "start": 7907275
+          },
+          {
+            "bin_id": "RZ013-P000-B07",
+            "end": 7907787,
+            "equal_byte_count": 0,
+            "equal_byte_ratio": 0.0,
+            "length": 256,
+            "start": 7907531
+          },
+          {
+            "bin_id": "RZ013-P000-B08",
+            "end": 7908043,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7907787
+          }
+        ],
+        "classification": "NOT_CLUSTERED_UNDER_FIXED_GATE",
+        "covered_end": 7908043,
+        "covered_equal_byte_count": 15,
+        "covered_start": 7905995,
+        "maximum_adjacent_bin_equal_byte_count": 7,
+        "maximum_adjacent_bin_share": 0.46666667,
+        "minimum_adjacent_share_for_cluster": 0.5,
+        "minimum_equal_bytes_for_cluster": 64,
+        "phase_offset": 0
+      },
+      {
+        "bin_size": 256,
+        "bins": [
+          {
+            "bin_id": "RZ013-P128-B01",
+            "end": 7906379,
+            "equal_byte_count": 2,
+            "equal_byte_ratio": 0.0078125,
+            "length": 256,
+            "start": 7906123
+          },
+          {
+            "bin_id": "RZ013-P128-B02",
+            "end": 7906635,
+            "equal_byte_count": 4,
+            "equal_byte_ratio": 0.015625,
+            "length": 256,
+            "start": 7906379
+          },
+          {
+            "bin_id": "RZ013-P128-B03",
+            "end": 7906891,
+            "equal_byte_count": 2,
+            "equal_byte_ratio": 0.0078125,
+            "length": 256,
+            "start": 7906635
+          },
+          {
+            "bin_id": "RZ013-P128-B04",
+            "end": 7907147,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7906891
+          },
+          {
+            "bin_id": "RZ013-P128-B05",
+            "end": 7907403,
+            "equal_byte_count": 1,
+            "equal_byte_ratio": 0.00390625,
+            "length": 256,
+            "start": 7907147
+          },
+          {
+            "bin_id": "RZ013-P128-B06",
+            "end": 7907659,
+            "equal_byte_count": 3,
+            "equal_byte_ratio": 0.01171875,
+            "length": 256,
+            "start": 7907403
+          },
+          {
+            "bin_id": "RZ013-P128-B07",
+            "end": 7907915,
+            "equal_byte_count": 0,
+            "equal_byte_ratio": 0.0,
+            "length": 256,
+            "start": 7907659
+          }
+        ],
+        "classification": "NOT_CLUSTERED_UNDER_FIXED_GATE",
+        "covered_end": 7907915,
+        "covered_equal_byte_count": 13,
+        "covered_start": 7906123,
+        "maximum_adjacent_bin_equal_byte_count": 6,
+        "maximum_adjacent_bin_share": 0.46153846,
+        "minimum_adjacent_share_for_cluster": 0.5,
+        "minimum_equal_bytes_for_cluster": 64,
+        "phase_offset": 128
+      }
+    ],
+    "run_count": 13,
+    "runs": [
+      {
+        "end": 7906078,
+        "length": 1,
+        "run_id": "RZ013-RUN-001",
+        "start": 7906077
+      },
+      {
+        "end": 7906215,
+        "length": 1,
+        "run_id": "RZ013-RUN-002",
+        "start": 7906214
+      },
+      {
+        "end": 7906268,
+        "length": 1,
+        "run_id": "RZ013-RUN-003",
+        "start": 7906267
+      },
+      {
+        "end": 7906537,
+        "length": 1,
+        "run_id": "RZ013-RUN-004",
+        "start": 7906536
+      },
+      {
+        "end": 7906610,
+        "length": 3,
+        "run_id": "RZ013-RUN-005",
+        "start": 7906607
+      },
+      {
+        "end": 7906771,
+        "length": 1,
+        "run_id": "RZ013-RUN-006",
+        "start": 7906770
+      },
+      {
+        "end": 7906834,
+        "length": 1,
+        "run_id": "RZ013-RUN-007",
+        "start": 7906833
+      },
+      {
+        "end": 7906958,
+        "length": 1,
+        "run_id": "RZ013-RUN-008",
+        "start": 7906957
+      },
+      {
+        "end": 7907191,
+        "length": 1,
+        "run_id": "RZ013-RUN-009",
+        "start": 7907190
+      },
+      {
+        "end": 7907466,
+        "length": 1,
+        "run_id": "RZ013-RUN-010",
+        "start": 7907465
+      },
+      {
+        "end": 7907514,
+        "length": 1,
+        "run_id": "RZ013-RUN-011",
+        "start": 7907513
+      },
+      {
+        "end": 7907531,
+        "length": 1,
+        "run_id": "RZ013-RUN-012",
+        "start": 7907530
+      },
+      {
+        "end": 7908020,
+        "length": 1,
+        "run_id": "RZ013-RUN-013",
+        "start": 7908019
+      }
+    ],
+    "runs_at_least_2_bytes": 1,
+    "runs_at_least_4_bytes": 0,
+    "runs_at_least_8_bytes": 0,
+    "spatial_classification": "DISTRIBUTED_PHASE_STABLE"
+  },
+  "schema": "phoenix-mmi.micro-island-comparison/v1",
+  "search_contract": {
+    "adaptive_threshold_used": false,
+    "byte_enrichment_minimum_difference": 64,
+    "byte_enrichment_minimum_ratio": 4.0,
+    "cluster_minimum_adjacent_bin_share": 0.5,
+    "cluster_minimum_equal_bytes": 64,
+    "decoder_enrichment_minimum_difference": 32,
+    "decoder_enrichment_minimum_ratio": 2.0,
+    "envelope_lower": 7832267,
+    "envelope_upper": 7979108,
+    "left_delta": 61136,
+    "left_zone_id": "RZ-012",
+    "microbin_size": 256,
+    "natural_halfword_alignment": 2,
+    "natural_word_alignment": 4,
+    "new_delta_search_performed": false,
+    "overlap_end": 7908043,
+    "overlap_length": 2048,
+    "overlap_start": 7905995,
+    "primary_phase_offset": 0,
+    "primary_tile_id": "G0000-T019",
+    "right_delta": -7488776,
+    "right_zone_id": "RZ-013",
+    "shifted_phase_offset": 128,
+    "shifted_tile_id": "G0800-T018",
+    "whole_image_search_performed": false
+  },
+  "source_session036_schema": "phoenix-mmi.content-island-atlas/v1",
+  "summary": {
+    "byte_equality_enrichment": "CONFIRMED_UNDER_FIXED_CONTROL",
+    "code_region_asserted": false,
+    "control_equal_byte_count": 15,
+    "control_same_known_mnemonic_count": 126,
+    "control_spatial_classification": "DISTRIBUTED_PHASE_STABLE",
+    "correspondence_classification": "STRUCTURED_CORRESPONDENCE_SUPPORTED",
+    "decoder_mnemonic_enrichment": "NOT_ESTABLISHED",
+    "equal_byte_count_difference": 221,
+    "exact_boundary_asserted": false,
+    "left_equal_byte_count": 236,
+    "left_same_known_mnemonic_count": 238,
+    "left_spatial_classification": "CLUSTERED_PHASE_STABLE",
+    "minimum_enrichment_difference": 64,
+    "minimum_enrichment_ratio": 4.0,
+    "structured_signal_gate_passed": true
+  }
+}

@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 032 confirms a sparse relocation support map and one section reorder; Session 033 closes a simple internal descriptor-table model as bounded-negative. Session 034 adds exact byte support for both reordered content families and narrows the transition envelope from 183,523 to 146,841 bytes. Session 035 closes one monotonic dual-delta transition model. Session 036 closes a multiple-interleaved 4 KiB family model while retaining one replicated, weak `RZ-012` neighborhood. The Session 034 envelope remains authoritative; the exact boundary and compile/link placement versus loader transformation remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 032 confirms a sparse relocation support map and one section reorder; Session 033 closes a simple internal descriptor-table model as bounded-negative. Session 034 adds exact byte support for both reordered content families and narrows the transition envelope from 183,523 to 146,841 bytes. Session 035 closes one monotonic dual-delta transition model. Session 036 closes a multiple-interleaved 4 KiB family model while retaining one replicated `RZ-012` neighborhood. Session 037 confirms that its 2 KiB overlap contains phase-stable clustered file-content correspondence; SH decoder morphology does not establish code, and the exact boundary and compile/link placement versus loader transformation remain open.
 
 ## First milestone
 
@@ -69,6 +69,7 @@ ui/            Future interface and resource research
 - [Session 034 report](docs/sessions/SESSION-034-exact-block-reorder-map.md)
 - [Session 035 report](docs/sessions/SESSION-035-dual-delta-similarity-profile.md)
 - [Session 036 report](docs/sessions/SESSION-036-fixed-content-island-atlas.md)
+- [Session 037 report](docs/sessions/SESSION-037-rz012-micro-island.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -102,6 +103,7 @@ ui/            Future interface and resource research
 - [Session 034 publication-safe evidence](research/navigation-media/session034/)
 - [Session 035 publication-safe evidence](research/navigation-media/session035/)
 - [Session 036 publication-safe evidence](research/navigation-media/session036/)
+- [Session 037 publication-safe evidence](research/navigation-media/session037/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

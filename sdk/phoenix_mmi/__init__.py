@@ -103,6 +103,12 @@ from .map_payload import (
     build_public_navigation_payload_report,
     classify_payload_header,
 )
+from .micro_island import (
+    analyze_micro_island,
+    build_public_micro_island_report,
+    correlate_micro_island,
+    update_operational_graph_v30,
+)
 from .navigation_dataflow import (
     analyze_navigation_dataflow,
     build_public_navigation_dataflow_report,
@@ -242,6 +248,7 @@ __all__ = [
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
     "analyze_navigation_payloads",
+    "analyze_micro_island",
     "analyze_object_dispatch_context",
     "analyze_reference_graph",
     "analyze_relocated_bitmap_atlas",
@@ -275,6 +282,7 @@ __all__ = [
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
+    "build_public_micro_island_report",
     "build_public_operational_report",
     "build_public_object_dispatch_report",
     "build_public_reference_graph",
@@ -316,6 +324,7 @@ __all__ = [
     "correlate_handoff_mapping",
     "correlate_content_island_atlas",
     "correlate_firmware_and_media",
+    "correlate_micro_island",
     "correlate_runtime_slot_lineage",
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
@@ -380,6 +389,7 @@ __all__ = [
     "update_operational_graph_v27",
     "update_operational_graph_v28",
     "update_operational_graph_v29",
+    "update_operational_graph_v30",
 ]
 
-__version__ = "0.34.0"
+__version__ = "0.35.0"
