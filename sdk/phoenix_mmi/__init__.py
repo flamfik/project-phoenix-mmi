@@ -191,6 +191,14 @@ from .run_gap_topology import (
     correlate_run_gap_topology,
     update_operational_graph_v31,
 )
+from .registered_provenance import (
+    analyze_registered_provenance,
+    build_public_registered_provenance_report,
+    build_registered_evidence,
+    correlate_registered_provenance,
+    evaluate_registered_pairs,
+    update_operational_graph_v32,
+)
 from .runtime_linkage import (
     analyze_runtime_linkage_family,
     build_public_runtime_linkage_report,
@@ -262,6 +270,7 @@ __all__ = [
     "analyze_runtime_map",
     "analyze_runtime_slot_lineage",
     "analyze_run_gap_topology",
+    "analyze_registered_provenance",
     "analyze_runtime_linkage_family",
     "analyze_linkage_owner_lineage",
     "analyze_literal_pool_boundaries",
@@ -297,6 +306,8 @@ __all__ = [
     "build_public_runtime_map",
     "build_public_runtime_slot_report",
     "build_public_run_gap_report",
+    "build_public_registered_provenance_report",
+    "build_registered_evidence",
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
     "build_public_literal_pool_boundary_report",
@@ -335,6 +346,7 @@ __all__ = [
     "correlate_micro_island",
     "correlate_runtime_slot_lineage",
     "correlate_run_gap_topology",
+    "correlate_registered_provenance",
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
     "correlate_literal_pool_boundaries",
@@ -370,6 +382,7 @@ __all__ = [
     "trace_control_flow",
     "trace_dispatch_producer",
     "finalize_content_island_atlas",
+    "evaluate_registered_pairs",
     "update_operational_graph",
     "update_operational_graph_v3",
     "update_operational_graph_v4",
@@ -400,6 +413,7 @@ __all__ = [
     "update_operational_graph_v29",
     "update_operational_graph_v30",
     "update_operational_graph_v31",
+    "update_operational_graph_v32",
 ]
 
-__version__ = "0.36.0"
+__version__ = "0.37.0"

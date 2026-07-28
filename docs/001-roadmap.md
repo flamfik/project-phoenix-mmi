@@ -42,7 +42,14 @@ Progress:
 - Session 030: complete literal-pool recovery, correction of the adjacent-code/callee interpretation and operational graph v23 - complete;
 - Session 031: five-family cross-release link-delta atlas, bounded negative constant-correction map, strict independent-anchor gate and operational graph v24 - complete;
 - Session 032: revalidated direct-link/data/marker anchor registry, six local plateaus, 23 support zones, 19 breakpoint brackets and operational graph v25 - complete;
-- remaining M1 work: section-reorder descriptor and loader mapping, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 033: bounded bilateral reorder-descriptor search and operational graph v26 - complete;
+- Session 034: exact-block relocation map, narrowed reorder envelope and operational graph v27 - complete;
+- Session 035: controlled dual-delta similarity profile and operational graph v28 - complete;
+- Session 036: fixed content-island atlas and operational graph v29 - complete;
+- Session 037: controlled 2 KiB RZ-012 micro-island profile and operational graph v30 - complete;
+- Session 038: stable sparse-single-byte-difference skeleton and bounded-negative record-period models, operational graph v31 - complete;
+- Session 039: frozen prior-registry component-provenance audit, bounded-negative owner result and operational graph v32 - complete;
+- remaining M1 work: new cross-payload or external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 
