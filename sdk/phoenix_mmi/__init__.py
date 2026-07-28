@@ -29,6 +29,13 @@ from .descriptor_lineage import (
     update_operational_graph_v10,
 )
 from .entropy import EntropyWindow, entropy_profile, shannon_entropy
+from .exact_block_map import (
+    analyze_exact_block_map,
+    build_public_exact_block_map_report,
+    compare_exact_block_seed_control,
+    correlate_exact_block_map,
+    update_operational_graph_v27,
+)
 from .fingerprint import FingerprintHit, scan_fingerprints
 from .handoff_field60 import (
     analyze_handoff_field60,
@@ -209,6 +216,7 @@ __all__ = [
     "analyze_accessor_dispatch",
     "analyze_descriptor_lineage",
     "analyze_executable_layout",
+    "analyze_exact_block_map",
     "analyze_fldb_candidate_dataflow",
     "analyze_handoff_field60",
     "analyze_handoff_mapping",
@@ -240,6 +248,7 @@ __all__ = [
     "build_public_navigation_storage_report",
     "build_public_fldb_candidate_report",
     "build_public_descriptor_lineage_report",
+    "build_public_exact_block_map_report",
     "build_public_global_parser_report",
     "build_public_handoff_field60_report",
     "build_public_handoff_mapping_report",
@@ -265,6 +274,7 @@ __all__ = [
     "build_public_call_return_producer_report",
     "build_public_producer_return_report",
     "compare_reports",
+    "compare_exact_block_seed_control",
     "compare_navigation_storage_boundaries",
     "compare_navigation_dataflow",
     "compare_optical_navigation_callgraph",
@@ -276,6 +286,7 @@ __all__ = [
     "correlate_accessor_dispatch",
     "correlate_corrected_parser_model",
     "correlate_descriptor_lineage",
+    "correlate_exact_block_map",
     "correlate_global_fldb_parser_search",
     "correlate_handoff_field60",
     "correlate_handoff_mapping",
@@ -340,6 +351,7 @@ __all__ = [
     "update_operational_graph_v24",
     "update_operational_graph_v25",
     "update_operational_graph_v26",
+    "update_operational_graph_v27",
 ]
 
-__version__ = "0.31.0"
+__version__ = "0.32.0"

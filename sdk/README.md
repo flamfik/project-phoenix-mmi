@@ -389,6 +389,23 @@ multi-record two-zone geometry, a syntactic PC-relative table-reference form
 and an equal bilateral candidate. The reference census is not a whole-image
 code gate. The analyzer never scans arbitrary whole-image integer triples.
 
+## Reproduce Session 034
+
+```bash
+python tools/session034/analyze_exact_block_map.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session034 \
+  --public-output research/navigation-media/session034
+```
+
+Session 034 searches only fixed 128 KiB margins around the two reorder zones.
+It accepts 64-byte seeds only when unique in both lane windows, verifies the
+bytes directly and extends exact blocks without an adaptive threshold. A
+second 128-byte run must reproduce the transition bounds. Exact file-layout
+correspondence does not establish runtime execution, loader behavior or
+semantic ownership.
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
