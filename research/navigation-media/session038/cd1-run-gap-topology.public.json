@@ -1,0 +1,83 @@
+{
+  "analysis_mode": "read-only-static-bounded-2k-exact-run-gap-topology",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "exact_section_boundary": "OPEN",
+    "fixed_stride_record_model": "NOT_ESTABLISHED",
+    "gap_cap_control": "STABLE_AT_CAPS_1_AND_2",
+    "micro_island_correspondence": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL",
+    "micro_island_structural_model": "STABLE_SPARSE_SINGLE_BYTE_DIFFERENCE_SKELETON",
+    "repeated_run_record_model": "NOT_ESTABLISHED",
+    "run_gap_topology": "CONTROL_DISTINGUISHED_SINGLE_BYTE_GAP_SKELETON",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN"
+  },
+  "limits": [
+    "Only the exact Session 037 2 KiB overlap is read from CD1.",
+    "Only the prior RZ-012 and RZ-013 mappings are read from CD3.",
+    "Only gap caps one and two are tested.",
+    "Run lengths and gaps are structural counts, not field semantics.",
+    "A periodicity match cannot establish a record grammar by itself.",
+    "No section, loader, runtime or semantic boundary is inferred."
+  ],
+  "observed_region": {
+    "end": 7908043,
+    "length": 2048,
+    "role": "source-overlap",
+    "start": 7905995
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "mnemonic_names_included": false,
+    "raw_overlap_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false,
+    "unequal_byte_values_included": false,
+    "word_values_included": false
+  },
+  "schema": "phoenix-mmi.run-gap-topology-disc/v1",
+  "search_contract": {
+    "adaptive_threshold_used": false,
+    "left_delta": 61136,
+    "left_zone_id": "RZ-012",
+    "minimum_component_coverage": 0.75,
+    "minimum_component_equal_bytes": 64,
+    "minimum_component_runs": 4,
+    "minimum_component_span": 64,
+    "minimum_period_share": 0.75,
+    "new_delta_search_performed": false,
+    "overlap_end": 7908043,
+    "overlap_length": 2048,
+    "overlap_start": 7905995,
+    "period_maximum": 64,
+    "period_minimum": 4,
+    "primary_gap_cap": 1,
+    "primary_tile_id": "G0000-T019",
+    "relaxed_gap_cap": 2,
+    "right_delta": -7488776,
+    "right_zone_id": "RZ-013",
+    "shifted_tile_id": "G0800-T018",
+    "whole_image_search_performed": false
+  },
+  "summary": {
+    "exact_section_boundary_asserted": false,
+    "fixed_stride_record_model": "NOT_ESTABLISHED",
+    "gap_cap_control": "STABLE_AT_CAPS_1_AND_2",
+    "micro_island_structural_model": "STABLE_SPARSE_SINGLE_BYTE_DIFFERENCE_SKELETON",
+    "negative_control_distinguished": true,
+    "record_grammar_established": false,
+    "repeated_run_record_model": "NOT_ESTABLISHED",
+    "rz012_promoted_component_count": 1,
+    "rz013_promoted_component_count": 0,
+    "semantic_owner_established": false,
+    "stable_single_byte_gap_skeleton": true
+  }
+}

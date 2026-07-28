@@ -1,0 +1,1640 @@
+{
+  "analysis_mode": "read-only-static-bounded-2k-exact-run-gap-topology",
+  "classification": {
+    "exact_section_boundary": "OPEN",
+    "fixed_stride_record_model": "NOT_ESTABLISHED",
+    "gap_cap_control": "STABLE_AT_CAPS_1_AND_2",
+    "micro_island_correspondence": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL",
+    "micro_island_structural_model": "STABLE_SPARSE_SINGLE_BYTE_DIFFERENCE_SKELETON",
+    "repeated_run_record_model": "NOT_ESTABLISHED",
+    "run_gap_topology": "CONTROL_DISTINGUISHED_SINGLE_BYTE_GAP_SKELETON",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN"
+  },
+  "interpretation": "The fixed run-gap model tests whether exact equality inside the prior RZ-012 micro-island forms one control-distinguished component bridged only by singleton differences. Period and repeated-run gates remain separate; no result establishes record semantics, section ownership, loader behavior or an exact boundary.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": [
+    "Only the exact Session 037 2 KiB overlap is read from CD1.",
+    "Only the prior RZ-012 and RZ-013 mappings are read from CD3.",
+    "Only gap caps one and two are tested.",
+    "Run lengths and gaps are structural counts, not field semantics.",
+    "A periodicity match cannot establish a record grammar by itself.",
+    "No section, loader, runtime or semantic boundary is inferred."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "mnemonic_names_included": false,
+    "raw_overlap_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false,
+    "unequal_byte_values_included": false,
+    "word_values_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "rz012": {
+    "dominant_component_stable_under_relaxed_cap": true,
+    "dominant_promoted_component": {
+      "classification": "PROMOTED_RUN_GAP_COMPONENT",
+      "component_id": "RZ012-G1-C006",
+      "end": 7906782,
+      "equal_byte_count": 211,
+      "equality_coverage": 0.87916667,
+      "gap_cap": 1,
+      "gap_count": 29,
+      "gap_length_histogram": [
+        {
+          "count": 29,
+          "gap_length": 1
+        }
+      ],
+      "maximum_gap_length": 1,
+      "promotion_gate_passed": true,
+      "run_count": 30,
+      "run_ids": [
+        "RZ012-RUN-006",
+        "RZ012-RUN-007",
+        "RZ012-RUN-008",
+        "RZ012-RUN-009",
+        "RZ012-RUN-010",
+        "RZ012-RUN-011",
+        "RZ012-RUN-012",
+        "RZ012-RUN-013",
+        "RZ012-RUN-014",
+        "RZ012-RUN-015",
+        "RZ012-RUN-016",
+        "RZ012-RUN-017",
+        "RZ012-RUN-018",
+        "RZ012-RUN-019",
+        "RZ012-RUN-020",
+        "RZ012-RUN-021",
+        "RZ012-RUN-022",
+        "RZ012-RUN-023",
+        "RZ012-RUN-024",
+        "RZ012-RUN-025",
+        "RZ012-RUN-026",
+        "RZ012-RUN-027",
+        "RZ012-RUN-028",
+        "RZ012-RUN-029",
+        "RZ012-RUN-030",
+        "RZ012-RUN-031",
+        "RZ012-RUN-032",
+        "RZ012-RUN-033",
+        "RZ012-RUN-034",
+        "RZ012-RUN-035"
+      ],
+      "run_length_histogram": [
+        {
+          "count": 8,
+          "run_length": 1
+        },
+        {
+          "count": 12,
+          "run_length": 3
+        },
+        {
+          "count": 1,
+          "run_length": 5
+        },
+        {
+          "count": 2,
+          "run_length": 7
+        },
+        {
+          "count": 1,
+          "run_length": 9
+        },
+        {
+          "count": 1,
+          "run_length": 14
+        },
+        {
+          "count": 5,
+          "run_length": 25
+        }
+      ],
+      "span": 240,
+      "start": 7906542,
+      "unequal_gap_byte_count": 29
+    },
+    "primary_components": [
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C001",
+        "end": 7906032,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-001"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906031,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C002",
+        "end": 7906036,
+        "equal_byte_count": 2,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-002"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 2
+          }
+        ],
+        "span": 2,
+        "start": 7906034,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C003",
+        "end": 7906077,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-003"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906076,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C004",
+        "end": 7906182,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-004"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906181,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C005",
+        "end": 7906390,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-005"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906389,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "PROMOTED_RUN_GAP_COMPONENT",
+        "component_id": "RZ012-G1-C006",
+        "end": 7906782,
+        "equal_byte_count": 211,
+        "equality_coverage": 0.87916667,
+        "gap_cap": 1,
+        "gap_count": 29,
+        "gap_length_histogram": [
+          {
+            "count": 29,
+            "gap_length": 1
+          }
+        ],
+        "maximum_gap_length": 1,
+        "promotion_gate_passed": true,
+        "run_count": 30,
+        "run_ids": [
+          "RZ012-RUN-006",
+          "RZ012-RUN-007",
+          "RZ012-RUN-008",
+          "RZ012-RUN-009",
+          "RZ012-RUN-010",
+          "RZ012-RUN-011",
+          "RZ012-RUN-012",
+          "RZ012-RUN-013",
+          "RZ012-RUN-014",
+          "RZ012-RUN-015",
+          "RZ012-RUN-016",
+          "RZ012-RUN-017",
+          "RZ012-RUN-018",
+          "RZ012-RUN-019",
+          "RZ012-RUN-020",
+          "RZ012-RUN-021",
+          "RZ012-RUN-022",
+          "RZ012-RUN-023",
+          "RZ012-RUN-024",
+          "RZ012-RUN-025",
+          "RZ012-RUN-026",
+          "RZ012-RUN-027",
+          "RZ012-RUN-028",
+          "RZ012-RUN-029",
+          "RZ012-RUN-030",
+          "RZ012-RUN-031",
+          "RZ012-RUN-032",
+          "RZ012-RUN-033",
+          "RZ012-RUN-034",
+          "RZ012-RUN-035"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 8,
+            "run_length": 1
+          },
+          {
+            "count": 12,
+            "run_length": 3
+          },
+          {
+            "count": 1,
+            "run_length": 5
+          },
+          {
+            "count": 2,
+            "run_length": 7
+          },
+          {
+            "count": 1,
+            "run_length": 9
+          },
+          {
+            "count": 1,
+            "run_length": 14
+          },
+          {
+            "count": 5,
+            "run_length": 25
+          }
+        ],
+        "span": 240,
+        "start": 7906542,
+        "unequal_gap_byte_count": 29
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C007",
+        "end": 7906877,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-036"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906876,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C008",
+        "end": 7907190,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-037"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907189,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C009",
+        "end": 7907197,
+        "equal_byte_count": 2,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-038"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 2
+          }
+        ],
+        "span": 2,
+        "start": 7907195,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C010",
+        "end": 7907204,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-039"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907203,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C011",
+        "end": 7907381,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-040"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907380,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C012",
+        "end": 7907437,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-041"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907436,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C013",
+        "end": 7907565,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-042"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907564,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C014",
+        "end": 7907568,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-043"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907567,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C015",
+        "end": 7907608,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-044"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907607,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C016",
+        "end": 7907623,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-045"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907622,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C017",
+        "end": 7907736,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-046"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907735,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C018",
+        "end": 7907759,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-047"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907758,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C019",
+        "end": 7907762,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-048"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907761,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C020",
+        "end": 7907802,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-049"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907801,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C021",
+        "end": 7907818,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-050"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907817,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C022",
+        "end": 7907851,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-051"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907850,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C023",
+        "end": 7907989,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-052"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907988,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ012-G1-C024",
+        "end": 7908034,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ012-RUN-053"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7908033,
+        "unequal_gap_byte_count": 0
+      }
+    ],
+    "primary_gap_cap": 1,
+    "promoted_component_count": 1,
+    "record_periodicity": {
+      "best_lattice_period": 4,
+      "best_lattice_phase_share": 0.62068966,
+      "best_lattice_phase_support": 18,
+      "direct_stride_gate_passed": false,
+      "dominant_gap_stride": 4,
+      "dominant_gap_stride_count": 12,
+      "dominant_gap_stride_share": 0.42857143,
+      "fixed_stride_record_gate_passed": false,
+      "gap_event_count": 29,
+      "gap_stride_count": 28,
+      "gap_stride_histogram": [
+        {
+          "count": 7,
+          "stride": 2
+        },
+        {
+          "count": 12,
+          "stride": 4
+        },
+        {
+          "count": 1,
+          "stride": 6
+        },
+        {
+          "count": 2,
+          "stride": 8
+        },
+        {
+          "count": 1,
+          "stride": 10
+        },
+        {
+          "count": 5,
+          "stride": 26
+        }
+      ],
+      "lattice_gate_passed": false,
+      "lattice_phase_value_included": false,
+      "minimum_period_share": 0.75,
+      "repeated_run_length_candidates": [
+        {
+          "component_run_share": 0.4,
+          "dominant_spacing": 4,
+          "dominant_spacing_count": 4,
+          "dominant_spacing_share": 0.36363636,
+          "occurrence_count": 12,
+          "record_spacing_gate_passed": false,
+          "run_length": 3,
+          "spacing_count": 11
+        },
+        {
+          "component_run_share": 0.16666667,
+          "dominant_spacing": 30,
+          "dominant_spacing_count": 1,
+          "dominant_spacing_share": 0.25,
+          "occurrence_count": 5,
+          "record_spacing_gate_passed": false,
+          "run_length": 25,
+          "spacing_count": 4
+        }
+      ],
+      "repeated_run_record_gate_passed": false,
+      "tested_period_maximum": 64,
+      "tested_period_minimum": 4
+    },
+    "relaxed_component_count": 21,
+    "relaxed_gap_cap": 2,
+    "relaxed_promoted_component_count": 1,
+    "run_count": 53,
+    "runs": [
+      {
+        "end": 7906032,
+        "length": 1,
+        "run_id": "RZ012-RUN-001",
+        "start": 7906031
+      },
+      {
+        "end": 7906036,
+        "length": 2,
+        "run_id": "RZ012-RUN-002",
+        "start": 7906034
+      },
+      {
+        "end": 7906077,
+        "length": 1,
+        "run_id": "RZ012-RUN-003",
+        "start": 7906076
+      },
+      {
+        "end": 7906182,
+        "length": 1,
+        "run_id": "RZ012-RUN-004",
+        "start": 7906181
+      },
+      {
+        "end": 7906390,
+        "length": 1,
+        "run_id": "RZ012-RUN-005",
+        "start": 7906389
+      },
+      {
+        "end": 7906543,
+        "length": 1,
+        "run_id": "RZ012-RUN-006",
+        "start": 7906542
+      },
+      {
+        "end": 7906569,
+        "length": 25,
+        "run_id": "RZ012-RUN-007",
+        "start": 7906544
+      },
+      {
+        "end": 7906573,
+        "length": 3,
+        "run_id": "RZ012-RUN-008",
+        "start": 7906570
+      },
+      {
+        "end": 7906599,
+        "length": 25,
+        "run_id": "RZ012-RUN-009",
+        "start": 7906574
+      },
+      {
+        "end": 7906603,
+        "length": 3,
+        "run_id": "RZ012-RUN-010",
+        "start": 7906600
+      },
+      {
+        "end": 7906605,
+        "length": 1,
+        "run_id": "RZ012-RUN-011",
+        "start": 7906604
+      },
+      {
+        "end": 7906613,
+        "length": 7,
+        "run_id": "RZ012-RUN-012",
+        "start": 7906606
+      },
+      {
+        "end": 7906623,
+        "length": 9,
+        "run_id": "RZ012-RUN-013",
+        "start": 7906614
+      },
+      {
+        "end": 7906625,
+        "length": 1,
+        "run_id": "RZ012-RUN-014",
+        "start": 7906624
+      },
+      {
+        "end": 7906629,
+        "length": 3,
+        "run_id": "RZ012-RUN-015",
+        "start": 7906626
+      },
+      {
+        "end": 7906635,
+        "length": 5,
+        "run_id": "RZ012-RUN-016",
+        "start": 7906630
+      },
+      {
+        "end": 7906637,
+        "length": 1,
+        "run_id": "RZ012-RUN-017",
+        "start": 7906636
+      },
+      {
+        "end": 7906641,
+        "length": 3,
+        "run_id": "RZ012-RUN-018",
+        "start": 7906638
+      },
+      {
+        "end": 7906645,
+        "length": 3,
+        "run_id": "RZ012-RUN-019",
+        "start": 7906642
+      },
+      {
+        "end": 7906671,
+        "length": 25,
+        "run_id": "RZ012-RUN-020",
+        "start": 7906646
+      },
+      {
+        "end": 7906673,
+        "length": 1,
+        "run_id": "RZ012-RUN-021",
+        "start": 7906672
+      },
+      {
+        "end": 7906677,
+        "length": 3,
+        "run_id": "RZ012-RUN-022",
+        "start": 7906674
+      },
+      {
+        "end": 7906681,
+        "length": 3,
+        "run_id": "RZ012-RUN-023",
+        "start": 7906678
+      },
+      {
+        "end": 7906707,
+        "length": 25,
+        "run_id": "RZ012-RUN-024",
+        "start": 7906682
+      },
+      {
+        "end": 7906709,
+        "length": 1,
+        "run_id": "RZ012-RUN-025",
+        "start": 7906708
+      },
+      {
+        "end": 7906713,
+        "length": 3,
+        "run_id": "RZ012-RUN-026",
+        "start": 7906710
+      },
+      {
+        "end": 7906715,
+        "length": 1,
+        "run_id": "RZ012-RUN-027",
+        "start": 7906714
+      },
+      {
+        "end": 7906723,
+        "length": 7,
+        "run_id": "RZ012-RUN-028",
+        "start": 7906716
+      },
+      {
+        "end": 7906725,
+        "length": 1,
+        "run_id": "RZ012-RUN-029",
+        "start": 7906724
+      },
+      {
+        "end": 7906729,
+        "length": 3,
+        "run_id": "RZ012-RUN-030",
+        "start": 7906726
+      },
+      {
+        "end": 7906733,
+        "length": 3,
+        "run_id": "RZ012-RUN-031",
+        "start": 7906730
+      },
+      {
+        "end": 7906737,
+        "length": 3,
+        "run_id": "RZ012-RUN-032",
+        "start": 7906734
+      },
+      {
+        "end": 7906763,
+        "length": 25,
+        "run_id": "RZ012-RUN-033",
+        "start": 7906738
+      },
+      {
+        "end": 7906767,
+        "length": 3,
+        "run_id": "RZ012-RUN-034",
+        "start": 7906764
+      },
+      {
+        "end": 7906782,
+        "length": 14,
+        "run_id": "RZ012-RUN-035",
+        "start": 7906768
+      },
+      {
+        "end": 7906877,
+        "length": 1,
+        "run_id": "RZ012-RUN-036",
+        "start": 7906876
+      },
+      {
+        "end": 7907190,
+        "length": 1,
+        "run_id": "RZ012-RUN-037",
+        "start": 7907189
+      },
+      {
+        "end": 7907197,
+        "length": 2,
+        "run_id": "RZ012-RUN-038",
+        "start": 7907195
+      },
+      {
+        "end": 7907204,
+        "length": 1,
+        "run_id": "RZ012-RUN-039",
+        "start": 7907203
+      },
+      {
+        "end": 7907381,
+        "length": 1,
+        "run_id": "RZ012-RUN-040",
+        "start": 7907380
+      },
+      {
+        "end": 7907437,
+        "length": 1,
+        "run_id": "RZ012-RUN-041",
+        "start": 7907436
+      },
+      {
+        "end": 7907565,
+        "length": 1,
+        "run_id": "RZ012-RUN-042",
+        "start": 7907564
+      },
+      {
+        "end": 7907568,
+        "length": 1,
+        "run_id": "RZ012-RUN-043",
+        "start": 7907567
+      },
+      {
+        "end": 7907608,
+        "length": 1,
+        "run_id": "RZ012-RUN-044",
+        "start": 7907607
+      },
+      {
+        "end": 7907623,
+        "length": 1,
+        "run_id": "RZ012-RUN-045",
+        "start": 7907622
+      },
+      {
+        "end": 7907736,
+        "length": 1,
+        "run_id": "RZ012-RUN-046",
+        "start": 7907735
+      },
+      {
+        "end": 7907759,
+        "length": 1,
+        "run_id": "RZ012-RUN-047",
+        "start": 7907758
+      },
+      {
+        "end": 7907762,
+        "length": 1,
+        "run_id": "RZ012-RUN-048",
+        "start": 7907761
+      },
+      {
+        "end": 7907802,
+        "length": 1,
+        "run_id": "RZ012-RUN-049",
+        "start": 7907801
+      },
+      {
+        "end": 7907818,
+        "length": 1,
+        "run_id": "RZ012-RUN-050",
+        "start": 7907817
+      },
+      {
+        "end": 7907851,
+        "length": 1,
+        "run_id": "RZ012-RUN-051",
+        "start": 7907850
+      },
+      {
+        "end": 7907989,
+        "length": 1,
+        "run_id": "RZ012-RUN-052",
+        "start": 7907988
+      },
+      {
+        "end": 7908034,
+        "length": 1,
+        "run_id": "RZ012-RUN-053",
+        "start": 7908033
+      }
+    ],
+    "single_byte_gap_skeleton": "CONFIRMED_BOUNDED_STRUCTURAL"
+  },
+  "rz013_negative_control": {
+    "dominant_component_stable_under_relaxed_cap": false,
+    "dominant_promoted_component": null,
+    "primary_components": [
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C001",
+        "end": 7906078,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-001"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906077,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C002",
+        "end": 7906215,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-002"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906214,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C003",
+        "end": 7906268,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-003"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906267,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C004",
+        "end": 7906537,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-004"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906536,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C005",
+        "end": 7906610,
+        "equal_byte_count": 3,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-005"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 3
+          }
+        ],
+        "span": 3,
+        "start": 7906607,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C006",
+        "end": 7906771,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-006"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906770,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C007",
+        "end": 7906834,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-007"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906833,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C008",
+        "end": 7906958,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-008"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7906957,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C009",
+        "end": 7907191,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-009"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907190,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C010",
+        "end": 7907466,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-010"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907465,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C011",
+        "end": 7907514,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-011"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907513,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C012",
+        "end": 7907531,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-012"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7907530,
+        "unequal_gap_byte_count": 0
+      },
+      {
+        "classification": "BELOW_COMPONENT_GATE",
+        "component_id": "RZ013-G1-C013",
+        "end": 7908020,
+        "equal_byte_count": 1,
+        "equality_coverage": 1.0,
+        "gap_cap": 1,
+        "gap_count": 0,
+        "gap_length_histogram": [],
+        "maximum_gap_length": 0,
+        "promotion_gate_passed": false,
+        "run_count": 1,
+        "run_ids": [
+          "RZ013-RUN-013"
+        ],
+        "run_length_histogram": [
+          {
+            "count": 1,
+            "run_length": 1
+          }
+        ],
+        "span": 1,
+        "start": 7908019,
+        "unequal_gap_byte_count": 0
+      }
+    ],
+    "primary_gap_cap": 1,
+    "promoted_component_count": 0,
+    "record_periodicity": {
+      "fixed_stride_record_gate_passed": false,
+      "gap_event_count": 0,
+      "repeated_run_length_candidates": [],
+      "repeated_run_record_gate_passed": false
+    },
+    "relaxed_component_count": 13,
+    "relaxed_gap_cap": 2,
+    "relaxed_promoted_component_count": 0,
+    "run_count": 13,
+    "runs": [
+      {
+        "end": 7906078,
+        "length": 1,
+        "run_id": "RZ013-RUN-001",
+        "start": 7906077
+      },
+      {
+        "end": 7906215,
+        "length": 1,
+        "run_id": "RZ013-RUN-002",
+        "start": 7906214
+      },
+      {
+        "end": 7906268,
+        "length": 1,
+        "run_id": "RZ013-RUN-003",
+        "start": 7906267
+      },
+      {
+        "end": 7906537,
+        "length": 1,
+        "run_id": "RZ013-RUN-004",
+        "start": 7906536
+      },
+      {
+        "end": 7906610,
+        "length": 3,
+        "run_id": "RZ013-RUN-005",
+        "start": 7906607
+      },
+      {
+        "end": 7906771,
+        "length": 1,
+        "run_id": "RZ013-RUN-006",
+        "start": 7906770
+      },
+      {
+        "end": 7906834,
+        "length": 1,
+        "run_id": "RZ013-RUN-007",
+        "start": 7906833
+      },
+      {
+        "end": 7906958,
+        "length": 1,
+        "run_id": "RZ013-RUN-008",
+        "start": 7906957
+      },
+      {
+        "end": 7907191,
+        "length": 1,
+        "run_id": "RZ013-RUN-009",
+        "start": 7907190
+      },
+      {
+        "end": 7907466,
+        "length": 1,
+        "run_id": "RZ013-RUN-010",
+        "start": 7907465
+      },
+      {
+        "end": 7907514,
+        "length": 1,
+        "run_id": "RZ013-RUN-011",
+        "start": 7907513
+      },
+      {
+        "end": 7907531,
+        "length": 1,
+        "run_id": "RZ013-RUN-012",
+        "start": 7907530
+      },
+      {
+        "end": 7908020,
+        "length": 1,
+        "run_id": "RZ013-RUN-013",
+        "start": 7908019
+      }
+    ],
+    "single_byte_gap_skeleton": "NOT_ESTABLISHED"
+  },
+  "schema": "phoenix-mmi.run-gap-topology-comparison/v1",
+  "search_contract": {
+    "adaptive_threshold_used": false,
+    "left_delta": 61136,
+    "left_zone_id": "RZ-012",
+    "minimum_component_coverage": 0.75,
+    "minimum_component_equal_bytes": 64,
+    "minimum_component_runs": 4,
+    "minimum_component_span": 64,
+    "minimum_period_share": 0.75,
+    "new_delta_search_performed": false,
+    "overlap_end": 7908043,
+    "overlap_length": 2048,
+    "overlap_start": 7905995,
+    "period_maximum": 64,
+    "period_minimum": 4,
+    "primary_gap_cap": 1,
+    "primary_tile_id": "G0000-T019",
+    "relaxed_gap_cap": 2,
+    "right_delta": -7488776,
+    "right_zone_id": "RZ-013",
+    "shifted_tile_id": "G0800-T018",
+    "whole_image_search_performed": false
+  },
+  "source_session037_schema": "phoenix-mmi.micro-island-comparison/v1",
+  "summary": {
+    "exact_section_boundary_asserted": false,
+    "fixed_stride_record_model": "NOT_ESTABLISHED",
+    "gap_cap_control": "STABLE_AT_CAPS_1_AND_2",
+    "micro_island_structural_model": "STABLE_SPARSE_SINGLE_BYTE_DIFFERENCE_SKELETON",
+    "negative_control_distinguished": true,
+    "record_grammar_established": false,
+    "repeated_run_record_model": "NOT_ESTABLISHED",
+    "rz012_promoted_component_count": 1,
+    "rz013_promoted_component_count": 0,
+    "semantic_owner_established": false,
+    "stable_single_byte_gap_skeleton": true
+  }
+}

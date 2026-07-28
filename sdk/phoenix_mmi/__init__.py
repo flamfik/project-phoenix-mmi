@@ -185,6 +185,12 @@ from .runtime_slot import (
     correlate_runtime_slot_lineage,
     update_operational_graph_v12,
 )
+from .run_gap_topology import (
+    analyze_run_gap_topology,
+    build_public_run_gap_report,
+    correlate_run_gap_topology,
+    update_operational_graph_v31,
+)
 from .runtime_linkage import (
     analyze_runtime_linkage_family,
     build_public_runtime_linkage_report,
@@ -255,6 +261,7 @@ __all__ = [
     "analyze_resource_bundle",
     "analyze_runtime_map",
     "analyze_runtime_slot_lineage",
+    "analyze_run_gap_topology",
     "analyze_runtime_linkage_family",
     "analyze_linkage_owner_lineage",
     "analyze_literal_pool_boundaries",
@@ -289,6 +296,7 @@ __all__ = [
     "build_public_resource_bundle",
     "build_public_runtime_map",
     "build_public_runtime_slot_report",
+    "build_public_run_gap_report",
     "build_public_runtime_linkage_report",
     "build_public_linkage_owner_report",
     "build_public_literal_pool_boundary_report",
@@ -326,6 +334,7 @@ __all__ = [
     "correlate_firmware_and_media",
     "correlate_micro_island",
     "correlate_runtime_slot_lineage",
+    "correlate_run_gap_topology",
     "correlate_runtime_linkage_family",
     "correlate_linkage_owner_lineage",
     "correlate_literal_pool_boundaries",
@@ -390,6 +399,7 @@ __all__ = [
     "update_operational_graph_v28",
     "update_operational_graph_v29",
     "update_operational_graph_v30",
+    "update_operational_graph_v31",
 ]
 
-__version__ = "0.35.0"
+__version__ = "0.36.0"

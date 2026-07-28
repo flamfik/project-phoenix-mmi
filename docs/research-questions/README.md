@@ -133,5 +133,11 @@
 | RQ-129 | Does SH decoder morphology establish that the clustered micro-island is executable code? | CLOSED, BOUNDED NEGATIVE UNDER GATE | Same-known-mnemonic counts are 238 versus 126, a ratio of `1.888889`; the frozen `2x` gate fails and code is not asserted. SPEC-046. |
 | RQ-130 | Does the micro-atlas identify an exact section boundary? | CLOSED, BOUNDED NEGATIVE | Bin edges are sampling boundaries and run endpoints delimit equality only. The Session 034 envelope remains authoritative. SPEC-043, SPEC-046. |
 | RQ-131 | What record or resource grammar owns the clustered correspondence? | OPEN | Local structure is confirmed, but field layout, semantic owner and compile/link placement versus loader transformation remain unresolved. SPEC-046. |
+| RQ-132 | Do the Session 037 exact runs form one bounded run-gap component? | CLOSED, CONFIRMED CONTROLLED STRUCTURAL | One 240-byte `RZ-012` component contains 30 runs, 211 equal bytes and 29 singleton gaps; `RZ-013` has zero promoted components. SPEC-047. |
+| RQ-133 | Is the dominant component stable when the gap cap is relaxed? | CLOSED, CONFIRMED | Gap caps one and two preserve its start, end and equal-byte count. SPEC-047. |
+| RQ-134 | Do the singleton differences follow a fixed record stride? | CLOSED, BOUNDED NEGATIVE | The dominant direct stride covers `42.857143%`; the best phase lattice covers `62.068966%`. Both fail the frozen `75%` gate. SPEC-047. |
+| RQ-135 | Do the five 25-byte exact runs establish a repeated field or record? | CLOSED, BOUNDED NEGATIVE | Their four start spacings are all different; the deterministic dominant spacing has only `25%` share. SPEC-047. |
+| RQ-136 | Can the 2 KiB micro-island be closed with a stable structural model? | CLOSED, CONFIRMED STRUCTURAL | It is a control-distinguished, gap-cap-stable 240-byte sparse-single-byte-difference skeleton. Record semantics are not implied. SPEC-047. |
+| RQ-137 | Which subsystem or section owns the 240-byte skeleton? | OPEN | The microanalysis provides no direct reference, descriptor or runtime evidence for semantic ownership. External provenance is required. SPEC-047. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.
