@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 032 revalidates 27 direct-link code anchors, 86,505 byte-identical mapped bytes and 405 constant-delta marker pairs. The resulting 23 support zones bound 18 monotonic relocation changes and one section reorder, while refusing to interpolate unobserved gaps. None of the eight Session 031 pool pairs matches a prior anchor; two share only a delta family. Continuous loader/section mapping, producer implementation, object writer, selected-owner linkage, parser, sector ABI, buffer provenance and dynamic compatibility remain open.
+The foundation, update model and principal-image fingerprinting are complete. Session 032 confirms a sparse relocation support map and one section reorder. Session 033 tests a closed 12/16-byte `source/destination/length` grammar around that reorder: 438/604 multi-record interpretations reduce to zero coherent two-zone candidates and zero bilateral descriptor pairs. The simple internal table model is therefore bounded-negative; exact section boundaries, compile/link placement versus loader transformation, producer implementation, object writer, parser, sector ABI and dynamic compatibility remain open.
 
 ## First milestone
 
@@ -65,6 +65,7 @@ ui/            Future interface and resource research
 - [Session 030 report](docs/sessions/SESSION-030-literal-pool-boundary-correction.md)
 - [Session 031 report](docs/sessions/SESSION-031-piecewise-link-address-map.md)
 - [Session 032 report](docs/sessions/SESSION-032-relocation-anchor-breakpoints.md)
+- [Session 033 report](docs/sessions/SESSION-033-bounded-reorder-descriptor-search.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -94,6 +95,7 @@ ui/            Future interface and resource research
 - [Session 030 publication-safe evidence](research/navigation-media/session030/)
 - [Session 031 publication-safe evidence](research/navigation-media/session031/)
 - [Session 032 publication-safe evidence](research/navigation-media/session032/)
+- [Session 033 publication-safe evidence](research/navigation-media/session033/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

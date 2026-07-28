@@ -61,6 +61,12 @@ from .relocation_breakpoints import (
     correlate_relocation_breakpoints,
     update_operational_graph_v25,
 )
+from .relocation_descriptors import (
+    analyze_relocation_descriptors,
+    build_public_relocation_descriptor_report,
+    correlate_relocation_descriptors,
+    update_operational_graph_v26,
+)
 from .map_media import (
     analyze_navigation_media,
     build_public_navigation_media_report,
@@ -221,6 +227,7 @@ __all__ = [
     "analyze_literal_pool_boundaries",
     "analyze_piecewise_link_map",
     "analyze_relocation_breakpoints",
+    "analyze_relocation_descriptors",
     "analyze_owner_ingress_state",
     "analyze_owner_caller_compatibility",
     "analyze_owner_producer_candidates",
@@ -250,6 +257,7 @@ __all__ = [
     "build_public_literal_pool_boundary_report",
     "build_public_piecewise_link_map_report",
     "build_public_relocation_breakpoint_report",
+    "build_public_relocation_descriptor_report",
     "build_public_owner_ingress_report",
     "build_public_owner_caller_report",
     "build_public_owner_producer_report",
@@ -278,6 +286,7 @@ __all__ = [
     "correlate_literal_pool_boundaries",
     "correlate_piecewise_link_map",
     "correlate_relocation_breakpoints",
+    "correlate_relocation_descriptors",
     "correlate_owner_ingress_state",
     "correlate_owner_caller_compatibility",
     "correlate_owner_producer_candidates",
@@ -330,6 +339,7 @@ __all__ = [
     "update_operational_graph_v23",
     "update_operational_graph_v24",
     "update_operational_graph_v25",
+    "update_operational_graph_v26",
 ]
 
-__version__ = "0.30.0"
+__version__ = "0.31.0"

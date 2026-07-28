@@ -372,6 +372,23 @@ while breakpoint brackets report only the interval containing a change.
 Unobserved gaps are never filled, and a pool pair sharing only a relocation
 delta with a known anchor is not promoted to target identity.
 
+## Reproduce Session 033
+
+```bash
+python tools/session033/analyze_relocation_descriptors.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session033 \
+  --public-output research/navigation-media/session033
+```
+
+Session 033 is seeded only by the two support zones bounding the confirmed
+section reorder. It tests fixed exact/aligned boundaries, three explicit
+address models, 12/16-byte records and all six field orders. Promotion requires
+multi-record two-zone geometry, a syntactic PC-relative table-reference form
+and an equal bilateral candidate. The reference census is not a whole-image
+code gate. The analyzer never scans arbitrary whole-image integer triples.
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
