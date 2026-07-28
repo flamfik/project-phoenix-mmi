@@ -57,6 +57,14 @@ from .handoff_mapping import (
     correlate_handoff_mapping,
     update_operational_graph_v22,
 )
+from .island_atlas import (
+    analyze_content_island_atlas,
+    build_public_content_island_atlas_report,
+    compare_island_atlas_grid_control,
+    correlate_content_island_atlas,
+    finalize_content_island_atlas,
+    update_operational_graph_v29,
+)
 from .layout import analyze_executable_layout
 from .literal_pool_boundary import (
     analyze_literal_pool_boundaries,
@@ -229,6 +237,7 @@ __all__ = [
     "analyze_fldb_candidate_dataflow",
     "analyze_handoff_field60",
     "analyze_handoff_mapping",
+    "analyze_content_island_atlas",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
@@ -262,6 +271,7 @@ __all__ = [
     "build_public_global_parser_report",
     "build_public_handoff_field60_report",
     "build_public_handoff_mapping_report",
+    "build_public_content_island_atlas_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
@@ -287,6 +297,7 @@ __all__ = [
     "compare_exact_block_seed_control",
     "compare_similarity_grid_control",
     "compare_navigation_storage_boundaries",
+    "compare_island_atlas_grid_control",
     "compare_navigation_dataflow",
     "compare_optical_navigation_callgraph",
     "compare_parser_constants",
@@ -303,6 +314,7 @@ __all__ = [
     "correlate_global_fldb_parser_search",
     "correlate_handoff_field60",
     "correlate_handoff_mapping",
+    "correlate_content_island_atlas",
     "correlate_firmware_and_media",
     "correlate_runtime_slot_lineage",
     "correlate_runtime_linkage_family",
@@ -339,6 +351,7 @@ __all__ = [
     "summarize_runtime_neighborhood",
     "trace_control_flow",
     "trace_dispatch_producer",
+    "finalize_content_island_atlas",
     "update_operational_graph",
     "update_operational_graph_v3",
     "update_operational_graph_v4",
@@ -366,6 +379,7 @@ __all__ = [
     "update_operational_graph_v26",
     "update_operational_graph_v27",
     "update_operational_graph_v28",
+    "update_operational_graph_v29",
 ]
 
-__version__ = "0.33.0"
+__version__ = "0.34.0"

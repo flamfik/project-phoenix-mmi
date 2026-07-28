@@ -423,6 +423,22 @@ not discover new deltas or tune thresholds after seeing the result. A
 dominance crossing is descriptive file similarity, not an exact section or
 runtime boundary.
 
+## Reproduce Session 036
+
+```bash
+python tools/session036/analyze_content_island_atlas.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session036 \
+  --public-output research/navigation-media/session036
+```
+
+Session 036 uses non-overlapping 4 KiB tiles and a half-tile control grid only
+inside the unchanged Session 034 envelope. Exact-byte and exact-word support
+are kept separate from entropy/histogram morphology. Repeated unequal-word
+differences are counted anonymously and never labeled relocations without
+independent evidence.
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.
