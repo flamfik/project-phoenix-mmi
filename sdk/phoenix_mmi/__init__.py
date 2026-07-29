@@ -144,6 +144,40 @@ from .dual_delta_similarity import (
     update_operational_graph_v28,
 )
 from .fingerprint import FingerprintHit, scan_fingerprints
+from .format_registry import (
+    DEFAULT_FORMAT_REGISTRY,
+    FormatEvidence,
+    FormatRegistry,
+    FormatRule,
+    build_public_registry_summary,
+)
+from .parse_result import (
+    ParseDiagnostic,
+    ParseRegion,
+    ParseResult,
+    build_public_parser_contract_summary,
+    parse_artifact,
+    parse_intel_hex,
+    parse_lod_bounded,
+    parse_srecord,
+    parse_yim,
+)
+from .checksum_experiments import (
+    ChecksumExperiment,
+    ChecksumExperimentResult,
+    ChecksumRegion,
+    checksum_experiment_report,
+    run_checksum_experiments,
+)
+from .structural_diff import Difference, structural_diff
+from .schema_registry import (
+    DEFAULT_SCHEMA_REGISTRY,
+    SchemaDefinition,
+    SchemaRegistry,
+    ValidationResult,
+    build_public_schema_registry_summary,
+)
+from .integration import run_sanitized_integration
 from .handoff_field60 import (
     analyze_handoff_field60,
     build_public_handoff_field60_report,
@@ -356,6 +390,19 @@ __all__ = [
     "VerificationResult",
     "EntropyWindow",
     "FingerprintHit",
+    "FormatEvidence",
+    "FormatRegistry",
+    "FormatRule",
+    "ParseDiagnostic",
+    "ParseRegion",
+    "ParseResult",
+    "ChecksumExperiment",
+    "ChecksumExperimentResult",
+    "ChecksumRegion",
+    "Difference",
+    "SchemaDefinition",
+    "SchemaRegistry",
+    "ValidationResult",
     "SHInstruction",
     "analyze_file",
     "analyze_internal_continuation_contract",
@@ -426,6 +473,9 @@ __all__ = [
     "build_public_cross_payload_homolog_report",
     "build_public_distributed_homolog_report",
     "build_public_record_normalized_homolog_report",
+    "build_public_registry_summary",
+    "build_public_parser_contract_summary",
+    "build_public_schema_registry_summary",
     "build_firmware_evidence_map",
     "build_session060_evidence_map",
     "audit_m1_evidence",
@@ -515,6 +565,7 @@ __all__ = [
     "correlate_dispatch_context",
     "compare_reference_graphs",
     "crc32_bytes",
+    "checksum_experiment_report",
     "collect_seed_pairs",
     "decode_instruction",
     "decode_instruction_extended",
@@ -530,6 +581,11 @@ __all__ = [
     "payload_member_eligible",
     "normalize_record_payload",
     "parse_yim_envelope",
+    "parse_artifact",
+    "parse_intel_hex",
+    "parse_lod_bounded",
+    "parse_srecord",
+    "parse_yim",
     "probe_firmware_media_markers",
     "record_member_eligible",
     "legacy_member_eligible",
@@ -538,6 +594,8 @@ __all__ = [
     "public_yim_rle",
     "scan_distributed_unit",
     "scan_fingerprints",
+    "run_checksum_experiments",
+    "run_sanitized_integration",
     "scan_parser_constants",
     "scan_global_fldb_parser_candidates",
     "scan_storage_signatures",
@@ -549,6 +607,7 @@ __all__ = [
     "summarize_runtime_neighborhood",
     "summarize_distributed_units",
     "trace_control_flow",
+    "structural_diff",
     "trace_dispatch_producer",
     "verify_file",
     "finalize_content_island_atlas",
@@ -592,6 +651,8 @@ __all__ = [
     "write_manifest",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
+    "DEFAULT_FORMAT_REGISTRY",
+    "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "0.64.0"
+__version__ = "0.71.0"

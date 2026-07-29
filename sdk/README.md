@@ -59,8 +59,29 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
   suite resolution, evidence traceability and the Project Charter M1 gate.
 - `toolkit_audit` - M2 capability registry, repository probes, entry gate,
   eight exit criteria and ordered Session 067-074 backlog.
+- `manifest` - strict artifact identity, provenance and duplicate-content
+  model.
+- `format_registry` - declarative format rules with bounded structural
+  validators.
+- `parse_result` - normalized parser contract and structural-only LOD reader.
+- `checksum_experiments` - reproducible bounded checksum hypotheses and
+  explicit negative outcomes.
+- `structural_diff` - deterministic redacted JSON-compatible comparisons.
+- `schema_registry` - central schema lookup and fail-closed validation.
+- `integration` - synthetic non-firmware M2 end-to-end gate.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
+
+## Unified CLI
+
+```shell
+phoenix-mmi manifest artifact.bin -o manifest.json
+phoenix-mmi classify payload.hex -o classification.json
+phoenix-mmi parse payload.hex -o parse.json
+phoenix-mmi checksum payload.hex --algorithm CRC32/IEEE -o checksum.json
+phoenix-mmi diff left.json right.json -o diff.json
+phoenix-mmi validate parse.json -o validation.json
+```
 
 ## Install and test
 

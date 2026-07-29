@@ -260,5 +260,33 @@
 | RQ-256 | Can schema v1 detect artifact-set changes? | CLOSED, CONFIRMED BOUNDED | Manifest comparison reports additions, removals and changed identity fields; generic structural diff remains Session 071 work. SPEC-075. |
 | RQ-257 | Does the schema reproduce the registered MMI 5570 corpus? | CLOSED, CONFIRMED | Three verified roots plus 593 members reproduce 435,708,503 member bytes, 104 duplicate groups and zero orphans. SPEC-075. |
 | RQ-258 | Does Session 067 pass M2-X1 without authorizing mutation? | CLOSED, PASS | M2-CAP-023 is implemented, exactly one of eight M2 criteria passes and all mutation/installable gates remain false. SPEC-075. |
+| RQ-259 | Can format knowledge be represented as one deterministic registry? | CLOSED, CONFIRMED | Fourteen ordered rules serialize under one versioned schema with unique IDs and resolved validators. SPEC-076. |
+| RQ-260 | Is a complex magic-byte hit sufficient for positive classification? | CLOSED, NO | ELF, U-Boot, ISO, record, YIM, METAINFO, FLDB, PNG and GIF rules require bounded structural validation. SPEC-076. |
+| RQ-261 | Does LOD suffix routing imply a decoded format? | CLOSED, NO | LOD is explicitly OPAQUE_ROUTED and retains unresolved semantics. SPEC-076. |
+| RQ-262 | Does Session 068 pass M2-X2? | CLOSED, PASS | M2-CAP-024 is implemented and probed; graph v60. SPEC-076. |
+| RQ-263 | Can supported parsers return one normalized contract? | CLOSED, CONFIRMED | ParseResult standardizes validation state, bounds, regions, diagnostics and metrics. SPEC-077. |
+| RQ-264 | Are decoded region bytes published by default? | CLOSED, NO | The public/default representation includes sizes and hashes but omits region data. SPEC-077. |
+| RQ-265 | Is a safe LOD record decoder now established? | CLOSED, NO | The bounded LOD parser reports topology only and keeps record, address and integrity models false. SPEC-077. |
+| RQ-266 | Does Session 069 pass M2-X3? | CLOSED, PASS | M2-CAP-012 and M2-CAP-025 are implemented and probed; graph v61. SPEC-077. |
+| RQ-267 | Can checksum hypotheses be expressed reproducibly? | CLOSED, CONFIRMED | Each experiment fixes algorithm, bounded region and optional expectation. SPEC-078. |
+| RQ-268 | Are negative checksum results retained? | CLOSED, CONFIRMED | NO_MATCH is a first-class deterministic outcome alongside MATCH and OBSERVED. SPEC-078. |
+| RQ-269 | Does the framework solve YIM integrity or MetafileChecksum? | CLOSED, NO | Both capability blockers remain explicit and no bypass is introduced. SPEC-078. |
+| RQ-270 | Does Session 070 pass M2-X4? | CLOSED, PASS | M2-CAP-026 is implemented and probed; graph v62. SPEC-078. |
+| RQ-271 | Can arbitrary report structures be compared deterministically? | CLOSED, CONFIRMED BOUNDED | JSON-compatible objects and ordered arrays produce stable path-ordered differences. SPEC-079. |
+| RQ-272 | Are changed scalar values exposed? | CLOSED, NO | Values are redacted and represented only by short digests. SPEC-079. |
+| RQ-273 | Does structural difference imply semantic difference? | CLOSED, NO | The engine makes no semantic inference. SPEC-079. |
+| RQ-274 | Does Session 071 pass M2-X5? | CLOSED, PASS | M2-CAP-018 is implemented and probed; graph v63. SPEC-079. |
+| RQ-275 | Can machine-readable outputs use one schema lookup path? | CLOSED, CONFIRMED | Four central schemas are registered under exact version identifiers. SPEC-080. |
+| RQ-276 | What happens to an unknown schema? | CLOSED, FAIL CLOSED | Unknown and absent schema IDs return invalid results. SPEC-080. |
+| RQ-277 | Does schema validity prove a research conclusion? | CLOSED, NO | Validation proves declared shape and invariants only. SPEC-080. |
+| RQ-278 | Does Session 072 pass M2-X6? | CLOSED, PASS | M2-CAP-020 is implemented and probed; graph v64. SPEC-080. |
+| RQ-279 | Can M2 capabilities be used through one CLI? | CLOSED, CONFIRMED | Seven read-only subcommands cover manifest, classification, parsing, checksum, diff, validation and legacy analysis. SPEC-081. |
+| RQ-280 | Are new direct artifact reads bounded? | CLOSED, CONFIRMED | Classify, parse and checksum use the shared 64 MiB safety bound. SPEC-081. |
+| RQ-281 | Does the CLI expose write, repack or vehicle operations? | CLOSED, NO | No mutation, installation, execution or vehicle-communication command exists. SPEC-081. |
+| RQ-282 | Does Session 073 pass M2-X7? | CLOSED, PASS | M2-CAP-022 is implemented and probed; graph v65. SPEC-081. |
+| RQ-283 | Does the full M2 chain reproduce deterministically? | CLOSED, CONFIRMED | Two runs on the synthetic non-firmware fixture produce identical integration objects and fingerprints. SPEC-082. |
+| RQ-284 | How many M2 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M2-X1 through M2-X8 pass with capability probes intact. SPEC-082. |
+| RQ-285 | Does M2 closure authorize firmware mutation? | CLOSED, NO | Safe-mutation and installable-artifact gates remain false. SPEC-082. |
+| RQ-286 | Which milestone may begin next? | CLOSED, M3 READY | The read-only Resource Laboratory is authorized to begin with a new baseline and exit-gate session. SPEC-082. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

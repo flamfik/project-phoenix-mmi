@@ -4,14 +4,14 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 ## Current phase
 
-**M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: IN PROGRESS**
+**M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: COMPLETE; M3 —
+Resource Laboratory: READY**
 
-Session 067 implements the versioned artifact manifest and passes M2-X1. The
-registered replay validates three media roots and 593 parent-linked members.
-The current toolkit state contains 9 implemented, 8 partial, 8 missing and
-2 blocked capabilities; 1 of 8 exit criteria passes. Operational graph v59
-preserves the read-only boundary while safe mutation and installable-artifact
-gates remain false.
+Sessions 068-074 complete the declarative registry, normalized parser
+contract, checksum experiments, structural diff, schema validation, unified
+CLI and deterministic integration gate. All 8 M2 exit criteria pass and
+operational graph v66 authorizes the read-only M3 entry. Safe mutation and
+installable-artifact gates remain false.
 
 ## First milestone
 
@@ -104,8 +104,16 @@ ui/            Future interface and resource research
 - [Session 065 report](docs/sessions/SESSION-065-milestone-m1-closure.md)
 - [Session 066 report](docs/sessions/SESSION-066-m2-toolkit-foundation.md)
 - [Session 067 report](docs/sessions/SESSION-067-versioned-artifact-manifest.md)
+- [Session 068 report](docs/sessions/SESSION-068-declarative-format-registry.md)
+- [Session 069 report](docs/sessions/SESSION-069-normalized-parser-contract.md)
+- [Session 070 report](docs/sessions/SESSION-070-checksum-experiment-framework.md)
+- [Session 071 report](docs/sessions/SESSION-071-generic-structural-diff.md)
+- [Session 072 report](docs/sessions/SESSION-072-schema-registry.md)
+- [Session 073 report](docs/sessions/SESSION-073-unified-toolkit-cli.md)
+- [Session 074 report](docs/sessions/SESSION-074-milestone-m2-closure.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
-- [Milestone M2 plan](docs/milestones/M2-analysis-toolkit.md)
+- [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
+- [Milestone M3 entry](docs/milestones/M3-resource-laboratory.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
