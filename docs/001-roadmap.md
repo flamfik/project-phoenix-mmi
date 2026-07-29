@@ -81,9 +81,20 @@ consumer-ownership, relocation, runtime, navigation, renderer and
 hardware-validation questions are retained and routed to M2-M7; they were not
 silently treated as solved.
 
-## M2 - Analysis Toolkit — READY TO START
+## M2 - Analysis Toolkit — IN PROGRESS
 
 Parsers, manifests, binary classifiers, diff tooling, checksum research.
+
+- Session 066: capability registry, M2 entry/exit gates, ordered toolkit
+  backlog and graph v58 - complete;
+- Session 067: versioned manifest and artifact identity model - planned;
+- Session 068: declarative format registry - planned;
+- Session 069: normalized parser results and bounded LOD handling - planned;
+- Session 070: declarative checksum experiment framework - planned;
+- Session 071: generic structural diff engine - planned;
+- Session 072: schema registry and validation - planned;
+- Session 073: unified toolkit CLI - planned;
+- Session 074: deterministic integration gate and M2 closure - planned.
 
 ## M3 - Resource Laboratory
 

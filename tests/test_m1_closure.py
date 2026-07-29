@@ -295,12 +295,19 @@ class M1ClosureTests(unittest.TestCase):
             (root / "docs/sessions/SESSION-000-fixture.md").write_text(
                 "fixture\n", encoding="utf-8"
             )
+            (root / "docs/sessions/SESSION-001-future.md").write_text(
+                "future\n", encoding="utf-8"
+            )
             (root / "docs/specs").mkdir(parents=True)
             (root / "docs/specs/SPEC-001-fixture.md").write_text(
                 "fixture\n", encoding="utf-8"
             )
+            (root / "docs/specs/SPEC-002-future.md").write_text(
+                "future\n", encoding="utf-8"
+            )
             (root / "docs/research-questions/README.md").write_text(
-                "| RQ-001 | fixture | CLOSED | evidence |\n",
+                "| RQ-001 | fixture | CLOSED | evidence |\n"
+                "| RQ-002 | future | OPEN | evidence |\n",
                 encoding="utf-8",
             )
             report_path = root / "research/prior/report.json"
@@ -312,6 +319,12 @@ class M1ClosureTests(unittest.TestCase):
             )
             self_path.parent.mkdir(parents=True)
             self_path.write_text("{broken", encoding="utf-8")
+            future_path = (
+                root
+                / "research/milestones/m2/session066/future.json"
+            )
+            future_path.parent.mkdir(parents=True)
+            future_path.write_text("{broken", encoding="utf-8")
             report = audit_m1_evidence(
                 root,
                 expected_session_ids={0},

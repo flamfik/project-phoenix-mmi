@@ -700,7 +700,12 @@ def audit_m1_evidence(
     )
     expected_specs = expected_spec_ids or set(range(1, 74))
     expected_rqs = expected_rq_ids or set(range(1, 243))
-    milestone_root = root / "research/milestones/m1"
+    sessions = [
+        value for value in sessions if value <= max(expected_sessions)
+    ]
+    specs = [value for value in specs if value <= max(expected_specs)]
+    rqs = [value for value in rqs if value <= max(expected_rqs)]
+    milestone_root = root / "research/milestones"
     public_json = [
         path
         for path in (root / "research").rglob("*.json")

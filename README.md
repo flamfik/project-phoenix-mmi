@@ -4,14 +4,13 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 ## Current phase
 
-**M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: READY**
+**M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: IN PROGRESS**
 
-Sessions 061-065 independently reproduce all three registered media and the
-593-file inventory, route every update artifact, reproduce all 589 METAINFO
-payload declarations and the staged CD1-to-CD3 dependency, audit evidence
-traceability and close M1 under the Project Charter. Operational graph v57
-retains unresolved integrity, renderer, runtime, LOD and navigation work for
-M2-M7. Safe mutation and installable-artifact gates remain false.
+Session 066 passes the M2 entry gate and freezes 27 toolkit capabilities,
+eight exit criteria and the ordered Sessions 067-074. The baseline contains
+8 implemented, 8 partial, 9 missing and 2 blocked capabilities. Operational
+graph v58 starts the read-only Analysis Toolkit work while safe mutation and
+installable-artifact gates remain false.
 
 ## First milestone
 
@@ -102,7 +101,9 @@ ui/            Future interface and resource research
 - [Session 063 report](docs/sessions/SESSION-063-m1-update-model-reproduction.md)
 - [Session 064 report](docs/sessions/SESSION-064-m1-evidence-traceability.md)
 - [Session 065 report](docs/sessions/SESSION-065-milestone-m1-closure.md)
+- [Session 066 report](docs/sessions/SESSION-066-m2-toolkit-foundation.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
+- [Milestone M2 plan](docs/milestones/M2-analysis-toolkit.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -140,6 +141,7 @@ ui/            Future interface and resource research
 - [Session 038 publication-safe evidence](research/navigation-media/session038/)
 - [Session 060 publication-safe evidence](research/navigation-media/session060/)
 - [Sessions 061-065 M1 closure evidence](research/milestones/m1/)
+- [M2 Analysis Toolkit evidence](research/milestones/m2/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

@@ -57,6 +57,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `evidence_cycle` - Sessions 051-060 synthesis and operational graph v52.
 - `m1_closure` - registered-media replay, complete artifact routing, METAINFO
   suite resolution, evidence traceability and the Project Charter M1 gate.
+- `toolkit_audit` - M2 capability registry, repository probes, entry gate,
+  eight exit criteria and ordered Session 067-074 backlog.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -582,6 +584,19 @@ python tools/session061_065/close_m1.py `
 The runner verifies registered media, reproduces Session 001 and 002 aggregate
 evidence, routes all 593 members and applies the five-part M1 closure gate.
 It emits no firmware bytes, extracted resources or installable artifact.
+
+## Reproduce Session 066
+
+```shell
+python tools/session066/audit_m2_foundation.py \
+  --repository-root . \
+  --output work/session066 \
+  --public-output research/milestones/m2/session066/m2-toolkit-foundation.json
+```
+
+This runner reads the M1 closure record and probes only repository-relative
+files and importable SDK symbols. It freezes the M2 capability baseline and
+does not access firmware.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

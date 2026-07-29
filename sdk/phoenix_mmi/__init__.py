@@ -49,6 +49,13 @@ from .m1_closure import (
     load_iso_images,
     parse_metainfo_text,
 )
+from .toolkit_audit import (
+    CAPABILITIES,
+    EXIT_CRITERIA,
+    Capability,
+    audit_toolkit_capabilities,
+    build_m2_foundation_report,
+)
 from .lod_research import (
     analyze_lod_alignment,
     analyze_lod_fill_regions,
@@ -408,6 +415,11 @@ __all__ = [
     "classify_m1_members",
     "load_iso_images",
     "parse_metainfo_text",
+    "CAPABILITIES",
+    "EXIT_CRITERIA",
+    "Capability",
+    "audit_toolkit_capabilities",
+    "build_m2_foundation_report",
     "build_yim_integrity_decision",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
@@ -552,4 +564,4 @@ __all__ = [
     "yim_integrity_candidates",
 ]
 
-__version__ = "0.62.0"
+__version__ = "0.63.0"

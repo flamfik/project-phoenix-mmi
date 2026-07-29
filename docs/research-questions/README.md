@@ -244,5 +244,13 @@
 | RQ-240 | Does M1 closure claim that deep resource, runtime or navigation semantics are solved? | CLOSED, NO | Those questions are explicitly reclassified to M2-M7 rather than inferred closed. SPEC-073. |
 | RQ-241 | Is safe mutation or an installable artifact ready at M1 closure? | CLOSED, NO | Both machine-readable gates remain false. SPEC-073. |
 | RQ-242 | Which milestone is authorized to begin after M1? | CLOSED, M2 READY | The Analysis Toolkit may start; vehicle-side validation remains reserved for M7. SPEC-073. |
+| RQ-243 | Does M2 satisfy its entry gate? | CLOSED, PASS | The authoritative M1 record is complete, mutation remains blocked and every declared existing capability passes its probe. SPEC-074. |
+| RQ-244 | What is the Session 066 toolkit baseline? | CLOSED, CONFIRMED | The registry contains 27 capabilities: 8 implemented, 8 partial, 9 missing and 2 blocked. SPEC-074. |
+| RQ-245 | Are implemented and partial capability declarations backed by real code or files? | CLOSED, CONFIRMED | All 16 positive probes resolve to an importable SDK symbol or repository-relative tool. SPEC-074. |
+| RQ-246 | Which checksum capabilities remain blocked? | CLOSED, EXPLICIT | YIM integrity and METAINFO MetafileChecksum remain unknown; M2 must preserve rather than bypass those results. SPEC-074. |
+| RQ-247 | How many formal M2 exit criteria exist? | CLOSED, EIGHT | Manifest, format registry, parser contract, checksum experiments, structural diff, schemas, CLI and integration must all pass. SPEC-074. |
+| RQ-248 | What is the frozen M2 session order? | CLOSED, CONFIRMED | Sessions 067-074 map one-to-one to M2-X1 through M2-X8. SPEC-074. |
+| RQ-249 | Does entering M2 authorize mutation, repacking or vehicle communication? | CLOSED, NO | All such gates remain false; M2 is a read-only analysis-tooling milestone. SPEC-074. |
+| RQ-250 | What is the next implementation step? | CLOSED, SESSION 067 | Build the versioned manifest and artifact identity model before moving classifier rules into a registry. SPEC-074. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.
