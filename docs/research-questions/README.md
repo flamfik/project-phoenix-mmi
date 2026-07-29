@@ -401,5 +401,45 @@
 | RQ-397 | How many M5 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M5-X1 through M5-X8 pass at graph v93. SPEC-110. |
 | RQ-398 | Which milestone may begin next? | CLOSED, M6 READY | Static navigation feasibility research is the authorized next scope. SPEC-110. |
 | RQ-399 | Does M5 closure authorize mutation or installation? | CLOSED, NO | Safe mutation and installable-artifact readiness remain false. SPEC-110. |
+| RQ-400 | Does M6 satisfy the M5 entry gate? | CLOSED, PASS | M5 is COMPLETE and authorizes static navigation feasibility research. SPEC-111. |
+| RQ-401 | What is the initial M6 capability state? | CLOSED, 17 CAPABILITIES | Two are implemented, three partial, eight missing and four blocked. SPEC-111. |
+| RQ-402 | How many formal M6 exit criteria exist? | CLOSED, EIGHT | Sessions 103-110 map to ordered M6-X1 through M6-X8. SPEC-111. |
+| RQ-403 | Does M6 authorize target media generation or vehicle access? | CLOSED, NO | Writer, integrity, repacking, installation and vehicle operations remain prohibited. SPEC-111. |
+| RQ-404 | Does the available local navigation ISO still match its register? | CLOSED, YES | Size 2,571,048,960 and registered SHA-256 were reverified locally without publication. SPEC-112. |
+| RQ-405 | How many public source reports form the M6 ledger? | CLOSED, THREE | Media, payload-family and firmware-evidence reports agree on the registered identity. SPEC-112. |
+| RQ-406 | Which registered structural counts are stable? | CLOSED, 7/7/3599/16 | Seven files, seven FLDB containers, 3,599 records and 16 partition IDs reproduce. SPEC-112. |
+| RQ-407 | Does identity consistency authenticate the marketed release? | OPEN, NO | The artifact remains locally registered with unverified provenance. SPEC-112. |
+| RQ-408 | What is the M6 knowledge-matrix scope? | CLOSED, 14 ROWS | Storage through safety boundaries are confidence graded. SPEC-113. |
+| RQ-409 | How many rows have confirmed structural support? | CLOSED, FIVE | Outer storage/container and bounded payload topology are supported. SPEC-113. |
+| RQ-410 | How many direct-replacement blockers remain open? | CLOSED, NINE | Semantics, runtime, writer, integrity, budgets and recovery remain incomplete. SPEC-113. |
+| RQ-411 | Is current knowledge sufficient for a proprietary writer? | CLOSED, NO | Inner format and integrity evidence are insufficient. SPEC-113. |
+| RQ-412 | What is the consumer-boundary graph scope? | CLOSED, 12 NODES/11 EDGES | Static media, payload and firmware boundaries are joined. SPEC-114. |
+| RQ-413 | Is there a fully confirmed medium-to-runtime path? | CLOSED, NO | Open semantic and ABI edges interrupt the chain. SPEC-114. |
+| RQ-414 | Is a direct FLDB consumer identified in firmware? | OPEN, NO | Inner consumer ownership remains unresolved. SPEC-114. |
+| RQ-415 | Is the boundary graph a runtime trace? | CLOSED, NO | It represents static confidence-graded evidence only. SPEC-114. |
+| RQ-416 | Under which license is OSM data accepted? | CLOSED, ODbL-1.0 | The source policy records the current OSM data license. SPEC-115. |
+| RQ-417 | Is OpenStreetMap attribution mandatory? | CLOSED, YES | Attribution and a copyright/license entry point are required. SPEC-115. |
+| RQ-418 | What provenance must a real snapshot carry? | CLOSED, URI AND SHA-256 | Source identity, license and attribution must accompany it. SPEC-115. |
+| RQ-419 | Does the policy automatically clear distribution? | CLOSED, NO | License and derivative-database review remain required. SPEC-115. |
+| RQ-420 | Is real OSM source data committed in M6? | CLOSED, NO | Only original synthetic fixtures exercise the adapter. SPEC-115. |
+| RQ-421 | What does the neutral model represent? | CLOSED, DIRECTED WEIGHTED GRAPH | Ordered WGS84-E7 nodes and validated edges form a target-independent model. SPEC-116. |
+| RQ-422 | Are invalid coordinates and unknown endpoints accepted? | CLOSED, NO | Validation fails closed. SPEC-116. |
+| RQ-423 | Does the neutral model serialize proprietary MMI maps? | CLOSED, NO | No target serializer or compatibility claim exists. SPEC-116. |
+| RQ-424 | Do public graph summaries expose IDs or coordinates? | CLOSED, NO | Only aggregate metrics, provenance and fingerprints are published. SPEC-116. |
+| RQ-425 | Which open input format is supported? | CLOSED, BOUNDED OSM XML 0.6 | Nodes and highway ways are mapped to the neutral graph. SPEC-117. |
+| RQ-426 | What are the parser bounds? | CLOSED, 1 MIB/10000 ELEMENTS | Both byte and element limits are enforced. SPEC-117. |
+| RQ-427 | Are DTD and entity declarations accepted? | CLOSED, NO | The adapter rejects both before XML parsing. SPEC-117. |
+| RQ-428 | Are relations and turn restrictions implemented? | OPEN, NO | They remain explicit adapter limitations. SPEC-117. |
+| RQ-429 | Can the adapter emit target navigation media? | CLOSED, NO | Proprietary target output is prohibited. SPEC-117. |
+| RQ-430 | What is the fixed routing fixture scope? | CLOSED, 5 NODES/7 EDGES | The fixture is original Project Phoenix data. SPEC-118. |
+| RQ-431 | How many routing checks pass? | CLOSED, FOUR OF FOUR | Forward, reverse alternative, disconnected and one-way checks pass. SPEC-118. |
+| RQ-432 | Is route output deterministic? | CLOSED, YES | Repeated host runs have identical fingerprints. SPEC-118. |
+| RQ-433 | Is the one-way direction preserved? | CLOSED, YES | The prohibited reverse edge is absent. SPEC-118. |
+| RQ-434 | Is this a production or MMI-compatible router? | OPEN, NO | Timing, turn semantics and target compatibility remain unestablished. SPEC-118. |
+| RQ-435 | Does complete M6 integration reproduce? | CLOSED, YES | All eight stages repeat with one fingerprint. SPEC-119. |
+| RQ-436 | What is the final dual-track verdict? | CLOSED, BLOCKED/PROTOTYPE FEASIBLE | Direct MMI replacement is blocked; the independent host path is feasible as a prototype. SPEC-119. |
+| RQ-437 | How many M6 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M6-X1 through M6-X8 pass at graph v102. SPEC-119. |
+| RQ-438 | Which milestone may begin next? | CLOSED, M7 READY | Only controlled read-only bench planning and signed risk review are authorized. SPEC-119. |
+| RQ-439 | Does M6 closure authorize mutation, installation or vehicle communication? | CLOSED, NO | All three gates remain false. SPEC-119. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

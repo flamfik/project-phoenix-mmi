@@ -458,6 +458,69 @@ from .ui_integration import (
     UI_INTEGRATION_SCHEMA,
     run_ui_prototype_integration,
 )
+from .navigation_feasibility_contract import (
+    M6_CONSTRAINT_SCHEMA,
+    build_navigation_feasibility_contract,
+    validate_navigation_feasibility_contract,
+)
+from .navigation_feasibility_audit import (
+    M6_CAPABILITIES,
+    M6_EXIT_CRITERIA,
+    M6_PROGRESS_SCHEMA,
+    NavigationCapability,
+    advance_m6_progress,
+    build_m6_baseline,
+)
+from .navigation_evidence import (
+    NAVIGATION_EVIDENCE_SCHEMA,
+    build_navigation_evidence_ledger,
+    validate_navigation_evidence_ledger,
+)
+from .navigation_knowledge import (
+    NAVIGATION_KNOWLEDGE_SCHEMA,
+    build_navigation_knowledge_matrix,
+    validate_navigation_knowledge_matrix,
+)
+from .navigation_boundaries import (
+    NAVIGATION_BOUNDARY_SCHEMA,
+    build_navigation_boundary_graph,
+    validate_navigation_boundary_graph,
+)
+from .navigation_provenance import (
+    NAVIGATION_PROVENANCE_SCHEMA,
+    NavigationSource,
+    build_navigation_provenance_policy,
+    build_public_source_record,
+    validate_navigation_provenance_policy,
+    validate_navigation_source,
+)
+from .navigation_model import (
+    NEUTRAL_NAVIGATION_SCHEMA,
+    NavigationEdge,
+    NavigationNode,
+    NeutralNavigationGraph,
+    build_neutral_navigation_graph,
+    build_public_navigation_graph_summary,
+    navigation_graph_fingerprint,
+    validate_neutral_navigation_graph,
+)
+from .osm_adapter import (
+    MAX_OSM_ELEMENTS,
+    MAX_OSM_XML_BYTES,
+    OSM_ADAPTER_SCHEMA,
+    adapt_osm_xml,
+    synthetic_osm_fixture,
+)
+from .navigation_routing import (
+    NAVIGATION_ROUTING_SCHEMA,
+    RouteResult,
+    build_synthetic_routing_lab,
+    shortest_route,
+)
+from .navigation_integration import (
+    NAVIGATION_INTEGRATION_SCHEMA,
+    run_navigation_feasibility_integration,
+)
 from .runtime_slot import (
     analyze_runtime_slot_lineage,
     build_public_runtime_slot_report,
@@ -908,10 +971,53 @@ __all__ = [
     "relative_luminance",
     "UI_INTEGRATION_SCHEMA",
     "run_ui_prototype_integration",
+    "M6_CONSTRAINT_SCHEMA",
+    "build_navigation_feasibility_contract",
+    "validate_navigation_feasibility_contract",
+    "M6_CAPABILITIES",
+    "M6_EXIT_CRITERIA",
+    "M6_PROGRESS_SCHEMA",
+    "NavigationCapability",
+    "advance_m6_progress",
+    "build_m6_baseline",
+    "NAVIGATION_EVIDENCE_SCHEMA",
+    "build_navigation_evidence_ledger",
+    "validate_navigation_evidence_ledger",
+    "NAVIGATION_KNOWLEDGE_SCHEMA",
+    "build_navigation_knowledge_matrix",
+    "validate_navigation_knowledge_matrix",
+    "NAVIGATION_BOUNDARY_SCHEMA",
+    "build_navigation_boundary_graph",
+    "validate_navigation_boundary_graph",
+    "NAVIGATION_PROVENANCE_SCHEMA",
+    "NavigationSource",
+    "build_navigation_provenance_policy",
+    "build_public_source_record",
+    "validate_navigation_provenance_policy",
+    "validate_navigation_source",
+    "NEUTRAL_NAVIGATION_SCHEMA",
+    "NavigationEdge",
+    "NavigationNode",
+    "NeutralNavigationGraph",
+    "build_neutral_navigation_graph",
+    "build_public_navigation_graph_summary",
+    "navigation_graph_fingerprint",
+    "validate_neutral_navigation_graph",
+    "MAX_OSM_ELEMENTS",
+    "MAX_OSM_XML_BYTES",
+    "OSM_ADAPTER_SCHEMA",
+    "adapt_osm_xml",
+    "synthetic_osm_fixture",
+    "NAVIGATION_ROUTING_SCHEMA",
+    "RouteResult",
+    "build_synthetic_routing_lab",
+    "shortest_route",
+    "NAVIGATION_INTEGRATION_SCHEMA",
+    "run_navigation_feasibility_integration",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
     "DEFAULT_FORMAT_REGISTRY",
     "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"

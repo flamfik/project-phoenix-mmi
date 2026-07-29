@@ -155,13 +155,31 @@ Modern interface prototype constrained by original display, controls, memory and
   complete;
 - Session 101: deterministic integration, M5 closure and graph v93 - complete.
 
-## M6 - Navigation Feasibility — READY
+## M6 - Navigation Feasibility — COMPLETE
 
 Map format study, routing engine boundaries, legal data sources, OSM conversion feasibility.
 
 - Session 102: freeze the M6 capability baseline, legal/data boundaries and
-  ordered static feasibility backlog - next.
+  ordered static feasibility backlog, graph v94 - complete;
+- Session 103: normalize registered navigation evidence and graph v95 -
+  complete;
+- Session 104: create the confidence-graded knowledge matrix and graph v96 -
+  complete;
+- Session 105: map consumer boundaries without inventing a runtime path,
+  graph v97 - complete;
+- Session 106: freeze ODbL-aware source provenance and graph v98 - complete;
+- Session 107: define the target-neutral navigation graph and graph v99 -
+  complete;
+- Session 108: implement the bounded OSM XML adapter on synthetic data,
+  graph v100 - complete;
+- Session 109: validate deterministic synthetic routing, graph v101 -
+  complete;
+- Session 110: reproduce complete integration, close 8/8 M6 criteria and
+  publish graph v102 - complete.
 
-## M7 - Controlled Hardware Validation
+## M7 - Controlled Hardware Validation — READY
 
 Bench setup, recovery path, read-only observation, signed risk review.
+
+- Session 111: freeze the bench-safety boundary, required recovery evidence
+  and read-only observation plan - next.

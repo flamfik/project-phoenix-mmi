@@ -108,6 +108,26 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `ui_playback` - reproducible action traces and host-preview fingerprints.
 - `ui_quality` - host-only contrast, focus, geometry and complexity gates.
 - `ui_integration` - deterministic synthetic M5 end-to-end closure gate.
+- `navigation_feasibility_contract` - frozen M6 safety, provenance and
+  dual-track decision boundary.
+- `navigation_feasibility_audit` - M6 capability registry, ordered Sessions
+  103-110 backlog and explicit progress transitions.
+- `navigation_evidence` - normalized ledger over existing publication-safe
+  media, payload and firmware evidence.
+- `navigation_knowledge` - confidence-graded structure, semantics, writer,
+  integrity and runtime blocker matrix.
+- `navigation_boundaries` - static media-to-runtime graph that preserves open
+  consumer and ABI edges.
+- `navigation_provenance` - ODbL attribution, source snapshot and
+  license-review gates.
+- `navigation_model` - deterministic target-independent node/edge graph with
+  no proprietary serialization.
+- `osm_adapter` - bounded OSM XML 0.6 adapter with DTD/entity, size and
+  reference validation.
+- `navigation_routing` - deterministic distance-only routing over original
+  synthetic fixtures.
+- `navigation_integration` - dual-track M6 verdict and reproducible closure
+  gate.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 

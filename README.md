@@ -6,7 +6,8 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: COMPLETE; M3 —
 Resource Laboratory: COMPLETE; M4 — Runtime Research: COMPLETE; M5 — Phoenix
-UI Prototype: COMPLETE; M6 — Navigation Feasibility: READY**
+UI Prototype: COMPLETE; M6 — Navigation Feasibility: COMPLETE; M7 —
+Controlled Hardware Validation: READY**
 
 Sessions 084-092 establish static task/service and IPC evidence, resource
 consumer and device-boundary searches, anonymous pointer topology, an isolated
@@ -30,6 +31,14 @@ quality audit and end-to-end integration. M5 closes 8/8 at graph v93 and makes
 M6 static Navigation Feasibility READY. Firmware compatibility, hardware
 suitability, mutation and installable artifacts remain unestablished or
 blocked.
+
+Sessions 102-110 normalize the registered navigation evidence, retain nine
+explicit direct-replacement blockers, establish an ODbL-aware provenance gate,
+define a target-neutral graph and exercise a bounded OSM XML adapter plus
+deterministic routing on original synthetic data. M6 closes 8/8 at graph v102.
+Direct MMI navigation-media replacement remains BLOCKED; an independent
+host-side OSM pipeline is PROTOTYPE_FEASIBLE. M7 is READY only for controlled
+read-only bench planning and signed risk review.
 
 ## First milestone
 
@@ -156,12 +165,22 @@ ui/            Future interface and resource research
 - [Session 099 report](docs/sessions/SESSION-099-ui-playback-snapshots.md)
 - [Session 100 report](docs/sessions/SESSION-100-ui-quality-audit.md)
 - [Session 101 report](docs/sessions/SESSION-101-milestone-m5-closure.md)
+- [Session 102 report](docs/sessions/SESSION-102-m6-navigation-feasibility-baseline.md)
+- [Session 103 report](docs/sessions/SESSION-103-navigation-evidence-ledger.md)
+- [Session 104 report](docs/sessions/SESSION-104-navigation-knowledge-matrix.md)
+- [Session 105 report](docs/sessions/SESSION-105-navigation-boundary-graph.md)
+- [Session 106 report](docs/sessions/SESSION-106-navigation-provenance-policy.md)
+- [Session 107 report](docs/sessions/SESSION-107-neutral-navigation-model.md)
+- [Session 108 report](docs/sessions/SESSION-108-bounded-osm-adapter.md)
+- [Session 109 report](docs/sessions/SESSION-109-synthetic-routing-lab.md)
+- [Session 110 report](docs/sessions/SESSION-110-milestone-m6-closure.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
 - [Milestone M3 closure](docs/milestones/M3-resource-laboratory.md)
 - [Milestone M4 closure](docs/milestones/M4-runtime-research.md)
 - [Milestone M5 closure](docs/milestones/M5-phoenix-ui-prototype.md)
-- [Milestone M6 entry](docs/milestones/M6-navigation-feasibility.md)
+- [Milestone M6 closure](docs/milestones/M6-navigation-feasibility.md)
+- [Milestone M7 entry](docs/milestones/M7-controlled-hardware-validation.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)

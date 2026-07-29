@@ -1,0 +1,586 @@
+{
+  "analysis_mode": "explicit-navigation-capability-transition-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M6-CAP-001",
+        "evidence": "Session 011",
+        "limitation": "image provenance and inner payload semantics remain open",
+        "name": "registered ISO/Joliet and FLDB structural analyzer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.map_media:analyze_navigation_media",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "media"
+      },
+      {
+        "capability_id": "M6-CAP-002",
+        "evidence": "Session 012",
+        "limitation": "family structure does not decode routing or coordinates",
+        "name": "bounded navigation payload family analyzer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.map_payload:analyze_navigation_payloads",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "payload"
+      },
+      {
+        "capability_id": "M6-CAP-003",
+        "evidence": "Sessions 009-042",
+        "limitation": "consumer ABI and dynamic dataflow remain unresolved",
+        "name": "static navigation and optical boundary evidence",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_dataflow:analyze_navigation_dataflow",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "firmware"
+      },
+      {
+        "capability_id": "M6-CAP-004",
+        "evidence": "Session 060",
+        "limitation": "graph records bounded static evidence only",
+        "name": "publication-safe firmware evidence graph",
+        "probe_kind": "repository-file",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "research/navigation-media/session060/firmware-evidence-map-v2.json",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "evidence"
+      },
+      {
+        "capability_id": "M6-CAP-005",
+        "evidence": "M6 safety boundary",
+        "limitation": "inner grammar and write model are not established",
+        "name": "proprietary navigation writer",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "writer"
+      },
+      {
+        "capability_id": "M6-CAP-006",
+        "evidence": "M6 safety boundary",
+        "limitation": "opaque fields and integrity algorithms remain unresolved",
+        "name": "proprietary navigation integrity generator",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "integrity"
+      },
+      {
+        "capability_id": "M6-CAP-007",
+        "evidence": "M6 safety boundary",
+        "limitation": "runtime ownership, ABI and budgets remain unresolved",
+        "name": "target navigation consumer integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "runtime"
+      },
+      {
+        "capability_id": "M6-CAP-008",
+        "evidence": "M6 safety boundary",
+        "limitation": "M6 produces no target-loadable artifacts",
+        "name": "installable or vehicle-loadable navigation media",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "delivery"
+      },
+      {
+        "capability_id": "M6-CAP-009",
+        "evidence": "Session 102",
+        "limitation": "contract authorizes static host research only",
+        "name": "frozen navigation feasibility and provenance contract",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_feasibility_contract:build_navigation_feasibility_contract",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "constraints"
+      },
+      {
+        "capability_id": "M6-CAP-010",
+        "evidence": "Session 103 and SPEC-112",
+        "limitation": "ledger contains public aggregates, not map payloads",
+        "name": "registered navigation evidence ledger",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_evidence:build_navigation_evidence_ledger",
+        "status": "IMPLEMENTED",
+        "target_session": "103",
+        "workstream": "evidence"
+      },
+      {
+        "capability_id": "M6-CAP-011",
+        "evidence": "Session 104 and SPEC-113",
+        "limitation": "open semantics remain explicit blockers",
+        "name": "confidence-graded map knowledge matrix",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_knowledge:build_navigation_knowledge_matrix",
+        "status": "IMPLEMENTED",
+        "target_session": "104",
+        "workstream": "format"
+      },
+      {
+        "capability_id": "M6-CAP-012",
+        "evidence": "Session 105 and SPEC-114",
+        "limitation": "graph is static evidence, not a runtime trace",
+        "name": "navigation consumer boundary graph",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_boundaries:build_navigation_boundary_graph",
+        "status": "IMPLEMENTED",
+        "target_session": "105",
+        "workstream": "runtime"
+      },
+      {
+        "capability_id": "M6-CAP-013",
+        "evidence": "Session 106 and SPEC-115",
+        "limitation": "policy is not legal advice or automatic clearance",
+        "name": "OSM source and attribution policy",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_provenance:build_navigation_provenance_policy",
+        "status": "IMPLEMENTED",
+        "target_session": "106",
+        "workstream": "provenance"
+      },
+      {
+        "capability_id": "M6-CAP-014",
+        "evidence": "Session 107 and SPEC-116",
+        "limitation": "neutral graph has no proprietary target serialization",
+        "name": "neutral navigation graph model",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_model:build_neutral_navigation_graph",
+        "status": "IMPLEMENTED",
+        "target_session": "107",
+        "workstream": "model"
+      },
+      {
+        "capability_id": "M6-CAP-015",
+        "evidence": "Session 108 and SPEC-117",
+        "limitation": "adapter excludes relations and target output",
+        "name": "bounded authorized OSM XML adapter",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.osm_adapter:adapt_osm_xml",
+        "status": "IMPLEMENTED",
+        "target_session": "108",
+        "workstream": "adapter"
+      },
+      {
+        "capability_id": "M6-CAP-016",
+        "evidence": "Session 109 and SPEC-118",
+        "limitation": "synthetic host route proof is not target compatibility",
+        "name": "deterministic synthetic routing feasibility lab",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_routing:build_synthetic_routing_lab",
+        "status": "IMPLEMENTED",
+        "target_session": "109",
+        "workstream": "routing"
+      },
+      {
+        "capability_id": "M6-CAP-017",
+        "evidence": "Session 110 and SPEC-119",
+        "limitation": "M7 remains controlled read-only bench planning",
+        "name": "deterministic M6 decision and integration gate",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_integration:run_navigation_feasibility_integration",
+        "status": "IMPLEMENTED",
+        "target_session": "110",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 17,
+    "probe_integrity": true,
+    "registry_version": "m6-session110-v1",
+    "status_counts": {
+      "BLOCKED": 4,
+      "IMPLEMENTED": 10,
+      "PARTIAL": 3
+    }
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "direct_mmi_media_replacement": "BLOCKED",
+    "independent_osm_host_pipeline": "PROTOTYPE_FEASIBLE",
+    "installable_artifact_ready": false,
+    "m6_entry": "PASS",
+    "m6_exit": "PASS",
+    "m6_status": "COMPLETE",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M6-X1",
+      "name": "registered navigation evidence ledger",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-010"
+      ],
+      "target_session": "103"
+    },
+    {
+      "criterion_id": "M6-X2",
+      "name": "confidence-graded map knowledge matrix",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-011"
+      ],
+      "target_session": "104"
+    },
+    {
+      "criterion_id": "M6-X3",
+      "name": "navigation consumer boundary graph",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-012"
+      ],
+      "target_session": "105"
+    },
+    {
+      "criterion_id": "M6-X4",
+      "name": "OSM source and attribution policy",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-013"
+      ],
+      "target_session": "106"
+    },
+    {
+      "criterion_id": "M6-X5",
+      "name": "neutral navigation graph model",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-014"
+      ],
+      "target_session": "107"
+    },
+    {
+      "criterion_id": "M6-X6",
+      "name": "bounded authorized OSM XML adapter",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-015"
+      ],
+      "target_session": "108"
+    },
+    {
+      "criterion_id": "M6-X7",
+      "name": "deterministic synthetic routing lab",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-016"
+      ],
+      "target_session": "109"
+    },
+    {
+      "criterion_id": "M6-X8",
+      "name": "deterministic M6 integration and verdict",
+      "passed": true,
+      "required_capabilities": [
+        "M6-CAP-017"
+      ],
+      "target_session": "110"
+    }
+  ],
+  "exit_criteria_passed": 8,
+  "exit_criteria_total": 8,
+  "integration": {
+    "classification": {
+      "installable_artifact_ready": false,
+      "m6_gate": "PASS",
+      "safe_mutation_ready": false,
+      "vehicle_validation_performed": false
+    },
+    "decision": {
+      "direct_mmi_media_replacement": {
+        "installable_output_authorized": false,
+        "reason": "FORMAT_INTEGRITY_RUNTIME_AND_RECOVERY_GAPS",
+        "status": "BLOCKED"
+      },
+      "independent_osm_host_pipeline": {
+        "scope": "BOUNDED_HOST_ONLY",
+        "status": "PROTOTYPE_FEASIBLE",
+        "target_compatibility": "NOT_ESTABLISHED"
+      },
+      "sidecar_or_replacement_hardware": {
+        "reason": "OUTSIDE_M6",
+        "status": "NOT_EVALUATED"
+      }
+    },
+    "integration_fingerprint": "1eec20399ccfedebc34eedd20d8798d5d4739a9154d3cdbb2f4dfe27a5caefca",
+    "integration_version": "m6-session110-v1",
+    "passed": true,
+    "publication_safety": {
+      "firmware_bytes_included": false,
+      "installable_artifacts_included": false,
+      "map_payload_bytes_included": false,
+      "navigation_media_content_included": false,
+      "osm_source_data_included": false,
+      "synthetic_fixture_only": true,
+      "vehicle_data_included": false
+    },
+    "repeat_run_equal": true,
+    "schema": "phoenix-mmi.navigation-integration/v1",
+    "stages": [
+      {
+        "name": "safety and decision contract",
+        "passed": true,
+        "stage_id": "M6-I1"
+      },
+      {
+        "name": "registered evidence ledger",
+        "passed": true,
+        "stage_id": "M6-I2"
+      },
+      {
+        "name": "knowledge and blocker matrix",
+        "passed": true,
+        "stage_id": "M6-I3"
+      },
+      {
+        "name": "media-to-runtime boundary graph",
+        "passed": true,
+        "stage_id": "M6-I4"
+      },
+      {
+        "name": "open-data provenance policy",
+        "passed": true,
+        "stage_id": "M6-I5"
+      },
+      {
+        "name": "neutral navigation graph",
+        "passed": true,
+        "stage_id": "M6-I6"
+      },
+      {
+        "name": "bounded OSM XML adapter",
+        "passed": true,
+        "stage_id": "M6-I7"
+      },
+      {
+        "name": "deterministic synthetic route proof",
+        "passed": true,
+        "stage_id": "M6-I8"
+      }
+    ],
+    "stages_passed": 8,
+    "stages_total": 8,
+    "summary": {
+      "boundary_node_count": 12,
+      "direct_replacement_blocker_count": 9,
+      "internal_record_count": 3599,
+      "knowledge_row_count": 14,
+      "partition_count": 16,
+      "registered_media_size_bytes": 2571048960,
+      "synthetic_route_checks": 4,
+      "validated_fldb_container_count": 7
+    }
+  },
+  "milestone_transition": {
+    "direct_mmi_media_replacement": "BLOCKED",
+    "independent_osm_host_pipeline": "PROTOTYPE_FEASIBLE",
+    "installable_artifact_ready": false,
+    "m6": "COMPLETE",
+    "m7": "READY",
+    "m7_authorized_scope": "controlled read-only bench planning and signed risk review",
+    "safe_mutation_ready": false
+  },
+  "navigation_feasibility_contract": {
+    "authorized_operations": {
+      "build_neutral_host_model": true,
+      "communicate_with_vehicle": false,
+      "execute_firmware": false,
+      "extract_or_publish_map_payloads": false,
+      "generate_installable_media": false,
+      "generate_proprietary_map_payloads": false,
+      "parse_bounded_authorized_osm_xml": true,
+      "read_registered_public_reports": true,
+      "repack_navigation_media": false,
+      "route_original_or_licensed_host_data": true,
+      "synthesize_unknown_integrity_fields": false,
+      "verify_registered_artifact_identity_locally": true
+    },
+    "classification": {
+      "direct_target_generation_authorized": false,
+      "installable_artifact_ready": false,
+      "m6_scope_frozen": true,
+      "offline_host_feasibility_authorized": true,
+      "safe_mutation_ready": false
+    },
+    "contract_version": "m6-session102-v1",
+    "decision_tracks": {
+      "direct_mmi_media_replacement": {
+        "initial_status": "BLOCKED",
+        "required_evidence": [
+          "INNER_ROUTING_SCHEMA",
+          "COORDINATE_ENCODING",
+          "INDEX_AND_PARTITION_SEMANTICS",
+          "WRITE_MODEL",
+          "INTEGRITY_MODEL",
+          "FIRMWARE_CONSUMER_ABI",
+          "RECOVERY_VALIDATION"
+        ]
+      },
+      "independent_osm_host_pipeline": {
+        "initial_status": "OPEN",
+        "required_evidence": [
+          "LICENSE_AND_ATTRIBUTION_POLICY",
+          "NEUTRAL_GRAPH_MODEL",
+          "BOUNDED_OSM_ADAPTER",
+          "DETERMINISTIC_ROUTE_PROOF"
+        ]
+      }
+    },
+    "osm_policy": {
+      "attribution_guideline_url": "https://osmfoundation.org/wiki/Licence/Attribution_Guidelines",
+      "attribution_required": true,
+      "attribution_text": "OpenStreetMap contributors",
+      "copyright_url": "https://www.openstreetmap.org/copyright",
+      "data_license": "ODbL-1.0",
+      "derivative_database_review_required": true,
+      "legal_advice_provided": false,
+      "source_hash_required": true,
+      "source_snapshot_required": true
+    },
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "firmware_execution_performed": false,
+      "installable_artifacts_included": false,
+      "map_payload_bytes_included": false,
+      "navigation_media_content_included": false,
+      "offline_only": true,
+      "raw_proprietary_names_included": false,
+      "vehicle_communication_performed": false,
+      "vehicle_identifiers_included": false
+    },
+    "research_inputs": {
+      "allowed": [
+        "REGISTERED_PUBLIC_AGGREGATE_EVIDENCE",
+        "INDEPENDENTLY_LICENSED_OPEN_DATA",
+        "PROJECT_PHOENIX_SYNTHETIC_FIXTURES"
+      ],
+      "proprietary_payload_reuse_allowed": false,
+      "registered_media_content_publication_allowed": false,
+      "unverified_license_mixing_allowed": false
+    },
+    "schema": "phoenix-mmi.navigation-feasibility-contract/v1",
+    "scope": "STATIC_NAVIGATION_FEASIBILITY_RESEARCH",
+    "unresolved_target_boundaries": [
+      "INNER_ROUTING_SCHEMA",
+      "COORDINATE_ENCODING",
+      "INDEX_AND_PARTITION_SEMANTICS",
+      "PROPRIETARY_WRITE_MODEL",
+      "PROPRIETARY_INTEGRITY_MODEL",
+      "FIRMWARE_CONSUMER_ABI",
+      "TARGET_MEMORY_AND_TIMING_BUDGET",
+      "RECOVERY_PATH"
+    ]
+  },
+  "operational_graph_delta": {
+    "base": "v101",
+    "node": {
+      "evidence_session": "110",
+      "id": "milestone-m6-closure",
+      "status": "CONFIRMED"
+    }
+  },
+  "operational_graph_version": "v102",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M6-X1",
+      "objective": "registered navigation evidence ledger",
+      "session": "103"
+    },
+    {
+      "criterion_id": "M6-X2",
+      "objective": "confidence-graded map knowledge matrix",
+      "session": "104"
+    },
+    {
+      "criterion_id": "M6-X3",
+      "objective": "navigation consumer boundary graph",
+      "session": "105"
+    },
+    {
+      "criterion_id": "M6-X4",
+      "objective": "OSM source and attribution policy",
+      "session": "106"
+    },
+    {
+      "criterion_id": "M6-X5",
+      "objective": "neutral navigation graph model",
+      "session": "107"
+    },
+    {
+      "criterion_id": "M6-X6",
+      "objective": "bounded authorized OSM XML adapter",
+      "session": "108"
+    },
+    {
+      "criterion_id": "M6-X7",
+      "objective": "deterministic synthetic routing lab",
+      "session": "109"
+    },
+    {
+      "criterion_id": "M6-X8",
+      "objective": "deterministic M6 integration and verdict",
+      "session": "110"
+    }
+  ],
+  "previous_state": {
+    "operational_graph_version": "v101",
+    "session": "109"
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "firmware_execution_performed": false,
+    "installable_artifacts_included": false,
+    "map_payload_bytes_included": false,
+    "navigation_media_content_included": false,
+    "offline_only": true,
+    "osm_source_data_included": false,
+    "raw_proprietary_names_included": false,
+    "vehicle_communication_performed": false,
+    "vehicle_identifiers_included": false
+  },
+  "schema": "phoenix-mmi.m6-navigation-feasibility-progress/v1",
+  "session": "110"
+}
