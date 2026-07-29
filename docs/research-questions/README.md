@@ -324,5 +324,41 @@
 | RQ-320 | How many M3 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M3-X1 through M3-X8 pass with repository probes intact. SPEC-091. |
 | RQ-321 | Which milestone may begin next? | CLOSED, M4 READY | Static-first Runtime Research may begin with a new capability baseline. SPEC-091. |
 | RQ-322 | Are pixel layout, renderer, LOD semantics and write integrity solved by M3 closure? | CLOSED, NO | These limitations remain explicit and mutation stays unauthorized. SPEC-091. |
+| RQ-323 | Does M4 satisfy its M3 entry gate? | CLOSED, PASS | M3 is COMPLETE, M4 is READY and mutation remains disabled. SPEC-092. |
+| RQ-324 | What is the initial M4 capability state? | CLOSED, CONFIRMED | Seventeen capabilities begin as 4 implemented, 3 partial, 8 missing and 2 blocked. SPEC-092. |
+| RQ-325 | How many formal M4 exit criteria exist? | CLOSED, EIGHT | Sessions 085-092 map to eight ordered criteria. SPEC-092. |
+| RQ-326 | Does M4 permit firmware execution or vehicle observation? | CLOSED, NO | Both capabilities remain blocked by the project safety boundary. SPEC-092. |
+| RQ-327 | How many runtime-label records are observed? | CLOSED, CONFIRMED BOUNDED | CD1 has 623 and CD3 has 614 fixed-classified records. SPEC-093. |
+| RQ-328 | How many exact unique runtime labels are shared? | CLOSED, 354 | Private cross-release comparison establishes the shared cardinality. SPEC-093. |
+| RQ-329 | Which fixed task API probe is present bilaterally? | CLOSED, TASKSPAWN ONLY | One identifier-bounded occurrence exists in each principal image. SPEC-093. |
+| RQ-330 | Does the lexical inventory establish the scheduled task set? | CLOSED, NO | Task entries, scheduling and runtime instances remain unknown. SPEC-093. |
+| RQ-331 | Are fixed msgQ, semaphore, event or watchdog API probes present? | CLOSED, NOT FOUND | Neither image contains a member of the fixed probe set. SPEC-094. |
+| RQ-332 | Is there aggregate IPC-related lexical evidence? | CLOSED, CONFIRMED BOUNDED | CD1 has 317 records, CD3 has 318 and 146 exact unique records are shared. SPEC-094. |
+| RQ-333 | Are IPC payload schemas or producer-consumer pairs known? | OPEN, NO | No validated primitive or direct dataflow closes those models. SPEC-094. |
+| RQ-334 | Does a negative fixed probe prove that IPC is absent? | CLOSED, NO | Stripped, imported, indirect or proprietary mechanisms remain possible. SPEC-094. |
+| RQ-335 | Are exact resource-address words present? | CLOSED, ONE-SIDED | One CD1 resource has ten data-word occurrences; CD3 has none. SPEC-095. |
+| RQ-336 | Do those resource words have PC-relative code referrers? | CLOSED, NO | The exact SH referrer gate is negative in both releases. SPEC-095. |
+| RQ-337 | Are validated font containers directly referenced under this model? | CLOSED, NO | No exact font-address word or PC-relative referrer is found. SPEC-095. |
+| RQ-338 | Is the renderer or resource lifecycle identified? | OPEN, NO | The bounded consumer search remains negative. SPEC-095. |
+| RQ-339 | Which device-family boundaries are bilaterally represented? | CLOSED, SEVEN | Audio/DSP, display/input, filesystem/flash, navigation/GPS, network, optical and vehicle-network families have shared lexical support. SPEC-096. |
+| RQ-340 | Are all seven fixed families present on both releases? | CLOSED, YES LEXICALLY | Cross-release private-set intersections are non-empty for every family. SPEC-096. |
+| RQ-341 | Are driver entry points or hardware register maps known? | OPEN, NO | Lexical boundaries do not establish implementation details. SPEC-096. |
+| RQ-342 | Are MOST/CAN message or authorization semantics decoded? | OPEN, NO | Vehicle protocol semantics remain outside the evidence. SPEC-096. |
+| RQ-343 | How many aligned runtime-range words occur? | CLOSED, STRUCTURAL COUNT | CD1 has 279,308 and CD3 has 257,155 under the fixed model. SPEC-097. |
+| RQ-344 | How many anonymous source-target band edges occur? | CLOSED, STRUCTURAL COUNT | CD1 has 4,797 and CD3 has 4,477. SPEC-097. |
+| RQ-345 | How many anonymous band edges are shared? | CLOSED, 1,505 | The fixed 64 KiB topology comparison yields the intersection. SPEC-097. |
+| RQ-346 | Do pointer-shaped words prove objects or vtables? | CLOSED, NO | Object identity, allocation lifetime and dispatch semantics remain open. SPEC-097. |
+| RQ-347 | Is the host contract deterministic? | CLOSED, CONFIRMED | Metadata events process in a fixed sequence with a stable state fingerprint. SPEC-098. |
+| RQ-348 | What is the synthetic contract scope? | CLOSED, THREE SERVICES/SIX EVENT TYPES | Only abstract UI-facing metadata contracts are present. SPEC-098. |
+| RQ-349 | Does the harness load firmware or access a vehicle? | CLOSED, NO | Firmware, network, filesystem, CAN/MOST and vehicle I/O are absent. SPEC-098. |
+| RQ-350 | Is the host contract an MMI emulator? | CLOSED, NO | It is an isolated contract-testing primitive only. SPEC-098. |
+| RQ-351 | What is the M4 runtime graph scope? | CLOSED, 20 NODES/21 EDGES | It joins static platform, services, resources, devices, topology and host-contract evidence. SPEC-099. |
+| RQ-352 | Does the graph establish dynamic runtime behavior? | CLOSED, NO | No firmware execution or runtime observation occurred. SPEC-099. |
+| RQ-353 | Which graph operations remain blocked? | CLOSED, EXPLICIT | Firmware execution and vehicle communication remain blocked nodes. SPEC-099. |
+| RQ-354 | What does M4 contribute to M5? | CLOSED, SAFE HOST BOUNDARIES | M5 may build an offline UI prototype against synthetic contracts, not firmware. SPEC-099. |
+| RQ-355 | Does the complete M4 chain reproduce deterministically? | CLOSED, CONFIRMED | Two synthetic non-firmware runs produce identical reports and fingerprints. SPEC-100. |
+| RQ-356 | How many M4 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M4-X1 through M4-X8 pass with repository probes intact. SPEC-100. |
+| RQ-357 | Which milestone may begin next? | CLOSED, M5 READY | The offline Phoenix UI Prototype may begin with a new capability baseline. SPEC-100. |
+| RQ-358 | Does M4 closure authorize firmware modification or vehicle integration? | CLOSED, NO | Mutation, repacking, installation, execution and vehicle I/O remain unauthorized. SPEC-100. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

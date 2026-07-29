@@ -78,6 +78,19 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `resource_text` - aggregate text discovery, structural SFNT/PCF validation,
   locale topology and the confidence-graded resource graph.
 - `resource_lab_integration` - deterministic synthetic non-firmware M3 gate.
+- `runtime_lab_audit` - M4 capability registry, entry/exit gates and explicit
+  progress transitions.
+- `runtime_inventory` - identifier-bounded task/API probes and private-label
+  aggregate inventory.
+- `runtime_ipc` - bounded fixed IPC probe results with conservative negative
+  classification.
+- `runtime_resources` - exact resource/font address words and SH referrer
+  gates without consumer promotion.
+- `runtime_devices` - publication-safe cross-release device-family topology.
+- `runtime_objects` - anonymous runtime-range pointer topology and the
+  confidence-graded M4 evidence graph.
+- `runtime_harness` - deterministic metadata-only host contract with no I/O.
+- `runtime_lab_integration` - synthetic non-firmware M4 end-to-end gate.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -661,6 +674,24 @@ extracts the two principal images only into an operating-system temporary
 directory, deletes them on exit and writes decoded identities/previews only
 to the caller-selected private output. Committed reports contain aggregates
 and milestone gates only.
+
+## Reproduce Sessions 084-092 and close M4
+
+```powershell
+python tools/session084_092/close_m4.py `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd1-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd2-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd3-3.iso `
+  --repository . `
+  --public-output research/milestones/m4 `
+  --private-output E:\project-phoenix-mmi\work\milestones\m4
+```
+
+The runner verifies all registered media, extracts principal images into an
+operating-system temporary directory and deletes them on exit. Raw runtime
+labels and exact reference profiles are written only to the ignored private
+output. The host contract executes synthetic metadata only and provides no
+firmware, network, CAN/MOST or vehicle interface.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

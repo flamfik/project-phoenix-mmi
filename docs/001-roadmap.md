@@ -118,16 +118,29 @@ Graphics, fonts, strings, language packs, offline UI preview.
 - Session 083: deterministic integration, M3 closure and graph v75 -
   complete.
 
-## M4 - Runtime Research — READY
+## M4 - Runtime Research — COMPLETE
 
 Runtime model, IPC, device services, hardware interfaces, safe emulation strategy.
 
-- Session 084: freeze the M4 capability baseline, research questions, exit
-  criteria and ordered static-first runtime backlog - next.
+- Session 084: M4 capability baseline and eight exit criteria, graph v76 -
+  complete;
+- Session 085: static task/service inventory, graph v77 - complete;
+- Session 086: bounded IPC evidence contract, graph v78 - complete;
+- Session 087: static resource consumer matrix, graph v79 - complete;
+- Session 088: device boundary catalog, graph v80 - complete;
+- Session 089: anonymous runtime object topology, graph v81 - complete;
+- Session 090: isolated host runtime contract, graph v82 - complete;
+- Session 091: confidence-graded runtime evidence graph, graph v83 -
+  complete;
+- Session 092: deterministic integration, M4 closure and graph v84 -
+  complete.
 
-## M5 - Phoenix UI Prototype
+## M5 - Phoenix UI Prototype — READY
 
 Modern interface prototype constrained by original display, controls, memory and CPU.
+
+- Session 093: freeze the M5 capability baseline, UX constraints and ordered
+  offline prototype backlog - next.
 
 ## M6 - Navigation Feasibility
 

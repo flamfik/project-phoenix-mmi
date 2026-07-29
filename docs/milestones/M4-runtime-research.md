@@ -1,8 +1,8 @@
 # Milestone M4 - Runtime Research
 
-Status: **READY**
+Status: **COMPLETE**
 
-Entry evidence: Session 083, operational graph v75
+Closure evidence: Session 092, operational graph v84
 
 ## Mission
 
@@ -19,12 +19,19 @@ hypotheses without executing untrusted firmware.
 - the M3 synthetic integration chain is deterministic;
 - firmware mutation and installable-artifact gates remain false.
 
-## First route
+## Completed route
 
-Session 084 will freeze the M4 capability registry, research questions, exit
-criteria and ordered runtime backlog. Likely workstreams are task/service
-inventory, message/IPC contracts, resource-consumer ownership, device-boundary
-models and synthetic host-side interfaces.
+- Session 084: capability baseline and eight exit criteria;
+- Session 085: static task/service inventory;
+- Session 086: bounded negative IPC probe;
+- Session 087: resource consumer matrix;
+- Session 088: device boundary catalog;
+- Session 089: anonymous runtime object topology;
+- Session 090: isolated host runtime contract;
+- Session 091: confidence-graded runtime evidence graph;
+- Session 092: deterministic integration and M4 closure.
+
+All eight criteria pass. M4 is COMPLETE and M5 Phoenix UI Prototype is READY.
 
 ## Safety boundary
 

@@ -352,6 +352,28 @@ from .resource_text import (
     scan_font_candidates,
 )
 from .runtime_map import analyze_runtime_map, build_public_runtime_map
+from .runtime_devices import DEVICE_FAMILIES, analyze_device_boundaries
+from .runtime_harness import (
+    HostRuntimeHarness,
+    RuntimeEvent,
+    ServiceContract,
+    build_host_emulation_contract,
+)
+from .runtime_inventory import RUNTIME_API_PROBES, analyze_runtime_inventory
+from .runtime_ipc import IPC_FAMILIES, analyze_ipc_contract
+from .runtime_lab_audit import (
+    M4_CAPABILITIES,
+    M4_EXIT_CRITERIA,
+    RuntimeCapability,
+    advance_m4_progress,
+    build_m4_baseline,
+)
+from .runtime_lab_integration import run_runtime_lab_integration
+from .runtime_objects import (
+    analyze_runtime_object_model,
+    build_runtime_evidence_graph,
+)
+from .runtime_resources import analyze_resource_consumers
 from .runtime_slot import (
     analyze_runtime_slot_lineage,
     build_public_runtime_slot_report,
@@ -719,10 +741,29 @@ __all__ = [
     "scan_embedded_xim2",
     "scan_font_candidates",
     "unique_decoded_records",
+    "DEVICE_FAMILIES",
+    "HostRuntimeHarness",
+    "IPC_FAMILIES",
+    "M4_CAPABILITIES",
+    "M4_EXIT_CRITERIA",
+    "RUNTIME_API_PROBES",
+    "RuntimeCapability",
+    "RuntimeEvent",
+    "ServiceContract",
+    "advance_m4_progress",
+    "analyze_device_boundaries",
+    "analyze_ipc_contract",
+    "analyze_resource_consumers",
+    "analyze_runtime_inventory",
+    "analyze_runtime_object_model",
+    "build_host_emulation_contract",
+    "build_m4_baseline",
+    "build_runtime_evidence_graph",
+    "run_runtime_lab_integration",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
     "DEFAULT_FORMAT_REGISTRY",
     "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "0.80.0"
+__version__ = "0.90.0"

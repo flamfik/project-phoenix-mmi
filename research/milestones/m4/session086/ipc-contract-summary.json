@@ -1,0 +1,500 @@
+{
+  "analysis_mode": "explicit-capability-transition-and-probe-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M4-CAP-001",
+        "evidence": "Sessions 003-004",
+        "limitation": "symbol table and scheduled task set remain unknown",
+        "name": "VxWorks and SuperH static layout",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.layout:analyze_vxworks_layout",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "platform"
+      },
+      {
+        "capability_id": "M4-CAP-002",
+        "evidence": "Session 006",
+        "limitation": "static mapping is not runtime observation",
+        "name": "bounded runtime address model",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_map:analyze_runtime_map",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "addressing"
+      },
+      {
+        "capability_id": "M4-CAP-003",
+        "evidence": "Sessions 009-015",
+        "limitation": "sector ABI and end-to-end parser edge remain open",
+        "name": "optical and navigation service evidence",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_dataflow:analyze_navigation_dataflow",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "services"
+      },
+      {
+        "capability_id": "M4-CAP-004",
+        "evidence": "Sessions 076-077",
+        "limitation": "runtime consumer remains open",
+        "name": "strict resource identity catalog",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_catalog:ResourceCatalog",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "resources"
+      },
+      {
+        "capability_id": "M4-CAP-005",
+        "evidence": "Sessions 018-033",
+        "limitation": "object identity and dynamic behavior remain unknown",
+        "name": "runtime linkage and owner lineage",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_linkage:analyze_runtime_linkage_family",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "objects"
+      },
+      {
+        "capability_id": "M4-CAP-006",
+        "evidence": "Session 082",
+        "limitation": "renderer consumer is not identified",
+        "name": "resource relationship evidence",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_text:build_resource_relationship_graph",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "resources"
+      },
+      {
+        "capability_id": "M4-CAP-007",
+        "evidence": "Session 009",
+        "limitation": "driver entries and hardware registers remain unknown",
+        "name": "navigation and storage boundary evidence",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.navigation_storage:analyze_navigation_storage_boundary",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "devices"
+      },
+      {
+        "capability_id": "M4-CAP-008",
+        "evidence": "Project safety boundary",
+        "limitation": "untrusted firmware execution is outside M4",
+        "name": "firmware execution",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "execution"
+      },
+      {
+        "capability_id": "M4-CAP-009",
+        "evidence": "Project safety boundary",
+        "limitation": "bench and vehicle communication require M7 controls",
+        "name": "vehicle-side runtime observation",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "vehicle"
+      },
+      {
+        "capability_id": "M4-CAP-010",
+        "evidence": "Session 085 and SPEC-093",
+        "limitation": "actual scheduled task set and entry points remain unknown",
+        "name": "publication-safe task and service inventory",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_inventory:analyze_runtime_inventory",
+        "status": "IMPLEMENTED",
+        "target_session": "085",
+        "workstream": "platform"
+      },
+      {
+        "capability_id": "M4-CAP-011",
+        "evidence": "Session 086 and SPEC-094",
+        "limitation": "payload schemas and producer/consumer pairs remain unknown",
+        "name": "bounded IPC primitive contract",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_ipc:analyze_ipc_contract",
+        "status": "IMPLEMENTED",
+        "target_session": "086",
+        "workstream": "ipc"
+      },
+      {
+        "capability_id": "M4-CAP-012",
+        "evidence": "M4 requirement",
+        "limitation": "no exact-address consumer census",
+        "name": "resource consumer matrix",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "087",
+        "workstream": "resources"
+      },
+      {
+        "capability_id": "M4-CAP-013",
+        "evidence": "M4 requirement",
+        "limitation": "no unified device-family topology",
+        "name": "device boundary catalog",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "088",
+        "workstream": "devices"
+      },
+      {
+        "capability_id": "M4-CAP-014",
+        "evidence": "M4 requirement",
+        "limitation": "no cross-release pointer-shaped topology",
+        "name": "anonymous runtime object topology",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "089",
+        "workstream": "objects"
+      },
+      {
+        "capability_id": "M4-CAP-015",
+        "evidence": "M4 requirement",
+        "limitation": "no deterministic I/O-free runtime abstraction",
+        "name": "isolated host contract harness",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "090",
+        "workstream": "emulation"
+      },
+      {
+        "capability_id": "M4-CAP-016",
+        "evidence": "M4 requirement",
+        "limitation": "runtime evidence remains distributed",
+        "name": "confidence-graded runtime evidence graph",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "091",
+        "workstream": "synthesis"
+      },
+      {
+        "capability_id": "M4-CAP-017",
+        "evidence": "M4 requirement",
+        "limitation": "no complete synthetic runtime workflow",
+        "name": "deterministic M4 integration gate",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "092",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 17,
+    "probe_integrity": true,
+    "registry_version": "m4-session086-v1",
+    "status_counts": {
+      "BLOCKED": 2,
+      "IMPLEMENTED": 6,
+      "MISSING": 6,
+      "PARTIAL": 3
+    }
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "installable_artifact_ready": false,
+    "m4_entry": "PASS",
+    "m4_exit": "OPEN",
+    "m4_status": "IN_PROGRESS",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M4-X1",
+      "name": "publication-safe task and service inventory",
+      "passed": true,
+      "required_capabilities": [
+        "M4-CAP-010"
+      ],
+      "target_session": "085"
+    },
+    {
+      "criterion_id": "M4-X2",
+      "name": "bounded IPC primitive contract",
+      "passed": true,
+      "required_capabilities": [
+        "M4-CAP-011"
+      ],
+      "target_session": "086"
+    },
+    {
+      "criterion_id": "M4-X3",
+      "name": "static resource consumer matrix",
+      "passed": false,
+      "required_capabilities": [
+        "M4-CAP-012"
+      ],
+      "target_session": "087"
+    },
+    {
+      "criterion_id": "M4-X4",
+      "name": "cross-release device boundary catalog",
+      "passed": false,
+      "required_capabilities": [
+        "M4-CAP-013"
+      ],
+      "target_session": "088"
+    },
+    {
+      "criterion_id": "M4-X5",
+      "name": "anonymous runtime object topology",
+      "passed": false,
+      "required_capabilities": [
+        "M4-CAP-014"
+      ],
+      "target_session": "089"
+    },
+    {
+      "criterion_id": "M4-X6",
+      "name": "isolated deterministic host contract harness",
+      "passed": false,
+      "required_capabilities": [
+        "M4-CAP-015"
+      ],
+      "target_session": "090"
+    },
+    {
+      "criterion_id": "M4-X7",
+      "name": "confidence-graded runtime evidence graph",
+      "passed": false,
+      "required_capabilities": [
+        "M4-CAP-016"
+      ],
+      "target_session": "091"
+    },
+    {
+      "criterion_id": "M4-X8",
+      "name": "deterministic sanitized integration gate",
+      "passed": false,
+      "required_capabilities": [
+        "M4-CAP-017"
+      ],
+      "target_session": "092"
+    }
+  ],
+  "exit_criteria_passed": 2,
+  "exit_criteria_total": 8,
+  "ipc_contract": {
+    "analysis_mode": "fixed-vxworks-ipc-probes-and-bounded-static-references",
+    "artifacts": [
+      {
+        "artifact": "cd1",
+        "families": [
+          {
+            "bounded_occurrence_count": 0,
+            "family": "MESSAGE_QUEUE",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          },
+          {
+            "bounded_occurrence_count": 0,
+            "family": "SEMAPHORE",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          },
+          {
+            "bounded_occurrence_count": 0,
+            "family": "EVENT",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          },
+          {
+            "bounded_occurrence_count": 0,
+            "family": "WATCHDOG_TIMER",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          }
+        ],
+        "ipc_label_family_counts": {
+          "EVENT_LABEL": 148,
+          "LOCK_LABEL": 16,
+          "QUEUE_LABEL": 5,
+          "TIMER_LABEL": 148
+        },
+        "ipc_label_record_count": 317
+      },
+      {
+        "artifact": "cd3",
+        "families": [
+          {
+            "bounded_occurrence_count": 0,
+            "family": "MESSAGE_QUEUE",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          },
+          {
+            "bounded_occurrence_count": 0,
+            "family": "SEMAPHORE",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          },
+          {
+            "bounded_occurrence_count": 0,
+            "family": "EVENT",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          },
+          {
+            "bounded_occurrence_count": 0,
+            "family": "WATCHDOG_TIMER",
+            "literal_word_occurrence_count": 0,
+            "pc_relative_code_referrer_count": 0,
+            "present_probe_count": 0
+          }
+        ],
+        "ipc_label_family_counts": {
+          "EVENT_LABEL": 142,
+          "LOCK_LABEL": 17,
+          "QUEUE_LABEL": 5,
+          "TIMER_LABEL": 154
+        },
+        "ipc_label_record_count": 318
+      }
+    ],
+    "classification": {
+      "fixed_vxworks_ipc_api_vocabulary": "NOT_FOUND_UNDER_FIXED_PROBE_SET",
+      "ipc_primitive_vocabulary": "NOT_ESTABLISHED",
+      "ipc_related_lexical_records": "CONFIRMED_AGGREGATE",
+      "producer_consumer_pairing": "NOT_ESTABLISHED",
+      "queue_event_lock_payload_schema": "NOT_ESTABLISHED",
+      "runtime_scheduling_behavior": "NOT_OBSERVED"
+    },
+    "cross_version": {
+      "shared_ipc_label_unique_count": 146,
+      "shared_present_families": []
+    },
+    "publication_safety": {
+      "firmware_bytes_included": false,
+      "offsets_included": false,
+      "raw_strings_included": false,
+      "runtime_addresses_included": false,
+      "runtime_execution_observed": false
+    },
+    "runtime_address_model": {
+      "base": 201326592,
+      "name": "runtime-link-base",
+      "status": "CONFIRMED_BOUNDED_STATIC_MODEL"
+    },
+    "schema": "phoenix-mmi.runtime-ipc-contract/v1"
+  },
+  "operational_graph_delta": {
+    "base": "v77",
+    "node": {
+      "evidence_session": "086",
+      "id": "m4-ipc-contract",
+      "status": "CONFIRMED"
+    }
+  },
+  "operational_graph_version": "v78",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M4-X1",
+      "objective": "publication-safe task and service inventory",
+      "session": "085"
+    },
+    {
+      "criterion_id": "M4-X2",
+      "objective": "bounded IPC primitive contract",
+      "session": "086"
+    },
+    {
+      "criterion_id": "M4-X3",
+      "objective": "static resource consumer matrix",
+      "session": "087"
+    },
+    {
+      "criterion_id": "M4-X4",
+      "objective": "cross-release device boundary catalog",
+      "session": "088"
+    },
+    {
+      "criterion_id": "M4-X5",
+      "objective": "anonymous runtime object topology",
+      "session": "089"
+    },
+    {
+      "criterion_id": "M4-X6",
+      "objective": "isolated deterministic host contract harness",
+      "session": "090"
+    },
+    {
+      "criterion_id": "M4-X7",
+      "objective": "confidence-graded runtime evidence graph",
+      "session": "091"
+    },
+    {
+      "criterion_id": "M4-X8",
+      "objective": "deterministic sanitized integration gate",
+      "session": "092"
+    }
+  ],
+  "previous_state": {
+    "operational_graph_version": "v77",
+    "session": "085"
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "payload_bytes_included": false,
+    "raw_strings_included": false,
+    "runtime_addresses_included": false,
+    "runtime_execution_observed": false,
+    "vehicle_communication_performed": false,
+    "vehicle_identifiers_included": false
+  },
+  "schema": "phoenix-mmi.m4-runtime-research-progress/v1",
+  "session": "086"
+}
