@@ -69,6 +69,15 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `structural_diff` - deterministic redacted JSON-compatible comparisons.
 - `schema_registry` - central schema lookup and fail-closed validation.
 - `integration` - synthetic non-firmware M2 end-to-end gate.
+- `resource_lab_audit` - M3 capability registry, entry/exit gates and explicit
+  progress transitions.
+- `resource_catalog` - strict embedded XIM2 scanning, private resource
+  identities and publication-safe aggregate catalogs.
+- `resource_graphics` - neutral geometry, fixed 16-bit layout hypotheses and
+  format-explicit bounded PPM preview.
+- `resource_text` - aggregate text discovery, structural SFNT/PCF validation,
+  locale topology and the confidence-graded resource graph.
+- `resource_lab_integration` - deterministic synthetic non-firmware M3 gate.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -634,6 +643,24 @@ python tools/session067/build_artifact_manifest.py `
 The complete schema-v1 manifest remains under ignored `work/`. The committed
 summary contains only aggregate counts and M2 gate evidence; it excludes
 logical IDs, artifact IDs, content hashes, names and member paths.
+
+## Reproduce Sessions 075-083 and close M3
+
+```powershell
+python tools/session075_083/close_m3.py `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd1-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd2-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd3-3.iso `
+  --repository . `
+  --public-output research/milestones/m3 `
+  --private-output E:\project-phoenix-mmi\work\milestones\m3
+```
+
+The runner verifies all three registered ISO identities before analysis,
+extracts the two principal images only into an operating-system temporary
+directory, deletes them on exit and writes decoded identities/previews only
+to the caller-selected private output. Committed reports contain aggregates
+and milestone gates only.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

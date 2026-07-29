@@ -1,8 +1,8 @@
 # Milestone M3 - Resource Laboratory
 
-Status: **READY**
+Status: **COMPLETE**
 
-Entry evidence: Session 074, operational graph v66
+Closure evidence: Session 083, operational graph v75
 
 ## Mission
 
@@ -18,19 +18,21 @@ resource representation and relationships; it does not modify firmware.
 - safe mutation and installable-artifact gates remain false;
 - YIM integrity and LOD semantic uncertainty remain explicit.
 
-Session 074 passes this gate. M3 work is authorized to begin.
+Session 074 passed this gate and Session 075 froze the M3 contract.
 
-## Initial session route
+## Completed session route
 
-Session 075 will freeze the M3 capability baseline and exit criteria before
-new resource analysis is implemented. Expected workstreams are:
+- Session 075: capability baseline and eight exit criteria;
+- Session 076: versioned resource catalog;
+- Session 077: neutral geometry taxonomy;
+- Session 078: bounded pixel-layout hypotheses;
+- Session 079: private format-explicit offline preview;
+- Session 080: publication-safe text catalog;
+- Session 081: structurally validated font candidates;
+- Session 082: language topology and resource relationship graph;
+- Session 083: deterministic integration and M3 closure.
 
-- resource identity and provenance;
-- embedded and standalone XIM2/YIM catalogs;
-- pixel-unit and palette hypotheses;
-- font and string discovery;
-- language-pack topology;
-- offline publication-safe preview models.
+All eight exit criteria pass. M3 is COMPLETE and M4 Runtime Research is READY.
 
 ## Safety boundary
 

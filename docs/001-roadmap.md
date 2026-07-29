@@ -100,16 +100,30 @@ Parsers, manifests, binary classifiers, diff tooling, checksum research.
 - Session 074: deterministic integration gate, M2 closure and graph v66 -
   complete.
 
-## M3 - Resource Laboratory — READY
+## M3 - Resource Laboratory — COMPLETE
 
 Graphics, fonts, strings, language packs, offline UI preview.
 
-- Session 075: freeze the M3 capability baseline, entry/exit gates and ordered
-  resource-laboratory backlog - next.
+- Session 075: M3 capability baseline, entry/exit gates and ordered backlog,
+  graph v67 - complete;
+- Session 076: strict versioned resource catalog, graph v68 - complete;
+- Session 077: neutral geometry taxonomy, graph v69 - complete;
+- Session 078: bounded pixel-layout hypotheses, graph v70 - complete;
+- Session 079: format-explicit private offline preview, graph v71 - complete;
+- Session 080: publication-safe cross-release text catalog, graph v72 -
+  complete;
+- Session 081: structurally validated font catalog, graph v73 - complete;
+- Session 082: locale topology and resource relationship graph, graph v74 -
+  complete;
+- Session 083: deterministic integration, M3 closure and graph v75 -
+  complete.
 
-## M4 - Runtime Research
+## M4 - Runtime Research — READY
 
 Runtime model, IPC, device services, hardware interfaces, safe emulation strategy.
+
+- Session 084: freeze the M4 capability baseline, research questions, exit
+  criteria and ordered static-first runtime backlog - next.
 
 ## M5 - Phoenix UI Prototype
 

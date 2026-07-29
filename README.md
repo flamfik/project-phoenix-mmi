@@ -5,13 +5,13 @@ Project Phoenix MMI is a research and development initiative focused on document
 ## Current phase
 
 **M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: COMPLETE; M3 —
-Resource Laboratory: READY**
+Resource Laboratory: COMPLETE; M4 — Runtime Research: READY**
 
-Sessions 068-074 complete the declarative registry, normalized parser
-contract, checksum experiments, structural diff, schema validation, unified
-CLI and deterministic integration gate. All 8 M2 exit criteria pass and
-operational graph v66 authorizes the read-only M3 entry. Safe mutation and
-installable-artifact gates remain false.
+Sessions 075-083 establish the strict resource catalog, geometry taxonomy,
+pixel-layout hypotheses, private offline preview, publication-safe text and
+font catalogs, language topology and deterministic integration. All 8 M3 exit
+criteria pass; operational graph v75 authorizes the static-first M4 entry.
+Safe mutation and installable-artifact gates remain false.
 
 ## First milestone
 
@@ -111,9 +111,19 @@ ui/            Future interface and resource research
 - [Session 072 report](docs/sessions/SESSION-072-schema-registry.md)
 - [Session 073 report](docs/sessions/SESSION-073-unified-toolkit-cli.md)
 - [Session 074 report](docs/sessions/SESSION-074-milestone-m2-closure.md)
+- [Session 075 report](docs/sessions/SESSION-075-m3-resource-laboratory-baseline.md)
+- [Session 076 report](docs/sessions/SESSION-076-versioned-resource-catalog.md)
+- [Session 077 report](docs/sessions/SESSION-077-resource-geometry-taxonomy.md)
+- [Session 078 report](docs/sessions/SESSION-078-pixel-layout-hypotheses.md)
+- [Session 079 report](docs/sessions/SESSION-079-offline-resource-preview.md)
+- [Session 080 report](docs/sessions/SESSION-080-cross-release-text-catalog.md)
+- [Session 081 report](docs/sessions/SESSION-081-font-candidate-catalog.md)
+- [Session 082 report](docs/sessions/SESSION-082-language-topology-resource-graph.md)
+- [Session 083 report](docs/sessions/SESSION-083-milestone-m3-closure.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
-- [Milestone M3 entry](docs/milestones/M3-resource-laboratory.md)
+- [Milestone M3 closure](docs/milestones/M3-resource-laboratory.md)
+- [Milestone M4 entry](docs/milestones/M4-runtime-research.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -152,6 +162,7 @@ ui/            Future interface and resource research
 - [Session 060 publication-safe evidence](research/navigation-media/session060/)
 - [Sessions 061-065 M1 closure evidence](research/milestones/m1/)
 - [M2 Analysis Toolkit evidence](research/milestones/m2/)
+- [M3 Resource Laboratory evidence](research/milestones/m3/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

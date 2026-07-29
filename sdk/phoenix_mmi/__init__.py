@@ -311,6 +311,46 @@ from .reference_graph import (
     compare_reference_graphs,
 )
 from .resource_bundle import analyze_resource_bundle, build_public_resource_bundle
+from .resource_catalog import (
+    DecodedEmbeddedResource,
+    ResourceCatalog,
+    ResourceRecord,
+    build_public_resource_catalog,
+    build_resource_catalog,
+    scan_embedded_xim2,
+    unique_decoded_records,
+)
+from .resource_graphics import (
+    PIXEL_LAYOUTS,
+    PixelLayout,
+    build_candidate_previews,
+    build_geometry_taxonomy,
+    build_public_preview_summary,
+    decode_rgb16,
+    evaluate_pixel_layouts,
+    geometry_class,
+    render_ppm,
+)
+from .resource_lab_audit import (
+    M3_CAPABILITIES,
+    M3_EXIT_CRITERIA,
+    ResourceCapability,
+    advance_m3_progress,
+    build_m3_baseline,
+)
+from .resource_lab_integration import (
+    MemoryReader,
+    build_synthetic_yim,
+    run_resource_lab_integration,
+)
+from .resource_text import (
+    FontCandidate,
+    build_font_catalog,
+    build_language_topology,
+    build_resource_relationship_graph,
+    build_text_catalog,
+    scan_font_candidates,
+)
 from .runtime_map import analyze_runtime_map, build_public_runtime_map
 from .runtime_slot import (
     analyze_runtime_slot_lineage,
@@ -649,10 +689,40 @@ __all__ = [
     "update_operational_graph_v35",
     "yim_integrity_candidates",
     "write_manifest",
+    "DecodedEmbeddedResource",
+    "FontCandidate",
+    "M3_CAPABILITIES",
+    "M3_EXIT_CRITERIA",
+    "MemoryReader",
+    "PIXEL_LAYOUTS",
+    "PixelLayout",
+    "ResourceCapability",
+    "ResourceCatalog",
+    "ResourceRecord",
+    "advance_m3_progress",
+    "build_candidate_previews",
+    "build_font_catalog",
+    "build_geometry_taxonomy",
+    "build_language_topology",
+    "build_m3_baseline",
+    "build_public_preview_summary",
+    "build_public_resource_catalog",
+    "build_resource_catalog",
+    "build_resource_relationship_graph",
+    "build_synthetic_yim",
+    "build_text_catalog",
+    "decode_rgb16",
+    "evaluate_pixel_layouts",
+    "geometry_class",
+    "render_ppm",
+    "run_resource_lab_integration",
+    "scan_embedded_xim2",
+    "scan_font_candidates",
+    "unique_decoded_records",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
     "DEFAULT_FORMAT_REGISTRY",
     "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "0.71.0"
+__version__ = "0.80.0"

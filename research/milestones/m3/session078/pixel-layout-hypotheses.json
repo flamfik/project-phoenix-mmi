@@ -1,0 +1,530 @@
+{
+  "analysis_mode": "explicit-capability-transition-and-probe-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M3-CAP-001",
+        "evidence": "Sessions 045 and 053",
+        "limitation": "integrity fields remain unresolved",
+        "name": "strict YIM/XIM2 envelope reader",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.yim:parse_yim_envelope",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "graphics"
+      },
+      {
+        "capability_id": "M3-CAP-002",
+        "evidence": "Sessions 046 and 053",
+        "limitation": "two-byte units have no confirmed color semantics",
+        "name": "bounded XIM2 RLE decoder",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.yim:decode_yim_rle",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "graphics"
+      },
+      {
+        "capability_id": "M3-CAP-003",
+        "evidence": "Session 053",
+        "limitation": "consumer routine and resource names are not identified",
+        "name": "embedded XIM2 census",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.yim_research:analyze_embedded_xim2",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "catalog"
+      },
+      {
+        "capability_id": "M3-CAP-004",
+        "evidence": "Sessions 003-010",
+        "limitation": "raw extraction is local and lacks a resource-specific catalog",
+        "name": "printable-string extractor",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.strings:extract_strings",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "text"
+      },
+      {
+        "capability_id": "M3-CAP-005",
+        "evidence": "Session 008",
+        "limitation": "font header and renderer consumer remain unresolved",
+        "name": "sparse bitmap-atlas evidence",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.operational_model:analyze_relocated_bitmap_atlas",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "font"
+      },
+      {
+        "capability_id": "M3-CAP-006",
+        "evidence": "Sessions 047 and 051-054",
+        "limitation": "32-bit and 16-bit integrity algorithms are unresolved",
+        "name": "YIM integrity writer",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "safety"
+      },
+      {
+        "capability_id": "M3-CAP-007",
+        "evidence": "Sessions 048 and 055-060",
+        "limitation": "record, address and integrity semantics are unresolved",
+        "name": "LOD semantic decoder",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "language"
+      },
+      {
+        "capability_id": "M3-CAP-008",
+        "evidence": "Session 076 and SPEC-084",
+        "limitation": "semantic resource names and runtime owners remain unknown",
+        "name": "versioned resource catalog",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_catalog:ResourceCatalog",
+        "status": "IMPLEMENTED",
+        "target_session": "076",
+        "workstream": "catalog"
+      },
+      {
+        "capability_id": "M3-CAP-009",
+        "evidence": "Session 077 and SPEC-085",
+        "limitation": "shape classes do not assign UI purpose",
+        "name": "geometry taxonomy",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:build_geometry_taxonomy",
+        "status": "IMPLEMENTED",
+        "target_session": "077",
+        "workstream": "graphics"
+      },
+      {
+        "capability_id": "M3-CAP-010",
+        "evidence": "Session 078 and SPEC-086",
+        "limitation": "rankings are heuristic; the pixel layout remains unconfirmed",
+        "name": "pixel-layout hypothesis evaluator",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:evaluate_pixel_layouts",
+        "status": "IMPLEMENTED",
+        "target_session": "078",
+        "workstream": "graphics"
+      },
+      {
+        "capability_id": "M3-CAP-011",
+        "evidence": "M3 requirement",
+        "limitation": "no bounded format-explicit preview API",
+        "name": "offline candidate preview renderer",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "079",
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M3-CAP-012",
+        "evidence": "M3 requirement",
+        "limitation": "no cross-release resource-text comparison",
+        "name": "publication-safe text catalog",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "080",
+        "workstream": "text"
+      },
+      {
+        "capability_id": "M3-CAP-013",
+        "evidence": "M3 requirement",
+        "limitation": "standard font containers and bitmap evidence are not unified",
+        "name": "font candidate catalog",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "081",
+        "workstream": "font"
+      },
+      {
+        "capability_id": "M3-CAP-014",
+        "evidence": "M3 requirement",
+        "limitation": "locale membership and release reuse are not normalized",
+        "name": "language-pack topology",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "082",
+        "workstream": "language"
+      },
+      {
+        "capability_id": "M3-CAP-015",
+        "evidence": "M3 requirement",
+        "limitation": "resource evidence is distributed across earlier session graphs",
+        "name": "resource relationship graph",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "082",
+        "workstream": "graph"
+      },
+      {
+        "capability_id": "M3-CAP-016",
+        "evidence": "M3 requirement",
+        "limitation": "no complete sanitized Resource Laboratory workflow",
+        "name": "M3 deterministic integration gate",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "083",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 16,
+    "probe_integrity": true,
+    "registry_version": "m3-session078-v1",
+    "status_counts": {
+      "BLOCKED": 2,
+      "IMPLEMENTED": 6,
+      "MISSING": 6,
+      "PARTIAL": 2
+    },
+    "workstreams": [
+      {
+        "capability_count": 2,
+        "status_counts": {
+          "IMPLEMENTED": 2
+        },
+        "workstream": "catalog"
+      },
+      {
+        "capability_count": 2,
+        "status_counts": {
+          "MISSING": 1,
+          "PARTIAL": 1
+        },
+        "workstream": "font"
+      },
+      {
+        "capability_count": 1,
+        "status_counts": {
+          "MISSING": 1
+        },
+        "workstream": "graph"
+      },
+      {
+        "capability_count": 4,
+        "status_counts": {
+          "IMPLEMENTED": 4
+        },
+        "workstream": "graphics"
+      },
+      {
+        "capability_count": 1,
+        "status_counts": {
+          "MISSING": 1
+        },
+        "workstream": "integration"
+      },
+      {
+        "capability_count": 2,
+        "status_counts": {
+          "BLOCKED": 1,
+          "MISSING": 1
+        },
+        "workstream": "language"
+      },
+      {
+        "capability_count": 1,
+        "status_counts": {
+          "MISSING": 1
+        },
+        "workstream": "preview"
+      },
+      {
+        "capability_count": 1,
+        "status_counts": {
+          "BLOCKED": 1
+        },
+        "workstream": "safety"
+      },
+      {
+        "capability_count": 2,
+        "status_counts": {
+          "MISSING": 1,
+          "PARTIAL": 1
+        },
+        "workstream": "text"
+      }
+    ]
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "installable_artifact_ready": false,
+    "m3_entry": "PASS",
+    "m3_exit": "OPEN",
+    "m3_status": "IN_PROGRESS",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M3-X1",
+      "name": "versioned resource identity and provenance catalog",
+      "passed": true,
+      "required_capabilities": [
+        "M3-CAP-008"
+      ],
+      "target_session": "076"
+    },
+    {
+      "criterion_id": "M3-X2",
+      "name": "neutral geometry taxonomy",
+      "passed": true,
+      "required_capabilities": [
+        "M3-CAP-009"
+      ],
+      "target_session": "077"
+    },
+    {
+      "criterion_id": "M3-X3",
+      "name": "bounded pixel-layout hypothesis evaluation",
+      "passed": true,
+      "required_capabilities": [
+        "M3-CAP-010"
+      ],
+      "target_session": "078"
+    },
+    {
+      "criterion_id": "M3-X4",
+      "name": "format-explicit offline preview",
+      "passed": false,
+      "required_capabilities": [
+        "M3-CAP-011"
+      ],
+      "target_session": "079"
+    },
+    {
+      "criterion_id": "M3-X5",
+      "name": "publication-safe cross-release text catalog",
+      "passed": false,
+      "required_capabilities": [
+        "M3-CAP-012"
+      ],
+      "target_session": "080"
+    },
+    {
+      "criterion_id": "M3-X6",
+      "name": "font candidate catalog",
+      "passed": false,
+      "required_capabilities": [
+        "M3-CAP-013"
+      ],
+      "target_session": "081"
+    },
+    {
+      "criterion_id": "M3-X7",
+      "name": "language topology and resource relationship graph",
+      "passed": false,
+      "required_capabilities": [
+        "M3-CAP-014",
+        "M3-CAP-015"
+      ],
+      "target_session": "082"
+    },
+    {
+      "criterion_id": "M3-X8",
+      "name": "deterministic sanitized-fixture integration gate",
+      "passed": false,
+      "required_capabilities": [
+        "M3-CAP-016"
+      ],
+      "target_session": "083"
+    }
+  ],
+  "exit_criteria_passed": 3,
+  "exit_criteria_total": 8,
+  "operational_graph_delta": {
+    "base": "v69",
+    "node": {
+      "evidence_session": "078",
+      "id": "m3-pixel-layout-hypotheses",
+      "status": "CONFIRMED"
+    }
+  },
+  "operational_graph_version": "v70",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M3-X1",
+      "objective": "versioned resource identity and provenance catalog",
+      "session": "076"
+    },
+    {
+      "criterion_id": "M3-X2",
+      "objective": "neutral geometry taxonomy",
+      "session": "077"
+    },
+    {
+      "criterion_id": "M3-X3",
+      "objective": "bounded pixel-layout hypothesis evaluation",
+      "session": "078"
+    },
+    {
+      "criterion_id": "M3-X4",
+      "objective": "format-explicit offline preview",
+      "session": "079"
+    },
+    {
+      "criterion_id": "M3-X5",
+      "objective": "publication-safe cross-release text catalog",
+      "session": "080"
+    },
+    {
+      "criterion_id": "M3-X6",
+      "objective": "font candidate catalog",
+      "session": "081"
+    },
+    {
+      "criterion_id": "M3-X7",
+      "objective": "language topology and resource relationship graph",
+      "session": "082"
+    },
+    {
+      "criterion_id": "M3-X8",
+      "objective": "deterministic sanitized-fixture integration gate",
+      "session": "083"
+    }
+  ],
+  "pixel_layout_hypotheses": {
+    "analysis_mode": "fixed-eight-layout-structural-metric-comparison",
+    "candidate_count": 8,
+    "candidates": [
+      {
+        "layout_id": "BGR565_BE",
+        "mean_neighbor_variation": 0.03098945,
+        "mean_unused_bit_one_ratio": 0.0,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "BGR565_LE",
+        "mean_neighbor_variation": 0.03340828,
+        "mean_unused_bit_one_ratio": 0.0,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "RGB565_BE",
+        "mean_neighbor_variation": 0.03011149,
+        "mean_unused_bit_one_ratio": 0.0,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "RGB565_LE",
+        "mean_neighbor_variation": 0.03391035,
+        "mean_unused_bit_one_ratio": 0.0,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "XBGR1555_BE",
+        "mean_neighbor_variation": 0.01178217,
+        "mean_unused_bit_one_ratio": 0.0,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "XBGR1555_LE",
+        "mean_neighbor_variation": 0.03811639,
+        "mean_unused_bit_one_ratio": 0.17133333,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "XRGB1555_BE",
+        "mean_neighbor_variation": 0.01158912,
+        "mean_unused_bit_one_ratio": 0.0,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      },
+      {
+        "layout_id": "XRGB1555_LE",
+        "mean_neighbor_variation": 0.04167921,
+        "mean_unused_bit_one_ratio": 0.17133333,
+        "minimum_distinct_rgb_count": 418,
+        "source_count": 5
+      }
+    ],
+    "classification": {
+      "pixel_layout": "NOT_ESTABLISHED",
+      "pixel_unit_width": "CONFIRMED_16_BIT",
+      "ranking_interpretation": "HEURISTIC_ONLY"
+    },
+    "publication_safety": {
+      "content_hashes_included": false,
+      "decoded_raster_bytes_included": false,
+      "rendered_previews_included": false
+    },
+    "schema": "phoenix-mmi.pixel-layout-hypotheses/v1",
+    "smoothness_ranking": [
+      "XRGB1555_BE",
+      "XBGR1555_BE",
+      "RGB565_BE",
+      "BGR565_BE",
+      "BGR565_LE",
+      "RGB565_LE",
+      "XBGR1555_LE",
+      "XRGB1555_LE"
+    ],
+    "source_count": 5
+  },
+  "previous_state": {
+    "operational_graph_version": "v69",
+    "session": "077"
+  },
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false
+  },
+  "schema": "phoenix-mmi.m3-resource-lab-progress/v1",
+  "session": "078"
+}

@@ -288,5 +288,41 @@
 | RQ-284 | How many M2 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M2-X1 through M2-X8 pass with capability probes intact. SPEC-082. |
 | RQ-285 | Does M2 closure authorize firmware mutation? | CLOSED, NO | Safe-mutation and installable-artifact gates remain false. SPEC-082. |
 | RQ-286 | Which milestone may begin next? | CLOSED, M3 READY | The read-only Resource Laboratory is authorized to begin with a new baseline and exit-gate session. SPEC-082. |
+| RQ-287 | Does M3 satisfy its M2 entry gate? | CLOSED, PASS | M2 is COMPLETE, M3 is READY and mutation remains disabled. SPEC-083. |
+| RQ-288 | What is the initial M3 capability state? | CLOSED, CONFIRMED | Sixteen capabilities begin as 3 implemented, 2 partial, 9 missing and 2 blocked. SPEC-083. |
+| RQ-289 | How many formal M3 exit criteria exist? | CLOSED, EIGHT | Sessions 076-083 map to eight ordered criteria. SPEC-083. |
+| RQ-290 | Does entering M3 authorize firmware modification? | CLOSED, NO | M3 is a read-only resource-research milestone. SPEC-083. |
+| RQ-291 | How many strict resource records are in the registered corpus? | CLOSED, 173 | CD1 and CD3 contribute 84 embedded XIM2 records each and the suite contributes five standalone YIM contents. SPEC-084. |
+| RQ-292 | How many unique decoded resource contents exist? | CLOSED, 88 | Strict decoded SHA-256 deduplication yields 88 contents. SPEC-084. |
+| RQ-293 | Did embedded resource content change from MMI 5150 to 5570? | CLOSED, NO BYTE CHANGE FOUND | The decoded-content sets are equal across the two principal images. SPEC-084. |
+| RQ-294 | Does resource byte identity establish its UI role? | CLOSED, NO | Logical semantics and runtime owners remain unassigned. SPEC-084. |
+| RQ-295 | Is decoded raster geometry validated? | CLOSED, CONFIRMED | Strict envelope and decoded-length checks establish geometry for all cataloged records. SPEC-085. |
+| RQ-296 | What neutral shape classes occur? | CLOSED, FIVE | Compact, wide, tall, display-sized 480x240 and full-width-strip classes cover 88 unique contents. SPEC-085. |
+| RQ-297 | Do geometry classes imply icon, screen or glyph purpose? | CLOSED, NO | Shape classification is deliberately semantic-neutral. SPEC-085. |
+| RQ-298 | How many full display-sized unique rasters occur? | CLOSED, SIX | Six unique decoded contents have 480x240 geometry. SPEC-085. |
+| RQ-299 | What pixel-unit width is confirmed? | CLOSED, 16 BIT | Strict decoded lengths equal width times height times two. SPEC-086. |
+| RQ-300 | Is the exact color/pixel layout established? | OPEN, NO | No independent renderer, palette or known-image evidence selects one layout. SPEC-086. |
+| RQ-301 | Which candidates were evaluated? | CLOSED, EIGHT | Fixed RGB/BGR 565 and XRGB/XBGR 1555 big/little-endian models were compared. SPEC-086. |
+| RQ-302 | May smoothness ranking be treated as a format decision? | CLOSED, NO | The ranking is heuristic only. SPEC-086. |
+| RQ-303 | Can decoded resources be previewed without firmware execution? | CLOSED, CONFIRMED | Explicit candidate layouts render bounded PPM output offline. SPEC-087. |
+| RQ-304 | Are previews or raster bytes committed? | CLOSED, NO | Candidate previews stay in a caller-selected private directory. SPEC-087. |
+| RQ-305 | How many default candidate previews are generated? | CLOSED, FOUR | Two RGB565 and two XRGB1555 endian variants form the default set. SPEC-087. |
+| RQ-306 | Does a successful preview confirm the candidate layout? | CLOSED, NO | Preview is a hypothesis inspection tool only. SPEC-087. |
+| RQ-307 | How many printable records were found in the principal images? | CLOSED, CONFIRMED | The fixed extractor reports 112,124 for CD1 and 113,925 for CD3. SPEC-088. |
+| RQ-308 | How many exact unique text records are shared? | CLOSED, 57,976 | Cross-release private set comparison establishes the intersection count. SPEC-088. |
+| RQ-309 | Is text semantic ownership established? | OPEN, NO | Resource, subsystem and renderer ownership remain unresolved. SPEC-088. |
+| RQ-310 | Does the public text catalog include raw strings? | CLOSED, NO | Only aggregate counts are published. SPEC-088. |
+| RQ-311 | Are structurally valid standard font containers present? | CLOSED, CONFIRMED | Four validated TrueType SFNT containers occur in each principal image. SPEC-089. |
+| RQ-312 | Did those font container contents change between CD1 and CD3? | CLOSED, NO BYTE CHANGE FOUND | All four validated contents are shared. SPEC-089. |
+| RQ-313 | Is the earlier bitmap-font atlas model confirmed? | OPEN, PROBABLE ONLY | Structural evidence remains insufficient for semantic promotion. SPEC-089. |
+| RQ-314 | Is the consuming font renderer identified? | OPEN, NO | Runtime consumer ownership is deferred to M4. SPEC-089. |
+| RQ-315 | Which locale families are confirmed by provenance? | CLOSED, FIVE | de-DE, en-GB, es-ES, fr-FR and it-IT occur on both principal update discs. SPEC-090. |
+| RQ-316 | Is the LOD payload semantic decoder established? | BLOCKED, NO | Record, address and integrity semantics remain unresolved. SPEC-090. |
+| RQ-317 | What is the M3 resource-graph scope? | CLOSED, 13 NODES/11 EDGES | The graph connects media, raster, geometry, preview, text, font and language evidence with confidence labels. SPEC-090. |
+| RQ-318 | Does the resource graph authorize mutation? | CLOSED, NO | The safe-mutation gate remains false. SPEC-090. |
+| RQ-319 | Does the complete M3 chain reproduce deterministically? | CLOSED, CONFIRMED | Two synthetic non-firmware runs produce identical reports and fingerprints. SPEC-091. |
+| RQ-320 | How many M3 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M3-X1 through M3-X8 pass with repository probes intact. SPEC-091. |
+| RQ-321 | Which milestone may begin next? | CLOSED, M4 READY | Static-first Runtime Research may begin with a new capability baseline. SPEC-091. |
+| RQ-322 | Are pixel layout, renderer, LOD semantics and write integrity solved by M3 closure? | CLOSED, NO | These limitations remain explicit and mutation stays unauthorized. SPEC-091. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.
