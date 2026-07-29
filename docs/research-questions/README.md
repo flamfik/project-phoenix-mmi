@@ -152,5 +152,12 @@
 | RQ-148 | Does the equal-geometry control collide with the payload corpus? | CLOSED, CONTROLLED NEGATIVE | The control has zero first-anchor, geometry and strong matches. SPEC-049. |
 | RQ-149 | Can the raw cross-payload census identify the component owner? | CLOSED, BOUNDED NEGATIVE | No contiguous homolog is found; semantic owner, section boundary and loader mechanism remain open. SPEC-049. |
 | RQ-150 | Could a homolog exist only after decoding a payload container? | OPEN | HEX, LOD and related record formats may encode address-ordered flash bytes. Format validation and private reconstruction are required before repeating the fixed signature search. SPEC-049. |
+| RQ-151 | Which update members have a validated record encoding? | CLOSED, CONFIRMED | Sixteen unique Intel HEX contents and one unique SW S-record subset are normalized; ten unique LOD/YIM contents remain unsupported. SPEC-050. |
+| RQ-152 | Are standard Intel HEX records internally consistent? | CLOSED, CONFIRMED | All line, byte-count, checksum, EOF, address-state and overlap gates pass for 16 unique contents. SPEC-050. |
+| RQ-153 | Can vendor Intel records be interpreted safely? | CLOSED, BOUNDED OPAQUE | Types 0x10/0x11 pass fixed first-record geometry and checksum gates, but their four-byte payload remains uninterpreted and does not change address state. SPEC-050. |
+| RQ-154 | Can the SW S-record material be reconstructed completely? | CLOSED, PARTIAL | 73,534 S3/S7 records are valid, but 2,743 candidate lines and 329,914 envelope bytes remain unvalidated. No opaque gap is bridged. SPEC-050. |
+| RQ-155 | What decoded corpus is reproducibly searchable? | CLOSED, CONFIRMED | Content deduplication produces 3,109 regions and 3,570,586 bytes; 3,012 regions meet the 240-byte search gate. SPEC-050. |
+| RQ-156 | Does the fixed homolog occur after validated record decoding? | CLOSED, BOUNDED NEGATIVE | Target and equal-geometry control each have zero first-anchor, geometry and strong matches; no limit saturates. SPEC-050. |
+| RQ-157 | Are LOD and YIM record formats resolved? | OPEN | Neither family satisfies the validated Intel HEX or Motorola S-record models; independent header, length, address and integrity evidence is required. SPEC-050. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

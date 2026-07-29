@@ -1,0 +1,239 @@
+{
+  "analysis_mode": "read-only-validated-record-decoding-fixed-signature-search",
+  "classification": {
+    "cross_payload_owner": "OPEN",
+    "exact_section_boundary": "OPEN",
+    "record_normalized_homolog": "NOT_FOUND_IN_VALIDATED_DECODED_REGIONS",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN"
+  },
+  "decoded_corpus": {
+    "decoded_region_bytes_published": false,
+    "scannable_unique_region_count": 3012,
+    "unique_decoded_region_bytes": 3570586,
+    "unique_region_content_count": 3109
+  },
+  "disc_id": "cd2",
+  "disc_summary": {
+    "extension_counts": {},
+    "normalized_member_count": 0,
+    "record_candidate_member_bytes": 0,
+    "record_candidate_member_count": 0
+  },
+  "format_summaries": {
+    "INTEL_HEX": {
+      "classification_counts": {
+        "FULLY_VALIDATED_STANDARD_RECORDS": 10,
+        "VALID_WITH_OPAQUE_VENDOR_METADATA": 6
+      },
+      "decoded_byte_count": 1404128,
+      "decoded_region_count": 365,
+      "fully_validated_unique_source_count": 16,
+      "member_count": 154,
+      "partial_or_unsupported_unique_source_count": 0,
+      "scannable_region_count": 219,
+      "unique_source_content_count": 16
+    },
+    "MOTOROLA_S_RECORD": {
+      "classification_counts": {
+        "PARTIAL_VALIDATED_RECORD_RUNS": 1
+      },
+      "decoded_byte_count": 2205892,
+      "decoded_region_count": 2820,
+      "fully_validated_unique_source_count": 0,
+      "member_count": 6,
+      "partial_or_unsupported_unique_source_count": 1,
+      "scannable_region_count": 2820,
+      "unique_source_content_count": 1
+    },
+    "UNSUPPORTED_BINARY_CONTAINER": {
+      "classification_counts": {
+        "NO_VALIDATED_RECORD_DECODER": 10
+      },
+      "decoded_byte_count": 0,
+      "decoded_region_count": 0,
+      "fully_validated_unique_source_count": 0,
+      "member_count": 55,
+      "partial_or_unsupported_unique_source_count": 10,
+      "scannable_region_count": 0,
+      "unique_source_content_count": 10
+    }
+  },
+  "limits": [
+    "Intel HEX vendor records 0x10 and 0x11 are accepted only as one opaque first record with fixed count and address geometry.",
+    "Motorola S-record recovery is partial when invalid candidate lines or opaque envelope bytes are present.",
+    "Decoded regions are never joined across address or physical-envelope gaps.",
+    "LOD and YIM remain unsupported binary containers and are not decoded.",
+    "Compressed, encrypted, relocated or split non-record forms remain open.",
+    "A structural homolog cannot establish semantic ownership by itself."
+  ],
+  "normalization_contract": {
+    "address_values_published": false,
+    "decoded_bytes_published": false,
+    "eligible_extensions": [
+      ".HEX",
+      ".LOD",
+      ".SW",
+      ".YIM"
+    ],
+    "gap_fill_used": false,
+    "intel_hex_standard_types": [
+      "0x00",
+      "0x01",
+      "0x02",
+      "0x03",
+      "0x04",
+      "0x05"
+    ],
+    "intel_hex_vendor_metadata_types": [
+      "0x10",
+      "0x11"
+    ],
+    "minimum_source_size": 240,
+    "opaque_bytes_used_to_bridge_regions": false,
+    "raw_fallback_rescanned": false,
+    "srecord_data_types": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "srecord_termination_types": [
+      "S7",
+      "S8",
+      "S9"
+    ],
+    "vendor_metadata_payload_interpreted": false
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "decoded_region_bytes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "mnemonic_names_included": false,
+    "payload_bytes_included": false,
+    "raw_component_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_signature_bytes_included": false,
+    "raw_strings_included": false,
+    "signature_hashes_included": false
+  },
+  "schema": "phoenix-mmi.record-normalized-homolog-disc/v1",
+  "signature_contract": {
+    "adaptive_anchor_selection_used": false,
+    "anchor_count": 5,
+    "anchor_length": 25,
+    "anchor_source": "SESSION038_EXACT_RUNS_LENGTH_25",
+    "anchor_total_exact_bytes": 125,
+    "control_anchors": [
+      {
+        "anchor_id": "CTL-01",
+        "distinct_byte_count": 14,
+        "entropy": 3.45287869,
+        "length": 25,
+        "relative_offset": 2
+      },
+      {
+        "anchor_id": "CTL-02",
+        "distinct_byte_count": 17,
+        "entropy": 3.97366069,
+        "length": 25,
+        "relative_offset": 32
+      },
+      {
+        "anchor_id": "CTL-03",
+        "distinct_byte_count": 25,
+        "entropy": 4.64385619,
+        "length": 25,
+        "relative_offset": 104
+      },
+      {
+        "anchor_id": "CTL-04",
+        "distinct_byte_count": 21,
+        "entropy": 4.29366069,
+        "length": 25,
+        "relative_offset": 140
+      },
+      {
+        "anchor_id": "CTL-05",
+        "distinct_byte_count": 21,
+        "entropy": 4.32385619,
+        "length": 25,
+        "relative_offset": 196
+      }
+    ],
+    "control_source": "SESSION038_OVERLAP_START_SAME_RELATIVE_GEOMETRY",
+    "distinct_target_anchor_pattern_count": 3,
+    "maximum_first_anchor_occurrences_per_payload": 4096,
+    "maximum_geometry_matches_per_payload": 256,
+    "minimum_distinct_anchor_patterns": 3,
+    "minimum_distinct_bytes": 8,
+    "minimum_entropy": 2.5,
+    "minimum_strong_component_similarity": 0.75,
+    "raw_signature_bytes_included": false,
+    "signature_hashes_included": false,
+    "target_anchors": [
+      {
+        "anchor_id": "SIG-01",
+        "distinct_byte_count": 22,
+        "entropy": 4.40385619,
+        "length": 25,
+        "relative_offset": 2,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-02",
+        "distinct_byte_count": 14,
+        "entropy": 3.45287869,
+        "length": 25,
+        "relative_offset": 32,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-03",
+        "distinct_byte_count": 23,
+        "entropy": 4.48385619,
+        "length": 25,
+        "relative_offset": 104,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-04",
+        "distinct_byte_count": 23,
+        "entropy": 4.48385619,
+        "length": 25,
+        "relative_offset": 140,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-05",
+        "distinct_byte_count": 22,
+        "entropy": 4.40385619,
+        "length": 25,
+        "relative_offset": 196,
+        "shared_exact_between_releases": true
+      }
+    ],
+    "target_control_anchor_overlap_count": 0
+  },
+  "source_corpus": {
+    "member_bytes": 172611997,
+    "member_count": 215,
+    "normalized_unique_source_count": 17,
+    "rejected_unique_source_count": 0,
+    "unique_source_content_count": 27,
+    "unsupported_unique_source_count": 10
+  },
+  "summary": {
+    "control_first_anchor_occurrence_count": 0,
+    "control_geometry_hit_unique_region_count": 0,
+    "control_strong_hit_unique_region_count": 0,
+    "saturated_unique_region_count": 0,
+    "target_first_anchor_occurrence_count": 0,
+    "target_geometry_hit_unique_region_count": 0,
+    "target_strong_hit_unique_region_count": 0
+  }
+}
