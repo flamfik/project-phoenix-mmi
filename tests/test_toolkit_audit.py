@@ -5,6 +5,7 @@ from phoenix_mmi.toolkit_audit import (
     CAPABILITIES,
     EXIT_CRITERIA,
     audit_toolkit_capabilities,
+    advance_m2_progress,
     build_m2_foundation_report,
 )
 
@@ -92,6 +93,71 @@ class ToolkitAuditTests(unittest.TestCase):
         safety = report["publication_safety"]
         self.assertTrue(all(value is False for value in safety.values()))
         self.assertNotIn(str(ROOT), str(report))
+
+    def test_session_progress_advances_without_mutating_baseline(self):
+        baseline = build_m2_foundation_report(ROOT, m1_closure())
+        progress = advance_m2_progress(
+            ROOT,
+            baseline,
+            session="067",
+            transitions=[
+                {
+                    "capability_id": "M2-CAP-023",
+                    "from_status": "MISSING",
+                    "to_status": "IMPLEMENTED",
+                    "probe_kind": "python-symbol",
+                    "probe_target": (
+                        "phoenix_mmi.manifest:ArtifactManifest"
+                    ),
+                    "evidence": "fixture",
+                    "limitation": "read-only fixture",
+                }
+            ],
+            graph_version="v59",
+            graph_node_id="fixture-manifest",
+        )
+        self.assertEqual(progress["exit_criteria_passed"], 1)
+        self.assertTrue(progress["exit_criteria"][0]["passed"])
+        self.assertTrue(
+            all(
+                not row["passed"]
+                for row in progress["exit_criteria"][1:]
+            )
+        )
+        self.assertEqual(
+            baseline["capability_audit"]["status_counts"]["MISSING"],
+            9,
+        )
+        self.assertEqual(
+            progress["capability_audit"]["status_counts"],
+            {
+                "BLOCKED": 2,
+                "IMPLEMENTED": 9,
+                "MISSING": 8,
+                "PARTIAL": 8,
+            },
+        )
+
+    def test_progress_rejects_stale_or_duplicate_transition(self):
+        baseline = build_m2_foundation_report(ROOT, m1_closure())
+        transition = {
+            "capability_id": "M2-CAP-023",
+            "from_status": "IMPLEMENTED",
+            "to_status": "IMPLEMENTED",
+            "probe_kind": "python-symbol",
+            "probe_target": "phoenix_mmi.manifest:ArtifactManifest",
+            "evidence": "fixture",
+            "limitation": "fixture",
+        }
+        with self.assertRaises(ValueError):
+            advance_m2_progress(
+                ROOT,
+                baseline,
+                session="067",
+                transitions=[transition],
+                graph_version="v59",
+                graph_node_id="fixture",
+            )
 
 
 if __name__ == "__main__":

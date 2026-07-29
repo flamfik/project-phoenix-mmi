@@ -54,7 +54,23 @@ from .toolkit_audit import (
     EXIT_CRITERIA,
     Capability,
     audit_toolkit_capabilities,
+    advance_m2_progress,
     build_m2_foundation_report,
+)
+from .manifest import (
+    MANIFEST_SCHEMA,
+    PUBLIC_SUMMARY_SCHEMA,
+    ArtifactManifest,
+    ArtifactOrigin,
+    ArtifactRecord,
+    VerificationResult,
+    build_public_manifest_summary,
+    compare_manifests,
+    duplicate_content_groups,
+    load_manifest,
+    sha256_chunks,
+    verify_file,
+    write_manifest,
 )
 from .lod_research import (
     analyze_lod_alignment,
@@ -322,6 +338,9 @@ from .superh import (
 
 __all__ = [
     "AnalysisConfig",
+    "ArtifactManifest",
+    "ArtifactOrigin",
+    "ArtifactRecord",
     "BinaryReader",
     "CandidateSegment",
     "ChecksumExpectation",
@@ -334,6 +353,7 @@ __all__ = [
     "RecordPayloadInput",
     "YimDecodeResult",
     "YimEnvelope",
+    "VerificationResult",
     "EntropyWindow",
     "FingerprintHit",
     "SHInstruction",
@@ -419,7 +439,9 @@ __all__ = [
     "EXIT_CRITERIA",
     "Capability",
     "audit_toolkit_capabilities",
+    "advance_m2_progress",
     "build_m2_foundation_report",
+    "build_public_manifest_summary",
     "build_yim_integrity_decision",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
@@ -447,6 +469,7 @@ __all__ = [
     "build_public_call_return_producer_report",
     "build_public_producer_return_report",
     "compare_reports",
+    "compare_manifests",
     "compare_exact_block_seed_control",
     "compare_similarity_grid_control",
     "compare_navigation_storage_boundaries",
@@ -500,6 +523,7 @@ __all__ = [
     "decode_yim_rle",
     "derive_cross_payload_signature",
     "derive_distributed_constellation",
+    "duplicate_content_groups",
     "discover_contract_anchors",
     "entropy_profile",
     "parse_fldb_container",
@@ -509,6 +533,7 @@ __all__ = [
     "probe_firmware_media_markers",
     "record_member_eligible",
     "legacy_member_eligible",
+    "load_manifest",
     "public_yim_envelope",
     "public_yim_rle",
     "scan_distributed_unit",
@@ -516,6 +541,7 @@ __all__ = [
     "scan_parser_constants",
     "scan_global_fldb_parser_candidates",
     "scan_storage_signatures",
+    "sha256_chunks",
     "shannon_entropy",
     "summarize_code_window",
     "summarize_bounded_entry",
@@ -524,6 +550,7 @@ __all__ = [
     "summarize_distributed_units",
     "trace_control_flow",
     "trace_dispatch_producer",
+    "verify_file",
     "finalize_content_island_atlas",
     "evaluate_registered_pairs",
     "expanded_yim_integrity_candidates",
@@ -562,6 +589,9 @@ __all__ = [
     "update_operational_graph_v34",
     "update_operational_graph_v35",
     "yim_integrity_candidates",
+    "write_manifest",
+    "MANIFEST_SCHEMA",
+    "PUBLIC_SUMMARY_SCHEMA",
 ]
 
-__version__ = "0.63.0"
+__version__ = "0.64.0"

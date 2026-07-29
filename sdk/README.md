@@ -598,6 +598,22 @@ This runner reads the M1 closure record and probes only repository-relative
 files and importable SDK symbols. It freezes the M2 capability baseline and
 does not access firmware.
 
+## Reproduce Session 067
+
+```powershell
+python tools/session067/build_artifact_manifest.py `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd1-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd2-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd3-3.iso `
+  --output work/session067 `
+  --public-output research/milestones/m2/session067/artifact-manifest-summary.json `
+  --repository-root .
+```
+
+The complete schema-v1 manifest remains under ignored `work/`. The committed
+summary contains only aggregate counts and M2 gate evidence; it excludes
+logical IDs, artifact IDs, content hashes, names and member paths.
+
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
 The SuperH decoder deliberately implements only documented instruction families needed for startup and reference analysis. Unknown instructions stay explicit, and indirect calls are not guessed into targets.

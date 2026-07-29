@@ -4,7 +4,7 @@ Status: **IN PROGRESS**
 
 Entry: Session 066
 
-Evidence graph: v58
+Evidence graph: v59
 
 ## Mission
 
@@ -26,19 +26,25 @@ Session 066 passes this gate and freezes a registry of 27 capabilities:
 
 ## Exit criteria
 
-| ID | Deliverable | Target session |
-|---|---|---:|
-| M2-X1 | versioned manifest and identity model | 067 |
-| M2-X2 | declarative format registry | 068 |
-| M2-X3 | normalized parser results and bounded LOD handling | 069 |
-| M2-X4 | declarative checksum experiment framework | 070 |
-| M2-X5 | generic structural diff engine | 071 |
-| M2-X6 | schema registry and validation | 072 |
-| M2-X7 | unified toolkit CLI | 073 |
-| M2-X8 | deterministic sanitized-fixture integration gate | 074 |
+| ID | Deliverable | Target | Status |
+|---|---|---:|---|
+| M2-X1 | versioned manifest and identity model | 067 | PASS |
+| M2-X2 | declarative format registry | 068 | OPEN |
+| M2-X3 | normalized parser results and bounded LOD handling | 069 | OPEN |
+| M2-X4 | declarative checksum experiment framework | 070 | OPEN |
+| M2-X5 | generic structural diff engine | 071 | OPEN |
+| M2-X6 | schema registry and validation | 072 | OPEN |
+| M2-X7 | unified toolkit CLI | 073 | OPEN |
+| M2-X8 | deterministic sanitized-fixture integration gate | 074 | OPEN |
 
 M2 closes only when all eight criteria pass through the same machine-readable
 capability audit introduced in Session 066.
+
+Session 067 passes M2-X1 with schema
+`phoenix-mmi.artifact-manifest/v1`. The registered replay contains three
+verified media roots and 593 parent-linked members. The current capability
+state is 9 implemented, 8 partial, 8 missing and 2 blocked; 1 of 8 exit
+criteria passes.
 
 ## Safety boundary
 

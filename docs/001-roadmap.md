@@ -87,7 +87,8 @@ Parsers, manifests, binary classifiers, diff tooling, checksum research.
 
 - Session 066: capability registry, M2 entry/exit gates, ordered toolkit
   backlog and graph v58 - complete;
-- Session 067: versioned manifest and artifact identity model - planned;
+- Session 067: versioned manifest and artifact identity model, M2-X1 and
+  graph v59 - complete;
 - Session 068: declarative format registry - planned;
 - Session 069: normalized parser results and bounded LOD handling - planned;
 - Session 070: declarative checksum experiment framework - planned;

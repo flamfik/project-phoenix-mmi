@@ -252,5 +252,13 @@
 | RQ-248 | What is the frozen M2 session order? | CLOSED, CONFIRMED | Sessions 067-074 map one-to-one to M2-X1 through M2-X8. SPEC-074. |
 | RQ-249 | Does entering M2 authorize mutation, repacking or vehicle communication? | CLOSED, NO | All such gates remain false; M2 is a read-only analysis-tooling milestone. SPEC-074. |
 | RQ-250 | What is the next implementation step? | CLOSED, SESSION 067 | Build the versioned manifest and artifact identity model before moving classifier rules into a registry. SPEC-074. |
+| RQ-251 | Can local files, media images and container members share one versioned identity model? | CLOSED, CONFIRMED | Schema v1 represents all three with one strict artifact record and origin graph. SPEC-075. |
+| RQ-252 | How are logical, byte-content and artifact-instance identities separated? | CLOSED, CONFIRMED | Logical IDs are caller-assigned, content IDs are SHA-256 and artifact IDs deterministically bind logical identity, content and provenance. SPEC-075. |
+| RQ-253 | Can parent-member provenance be validated without extracting members? | CLOSED, CONFIRMED | The runner hashes bounded ISO member streams and validates all 593 relationships with zero orphans. SPEC-075. |
+| RQ-254 | Are duplicate logical and duplicate content identities equivalent errors? | CLOSED, NO | Duplicate logical IDs are rejected; equal byte content is valid and tracked in 104 groups. SPEC-075. |
+| RQ-255 | Does equal content prove equal purpose or behavior? | CLOSED, NO | SHA-256 establishes byte equality only; semantic equivalence remains unclaimed. SPEC-075. |
+| RQ-256 | Can schema v1 detect artifact-set changes? | CLOSED, CONFIRMED BOUNDED | Manifest comparison reports additions, removals and changed identity fields; generic structural diff remains Session 071 work. SPEC-075. |
+| RQ-257 | Does the schema reproduce the registered MMI 5570 corpus? | CLOSED, CONFIRMED | Three verified roots plus 593 members reproduce 435,708,503 member bytes, 104 duplicate groups and zero orphans. SPEC-075. |
+| RQ-258 | Does Session 067 pass M2-X1 without authorizing mutation? | CLOSED, PASS | M2-CAP-023 is implemented, exactly one of eight M2 criteria passes and all mutation/installable gates remain false. SPEC-075. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

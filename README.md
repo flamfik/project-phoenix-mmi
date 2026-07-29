@@ -6,11 +6,12 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: IN PROGRESS**
 
-Session 066 passes the M2 entry gate and freezes 27 toolkit capabilities,
-eight exit criteria and the ordered Sessions 067-074. The baseline contains
-8 implemented, 8 partial, 9 missing and 2 blocked capabilities. Operational
-graph v58 starts the read-only Analysis Toolkit work while safe mutation and
-installable-artifact gates remain false.
+Session 067 implements the versioned artifact manifest and passes M2-X1. The
+registered replay validates three media roots and 593 parent-linked members.
+The current toolkit state contains 9 implemented, 8 partial, 8 missing and
+2 blocked capabilities; 1 of 8 exit criteria passes. Operational graph v59
+preserves the read-only boundary while safe mutation and installable-artifact
+gates remain false.
 
 ## First milestone
 
@@ -102,6 +103,7 @@ ui/            Future interface and resource research
 - [Session 064 report](docs/sessions/SESSION-064-m1-evidence-traceability.md)
 - [Session 065 report](docs/sessions/SESSION-065-milestone-m1-closure.md)
 - [Session 066 report](docs/sessions/SESSION-066-m2-toolkit-foundation.md)
+- [Session 067 report](docs/sessions/SESSION-067-versioned-artifact-manifest.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 plan](docs/milestones/M2-analysis-toolkit.md)
 - [Research Questions](docs/research-questions/README.md)
