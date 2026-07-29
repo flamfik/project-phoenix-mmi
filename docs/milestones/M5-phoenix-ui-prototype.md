@@ -1,8 +1,8 @@
 # Milestone M5 - Phoenix UI Prototype
 
-Status: **READY**
+Status: **IN PROGRESS**
 
-Entry evidence: Session 092, operational graph v84
+Entry evidence: Session 092; baseline: Session 093, operational graph v85
 
 ## Mission
 
@@ -19,11 +19,21 @@ preview behavior without modifying firmware.
 - the host harness is synthetic and isolated;
 - safe mutation and installable-artifact gates remain false.
 
-## First route
+## Route
 
-Session 093 will freeze the M5 capability registry, UX constraints, exit
-criteria and ordered offline prototype backlog. Prototype assets must be
-original or synthetic and must not be extracted from firmware.
+- Session 093: capability baseline, UX constraint contract and ordered
+  offline backlog - complete;
+- Session 094: typed information architecture and screen schema;
+- Session 095: deterministic focus and navigation reducer;
+- Session 096: bounded 480x240 layout engine;
+- Session 097: original design tokens and synthetic asset registry;
+- Session 098: offline Phoenix UI preview renderer;
+- Session 099: deterministic input playback and snapshots;
+- Session 100: legibility, focus and complexity audit;
+- Session 101: sanitized integration and M5 closure.
+
+Session 093 starts M5 with 17 capabilities: 2 implemented, 3 partial, 8
+missing and 4 blocked. Eight exit criteria remain open.
 
 ## Safety boundary
 

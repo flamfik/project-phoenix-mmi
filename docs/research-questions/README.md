@@ -360,5 +360,12 @@
 | RQ-356 | How many M4 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M4-X1 through M4-X8 pass with repository probes intact. SPEC-100. |
 | RQ-357 | Which milestone may begin next? | CLOSED, M5 READY | The offline Phoenix UI Prototype may begin with a new capability baseline. SPEC-100. |
 | RQ-358 | Does M4 closure authorize firmware modification or vehicle integration? | CLOSED, NO | Mutation, repacking, installation, execution and vehicle I/O remain unauthorized. SPEC-100. |
+| RQ-359 | Does M5 satisfy its M4 entry gate? | CLOSED, PASS | M4 is COMPLETE, M5 is READY and the authorized scope is the offline Phoenix UI prototype. SPEC-101. |
+| RQ-360 | What is the initial M5 capability state? | CLOSED, CONFIRMED | Seventeen capabilities begin as 2 implemented, 3 partial, 8 missing and 4 blocked. SPEC-101. |
+| RQ-361 | How many formal M5 exit criteria exist? | CLOSED, EIGHT | Sessions 094-101 map to eight ordered criteria. SPEC-101. |
+| RQ-362 | Does M5 permit firmware integration, mutation or vehicle communication? | CLOSED, NO | Renderer integration, replacement, installable artifacts and vehicle services remain blocked. SPEC-101. |
+| RQ-363 | What viewport does the offline prototype use? | CLOSED, 480X240 | Validated resource geometry establishes the fixed prototype canvas but not display-controller behavior. SPEC-102. |
+| RQ-364 | Are the five prototype actions recovered hardware codes? | CLOSED, NO | They are abstract focus actions; physical mappings and vehicle messages remain unknown. SPEC-102. |
+| RQ-365 | Which assets may M5 use? | CLOSED, ORIGINAL OR SYNTHETIC | Firmware-extracted and navigation-media assets are excluded from the prototype. SPEC-102. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

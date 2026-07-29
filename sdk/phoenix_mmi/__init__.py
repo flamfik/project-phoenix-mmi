@@ -374,6 +374,21 @@ from .runtime_objects import (
     build_runtime_evidence_graph,
 )
 from .runtime_resources import analyze_resource_consumers
+from .ui_constraints import (
+    ABSTRACT_INPUT_ACTIONS,
+    UI_CONSTRAINT_SCHEMA,
+    InputConstraint,
+    ViewportConstraint,
+    build_ui_constraint_contract,
+    validate_ui_constraint_contract,
+)
+from .ui_prototype_audit import (
+    M5_CAPABILITIES,
+    M5_EXIT_CRITERIA,
+    UICapability,
+    advance_m5_progress,
+    build_m5_baseline,
+)
 from .runtime_slot import (
     analyze_runtime_slot_lineage,
     build_public_runtime_slot_report,
@@ -760,10 +775,21 @@ __all__ = [
     "build_m4_baseline",
     "build_runtime_evidence_graph",
     "run_runtime_lab_integration",
+    "ABSTRACT_INPUT_ACTIONS",
+    "UI_CONSTRAINT_SCHEMA",
+    "InputConstraint",
+    "ViewportConstraint",
+    "M5_CAPABILITIES",
+    "M5_EXIT_CRITERIA",
+    "UICapability",
+    "advance_m5_progress",
+    "build_m5_baseline",
+    "build_ui_constraint_contract",
+    "validate_ui_constraint_contract",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
     "DEFAULT_FORMAT_REGISTRY",
     "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "0.90.0"
+__version__ = "0.91.0"

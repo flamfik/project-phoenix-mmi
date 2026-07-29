@@ -6,13 +6,18 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: COMPLETE; M3 —
 Resource Laboratory: COMPLETE; M4 — Runtime Research: COMPLETE; M5 — Phoenix
-UI Prototype: READY**
+UI Prototype: IN PROGRESS**
 
 Sessions 084-092 establish static task/service and IPC evidence, resource
 consumer and device-boundary searches, anonymous pointer topology, an isolated
 host contract and deterministic integration. All 8 M4 exit criteria pass;
 operational graph v84 authorizes an offline M5 UI prototype. Safe mutation and
 installable-artifact gates remain false.
+
+Session 093 freezes the M5 capability registry, the 480x240 offline viewport,
+abstract focus-only input, original/synthetic asset policy and Sessions
+094-101 route. Operational graph v85 keeps firmware execution, mutation,
+repacking, installable artifacts and vehicle integration blocked.
 
 ## First milestone
 
@@ -130,6 +135,7 @@ ui/            Future interface and resource research
 - [Session 090 report](docs/sessions/SESSION-090-isolated-host-runtime-contract.md)
 - [Session 091 report](docs/sessions/SESSION-091-runtime-evidence-graph.md)
 - [Session 092 report](docs/sessions/SESSION-092-milestone-m4-closure.md)
+- [Session 093 report](docs/sessions/SESSION-093-m5-ui-prototype-baseline.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
 - [Milestone M3 closure](docs/milestones/M3-resource-laboratory.md)
@@ -175,6 +181,7 @@ ui/            Future interface and resource research
 - [M2 Analysis Toolkit evidence](research/milestones/m2/)
 - [M3 Resource Laboratory evidence](research/milestones/m3/)
 - [M4 Runtime Research evidence](research/milestones/m4/)
+- [M5 Phoenix UI Prototype evidence](research/milestones/m5/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

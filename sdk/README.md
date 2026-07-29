@@ -91,6 +91,10 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
   confidence-graded M4 evidence graph.
 - `runtime_harness` - deterministic metadata-only host contract with no I/O.
 - `runtime_lab_integration` - synthetic non-firmware M4 end-to-end gate.
+- `ui_constraints` - frozen 480x240 viewport, abstract focus input, original
+  asset policy and fail-closed offline authorization boundary.
+- `ui_prototype_audit` - M5 capability registry, entry/exit gates and ordered
+  Sessions 094-101 prototype backlog.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 

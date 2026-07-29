@@ -135,12 +135,20 @@ Runtime model, IPC, device services, hardware interfaces, safe emulation strateg
 - Session 092: deterministic integration, M4 closure and graph v84 -
   complete.
 
-## M5 - Phoenix UI Prototype — READY
+## M5 - Phoenix UI Prototype — IN PROGRESS
 
 Modern interface prototype constrained by original display, controls, memory and CPU.
 
-- Session 093: freeze the M5 capability baseline, UX constraints and ordered
-  offline prototype backlog - next.
+- Session 093: M5 capability baseline, frozen UX constraints, eight exit
+  criteria and ordered Sessions 094-101 backlog, graph v85 - complete;
+- Session 094: typed information architecture and screen schema - next;
+- Session 095: deterministic focus and navigation reducer - planned;
+- Session 096: bounded 480x240 layout engine - planned;
+- Session 097: original design tokens and synthetic asset registry - planned;
+- Session 098: offline Phoenix UI preview renderer - planned;
+- Session 099: deterministic input playback and snapshots - planned;
+- Session 100: legibility, focus and complexity audit - planned;
+- Session 101: sanitized integration and M5 closure - planned.
 
 ## M6 - Navigation Feasibility
 
