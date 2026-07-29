@@ -49,7 +49,8 @@ Progress:
 - Session 037: controlled 2 KiB RZ-012 micro-island profile and operational graph v30 - complete;
 - Session 038: stable sparse-single-byte-difference skeleton and bounded-negative record-period models, operational graph v31 - complete;
 - Session 039: frozen prior-registry component-provenance audit, bounded-negative owner result and operational graph v32 - complete;
-- remaining M1 work: new cross-payload or external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 040: fixed five-anchor raw cross-payload homolog search across all three update discs, equal-geometry control and operational graph v33 - complete;
+- remaining M1 work: format-normalized payload and external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

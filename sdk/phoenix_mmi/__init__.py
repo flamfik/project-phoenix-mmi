@@ -9,6 +9,15 @@ from .accessor_dispatch import (
 )
 from .binary import BinaryReader
 from .checksum import ChecksumExpectation, ChecksumMatch, crc32_bytes
+from .cross_payload_homolog import (
+    PayloadInput,
+    analyze_cross_payload_homologs,
+    build_public_cross_payload_homolog_report,
+    correlate_cross_payload_homologs,
+    derive_cross_payload_signature,
+    payload_member_eligible,
+    update_operational_graph_v33,
+)
 from .call_return_producer import (
     analyze_call_return_producer,
     build_public_call_return_producer_report,
@@ -243,6 +252,7 @@ __all__ = [
     "CandidateSegment",
     "ChecksumExpectation",
     "ChecksumMatch",
+    "PayloadInput",
     "EntropyWindow",
     "FingerprintHit",
     "SHInstruction",
@@ -258,6 +268,7 @@ __all__ = [
     "analyze_handoff_field60",
     "analyze_handoff_mapping",
     "analyze_content_island_atlas",
+    "analyze_cross_payload_homologs",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
     "analyze_navigation_media",
@@ -295,6 +306,7 @@ __all__ = [
     "build_public_handoff_field60_report",
     "build_public_handoff_mapping_report",
     "build_public_content_island_atlas_report",
+    "build_public_cross_payload_homolog_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
@@ -342,6 +354,7 @@ __all__ = [
     "correlate_handoff_field60",
     "correlate_handoff_mapping",
     "correlate_content_island_atlas",
+    "correlate_cross_payload_homologs",
     "correlate_firmware_and_media",
     "correlate_micro_island",
     "correlate_runtime_slot_lineage",
@@ -366,9 +379,11 @@ __all__ = [
     "collect_seed_pairs",
     "decode_instruction",
     "decode_instruction_extended",
+    "derive_cross_payload_signature",
     "discover_contract_anchors",
     "entropy_profile",
     "parse_fldb_container",
+    "payload_member_eligible",
     "probe_firmware_media_markers",
     "scan_fingerprints",
     "scan_parser_constants",
@@ -414,6 +429,7 @@ __all__ = [
     "update_operational_graph_v30",
     "update_operational_graph_v31",
     "update_operational_graph_v32",
+    "update_operational_graph_v33",
 ]
 
-__version__ = "0.37.0"
+__version__ = "0.38.0"
