@@ -1,0 +1,101 @@
+{
+  "analysis_mode": "read-only-fixed-width-cross-language-phase-invariance",
+  "candidate_widths": [
+    2,
+    3,
+    4,
+    8,
+    16
+  ],
+  "classification": {
+    "global_alignment": "THREE_BYTE_PHASE_BIAS_OBSERVED",
+    "record_width": "NOT_ESTABLISHED"
+  },
+  "minimum_compared_span": 2195064,
+  "operational_graph_version": "v47",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.lod-alignment-census/v1",
+  "session": "055",
+  "three_byte_phase_bias_threshold": 0.05,
+  "unique_source_count": 5,
+  "width_results": [
+    {
+      "candidate_width": 2,
+      "maximum_phase": 0,
+      "phase_common_byte_ratios": [
+        0.04870929,
+        0.04638498
+      ],
+      "phase_spread": 0.00232431
+    },
+    {
+      "candidate_width": 3,
+      "maximum_phase": 0,
+      "phase_common_byte_ratios": [
+        0.07769022,
+        0.04849881,
+        0.01645237
+      ],
+      "phase_spread": 0.06123785
+    },
+    {
+      "candidate_width": 4,
+      "maximum_phase": 0,
+      "phase_common_byte_ratios": [
+        0.04885871,
+        0.04805509,
+        0.04855986,
+        0.04471487
+      ],
+      "phase_spread": 0.00414384
+    },
+    {
+      "candidate_width": 8,
+      "maximum_phase": 4,
+      "phase_common_byte_ratios": [
+        0.0486364,
+        0.04804962,
+        0.04866555,
+        0.04488252,
+        0.04908103,
+        0.04806056,
+        0.04845417,
+        0.04454722
+      ],
+      "phase_spread": 0.00453381
+    },
+    {
+      "candidate_width": 16,
+      "maximum_phase": 12,
+      "phase_common_byte_ratios": [
+        0.04858155,
+        0.04802758,
+        0.04857426,
+        0.0447548,
+        0.04887311,
+        0.04839932,
+        0.04830457,
+        0.04452155,
+        0.04869124,
+        0.04807167,
+        0.04875684,
+        0.04501024,
+        0.04928895,
+        0.04772179,
+        0.04860377,
+        0.04457289
+      ],
+      "phase_spread": 0.0047674
+    }
+  ]
+}

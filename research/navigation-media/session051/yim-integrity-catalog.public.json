@@ -1,0 +1,98 @@
+{
+  "analysis_mode": "read-only-frozen-expanded-crc-catalogue-and-range-test",
+  "candidate_16bit_algorithms_tested": 9,
+  "candidate_32bit_algorithms_tested": 7,
+  "candidate_ranges_tested": 7,
+  "classification": {
+    "expanded_integrity_catalog": "NO_MATCH_UNDER_FROZEN_EXPANDED_CATALOG",
+    "safe_repack": "BLOCKED"
+  },
+  "integrity16_total_match_count": 0,
+  "integrity32_total_match_count": 0,
+  "operational_graph_version": "v43",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "integrity_field_values_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "result_representations_tested": 2,
+  "schema": "phoenix-mmi.yim-integrity-catalog/v1",
+  "session": "051",
+  "sources": [
+    {
+      "adaptive_parameter_search_performed": false,
+      "candidate_16bit_algorithms_tested": 9,
+      "candidate_32bit_algorithms_tested": 7,
+      "candidate_ranges_tested": 7,
+      "catalog_was_frozen_before_corpus_run": true,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "result_representations_tested": 2,
+      "source_id": "YIM-U01"
+    },
+    {
+      "adaptive_parameter_search_performed": false,
+      "candidate_16bit_algorithms_tested": 9,
+      "candidate_32bit_algorithms_tested": 7,
+      "candidate_ranges_tested": 7,
+      "catalog_was_frozen_before_corpus_run": true,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "result_representations_tested": 2,
+      "source_id": "YIM-U02"
+    },
+    {
+      "adaptive_parameter_search_performed": false,
+      "candidate_16bit_algorithms_tested": 9,
+      "candidate_32bit_algorithms_tested": 7,
+      "candidate_ranges_tested": 7,
+      "catalog_was_frozen_before_corpus_run": true,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "result_representations_tested": 2,
+      "source_id": "YIM-U03"
+    },
+    {
+      "adaptive_parameter_search_performed": false,
+      "candidate_16bit_algorithms_tested": 9,
+      "candidate_32bit_algorithms_tested": 7,
+      "candidate_ranges_tested": 7,
+      "catalog_was_frozen_before_corpus_run": true,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "result_representations_tested": 2,
+      "source_id": "YIM-U04"
+    },
+    {
+      "adaptive_parameter_search_performed": false,
+      "candidate_16bit_algorithms_tested": 9,
+      "candidate_32bit_algorithms_tested": 7,
+      "candidate_ranges_tested": 7,
+      "catalog_was_frozen_before_corpus_run": true,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "result_representations_tested": 2,
+      "source_id": "YIM-U05"
+    }
+  ],
+  "unique_source_count": 5
+}

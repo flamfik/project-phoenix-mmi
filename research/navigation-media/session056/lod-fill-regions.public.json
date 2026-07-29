@@ -1,0 +1,136 @@
+{
+  "all_ff_delimiters_begin_at_phase_zero_modulo_3": true,
+  "analysis_mode": "read-only-fixed-threshold-zero-and-ff-region-segmentation",
+  "classification": {
+    "fill_topology": "REPEATABLE_ORDERED_DELIMITER_TOPOLOGY",
+    "semantic_region_roles": "UNRESOLVED"
+  },
+  "delimiter_position_spans_by_ordinal": [
+    57,
+    141847,
+    163986
+  ],
+  "delimiter_sequence_count": 1,
+  "operational_graph_version": "v48",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.lod-fill-regions/v1",
+  "session": "056",
+  "sources": [
+    {
+      "delimiter_count": 3,
+      "delimiter_lengths": [
+        192,
+        6478,
+        12241
+      ],
+      "delimiter_sequence": [
+        "FF",
+        "ZERO",
+        "ZERO"
+      ],
+      "region_count": 4,
+      "source_id": "LOD-U01",
+      "start_phases_modulo_3": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "delimiter_count": 3,
+      "delimiter_lengths": [
+        192,
+        6478,
+        12243
+      ],
+      "delimiter_sequence": [
+        "FF",
+        "ZERO",
+        "ZERO"
+      ],
+      "region_count": 4,
+      "source_id": "LOD-U02",
+      "start_phases_modulo_3": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "delimiter_count": 3,
+      "delimiter_lengths": [
+        192,
+        6478,
+        12243
+      ],
+      "delimiter_sequence": [
+        "FF",
+        "ZERO",
+        "ZERO"
+      ],
+      "region_count": 4,
+      "source_id": "LOD-U03",
+      "start_phases_modulo_3": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "delimiter_count": 3,
+      "delimiter_lengths": [
+        192,
+        6478,
+        12241
+      ],
+      "delimiter_sequence": [
+        "FF",
+        "ZERO",
+        "ZERO"
+      ],
+      "region_count": 4,
+      "source_id": "LOD-U04",
+      "start_phases_modulo_3": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "delimiter_count": 3,
+      "delimiter_lengths": [
+        192,
+        6478,
+        12243
+      ],
+      "delimiter_sequence": [
+        "FF",
+        "ZERO",
+        "ZERO"
+      ],
+      "region_count": 4,
+      "source_id": "LOD-U05",
+      "start_phases_modulo_3": [
+        0,
+        2,
+        2
+      ]
+    }
+  ],
+  "thresholds": {
+    "ff_run_minimum": 128,
+    "frozen_before_corpus_run": true,
+    "zero_run_minimum": 4096
+  },
+  "unique_source_count": 5
+}

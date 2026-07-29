@@ -39,6 +39,21 @@ from .legacy_cycle import (
     build_firmware_evidence_map,
     legacy_member_eligible,
 )
+from .evidence_cycle import build_session060_evidence_map
+from .lod_research import (
+    analyze_lod_alignment,
+    analyze_lod_fill_regions,
+    analyze_lod_grid_reuse,
+    analyze_lod_record_hypothesis,
+    analyze_lod_shared_regions,
+)
+from .yim_research import (
+    analyze_embedded_xim2,
+    analyze_yim_field_relations,
+    analyze_yim_integrity_catalog,
+    build_yim_integrity_decision,
+    expanded_yim_integrity_candidates,
+)
 from .yim import (
     YimDecodeResult,
     YimEnvelope,
@@ -321,11 +336,19 @@ __all__ = [
     "analyze_cross_payload_homologs",
     "analyze_distributed_homologs",
     "analyze_legacy_corpus",
+    "analyze_lod_alignment",
+    "analyze_lod_fill_regions",
+    "analyze_lod_grid_reuse",
+    "analyze_lod_record_hypothesis",
+    "analyze_lod_shared_regions",
     "analyze_lod_topology",
     "analyze_record_normalized_homologs",
     "analyze_yim_decoded_homolog",
+    "analyze_embedded_xim2",
     "analyze_yim_envelopes",
+    "analyze_yim_field_relations",
     "analyze_yim_integrity",
+    "analyze_yim_integrity_catalog",
     "analyze_yim_rle",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
@@ -368,6 +391,8 @@ __all__ = [
     "build_public_distributed_homolog_report",
     "build_public_record_normalized_homolog_report",
     "build_firmware_evidence_map",
+    "build_session060_evidence_map",
+    "build_yim_integrity_decision",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
     "build_public_navigation_payload_report",
@@ -473,6 +498,7 @@ __all__ = [
     "trace_dispatch_producer",
     "finalize_content_island_atlas",
     "evaluate_registered_pairs",
+    "expanded_yim_integrity_candidates",
     "update_operational_graph",
     "update_operational_graph_v3",
     "update_operational_graph_v4",
@@ -510,4 +536,4 @@ __all__ = [
     "yim_integrity_candidates",
 ]
 
-__version__ = "0.47.0"
+__version__ = "0.57.0"

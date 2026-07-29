@@ -1,0 +1,49 @@
+{
+  "analysis_mode": "evidence-only-yim-mutation-readiness-gate",
+  "classification": {
+    "safe_mutation_ready": false,
+    "yim_read_model": "CONFIRMED_PARTIAL",
+    "yim_write_model": "NOT_ESTABLISHED"
+  },
+  "confirmed": [
+    "strict XIM2 envelope and bounded RLE decoding",
+    "embedded XIM2 resources in both principal images",
+    "exact standalone-to-embedded content relationship"
+  ],
+  "decision": {
+    "firmware_mutation": "BLOCKED",
+    "metadata_only_reporting": "ALLOWED",
+    "read_only_decode": "ALLOWED",
+    "resource_export": "NOT_PUBLISHED",
+    "yim_repack": "BLOCKED"
+  },
+  "operational_graph_version": "v46",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "integrity_field_values_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.yim-integrity-decision/v1",
+  "session": "054",
+  "source_sessions": [
+    "047",
+    "051",
+    "052",
+    "053"
+  ],
+  "unresolved": [
+    "ASCII preamble 32-bit integrity field",
+    "ASCII preamble 16-bit integrity field",
+    "pixel semantics",
+    "resource consumer routine"
+  ]
+}

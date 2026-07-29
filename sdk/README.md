@@ -52,6 +52,9 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `distributed_homolog` - fixed quality-gated 12-byte subanchor constellation, multi-parent voting, raw/decoded corpus reproduction and operational graph v35.
 - `yim` - strict XIM2 envelope parsing, bounded two-byte-unit RLE decoding and fixed integrity-candidate tests without raster publication.
 - `legacy_cycle` - LOD/YIM census, XIM2 reports, opaque LOD topology, decoded-YIM homolog search and integrated operational graph v42.
+- `yim_research` - frozen expanded integrity tests, exact field relations, strict embedded-XIM2 census and explicit YIM write gate.
+- `lod_research` - fixed phase, fill-region, shifted-grid, record-hypothesis and shared-region analyses for opaque LOD payloads.
+- `evidence_cycle` - Sessions 051-060 synthesis and operational graph v52.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -545,6 +548,22 @@ decoded rasters private, tests a frozen integrity-candidate matrix, profiles
 LOD only as opaque binary structure, repeats the fixed Session 042 search in
 the decoded-YIM domain and emits operational graph v42. Session 043 was never
 executed and remains an explicit numbering gap.
+
+## Reproduce Sessions 051-060
+
+```bash
+python tools/session051_060/analyze_integrity_lod_cycle.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd2-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output work/session051_060 \
+  --public-root research/navigation-media
+```
+
+This cycle keeps all payloads private while testing a frozen expanded YIM
+integrity catalogue, validating embedded XIM2 resources, profiling LOD
+alignment and shared regions, rejecting unsupported record promotion and
+emitting operational graph v52.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Sessions 039-042 close fixed registered, raw, record-normalized and distributed provenance searches as bounded-negative. Sessions 044-049 identify the LOD/YIM families, validate a read-only XIM2 envelope and bounded RLE decoder, retain unknown integrity fields as explicit blockers, profile opaque LOD reuse and close the decoded-YIM homolog domain. Session 050 links the current update, runtime, resource and navigation evidence in operational graph v42. M1 remains partial because semantic ownership, exact section boundaries, loader transformation, YIM integrity and LOD record semantics remain open.
+The foundation, update model and principal-image fingerprinting are complete. Sessions 039-042 close fixed registered, raw, record-normalized and distributed provenance searches as bounded-negative. Sessions 044-050 identify the LOD/YIM families, validate a read-only XIM2 decoder and produce operational graph v42. Sessions 051-060 confirm 84 strict embedded XIM2 resources shared by MMI 5150 and 5570, retain the unknown YIM integrity fields as write blockers, establish repeatable LOD fill and shared-region topology, reject unsupported record promotion and advance the evidence model to graph v52. M1 remains partial because consumer ownership, exact section boundaries, loader transformation, YIM integrity and LOD record semantics remain open.
 
 ## First milestone
 
@@ -82,6 +82,16 @@ ui/            Future interface and resource research
 - [Session 048 report](docs/sessions/SESSION-048-lod-structural-topology.md)
 - [Session 049 report](docs/sessions/SESSION-049-yim-decoded-homolog-search.md)
 - [Session 050 report](docs/sessions/SESSION-050-integrated-firmware-evidence-map.md)
+- [Session 051 report](docs/sessions/SESSION-051-yim-expanded-integrity-catalog.md)
+- [Session 052 report](docs/sessions/SESSION-052-yim-field-relations.md)
+- [Session 053 report](docs/sessions/SESSION-053-embedded-xim2-census.md)
+- [Session 054 report](docs/sessions/SESSION-054-yim-integrity-decision.md)
+- [Session 055 report](docs/sessions/SESSION-055-lod-alignment-census.md)
+- [Session 056 report](docs/sessions/SESSION-056-lod-fill-regions.md)
+- [Session 057 report](docs/sessions/SESSION-057-lod-grid-reuse.md)
+- [Session 058 report](docs/sessions/SESSION-058-lod-record-hypothesis.md)
+- [Session 059 report](docs/sessions/SESSION-059-lod-shared-regions.md)
+- [Session 060 report](docs/sessions/SESSION-060-firmware-evidence-map-v2.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -117,6 +127,7 @@ ui/            Future interface and resource research
 - [Session 036 publication-safe evidence](research/navigation-media/session036/)
 - [Session 037 publication-safe evidence](research/navigation-media/session037/)
 - [Session 038 publication-safe evidence](research/navigation-media/session038/)
+- [Session 060 publication-safe evidence](research/navigation-media/session060/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

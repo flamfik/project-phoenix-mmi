@@ -189,5 +189,38 @@
 | RQ-185 | Does the integrated graph preserve uncertainty? | CLOSED, CONFIRMED | Graph v42 adds no runtime or semantic-owner edge unsupported by prior evidence. SPEC-058. |
 | RQ-186 | Is M1 complete after Session 050? | CLOSED, NOT YET | LOD/integrity, exact section, semantic owner and loader-transform gaps remain. SPEC-058. |
 | RQ-187 | Is mutation or installable repacking ready? | CLOSED, NO | The integrated safety gate remains false. SPEC-058. |
+| RQ-188 | Do additional named CRC families explain the 32-bit YIM preamble field? | CLOSED, BOUNDED NEGATIVE | Seven frozen CRC-32 variants across seven ranges and two result representations produce zero matches in five sources. SPEC-059. |
+| RQ-189 | Do additional named CRC families explain the 16-bit YIM preamble field? | CLOSED, BOUNDED NEGATIVE | Nine frozen CRC-16 variants under the same range contract produce zero matches. SPEC-059. |
+| RQ-190 | Does the expanded catalogue justify YIM repacking? | CLOSED, NO | The catalogue excludes common candidates but does not identify either field; repacking remains blocked. SPEC-059. |
+| RQ-191 | Are YIM integrity fields simple functions of validated sizes or geometry? | CLOSED, BOUNDED NEGATIVE | No predeclared exact size or geometry relation matches the corpus. SPEC-060. |
+| RQ-192 | Are YIM integrity fields simple functions of RLE counts or byte sums? | CLOSED, BOUNDED NEGATIVE | No command-count, byte-sum, complement, fold or byte-swap relation matches. SPEC-060. |
+| RQ-193 | Are the two YIM integrity fields directly related? | CLOSED, BOUNDED NEGATIVE | Low-half, high-half and XOR-fold cross-field relations all fail. SPEC-060. |
+| RQ-194 | Are strict XIM2 resources embedded in the principal images? | CLOSED, CONFIRMED | CD1 and CD3 each contain 84 records satisfying the complete envelope and bounded RLE contract. SPEC-061. |
+| RQ-195 | Is the embedded XIM2 set stable from MMI 5150 to 5570? | CLOSED, CONFIRMED | All 84 encoded and decoded contents are shared, with zero release-only contents. SPEC-061. |
+| RQ-196 | Does a standalone YIM relate exactly to the embedded XIM2 set? | CLOSED, CONFIRMED PARTIAL | One of five unique standalone sources matches one embedded resource in both encoded and decoded form on both releases. SPEC-061. |
+| RQ-197 | Is the XIM2 consumer routine identified? | OPEN | Physical containment and suffix markers do not identify the loader or renderer. SPEC-061. |
+| RQ-198 | Which YIM operations are currently safe? | CLOSED, READ ONLY | Strict parsing, bounded decoding, private comparison and metadata reporting are allowed. SPEC-062. |
+| RQ-199 | Is the YIM write model established? | CLOSED, NO | Integrity-field synthesis, encoding and installation contracts remain absent. SPEC-062. |
+| RQ-200 | Can a YIM or firmware mutation be produced now? | CLOSED, BLOCKED | The explicit mutation gate remains false. SPEC-062. |
+| RQ-201 | Do LOD sources exhibit fixed-width phase bias? | CLOSED, CANDIDATE | Width 3 alone exceeds the predeclared 0.05 spread threshold. SPEC-063. |
+| RQ-202 | Do widths 2, 4, 8 or 16 show comparable bias? | CLOSED, NO | Their phase spreads remain below 0.0048. SPEC-063. |
+| RQ-203 | Does phase bias establish a three-byte record? | CLOSED, NO | It establishes an alignment candidate only. SPEC-063. |
+| RQ-204 | Do long fill runs define repeatable LOD topology? | CLOSED, CONFIRMED | All sources have the same `FF -> ZERO -> ZERO` delimiter sequence and four regions. SPEC-064. |
+| RQ-205 | Is the first LOD delimiter aligned consistently? | CLOSED, CONFIRMED | Every 192-byte `0xFF` delimiter begins at phase zero modulo three. SPEC-064. |
+| RQ-206 | Are semantic roles of the four LOD regions known? | OPEN | Fill boundaries alone cannot assign code, index, audio or integrity roles. SPEC-064. |
+| RQ-207 | Is LOD shared content an artifact of the 256-byte grid? | CLOSED, DISPROVED | Shared-all content persists for 128, 256, 512 and 1,024-byte grids. SPEC-065. |
+| RQ-208 | Is LOD reuse dependent on grid origin? | CLOSED, DISPROVED | It persists at zero, quarter, half and three-quarter block shifts. SPEC-065. |
+| RQ-209 | Does robust reuse identify record semantics? | CLOSED, NO | It proves an exact content relationship only. SPEC-065. |
+| RQ-210 | How many fixed tests support three-byte LOD alignment? | CLOSED, THREE OF SEVEN | Prefix, common-byte phase and `0xFF` start phase support it. SPEC-066. |
+| RQ-211 | Which observations prevent record promotion? | CLOSED, CONFIRMED | Delimiter divisibility and token-phase behavior fail; header and address/length fields remain absent. SPEC-066. |
+| RQ-212 | Is there a validated LOD record/address/length model? | OPEN | No; three-byte alignment remains only a candidate. SPEC-066. |
+| RQ-213 | Do all LOD variants share nontrivial exact content? | CLOSED, CONFIRMED | Thirty of 34 all-source 256-byte contents are nontrivial. SPEC-067. |
+| RQ-214 | Do exact shared LOD contents form aligned regions? | CLOSED, CONFIRMED BOUNDED | Thirty same-index blocks are identical; the longest run spans 19 blocks. SPEC-067. |
+| RQ-215 | Is there one monolithic common LOD core? | OPEN | Bounded shared regions are proven, but one core and its semantics are not. SPEC-067. |
+| RQ-216 | How are display resources connected to the main image? | CLOSED, CONFIRMED PARTIAL | Both main images physically contain the same 84 strict XIM2 resources and one exact standalone-YIM counterpart. SPEC-068. |
+| RQ-217 | How far is the LOD speech model understood? | PARTIAL | Ordered delimiters, alignment bias and bounded exact reuse are known; record and consumer models are not. SPEC-068. |
+| RQ-218 | Does graph v52 preserve negative and open evidence? | CLOSED, CONFIRMED | It adds no renderer, LOD decoder or write path unsupported by direct evidence. SPEC-068. |
+| RQ-219 | Is M1 complete after Session 060? | CLOSED, NOT YET | Consumer ownership, YIM integrity, LOD semantics and section boundaries remain open. SPEC-068. |
+| RQ-220 | Is safe mutation ready after Session 060? | CLOSED, NO | The integrated gate remains false and no installable artifact is produced. SPEC-068. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

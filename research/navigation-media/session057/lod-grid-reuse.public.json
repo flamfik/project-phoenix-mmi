@@ -1,0 +1,155 @@
+{
+  "analysis_mode": "read-only-fixed-block-size-quarter-shift-content-reuse",
+  "block_sizes": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "classification": {
+    "cross_language_reuse": "PERSISTS_ACROSS_ALL_FIXED_GRID_SIZES_AND_SHIFTS",
+    "reuse_interpretation": "CONTENT_RELATION_ONLY"
+  },
+  "operational_graph_version": "v49",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "results": [
+    {
+      "block_size": 128,
+      "fixed_shift_count": 4,
+      "per_source_unique_content_count_ranges": [
+        {
+          "maximum": 16920,
+          "minimum": 16907
+        },
+        {
+          "maximum": 18099,
+          "minimum": 18092
+        },
+        {
+          "maximum": 18598,
+          "minimum": 18589
+        },
+        {
+          "maximum": 18566,
+          "minimum": 18560
+        },
+        {
+          "maximum": 18708,
+          "minimum": 18697
+        }
+      ],
+      "shared_all_content_count": {
+        "maximum": 70,
+        "mean": 69.5,
+        "minimum": 69
+      }
+    },
+    {
+      "block_size": 256,
+      "fixed_shift_count": 4,
+      "per_source_unique_content_count_ranges": [
+        {
+          "maximum": 8479,
+          "minimum": 8477
+        },
+        {
+          "maximum": 9078,
+          "minimum": 9075
+        },
+        {
+          "maximum": 9316,
+          "minimum": 9313
+        },
+        {
+          "maximum": 9305,
+          "minimum": 9302
+        },
+        {
+          "maximum": 9378,
+          "minimum": 9375
+        }
+      ],
+      "shared_all_content_count": {
+        "maximum": 36,
+        "mean": 34.75,
+        "minimum": 34
+      }
+    },
+    {
+      "block_size": 512,
+      "fixed_shift_count": 4,
+      "per_source_unique_content_count_ranges": [
+        {
+          "maximum": 4245,
+          "minimum": 4243
+        },
+        {
+          "maximum": 4544,
+          "minimum": 4542
+        },
+        {
+          "maximum": 4661,
+          "minimum": 4659
+        },
+        {
+          "maximum": 4660,
+          "minimum": 4658
+        },
+        {
+          "maximum": 4692,
+          "minimum": 4691
+        }
+      ],
+      "shared_all_content_count": {
+        "maximum": 16,
+        "mean": 15.0,
+        "minimum": 14
+      }
+    },
+    {
+      "block_size": 1024,
+      "fixed_shift_count": 4,
+      "per_source_unique_content_count_ranges": [
+        {
+          "maximum": 2125,
+          "minimum": 2124
+        },
+        {
+          "maximum": 2274,
+          "minimum": 2273
+        },
+        {
+          "maximum": 2332,
+          "minimum": 2330
+        },
+        {
+          "maximum": 2333,
+          "minimum": 2331
+        },
+        {
+          "maximum": 2348,
+          "minimum": 2346
+        }
+      ],
+      "shared_all_content_count": {
+        "maximum": 7,
+        "mean": 6.25,
+        "minimum": 6
+      }
+    }
+  ],
+  "schema": "phoenix-mmi.lod-grid-reuse/v1",
+  "session": "057",
+  "shift_rule": "0, one-quarter, one-half, three-quarters",
+  "unique_source_count": 5
+}
