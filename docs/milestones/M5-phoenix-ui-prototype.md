@@ -23,8 +23,8 @@ preview behavior without modifying firmware.
 
 - Session 093: capability baseline, UX constraint contract and ordered
   offline backlog - complete;
-- Session 094: typed information architecture and screen schema;
-- Session 095: deterministic focus and navigation reducer;
+- Session 094: typed information architecture and screen schema - complete;
+- Session 095: deterministic focus and navigation reducer - next;
 - Session 096: bounded 480x240 layout engine;
 - Session 097: original design tokens and synthetic asset registry;
 - Session 098: offline Phoenix UI preview renderer;
@@ -32,8 +32,9 @@ preview behavior without modifying firmware.
 - Session 100: legibility, focus and complexity audit;
 - Session 101: sanitized integration and M5 closure.
 
-Session 093 starts M5 with 17 capabilities: 2 implemented, 3 partial, 8
-missing and 4 blocked. Eight exit criteria remain open.
+Session 094 closes M5-X1 with five original Phoenix screens, 16 focusable
+entries, four acyclic navigation edges and no service bindings. One of eight
+exit criteria now passes.
 
 ## Safety boundary
 

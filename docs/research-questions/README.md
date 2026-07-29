@@ -367,5 +367,10 @@
 | RQ-363 | What viewport does the offline prototype use? | CLOSED, 480X240 | Validated resource geometry establishes the fixed prototype canvas but not display-controller behavior. SPEC-102. |
 | RQ-364 | Are the five prototype actions recovered hardware codes? | CLOSED, NO | They are abstract focus actions; physical mappings and vehicle messages remain unknown. SPEC-102. |
 | RQ-365 | Which assets may M5 use? | CLOSED, ORIGINAL OR SYNTHETIC | Firmware-extracted and navigation-media assets are excluded from the prototype. SPEC-102. |
+| RQ-366 | What is the first Phoenix UI information model? | CLOSED, FIVE SCREENS | One root and four original section screens contain 16 focusable entries. SPEC-103. |
+| RQ-367 | Is every section reachable without a cycle? | CLOSED, YES | Four explicit home-to-section edges cover every non-root screen and the hierarchy is acyclic. SPEC-103. |
+| RQ-368 | Does the model reconstruct the firmware menu? | CLOSED, NO | Screen names, tokens and topology are independently authored for the Phoenix prototype. SPEC-103. |
+| RQ-369 | Are vehicle, firmware or protected-service bindings present? | CLOSED, NO | Every entry declares `service_binding = NONE` and uses only static-original or synthetic data. SPEC-103. |
+| RQ-370 | Does Session 094 close the first M5 criterion? | CLOSED, YES | M5-X1 passes; M5 progress is 1/8 at operational graph v86. SPEC-103. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

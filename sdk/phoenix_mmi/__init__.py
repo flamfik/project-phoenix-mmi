@@ -389,6 +389,18 @@ from .ui_prototype_audit import (
     advance_m5_progress,
     build_m5_baseline,
 )
+from .ui_model import (
+    DATA_SOURCES,
+    ENTRY_KINDS,
+    SCREEN_ROLES,
+    UI_SCREEN_SCHEMA,
+    InformationArchitecture,
+    ScreenDefinition,
+    UIEntry,
+    build_phoenix_information_architecture,
+    build_public_information_architecture,
+    validate_information_architecture,
+)
 from .runtime_slot import (
     analyze_runtime_slot_lineage,
     build_public_runtime_slot_report,
@@ -786,10 +798,20 @@ __all__ = [
     "build_m5_baseline",
     "build_ui_constraint_contract",
     "validate_ui_constraint_contract",
+    "DATA_SOURCES",
+    "ENTRY_KINDS",
+    "SCREEN_ROLES",
+    "UI_SCREEN_SCHEMA",
+    "InformationArchitecture",
+    "ScreenDefinition",
+    "UIEntry",
+    "build_phoenix_information_architecture",
+    "build_public_information_architecture",
+    "validate_information_architecture",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
     "DEFAULT_FORMAT_REGISTRY",
     "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "0.91.0"
+__version__ = "0.92.0"

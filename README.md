@@ -19,6 +19,11 @@ abstract focus-only input, original/synthetic asset policy and Sessions
 094-101 route. Operational graph v85 keeps firmware execution, mutation,
 repacking, installable artifacts and vehicle integration blocked.
 
+Session 094 adds the first typed Phoenix UI model: five independently authored
+screens, 16 focusable entries and four acyclic routes without layout geometry,
+firmware menu reconstruction or service bindings. M5 now passes 1/8 criteria
+at operational graph v86.
+
 ## First milestone
 
 **M1 — Firmware Archaeology**
@@ -136,6 +141,7 @@ ui/            Future interface and resource research
 - [Session 091 report](docs/sessions/SESSION-091-runtime-evidence-graph.md)
 - [Session 092 report](docs/sessions/SESSION-092-milestone-m4-closure.md)
 - [Session 093 report](docs/sessions/SESSION-093-m5-ui-prototype-baseline.md)
+- [Session 094 report](docs/sessions/SESSION-094-ui-information-architecture.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
 - [Milestone M3 closure](docs/milestones/M3-resource-laboratory.md)

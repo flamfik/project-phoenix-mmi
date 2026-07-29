@@ -95,6 +95,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
   asset policy and fail-closed offline authorization boundary.
 - `ui_prototype_audit` - M5 capability registry, entry/exit gates and ordered
   Sessions 094-101 prototype backlog.
+- `ui_model` - typed, independently authored five-screen information
+  architecture with strict reachability, provenance and service-binding gates.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 

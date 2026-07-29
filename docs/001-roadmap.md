@@ -141,8 +141,9 @@ Modern interface prototype constrained by original display, controls, memory and
 
 - Session 093: M5 capability baseline, frozen UX constraints, eight exit
   criteria and ordered Sessions 094-101 backlog, graph v85 - complete;
-- Session 094: typed information architecture and screen schema - next;
-- Session 095: deterministic focus and navigation reducer - planned;
+- Session 094: typed five-screen information architecture, strict topology
+  validator and graph v86 - complete;
+- Session 095: deterministic focus and navigation reducer - next;
 - Session 096: bounded 480x240 layout engine - planned;
 - Session 097: original design tokens and synthetic asset registry - planned;
 - Session 098: offline Phoenix UI preview renderer - planned;
