@@ -52,7 +52,15 @@ Progress:
 - Session 040: fixed five-anchor raw cross-payload homolog search across all three update discs, equal-geometry control and operational graph v33 - complete;
 - Session 041: checksum-valid Intel HEX and partial S-record normalization, fixed homolog rescan and operational graph v34 - complete;
 - Session 042: fixed distributed 12-byte near-homolog search across raw and decoded domains, equal-geometry control and operational graph v35 - complete;
-- remaining M1 work: unsupported LOD/YIM structural formats and external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 043: not executed; reserved gap recorded by Session 044;
+- Session 044: content-deduplicated LOD/YIM family census and operational graph v36 - complete;
+- Session 045: validated YIM/XIM2 envelope, length relationships and fixed geometry, operational graph v37 - complete;
+- Session 046: bounded YIM RLE read-only decoder and operational graph v38 - complete;
+- Session 047: fixed YIM integrity-candidate census, safe-repack block and operational graph v39 - complete;
+- Session 048: cross-language opaque LOD topology and operational graph v40 - complete;
+- Session 049: fixed distributed homolog search over validated private YIM rasters and operational graph v41 - complete;
+- Session 050: integrated firmware evidence map and operational graph v42 - complete;
+- remaining M1 work: YIM integrity and encoding, LOD record/address/integrity semantics, external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

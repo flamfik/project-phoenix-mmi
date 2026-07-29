@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology**
 
-The foundation, update model and principal-image fingerprinting are complete. Session 032 confirms a sparse relocation support map and one section reorder; Session 033 closes a simple internal descriptor-table model as bounded-negative. Session 034 adds exact byte support for both reordered content families and narrows the transition envelope from 183,523 to 146,841 bytes. Sessions 035-036 close monotonic and multiple-interleaved transition models. Session 037 confirms a clustered 2 KiB `RZ-012` correspondence. Session 038 closes its bounded microanalysis with a stable 240-byte sparse-single-byte-difference skeleton while rejecting fixed-stride and repeated-run record models. Semantic ownership, the exact section boundary and compile/link placement versus loader transformation remain open.
+The foundation, update model and principal-image fingerprinting are complete. Sessions 039-042 close fixed registered, raw, record-normalized and distributed provenance searches as bounded-negative. Sessions 044-049 identify the LOD/YIM families, validate a read-only XIM2 envelope and bounded RLE decoder, retain unknown integrity fields as explicit blockers, profile opaque LOD reuse and close the decoded-YIM homolog domain. Session 050 links the current update, runtime, resource and navigation evidence in operational graph v42. M1 remains partial because semantic ownership, exact section boundaries, loader transformation, YIM integrity and LOD record semantics remain open.
 
 ## First milestone
 
@@ -71,6 +71,17 @@ ui/            Future interface and resource research
 - [Session 036 report](docs/sessions/SESSION-036-fixed-content-island-atlas.md)
 - [Session 037 report](docs/sessions/SESSION-037-rz012-micro-island.md)
 - [Session 038 report](docs/sessions/SESSION-038-rz012-run-gap-topology.md)
+- [Session 039 report](docs/sessions/SESSION-039-registered-external-provenance.md)
+- [Session 040 report](docs/sessions/SESSION-040-cross-payload-homolog-search.md)
+- [Session 041 report](docs/sessions/SESSION-041-record-normalized-homolog-search.md)
+- [Session 042 report](docs/sessions/SESSION-042-distributed-near-homolog-search.md)
+- [Session 044 report](docs/sessions/SESSION-044-lod-yim-family-census.md)
+- [Session 045 report](docs/sessions/SESSION-045-yim-xim2-envelope.md)
+- [Session 046 report](docs/sessions/SESSION-046-yim-rle-decoder.md)
+- [Session 047 report](docs/sessions/SESSION-047-yim-integrity-boundary.md)
+- [Session 048 report](docs/sessions/SESSION-048-lod-structural-topology.md)
+- [Session 049 report](docs/sessions/SESSION-049-yim-decoded-homolog-search.md)
+- [Session 050 report](docs/sessions/SESSION-050-integrated-firmware-evidence-map.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)

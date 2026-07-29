@@ -50,6 +50,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `cross_payload_homolog` - fixed five-anchor raw update-payload census, equal-geometry control, content-identity exclusion/deduplication and operational graph v33.
 - `record_normalization` - strict Intel HEX and partial S-record validation, address-contiguous private reconstruction, opaque-gap isolation and operational graph v34.
 - `distributed_homolog` - fixed quality-gated 12-byte subanchor constellation, multi-parent voting, raw/decoded corpus reproduction and operational graph v35.
+- `yim` - strict XIM2 envelope parsing, bounded two-byte-unit RLE decoding and fixed integrity-candidate tests without raster publication.
+- `legacy_cycle` - LOD/YIM census, XIM2 reports, opaque LOD topology, decoded-YIM homolog search and integrated operational graph v42.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -526,6 +528,23 @@ python tools/session042/analyze_distributed_homologs.py \
 Session 042 reproduces both prior corpora before searching them with one
 frozen ten-subanchor target and equal-geometry control. No threshold is
 adapted after observing payload results.
+
+## Reproduce Sessions 044-050
+
+```bash
+python tools/session044_050/analyze_legacy_cycle.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd2-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output work/session044_050 \
+  --public-root research/navigation-media
+```
+
+The cycle validates the XIM2 envelope and read-only RLE decoder, keeps
+decoded rasters private, tests a frozen integrity-candidate matrix, profiles
+LOD only as opaque binary structure, repeats the fixed Session 042 search in
+the decoded-YIM domain and emits operational graph v42. Session 043 was never
+executed and remains an explicit numbering gap.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

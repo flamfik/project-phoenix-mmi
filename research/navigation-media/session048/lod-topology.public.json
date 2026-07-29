@@ -1,0 +1,104 @@
+{
+  "aligned_common_byte_count": 104369,
+  "aligned_common_byte_ratio_over_minimum_span": 0.04754713,
+  "analysis_mode": "read-only-cross-language-opaque-binary-topology",
+  "block_size": 256,
+  "classification": {
+    "lod_payload_reconstruction": "BLOCKED",
+    "lod_record_decoder": "NOT_ESTABLISHED",
+    "lod_structure": "STRUCTURED_OPAQUE_BINARY_WITH_CROSS_LANGUAGE_REUSE"
+  },
+  "common_prefix_length": 3,
+  "common_suffix_length": 18,
+  "maximum_source_size": 2421270,
+  "minimum_source_size": 2195064,
+  "operational_graph_version": "v40",
+  "pairwise_shared_block_content_count": {
+    "maximum": 3027,
+    "mean": 464.5,
+    "minimum": 34
+  },
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.lod-topology/v1",
+  "session": "048",
+  "shared_all_source_block_content_count": 34,
+  "sources": [
+    {
+      "entropy": 6.42604115,
+      "ff_ratio": 0.04173272,
+      "full_block_count": 8574,
+      "known_outer_magic_at_offset_zero": false,
+      "longest_ff_run": 192,
+      "longest_zero_run": 12241,
+      "member_count": 9,
+      "size": 2195064,
+      "source_id": "LOD-U01",
+      "unique_block_content_count": 8477,
+      "zero_ratio": 0.24956129
+    },
+    {
+      "entropy": 6.49268329,
+      "ff_ratio": 0.03970128,
+      "full_block_count": 9162,
+      "known_outer_magic_at_offset_zero": false,
+      "longest_ff_run": 192,
+      "longest_zero_run": 12243,
+      "member_count": 9,
+      "size": 2345491,
+      "source_id": "LOD-U02",
+      "unique_block_content_count": 9076,
+      "zero_ratio": 0.2442657
+    },
+    {
+      "entropy": 6.60786038,
+      "ff_ratio": 0.03842989,
+      "full_block_count": 9395,
+      "known_outer_magic_at_offset_zero": false,
+      "longest_ff_run": 192,
+      "longest_zero_run": 12243,
+      "member_count": 9,
+      "size": 2405315,
+      "source_id": "LOD-U03",
+      "unique_block_content_count": 9315,
+      "zero_ratio": 0.22830939
+    },
+    {
+      "entropy": 6.6433202,
+      "ff_ratio": 0.03844707,
+      "full_block_count": 9396,
+      "known_outer_magic_at_offset_zero": false,
+      "longest_ff_run": 192,
+      "longest_zero_run": 12241,
+      "member_count": 9,
+      "size": 2405385,
+      "source_id": "LOD-U04",
+      "unique_block_content_count": 9305,
+      "zero_ratio": 0.22609811
+    },
+    {
+      "entropy": 6.61915781,
+      "ff_ratio": 0.03809984,
+      "full_block_count": 9458,
+      "known_outer_magic_at_offset_zero": false,
+      "longest_ff_run": 192,
+      "longest_zero_run": 12243,
+      "member_count": 9,
+      "size": 2421270,
+      "source_id": "LOD-U05",
+      "unique_block_content_count": 9378,
+      "zero_ratio": 0.22753803
+    }
+  ],
+  "unique_source_count": 5
+}

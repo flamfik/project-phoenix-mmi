@@ -310,6 +310,32 @@ def _domain_summary(rows: list[dict[str, object]]) -> dict[str, object]:
     }
 
 
+def scan_distributed_unit(
+    data: bytes,
+    constellation: dict[str, object],
+    *,
+    domain: str,
+    sources: list[dict[str, object]],
+) -> dict[str, object]:
+    """Apply the frozen Session 042 model to one private byte unit."""
+
+    return _unit_result(
+        domain=domain,
+        size=len(data),
+        sources=copy.deepcopy(sources),
+        data=data,
+        constellation=constellation,
+    )
+
+
+def summarize_distributed_units(
+    rows: list[dict[str, object]],
+) -> dict[str, object]:
+    """Return the publication-safe aggregate used by Session 042."""
+
+    return _domain_summary(rows)
+
+
 def analyze_distributed_homologs(
     left_reader: _Reader,
     right_reader: _Reader,

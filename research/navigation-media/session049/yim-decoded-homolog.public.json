@@ -1,0 +1,41 @@
+{
+  "analysis_mode": "read-only-fixed-distributed-yim-raster-search",
+  "classification": {
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN",
+    "yim_decoded_homolog": "NOT_FOUND_IN_VALIDATED_YIM_RASTERS"
+  },
+  "decoded_raster_bytes": 1152000,
+  "decoded_raster_unique_content_count": 5,
+  "domain_summary": {
+    "control_anchor_occurrence_count": 0,
+    "control_candidate_unit_count": 0,
+    "control_seeded_unit_count": 0,
+    "control_strong_unit_count": 0,
+    "saturated_unique_unit_count": 0,
+    "scannable_unique_unit_count": 5,
+    "target_anchor_occurrence_count": 0,
+    "target_candidate_unit_count": 0,
+    "target_seeded_unit_count": 0,
+    "target_strong_unit_count": 0,
+    "unique_unit_bytes": 1152000,
+    "unique_unit_count": 5
+  },
+  "operational_graph_version": "v41",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.yim-decoded-homolog/v1",
+  "session": "049",
+  "session042_contract_reused": true,
+  "source_unique_count": 5
+}

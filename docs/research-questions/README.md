@@ -158,7 +158,7 @@
 | RQ-154 | Can the SW S-record material be reconstructed completely? | CLOSED, PARTIAL | 73,534 S3/S7 records are valid, but 2,743 candidate lines and 329,914 envelope bytes remain unvalidated. No opaque gap is bridged. SPEC-050. |
 | RQ-155 | What decoded corpus is reproducibly searchable? | CLOSED, CONFIRMED | Content deduplication produces 3,109 regions and 3,570,586 bytes; 3,012 regions meet the 240-byte search gate. SPEC-050. |
 | RQ-156 | Does the fixed homolog occur after validated record decoding? | CLOSED, BOUNDED NEGATIVE | Target and equal-geometry control each have zero first-anchor, geometry and strong matches; no limit saturates. SPEC-050. |
-| RQ-157 | Are LOD and YIM record formats resolved? | OPEN | Neither family satisfies the validated Intel HEX or Motorola S-record models; independent header, length, address and integrity evidence is required. SPEC-050. |
+| RQ-157 | Are LOD and YIM record formats resolved? | CLOSED, SPLIT RESULT | YIM now has a validated read-only XIM2 envelope and RLE decoder; its integrity fields remain open. LOD remains opaque without record, address or integrity semantics. SPEC-050, SPEC-053-SPEC-056. |
 | RQ-158 | Can shorter seeds remain discriminating after the 25-byte anchors fail? | CLOSED, CONFIRMED | Ten 12-byte target subanchors pass entropy/distinctness gates, contain six patterns and have zero overlap with ten equal-geometry control patterns. SPEC-051. |
 | RQ-159 | What geometry is required for a near-homolog candidate? | CLOSED, FIXED CONTRACT | At least four exact subanchors from at least three parent zones are required before full-window similarity is evaluated. SPEC-051. |
 | RQ-160 | Can the Session 040 and 041 corpora be independently reproduced? | CLOSED, CONFIRMED | All raw member/content and decoded source/region counts exactly match the registered prior reports. SPEC-051. |
@@ -166,6 +166,28 @@
 | RQ-162 | Does any 12-byte target seed occur in normalized record regions? | CLOSED, BOUNDED NEGATIVE | Zero occurrences exist across 3,012 scannable units and 3,566,108 bytes. SPEC-051. |
 | RQ-163 | Does the shorter equal-geometry control collide? | CLOSED, CONTROLLED NEGATIVE | It has zero occurrences, candidates and strong results in both domains. SPEC-051. |
 | RQ-164 | Is a distributed near-homolog established? | CLOSED, BOUNDED NEGATIVE | No seed, multi-parent constellation or 60-percent similarity candidate exists; no limit saturates. SPEC-051. |
-| RQ-165 | What provenance path remains after the raw, decoded and distributed searches? | OPEN | Independent LOD/YIM format evidence, compression/encryption evidence or external/runtime loader provenance is required; further signature shortening is not justified. SPEC-051. |
+| RQ-165 | What provenance path remains after the raw, decoded and distributed searches? | OPEN, NARROWED | Decoded YIM is now closed as bounded-negative. LOD semantics, other transformed representations and external/runtime loader provenance remain; further signature shortening is not justified. SPEC-051, SPEC-056, SPEC-057. |
+| RQ-166 | What is the complete LOD/YIM update-member corpus? | CLOSED, CONFIRMED | Fifty-five members reduce to five unique LOD and five unique YIM contents. SPEC-052. |
+| RQ-167 | Are LOD and YIM one format family? | CLOSED, DISPROVED | YIM has a fixed XIM2 envelope; LOD lacks that envelope and remains a separate opaque binary family. SPEC-052. |
+| RQ-168 | Are the unique contents reused across releases? | CLOSED, CONFIRMED | Every unique LOD/YIM content occurs on both CD1 and CD3. SPEC-052. |
+| RQ-169 | Does YIM have a reproducible envelope? | CLOSED, CONFIRMED | Five of five sources satisfy the same 60-byte ASCII/XIM2 envelope. SPEC-053. |
+| RQ-170 | Do the independent YIM length fields close? | CLOSED, CONFIRMED | ASCII file size, outer span, header size and payload-block span all equal their physical relationships. SPEC-053. |
+| RQ-171 | What raster geometry is declared? | CLOSED, CONFIRMED | All five sources declare 480 by 240 two-byte units after decoding. SPEC-053, SPEC-054. |
+| RQ-172 | Is the XIM2 payload a bounded RLE stream? | CLOSED, CONFIRMED | One high-bit literal/repeat grammar consumes all five streams exactly. SPEC-054. |
+| RQ-173 | Does decoded size agree with geometry? | CLOSED, CONFIRMED | Every source expands to 230,400 bytes and the corpus to 1,152,000 bytes. SPEC-054. |
+| RQ-174 | Are pixel-channel semantics established? | OPEN | Two-byte unit width is validated, but renderer or palette evidence is required before assigning RGB555 or another layout. SPEC-054. |
+| RQ-175 | Do common integrity candidates explain the leading YIM fields? | CLOSED, BOUNDED NEGATIVE | Fixed CRC32, Adler, CRC16 and sum candidates over four ranges produce zero matches. SPEC-055. |
+| RQ-176 | Is the actual YIM integrity algorithm known? | OPEN | Polynomial, initialization, byte order, protected range or chained computation may differ. SPEC-055. |
+| RQ-177 | Is safe YIM repacking justified? | CLOSED, BLOCKED | Read-only decoding is validated; encoding and installation remain blocked by unresolved integrity. SPEC-055. |
+| RQ-178 | Do LOD sources share structural content? | CLOSED, CONFIRMED | Common prefix/suffix, 104,369 aligned common bytes and 34 all-source 256-byte contents establish cross-language reuse. SPEC-056. |
+| RQ-179 | Does LOD have a validated record/address model? | OPEN | Topology alone does not establish record lengths, addresses, checksums or compression. SPEC-056. |
+| RQ-180 | Can LOD be reconstructed safely? | CLOSED, BLOCKED | Independent record, address and integrity gates are absent. SPEC-056. |
+| RQ-181 | Does any target seed occur in decoded YIM rasters? | CLOSED, BOUNDED NEGATIVE | Zero target anchor occurrences exist across five rasters and 1,152,000 bytes. SPEC-057. |
+| RQ-182 | Does the equal-geometry control collide with decoded YIM? | CLOSED, CONTROLLED NEGATIVE | The control also has zero seeds, candidates, strong units and saturation events. SPEC-057. |
+| RQ-183 | Can decoded YIM assign the reorder component owner? | CLOSED, BOUNDED NEGATIVE | No homolog exists under the fixed model; semantic ownership remains open. SPEC-057. |
+| RQ-184 | Can the firmware evidence be represented as one layered model? | CLOSED, PARTIAL MODEL | Update media, distributed payloads, main image, records, display, speech and navigation layers are linked with explicit confidence. SPEC-058. |
+| RQ-185 | Does the integrated graph preserve uncertainty? | CLOSED, CONFIRMED | Graph v42 adds no runtime or semantic-owner edge unsupported by prior evidence. SPEC-058. |
+| RQ-186 | Is M1 complete after Session 050? | CLOSED, NOT YET | LOD/integrity, exact section, semantic owner and loader-transform gaps remain. SPEC-058. |
+| RQ-187 | Is mutation or installable repacking ready? | CLOSED, NO | The integrated safety gate remains false. SPEC-058. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.
