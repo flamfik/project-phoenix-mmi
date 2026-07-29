@@ -51,7 +51,8 @@ Progress:
 - Session 039: frozen prior-registry component-provenance audit, bounded-negative owner result and operational graph v32 - complete;
 - Session 040: fixed five-anchor raw cross-payload homolog search across all three update discs, equal-geometry control and operational graph v33 - complete;
 - Session 041: checksum-valid Intel HEX and partial S-record normalization, fixed homolog rescan and operational graph v34 - complete;
-- remaining M1 work: fixed distributed near-homolog search, unsupported LOD/YIM and external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
+- Session 042: fixed distributed 12-byte near-homolog search across raw and decoded domains, equal-geometry control and operational graph v35 - complete;
+- remaining M1 work: unsupported LOD/YIM structural formats and external link/loader provenance for the reorder component, exact relocation boundaries, entry-argument producer/state creator, semantic runtime-linkage owner, memory-loaded/interprocedural writer or external loader, bilateral producer/accessor edge, runtime callback resolution, partition consumer, optical sector ABI and buffer ownership, routing/coordinate grammars, renderer consumer, backing-volume layout, unresolved runtime tables and broader executable boundaries.
 
 ## M2 - Analysis Toolkit
 

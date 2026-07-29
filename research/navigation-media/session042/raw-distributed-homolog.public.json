@@ -1,0 +1,273 @@
+{
+  "analysis_mode": "read-only-fixed-distributed-near-homolog-raw-and-decoded-search",
+  "classification": {
+    "cross_payload_owner": "OPEN",
+    "distributed_near_homolog": "NOT_FOUND_UNDER_FIXED_DISTRIBUTED_MODEL",
+    "exact_section_boundary": "OPEN",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN"
+  },
+  "constellation_contract": {
+    "adaptive_threshold_used": false,
+    "control_subanchors": [
+      {
+        "anchor_id": "DHC-01-01",
+        "distinct_byte_count": 9,
+        "entropy": 3.0849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-01",
+        "relative_offset": 2
+      },
+      {
+        "anchor_id": "DHC-01-02",
+        "distinct_byte_count": 8,
+        "entropy": 2.79248125,
+        "length": 12,
+        "parent_zone_id": "PARENT-01",
+        "relative_offset": 15
+      },
+      {
+        "anchor_id": "DHC-02-01",
+        "distinct_byte_count": 11,
+        "entropy": 3.41829583,
+        "length": 12,
+        "parent_zone_id": "PARENT-02",
+        "relative_offset": 32
+      },
+      {
+        "anchor_id": "DHC-02-02",
+        "distinct_byte_count": 11,
+        "entropy": 3.41829583,
+        "length": 12,
+        "parent_zone_id": "PARENT-02",
+        "relative_offset": 45
+      },
+      {
+        "anchor_id": "DHC-03-01",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-03",
+        "relative_offset": 104
+      },
+      {
+        "anchor_id": "DHC-03-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-03",
+        "relative_offset": 117
+      },
+      {
+        "anchor_id": "DHC-04-01",
+        "distinct_byte_count": 10,
+        "entropy": 3.25162917,
+        "length": 12,
+        "parent_zone_id": "PARENT-04",
+        "relative_offset": 140
+      },
+      {
+        "anchor_id": "DHC-04-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-04",
+        "relative_offset": 153
+      },
+      {
+        "anchor_id": "DHC-05-01",
+        "distinct_byte_count": 10,
+        "entropy": 3.25162917,
+        "length": 12,
+        "parent_zone_id": "PARENT-05",
+        "relative_offset": 196
+      },
+      {
+        "anchor_id": "DHC-05-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-05",
+        "relative_offset": 209
+      }
+    ],
+    "distinct_control_pattern_count": 10,
+    "distinct_target_pattern_count": 6,
+    "maximum_candidates_per_unit": 256,
+    "maximum_occurrences_per_anchor_per_unit": 4096,
+    "minimum_distinct_bytes": 8,
+    "minimum_distinct_target_patterns": 6,
+    "minimum_entropy": 2.75,
+    "minimum_exact_subanchors": 4,
+    "minimum_parent_zones": 3,
+    "minimum_strong_component_similarity": 0.6,
+    "parent_anchor_count": 5,
+    "raw_signature_bytes_included": false,
+    "signature_hashes_included": false,
+    "subanchor_count": 10,
+    "subanchor_length": 12,
+    "subanchor_slices": [
+      {
+        "end": 12,
+        "start": 0
+      },
+      {
+        "end": 25,
+        "start": 13
+      }
+    ],
+    "subanchors_per_parent": 2,
+    "target_control_pattern_overlap_count": 0,
+    "target_subanchors": [
+      {
+        "anchor_id": "DHA-01-01",
+        "distinct_byte_count": 11,
+        "entropy": 3.41829583,
+        "length": 12,
+        "parent_zone_id": "PARENT-01",
+        "relative_offset": 2
+      },
+      {
+        "anchor_id": "DHA-01-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-01",
+        "relative_offset": 15
+      },
+      {
+        "anchor_id": "DHA-02-01",
+        "distinct_byte_count": 8,
+        "entropy": 2.85538854,
+        "length": 12,
+        "parent_zone_id": "PARENT-02",
+        "relative_offset": 32
+      },
+      {
+        "anchor_id": "DHA-02-02",
+        "distinct_byte_count": 9,
+        "entropy": 3.02205521,
+        "length": 12,
+        "parent_zone_id": "PARENT-02",
+        "relative_offset": 45
+      },
+      {
+        "anchor_id": "DHA-03-01",
+        "distinct_byte_count": 11,
+        "entropy": 3.41829583,
+        "length": 12,
+        "parent_zone_id": "PARENT-03",
+        "relative_offset": 104
+      },
+      {
+        "anchor_id": "DHA-03-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-03",
+        "relative_offset": 117
+      },
+      {
+        "anchor_id": "DHA-04-01",
+        "distinct_byte_count": 11,
+        "entropy": 3.41829583,
+        "length": 12,
+        "parent_zone_id": "PARENT-04",
+        "relative_offset": 140
+      },
+      {
+        "anchor_id": "DHA-04-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-04",
+        "relative_offset": 153
+      },
+      {
+        "anchor_id": "DHA-05-01",
+        "distinct_byte_count": 11,
+        "entropy": 3.41829583,
+        "length": 12,
+        "parent_zone_id": "PARENT-05",
+        "relative_offset": 196
+      },
+      {
+        "anchor_id": "DHA-05-02",
+        "distinct_byte_count": 12,
+        "entropy": 3.5849625,
+        "length": 12,
+        "parent_zone_id": "PARENT-05",
+        "relative_offset": 209
+      }
+    ]
+  },
+  "corpus_reproduction": {
+    "prior_counts_reproduced": true,
+    "raw": {
+      "eligible_member_bytes": 435574832,
+      "eligible_member_count": 590,
+      "principal_identity_exclusion_count": 4,
+      "scanned_member_bytes": 384285768,
+      "scanned_member_count": 586,
+      "unique_payload_content_bytes": 81647732,
+      "unique_payload_content_count": 133
+    },
+    "record_normalized": {
+      "member_bytes": 172611997,
+      "member_count": 215,
+      "normalized_unique_source_count": 17,
+      "scannable_unique_region_count": 3012,
+      "unique_decoded_region_bytes": 3570586,
+      "unique_region_content_count": 3109,
+      "unique_source_content_count": 27
+    }
+  },
+  "domain": "RAW",
+  "domain_summary": {
+    "control_anchor_occurrence_count": 0,
+    "control_candidate_unit_count": 0,
+    "control_seeded_unit_count": 0,
+    "control_strong_unit_count": 0,
+    "saturated_unique_unit_count": 0,
+    "scannable_unique_unit_count": 133,
+    "target_anchor_occurrence_count": 0,
+    "target_candidate_unit_count": 0,
+    "target_seeded_unit_count": 0,
+    "target_strong_unit_count": 0,
+    "unique_unit_bytes": 81647732,
+    "unique_unit_count": 133
+  },
+  "limits": [
+    "The model detects only exact 12-byte subanchors at fixed relative geometry.",
+    "At least four subanchors from at least three parent zones are required before similarity is evaluated.",
+    "A strong candidate must reach 60 percent similarity to either registered release component.",
+    "Raw and validated record-normalized domains are searched; unsupported decoded forms remain open.",
+    "Compression, encryption, relocation-normalized instructions and runtime-created data remain open.",
+    "A structural near-homolog cannot assign semantic ownership by itself."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "decoded_region_bytes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "mnemonic_names_included": false,
+    "payload_bytes_included": false,
+    "raw_component_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_signature_bytes_included": false,
+    "raw_strings_included": false,
+    "signature_hashes_included": false
+  },
+  "schema": "phoenix-mmi.distributed-homolog-domain/v1",
+  "summary": {
+    "control_candidate_unique_unit_count": 0,
+    "control_strong_unique_unit_count": 0,
+    "saturated_unique_unit_count": 0,
+    "target_candidate_unique_unit_count": 0,
+    "target_strong_unique_unit_count": 0
+  }
+}

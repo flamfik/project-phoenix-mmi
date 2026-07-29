@@ -18,6 +18,14 @@ from .cross_payload_homolog import (
     payload_member_eligible,
     update_operational_graph_v33,
 )
+from .distributed_homolog import (
+    NearHomologPayloadInput,
+    analyze_distributed_homologs,
+    build_public_distributed_homolog_report,
+    correlate_distributed_homologs,
+    derive_distributed_constellation,
+    update_operational_graph_v35,
+)
 from .record_normalization import (
     DecodedRegion,
     NormalizationResult,
@@ -267,6 +275,7 @@ __all__ = [
     "ChecksumMatch",
     "DecodedRegion",
     "NormalizationResult",
+    "NearHomologPayloadInput",
     "PayloadInput",
     "RecordPayloadInput",
     "EntropyWindow",
@@ -285,6 +294,7 @@ __all__ = [
     "analyze_handoff_mapping",
     "analyze_content_island_atlas",
     "analyze_cross_payload_homologs",
+    "analyze_distributed_homologs",
     "analyze_record_normalized_homologs",
     "analyze_navigation_storage_boundary",
     "analyze_navigation_dataflow",
@@ -324,6 +334,7 @@ __all__ = [
     "build_public_handoff_mapping_report",
     "build_public_content_island_atlas_report",
     "build_public_cross_payload_homolog_report",
+    "build_public_distributed_homolog_report",
     "build_public_record_normalized_homolog_report",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
@@ -373,6 +384,7 @@ __all__ = [
     "correlate_handoff_mapping",
     "correlate_content_island_atlas",
     "correlate_cross_payload_homologs",
+    "correlate_distributed_homologs",
     "correlate_record_normalized_homologs",
     "correlate_firmware_and_media",
     "correlate_micro_island",
@@ -401,6 +413,7 @@ __all__ = [
     "decode_intel_hex",
     "decode_srecord_envelope",
     "derive_cross_payload_signature",
+    "derive_distributed_constellation",
     "discover_contract_anchors",
     "entropy_profile",
     "parse_fldb_container",
@@ -454,6 +467,7 @@ __all__ = [
     "update_operational_graph_v32",
     "update_operational_graph_v33",
     "update_operational_graph_v34",
+    "update_operational_graph_v35",
 ]
 
-__version__ = "0.39.0"
+__version__ = "0.40.0"

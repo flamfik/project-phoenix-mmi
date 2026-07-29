@@ -159,5 +159,13 @@
 | RQ-155 | What decoded corpus is reproducibly searchable? | CLOSED, CONFIRMED | Content deduplication produces 3,109 regions and 3,570,586 bytes; 3,012 regions meet the 240-byte search gate. SPEC-050. |
 | RQ-156 | Does the fixed homolog occur after validated record decoding? | CLOSED, BOUNDED NEGATIVE | Target and equal-geometry control each have zero first-anchor, geometry and strong matches; no limit saturates. SPEC-050. |
 | RQ-157 | Are LOD and YIM record formats resolved? | OPEN | Neither family satisfies the validated Intel HEX or Motorola S-record models; independent header, length, address and integrity evidence is required. SPEC-050. |
+| RQ-158 | Can shorter seeds remain discriminating after the 25-byte anchors fail? | CLOSED, CONFIRMED | Ten 12-byte target subanchors pass entropy/distinctness gates, contain six patterns and have zero overlap with ten equal-geometry control patterns. SPEC-051. |
+| RQ-159 | What geometry is required for a near-homolog candidate? | CLOSED, FIXED CONTRACT | At least four exact subanchors from at least three parent zones are required before full-window similarity is evaluated. SPEC-051. |
+| RQ-160 | Can the Session 040 and 041 corpora be independently reproduced? | CLOSED, CONFIRMED | All raw member/content and decoded source/region counts exactly match the registered prior reports. SPEC-051. |
+| RQ-161 | Does any 12-byte target seed occur in raw payloads? | CLOSED, BOUNDED NEGATIVE | Zero occurrences exist across 133 unique units and 81,647,732 bytes. SPEC-051. |
+| RQ-162 | Does any 12-byte target seed occur in normalized record regions? | CLOSED, BOUNDED NEGATIVE | Zero occurrences exist across 3,012 scannable units and 3,566,108 bytes. SPEC-051. |
+| RQ-163 | Does the shorter equal-geometry control collide? | CLOSED, CONTROLLED NEGATIVE | It has zero occurrences, candidates and strong results in both domains. SPEC-051. |
+| RQ-164 | Is a distributed near-homolog established? | CLOSED, BOUNDED NEGATIVE | No seed, multi-parent constellation or 60-percent similarity candidate exists; no limit saturates. SPEC-051. |
+| RQ-165 | What provenance path remains after the raw, decoded and distributed searches? | OPEN | Independent LOD/YIM format evidence, compression/encryption evidence or external/runtime loader provenance is required; further signature shortening is not justified. SPEC-051. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

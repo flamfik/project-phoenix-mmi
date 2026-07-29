@@ -46,6 +46,10 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `relocation_breakpoints` - revalidated direct-link/data/marker anchors, non-interpolated code plateaus, monotonic and section-reorder brackets, exact identity-versus-delta reconciliation and operational graph v25.
 - `micro_island` - strict 2 KiB overlap derivation, exact-run and naturally aligned unit profiles, two-phase microbins, fixed mapped negative control, anonymous SH decoder morphology and operational graph v30.
 - `run_gap_topology` - exact-run replay, fixed singleton-gap components, relaxed-cap control, direct-stride/phase-lattice tests, repeated-run spacing gates and operational graph v31.
+- `registered_provenance` - frozen prior-evidence registry, bilateral distance/containment gates, conservative semantic-owner audit and operational graph v32.
+- `cross_payload_homolog` - fixed five-anchor raw update-payload census, equal-geometry control, content-identity exclusion/deduplication and operational graph v33.
+- `record_normalization` - strict Intel HEX and partial S-record validation, address-contiguous private reconstruction, opaque-gap isolation and operational graph v34.
+- `distributed_homolog` - fixed quality-gated 12-byte subanchor constellation, multi-parent voting, raw/decoded corpus reproduction and operational graph v35.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -471,6 +475,57 @@ Session 038 replays the Session 037 exact-run lists and bridges them only
 across fixed singleton differences. A two-byte cap is a stability control.
 Direct-stride, modulo-lattice and repeated-run-spacing gates remain separate
 from the structural component and cannot assign record semantics.
+
+## Reproduce Session 039
+
+```bash
+python tools/session039/analyze_registered_provenance.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session039 \
+  --public-output research/navigation-media/session039
+```
+
+## Reproduce Session 040
+
+```bash
+python tools/session040/analyze_cross_payload_homologs.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd2-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session040 \
+  --public-output research/navigation-media/session040
+```
+
+## Reproduce Session 041
+
+```bash
+python tools/session041/analyze_record_normalized_homologs.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd2-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session041 \
+  --public-output research/navigation-media/session041
+```
+
+Session 041 validates Intel HEX and checksum-valid Motorola S-record runs.
+Opaque vendor metadata and invalid envelope material never contribute decoded
+bytes or bridge address-contiguous regions.
+
+## Reproduce Session 042
+
+```bash
+python tools/session042/analyze_distributed_homologs.py \
+  /path/to/MMI-5570-4L0.998.961-cd1-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd2-3.iso \
+  /path/to/MMI-5570-4L0.998.961-cd3-3.iso \
+  --output research/navigation-media/work/session042 \
+  --public-output research/navigation-media/session042
+```
+
+Session 042 reproduces both prior corpora before searching them with one
+frozen ten-subanchor target and equal-geometry control. No threshold is
+adapted after observing payload results.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 
