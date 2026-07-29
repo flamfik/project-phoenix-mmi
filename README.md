@@ -6,7 +6,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 **M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: COMPLETE; M3 —
 Resource Laboratory: COMPLETE; M4 — Runtime Research: COMPLETE; M5 — Phoenix
-UI Prototype: IN PROGRESS**
+UI Prototype: COMPLETE; M6 — Navigation Feasibility: READY**
 
 Sessions 084-092 establish static task/service and IPC evidence, resource
 consumer and device-boundary searches, anonymous pointer topology, an isolated
@@ -23,6 +23,13 @@ Session 094 adds the first typed Phoenix UI model: five independently authored
 screens, 16 focusable entries and four acyclic routes without layout geometry,
 firmware menu reconstruction or service bindings. M5 now passes 1/8 criteria
 at operational graph v86.
+
+Sessions 095-101 complete a pure reducer, bounded 480x240 layout, original
+theme and vector assets, five static SVG previews, deterministic playback,
+quality audit and end-to-end integration. M5 closes 8/8 at graph v93 and makes
+M6 static Navigation Feasibility READY. Firmware compatibility, hardware
+suitability, mutation and installable artifacts remain unestablished or
+blocked.
 
 ## First milestone
 
@@ -142,11 +149,19 @@ ui/            Future interface and resource research
 - [Session 092 report](docs/sessions/SESSION-092-milestone-m4-closure.md)
 - [Session 093 report](docs/sessions/SESSION-093-m5-ui-prototype-baseline.md)
 - [Session 094 report](docs/sessions/SESSION-094-ui-information-architecture.md)
+- [Session 095 report](docs/sessions/SESSION-095-ui-focus-navigation-reducer.md)
+- [Session 096 report](docs/sessions/SESSION-096-ui-bounded-layout.md)
+- [Session 097 report](docs/sessions/SESSION-097-ui-original-theme-assets.md)
+- [Session 098 report](docs/sessions/SESSION-098-ui-offline-renderer.md)
+- [Session 099 report](docs/sessions/SESSION-099-ui-playback-snapshots.md)
+- [Session 100 report](docs/sessions/SESSION-100-ui-quality-audit.md)
+- [Session 101 report](docs/sessions/SESSION-101-milestone-m5-closure.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
 - [Milestone M3 closure](docs/milestones/M3-resource-laboratory.md)
 - [Milestone M4 closure](docs/milestones/M4-runtime-research.md)
-- [Milestone M5 entry](docs/milestones/M5-phoenix-ui-prototype.md)
+- [Milestone M5 closure](docs/milestones/M5-phoenix-ui-prototype.md)
+- [Milestone M6 entry](docs/milestones/M6-navigation-feasibility.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)

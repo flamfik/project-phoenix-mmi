@@ -1,0 +1,853 @@
+{
+  "analysis_mode": "explicit-ui-capability-transition-and-probe-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M5-CAP-001",
+        "evidence": "Sessions 077-079",
+        "limitation": "display controller, safe area and pixel layout remain unknown",
+        "name": "validated 480x240 resource geometry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:geometry_class",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "viewport"
+      },
+      {
+        "capability_id": "M5-CAP-002",
+        "evidence": "Session 079",
+        "limitation": "candidate pixel layouts are not confirmed",
+        "name": "format-explicit offline resource preview",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:render_ppm",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M5-CAP-003",
+        "evidence": "Session 090",
+        "limitation": "host events are not MMI runtime or physical-control events",
+        "name": "isolated host event harness",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_harness:HostRuntimeHarness",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "interaction"
+      },
+      {
+        "capability_id": "M5-CAP-004",
+        "evidence": "Session 091",
+        "limitation": "actual menu, renderer and lifecycle behavior remain unknown",
+        "name": "runtime and resource evidence graph",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_objects:build_runtime_evidence_graph",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "evidence"
+      },
+      {
+        "capability_id": "M5-CAP-005",
+        "evidence": "Session 093",
+        "limitation": "physical key mapping and hardware budgets remain unknown",
+        "name": "frozen offline UI constraint contract",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_constraints:build_ui_constraint_contract",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "constraints"
+      },
+      {
+        "capability_id": "M5-CAP-006",
+        "evidence": "M5 safety boundary",
+        "limitation": "renderer compatibility is not established",
+        "name": "firmware renderer integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "integration"
+      },
+      {
+        "capability_id": "M5-CAP-007",
+        "evidence": "M5 safety boundary",
+        "limitation": "integrity, lifecycle and recovery requirements are unresolved",
+        "name": "firmware resource replacement",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "mutation"
+      },
+      {
+        "capability_id": "M5-CAP-008",
+        "evidence": "M5 safety boundary",
+        "limitation": "vehicle communication is outside the offline prototype",
+        "name": "vehicle and protected-service integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "vehicle"
+      },
+      {
+        "capability_id": "M5-CAP-009",
+        "evidence": "M5 safety boundary",
+        "limitation": "M5 produces no update media or vehicle-loadable artifacts",
+        "name": "installable artifact generation",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "delivery"
+      },
+      {
+        "capability_id": "M5-CAP-010",
+        "evidence": "Session 094 and SPEC-103",
+        "limitation": "original prototype model is not the firmware menu",
+        "name": "typed information architecture and screen schema",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_model:build_phoenix_information_architecture",
+        "status": "IMPLEMENTED",
+        "target_session": "094",
+        "workstream": "architecture"
+      },
+      {
+        "capability_id": "M5-CAP-011",
+        "evidence": "Session 095 and SPEC-104",
+        "limitation": "abstract actions are not physical input mappings",
+        "name": "focus and navigation reducer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_reducer:reduce_ui_state",
+        "status": "IMPLEMENTED",
+        "target_session": "095",
+        "workstream": "interaction"
+      },
+      {
+        "capability_id": "M5-CAP-012",
+        "evidence": "Session 096 and SPEC-105",
+        "limitation": "fixed host geometry is not the firmware layout",
+        "name": "bounded 480x240 layout engine",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_layout:build_layout_catalog",
+        "status": "IMPLEMENTED",
+        "target_session": "096",
+        "workstream": "layout"
+      },
+      {
+        "capability_id": "M5-CAP-013",
+        "evidence": "Session 097 and SPEC-106",
+        "limitation": "firmware renderer compatibility remains unknown",
+        "name": "original design tokens and synthetic asset registry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_theme:build_original_theme_bundle",
+        "status": "IMPLEMENTED",
+        "target_session": "097",
+        "workstream": "visual"
+      },
+      {
+        "capability_id": "M5-CAP-014",
+        "evidence": "Session 098 and SPEC-107",
+        "limitation": "static host SVG is not a firmware renderer",
+        "name": "offline Phoenix UI renderer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_renderer:render_screen_svg",
+        "status": "IMPLEMENTED",
+        "target_session": "098",
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M5-CAP-015",
+        "evidence": "Session 099 and SPEC-108",
+        "limitation": "host snapshots do not establish target timing",
+        "name": "deterministic input playback and snapshots",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_playback:run_ui_playback",
+        "status": "IMPLEMENTED",
+        "target_session": "099",
+        "workstream": "playback"
+      },
+      {
+        "capability_id": "M5-CAP-016",
+        "evidence": "M5 requirement",
+        "limitation": "no explicit quality or host-metric gate",
+        "name": "legibility, focus and complexity audit",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "100",
+        "workstream": "quality"
+      },
+      {
+        "capability_id": "M5-CAP-017",
+        "evidence": "M5 requirement",
+        "limitation": "no complete synthetic Phoenix UI workflow",
+        "name": "deterministic M5 integration gate",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "101",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 17,
+    "probe_integrity": true,
+    "registry_version": "m5-session099-v1",
+    "status_counts": {
+      "BLOCKED": 4,
+      "IMPLEMENTED": 8,
+      "MISSING": 2,
+      "PARTIAL": 3
+    }
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "installable_artifact_ready": false,
+    "m5_entry": "PASS",
+    "m5_exit": "OPEN",
+    "m5_status": "IN_PROGRESS",
+    "prototype_scope": "OFFLINE_ONLY",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M5-X1",
+      "name": "typed information architecture and screen schema",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-010"
+      ],
+      "target_session": "094"
+    },
+    {
+      "criterion_id": "M5-X2",
+      "name": "deterministic focus and navigation reducer",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-011"
+      ],
+      "target_session": "095"
+    },
+    {
+      "criterion_id": "M5-X3",
+      "name": "bounded 480x240 layout engine",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-012"
+      ],
+      "target_session": "096"
+    },
+    {
+      "criterion_id": "M5-X4",
+      "name": "original token and synthetic asset registry",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-013"
+      ],
+      "target_session": "097"
+    },
+    {
+      "criterion_id": "M5-X5",
+      "name": "offline Phoenix UI preview renderer",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-014"
+      ],
+      "target_session": "098"
+    },
+    {
+      "criterion_id": "M5-X6",
+      "name": "deterministic input playback and snapshots",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-015"
+      ],
+      "target_session": "099"
+    },
+    {
+      "criterion_id": "M5-X7",
+      "name": "legibility, focus and complexity audit",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-016"
+      ],
+      "target_session": "100"
+    },
+    {
+      "criterion_id": "M5-X8",
+      "name": "deterministic sanitized UI integration gate",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-017"
+      ],
+      "target_session": "101"
+    }
+  ],
+  "exit_criteria_passed": 6,
+  "exit_criteria_total": 8,
+  "operational_graph_delta": {
+    "base": "v90",
+    "node": {
+      "evidence_session": "099",
+      "id": "m5-input-playback",
+      "status": "CONFIRMED"
+    }
+  },
+  "operational_graph_version": "v91",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M5-X1",
+      "objective": "typed information architecture and screen schema",
+      "session": "094"
+    },
+    {
+      "criterion_id": "M5-X2",
+      "objective": "deterministic focus and navigation reducer",
+      "session": "095"
+    },
+    {
+      "criterion_id": "M5-X3",
+      "objective": "bounded 480x240 layout engine",
+      "session": "096"
+    },
+    {
+      "criterion_id": "M5-X4",
+      "objective": "original token and synthetic asset registry",
+      "session": "097"
+    },
+    {
+      "criterion_id": "M5-X5",
+      "objective": "offline Phoenix UI preview renderer",
+      "session": "098"
+    },
+    {
+      "criterion_id": "M5-X6",
+      "objective": "deterministic input playback and snapshots",
+      "session": "099"
+    },
+    {
+      "criterion_id": "M5-X7",
+      "objective": "legibility, focus and complexity audit",
+      "session": "100"
+    },
+    {
+      "criterion_id": "M5-X8",
+      "objective": "deterministic sanitized UI integration gate",
+      "session": "101"
+    }
+  ],
+  "playback": {
+    "actions": [
+      "ACTIVATE",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "BACK",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "BACK",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "BACK",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "FOCUS_NEXT",
+      "ACTIVATE",
+      "HOME"
+    ],
+    "classification": {
+      "filesystem_required": false,
+      "hardware_timing_claim": false,
+      "network_required": false,
+      "playback": "PURE_DETERMINISTIC",
+      "service_dispatch": false,
+      "snapshot_kind": "HOST_SVG_SHA256",
+      "vehicle_required": false
+    },
+    "final_state": {
+      "activation_entry_id": null,
+      "focused_entry_id": "home.communication",
+      "screen_id": "home"
+    },
+    "initial_state": {
+      "activation_entry_id": null,
+      "focused_entry_id": "home.communication",
+      "screen_id": "home"
+    },
+    "metrics": {
+      "action_count": 19,
+      "all_model_screens_visited": true,
+      "playback_fingerprint": "5858dff021627f88fded38c53e9cb030729ecb77aa1509829db1d7279384e2f8",
+      "sequence_monotonic": true,
+      "snapshot_count": 19,
+      "visited_focus_count": 12,
+      "visited_screen_count": 5
+    },
+    "playback_version": "m5-session099-v1",
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "navigation_media_content_included": false,
+      "original_or_synthetic_content_only": true,
+      "service_bindings_included": false,
+      "vehicle_messages_included": false
+    },
+    "repeat_run_equal": true,
+    "schema": "phoenix-mmi.ui-playback/v1",
+    "steps": [
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "home.communication",
+          "focused_entry_id": "communication.contacts",
+          "screen_id": "communication"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.communication",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "4c19ddbcc3608fa84de778f21bda524581349d5199c8d9f19bbf7d681d53721e",
+        "sequence": 1
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "communication.devices",
+          "screen_id": "communication"
+        },
+        "before": {
+          "activation_entry_id": "home.communication",
+          "focused_entry_id": "communication.contacts",
+          "screen_id": "communication"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "d1f384495129564f858d6837de9d56c61dc0fa147bcea7eb3da4cfbb05e6cef5",
+        "sequence": 2
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "communication.devices",
+          "focused_entry_id": "communication.devices",
+          "screen_id": "communication"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "communication.devices",
+          "screen_id": "communication"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "d1f384495129564f858d6837de9d56c61dc0fa147bcea7eb3da4cfbb05e6cef5",
+        "sequence": 3
+      },
+      {
+        "action": "BACK",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.communication",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": "communication.devices",
+          "focused_entry_id": "communication.devices",
+          "screen_id": "communication"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "fad15fdad8588077e39fd11e9d83ef41ac311bf6de0ac07cdaa494673ba5ebe3",
+        "sequence": 4
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.media",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.communication",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "6691e57fecea14a7ce95a8f49dfa53bdd501f39d49aab0f6a967118bb19b692b",
+        "sequence": 5
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "home.media",
+          "focused_entry_id": "media.library",
+          "screen_id": "media"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.media",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 15,
+        "preview_sha256": "22e13d00a6750f389871864f10a17fed9059a518eda99410c9497f7cc0253ce8",
+        "sequence": 6
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "media.now-playing",
+          "screen_id": "media"
+        },
+        "before": {
+          "activation_entry_id": "home.media",
+          "focused_entry_id": "media.library",
+          "screen_id": "media"
+        },
+        "preview_draw_commands": 15,
+        "preview_sha256": "22eee2b6f6e517962e72b8620b61f79cb68b3aae98aaa71dc8a23899f0fce150",
+        "sequence": 7
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "media.now-playing",
+          "focused_entry_id": "media.now-playing",
+          "screen_id": "media"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "media.now-playing",
+          "screen_id": "media"
+        },
+        "preview_draw_commands": 15,
+        "preview_sha256": "22eee2b6f6e517962e72b8620b61f79cb68b3aae98aaa71dc8a23899f0fce150",
+        "sequence": 8
+      },
+      {
+        "action": "BACK",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.media",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": "media.now-playing",
+          "focused_entry_id": "media.now-playing",
+          "screen_id": "media"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "6691e57fecea14a7ce95a8f49dfa53bdd501f39d49aab0f6a967118bb19b692b",
+        "sequence": 9
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.navigation",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.media",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "b177d4fbe82bc2d56f086989067727cd26dfa1f5eac34e1031b43a848cdaf1a2",
+        "sequence": 10
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "home.navigation",
+          "focused_entry_id": "navigation.destination",
+          "screen_id": "navigation"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.navigation",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "d5d30a8aa9e6bc88c59c7decad832a467f7abf8fa8a977b42d3a78e755083468",
+        "sequence": 11
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "navigation.route-overview",
+          "screen_id": "navigation"
+        },
+        "before": {
+          "activation_entry_id": "home.navigation",
+          "focused_entry_id": "navigation.destination",
+          "screen_id": "navigation"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "2832d538bcf2a408457228f4044a8c6e56bb3057f66b967cba701efb93ca6a1d",
+        "sequence": 12
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "navigation.route-overview",
+          "focused_entry_id": "navigation.route-overview",
+          "screen_id": "navigation"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "navigation.route-overview",
+          "screen_id": "navigation"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "2832d538bcf2a408457228f4044a8c6e56bb3057f66b967cba701efb93ca6a1d",
+        "sequence": 13
+      },
+      {
+        "action": "BACK",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.navigation",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": "navigation.route-overview",
+          "focused_entry_id": "navigation.route-overview",
+          "screen_id": "navigation"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "b177d4fbe82bc2d56f086989067727cd26dfa1f5eac34e1031b43a848cdaf1a2",
+        "sequence": 14
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.settings",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.navigation",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "8d09ffe6e6cf105e2a17fbc4500b3e6f8c8834fb3bcbb8b030411084e5604e0d",
+        "sequence": 15
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "home.settings",
+          "focused_entry_id": "settings.display",
+          "screen_id": "settings"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.settings",
+          "screen_id": "home"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "f756e960beaaae854ee43f5bbfd73a96e9c28f151e137a64e5de3f63ec604a76",
+        "sequence": 16
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "settings.sound",
+          "screen_id": "settings"
+        },
+        "before": {
+          "activation_entry_id": "home.settings",
+          "focused_entry_id": "settings.display",
+          "screen_id": "settings"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "6642c79bfe0bf5050b81090bdd056b2687f020e7d7fbe89c128d82d6c7d3d11e",
+        "sequence": 17
+      },
+      {
+        "action": "ACTIVATE",
+        "after": {
+          "activation_entry_id": "settings.sound",
+          "focused_entry_id": "settings.sound",
+          "screen_id": "settings"
+        },
+        "before": {
+          "activation_entry_id": null,
+          "focused_entry_id": "settings.sound",
+          "screen_id": "settings"
+        },
+        "preview_draw_commands": 18,
+        "preview_sha256": "6642c79bfe0bf5050b81090bdd056b2687f020e7d7fbe89c128d82d6c7d3d11e",
+        "sequence": 18
+      },
+      {
+        "action": "HOME",
+        "after": {
+          "activation_entry_id": null,
+          "focused_entry_id": "home.communication",
+          "screen_id": "home"
+        },
+        "before": {
+          "activation_entry_id": "settings.sound",
+          "focused_entry_id": "settings.sound",
+          "screen_id": "settings"
+        },
+        "preview_draw_commands": 21,
+        "preview_sha256": "fad15fdad8588077e39fd11e9d83ef41ac311bf6de0ac07cdaa494673ba5ebe3",
+        "sequence": 19
+      }
+    ]
+  },
+  "previous_state": {
+    "operational_graph_version": "v90",
+    "session": "098"
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "firmware_execution_performed": false,
+    "installable_artifacts_included": false,
+    "navigation_media_content_included": false,
+    "offline_only": true,
+    "original_or_synthetic_assets_only": true,
+    "payload_bytes_included": false,
+    "raw_firmware_strings_included": false,
+    "vehicle_communication_performed": false,
+    "vehicle_identifiers_included": false
+  },
+  "schema": "phoenix-mmi.m5-ui-prototype-progress/v1",
+  "session": "099",
+  "ui_constraint_contract": {
+    "asset_policy": {
+      "allowed_sources": [
+        "ORIGINAL",
+        "SYNTHETIC"
+      ],
+      "firmware_extracted_assets_allowed": false,
+      "license_provenance_required": true,
+      "navigation_media_assets_allowed": false,
+      "vehicle_identifiers_allowed": false
+    },
+    "authorization": {
+      "firmware_execution": false,
+      "firmware_repacking": false,
+      "firmware_resource_replacement": false,
+      "installable_artifact_generation": false,
+      "offline_original_ui_code": true,
+      "protected_service_emulation": false,
+      "synthetic_fixture_rendering": true,
+      "vehicle_communication": false
+    },
+    "budget_policy": {
+      "frame_timing_status": "NOT_ESTABLISHED",
+      "limitation": "host measurements must not be presented as MMI hardware performance",
+      "numeric_cpu_budget_status": "NOT_ESTABLISHED",
+      "numeric_memory_budget_status": "NOT_ESTABLISHED",
+      "prototype_must_report": [
+        "DRAW_COMMAND_COUNT",
+        "FOCUSABLE_NODE_COUNT",
+        "STATE_COUNT",
+        "SYNTHETIC_ASSET_BYTES"
+      ]
+    },
+    "classification": {
+      "hardware_mapping": "NOT_ESTABLISHED",
+      "input_action_layer": "PROTOTYPE_ABSTRACTION",
+      "offline_prototype_ready": true,
+      "renderer_compatibility": "NOT_ESTABLISHED",
+      "viewport_geometry": "CONFIRMED_RESOURCE_GEOMETRY"
+    },
+    "contract_version": "m5-session093-v1",
+    "input": {
+      "actions": [
+        "ACTIVATE",
+        "BACK",
+        "FOCUS_NEXT",
+        "FOCUS_PREVIOUS",
+        "HOME"
+      ],
+      "focus_required": true,
+      "hardware_mapping_status": "NOT_ESTABLISHED",
+      "limitation": "actions are host-side abstractions and are not hardware key codes, scan codes or vehicle messages",
+      "pointer_required": false,
+      "touch_required": false
+    },
+    "interaction_invariants": {
+      "deterministic_transitions_required": true,
+      "filesystem_required": false,
+      "network_required": false,
+      "pointer_only_path_allowed": false,
+      "touch_only_path_allowed": false,
+      "vehicle_state_required": false,
+      "visible_focus_required": true
+    },
+    "prototype_scope": "OFFLINE_HOST_UI",
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "installable_artifacts_included": false,
+      "navigation_media_content_included": false,
+      "original_or_synthetic_assets_only": true,
+      "payload_bytes_included": false,
+      "raw_firmware_strings_included": false,
+      "vehicle_identifiers_included": false
+    },
+    "schema": "phoenix-mmi.ui-constraint-contract/v1",
+    "unresolved_boundaries": [
+      "DISPLAY_PIXEL_LAYOUT",
+      "DISPLAY_SAFE_AREA",
+      "FIRMWARE_RENDERER",
+      "FONT_RENDERER",
+      "HARDWARE_INPUT_CODES",
+      "RUNTIME_RESOURCE_LIFECYCLE"
+    ],
+    "viewport": {
+      "evidence": "Session 077 validated six unique 480x240 resource geometries",
+      "height": 240,
+      "limitation": "resource geometry does not establish the display controller, safe area, timing or pixel layout",
+      "orientation": "LANDSCAPE",
+      "width": 480
+    }
+  }
+}

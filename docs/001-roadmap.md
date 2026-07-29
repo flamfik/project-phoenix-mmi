@@ -135,7 +135,7 @@ Runtime model, IPC, device services, hardware interfaces, safe emulation strateg
 - Session 092: deterministic integration, M4 closure and graph v84 -
   complete.
 
-## M5 - Phoenix UI Prototype — IN PROGRESS
+## M5 - Phoenix UI Prototype — COMPLETE
 
 Modern interface prototype constrained by original display, controls, memory and CPU.
 
@@ -143,17 +143,24 @@ Modern interface prototype constrained by original display, controls, memory and
   criteria and ordered Sessions 094-101 backlog, graph v85 - complete;
 - Session 094: typed five-screen information architecture, strict topology
   validator and graph v86 - complete;
-- Session 095: deterministic focus and navigation reducer - next;
-- Session 096: bounded 480x240 layout engine - planned;
-- Session 097: original design tokens and synthetic asset registry - planned;
-- Session 098: offline Phoenix UI preview renderer - planned;
-- Session 099: deterministic input playback and snapshots - planned;
-- Session 100: legibility, focus and complexity audit - planned;
-- Session 101: sanitized integration and M5 closure - planned.
+- Session 095: pure five-action focus/navigation reducer, 16 focus states, 80
+  transitions and graph v87 - complete;
+- Session 096: bounded integer-only 480x240 layout, graph v88 - complete;
+- Session 097: original theme, text and vector asset registry, graph v89 -
+  complete;
+- Session 098: five deterministic static SVG previews, graph v90 - complete;
+- Session 099: 19-action all-screen playback and snapshot fingerprints, graph
+  v91 - complete;
+- Session 100: eight-part focus, contrast and complexity audit, graph v92 -
+  complete;
+- Session 101: deterministic integration, M5 closure and graph v93 - complete.
 
-## M6 - Navigation Feasibility
+## M6 - Navigation Feasibility — READY
 
 Map format study, routing engine boundaries, legal data sources, OSM conversion feasibility.
+
+- Session 102: freeze the M6 capability baseline, legal/data boundaries and
+  ordered static feasibility backlog - next.
 
 ## M7 - Controlled Hardware Validation
 

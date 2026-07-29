@@ -1,8 +1,8 @@
 # Milestone M5 - Phoenix UI Prototype
 
-Status: **IN PROGRESS**
+Status: **COMPLETE**
 
-Entry evidence: Session 092; baseline: Session 093, operational graph v85
+Closure evidence: Session 101, operational graph v93
 
 ## Mission
 
@@ -24,17 +24,21 @@ preview behavior without modifying firmware.
 - Session 093: capability baseline, UX constraint contract and ordered
   offline backlog - complete;
 - Session 094: typed information architecture and screen schema - complete;
-- Session 095: deterministic focus and navigation reducer - next;
-- Session 096: bounded 480x240 layout engine;
-- Session 097: original design tokens and synthetic asset registry;
-- Session 098: offline Phoenix UI preview renderer;
-- Session 099: deterministic input playback and snapshots;
-- Session 100: legibility, focus and complexity audit;
-- Session 101: sanitized integration and M5 closure.
+- Session 095: deterministic focus and navigation reducer - complete;
+- Session 096: bounded 480x240 layout engine - complete;
+- Session 097: original design tokens and synthetic asset registry - complete;
+- Session 098: offline Phoenix UI preview renderer - complete;
+- Session 099: deterministic input playback and snapshots - complete;
+- Session 100: legibility, focus and complexity audit - complete;
+- Session 101: sanitized integration and M5 closure - complete.
 
-Session 094 closes M5-X1 with five original Phoenix screens, 16 focusable
-entries, four acyclic navigation edges and no service bindings. One of eight
-exit criteria now passes.
+All eight M5 exit criteria pass. The prototype contains five original screens,
+16 focus states, 80 reducer transitions, 16 bounded entry rectangles, six
+original vector icons, five static SVG previews and a 19-action deterministic
+playback. The quality and integration gates both pass 8/8.
+
+M5 closes without claiming firmware-renderer compatibility or target-hardware
+suitability. M6 static Navigation Feasibility is READY.
 
 ## Safety boundary
 

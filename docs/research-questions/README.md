@@ -372,5 +372,34 @@
 | RQ-368 | Does the model reconstruct the firmware menu? | CLOSED, NO | Screen names, tokens and topology are independently authored for the Phoenix prototype. SPEC-103. |
 | RQ-369 | Are vehicle, firmware or protected-service bindings present? | CLOSED, NO | Every entry declares `service_binding = NONE` and uses only static-original or synthetic data. SPEC-103. |
 | RQ-370 | Does Session 094 close the first M5 criterion? | CLOSED, YES | M5-X1 passes; M5 progress is 1/8 at operational graph v86. SPEC-103. |
+| RQ-371 | What is the complete reducer state space? | CLOSED, 16 STATES/80 TRANSITIONS | Five abstract actions are evaluated from every base focus state. SPEC-104. |
+| RQ-372 | How does prototype focus move? | CLOSED, CYCLIC AND DETERMINISTIC | Next and previous wrap within each ordered screen. SPEC-104. |
+| RQ-373 | Are physical MMI input mappings recovered? | OPEN, NO | Reducer actions are host abstractions only. SPEC-104. |
+| RQ-374 | Does the reducer perform service or vehicle I/O? | CLOSED, NO | Transitions are pure and emit only typed host state. SPEC-104. |
+| RQ-375 | What is the bounded layout scope? | CLOSED, 5 LAYOUTS/16 ENTRY RECTANGLES | Every typed screen and focusable entry has deterministic host geometry. SPEC-105. |
+| RQ-376 | Do layout rectangles overlap or overflow? | CLOSED, ZERO/ZERO | Full-catalog validation finds neither condition. SPEC-105. |
+| RQ-377 | What minimum focus-target height is enforced? | CLOSED, 34 PIXELS | Every entry meets the fixed host threshold. SPEC-105. |
+| RQ-378 | Does the layout reconstruct firmware geometry? | OPEN, NO | Display safe area and firmware pixel layout remain unknown. SPEC-105. |
+| RQ-379 | What does the original theme registry contain? | CLOSED, 8/7/23/6 | It contains eight colors, seven metrics, 23 text tokens and six icons. SPEC-106. |
+| RQ-380 | What is the asset provenance? | CLOSED, PROJECT PHOENIX ORIGINAL | All vector commands and tokens were independently authored. SPEC-106. |
+| RQ-381 | Are external or extracted assets present? | CLOSED, ZERO | Firmware, navigation-media and third-party assets are excluded. SPEC-106. |
+| RQ-382 | Is target renderer compatibility established? | OPEN, NO | Theme structure and byte counts are host-only evidence. SPEC-106. |
+| RQ-383 | How many public static previews are generated? | CLOSED, FIVE | One deterministic 480x240 SVG represents each typed screen. SPEC-107. |
+| RQ-384 | Do previews contain scripts, links or embedded rasters? | CLOSED, NO | The renderer prohibits all three and external references. SPEC-107. |
+| RQ-385 | Are preview manifests deterministic? | CLOSED, YES | Repeated builds have identical SHA-256 manifests. SPEC-107. |
+| RQ-386 | Do SVG previews establish firmware rendering? | OPEN, NO | SVG is an offline host preview format only. SPEC-107. |
+| RQ-387 | What is the fixed playback scope? | CLOSED, 19 ACTIONS/19 SNAPSHOTS | Each reducer result is rendered and hashed in sequence. SPEC-108. |
+| RQ-388 | Does playback visit every model screen? | CLOSED, YES | All five screens occur in the fixed path. SPEC-108. |
+| RQ-389 | Is playback deterministic? | CLOSED, YES | The aggregate fingerprint is equal across repeated runs. SPEC-108. |
+| RQ-390 | Does playback establish target timing? | OPEN, NO | Hardware timing and physical input behavior remain unknown. SPEC-108. |
+| RQ-391 | How many host UI quality criteria pass? | CLOSED, EIGHT OF EIGHT | The complete quality gate passes. SPEC-109. |
+| RQ-392 | Is focus unambiguous in every base state? | CLOSED, 16 OF 16 | Each rendered state contains exactly one focus indicator. SPEC-109. |
+| RQ-393 | Do declared contrast checks pass? | CLOSED, YES | Text and focus ratios meet their host thresholds. SPEC-109. |
+| RQ-394 | Does the prototype stay within fixed complexity bounds? | CLOSED, YES | Screen, entry, command and synthetic-asset counts stay bounded. SPEC-109. |
+| RQ-395 | Does host quality prove vehicle suitability? | OPEN, NO | Target performance, display and in-vehicle factors remain unmeasured. SPEC-109. |
+| RQ-396 | Does complete M5 integration reproduce? | CLOSED, YES | Both eight-stage runs share one integration fingerprint. SPEC-110. |
+| RQ-397 | How many M5 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M5-X1 through M5-X8 pass at graph v93. SPEC-110. |
+| RQ-398 | Which milestone may begin next? | CLOSED, M6 READY | Static navigation feasibility research is the authorized next scope. SPEC-110. |
+| RQ-399 | Does M5 closure authorize mutation or installation? | CLOSED, NO | Safe mutation and installable-artifact readiness remain false. SPEC-110. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

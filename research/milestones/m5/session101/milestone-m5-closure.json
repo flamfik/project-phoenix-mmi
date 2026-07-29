@@ -1,0 +1,569 @@
+{
+  "analysis_mode": "explicit-ui-capability-transition-and-probe-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M5-CAP-001",
+        "evidence": "Sessions 077-079",
+        "limitation": "display controller, safe area and pixel layout remain unknown",
+        "name": "validated 480x240 resource geometry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:geometry_class",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "viewport"
+      },
+      {
+        "capability_id": "M5-CAP-002",
+        "evidence": "Session 079",
+        "limitation": "candidate pixel layouts are not confirmed",
+        "name": "format-explicit offline resource preview",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:render_ppm",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M5-CAP-003",
+        "evidence": "Session 090",
+        "limitation": "host events are not MMI runtime or physical-control events",
+        "name": "isolated host event harness",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_harness:HostRuntimeHarness",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "interaction"
+      },
+      {
+        "capability_id": "M5-CAP-004",
+        "evidence": "Session 091",
+        "limitation": "actual menu, renderer and lifecycle behavior remain unknown",
+        "name": "runtime and resource evidence graph",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_objects:build_runtime_evidence_graph",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "evidence"
+      },
+      {
+        "capability_id": "M5-CAP-005",
+        "evidence": "Session 093",
+        "limitation": "physical key mapping and hardware budgets remain unknown",
+        "name": "frozen offline UI constraint contract",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_constraints:build_ui_constraint_contract",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "constraints"
+      },
+      {
+        "capability_id": "M5-CAP-006",
+        "evidence": "M5 safety boundary",
+        "limitation": "renderer compatibility is not established",
+        "name": "firmware renderer integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "integration"
+      },
+      {
+        "capability_id": "M5-CAP-007",
+        "evidence": "M5 safety boundary",
+        "limitation": "integrity, lifecycle and recovery requirements are unresolved",
+        "name": "firmware resource replacement",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "mutation"
+      },
+      {
+        "capability_id": "M5-CAP-008",
+        "evidence": "M5 safety boundary",
+        "limitation": "vehicle communication is outside the offline prototype",
+        "name": "vehicle and protected-service integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "vehicle"
+      },
+      {
+        "capability_id": "M5-CAP-009",
+        "evidence": "M5 safety boundary",
+        "limitation": "M5 produces no update media or vehicle-loadable artifacts",
+        "name": "installable artifact generation",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "delivery"
+      },
+      {
+        "capability_id": "M5-CAP-010",
+        "evidence": "Session 094 and SPEC-103",
+        "limitation": "original prototype model is not the firmware menu",
+        "name": "typed information architecture and screen schema",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_model:build_phoenix_information_architecture",
+        "status": "IMPLEMENTED",
+        "target_session": "094",
+        "workstream": "architecture"
+      },
+      {
+        "capability_id": "M5-CAP-011",
+        "evidence": "Session 095 and SPEC-104",
+        "limitation": "abstract actions are not physical input mappings",
+        "name": "focus and navigation reducer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_reducer:reduce_ui_state",
+        "status": "IMPLEMENTED",
+        "target_session": "095",
+        "workstream": "interaction"
+      },
+      {
+        "capability_id": "M5-CAP-012",
+        "evidence": "Session 096 and SPEC-105",
+        "limitation": "fixed host geometry is not the firmware layout",
+        "name": "bounded 480x240 layout engine",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_layout:build_layout_catalog",
+        "status": "IMPLEMENTED",
+        "target_session": "096",
+        "workstream": "layout"
+      },
+      {
+        "capability_id": "M5-CAP-013",
+        "evidence": "Session 097 and SPEC-106",
+        "limitation": "firmware renderer compatibility remains unknown",
+        "name": "original design tokens and synthetic asset registry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_theme:build_original_theme_bundle",
+        "status": "IMPLEMENTED",
+        "target_session": "097",
+        "workstream": "visual"
+      },
+      {
+        "capability_id": "M5-CAP-014",
+        "evidence": "Session 098 and SPEC-107",
+        "limitation": "static host SVG is not a firmware renderer",
+        "name": "offline Phoenix UI renderer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_renderer:render_screen_svg",
+        "status": "IMPLEMENTED",
+        "target_session": "098",
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M5-CAP-015",
+        "evidence": "Session 099 and SPEC-108",
+        "limitation": "host snapshots do not establish target timing",
+        "name": "deterministic input playback and snapshots",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_playback:run_ui_playback",
+        "status": "IMPLEMENTED",
+        "target_session": "099",
+        "workstream": "playback"
+      },
+      {
+        "capability_id": "M5-CAP-016",
+        "evidence": "Session 100 and SPEC-109",
+        "limitation": "host quality does not prove MMI hardware suitability",
+        "name": "legibility, focus and complexity audit",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_quality:audit_ui_quality",
+        "status": "IMPLEMENTED",
+        "target_session": "100",
+        "workstream": "quality"
+      },
+      {
+        "capability_id": "M5-CAP-017",
+        "evidence": "Session 101 and SPEC-110",
+        "limitation": "M6 remains static navigation feasibility research",
+        "name": "deterministic M5 integration gate",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_integration:run_ui_prototype_integration",
+        "status": "IMPLEMENTED",
+        "target_session": "101",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 17,
+    "probe_integrity": true,
+    "registry_version": "m5-session101-v1",
+    "status_counts": {
+      "BLOCKED": 4,
+      "IMPLEMENTED": 10,
+      "PARTIAL": 3
+    }
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "installable_artifact_ready": false,
+    "m5_entry": "PASS",
+    "m5_exit": "PASS",
+    "m5_status": "COMPLETE",
+    "prototype_scope": "OFFLINE_ONLY",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M5-X1",
+      "name": "typed information architecture and screen schema",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-010"
+      ],
+      "target_session": "094"
+    },
+    {
+      "criterion_id": "M5-X2",
+      "name": "deterministic focus and navigation reducer",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-011"
+      ],
+      "target_session": "095"
+    },
+    {
+      "criterion_id": "M5-X3",
+      "name": "bounded 480x240 layout engine",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-012"
+      ],
+      "target_session": "096"
+    },
+    {
+      "criterion_id": "M5-X4",
+      "name": "original token and synthetic asset registry",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-013"
+      ],
+      "target_session": "097"
+    },
+    {
+      "criterion_id": "M5-X5",
+      "name": "offline Phoenix UI preview renderer",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-014"
+      ],
+      "target_session": "098"
+    },
+    {
+      "criterion_id": "M5-X6",
+      "name": "deterministic input playback and snapshots",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-015"
+      ],
+      "target_session": "099"
+    },
+    {
+      "criterion_id": "M5-X7",
+      "name": "legibility, focus and complexity audit",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-016"
+      ],
+      "target_session": "100"
+    },
+    {
+      "criterion_id": "M5-X8",
+      "name": "deterministic sanitized UI integration gate",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-017"
+      ],
+      "target_session": "101"
+    }
+  ],
+  "exit_criteria_passed": 8,
+  "exit_criteria_total": 8,
+  "integration": {
+    "classification": {
+      "firmware_compatibility": "NOT_ESTABLISHED",
+      "hardware_suitability": "NOT_ESTABLISHED",
+      "installable_artifact_ready": false,
+      "integration_gate": "PASS",
+      "safe_mutation_ready": false,
+      "scope": "SYNTHETIC_OFFLINE_HOST_ONLY"
+    },
+    "integration_fingerprint": "aee31ade1d55fc29255e645b8f6e614bd531d06e5ac7dd7bd71302f58268cb72",
+    "integration_version": "m5-session101-v1",
+    "passed": true,
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "installable_artifacts_included": false,
+      "navigation_media_content_included": false,
+      "original_or_synthetic_content_only": true,
+      "vehicle_data_included": false
+    },
+    "repeat_run_equal": true,
+    "schema": "phoenix-mmi.ui-integration/v1",
+    "stages": [
+      {
+        "name": "constraint contract",
+        "passed": true,
+        "stage_id": "M5-I1"
+      },
+      {
+        "name": "information architecture",
+        "passed": true,
+        "stage_id": "M5-I2"
+      },
+      {
+        "name": "focus and navigation reducer",
+        "passed": true,
+        "stage_id": "M5-I3"
+      },
+      {
+        "name": "bounded layout",
+        "passed": true,
+        "stage_id": "M5-I4"
+      },
+      {
+        "name": "original theme and assets",
+        "passed": true,
+        "stage_id": "M5-I5"
+      },
+      {
+        "name": "offline renderer",
+        "passed": true,
+        "stage_id": "M5-I6"
+      },
+      {
+        "name": "deterministic playback",
+        "passed": true,
+        "stage_id": "M5-I7"
+      },
+      {
+        "name": "quality audit",
+        "passed": true,
+        "stage_id": "M5-I8"
+      }
+    ],
+    "stages_passed": 8,
+    "stages_total": 8,
+    "summary": {
+      "constraint_schema": "phoenix-mmi.ui-constraint-contract/v1",
+      "entry_rectangle_count": 16,
+      "focus_state_count": 16,
+      "original_icon_count": 6,
+      "playback_action_count": 19,
+      "preview_count": 5,
+      "quality_criteria": "8/8",
+      "screen_count": 5,
+      "transition_count": 80
+    }
+  },
+  "milestone_transition": {
+    "installable_artifact_ready": false,
+    "m5": "COMPLETE",
+    "m6": "READY",
+    "m6_authorized_scope": "static navigation feasibility research",
+    "safe_mutation_ready": false
+  },
+  "operational_graph_delta": {
+    "base": "v92",
+    "node": {
+      "evidence_session": "101",
+      "id": "milestone-m5-closure",
+      "status": "CONFIRMED"
+    }
+  },
+  "operational_graph_version": "v93",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M5-X1",
+      "objective": "typed information architecture and screen schema",
+      "session": "094"
+    },
+    {
+      "criterion_id": "M5-X2",
+      "objective": "deterministic focus and navigation reducer",
+      "session": "095"
+    },
+    {
+      "criterion_id": "M5-X3",
+      "objective": "bounded 480x240 layout engine",
+      "session": "096"
+    },
+    {
+      "criterion_id": "M5-X4",
+      "objective": "original token and synthetic asset registry",
+      "session": "097"
+    },
+    {
+      "criterion_id": "M5-X5",
+      "objective": "offline Phoenix UI preview renderer",
+      "session": "098"
+    },
+    {
+      "criterion_id": "M5-X6",
+      "objective": "deterministic input playback and snapshots",
+      "session": "099"
+    },
+    {
+      "criterion_id": "M5-X7",
+      "objective": "legibility, focus and complexity audit",
+      "session": "100"
+    },
+    {
+      "criterion_id": "M5-X8",
+      "objective": "deterministic sanitized UI integration gate",
+      "session": "101"
+    }
+  ],
+  "previous_state": {
+    "operational_graph_version": "v92",
+    "session": "100"
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "firmware_execution_performed": false,
+    "installable_artifacts_included": false,
+    "navigation_media_content_included": false,
+    "offline_only": true,
+    "original_or_synthetic_assets_only": true,
+    "payload_bytes_included": false,
+    "raw_firmware_strings_included": false,
+    "vehicle_communication_performed": false,
+    "vehicle_identifiers_included": false
+  },
+  "schema": "phoenix-mmi.m5-ui-prototype-progress/v1",
+  "session": "101",
+  "ui_constraint_contract": {
+    "asset_policy": {
+      "allowed_sources": [
+        "ORIGINAL",
+        "SYNTHETIC"
+      ],
+      "firmware_extracted_assets_allowed": false,
+      "license_provenance_required": true,
+      "navigation_media_assets_allowed": false,
+      "vehicle_identifiers_allowed": false
+    },
+    "authorization": {
+      "firmware_execution": false,
+      "firmware_repacking": false,
+      "firmware_resource_replacement": false,
+      "installable_artifact_generation": false,
+      "offline_original_ui_code": true,
+      "protected_service_emulation": false,
+      "synthetic_fixture_rendering": true,
+      "vehicle_communication": false
+    },
+    "budget_policy": {
+      "frame_timing_status": "NOT_ESTABLISHED",
+      "limitation": "host measurements must not be presented as MMI hardware performance",
+      "numeric_cpu_budget_status": "NOT_ESTABLISHED",
+      "numeric_memory_budget_status": "NOT_ESTABLISHED",
+      "prototype_must_report": [
+        "DRAW_COMMAND_COUNT",
+        "FOCUSABLE_NODE_COUNT",
+        "STATE_COUNT",
+        "SYNTHETIC_ASSET_BYTES"
+      ]
+    },
+    "classification": {
+      "hardware_mapping": "NOT_ESTABLISHED",
+      "input_action_layer": "PROTOTYPE_ABSTRACTION",
+      "offline_prototype_ready": true,
+      "renderer_compatibility": "NOT_ESTABLISHED",
+      "viewport_geometry": "CONFIRMED_RESOURCE_GEOMETRY"
+    },
+    "contract_version": "m5-session093-v1",
+    "input": {
+      "actions": [
+        "ACTIVATE",
+        "BACK",
+        "FOCUS_NEXT",
+        "FOCUS_PREVIOUS",
+        "HOME"
+      ],
+      "focus_required": true,
+      "hardware_mapping_status": "NOT_ESTABLISHED",
+      "limitation": "actions are host-side abstractions and are not hardware key codes, scan codes or vehicle messages",
+      "pointer_required": false,
+      "touch_required": false
+    },
+    "interaction_invariants": {
+      "deterministic_transitions_required": true,
+      "filesystem_required": false,
+      "network_required": false,
+      "pointer_only_path_allowed": false,
+      "touch_only_path_allowed": false,
+      "vehicle_state_required": false,
+      "visible_focus_required": true
+    },
+    "prototype_scope": "OFFLINE_HOST_UI",
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "installable_artifacts_included": false,
+      "navigation_media_content_included": false,
+      "original_or_synthetic_assets_only": true,
+      "payload_bytes_included": false,
+      "raw_firmware_strings_included": false,
+      "vehicle_identifiers_included": false
+    },
+    "schema": "phoenix-mmi.ui-constraint-contract/v1",
+    "unresolved_boundaries": [
+      "DISPLAY_PIXEL_LAYOUT",
+      "DISPLAY_SAFE_AREA",
+      "FIRMWARE_RENDERER",
+      "FONT_RENDERER",
+      "HARDWARE_INPUT_CODES",
+      "RUNTIME_RESOURCE_LIFECYCLE"
+    ],
+    "viewport": {
+      "evidence": "Session 077 validated six unique 480x240 resource geometries",
+      "height": 240,
+      "limitation": "resource geometry does not establish the display controller, safe area, timing or pixel layout",
+      "orientation": "LANDSCAPE",
+      "width": 480
+    }
+  }
+}

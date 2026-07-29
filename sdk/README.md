@@ -97,6 +97,17 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
   Sessions 094-101 prototype backlog.
 - `ui_model` - typed, independently authored five-screen information
   architecture with strict reachability, provenance and service-binding gates.
+- `ui_reducer` - pure five-action focus/navigation reducer with a complete
+  finite transition matrix and no service dispatch.
+- `ui_layout` - integer-only 480x240 layout with viewport, overlap and overflow
+  validation.
+- `ui_theme` - original Phoenix colors, metrics, text and normalized vector
+  primitives with explicit provenance.
+- `ui_renderer` - deterministic static SVG previews without scripts, raster
+  embedding or external references.
+- `ui_playback` - reproducible action traces and host-preview fingerprints.
+- `ui_quality` - host-only contrast, focus, geometry and complexity gates.
+- `ui_integration` - deterministic synthetic M5 end-to-end closure gate.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
