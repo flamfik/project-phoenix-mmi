@@ -1,0 +1,89 @@
+{
+  "analysis_mode": "read-only-metainfo-structure-name-size-and-state-chain-replay",
+  "cd1_target_to_cd3_source_eeprom_chain_reproduced": true,
+  "classification": {
+    "m1_update_model_understanding": "PASS",
+    "payload_record_resolution": "COMPLETE",
+    "session002_descriptor_topology": "REPRODUCED",
+    "staged_eeprom_dependency": "CONFIRMED"
+  },
+  "descriptors": [
+    {
+      "all_payloads_resolve_in_registered_set": true,
+      "device_family_count": 27,
+      "disc": "cd1",
+      "eeprom_update_enabled": true,
+      "link_count": 20,
+      "metafile_checksum_declared": true,
+      "option_count": 14,
+      "payload_checksum_declaration_count": 194,
+      "payload_exact_name_size_resolution_count": 43,
+      "payload_iso9660_level1_alias_resolution_count": 146,
+      "payload_local_media_resolution_count": 189,
+      "payload_name_size_resolution_count": 213,
+      "payload_other_registered_media_resolution_count": 24,
+      "payload_record_count": 213,
+      "section_count": 275,
+      "session002_counts_reproduced": true
+    },
+    {
+      "all_payloads_resolve_in_registered_set": true,
+      "device_family_count": 2,
+      "disc": "cd2",
+      "eeprom_update_enabled": false,
+      "link_count": 0,
+      "metafile_checksum_declared": true,
+      "option_count": 0,
+      "payload_checksum_declaration_count": 92,
+      "payload_exact_name_size_resolution_count": 92,
+      "payload_iso9660_level1_alias_resolution_count": 0,
+      "payload_local_media_resolution_count": 92,
+      "payload_name_size_resolution_count": 92,
+      "payload_other_registered_media_resolution_count": 0,
+      "payload_record_count": 92,
+      "section_count": 95,
+      "session002_counts_reproduced": true
+    },
+    {
+      "all_payloads_resolve_in_registered_set": true,
+      "device_family_count": 30,
+      "disc": "cd3",
+      "eeprom_update_enabled": true,
+      "link_count": 20,
+      "metafile_checksum_declared": true,
+      "option_count": 1,
+      "payload_checksum_declaration_count": 265,
+      "payload_exact_name_size_resolution_count": 278,
+      "payload_iso9660_level1_alias_resolution_count": 6,
+      "payload_local_media_resolution_count": 284,
+      "payload_name_size_resolution_count": 284,
+      "payload_other_registered_media_resolution_count": 0,
+      "payload_record_count": 284,
+      "section_count": 336,
+      "session002_counts_reproduced": true
+    }
+  ],
+  "operational_graph_version": "v55",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "local_paths_included": false,
+    "member_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.m1-update-model-reproduction/v1",
+  "session": "063",
+  "totals": {
+    "device_family_count": 59,
+    "link_count": 40,
+    "option_count": 15,
+    "payload_record_count": 589,
+    "section_count": 706
+  }
+}

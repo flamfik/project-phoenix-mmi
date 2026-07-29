@@ -4,9 +4,14 @@ Project Phoenix MMI is a research and development initiative focused on document
 
 ## Current phase
 
-**M1 — Firmware Archaeology**
+**M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: READY**
 
-The foundation, update model and principal-image fingerprinting are complete. Sessions 039-042 close fixed registered, raw, record-normalized and distributed provenance searches as bounded-negative. Sessions 044-050 identify the LOD/YIM families, validate a read-only XIM2 decoder and produce operational graph v42. Sessions 051-060 confirm 84 strict embedded XIM2 resources shared by MMI 5150 and 5570, retain the unknown YIM integrity fields as write blockers, establish repeatable LOD fill and shared-region topology, reject unsupported record promotion and advance the evidence model to graph v52. M1 remains partial because consumer ownership, exact section boundaries, loader transformation, YIM integrity and LOD record semantics remain open.
+Sessions 061-065 independently reproduce all three registered media and the
+593-file inventory, route every update artifact, reproduce all 589 METAINFO
+payload declarations and the staged CD1-to-CD3 dependency, audit evidence
+traceability and close M1 under the Project Charter. Operational graph v57
+retains unresolved integrity, renderer, runtime, LOD and navigation work for
+M2-M7. Safe mutation and installable-artifact gates remain false.
 
 ## First milestone
 
@@ -92,6 +97,12 @@ ui/            Future interface and resource research
 - [Session 058 report](docs/sessions/SESSION-058-lod-record-hypothesis.md)
 - [Session 059 report](docs/sessions/SESSION-059-lod-shared-regions.md)
 - [Session 060 report](docs/sessions/SESSION-060-firmware-evidence-map-v2.md)
+- [Session 061 report](docs/sessions/SESSION-061-m1-media-reproduction.md)
+- [Session 062 report](docs/sessions/SESSION-062-m1-artifact-routing.md)
+- [Session 063 report](docs/sessions/SESSION-063-m1-update-model-reproduction.md)
+- [Session 064 report](docs/sessions/SESSION-064-m1-evidence-traceability.md)
+- [Session 065 report](docs/sessions/SESSION-065-milestone-m1-closure.md)
+- [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)
@@ -128,6 +139,7 @@ ui/            Future interface and resource research
 - [Session 037 publication-safe evidence](research/navigation-media/session037/)
 - [Session 038 publication-safe evidence](research/navigation-media/session038/)
 - [Session 060 publication-safe evidence](research/navigation-media/session060/)
+- [Sessions 061-065 M1 closure evidence](research/milestones/m1/)
 - [Phoenix SDK usage](sdk/README.md)
 
 ## Research evidence levels

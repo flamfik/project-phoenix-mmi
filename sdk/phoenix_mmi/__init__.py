@@ -40,6 +40,15 @@ from .legacy_cycle import (
     legacy_member_eligible,
 )
 from .evidence_cycle import build_session060_evidence_map
+from .m1_closure import (
+    audit_m1_evidence,
+    audit_m1_media,
+    audit_update_model,
+    build_m1_closure,
+    classify_m1_members,
+    load_iso_images,
+    parse_metainfo_text,
+)
 from .lod_research import (
     analyze_lod_alignment,
     analyze_lod_fill_regions,
@@ -392,6 +401,13 @@ __all__ = [
     "build_public_record_normalized_homolog_report",
     "build_firmware_evidence_map",
     "build_session060_evidence_map",
+    "audit_m1_evidence",
+    "audit_m1_media",
+    "audit_update_model",
+    "build_m1_closure",
+    "classify_m1_members",
+    "load_iso_images",
+    "parse_metainfo_text",
     "build_yim_integrity_decision",
     "build_public_navigation_dataflow_report",
     "build_public_navigation_media_report",
@@ -536,4 +552,4 @@ __all__ = [
     "yim_integrity_candidates",
 ]
 
-__version__ = "0.57.0"
+__version__ = "0.62.0"

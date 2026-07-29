@@ -222,5 +222,27 @@
 | RQ-218 | Does graph v52 preserve negative and open evidence? | CLOSED, CONFIRMED | It adds no renderer, LOD decoder or write path unsupported by direct evidence. SPEC-068. |
 | RQ-219 | Is M1 complete after Session 060? | CLOSED, NOT YET | Consumer ownership, YIM integrity, LOD semantics and section boundaries remain open. SPEC-068. |
 | RQ-220 | Is safe mutation ready after Session 060? | CLOSED, NO | The integrated gate remains false and no installable artifact is produced. SPEC-068. |
+| RQ-221 | Do all three update images still match the registered artifact identities? | CLOSED, CONFIRMED | Filename, byte size and SHA-256 match before inventory evidence is accepted. SPEC-069. |
+| RQ-222 | Can the complete Session 001 media inventory be reproduced independently? | CLOSED, CONFIRMED | Volume labels, block size, 593 files, 968 directories and all payload-byte totals reproduce. SPEC-069. |
+| RQ-223 | Does the three-disc extension census reproduce? | CLOSED, CONFIRMED | The fixed totals are 375 BIN, 154 HEX, 45 LOD, 10 YIM, 6 SW and 3 TXT members. SPEC-069. |
+| RQ-224 | Does the M1 media replay publish firmware or extracted resources? | CLOSED, NO | Only aggregate structural evidence is emitted; source bytes, paths and source hashes are excluded. SPEC-069. |
+| RQ-225 | Can every update member be assigned to one bounded artifact family? | CLOSED, CONFIRMED | All 593 members have exactly one classification under the fixed family gates. SPEC-070. |
+| RQ-226 | Which positive families require structural validation rather than suffix alone? | CLOSED, FIXED CONTRACT | METAINFO, ELF, U-Boot, Intel HEX and YIM/XIM2 use their documented structural gates. SPEC-070. |
+| RQ-227 | Does an opaque family label imply decoded semantics? | CLOSED, NO | Opaque BIN, SW and LOD labels are routing results, not semantic claims. SPEC-070. |
+| RQ-228 | Does every family have an evidence-backed deeper-analysis route? | CLOSED, CONFIRMED | All families name prior evidence, a destination milestone and a research route. SPEC-070. |
+| RQ-229 | Does complete routing close the deeper format questions? | CLOSED, NO | It satisfies M1 discovery scope while preserving decoding, ownership and integrity work for M2-M4. SPEC-070. |
+| RQ-230 | Does the Session 002 METAINFO topology reproduce? | CLOSED, CONFIRMED | The replay finds 706 sections, 59 device families, 589 payloads, 40 links and 15 options. SPEC-071. |
+| RQ-231 | How are declared long filenames correlated with the primary ISO directory? | CLOSED, CONFIRMED STRUCTURAL | Exact names are preferred; otherwise deterministic ISO 9660 Level 1 8.3 alias plus exact declared size is required. SPEC-071. |
+| RQ-232 | Do all 589 payload records resolve in the registered set? | CLOSED, CONFIRMED | 565 resolve on their descriptor disc and 24 CD1 declarations resolve only on CD3. SPEC-071. |
+| RQ-233 | Is the staged CD1-to-CD3 EEPROM dependency reproducible? | CLOSED, CONFIRMED | A CD1 target version/CRC pair exactly intersects a CD3 source pair. SPEC-071. |
+| RQ-234 | Does payload resolution identify every checksum or updater branch? | CLOSED, NO | Metafile checksum semantics and complete policy/state-machine behavior remain M2 work. SPEC-071. |
+| RQ-235 | Are the Session, SPEC and RQ identifier sequences machine-audited? | CLOSED, CONFIRMED | Session 000-065 except the declared gap, SPEC-001-073 and RQ-001-242 are required. SPEC-072. |
+| RQ-236 | Is the missing Session 043 an undocumented gap? | CLOSED, NO | It is explicitly recorded as not executed and reserved by Session 044. SPEC-072. |
+| RQ-237 | Is the publication-safe JSON evidence corpus parseable? | CLOSED, CONFIRMED | Every input report through Session 060 parses; the closure subtree is excluded from its own deterministic count. SPEC-072. |
+| RQ-238 | Can a newcomer reproduce M1 without undocumented assumptions? | CLOSED, CONFIRMED | Charter, milestone guide, safety rules, registered artifacts, runner and routing table form an audited path. SPEC-072. |
+| RQ-239 | Are the formal Project Charter exit criteria for M1 satisfied? | CLOSED, CONFIRMED | Media, inventory, routing, update relationships, reproduction guidance and the safety boundary all pass. SPEC-073. |
+| RQ-240 | Does M1 closure claim that deep resource, runtime or navigation semantics are solved? | CLOSED, NO | Those questions are explicitly reclassified to M2-M7 rather than inferred closed. SPEC-073. |
+| RQ-241 | Is safe mutation or an installable artifact ready at M1 closure? | CLOSED, NO | Both machine-readable gates remain false. SPEC-073. |
+| RQ-242 | Which milestone is authorized to begin after M1? | CLOSED, M2 READY | The Analysis Toolkit may start; vehicle-side validation remains reserved for M7. SPEC-073. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

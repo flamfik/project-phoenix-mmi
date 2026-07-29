@@ -4,7 +4,7 @@
 
 Repository, safety rules, artifact integrity, research templates.
 
-## M1 - Firmware Archaeology
+## M1 - Firmware Archaeology — COMPLETE
 
 Disc inventory, update flow, formats, dependencies, integrity mechanisms.
 
@@ -70,9 +70,18 @@ Progress:
 - Session 058: three-byte LOD record-hypothesis falsification and graph v50 - complete;
 - Session 059: publication-safe LOD shared-region atlas and graph v51 - complete;
 - Session 060: integrated firmware evidence map v2 and operational graph v52 - complete;
-- remaining M1 work: YIM integrity, encoding and consumer ownership; LOD record/address/integrity semantics and consumer ownership; external link/loader provenance for the reorder component; exact relocation boundaries; entry-argument producer/state creator; semantic runtime-linkage owner; memory-loaded/interprocedural writer or external loader; bilateral producer/accessor edge; runtime callback resolution; partition consumer; optical sector ABI and buffer ownership; routing/coordinate grammars; renderer consumer; backing-volume layout; unresolved runtime tables and broader executable boundaries.
+- Session 061: registered three-media and Session 001 inventory reproduction, graph v53 - complete;
+- Session 062: complete 593-member artifact-family routing, graph v54 - complete;
+- Session 063: METAINFO topology, complete suite payload resolution and CD1-to-CD3 dependency replay, graph v55 - complete;
+- Session 064: evidence traceability and newcomer-path audit, graph v56 - complete;
+- Session 065: Project Charter exit gate and formal Milestone M1 closure, graph v57 - complete.
 
-## M2 - Analysis Toolkit
+M1 closed under its formal charter criteria. Open integrity, encoding,
+consumer-ownership, relocation, runtime, navigation, renderer and
+hardware-validation questions are retained and routed to M2-M7; they were not
+silently treated as solved.
+
+## M2 - Analysis Toolkit — READY TO START
 
 Parsers, manifests, binary classifiers, diff tooling, checksum research.
 

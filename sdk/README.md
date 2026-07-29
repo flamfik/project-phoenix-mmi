@@ -55,6 +55,8 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
 - `yim_research` - frozen expanded integrity tests, exact field relations, strict embedded-XIM2 census and explicit YIM write gate.
 - `lod_research` - fixed phase, fill-region, shifted-grid, record-hypothesis and shared-region analyses for opaque LOD payloads.
 - `evidence_cycle` - Sessions 051-060 synthesis and operational graph v52.
+- `m1_closure` - registered-media replay, complete artifact routing, METAINFO
+  suite resolution, evidence traceability and the Project Charter M1 gate.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -564,6 +566,22 @@ This cycle keeps all payloads private while testing a frozen expanded YIM
 integrity catalogue, validating embedded XIM2 resources, profiling LOD
 alignment and shared regions, rejecting unsupported record promotion and
 emitting operational graph v52.
+
+## Reproduce Sessions 061-065 and close M1
+
+```powershell
+python tools/session061_065/close_m1.py `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd1-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd2-3.iso `
+  E:\project-phoenix-mmi\MMI-5570-4L0.998.961-cd3-3.iso `
+  --output work/session061_065 `
+  --public-root research/milestones/m1 `
+  --repository-root .
+```
+
+The runner verifies registered media, reproduces Session 001 and 002 aggregate
+evidence, routes all 593 members and applies the five-part M1 closure gate.
+It emits no firmware bytes, extracted resources or installable artifact.
 
 All session runners verify ISO hashes, extract only selected members into an operating-system temporary directory and remove them after analysis. Full work directories are ignored by Git.
 

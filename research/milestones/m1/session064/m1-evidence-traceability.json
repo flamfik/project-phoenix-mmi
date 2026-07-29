@@ -1,0 +1,37 @@
+{
+  "analysis_mode": "repository-documentation-and-json-integrity-audit",
+  "classification": {
+    "evidence_traceability": "PASS",
+    "m1_reproducibility_documentation": "PASS",
+    "public_report_parseability": "PASS",
+    "undocumented_session_gaps": "NONE"
+  },
+  "deliberate_session_gap_documented": true,
+  "deliberate_session_gaps": [
+    43
+  ],
+  "identifier_sequences_complete": true,
+  "invalid_public_json_count": 0,
+  "newcomer_entrypoint_count": 7,
+  "newcomer_entrypoints_present": true,
+  "operational_graph_version": "v56",
+  "public_json_report_count": 170,
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "local_paths_included": false,
+    "member_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "research_question_count": 242,
+  "schema": "phoenix-mmi.m1-evidence-traceability/v1",
+  "session": "064",
+  "session_document_count": 65,
+  "specification_count": 73
+}
