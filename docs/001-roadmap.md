@@ -177,9 +177,24 @@ Map format study, routing engine boundaries, legal data sources, OSM conversion 
 - Session 110: reproduce complete integration, close 8/8 M6 criteria and
   publish graph v102 - complete.
 
-## M7 - Controlled Hardware Validation — READY
+## M7 - Controlled Hardware Validation — AWAITING BENCH EVIDENCE
 
 Bench setup, recovery path, read-only observation, signed risk review.
 
 - Session 111: freeze the bench-safety boundary, required recovery evidence
-  and read-only observation plan - next.
+  and read-only observation plan, graph v103 - complete;
+- Session 112: private identity/isolation manifest and safe public summary,
+  graph v104 - complete;
+- Session 113: authoritative-reference electrical safety plan, graph v105 -
+  complete;
+- Session 114: abort and non-writing recovery plan, graph v106 - complete;
+- Session 115: passive observation and aggregate capture contract, graph v107
+  - complete;
+- Session 116: eight-hazard register and unsigned approval gate, graph v108 -
+  complete;
+- Session 117: deterministic normal and emergency rehearsal, graph v109 -
+  complete;
+- Session 118: fail-closed private evidence intake, graph v110 - complete;
+- Session 119: preparation integration 8/8, M7 8/9 and graph v111 - complete;
+- Session 120: validate private signed evidence from a real isolated bench -
+  blocked pending external evidence.

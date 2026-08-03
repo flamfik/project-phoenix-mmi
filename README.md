@@ -7,7 +7,7 @@ Project Phoenix MMI is a research and development initiative focused on document
 **M1 — Firmware Archaeology: COMPLETE; M2 — Analysis Toolkit: COMPLETE; M3 —
 Resource Laboratory: COMPLETE; M4 — Runtime Research: COMPLETE; M5 — Phoenix
 UI Prototype: COMPLETE; M6 — Navigation Feasibility: COMPLETE; M7 —
-Controlled Hardware Validation: READY**
+Controlled Hardware Validation: AWAITING BENCH EVIDENCE**
 
 Sessions 084-092 establish static task/service and IPC evidence, resource
 consumer and device-boundary searches, anonymous pointer topology, an isolated
@@ -39,6 +39,14 @@ deterministic routing on original synthetic data. M6 closes 8/8 at graph v102.
 Direct MMI navigation-media replacement remains BLOCKED; an independent
 host-side OSM pipeline is PROTOTYPE_FEASIBLE. M7 is READY only for controlled
 read-only bench planning and signed risk review.
+
+Sessions 111-119 complete the host-side M7 preparation package: a fail-closed
+contract, private/public manifest split, authoritative-reference electrical
+plan, non-writing recovery, passive observation, eight-hazard risk register,
+deterministic normal/abort rehearsal and private evidence validator. The
+package passes 8/8 preparation criteria, but M7 is 8/9 and remains
+AWAITING_BENCH_EVIDENCE. Session 120 requires a private signed isolated-bench
+bundle; no hardware or vehicle action has been performed.
 
 ## First milestone
 
@@ -174,13 +182,22 @@ ui/            Future interface and resource research
 - [Session 108 report](docs/sessions/SESSION-108-bounded-osm-adapter.md)
 - [Session 109 report](docs/sessions/SESSION-109-synthetic-routing-lab.md)
 - [Session 110 report](docs/sessions/SESSION-110-milestone-m6-closure.md)
+- [Session 111 report](docs/sessions/SESSION-111-m7-hardware-validation-baseline.md)
+- [Session 112 report](docs/sessions/SESSION-112-private-bench-manifest.md)
+- [Session 113 report](docs/sessions/SESSION-113-electrical-safety-plan.md)
+- [Session 114 report](docs/sessions/SESSION-114-recovery-and-abort-plan.md)
+- [Session 115 report](docs/sessions/SESSION-115-read-only-observation-contract.md)
+- [Session 116 report](docs/sessions/SESSION-116-bench-risk-register.md)
+- [Session 117 report](docs/sessions/SESSION-117-synthetic-bench-rehearsal.md)
+- [Session 118 report](docs/sessions/SESSION-118-private-evidence-intake.md)
+- [Session 119 report](docs/sessions/SESSION-119-m7-preparation-readiness.md)
 - [Milestone M1 closure guide](docs/milestones/M1-firmware-archaeology.md)
 - [Milestone M2 closure](docs/milestones/M2-analysis-toolkit.md)
 - [Milestone M3 closure](docs/milestones/M3-resource-laboratory.md)
 - [Milestone M4 closure](docs/milestones/M4-runtime-research.md)
 - [Milestone M5 closure](docs/milestones/M5-phoenix-ui-prototype.md)
 - [Milestone M6 closure](docs/milestones/M6-navigation-feasibility.md)
-- [Milestone M7 entry](docs/milestones/M7-controlled-hardware-validation.md)
+- [Milestone M7 readiness](docs/milestones/M7-controlled-hardware-validation.md)
 - [Research Questions](docs/research-questions/README.md)
 - [Technical specifications](docs/specs/)
 - [Session 006 publication-safe evidence](research/firmware-5570/session006/)

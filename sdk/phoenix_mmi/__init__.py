@@ -521,6 +521,68 @@ from .navigation_integration import (
     NAVIGATION_INTEGRATION_SCHEMA,
     run_navigation_feasibility_integration,
 )
+from .hardware_validation_contract import (
+    M7_CONTRACT_SCHEMA,
+    build_hardware_validation_contract,
+    validate_hardware_validation_contract,
+)
+from .hardware_validation_audit import (
+    M7_CAPABILITIES,
+    M7_EXIT_CRITERIA,
+    M7_PROGRESS_SCHEMA,
+    HardwareValidationCapability,
+    advance_m7_progress,
+    build_m7_baseline,
+)
+from .bench_manifest import (
+    BENCH_MANIFEST_SCHEMA,
+    IDENTITY_FIELDS,
+    build_bench_manifest_template,
+    build_public_bench_manifest_summary,
+    validate_bench_manifest,
+)
+from .bench_power import (
+    BENCH_POWER_SCHEMA,
+    build_bench_power_plan,
+    validate_bench_power_plan,
+)
+from .bench_recovery import (
+    BENCH_RECOVERY_SCHEMA,
+    build_bench_recovery_plan,
+    validate_bench_recovery_plan,
+)
+from .bench_observation import (
+    BENCH_OBSERVATION_SCHEMA,
+    build_bench_observation_contract,
+    validate_bench_observation_contract,
+)
+from .bench_risk import (
+    BENCH_RISK_SCHEMA,
+    BenchRisk,
+    bench_risk_fingerprint,
+    build_bench_risk_register,
+    validate_bench_risk_register,
+)
+from .bench_state_machine import (
+    ABORTABLE_STATES,
+    BENCH_STATE_SCHEMA,
+    INITIAL_STATE,
+    TERMINAL_STATES,
+    TRANSITIONS,
+    BenchState,
+    run_synthetic_bench_rehearsal,
+    transition_bench_state,
+    validate_bench_state,
+)
+from .bench_evidence import (
+    BENCH_EVIDENCE_SCHEMA,
+    build_bench_evidence_template,
+    evaluate_bench_evidence_bundle,
+)
+from .hardware_validation_integration import (
+    HARDWARE_VALIDATION_INTEGRATION_SCHEMA,
+    run_hardware_validation_preparation_integration,
+)
 from .runtime_slot import (
     analyze_runtime_slot_lineage,
     build_public_runtime_slot_report,
@@ -1014,10 +1076,52 @@ __all__ = [
     "shortest_route",
     "NAVIGATION_INTEGRATION_SCHEMA",
     "run_navigation_feasibility_integration",
+    "M7_CONTRACT_SCHEMA",
+    "build_hardware_validation_contract",
+    "validate_hardware_validation_contract",
+    "M7_CAPABILITIES",
+    "M7_EXIT_CRITERIA",
+    "M7_PROGRESS_SCHEMA",
+    "HardwareValidationCapability",
+    "advance_m7_progress",
+    "build_m7_baseline",
+    "BENCH_MANIFEST_SCHEMA",
+    "IDENTITY_FIELDS",
+    "build_bench_manifest_template",
+    "build_public_bench_manifest_summary",
+    "validate_bench_manifest",
+    "BENCH_POWER_SCHEMA",
+    "build_bench_power_plan",
+    "validate_bench_power_plan",
+    "BENCH_RECOVERY_SCHEMA",
+    "build_bench_recovery_plan",
+    "validate_bench_recovery_plan",
+    "BENCH_OBSERVATION_SCHEMA",
+    "build_bench_observation_contract",
+    "validate_bench_observation_contract",
+    "BENCH_RISK_SCHEMA",
+    "BenchRisk",
+    "bench_risk_fingerprint",
+    "build_bench_risk_register",
+    "validate_bench_risk_register",
+    "ABORTABLE_STATES",
+    "BENCH_STATE_SCHEMA",
+    "INITIAL_STATE",
+    "TERMINAL_STATES",
+    "TRANSITIONS",
+    "BenchState",
+    "run_synthetic_bench_rehearsal",
+    "transition_bench_state",
+    "validate_bench_state",
+    "BENCH_EVIDENCE_SCHEMA",
+    "build_bench_evidence_template",
+    "evaluate_bench_evidence_bundle",
+    "HARDWARE_VALIDATION_INTEGRATION_SCHEMA",
+    "run_hardware_validation_preparation_integration",
     "MANIFEST_SCHEMA",
     "PUBLIC_SUMMARY_SCHEMA",
     "DEFAULT_FORMAT_REGISTRY",
     "DEFAULT_SCHEMA_REGISTRY",
 ]
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"

@@ -441,5 +441,45 @@
 | RQ-437 | How many M6 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M6-X1 through M6-X8 pass at graph v102. SPEC-119. |
 | RQ-438 | Which milestone may begin next? | CLOSED, M7 READY | Only controlled read-only bench planning and signed risk review are authorized. SPEC-119. |
 | RQ-439 | Does M6 closure authorize mutation, installation or vehicle communication? | CLOSED, NO | All three gates remain false. SPEC-119. |
+| RQ-440 | Does M7 satisfy its M6 entry gate? | CLOSED, PASS | M6 is complete at 8/8 and graph v102. SPEC-120. |
+| RQ-441 | May Phoenix SDK power hardware or execute target firmware? | CLOSED, NO | SDK operations remain offline preparation and validation only. SPEC-120. |
+| RQ-442 | How many external bench prerequisites are mandatory? | CLOSED, TEN | Every prerequisite must pass before a physical candidate exists. SPEC-120. |
+| RQ-443 | Does one stop condition terminate the plan? | CLOSED, YES | The M7 contract is fail-closed on any listed stop condition. SPEC-120. |
+| RQ-444 | How many private hardware identity fields are defined? | CLOSED, SIX | Family, part, index, serial, software and connector fields are fixed. SPEC-121. |
+| RQ-445 | Does the public manifest summary expose identity values? | CLOSED, NO | It publishes counts, completeness and a derived fingerprint only. SPEC-121. |
+| RQ-446 | Is the committed manifest complete? | CLOSED, NO | It is an empty privacy-preserving template. SPEC-121. |
+| RQ-447 | Is isolation from a vehicle currently evidenced? | OPEN, NO | A private completed manifest is required in Session 120. SPEC-121. |
+| RQ-448 | Are device-specific pinout and power values established? | OPEN, NO | Authoritative device references are still required. SPEC-122. |
+| RQ-449 | May electrical values be inferred from forums? | CLOSED, NO | The power validator rejects guessed values. SPEC-122. |
+| RQ-450 | Which core electrical controls are mandatory? | CLOSED, FOUR CORE | Current limiting, independent cutoff, source fuse and verified polarity are required. SPEC-122. |
+| RQ-451 | Was hardware powered during Session 113? | CLOSED, NO | The session produced a planning contract only. SPEC-122. |
+| RQ-452 | What does M7 recovery cover? | CLOSED, POWER AND EVIDENCE | It covers safe shutdown, quarantine, sealing and review. SPEC-123. |
+| RQ-453 | Is target-write recovery allowed? | CLOSED, NO | Flash, EEPROM and Component Protection recovery are excluded. SPEC-123. |
+| RQ-454 | Has the dummy-load rehearsal been physically performed? | OPEN, NO | It remains external evidence for Session 120. SPEC-123. |
+| RQ-455 | May power be reapplied automatically after an abort? | CLOSED, NO | Review and explicit lockout clearance are required. SPEC-123. |
+| RQ-456 | What can future read-only observation record? | CLOSED, PASSIVE AGGREGATES | Supply, timing, display class, stop reason and shutdown state are bounded. SPEC-124. |
+| RQ-457 | Are active diagnostics or live MOST allowed? | CLOSED, NO | Both are on the permanent denylist. SPEC-124. |
+| RQ-458 | Must raw capture remain private? | CLOSED, YES | Public reports contain aggregates only. SPEC-124. |
+| RQ-459 | Has physical observation occurred? | CLOSED, NO | The current contract remains ungated and unexecuted. SPEC-124. |
+| RQ-460 | How many hazards are in the fixed register? | CLOSED, EIGHT | Electrical, thermal, write, network, physical and recovery risks are covered. SPEC-125. |
+| RQ-461 | Is the committed risk review signed? | CLOSED, NO | Operator and independent-reviewer signatures remain private and absent. SPEC-125. |
+| RQ-462 | Can a reduced score automatically accept risk? | CLOSED, NO | Acceptance is always an explicit human decision. SPEC-125. |
+| RQ-463 | Does the register authorize observation? | CLOSED, NO | It provides a gate and fingerprint, not approval. SPEC-125. |
+| RQ-464 | What paths does the synthetic rehearsal cover? | CLOSED, 9 NORMAL/8 ABORT EVENTS | Both end in sealed terminal states. SPEC-126. |
+| RQ-465 | Is the abort terminal state power-capable? | CLOSED, NO | Abort removes the power candidate and locks the sequence. SPEC-126. |
+| RQ-466 | Is the rehearsal deterministic? | CLOSED, YES | Repeated runs produce one report and fingerprint. SPEC-126. |
+| RQ-467 | Does the rehearsal prove physical hardware safety? | CLOSED, NO | It proves state logic only and performs no I/O. SPEC-126. |
+| RQ-468 | What evidence does Session 120 require? | CLOSED, PRIVATE METADATA AND HASHES | Prerequisites, observation, approval and capture fingerprints are required. SPEC-127. |
+| RQ-469 | Does an incomplete bundle fail closed? | CLOSED, YES | Every missing prerequisite or shutdown proof becomes a blocker. SPEC-127. |
+| RQ-470 | Are private capture hashes included publicly? | CLOSED, NO | Only their count contributes to the public summary. SPEC-127. |
+| RQ-471 | Can complete private metadata pass the validator? | CLOSED, YES | A synthetic unit test proves the schema and gate logic. SPEC-127. |
+| RQ-472 | Is accepted real bench evidence currently present? | OPEN, NO | The committed template remains blocked. SPEC-127. |
+| RQ-473 | How many M7 preparation integration stages pass? | CLOSED, EIGHT OF EIGHT | All host-only stages reproduce. SPEC-128. |
+| RQ-474 | Is the preparation package complete? | CLOSED, YES | Templates, policies, rehearsal and validator are complete. SPEC-128. |
+| RQ-475 | How many full M7 criteria pass? | CLOSED, EIGHT OF NINE | The physical criterion remains open. SPEC-128. |
+| RQ-476 | What is the current M7 status? | CLOSED, AWAITING BENCH EVIDENCE | Preparation alone cannot close controlled hardware validation. SPEC-128. |
+| RQ-477 | Is M8 ready? | CLOSED, NO | M7 physical evidence has not passed. SPEC-128. |
+| RQ-478 | What is the next authorized session? | CLOSED, SESSION 120 | It may validate a private signed isolated-bench bundle. SPEC-128. |
+| RQ-479 | Do Sessions 111-119 authorize hardware, vehicle, mutation or installation activity? | CLOSED, NO | All four claims remain false. SPEC-128. |
 
 A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.

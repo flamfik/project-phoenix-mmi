@@ -128,6 +128,23 @@ Phoenix SDK is a dependency-free Python library for reproducible, read-only stat
   synthetic fixtures.
 - `navigation_integration` - dual-track M6 verdict and reproducible closure
   gate.
+- `hardware_validation_contract` - fail-closed M7 preparation, evidence and
+  stop-condition boundary.
+- `bench_manifest` - private hardware-identity template and aggregate-only
+  public summary.
+- `bench_power` - electrical safety plan that refuses guessed pinout, voltage,
+  current-limit and fuse values.
+- `bench_recovery` - dummy-load abort rehearsal and non-writing recovery plan.
+- `bench_observation` - passive observation allowlist and private-capture
+  contract.
+- `bench_risk` - deterministic eight-hazard register and unsigned approval
+  gate.
+- `bench_state_machine` - pure normal/abort bench sequence rehearsal without
+  hardware I/O.
+- `bench_evidence` - private Session 120 evidence intake with a fail-closed
+  public summary.
+- `hardware_validation_integration` - eight-stage M7 preparation verdict that
+  cannot claim physical validation.
 
 The SDK does not execute binaries, modify update media, repack images or communicate with a vehicle.
 
@@ -148,6 +165,18 @@ phoenix-mmi validate parse.json -o validation.json
 python -m pip install -e .
 python -m unittest discover -s tests -v
 ```
+
+## Reproduce Sessions 111-119
+
+```shell
+PYTHONPATH=sdk python tools/session111_119/prepare_m7.py \
+  --repository . \
+  --public-output research/milestones/m7
+```
+
+This runner never powers hardware. It closes the eight host-side preparation
+criteria and deliberately leaves the ninth physical criterion blocked for
+Session 120 until a private signed isolated-bench evidence bundle is supplied.
 
 ## Reproduce Session 003
 
