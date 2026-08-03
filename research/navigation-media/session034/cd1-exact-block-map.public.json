@@ -1,0 +1,164 @@
+{
+  "analysis_mode": "read-only-static-bounded-unique-seed-exact-block-map",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "side_ordinal": 0,
+    "source_path_included": false
+  },
+  "classification": {
+    "compile_link_layout_explanation": "CONSISTENT_NOT_PROVEN",
+    "exact_section_boundary": "OPEN",
+    "file_layout_reorder_exact_block_support": "CONFIRMED_AT_EXACT_BLOCKS",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "section_reorder_anchor": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL",
+    "simple_internal_descriptor_table": "CLOSED_BOUNDED_NEGATIVE",
+    "strict_seed_control": "CONFIRMED_STABLE",
+    "transition_envelope": "NARROWED_BY_EXACT_BLOCKS"
+  },
+  "lanes": [
+    {
+      "exact_block_count": 729,
+      "expected_delta_exact_block_count": 14,
+      "expected_delta_exact_byte_count": 6040,
+      "expected_delta_zone_covering_block_count": 1,
+      "expected_delta_zone_overlap_block_count": 1,
+      "expected_zone_delta": 61136,
+      "largest_expected_delta_exact_block": 4035,
+      "non_expected_delta_exact_block_count": 715,
+      "seed_census": {
+        "bilateral_unique_verified_seed_count": 32911,
+        "hash_collision_accepted_count": 0,
+        "left_total_seed_count": 66524,
+        "left_unique_digest_count": 61443,
+        "right_total_seed_count": 66524,
+        "right_unique_digest_count": 61433,
+        "seed_group_count": 741,
+        "seed_size": 64,
+        "stride": 4
+      },
+      "window": {
+        "end": 7963333,
+        "length": 266157,
+        "start": 7697176
+      },
+      "zone": {
+        "end": 7832261,
+        "evidence_class": "CONSTANT_DELTA_ORDERED_MARKER_BAND",
+        "length": 4013,
+        "source_id": "MB-010",
+        "start": 7828248,
+        "zone_id": "RZ-012"
+      },
+      "zone_id": "RZ-012"
+    },
+    {
+      "exact_block_count": 704,
+      "expected_delta_exact_block_count": 263,
+      "expected_delta_exact_byte_count": 57912,
+      "expected_delta_zone_covering_block_count": 0,
+      "expected_delta_zone_overlap_block_count": 130,
+      "expected_zone_delta": -7488776,
+      "largest_expected_delta_exact_block": 2133,
+      "non_expected_delta_exact_block_count": 441,
+      "seed_census": {
+        "bilateral_unique_verified_seed_count": 29459,
+        "hash_collision_accepted_count": 0,
+        "left_total_seed_count": 74851,
+        "left_unique_digest_count": 73630,
+        "right_total_seed_count": 74851,
+        "right_unique_digest_count": 73363,
+        "seed_group_count": 709,
+        "seed_size": 64,
+        "stride": 4
+      },
+      "window": {
+        "end": 8184179,
+        "length": 299467,
+        "start": 7884712
+      },
+      "zone": {
+        "end": 8053107,
+        "evidence_class": "CONSTANT_DELTA_ORDERED_MARKER_BAND",
+        "length": 37323,
+        "source_id": "MB-011",
+        "start": 8015784,
+        "zone_id": "RZ-013"
+      },
+      "zone_id": "RZ-013"
+    }
+  ],
+  "limits": [
+    "Only two fixed per-zone windows are searched.",
+    "Repeated 64-byte seeds are intentionally excluded.",
+    "Exact blocks are maximal only inside their declared lane windows.",
+    "Byte identity proves file-layout correspondence, not runtime execution or semantic ownership.",
+    "Low-information bytes may extend a block only when contiguous with a bilateral unique seed.",
+    "Changed or relocation-patched bytes between exact blocks remain unmapped.",
+    "Compile/link placement and runtime loader transformation are not distinguished."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "raw_pointer_values_included": false,
+    "raw_seed_digests_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.exact-block-map-disc/v1",
+  "search_contract": {
+    "adaptive_threshold_used": false,
+    "direct_seed_byte_verification_required": true,
+    "hash_algorithm": "BLAKE2s-128",
+    "margin": 131072,
+    "maximal_extension_requires_direct_byte_equality": true,
+    "seed_size": 64,
+    "seed_unique_in_each_lane_window_required": true,
+    "stride": 4,
+    "whole_image_search_performed": false
+  },
+  "strict_seed_control": {
+    "classification": "CONFIRMED_STABLE",
+    "file_layout_support_equal": true,
+    "lanes": [
+      {
+        "largest_block_equal": true,
+        "primary_exact_byte_count": 6040,
+        "primary_expected_block_count": 14,
+        "strict_exact_byte_count": 5292,
+        "strict_expected_block_count": 6,
+        "zone_id": "RZ-012"
+      },
+      {
+        "largest_block_equal": true,
+        "primary_exact_byte_count": 57912,
+        "primary_expected_block_count": 263,
+        "strict_exact_byte_count": 50007,
+        "strict_expected_block_count": 179,
+        "zone_id": "RZ-013"
+      }
+    ],
+    "primary_seed_size": 64,
+    "same_margin": true,
+    "same_stride": true,
+    "schema": "phoenix-mmi.exact-block-seed-control/v1",
+    "strict_full_report_published": false,
+    "strict_seed_size": 128,
+    "transition_envelope_equal": true
+  },
+  "transition_envelope": {
+    "bounds_ordered_and_non_overlapping": true,
+    "classification": "NARROWED_BY_EXACT_BLOCKS",
+    "cross_lane_maximum_left_overlap": 0,
+    "exact_breakpoint_asserted": false,
+    "first_lane_last_exact_end": 7832267,
+    "narrowed_lower_bound": 7832267,
+    "narrowed_upper_bound": 7979108,
+    "narrowed_width": 146841,
+    "prior_lower_bound": 7832261,
+    "prior_upper_bound": 8015784,
+    "prior_width": 183523,
+    "second_lane_first_exact_start": 7979108
+  }
+}

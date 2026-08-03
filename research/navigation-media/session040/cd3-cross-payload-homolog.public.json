@@ -1,0 +1,190 @@
+{
+  "analysis_mode": "read-only-static-fixed-five-anchor-cross-payload-search",
+  "classification": {
+    "control_contract": "CONFIRMED_INDEPENDENT_EQUAL_GEOMETRY",
+    "cross_payload_homolog": "NOT_FOUND_UNDER_FIXED_SIGNATURE_MODEL",
+    "cross_payload_owner": "OPEN",
+    "exact_section_boundary": "OPEN",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN",
+    "signature_contract": "CONFIRMED_FIXED_FIVE_ANCHOR_GEOMETRY"
+  },
+  "corpus_contract": {
+    "disc_ids": [
+      "cd1",
+      "cd2",
+      "cd3"
+    ],
+    "duplicate_content_group_count": 102,
+    "eligible_extensions": [
+      ".BIN",
+      ".HEX",
+      ".LOD",
+      ".SW",
+      ".YIM"
+    ],
+    "eligible_member_bytes": 435574832,
+    "eligible_member_count": 590,
+    "minimum_member_size": 240,
+    "principal_images_excluded_by_content_sha256": true,
+    "scanned_member_bytes": 384285768,
+    "scanned_member_count": 586,
+    "unique_payload_content_bytes": 81647732,
+    "unique_payload_content_count": 133,
+    "whole_payload_bytes_published": false
+  },
+  "disc_id": "cd3",
+  "disc_summary": {
+    "control_geometry_hit_member_count": 0,
+    "control_strong_hit_member_count": 0,
+    "eligible_member_bytes": 192109104,
+    "eligible_member_count": 284,
+    "extension_counts": {
+      ".BIN": 164,
+      ".HEX": 82,
+      ".LOD": 30,
+      ".SW": 3,
+      ".YIM": 5
+    },
+    "principal_identity_exclusion_count": 2,
+    "scanned_member_bytes": 166728416,
+    "scanned_member_count": 282,
+    "target_geometry_hit_member_count": 0,
+    "target_strong_hit_member_count": 0
+  },
+  "limits": [
+    "Only BIN, HEX, LOD, YIM and SW members of at least 240 bytes are scanned.",
+    "Principal-image copies are excluded by complete content SHA-256.",
+    "Only the five registered 25-byte runs and their exact geometry are searched.",
+    "Compressed, encoded, transformed or non-contiguous homologs remain open.",
+    "A homolog cannot establish a subsystem owner without independent metadata or dataflow.",
+    "No firmware, payload or signature bytes are published."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "mnemonic_names_included": false,
+    "payload_bytes_included": false,
+    "raw_component_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_signature_bytes_included": false,
+    "raw_strings_included": false,
+    "signature_hashes_included": false
+  },
+  "schema": "phoenix-mmi.cross-payload-homolog-disc/v1",
+  "signature_contract": {
+    "adaptive_anchor_selection_used": false,
+    "anchor_count": 5,
+    "anchor_length": 25,
+    "anchor_source": "SESSION038_EXACT_RUNS_LENGTH_25",
+    "anchor_total_exact_bytes": 125,
+    "control_anchors": [
+      {
+        "anchor_id": "CTL-01",
+        "distinct_byte_count": 14,
+        "entropy": 3.45287869,
+        "length": 25,
+        "relative_offset": 2
+      },
+      {
+        "anchor_id": "CTL-02",
+        "distinct_byte_count": 17,
+        "entropy": 3.97366069,
+        "length": 25,
+        "relative_offset": 32
+      },
+      {
+        "anchor_id": "CTL-03",
+        "distinct_byte_count": 25,
+        "entropy": 4.64385619,
+        "length": 25,
+        "relative_offset": 104
+      },
+      {
+        "anchor_id": "CTL-04",
+        "distinct_byte_count": 21,
+        "entropy": 4.29366069,
+        "length": 25,
+        "relative_offset": 140
+      },
+      {
+        "anchor_id": "CTL-05",
+        "distinct_byte_count": 21,
+        "entropy": 4.32385619,
+        "length": 25,
+        "relative_offset": 196
+      }
+    ],
+    "control_source": "SESSION038_OVERLAP_START_SAME_RELATIVE_GEOMETRY",
+    "distinct_target_anchor_pattern_count": 3,
+    "maximum_first_anchor_occurrences_per_payload": 4096,
+    "maximum_geometry_matches_per_payload": 256,
+    "minimum_distinct_anchor_patterns": 3,
+    "minimum_distinct_bytes": 8,
+    "minimum_entropy": 2.5,
+    "minimum_strong_component_similarity": 0.75,
+    "raw_signature_bytes_included": false,
+    "signature_hashes_included": false,
+    "target_anchors": [
+      {
+        "anchor_id": "SIG-01",
+        "distinct_byte_count": 22,
+        "entropy": 4.40385619,
+        "length": 25,
+        "relative_offset": 2,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-02",
+        "distinct_byte_count": 14,
+        "entropy": 3.45287869,
+        "length": 25,
+        "relative_offset": 32,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-03",
+        "distinct_byte_count": 23,
+        "entropy": 4.48385619,
+        "length": 25,
+        "relative_offset": 104,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-04",
+        "distinct_byte_count": 23,
+        "entropy": 4.48385619,
+        "length": 25,
+        "relative_offset": 140,
+        "shared_exact_between_releases": true
+      },
+      {
+        "anchor_id": "SIG-05",
+        "distinct_byte_count": 22,
+        "entropy": 4.40385619,
+        "length": 25,
+        "relative_offset": 196,
+        "shared_exact_between_releases": true
+      }
+    ],
+    "target_control_anchor_overlap_count": 0
+  },
+  "summary": {
+    "control_first_anchor_occurrence_count": 0,
+    "control_geometry_hit_member_count": 0,
+    "control_geometry_hit_unique_count": 0,
+    "control_strong_hit_member_count": 0,
+    "control_strong_hit_unique_count": 0,
+    "saturated_unique_payload_count": 0,
+    "target_first_anchor_occurrence_count": 0,
+    "target_geometry_hit_member_count": 0,
+    "target_geometry_hit_unique_count": 0,
+    "target_strong_hit_member_count": 0,
+    "target_strong_hit_unique_count": 0
+  }
+}

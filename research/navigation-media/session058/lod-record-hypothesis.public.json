@@ -1,0 +1,72 @@
+{
+  "analysis_mode": "read-only-predeclared-three-byte-alignment-falsification",
+  "candidate_record_width": 3,
+  "classification": {
+    "address_model": "NOT_ESTABLISHED",
+    "length_model": "NOT_ESTABLISHED",
+    "three_byte_alignment": "SUPPORTED_AS_CANDIDATE",
+    "three_byte_record_model": "NOT_ESTABLISHED"
+  },
+  "contradicting_or_unresolved_test_count": 4,
+  "fixed_test_count": 7,
+  "operational_graph_version": "v50",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.lod-record-hypothesis/v1",
+  "session": "058",
+  "supporting_test_count": 3,
+  "tests": {
+    "all_delimiter_lengths_are_three_byte_multiples": false,
+    "all_ff_delimiters_start_at_phase_zero": true,
+    "common_prefix_is_exactly_three_bytes": true,
+    "phase_zero_common_byte_bias_exceeds_threshold": true,
+    "phase_zero_has_maximum_shared_three_byte_tokens": false,
+    "validated_address_or_length_fields_present": false,
+    "validated_record_header_present": false
+  },
+  "token_phase_results": [
+    {
+      "per_source_unique_token_count": [
+        293425,
+        320823,
+        358934,
+        366924,
+        363802
+      ],
+      "phase": 0,
+      "shared_all_token_content_count": 24632
+    },
+    {
+      "per_source_unique_token_count": [
+        314700,
+        342194,
+        374913,
+        391484,
+        385994
+      ],
+      "phase": 1,
+      "shared_all_token_content_count": 42013
+    },
+    {
+      "per_source_unique_token_count": [
+        301345,
+        333515,
+        365793,
+        374170,
+        367544
+      ],
+      "phase": 2,
+      "shared_all_token_content_count": 36738
+    }
+  ],
+  "unique_source_count": 5
+}

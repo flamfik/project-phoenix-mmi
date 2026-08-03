@@ -1,0 +1,136 @@
+{
+  "analysis_mode": "read-only-static-prior-registry-interval-audit",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "component_contract": "REPLAYED_SESSION038_STABLE_SKELETON",
+    "exact_section_boundary": "OPEN",
+    "negative_control_owner_edge": "NOT_FOUND",
+    "registered_external_provenance": "NOT_FOUND_UNDER_FROZEN_REGISTERED_FAMILIES",
+    "registered_owner_edge": "NOT_FOUND_UNDER_FROZEN_REGISTERED_FAMILIES",
+    "reorder_bracket_context": "CONFIRMED_REORDER_BRACKET_CONTEXT_ONLY",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "semantic_owner": "OPEN"
+  },
+  "limits": [
+    "Only reports from Sessions 007, 017, 030, 032 and 033 are normalized.",
+    "No new firmware offset, pointer, descriptor, string or instruction search is performed.",
+    "Distances describe file-layout proximity and do not imply dataflow.",
+    "Support-zone or reorder-bracket containment is context, not ownership.",
+    "Unregistered, encoded, computed, external or runtime-created references remain open.",
+    "The exact section boundary and loader mechanism remain open."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "mnemonic_names_included": false,
+    "raw_component_bytes_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false
+  },
+  "registered_families": [
+    {
+      "family": "REFERENCE_GRAPH_TARGET",
+      "registered_pair_count": 13,
+      "source_sessions": [
+        7
+      ]
+    },
+    {
+      "family": "REFERENCE_GRAPH_WORD",
+      "registered_pair_count": 3,
+      "source_sessions": [
+        7
+      ]
+    },
+    {
+      "family": "REFERENCE_GRAPH_DESCRIPTOR",
+      "registered_pair_count": 1,
+      "source_sessions": [
+        7
+      ]
+    },
+    {
+      "family": "DESCRIPTOR_PRODUCER_LINEAGE",
+      "registered_pair_count": 8,
+      "source_sessions": [
+        17
+      ]
+    },
+    {
+      "family": "LITERAL_POOL_STORAGE",
+      "registered_pair_count": 4,
+      "source_sessions": [
+        30
+      ]
+    },
+    {
+      "family": "LITERAL_POOL_SUCCESSOR_CODE",
+      "registered_pair_count": 2,
+      "source_sessions": [
+        30
+      ]
+    },
+    {
+      "family": "DIRECT_LINK_CODE_ANCHOR",
+      "registered_pair_count": 27,
+      "source_sessions": [
+        32
+      ]
+    },
+    {
+      "family": "RELOCATION_SUPPORT_ZONE",
+      "registered_pair_count": 23,
+      "source_sessions": [
+        32
+      ]
+    },
+    {
+      "family": "REORDER_DESCRIPTOR",
+      "registered_pair_count": 0,
+      "source_sessions": []
+    }
+  ],
+  "reorder_context": {
+    "bracket_id": "RB-015",
+    "classification": "CONFIRMED_REORDER_BRACKET_CONTEXT_ONLY",
+    "continuous_mapping_asserted": false,
+    "exact_breakpoint_asserted": false,
+    "left_component_contained": true
+  },
+  "schema": "phoenix-mmi.registered-provenance-disc/v1",
+  "search_contract": {
+    "adaptive_distance_used": false,
+    "adjacent_distance_bytes": 64,
+    "bilateral_intersection_required": true,
+    "near_distance_bytes": 4096,
+    "new_descriptor_search_performed": false,
+    "new_pointer_search_performed": false,
+    "new_string_or_code_scan_performed": false,
+    "registered_family_count": 9,
+    "registered_source_sessions": [
+      7,
+      17,
+      30,
+      32,
+      33
+    ],
+    "semantic_owner_requires_independent_owner_edge_families": 2,
+    "whole_image_search_performed": false
+  },
+  "target": {
+    "component_id": "RZ012-G1-C006",
+    "interval": {
+      "end": 7906782,
+      "start": 7906542
+    },
+    "span": 240
+  }
+}

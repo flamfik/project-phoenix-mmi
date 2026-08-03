@@ -1,0 +1,448 @@
+{
+  "analysis_mode": "read-only-content-deduplicated-legacy-census",
+  "classification": {
+    "legacy_family_census": "TWO_DISTINCT_FAMILIES_CONFIRMED",
+    "lod_family": "OPAQUE_BINARY_STRUCTURE_ONLY",
+    "yim_family": "XIM2_ENVELOPE_IDENTIFIED"
+  },
+  "extension_summaries": {
+    ".LOD": {
+      "member_bytes": 105952725,
+      "member_count": 45,
+      "unique_source_bytes": 11772525,
+      "unique_source_count": 5
+    },
+    ".YIM": {
+      "member_bytes": 247564,
+      "member_count": 10,
+      "unique_source_bytes": 123782,
+      "unique_source_count": 5
+    }
+  },
+  "member_bytes": 106200289,
+  "member_count": 55,
+  "operational_graph_version": "v36",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.legacy-container-census/v1",
+  "session": "044",
+  "sources": [
+    {
+      "disc_count": 2,
+      "entropy": 6.42604115,
+      "extension": ".LOD",
+      "ff_ratio": 0.04173272,
+      "format_evidence": "OPAQUE_BINARY_NO_OUTER_MAGIC",
+      "member_count": 9,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/43/ENGLISHU/FLASH_FO.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/45/ENGLISHU/FLASH_FO.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/46/ENGLISHU/FLASH_FO.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/41/ENGLISHUK/FLASH_FORMATB_FLALL.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/42/ENGLISHUK/FLASH_FORMATB_FLALL.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/43/ENGLISHUK/FLASH_FORMATB_FLALL.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/44/ENGLISHUK/FLASH_FORMATB_FLALL.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/45/ENGLISHUK/FLASH_FORMATB_FLALL.LOD",
+          "size": 2195064
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/46/ENGLISHUK/FLASH_FORMATB_FLALL.LOD",
+          "size": 2195064
+        }
+      ],
+      "size": 2195064,
+      "source_id": "LOD-U01",
+      "zero_ratio": 0.24956129
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.49268329,
+      "extension": ".LOD",
+      "ff_ratio": 0.03970128,
+      "format_evidence": "OPAQUE_BINARY_NO_OUTER_MAGIC",
+      "member_count": 9,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/43/GERMAN/FLASH_FO.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/45/GERMAN/FLASH_FO.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/46/GERMAN/FLASH_FO.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/41/GERMAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/42/GERMAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/43/GERMAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/44/GERMAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/45/GERMAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2345491
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/46/GERMAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2345491
+        }
+      ],
+      "size": 2345491,
+      "source_id": "LOD-U02",
+      "zero_ratio": 0.2442657
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.60786038,
+      "extension": ".LOD",
+      "ff_ratio": 0.03842989,
+      "format_evidence": "OPAQUE_BINARY_NO_OUTER_MAGIC",
+      "member_count": 9,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/43/ITALIAN/FLASH_FO.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/45/ITALIAN/FLASH_FO.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/46/ITALIAN/FLASH_FO.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/41/ITALIAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/42/ITALIAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/43/ITALIAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/44/ITALIAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/45/ITALIAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405315
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/46/ITALIAN/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405315
+        }
+      ],
+      "size": 2405315,
+      "source_id": "LOD-U03",
+      "zero_ratio": 0.22830939
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.6433202,
+      "extension": ".LOD",
+      "ff_ratio": 0.03844707,
+      "format_evidence": "OPAQUE_BINARY_NO_OUTER_MAGIC",
+      "member_count": 9,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/43/SPANISH/FLASH_FO.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/45/SPANISH/FLASH_FO.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/46/SPANISH/FLASH_FO.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/41/SPANISH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/42/SPANISH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/43/SPANISH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/44/SPANISH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/45/SPANISH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405385
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/46/SPANISH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2405385
+        }
+      ],
+      "size": 2405385,
+      "source_id": "LOD-U04",
+      "zero_ratio": 0.22609811
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.61915781,
+      "extension": ".LOD",
+      "ff_ratio": 0.03809984,
+      "format_evidence": "OPAQUE_BINARY_NO_OUTER_MAGIC",
+      "member_count": 9,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/43/FRENCH/FLASH_FO.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/45/FRENCH/FLASH_FO.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd1",
+          "path": "SDS_D3/MAIN_NFD/46/FRENCH/FLASH_FO.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/41/FRENCH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/42/FRENCH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/43/FRENCH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/44/FRENCH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/45/FRENCH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2421270
+        },
+        {
+          "disc": "cd3",
+          "path": "SDS_D3/MAIN_NFD/46/FRENCH/FLASH_FORMATB_FLALL.LOD",
+          "size": 2421270
+        }
+      ],
+      "size": 2421270,
+      "source_id": "LOD-U05",
+      "zero_ratio": 0.22753803
+    },
+    {
+      "disc_count": 2,
+      "entropy": 5.92939943,
+      "extension": ".YIM",
+      "ff_ratio": 0.03185454,
+      "format_evidence": "VALIDATED_XIM2_ENVELOPE",
+      "member_count": 2,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "MMI_HI/DATA__SC/42/DEFAULT/SCREEN0.YIM",
+          "size": 21504
+        },
+        {
+          "disc": "cd3",
+          "path": "MMI_HI/DATA__SCREEN0/42/DEFAULT/SCREEN0.YIM",
+          "size": 21504
+        }
+      ],
+      "size": 21504,
+      "source_id": "YIM-U01",
+      "zero_ratio": 0.07426525
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.00452195,
+      "extension": ".YIM",
+      "ff_ratio": 0.02802065,
+      "format_evidence": "VALIDATED_XIM2_ENVELOPE",
+      "member_count": 2,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "MMI_HI/DATA__S4/42/DEFAULT/SCREEN3.YIM",
+          "size": 24018
+        },
+        {
+          "disc": "cd3",
+          "path": "MMI_HI/DATA__SCREEN3/42/DEFAULT/SCREEN3.YIM",
+          "size": 24018
+        }
+      ],
+      "size": 24018,
+      "source_id": "YIM-U02",
+      "zero_ratio": 0.07923224
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.02408493,
+      "extension": ".YIM",
+      "ff_ratio": 0.02610582,
+      "format_evidence": "VALIDATED_XIM2_ENVELOPE",
+      "member_count": 2,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "MMI_HI/DATA__S5/42/DEFAULT/SCREEN4.YIM",
+          "size": 25818
+        },
+        {
+          "disc": "cd3",
+          "path": "MMI_HI/DATA__SCREEN4/42/DEFAULT/SCREEN4.YIM",
+          "size": 25818
+        }
+      ],
+      "size": 25818,
+      "source_id": "YIM-U03",
+      "zero_ratio": 0.08885274
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.01487634,
+      "extension": ".YIM",
+      "ff_ratio": 0.0273023,
+      "format_evidence": "VALIDATED_XIM2_ENVELOPE",
+      "member_count": 2,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "MMI_HI/DATA__S3/42/DEFAULT/SCREEN2.YIM",
+          "size": 25822
+        },
+        {
+          "disc": "cd3",
+          "path": "MMI_HI/DATA__SCREEN2/42/DEFAULT/SCREEN2.YIM",
+          "size": 25822
+        }
+      ],
+      "size": 25822,
+      "source_id": "YIM-U04",
+      "zero_ratio": 0.09000077
+    },
+    {
+      "disc_count": 2,
+      "entropy": 6.00356361,
+      "extension": ".YIM",
+      "ff_ratio": 0.02625845,
+      "format_evidence": "VALIDATED_XIM2_ENVELOPE",
+      "member_count": 2,
+      "members": [
+        {
+          "disc": "cd1",
+          "path": "MMI_HI/DATA__S2/42/DEFAULT/SCREEN1.YIM",
+          "size": 26620
+        },
+        {
+          "disc": "cd3",
+          "path": "MMI_HI/DATA__SCREEN1/42/DEFAULT/SCREEN1.YIM",
+          "size": 26620
+        }
+      ],
+      "size": 26620,
+      "source_id": "YIM-U05",
+      "zero_ratio": 0.0930879
+    }
+  ],
+  "unique_source_bytes": 11896307,
+  "unique_source_count": 10
+}

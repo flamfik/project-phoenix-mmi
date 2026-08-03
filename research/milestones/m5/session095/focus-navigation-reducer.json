@@ -1,0 +1,1087 @@
+{
+  "analysis_mode": "explicit-ui-capability-transition-and-probe-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M5-CAP-001",
+        "evidence": "Sessions 077-079",
+        "limitation": "display controller, safe area and pixel layout remain unknown",
+        "name": "validated 480x240 resource geometry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:geometry_class",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "viewport"
+      },
+      {
+        "capability_id": "M5-CAP-002",
+        "evidence": "Session 079",
+        "limitation": "candidate pixel layouts are not confirmed",
+        "name": "format-explicit offline resource preview",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.resource_graphics:render_ppm",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M5-CAP-003",
+        "evidence": "Session 090",
+        "limitation": "host events are not MMI runtime or physical-control events",
+        "name": "isolated host event harness",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_harness:HostRuntimeHarness",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "interaction"
+      },
+      {
+        "capability_id": "M5-CAP-004",
+        "evidence": "Session 091",
+        "limitation": "actual menu, renderer and lifecycle behavior remain unknown",
+        "name": "runtime and resource evidence graph",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.runtime_objects:build_runtime_evidence_graph",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "evidence"
+      },
+      {
+        "capability_id": "M5-CAP-005",
+        "evidence": "Session 093",
+        "limitation": "physical key mapping and hardware budgets remain unknown",
+        "name": "frozen offline UI constraint contract",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_constraints:build_ui_constraint_contract",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "constraints"
+      },
+      {
+        "capability_id": "M5-CAP-006",
+        "evidence": "M5 safety boundary",
+        "limitation": "renderer compatibility is not established",
+        "name": "firmware renderer integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "integration"
+      },
+      {
+        "capability_id": "M5-CAP-007",
+        "evidence": "M5 safety boundary",
+        "limitation": "integrity, lifecycle and recovery requirements are unresolved",
+        "name": "firmware resource replacement",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "mutation"
+      },
+      {
+        "capability_id": "M5-CAP-008",
+        "evidence": "M5 safety boundary",
+        "limitation": "vehicle communication is outside the offline prototype",
+        "name": "vehicle and protected-service integration",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "vehicle"
+      },
+      {
+        "capability_id": "M5-CAP-009",
+        "evidence": "M5 safety boundary",
+        "limitation": "M5 produces no update media or vehicle-loadable artifacts",
+        "name": "installable artifact generation",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": null,
+        "workstream": "delivery"
+      },
+      {
+        "capability_id": "M5-CAP-010",
+        "evidence": "Session 094 and SPEC-103",
+        "limitation": "original prototype model is not the firmware menu",
+        "name": "typed information architecture and screen schema",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_model:build_phoenix_information_architecture",
+        "status": "IMPLEMENTED",
+        "target_session": "094",
+        "workstream": "architecture"
+      },
+      {
+        "capability_id": "M5-CAP-011",
+        "evidence": "Session 095 and SPEC-104",
+        "limitation": "abstract actions are not physical input mappings",
+        "name": "focus and navigation reducer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.ui_reducer:reduce_ui_state",
+        "status": "IMPLEMENTED",
+        "target_session": "095",
+        "workstream": "interaction"
+      },
+      {
+        "capability_id": "M5-CAP-012",
+        "evidence": "M5 requirement",
+        "limitation": "no deterministic rectangle allocation or overflow gate",
+        "name": "bounded 480x240 layout engine",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "096",
+        "workstream": "layout"
+      },
+      {
+        "capability_id": "M5-CAP-013",
+        "evidence": "M5 requirement",
+        "limitation": "no provenance-checked theme or asset model",
+        "name": "original design tokens and synthetic asset registry",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "097",
+        "workstream": "visual"
+      },
+      {
+        "capability_id": "M5-CAP-014",
+        "evidence": "M5 requirement",
+        "limitation": "no complete screen preview from the typed UI model",
+        "name": "offline Phoenix UI renderer",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "098",
+        "workstream": "preview"
+      },
+      {
+        "capability_id": "M5-CAP-015",
+        "evidence": "M5 requirement",
+        "limitation": "no reproducible interaction trace",
+        "name": "deterministic input playback and snapshots",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "099",
+        "workstream": "playback"
+      },
+      {
+        "capability_id": "M5-CAP-016",
+        "evidence": "M5 requirement",
+        "limitation": "no explicit quality or host-metric gate",
+        "name": "legibility, focus and complexity audit",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "100",
+        "workstream": "quality"
+      },
+      {
+        "capability_id": "M5-CAP-017",
+        "evidence": "M5 requirement",
+        "limitation": "no complete synthetic Phoenix UI workflow",
+        "name": "deterministic M5 integration gate",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "101",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 17,
+    "probe_integrity": true,
+    "registry_version": "m5-session095-v1",
+    "status_counts": {
+      "BLOCKED": 4,
+      "IMPLEMENTED": 4,
+      "MISSING": 6,
+      "PARTIAL": 3
+    }
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "installable_artifact_ready": false,
+    "m5_entry": "PASS",
+    "m5_exit": "OPEN",
+    "m5_status": "IN_PROGRESS",
+    "prototype_scope": "OFFLINE_ONLY",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M5-X1",
+      "name": "typed information architecture and screen schema",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-010"
+      ],
+      "target_session": "094"
+    },
+    {
+      "criterion_id": "M5-X2",
+      "name": "deterministic focus and navigation reducer",
+      "passed": true,
+      "required_capabilities": [
+        "M5-CAP-011"
+      ],
+      "target_session": "095"
+    },
+    {
+      "criterion_id": "M5-X3",
+      "name": "bounded 480x240 layout engine",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-012"
+      ],
+      "target_session": "096"
+    },
+    {
+      "criterion_id": "M5-X4",
+      "name": "original token and synthetic asset registry",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-013"
+      ],
+      "target_session": "097"
+    },
+    {
+      "criterion_id": "M5-X5",
+      "name": "offline Phoenix UI preview renderer",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-014"
+      ],
+      "target_session": "098"
+    },
+    {
+      "criterion_id": "M5-X6",
+      "name": "deterministic input playback and snapshots",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-015"
+      ],
+      "target_session": "099"
+    },
+    {
+      "criterion_id": "M5-X7",
+      "name": "legibility, focus and complexity audit",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-016"
+      ],
+      "target_session": "100"
+    },
+    {
+      "criterion_id": "M5-X8",
+      "name": "deterministic sanitized UI integration gate",
+      "passed": false,
+      "required_capabilities": [
+        "M5-CAP-017"
+      ],
+      "target_session": "101"
+    }
+  ],
+  "exit_criteria_passed": 2,
+  "exit_criteria_total": 8,
+  "operational_graph_delta": {
+    "base": "v86",
+    "node": {
+      "evidence_session": "095",
+      "id": "m5-focus-navigation-reducer",
+      "status": "CONFIRMED"
+    }
+  },
+  "operational_graph_version": "v87",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M5-X1",
+      "objective": "typed information architecture and screen schema",
+      "session": "094"
+    },
+    {
+      "criterion_id": "M5-X2",
+      "objective": "deterministic focus and navigation reducer",
+      "session": "095"
+    },
+    {
+      "criterion_id": "M5-X3",
+      "objective": "bounded 480x240 layout engine",
+      "session": "096"
+    },
+    {
+      "criterion_id": "M5-X4",
+      "objective": "original token and synthetic asset registry",
+      "session": "097"
+    },
+    {
+      "criterion_id": "M5-X5",
+      "objective": "offline Phoenix UI preview renderer",
+      "session": "098"
+    },
+    {
+      "criterion_id": "M5-X6",
+      "objective": "deterministic input playback and snapshots",
+      "session": "099"
+    },
+    {
+      "criterion_id": "M5-X7",
+      "objective": "legibility, focus and complexity audit",
+      "session": "100"
+    },
+    {
+      "criterion_id": "M5-X8",
+      "objective": "deterministic sanitized UI integration gate",
+      "session": "101"
+    }
+  ],
+  "previous_state": {
+    "operational_graph_version": "v86",
+    "session": "094"
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "firmware_execution_performed": false,
+    "installable_artifacts_included": false,
+    "navigation_media_content_included": false,
+    "offline_only": true,
+    "original_or_synthetic_assets_only": true,
+    "payload_bytes_included": false,
+    "raw_firmware_strings_included": false,
+    "vehicle_communication_performed": false,
+    "vehicle_identifiers_included": false
+  },
+  "reducer_contract": {
+    "abstract_actions": [
+      "ACTIVATE",
+      "BACK",
+      "FOCUS_NEXT",
+      "FOCUS_PREVIOUS",
+      "HOME"
+    ],
+    "classification": {
+      "action_side_effects": "NONE",
+      "back_behavior": "DECLARED_PARENT",
+      "focus_wrap": "CYCLIC_WITHIN_SCREEN",
+      "hardware_input_mapping": "NOT_ESTABLISHED",
+      "home_behavior": "ROOT_FIRST_ENTRY",
+      "service_dispatch": false,
+      "transition_function": "PURE_DETERMINISTIC"
+    },
+    "contract_version": "m5-session095-v1",
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "original_or_synthetic_content_only": true,
+      "service_bindings_included": false,
+      "vehicle_messages_included": false
+    },
+    "schema": "phoenix-mmi.ui-reducer/v1",
+    "state_space": {
+      "action_transition_counts": {
+        "ACTIVATE": 16,
+        "BACK": 16,
+        "FOCUS_NEXT": 16,
+        "FOCUS_PREVIOUS": 16,
+        "HOME": 16
+      },
+      "activation_signal_count": 16,
+      "base_focus_state_count": 16,
+      "screen_change_count": 28,
+      "transition_count": 80
+    },
+    "transition_fingerprint_input": [
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": true,
+        "source": "home:home.communication",
+        "target": "communication:communication.contacts"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.communication",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.communication",
+        "target": "home:home.media"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.communication",
+        "target": "home:home.settings"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.communication",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": true,
+        "source": "home:home.media",
+        "target": "media:media.library"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.media",
+        "target": "home:home.media"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.media",
+        "target": "home:home.navigation"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.media",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.media",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": true,
+        "source": "home:home.navigation",
+        "target": "navigation:navigation.destination"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.navigation",
+        "target": "home:home.navigation"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.navigation",
+        "target": "home:home.settings"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.navigation",
+        "target": "home:home.media"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.navigation",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": true,
+        "source": "home:home.settings",
+        "target": "settings:settings.display"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.settings",
+        "target": "home:home.settings"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.settings",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.settings",
+        "target": "home:home.navigation"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "home:home.settings",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "communication:communication.contacts",
+        "target": "communication:communication.contacts"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "communication:communication.contacts",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "communication:communication.contacts",
+        "target": "communication:communication.devices"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "communication:communication.contacts",
+        "target": "communication:communication.recent"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "communication:communication.contacts",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "communication:communication.devices",
+        "target": "communication:communication.devices"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "communication:communication.devices",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "communication:communication.devices",
+        "target": "communication:communication.recent"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "communication:communication.devices",
+        "target": "communication:communication.contacts"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "communication:communication.devices",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "communication:communication.recent",
+        "target": "communication:communication.recent"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "communication:communication.recent",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "communication:communication.recent",
+        "target": "communication:communication.contacts"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "communication:communication.recent",
+        "target": "communication:communication.devices"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "communication:communication.recent",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "media:media.library",
+        "target": "media:media.library"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "media:media.library",
+        "target": "home:home.media"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "media:media.library",
+        "target": "media:media.now-playing"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "media:media.library",
+        "target": "media:media.sources"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "media:media.library",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "media:media.now-playing",
+        "target": "media:media.now-playing"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "media:media.now-playing",
+        "target": "home:home.media"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "media:media.now-playing",
+        "target": "media:media.sources"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "media:media.now-playing",
+        "target": "media:media.library"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "media:media.now-playing",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "media:media.sources",
+        "target": "media:media.sources"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "media:media.sources",
+        "target": "home:home.media"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "media:media.sources",
+        "target": "media:media.library"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "media:media.sources",
+        "target": "media:media.now-playing"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "media:media.sources",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "navigation:navigation.destination",
+        "target": "navigation:navigation.destination"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "navigation:navigation.destination",
+        "target": "home:home.navigation"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "navigation:navigation.destination",
+        "target": "navigation:navigation.route-overview"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "navigation:navigation.destination",
+        "target": "navigation:navigation.saved"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "navigation:navigation.destination",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "navigation:navigation.route-overview",
+        "target": "navigation:navigation.route-overview"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "navigation:navigation.route-overview",
+        "target": "home:home.navigation"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "navigation:navigation.route-overview",
+        "target": "navigation:navigation.saved"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "navigation:navigation.route-overview",
+        "target": "navigation:navigation.destination"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "navigation:navigation.route-overview",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "navigation:navigation.saved",
+        "target": "navigation:navigation.saved"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "navigation:navigation.saved",
+        "target": "home:home.navigation"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "navigation:navigation.saved",
+        "target": "navigation:navigation.destination"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "navigation:navigation.saved",
+        "target": "navigation:navigation.route-overview"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "navigation:navigation.saved",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "settings:settings.display",
+        "target": "settings:settings.display"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "settings:settings.display",
+        "target": "home:home.settings"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "settings:settings.display",
+        "target": "settings:settings.sound"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "settings:settings.display",
+        "target": "settings:settings.system"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "settings:settings.display",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "settings:settings.sound",
+        "target": "settings:settings.sound"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "settings:settings.sound",
+        "target": "home:home.settings"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "settings:settings.sound",
+        "target": "settings:settings.system"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "settings:settings.sound",
+        "target": "settings:settings.display"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "settings:settings.sound",
+        "target": "home:home.communication"
+      },
+      {
+        "action": "ACTIVATE",
+        "activation_signalled": true,
+        "screen_changed": false,
+        "source": "settings:settings.system",
+        "target": "settings:settings.system"
+      },
+      {
+        "action": "BACK",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "settings:settings.system",
+        "target": "home:home.settings"
+      },
+      {
+        "action": "FOCUS_NEXT",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "settings:settings.system",
+        "target": "settings:settings.display"
+      },
+      {
+        "action": "FOCUS_PREVIOUS",
+        "activation_signalled": false,
+        "screen_changed": false,
+        "source": "settings:settings.system",
+        "target": "settings:settings.sound"
+      },
+      {
+        "action": "HOME",
+        "activation_signalled": false,
+        "screen_changed": true,
+        "source": "settings:settings.system",
+        "target": "home:home.communication"
+      }
+    ]
+  },
+  "schema": "phoenix-mmi.m5-ui-prototype-progress/v1",
+  "session": "095",
+  "ui_constraint_contract": {
+    "asset_policy": {
+      "allowed_sources": [
+        "ORIGINAL",
+        "SYNTHETIC"
+      ],
+      "firmware_extracted_assets_allowed": false,
+      "license_provenance_required": true,
+      "navigation_media_assets_allowed": false,
+      "vehicle_identifiers_allowed": false
+    },
+    "authorization": {
+      "firmware_execution": false,
+      "firmware_repacking": false,
+      "firmware_resource_replacement": false,
+      "installable_artifact_generation": false,
+      "offline_original_ui_code": true,
+      "protected_service_emulation": false,
+      "synthetic_fixture_rendering": true,
+      "vehicle_communication": false
+    },
+    "budget_policy": {
+      "frame_timing_status": "NOT_ESTABLISHED",
+      "limitation": "host measurements must not be presented as MMI hardware performance",
+      "numeric_cpu_budget_status": "NOT_ESTABLISHED",
+      "numeric_memory_budget_status": "NOT_ESTABLISHED",
+      "prototype_must_report": [
+        "DRAW_COMMAND_COUNT",
+        "FOCUSABLE_NODE_COUNT",
+        "STATE_COUNT",
+        "SYNTHETIC_ASSET_BYTES"
+      ]
+    },
+    "classification": {
+      "hardware_mapping": "NOT_ESTABLISHED",
+      "input_action_layer": "PROTOTYPE_ABSTRACTION",
+      "offline_prototype_ready": true,
+      "renderer_compatibility": "NOT_ESTABLISHED",
+      "viewport_geometry": "CONFIRMED_RESOURCE_GEOMETRY"
+    },
+    "contract_version": "m5-session093-v1",
+    "input": {
+      "actions": [
+        "ACTIVATE",
+        "BACK",
+        "FOCUS_NEXT",
+        "FOCUS_PREVIOUS",
+        "HOME"
+      ],
+      "focus_required": true,
+      "hardware_mapping_status": "NOT_ESTABLISHED",
+      "limitation": "actions are host-side abstractions and are not hardware key codes, scan codes or vehicle messages",
+      "pointer_required": false,
+      "touch_required": false
+    },
+    "interaction_invariants": {
+      "deterministic_transitions_required": true,
+      "filesystem_required": false,
+      "network_required": false,
+      "pointer_only_path_allowed": false,
+      "touch_only_path_allowed": false,
+      "vehicle_state_required": false,
+      "visible_focus_required": true
+    },
+    "prototype_scope": "OFFLINE_HOST_UI",
+    "publication_safety": {
+      "extracted_resources_included": false,
+      "firmware_bytes_included": false,
+      "installable_artifacts_included": false,
+      "navigation_media_content_included": false,
+      "original_or_synthetic_assets_only": true,
+      "payload_bytes_included": false,
+      "raw_firmware_strings_included": false,
+      "vehicle_identifiers_included": false
+    },
+    "schema": "phoenix-mmi.ui-constraint-contract/v1",
+    "unresolved_boundaries": [
+      "DISPLAY_PIXEL_LAYOUT",
+      "DISPLAY_SAFE_AREA",
+      "FIRMWARE_RENDERER",
+      "FONT_RENDERER",
+      "HARDWARE_INPUT_CODES",
+      "RUNTIME_RESOURCE_LIFECYCLE"
+    ],
+    "viewport": {
+      "evidence": "Session 077 validated six unique 480x240 resource geometries",
+      "height": 240,
+      "limitation": "resource geometry does not establish the display controller, safe area, timing or pixel layout",
+      "orientation": "LANDSCAPE",
+      "width": 480
+    }
+  }
+}

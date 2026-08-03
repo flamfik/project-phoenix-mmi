@@ -1,0 +1,299 @@
+{
+  "analysis_mode": "read-only-static-bounded-predecessor-context",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "calls": [
+    {
+      "arguments": {
+        "r4": {
+          "load_offsets": [
+            {
+              "displacement": 0,
+              "width_bits": 32
+            },
+            {
+              "displacement": 0,
+              "width_bits": 16
+            },
+            {
+              "displacement": 0,
+              "width_bits": 32
+            },
+            {
+              "displacement": 0,
+              "width_bits": 32
+            }
+          ],
+          "path": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+          "path_constants": [
+            8
+          ],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r5": {
+          "constant": 3,
+          "load_offsets": [],
+          "path": "CONST:3",
+          "path_constants": [
+            3
+          ],
+          "static_status": "CONSTANT"
+        },
+        "r6": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r7": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        }
+      },
+      "call_site_offset": 1777736,
+      "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+      "domain": "navigation",
+      "function_boundary_asserted": false,
+      "pair_classification": "CONFIRMED_CROSS_VERSION_DYNAMIC_DESCRIPTOR_STRUCTURE",
+      "path_dominance_asserted": false,
+      "predecessor_bytes_included": 16,
+      "target_code_gate_passed": false,
+      "target_load_offsets": [
+        {
+          "displacement": 12,
+          "width_bits": 32
+        },
+        {
+          "displacement": 0,
+          "width_bits": 32
+        },
+        {
+          "displacement": 0,
+          "width_bits": 32
+        }
+      ],
+      "target_path": "LOAD32[12](LOAD32[0](LOAD32[0](CALL_RETURN)))",
+      "target_register": "r1",
+      "target_static_status": "DYNAMIC_OR_UNSUPPORTED"
+    },
+    {
+      "arguments": {
+        "r4": {
+          "load_offsets": [
+            {
+              "displacement": 0,
+              "width_bits": 32
+            },
+            {
+              "displacement": 0,
+              "width_bits": 16
+            },
+            {
+              "displacement": 0,
+              "width_bits": 32
+            },
+            {
+              "displacement": 0,
+              "width_bits": 32
+            }
+          ],
+          "path": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+          "path_constants": [
+            8
+          ],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r5": {
+          "constant": 3,
+          "load_offsets": [],
+          "path": "CONST:3",
+          "path_constants": [
+            3
+          ],
+          "static_status": "CONSTANT"
+        },
+        "r6": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r7": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        }
+      },
+      "call_site_offset": 1777790,
+      "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+      "domain": "navigation",
+      "function_boundary_asserted": false,
+      "pair_classification": "CONFIRMED_CROSS_VERSION_DYNAMIC_DESCRIPTOR_STRUCTURE",
+      "path_dominance_asserted": false,
+      "predecessor_bytes_included": 16,
+      "target_code_gate_passed": false,
+      "target_load_offsets": [
+        {
+          "displacement": 12,
+          "width_bits": 32
+        },
+        {
+          "displacement": 0,
+          "width_bits": 32
+        },
+        {
+          "displacement": 0,
+          "width_bits": 32
+        }
+      ],
+      "target_path": "LOAD32[12](LOAD32[0](LOAD32[0](CALL_RETURN)))",
+      "target_register": "r1",
+      "target_static_status": "DYNAMIC_OR_UNSUPPORTED"
+    },
+    {
+      "arguments": {
+        "r4": {
+          "load_offsets": [],
+          "path": "ADD(CONST:4284,ENTRY:r4)",
+          "path_constants": [
+            4284
+          ],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r5": {
+          "load_offsets": [
+            {
+              "displacement": 0,
+              "width_bits": 16
+            }
+          ],
+          "path": "LOAD16[0](ENTRY:r6)",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r6": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r7": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        }
+      },
+      "call_site_offset": 2217208,
+      "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+      "domain": "optical",
+      "function_boundary_asserted": false,
+      "pair_classification": "CONFIRMED_PAIRED_CONTEXTUAL_LITERAL_CALL_TARGET",
+      "path_dominance_asserted": false,
+      "predecessor_bytes_included": 146,
+      "target_code_evidence": {
+        "bounded_code_gate_passed": false,
+        "function_boundary_asserted": false,
+        "known_ratio": 1.0,
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 0,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0
+      },
+      "target_code_gate_passed": false,
+      "target_file_offset": 2251208,
+      "target_load_offsets": [],
+      "target_path": "IN_IMAGE_POINTER",
+      "target_register": "r8",
+      "target_static_status": "RESOLVED_IN_IMAGE_POINTER"
+    },
+    {
+      "arguments": {
+        "r4": {
+          "load_offsets": [
+            {
+              "displacement": 8,
+              "width_bits": 32
+            }
+          ],
+          "path": "ADD(CALLER_SAVED_CLOBBER,LOAD32[8](ENTRY:r4))",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r5": {
+          "load_offsets": [
+            {
+              "displacement": 0,
+              "width_bits": 32
+            },
+            {
+              "displacement": 8,
+              "width_bits": 32
+            }
+          ],
+          "path": "ADD(LOAD32[0](ADD(NO_DEFINITION,CONST:68)),LOAD32[8](ENTRY:r4))",
+          "path_constants": [
+            68
+          ],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r6": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r7": {
+          "load_offsets": [],
+          "path": "CALLER_SAVED_CLOBBER",
+          "path_constants": [],
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        }
+      },
+      "call_site_offset": 2248804,
+      "context_start_reason": "BACKWARD_LIMIT",
+      "domain": "optical",
+      "function_boundary_asserted": false,
+      "pair_classification": "CONFIRMED_PAIRED_CONTEXTUAL_LITERAL_CALL_TARGET",
+      "path_dominance_asserted": false,
+      "predecessor_bytes_included": 256,
+      "target_code_evidence": {
+        "bounded_code_gate_passed": false,
+        "function_boundary_asserted": false,
+        "known_ratio": 0.317708,
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 3,
+        "return_count": 0,
+        "unresolved_indirect_call_count": 0
+      },
+      "target_code_gate_passed": false,
+      "target_file_offset": 2255396,
+      "target_load_offsets": [],
+      "target_path": "IN_IMAGE_POINTER",
+      "target_register": "r13",
+      "target_static_status": "RESOLVED_IN_IMAGE_POINTER"
+    }
+  ],
+  "classification": {
+    "callsite_count": 4,
+    "matched_dynamic_descriptor_contract_count": 2,
+    "optical_buffer_owner": "OPEN",
+    "paired_contextual_static_target_count": 2,
+    "paired_contextual_target_code_gate_count": 0,
+    "sector_read_abi": "OPEN"
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.object-dispatch-context-disc/v1"
+}

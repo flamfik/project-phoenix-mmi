@@ -1,0 +1,2 @@
+# Keep deterministic generated preview bytes identical on every platform.
+ui/previews/**/*.svg -text

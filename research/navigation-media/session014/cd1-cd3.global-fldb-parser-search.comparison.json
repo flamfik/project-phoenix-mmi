@@ -1,0 +1,269 @@
+{
+  "analysis_mode": "read-only-static-cross-version-role-sensitive",
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "cross_version_record_stride_loop_pair_count": 7,
+    "cross_version_rejected_navigation_numeric_pair_count": 1,
+    "cross_version_targeted_dataflow_pair_count": 0,
+    "cross_version_write_only_initializer_pair_count": 1,
+    "optical_buffer_provenance": "OPEN",
+    "promoted_fldb_parser_pair_count": 0,
+    "search_result": "NO_CANDIDATE_MET_PARSER_PROMOTION_GATE",
+    "sector_read_abi": "OPEN"
+  },
+  "interpretation": "Cross-version 36-byte loops exist, but none combines record reads, same-base FLDB header access, endian handling and verified optical-buffer provenance. The strongest structural pair is a write-only fixed-record initializer. A navigation-adjacent numeric cluster uses 36 as a call-field offset while its observed loop step is different. No parser is promoted.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "navigation_adjacent_cluster_pairs": [
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1439146,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1761662,
+      "semantic_signature_equal": true
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1441222,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1763738,
+      "semantic_signature_equal": true
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "left_offset": 1442712,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "right_offset": 1765228,
+      "semantic_signature_equal": true
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1444910,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1767426,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1450266,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1772782,
+      "semantic_signature_equal": true
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1453434,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1775950,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1453522,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1776038,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "left_offset": 1453710,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "right_offset": 1776226,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "left_offset": 1453786,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "right_offset": 1776302,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1453962,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1776478,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1454974,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1777490,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "left_offset": 1455110,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "right_offset": 1777626,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "left_offset": 1455232,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "right_offset": 1777748,
+      "semantic_signature_equal": false
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "left_offset": 1455284,
+      "normalized_shape_equal": false,
+      "relocation_delta": 322516,
+      "right_classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "right_offset": 1777800,
+      "semantic_signature_equal": false
+    }
+  ],
+  "promotion_gate": {
+    "numeric_match_alone_is_sufficient": false,
+    "requires_cross_version_structure": true,
+    "requires_endian_or_validated_helper_semantics": true,
+    "requires_optical_buffer_provenance": true,
+    "requires_record_read_role": true,
+    "requires_same_base_header_field_reads": true
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "record_stride_loop_pairs": [
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "PROBABLE_FIXED_RECORD_ARRAY_INITIALIZER",
+      "left_offset": 2781012,
+      "normalized_shape_sha256": "5c8704808741a4d77bc995a35491aa930a58c6a7d4d5f0cc3c6c81c488a94414",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 344196,
+      "right_classification": "PROBABLE_FIXED_RECORD_ARRAY_INITIALIZER",
+      "right_offset": 3125208
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "left_offset": 4399870,
+      "normalized_shape_sha256": "f64447958d157f35e115fde2ce4d2d3fd3c6f8ab57233b2a6cfd0b54fe908963",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 263716,
+      "right_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "right_offset": 4663586
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "left_offset": 7082414,
+      "normalized_shape_sha256": "02972a19dadfffe2860d6dcc0300e343597c660d02eb5a83cd4a15fbdb1e5f00",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 60528,
+      "right_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "right_offset": 7142942
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "left_offset": 7265910,
+      "normalized_shape_sha256": "69f342f55750feabbabe63952125bca1f2021f76e03a0524fee0e8ec69e0b4a3",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 57320,
+      "right_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "right_offset": 7323230
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "left_offset": 7266782,
+      "normalized_shape_sha256": "07bba8948ec67faadc127ab4f5fc00e6f49cc05b7193f07a23ad65fb09a05a49",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 57320,
+      "right_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "right_offset": 7324102
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "left_offset": 7268424,
+      "normalized_shape_sha256": "a12c5c48b43b4062bce2634d50aaa02ded657724af5f65012999fecd72f42feb",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 57320,
+      "right_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "right_offset": 7325744
+    },
+    {
+      "classification_equal": true,
+      "instruction_bytes_included": false,
+      "left_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "left_offset": 7735146,
+      "normalized_shape_sha256": "4fffa3a0ec94574a10aab53d88708b74cde39e08289794bf5525fa0e8627d60d",
+      "raw_loop_bytes_equal_by_hash": true,
+      "relocation_delta": 60712,
+      "right_classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "right_offset": 7795858
+    }
+  ],
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.global-fldb-parser-search-comparison/v1"
+}

@@ -1,0 +1,66 @@
+{
+  "analysis_mode": "read-only-frozen-simple-field-relation-test",
+  "classification": {
+    "integrity_semantics": "UNRESOLVED",
+    "simple_field_relation": "NO_CORPUS_WIDE_SIMPLE_RELATION"
+  },
+  "corpus_wide_match_count": 0,
+  "corpus_wide_matches": [],
+  "fixed_feature_count": 12,
+  "fixed_relation_count_per_source": 75,
+  "operational_graph_version": "v44",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "integrity_field_values_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.yim-field-relations/v1",
+  "session": "052",
+  "sources": [
+    {
+      "fixed_feature_count": 12,
+      "fixed_relation_count": 75,
+      "match_count": 0,
+      "matches": [],
+      "source_id": "YIM-U01"
+    },
+    {
+      "fixed_feature_count": 12,
+      "fixed_relation_count": 75,
+      "match_count": 0,
+      "matches": [],
+      "source_id": "YIM-U02"
+    },
+    {
+      "fixed_feature_count": 12,
+      "fixed_relation_count": 75,
+      "match_count": 0,
+      "matches": [],
+      "source_id": "YIM-U03"
+    },
+    {
+      "fixed_feature_count": 12,
+      "fixed_relation_count": 75,
+      "match_count": 0,
+      "matches": [],
+      "source_id": "YIM-U04"
+    },
+    {
+      "fixed_feature_count": 12,
+      "fixed_relation_count": 75,
+      "match_count": 0,
+      "matches": [],
+      "source_id": "YIM-U05"
+    }
+  ],
+  "unique_source_count": 5
+}

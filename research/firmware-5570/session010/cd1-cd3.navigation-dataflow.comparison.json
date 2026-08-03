@@ -1,0 +1,830 @@
+{
+  "analysis_mode": "read-only-static",
+  "callsite_window_pairs": [
+    {
+      "anchor_id": "navigation-internal-data",
+      "function_boundary_asserted": false,
+      "left_center": 1447154,
+      "left_known_ratio": 0.520833,
+      "normalized_instruction_shape_equal": true,
+      "ordinal": 0,
+      "relocation_delta": 322516,
+      "resolved_call_pairs": [
+        {
+          "left_call_site_offset": 1447164,
+          "left_nearest_fixed_boundary_marker": {
+            "categories": [
+              "navigation"
+            ],
+            "markers": [
+              "navigation",
+              "navigation-internal-data"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 3332
+          },
+          "left_target_file_offset": 1455176,
+          "ordinal": 0,
+          "resolution_status": "PAIRED_ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+          "right_call_site_offset": 1769680,
+          "right_nearest_fixed_boundary_marker": {
+            "categories": [
+              "navigation"
+            ],
+            "markers": [
+              "navigation",
+              "navigation-internal-data"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 3332
+          },
+          "right_target_file_offset": 1777692,
+          "target_relocation_delta": 322516,
+          "target_window_shape_equal": true
+        },
+        {
+          "left_call_site_offset": 1447192,
+          "left_nearest_fixed_boundary_marker": {
+            "categories": [
+              "storage"
+            ],
+            "markers": [
+              "mount"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 1384
+          },
+          "left_target_file_offset": 8062160,
+          "ordinal": 1,
+          "resolution_status": "PAIRED_ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+          "right_call_site_offset": 1769708,
+          "right_nearest_fixed_boundary_marker": {
+            "categories": [
+              "storage"
+            ],
+            "markers": [
+              "sector"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": -268
+          },
+          "right_target_file_offset": 574340,
+          "target_relocation_delta": -7487820,
+          "target_window_shape_equal": false
+        },
+        {
+          "left_call_site_offset": 1447218,
+          "left_nearest_fixed_boundary_marker": {
+            "categories": [
+              "navigation"
+            ],
+            "markers": [
+              "navigation",
+              "navigation-internal-data"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 3332
+          },
+          "left_target_file_offset": 1455176,
+          "ordinal": 2,
+          "resolution_status": "PAIRED_ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+          "right_call_site_offset": 1769734,
+          "right_nearest_fixed_boundary_marker": {
+            "categories": [
+              "navigation"
+            ],
+            "markers": [
+              "navigation",
+              "navigation-internal-data"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 3332
+          },
+          "right_target_file_offset": 1777692,
+          "target_relocation_delta": 322516,
+          "target_window_shape_equal": true
+        }
+      ],
+      "right_center": 1769670,
+      "right_known_ratio": 0.520833
+    },
+    {
+      "anchor_id": "navigation-internal-data",
+      "function_boundary_asserted": false,
+      "left_center": 1447292,
+      "left_known_ratio": 0.46875,
+      "normalized_instruction_shape_equal": true,
+      "ordinal": 1,
+      "relocation_delta": 322516,
+      "resolved_call_pairs": [
+        {
+          "left_call_site_offset": 1447352,
+          "left_nearest_fixed_boundary_marker": {
+            "categories": [
+              "storage"
+            ],
+            "markers": [
+              "mount"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 1360
+          },
+          "left_target_file_offset": 8062184,
+          "ordinal": 0,
+          "resolution_status": "PAIRED_ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+          "right_call_site_offset": 1769868,
+          "right_nearest_fixed_boundary_marker": {
+            "categories": [
+              "storage"
+            ],
+            "markers": [
+              "sector"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": -292
+          },
+          "right_target_file_offset": 574364,
+          "target_relocation_delta": -7487820,
+          "target_window_shape_equal": false
+        },
+        {
+          "left_call_site_offset": 1447378,
+          "left_nearest_fixed_boundary_marker": {
+            "categories": [
+              "navigation"
+            ],
+            "markers": [
+              "navigation",
+              "navigation-internal-data"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 3288
+          },
+          "left_target_file_offset": 1455220,
+          "ordinal": 1,
+          "resolution_status": "PAIRED_ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+          "right_call_site_offset": 1769894,
+          "right_nearest_fixed_boundary_marker": {
+            "categories": [
+              "navigation"
+            ],
+            "markers": [
+              "navigation",
+              "navigation-internal-data"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 3288
+          },
+          "right_target_file_offset": 1777736,
+          "target_relocation_delta": 322516,
+          "target_window_shape_equal": true
+        },
+        {
+          "left_call_site_offset": 1447392,
+          "left_nearest_fixed_boundary_marker": {
+            "categories": [
+              "storage"
+            ],
+            "markers": [
+              "mount"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": 1412
+          },
+          "left_target_file_offset": 8062132,
+          "ordinal": 2,
+          "resolution_status": "PAIRED_ADJACENT_PC_RELATIVE_MOV_L_TO_JSR",
+          "right_call_site_offset": 1769908,
+          "right_nearest_fixed_boundary_marker": {
+            "categories": [
+              "storage"
+            ],
+            "markers": [
+              "sector"
+            ],
+            "maximum_distance": 16384,
+            "raw_string_included": false,
+            "signed_distance": -240
+          },
+          "right_target_file_offset": 574312,
+          "target_relocation_delta": -7487820,
+          "target_window_shape_equal": false
+        }
+      ],
+      "right_center": 1769808,
+      "right_known_ratio": 0.46875
+    }
+  ],
+  "classification": {
+    "map_media_schema": "OPEN",
+    "navigation_data_lifecycle": "CONFIRMED_CROSS_VERSION_CODE_COUPLED_ROUTINE_PAIR",
+    "navigation_to_optical_direct_edge": "NOT_CONFIRMED",
+    "optical_service_contract": "CONFIRMED_CROSS_VERSION_RELOCATED_RUNTIME_ADDRESS_NEIGHBORHOODS",
+    "route_data_contract": "CONFIRMED_CROSS_VERSION_RELOCATED_RECORDS_NO_DIRECT_CONSUMER",
+    "sector_read_contract": "OPEN",
+    "storage_adjacent_runtime_calls": "CONFIRMED_PROXIMITY_WITH_OPEN_FUNCTION_SEMANTICS"
+  },
+  "external_context": {
+    "sources": [
+      {
+        "purpose": "SH-3 JSR requires a register-held destination and delayed branch semantics",
+        "url": "https://www.renesas.com/en/document/mas/sh-3sh-3esh3-dsp-software-manual?language=en"
+      },
+      {
+        "purpose": "VxWorks exposes a FAT-compatible dosFs runtime",
+        "url": "https://www.windriver.com/resource/vxworks-datasheet"
+      },
+      {
+        "purpose": "ECMA-119 defines sectors, logical blocks and CD-ROM volume recognition; it does not identify the MMI map schema",
+        "url": "https://ecma-international.org/wp-content/uploads/ECMA-119_6th_edition_december_2025.pdf"
+      }
+    ],
+    "used_as_firmware_evidence": false
+  },
+  "interpretation": "Two code-coupled navigation-data call-site windows and multiple relocated optical-service record neighborhoods are stable across releases. The evidence does not establish a direct call from navigation to the optical manager, a sector-read ABI or the map-media schema.",
+  "left": "CD1 K942 / MMI 5150",
+  "neighborhood_pairs": [
+    {
+      "anchor_id": "cdrom-access-event",
+      "category": "optical-service",
+      "left_anchor_offset": 632528,
+      "left_runtime_pointer_count": 17,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 324188,
+      "right_anchor_offset": 956716,
+      "right_runtime_pointer_count": 17,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-access-thread-dispatcher",
+      "category": "optical-service",
+      "left_anchor_offset": 676820,
+      "left_runtime_pointer_count": 3,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 323748,
+      "right_anchor_offset": 1000568,
+      "right_runtime_pointer_count": 3,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-access-thread-dispatcher",
+      "category": "optical-service",
+      "left_anchor_offset": 807105,
+      "left_runtime_pointer_count": 16,
+      "ordinal": 1,
+      "raw_window_equal": false,
+      "relocation_delta": 324096,
+      "right_anchor_offset": 1131201,
+      "right_runtime_pointer_count": 16,
+      "runtime_pointer_normalized_window_equal": false,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-command-event",
+      "category": "optical-service",
+      "left_anchor_offset": 1883576,
+      "left_runtime_pointer_count": 13,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 325100,
+      "right_anchor_offset": 2208676,
+      "right_runtime_pointer_count": 13,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-event",
+      "category": "optical-service",
+      "left_anchor_offset": 1909316,
+      "left_runtime_pointer_count": 14,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 325568,
+      "right_anchor_offset": 2234884,
+      "right_runtime_pointer_count": 14,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-filesystem-event",
+      "category": "optical-service",
+      "left_anchor_offset": 1884296,
+      "left_runtime_pointer_count": 13,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 325104,
+      "right_anchor_offset": 2209400,
+      "right_runtime_pointer_count": 13,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-manager",
+      "category": "optical-service",
+      "left_anchor_offset": 42656,
+      "left_runtime_pointer_count": 5,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 1916,
+      "right_anchor_offset": 44572,
+      "right_runtime_pointer_count": 5,
+      "runtime_pointer_normalized_window_equal": false,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-manager-task",
+      "category": "optical-service",
+      "left_anchor_offset": 921940,
+      "left_runtime_pointer_count": 15,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 322920,
+      "right_anchor_offset": 1244860,
+      "right_runtime_pointer_count": 15,
+      "runtime_pointer_normalized_window_equal": false,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "cdrom-thread-dispatcher",
+      "category": "optical-service",
+      "left_anchor_offset": 679576,
+      "left_runtime_pointer_count": 6,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 323748,
+      "right_anchor_offset": 1003324,
+      "right_runtime_pointer_count": 6,
+      "runtime_pointer_normalized_window_equal": false,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "map-position",
+      "category": "route-data",
+      "left_anchor_offset": 11623284,
+      "left_runtime_pointer_count": 0,
+      "ordinal": 0,
+      "raw_window_equal": true,
+      "relocation_delta": -265158,
+      "right_anchor_offset": 11358126,
+      "right_runtime_pointer_count": 0,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "navigation-internal-data",
+      "category": "navigation-data",
+      "left_anchor_offset": 1458508,
+      "left_runtime_pointer_count": 11,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 322516,
+      "right_anchor_offset": 1781024,
+      "right_runtime_pointer_count": 11,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "routeact-dat",
+      "category": "route-data",
+      "left_anchor_offset": 2952580,
+      "left_runtime_pointer_count": 3,
+      "ordinal": 0,
+      "raw_window_equal": false,
+      "relocation_delta": 343328,
+      "right_anchor_offset": 3295908,
+      "right_runtime_pointer_count": 3,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    },
+    {
+      "anchor_id": "routeact-dat",
+      "category": "route-data",
+      "left_anchor_offset": 2992340,
+      "left_runtime_pointer_count": 6,
+      "ordinal": 1,
+      "raw_window_equal": false,
+      "relocation_delta": 341852,
+      "right_anchor_offset": 3334192,
+      "right_runtime_pointer_count": 6,
+      "runtime_pointer_normalized_window_equal": true,
+      "window_length": 256
+    }
+  ],
+  "operational_graph": {
+    "confirmed_node_count": 16,
+    "edges": [
+      {
+        "relation": "describes component payloads and policies",
+        "source": "update-media",
+        "status": "CONFIRMED",
+        "target": "metainfo-selector"
+      },
+      {
+        "relation": "contains device-specific application and bootloader payloads",
+        "source": "update-media",
+        "status": "CONFIRMED_PACKAGE_TOPOLOGY",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "provides target tuple for selection",
+        "source": "most-inventory",
+        "status": "PROBABLE",
+        "target": "metainfo-selector"
+      },
+      {
+        "relation": "matches installed hardware to device-specific records",
+        "source": "most-inventory",
+        "status": "PROBABLE_RUNTIME_BEHAVIOR",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "selects, checks and stages the head-unit payload",
+        "source": "metainfo-selector",
+        "status": "PROBABLE_RUNTIME_BEHAVIOR",
+        "target": "principal-image"
+      },
+      {
+        "relation": "provides segmented integrity expectations",
+        "source": "metainfo-selector",
+        "status": "CONFIRMED_METADATA_RELATION",
+        "target": "checksum-grid"
+      },
+      {
+        "relation": "begins execution at file offset zero",
+        "source": "principal-image",
+        "status": "CONFIRMED",
+        "target": "startup-runtime"
+      },
+      {
+        "relation": "initializes the linked runtime image",
+        "source": "startup-runtime",
+        "status": "PROBABLE",
+        "target": "runtime-address-space"
+      },
+      {
+        "relation": "hosts network-facing service tasks",
+        "source": "startup-runtime",
+        "status": "PROBABLE",
+        "target": "most-transport"
+      },
+      {
+        "relation": "coordinates device control and staged downloads",
+        "source": "most-transport",
+        "status": "PROBABLE",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "is immediately followed by runtime-address tables",
+        "source": "browser-bundle",
+        "status": "CONFIRMED_PHYSICAL_LAYOUT",
+        "target": "post-cluster-table"
+      },
+      {
+        "relation": "contains two exact edges to the atlas block",
+        "source": "post-cluster-table",
+        "status": "CONFIRMED_STRUCTURE",
+        "target": "bitmap-atlas"
+      },
+      {
+        "relation": "contains additional mapped but semantically unresolved runs",
+        "source": "post-cluster-table",
+        "status": "PARTIAL",
+        "target": "unresolved-runtime-tables"
+      },
+      {
+        "relation": "provides bitmap glyph data",
+        "source": "bitmap-atlas",
+        "status": "PROBABLE",
+        "target": "browser-renderer"
+      },
+      {
+        "relation": "selects a version/CRC-specific migration",
+        "source": "metainfo-selector",
+        "status": "CONFIRMED_METADATA_CHAIN",
+        "target": "eeprom-state"
+      },
+      {
+        "relation": "contains code-coupled navigation marker families",
+        "source": "startup-runtime",
+        "status": "CONFIRMED_IMAGE_INTEGRATION",
+        "target": "navigation-runtime"
+      },
+      {
+        "relation": "requires a backing volume whose layout remains unresolved",
+        "source": "startup-runtime",
+        "status": "HYPOTHESIS",
+        "target": "internal-filesystem"
+      },
+      {
+        "relation": "embeds code-coupled dosFs/FAT/TFFS support",
+        "source": "startup-runtime",
+        "status": "CONFIRMED_BOUNDED",
+        "target": "runtime-storage-stack"
+      },
+      {
+        "relation": "mounts an unresolved flash or block-device volume",
+        "source": "runtime-storage-stack",
+        "status": "PROBABLE",
+        "target": "internal-filesystem"
+      },
+      {
+        "relation": "provides block and filesystem services",
+        "source": "runtime-storage-stack",
+        "status": "PROBABLE",
+        "target": "optical-volume-reader"
+      },
+      {
+        "relation": "may expose external navigation data",
+        "source": "optical-volume-reader",
+        "status": "HYPOTHESIS",
+        "target": "map-media-format"
+      },
+      {
+        "relation": "supplies map and routing data",
+        "source": "map-media-format",
+        "status": "HYPOTHESIS",
+        "target": "navigation-runtime"
+      },
+      {
+        "relation": "contains two bounded code-coupled call-site windows",
+        "source": "navigation-runtime",
+        "status": "CONFIRMED_CROSS_VERSION",
+        "target": "navigation-data-lifecycle"
+      },
+      {
+        "relation": "embeds relocated route-data constants and address neighborhoods",
+        "source": "startup-runtime",
+        "status": "CONFIRMED_IMAGE_INTEGRATION",
+        "target": "route-data-records"
+      },
+      {
+        "relation": "embeds relocated CD-ROM event and task record neighborhoods",
+        "source": "startup-runtime",
+        "status": "CONFIRMED_IMAGE_INTEGRATION",
+        "target": "optical-service-events"
+      },
+      {
+        "relation": "likely participates in optical service dispatch",
+        "source": "optical-service-events",
+        "status": "PROBABLE",
+        "target": "optical-volume-reader"
+      },
+      {
+        "relation": "consumer relationship is unresolved",
+        "source": "route-data-records",
+        "status": "HYPOTHESIS",
+        "target": "navigation-data-lifecycle"
+      }
+    ],
+    "interpretation": "Session 010 adds stable navigation-data call-site and optical-service record contracts. Indirect dispatch, route-data consumers, sector ABI and map schema remain explicit gaps.",
+    "nodes": [
+      {
+        "evidence": [
+          "S001",
+          "S002"
+        ],
+        "id": "update-media",
+        "label": "Three-disc multi-device update set",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S002-01",
+          "S002-02",
+          "S002-03"
+        ],
+        "id": "metainfo-selector",
+        "label": "METAINFO target selection and integrity metadata",
+        "status": "CONFIRMED_STRUCTURE"
+      },
+      {
+        "evidence": [
+          "S002-06"
+        ],
+        "id": "most-inventory",
+        "label": "Installed MOST component discovery",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S001",
+          "S002"
+        ],
+        "id": "peripheral-firmware",
+        "label": "Separate amplifier, tuner, telephone, Bluetooth, AMI and DSP firmware",
+        "status": "CONFIRMED_PACKAGE_TOPOLOGY"
+      },
+      {
+        "evidence": [
+          "S002-06",
+          "S002-08"
+        ],
+        "id": "most-transport",
+        "label": "Head-unit control and update transport over MOST",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S003",
+          "S004-01"
+        ],
+        "id": "principal-image",
+        "label": "Flat big-endian SH-3 principal image",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S004-01",
+          "S004-02",
+          "S004-05"
+        ],
+        "id": "startup-runtime",
+        "label": "SH-3 startup and Wind River/VxWorks runtime fingerprint",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S006-01",
+          "S006-02"
+        ],
+        "id": "runtime-address-space",
+        "label": "Runtime-linked principal image at 0x0C000000",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S003",
+          "RQ-004"
+        ],
+        "id": "checksum-grid",
+        "label": "Twenty-five sequential 512 KiB CRC32 integrity regions",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S007-02",
+          "S008-01",
+          "S008-02"
+        ],
+        "id": "bitmap-atlas",
+        "label": "Relocated sparse-row bitmap region",
+        "semantic_status": "PROBABLE_1BPP_GLYPH_ATLAS",
+        "status": "CONFIRMED_RELOCATED_SPARSE_ROW_BITMAP_REGION"
+      },
+      {
+        "evidence": [
+          "S005"
+        ],
+        "id": "browser-bundle",
+        "label": "Embedded HTML and GIF/JPEG browser bundle",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S005",
+          "S006-03",
+          "S007-01"
+        ],
+        "id": "post-cluster-table",
+        "label": "Post-cluster runtime-address tables",
+        "status": "CONFIRMED_STRUCTURE"
+      },
+      {
+        "evidence": [
+          "S007-03",
+          "S007-05",
+          "S008-03"
+        ],
+        "id": "browser-renderer",
+        "label": "Browser/UI renderer consuming the bitmap atlas",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S006-05",
+          "RQ-015"
+        ],
+        "id": "unresolved-runtime-tables",
+        "label": "Post-cluster address runs 1 and 3",
+        "status": "PARTIAL"
+      },
+      {
+        "evidence": [
+          "S002-05"
+        ],
+        "id": "eeprom-state",
+        "label": "Versioned EEPROM migration state",
+        "status": "CONFIRMED_CHAIN"
+      },
+      {
+        "boundary_status": "PARTIAL_MULTIPLE_RELOCATED_MARKER_BANDS",
+        "evidence": [
+          "RQ-009",
+          "S009-01",
+          "S009-02"
+        ],
+        "id": "navigation-runtime",
+        "label": "Embedded navigation subsystem; multi-band boundary",
+        "map_format_status": "OPEN",
+        "status": "CONFIRMED_SUBSYSTEM_PRESENCE"
+      },
+      {
+        "evidence": [
+          "RQ-010",
+          "S009-04"
+        ],
+        "id": "internal-filesystem",
+        "label": "Internal backing volume and object layout",
+        "status": "OPEN",
+        "tested_embedded_volume_status": "NOT_FOUND_UNDER_TESTED_ISO9660_FAT_VALIDATORS"
+      },
+      {
+        "evidence": [
+          "S009-03",
+          "S009-04"
+        ],
+        "id": "runtime-storage-stack",
+        "label": "VxWorks dosFs/FAT/TFFS runtime support",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S009-03"
+        ],
+        "id": "optical-volume-reader",
+        "label": "CD-ROM / ISO-9660 reader support",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "RQ-022"
+        ],
+        "id": "map-media-format",
+        "label": "Navigation map-media schema and compatibility boundary",
+        "status": "OPEN"
+      },
+      {
+        "evidence": [
+          "S010-01",
+          "RQ-025"
+        ],
+        "function_semantics": "OPEN",
+        "id": "navigation-data-lifecycle",
+        "label": "Bounded navigation-data call-site routine pair",
+        "status": "CONFIRMED_CROSS_VERSION_CODE_COUPLING"
+      },
+      {
+        "consumer_status": "OPEN",
+        "evidence": [
+          "S010-02",
+          "RQ-027"
+        ],
+        "id": "route-data-records",
+        "label": "Relocated route-data record neighborhoods",
+        "status": "CONFIRMED_RELOCATED_STRUCTURE"
+      },
+      {
+        "dispatch_semantics": "OPEN",
+        "evidence": [
+          "S010-03",
+          "RQ-026"
+        ],
+        "id": "optical-service-events",
+        "label": "Relocated CD-ROM event/task record family",
+        "status": "CONFIRMED_RELOCATED_STRUCTURE"
+      }
+    ],
+    "open_node_count": 2,
+    "probable_node_count": 4,
+    "schema": "phoenix-mmi.operational-graph/v3"
+  },
+  "paired_neighborhood_count": 13,
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "map_payload_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false,
+    "route_payload_included": false
+  },
+  "resolved_adjacent_call_pair_count": 6,
+  "right": "CD3 K1006 / MMI 5570",
+  "runtime_pointer_normalized_equal_count": 9,
+  "schema": "phoenix-mmi.navigation-dataflow-comparison/v1",
+  "storage_marker_adjacent_call_pair_count": 3
+}

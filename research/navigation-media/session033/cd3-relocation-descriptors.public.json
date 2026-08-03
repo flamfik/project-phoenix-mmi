@@ -1,0 +1,720 @@
+{
+  "analysis": {
+    "artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "artifact_size": 12690344,
+    "bounded_decode_attempt_count": 393616,
+    "candidates": [],
+    "coherent_two_zone_candidate_count": 0,
+    "multi_record_candidate_summary": {
+      "address_model_pair_distribution": {
+        "metainfo-flash->raw-file-offset": 18,
+        "raw-file-offset->metainfo-flash": 18,
+        "raw-file-offset->raw-file-offset": 568
+      },
+      "field_order_distribution": {
+        "destination-length-source": 149,
+        "destination-source-length": 88,
+        "length-destination-source": 65,
+        "length-source-destination": 65,
+        "source-destination-length": 88,
+        "source-length-destination": 149
+      },
+      "record_count_distribution": {
+        "16": 6,
+        "2": 474,
+        "3": 48,
+        "4": 18,
+        "5": 6,
+        "6": 20,
+        "7": 24,
+        "8": 8
+      },
+      "record_width_distribution": {
+        "12": 570,
+        "16": 34
+      }
+    },
+    "multi_record_seeded_candidate_count": 604,
+    "referenced_promoted_candidate_count": 0,
+    "seed_census": {
+      "matched_seed_variant_count": 26,
+      "rows": [
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 1,
+          "seed_kind": "start-align-up-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 3,
+          "seed_kind": "start-align-up-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 3,
+          "seed_kind": "end-align-down-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 4,
+          "seed_kind": "end-align-up-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 2,
+          "seed_kind": "length-exact",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 9,
+          "seed_kind": "aligned-envelope-4",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 344,
+          "seed_kind": "aligned-envelope-256",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 1343,
+          "seed_kind": "aligned-envelope-4096",
+          "zone_id": "RZ-012"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 2,
+          "seed_kind": "start-align-down-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-down-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 2,
+          "seed_kind": "start-align-up-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "start-align-up-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 2,
+          "seed_kind": "end-align-down-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 2,
+          "seed_kind": "end-align-down-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 1,
+          "seed_kind": "end-align-up-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 2065,
+          "seed_kind": "start-align-down-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 662,
+          "seed_kind": "start-align-down-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 9,
+          "seed_kind": "start-align-down-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 23,
+          "seed_kind": "start-align-up-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 18,
+          "seed_kind": "start-align-up-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 1,
+          "seed_kind": "start-align-up-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 25,
+          "seed_kind": "end-align-down-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 3,
+          "seed_kind": "end-align-down-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-down-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "raw-file-offset",
+          "occurrence_count": 17,
+          "seed_kind": "end-align-up-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "metainfo-flash",
+          "occurrence_count": 7,
+          "seed_kind": "end-align-up-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "runtime-link",
+          "occurrence_count": 0,
+          "seed_kind": "end-align-up-4096",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 0,
+          "seed_kind": "length-exact",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 1,
+          "seed_kind": "aligned-envelope-4",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 10,
+          "seed_kind": "aligned-envelope-256",
+          "zone_id": "RZ-013"
+        },
+        {
+          "address_model": "scalar",
+          "occurrence_count": 47,
+          "seed_kind": "aligned-envelope-4096",
+          "zone_id": "RZ-013"
+        }
+      ],
+      "seed_alignments": [
+        4,
+        256,
+        4096
+      ],
+      "tested_address_model_count": 3,
+      "tested_boundary_seed_count": 28,
+      "tested_scalar_length_seed_count": 8,
+      "tested_zone_count": 2,
+      "total_occurrence_count": 4606
+    },
+    "valid_seeded_single_record_count": 3896,
+    "zones": [
+      {
+        "end": 7893397,
+        "evidence_class": "CONSTANT_DELTA_ORDERED_MARKER_BAND",
+        "length": 4013,
+        "source_id": "MB-010",
+        "start": 7889384,
+        "zone_id": "RZ-012"
+      },
+      {
+        "end": 564331,
+        "evidence_class": "CONSTANT_DELTA_ORDERED_MARKER_BAND",
+        "length": 37323,
+        "source_id": "MB-011",
+        "start": 527008,
+        "zone_id": "RZ-013"
+      }
+    ]
+  },
+  "analysis_mode": "read-only-static-section-reorder-seeded-descriptor-search",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "bilateral_descriptor_pair_count": 0,
+    "closed_address_model_count": 3,
+    "closed_field_order_count": 6,
+    "closed_record_width_count": 2,
+    "coherent_reorder_descriptor_table": "CLOSED_BOUNDED_NEGATIVE",
+    "exact_section_boundary": "OPEN",
+    "left_coherent_two_zone_candidate_count": 0,
+    "left_referenced_promoted_candidate_count": 0,
+    "loader_transform": "OPEN",
+    "right_coherent_two_zone_candidate_count": 0,
+    "right_referenced_promoted_candidate_count": 0,
+    "runtime_execution_observed": false,
+    "section_reorder_anchor": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL"
+  },
+  "limits": [
+    "Only 12-byte records and 16-byte records with a closed trailing-flag set are tested.",
+    "Only big-endian words and three independently motivated address models are tested.",
+    "Exact zone endpoints are seeds; the exact section boundary is not assumed.",
+    "PC-relative MOV.L references are modeled; computed, memory-loaded and external references are not.",
+    "The MOV.L reference census is syntactic and does not assert that each matched halfword is executed code.",
+    "A zero result does not exclude compressed, indirect, variable-width or external loader metadata.",
+    "Static geometry does not prove runtime execution or copy semantics."
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false
+  },
+  "reorder_bracket": {
+    "bracket_id": "RB-015",
+    "classification": "SECTION_REORDER_BRACKET",
+    "delta_change": -7549912,
+    "exact_breakpoint_asserted": false,
+    "left_bracket_width": 183523,
+    "left_delta": 61136,
+    "left_file_lower_bound": 7832261,
+    "left_file_upper_bound": 8015784,
+    "left_zone_id": "RZ-012",
+    "right_delta": -7488776,
+    "right_order_monotonic": false,
+    "right_zone_id": "RZ-013"
+  },
+  "schema": "phoenix-mmi.relocation-descriptor-disc/v1",
+  "search_contract": {
+    "address_models": [
+      {
+        "base_disclosed": false,
+        "name": "raw-file-offset"
+      },
+      {
+        "base_disclosed": false,
+        "name": "metainfo-flash"
+      },
+      {
+        "base_disclosed": false,
+        "name": "runtime-link"
+      }
+    ],
+    "arbitrary_whole_image_tuple_scan_performed": false,
+    "bilateral_equal_geometry_required": true,
+    "both_zone_closed_seed_required": true,
+    "both_zone_interval_coverage_required": true,
+    "field_orders": [
+      "source-destination-length",
+      "source-length-destination",
+      "destination-source-length",
+      "destination-length-source",
+      "length-source-destination",
+      "length-destination-source"
+    ],
+    "maximum_copy_length": 4194304,
+    "minimum_record_count": 2,
+    "non_overlapping_source_and_destination_required": true,
+    "pc_relative_table_reference_required": true,
+    "record_widths": [
+      12,
+      16
+    ],
+    "trailing_flag_values_disclosed": false,
+    "zone_seed_alignments": [
+      4,
+      256,
+      4096
+    ]
+  }
+}

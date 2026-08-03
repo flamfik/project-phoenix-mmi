@@ -1,0 +1,2911 @@
+{
+  "analysis_mode": "read-only-static-session026-target-specific-return-use-census",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "adjacent_literal_jsr_reference_pairs": 7,
+    "all_pointer_uses_are_indirect_control_targets": "CONFIRMED",
+    "bilateral_flow_gates_all_passed": true,
+    "bilateral_return_flow_pair_count": 18,
+    "data_only_target_pointer_occurrences": 0,
+    "direct_bsr_target_references": 0,
+    "dynamic_dispatch_r6_contract_counts": {
+      "CALLER_SAVED_CLOBBER": 10,
+      "CONST:0": 2,
+      "ENTRY:r6": 1,
+      "ENTRY:r7": 2
+    },
+    "dynamic_dispatch_target_field_counts": {
+      "28": 5,
+      "36": 1,
+      "44": 2,
+      "52": 2,
+      "60": 1,
+      "68": 1,
+      "76": 1,
+      "84": 1,
+      "92": 1
+    },
+    "exact_target_word_occurrences_per_release": 17,
+    "new_compatible_dispatch_target_fields": [
+      60
+    ],
+    "new_owner_argument_compatible_dispatch_count": 1,
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "owner_argument_compatible_dynamic_dispatch_count": 5,
+    "pc_relative_target_reference_pairs": 18,
+    "pointer_topology_equal": true,
+    "producer_implementation": "NOT_ESTABLISHED",
+    "producer_target_code_entry": "NOT_VALIDATED",
+    "return_flow_classification_counts": {
+      "RETURN_FORWARDED_TO_STATIC_HELPER": 2,
+      "RETURN_NULL_TEST_WITHOUT_LINEAR_CALL": 1,
+      "RETURN_OBJECT_DYNAMIC_DISPATCH": 15
+    },
+    "returned_object_creator_or_writer": "OPEN",
+    "returned_object_type": "OPEN",
+    "sector_read_abi": "OPEN",
+    "selected_owner_target_link": "NOT_ESTABLISHED",
+    "semantic_owner_identity": "OPEN",
+    "static_handoff_code_gated_pair_count": 2,
+    "static_handoff_direct_modeled_r5_use_pair_count": 0,
+    "static_handoff_equal_target_shape_count": 0,
+    "static_handoff_pair_count": 2,
+    "static_handoff_registration_path": "NOT_ESTABLISHED",
+    "static_target_registration_evidence": "BOUNDED_NEGATIVE_CALL_LITERAL_MODEL",
+    "unique_bilateral_owner_entry_caller": "NOT_ESTABLISHED",
+    "unique_exact_code_gated_owner_pair_count": 17
+  },
+  "pointer_use_census": {
+    "adjacent_literal_jsr_count": 7,
+    "aligned_word_occurrence_count": 17,
+    "all_aligned_occurrences_are_pc_relative_literals": true,
+    "data_only_aligned_occurrence_count": 0,
+    "direct_bsr_target_count": 0,
+    "direct_callback_record_semantics_asserted": false,
+    "exact_word_occurrence_count": 17,
+    "literal_pool_occurrence_used_by_adjacent_jsr_count": 7,
+    "pc_relative_load_reference_count": 18,
+    "pointer_use_classification_counts": {
+      "INDIRECT_CONTROL_TARGET": 18
+    },
+    "target_file_offset": 1539152,
+    "uses": [
+      {
+        "call_site_file_offset": 1531152,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1531176,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531150,
+        "relative_use_instruction_index": 1
+      },
+      {
+        "call_site_file_offset": 1531542,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1531588,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531540,
+        "relative_use_instruction_index": 1
+      },
+      {
+        "call_site_file_offset": 1531620,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1531672,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531616,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1531708,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1531760,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531702,
+        "relative_use_instruction_index": 3
+      },
+      {
+        "call_site_file_offset": 1531808,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1531856,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531806,
+        "relative_use_instruction_index": 1
+      },
+      {
+        "call_site_file_offset": 1531882,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1531928,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531878,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1531954,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532000,
+        "loaded_register": 0,
+        "referrer_file_offset": 1531950,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1532038,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532140,
+        "loaded_register": 0,
+        "referrer_file_offset": 1532034,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1532074,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532140,
+        "loaded_register": 0,
+        "referrer_file_offset": 1532068,
+        "relative_use_instruction_index": 3
+      },
+      {
+        "call_site_file_offset": 1532194,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532244,
+        "loaded_register": 0,
+        "referrer_file_offset": 1532190,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1532286,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532408,
+        "loaded_register": 0,
+        "referrer_file_offset": 1532282,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1532470,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532520,
+        "loaded_register": 0,
+        "referrer_file_offset": 1532466,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1532558,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1532604,
+        "loaded_register": 0,
+        "referrer_file_offset": 1532554,
+        "relative_use_instruction_index": 2
+      },
+      {
+        "call_site_file_offset": 1533050,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1533140,
+        "loaded_register": 0,
+        "referrer_file_offset": 1533044,
+        "relative_use_instruction_index": 3
+      },
+      {
+        "call_site_file_offset": 1533176,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1533332,
+        "loaded_register": 0,
+        "referrer_file_offset": 1533174,
+        "relative_use_instruction_index": 1
+      },
+      {
+        "call_site_file_offset": 1533364,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1533448,
+        "loaded_register": 0,
+        "referrer_file_offset": 1533362,
+        "relative_use_instruction_index": 1
+      },
+      {
+        "call_site_file_offset": 1533478,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1533528,
+        "loaded_register": 0,
+        "referrer_file_offset": 1533476,
+        "relative_use_instruction_index": 1
+      },
+      {
+        "call_site_file_offset": 1533554,
+        "classification": "INDIRECT_CONTROL_TARGET",
+        "literal_file_offset": 1533616,
+        "loaded_register": 0,
+        "referrer_file_offset": 1533552,
+        "relative_use_instruction_index": 1
+      }
+    ],
+    "whole_image_pointer_census_is_syntactic": true
+  },
+  "producer_target": 1539152,
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "return_flows": [
+    {
+      "classification": "RETURN_NULL_TEST_WITHOUT_LINEAR_CALL",
+      "contract": {
+        "classification": "RETURN_NULL_TEST_WITHOUT_LINEAR_CALL",
+        "context_start_file_offset": 1531104,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1531176,
+        "next_linear_call": null,
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 1,
+          "entry_file_offset": 1531104,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 36,
+          "known_instruction_count": 34,
+          "known_ratio": 0.944444,
+          "normalized_shape_sha256": "385ceb2c73ce8ca4cf51b453cf45e698abdef7f6ceb7a86b6d221b4025121760",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 0,
+          "window_length": 72
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531152,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1531150,
+        "result_use": {
+          "captured_register_count": 0,
+          "dereference_count_before_next_call": 0,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": true
+        },
+        "returned_object_geometry": null
+      },
+      "flow_ordinal": 1,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1531530,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1531588,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:48)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1531566,
+          "target": {
+            "canonical": "LOAD32[52](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 52,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1531530,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 29,
+          "known_instruction_count": 28,
+          "known_ratio": 0.965517,
+          "normalized_shape_sha256": "c400f51d25a8eda8a46cc701bb6185b363ff67d53dd89f3def68e21e3bbf97f9",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 58
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:11",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r6",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r6"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531542,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1531540,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 48,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 52
+        }
+      },
+      "flow_ordinal": 2,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1531600,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1531672,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:56)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1531646,
+          "target": {
+            "canonical": "LOAD32[60](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 60,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": true,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1531600,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 35,
+          "known_instruction_count": 34,
+          "known_ratio": 0.971429,
+          "normalized_shape_sha256": "7570f2312a438c5ee632357b04fddd2eb6d4c8a214fdca01ccbfbec7903a4c23",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 70
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:7",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531620,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1531616,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 56,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 60
+        }
+      },
+      "flow_ordinal": 3,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1531684,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1531760,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:64)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1531730,
+          "target": {
+            "canonical": "LOAD32[4](ADD(LOAD32[0](CALL_RETURN),CONST:64))",
+            "load_path": [
+              {
+                "displacement": 4,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 3,
+          "entry_file_offset": 1531684,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 35,
+          "known_instruction_count": 34,
+          "known_ratio": 0.971429,
+          "normalized_shape_sha256": "bbd3a76e545bd79081c7ead5c1d088c13a56e244a53f2d1fdc08cc4d0bf9dc40",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 2,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 70
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:8",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "CALLER_SAVED_CLOBBER",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALLER_SAVED_CLOBBER"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531708,
+        "producer_relative_use_instruction_index": 3,
+        "referrer_file_offset": 1531702,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 64,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 68
+        }
+      },
+      "flow_ordinal": 4,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1531772,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1531856,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:72)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1531830,
+          "target": {
+            "canonical": "LOAD32[4](ADD(LOAD32[0](CALL_RETURN),CONST:72))",
+            "load_path": [
+              {
+                "displacement": 4,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 3,
+          "entry_file_offset": 1531772,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 41,
+          "known_instruction_count": 39,
+          "known_ratio": 0.95122,
+          "normalized_shape_sha256": "4c69e1b6a3d9fd2bbaaf2568b273f8be3a2e72e52df88c8d4d2f01981e8046b3",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 2,
+          "window_length": 82
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:6",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "CALLER_SAVED_CLOBBER",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALLER_SAVED_CLOBBER"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531808,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1531806,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 72,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 76
+        }
+      },
+      "flow_ordinal": 5,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1531866,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1531928,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:80)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1531904,
+          "target": {
+            "canonical": "LOAD32[4](ADD(LOAD32[0](CALL_RETURN),CONST:80))",
+            "load_path": [
+              {
+                "displacement": 4,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1531866,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 30,
+          "known_instruction_count": 29,
+          "known_ratio": 0.966667,
+          "normalized_shape_sha256": "44bfde11b4135142daef64ab883bfbb157f18e291cef1e87a87ff58374f5b050",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 60
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:13",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531882,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1531878,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 80,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 84
+        }
+      },
+      "flow_ordinal": 6,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1531938,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532000,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:88)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1531976,
+          "target": {
+            "canonical": "LOAD32[4](ADD(LOAD32[0](CALL_RETURN),CONST:88))",
+            "load_path": [
+              {
+                "displacement": 4,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1531938,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 30,
+          "known_instruction_count": 29,
+          "known_ratio": 0.966667,
+          "normalized_shape_sha256": "b79aa205a3c2b03d36fa961d9044a0b1ac10c105e78d5ca9b0c255d23b155866",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 60
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:14",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1531954,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1531950,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 88,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 92
+        }
+      },
+      "flow_ordinal": 7,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1532014,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532140,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1532062,
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 4,
+          "entry_file_offset": 1532014,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 62,
+          "known_instruction_count": 60,
+          "known_ratio": 0.967742,
+          "normalized_shape_sha256": "bf85ca08ac97d54cc6c367db4d3ed2ef1f4e1620fda6ee51e98a1039decddab6",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 2,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 2,
+          "window_length": 124
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:15",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1532038,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1532034,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "flow_ordinal": 8,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1532014,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532140,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1532104,
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 4,
+          "entry_file_offset": 1532014,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 62,
+          "known_instruction_count": 60,
+          "known_ratio": 0.967742,
+          "normalized_shape_sha256": "bf85ca08ac97d54cc6c367db4d3ed2ef1f4e1620fda6ee51e98a1039decddab6",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 2,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 2,
+          "window_length": 124
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:16",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "CALLER_SAVED_CLOBBER",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALLER_SAVED_CLOBBER"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1532074,
+        "producer_relative_use_instruction_index": 3,
+        "referrer_file_offset": 1532068,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "flow_ordinal": 9,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1532178,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532244,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ADD(NO_DEFINITION,CONST:-8)",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "NO_DEFINITION",
+                "CONSTANT"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1532218,
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1532178,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 33,
+          "known_instruction_count": 32,
+          "known_ratio": 0.969697,
+          "normalized_shape_sha256": "815b2d4b8fe8e01b4a6673a80f2dabe9eda04cee658df56760f75174568058f6",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 66
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:18",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1532194,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1532190,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "flow_ordinal": 10,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1532264,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532408,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)),CALL_RETURN)",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT",
+                "CALL_RETURN"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1532308,
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 6,
+          "entry_file_offset": 1532264,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 71,
+          "known_instruction_count": 64,
+          "known_ratio": 0.901408,
+          "normalized_shape_sha256": "5c9a9e92d49facf017f782c94406e5253528e1f3e6371b5bc54e2218f2b2a663",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 4,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 2,
+          "window_length": 142
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:19",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1532286,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1532282,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "flow_ordinal": 11,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_FORWARDED_TO_STATIC_HELPER",
+      "contract": {
+        "classification": "RETURN_FORWARDED_TO_STATIC_HELPER",
+        "context_start_file_offset": 1532442,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532520,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ENTRY:r4",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r4"
+              ]
+            },
+            "r5": {
+              "canonical": "CALL_RETURN",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN"
+              ]
+            },
+            "r6": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r7": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r5"
+          ],
+          "call_site_file_offset": 1532492,
+          "static_target": {
+            "entry_r5_profile": {
+              "direct_entry_value_use_confirmed": false,
+              "modeled_read_count_before_terminal": 0,
+              "modeled_write_count_before_terminal": 1,
+              "register": "r5",
+              "terminal": "DELAY_SLOT_OVERWRITE_BEFORE_CALL",
+              "unknown_instruction_count_before_terminal": 3,
+              "unknown_instructions_limit_negative_result": true
+            },
+            "registration_store_established": false,
+            "summary": {
+              "bounded_code_gate_passed": true,
+              "call_count": 2,
+              "entry_file_offset": 1540804,
+              "function_boundary_asserted": false,
+              "instruction_bytes_included": false,
+              "instruction_count": 28,
+              "known_instruction_count": 25,
+              "known_ratio": 0.892857,
+              "normalized_shape_sha256": "63930050b358bf03c1c0ccf3952d197de7ab05f31c1ca96743179fe586c4a735",
+              "prologue_save_pr_in_first_12_instructions": true,
+              "resolved_static_call_count": 2,
+              "return_count": 1,
+              "unresolved_indirect_call_count": 0,
+              "window_length": 56
+            }
+          },
+          "target": {
+            "canonical": "IN_IMAGE_POINTER",
+            "load_path": [],
+            "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+            "root_classes": [
+              "IN_IMAGE_POINTER"
+            ],
+            "target_file_offset": 1540804
+          },
+          "target_crosses_call_return": false
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1532442,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 39,
+          "known_instruction_count": 38,
+          "known_ratio": 0.974359,
+          "normalized_shape_sha256": "9108310d502847654ec558ac05c80a8852c7e65509bed83150aff5544e909c07",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 2,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 0,
+          "window_length": 78
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:21",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1532470,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1532466,
+        "result_use": {
+          "captured_register_count": 2,
+          "dereference_count_before_next_call": 0,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": null,
+          "shared_call_return_vtable_grammar": false,
+          "target_after_adjustment_stride": null,
+          "target_field_displacement": null
+        }
+      },
+      "flow_ordinal": 12,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_FORWARDED_TO_STATIC_HELPER",
+      "contract": {
+        "classification": "RETURN_FORWARDED_TO_STATIC_HELPER",
+        "context_start_file_offset": 1532536,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1532604,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ENTRY:r4",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r4"
+              ]
+            },
+            "r5": {
+              "canonical": "CALL_RETURN",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN"
+              ]
+            },
+            "r6": {
+              "canonical": "ENTRY:r5",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r5"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r5"
+          ],
+          "call_site_file_offset": 1532574,
+          "static_target": {
+            "entry_r5_profile": {
+              "direct_entry_value_use_confirmed": false,
+              "modeled_read_count_before_terminal": 0,
+              "modeled_write_count_before_terminal": 0,
+              "register": "r5",
+              "terminal": "CALLER_SAVED_CLOBBER",
+              "unknown_instruction_count_before_terminal": 2,
+              "unknown_instructions_limit_negative_result": true
+            },
+            "registration_store_established": false,
+            "summary": {
+              "bounded_code_gate_passed": true,
+              "call_count": 1,
+              "entry_file_offset": 1541020,
+              "function_boundary_asserted": false,
+              "instruction_bytes_included": false,
+              "instruction_count": 14,
+              "known_instruction_count": 12,
+              "known_ratio": 0.857143,
+              "normalized_shape_sha256": "4b297477ea33a587fb225f5d8292edf292c67eeab985929e7fd16e66d5f1b0b9",
+              "prologue_save_pr_in_first_12_instructions": true,
+              "resolved_static_call_count": 1,
+              "return_count": 1,
+              "unresolved_indirect_call_count": 0,
+              "window_length": 28
+            }
+          },
+          "target": {
+            "canonical": "IN_IMAGE_POINTER",
+            "load_path": [],
+            "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+            "root_classes": [
+              "IN_IMAGE_POINTER"
+            ],
+            "target_file_offset": 1541020
+          },
+          "target_crosses_call_return": false
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 3,
+          "entry_file_offset": 1532536,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 30,
+          "known_instruction_count": 29,
+          "known_ratio": 0.966667,
+          "normalized_shape_sha256": "f81b51ae4b894612efc6aa331dd6dc2339efcfb75126bc10ec8145bd0100c621",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 3,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 0,
+          "window_length": 60
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "CONST:129",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "CALLER_SAVED_CLOBBER",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALLER_SAVED_CLOBBER"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1532558,
+        "producer_relative_use_instruction_index": 2,
+        "referrer_file_offset": 1532554,
+        "result_use": {
+          "captured_register_count": 2,
+          "dereference_count_before_next_call": 0,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": null,
+          "shared_call_return_vtable_grammar": false,
+          "target_after_adjustment_stride": null,
+          "target_field_displacement": null
+        }
+      },
+      "flow_ordinal": 13,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1533022,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1533140,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:48)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1533074,
+          "target": {
+            "canonical": "LOAD32[52](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 52,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": false,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 4,
+          "entry_file_offset": 1533022,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 55,
+          "known_instruction_count": 52,
+          "known_ratio": 0.945455,
+          "normalized_shape_sha256": "016ca1b828018601d1c9714e65a85ed224bfc119772c96fe271473975f07159d",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 3,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 110
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "CALLER_SAVED_CLOBBER",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALLER_SAVED_CLOBBER"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1533050,
+        "producer_relative_use_instruction_index": 3,
+        "referrer_file_offset": 1533044,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 48,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 52
+        }
+      },
+      "flow_ordinal": 14,
+      "session025_candidate_family_ordinal": null
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1533158,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1533332,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r6": {
+              "canonical": "CONST:0",
+              "load_path": [],
+              "resolution_status": "CONSTANT",
+              "root_classes": [
+                "CONSTANT"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1533200,
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": true,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1533158,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 87,
+          "known_instruction_count": 69,
+          "known_ratio": 0.793103,
+          "normalized_shape_sha256": "5b469bc254f9df6b3bbf843082a48d8242a970c970683bc5a163cd1a9047f625",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 174
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1533176,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1533174,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "flow_ordinal": 15,
+      "session025_candidate_family_ordinal": 3
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1533346,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1533448,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:32)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r6": {
+              "canonical": "CONST:0",
+              "load_path": [],
+              "resolution_status": "CONSTANT",
+              "root_classes": [
+                "CONSTANT"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1533388,
+          "target": {
+            "canonical": "LOAD32[36](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 36,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": true,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1533346,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 49,
+          "known_instruction_count": 47,
+          "known_ratio": 0.959184,
+          "normalized_shape_sha256": "5f049cc9448ace8966ce1a4ae3068bf945bb87b5e28f08e0476b3e707b839c9f",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 98
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1533364,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1533362,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 32,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 36
+        }
+      },
+      "flow_ordinal": 16,
+      "session025_candidate_family_ordinal": 4
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1533460,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1533528,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r6": {
+              "canonical": "ENTRY:r7",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r7"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1533504,
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": true,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1533460,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 34,
+          "known_instruction_count": 33,
+          "known_ratio": 0.970588,
+          "normalized_shape_sha256": "e513f41c94f00fd5a1f01ce97f6fd9a130e256f6e6d0a7b9703d5bfdea5e9f6d",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 68
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1533478,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1533476,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "flow_ordinal": 17,
+      "session025_candidate_family_ordinal": 11
+    },
+    {
+      "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+      "contract": {
+        "classification": "RETURN_OBJECT_DYNAMIC_DISPATCH",
+        "context_start_file_offset": 1533540,
+        "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+        "function_boundary_asserted": false,
+        "literal_file_offset": 1533616,
+        "next_linear_call": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+              "load_path": [
+                {
+                  "displacement": 0,
+                  "width_bits": 16
+                },
+                {
+                  "displacement": 0,
+                  "width_bits": 32
+                }
+              ],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "ENTRY:r6",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r6"
+              ]
+            },
+            "r6": {
+              "canonical": "ENTRY:r7",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "ENTRY:r7"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "load_path": [],
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_return_argument_registers": [
+            "r4"
+          ],
+          "call_site_file_offset": 1533580,
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_crosses_call_return": true
+        },
+        "owner_argument_compatible_dynamic_dispatch": true,
+        "owner_summary": {
+          "bounded_code_gate_passed": true,
+          "call_count": 2,
+          "entry_file_offset": 1533540,
+          "function_boundary_asserted": false,
+          "instruction_bytes_included": false,
+          "instruction_count": 37,
+          "known_instruction_count": 36,
+          "known_ratio": 0.972973,
+          "normalized_shape_sha256": "7be1c2de3cc7cde96d6386b4ee06c6f3283d0853bb12081078146b73a043cdd2",
+          "prologue_save_pr_in_first_12_instructions": true,
+          "resolved_static_call_count": 1,
+          "return_count": 1,
+          "unresolved_indirect_call_count": 1,
+          "window_length": 74
+        },
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_site_file_offset": 1533554,
+        "producer_relative_use_instruction_index": 1,
+        "referrer_file_offset": 1533552,
+        "result_use": {
+          "captured_register_count": 1,
+          "dereference_count_before_next_call": 1,
+          "store_count_before_next_call": 0,
+          "tested_immediately_or_locally": false
+        },
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "flow_ordinal": 18,
+      "session025_candidate_family_ordinal": 5
+    }
+  ],
+  "schema": "phoenix-mmi.producer-return-family-disc/v1"
+}

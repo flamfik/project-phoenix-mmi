@@ -1,0 +1,463 @@
+{
+  "analysis_mode": "read-only-static-registered-indirect-caller-compatibility",
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "bilateral_owner_entry_argument_contract": "CONFIRMED_R4_R6_FOR_BOTH_SELECTED_OWNER_PAIRS",
+    "candidate_r6_provenance": "CALLER_SAVED_CLOBBER_IN_ALL_TESTED_BILATERAL_CONTRACTS",
+    "compatible_candidate_owner_pair_count": 0,
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "owner_entry_argument_producer": "OPEN",
+    "registered_memory_loaded_candidate_count": 2,
+    "sector_read_abi": "OPEN",
+    "semantic_owner_identity": "OPEN",
+    "session016_call_return_field_load_family_as_owner_caller": "BOUNDED_NEGATIVE_INCOMPATIBLE_ENTRY_ARGUMENT_CONTRACT",
+    "state_creator_or_writer": "OPEN",
+    "unique_bilateral_owner_entry_caller": "NOT_ESTABLISHED"
+  },
+  "interpretation": "Both selected owner pairs consume runtime entry r4 and r6. The two registered Session 016 call-return/field-load dispatch contracts preserve an equal r4 receiver expression across releases, but r6 is caller-saved clobber after a preceding call in every tested contract. They therefore fail the owner entry argument gate and are excluded as callers of the selected owners under this bounded model. No concrete target, unique bilateral owner caller, producer or state creator is established.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "arbitrary_indirect_call_scan_performed": false,
+    "candidate_source_sessions": [
+      16,
+      17,
+      22,
+      23
+    ],
+    "function_boundaries_asserted": false,
+    "normalized_context_after_words": 7,
+    "normalized_context_before_words": 8,
+    "path_dominance_asserted": false,
+    "runtime_execution_observed": false,
+    "whole_image_executable_map_available": false
+  },
+  "owner_entry_contracts": [
+    {
+      "bilateral_entry_argument_contract": true,
+      "left_owner_start_file_offset": 1680002,
+      "owner_pair_ordinal": 1,
+      "required_entry_arguments": [
+        "r4",
+        "r6"
+      ],
+      "right_owner_start_file_offset": 2002746,
+      "state_object_identity_asserted": false
+    },
+    {
+      "bilateral_entry_argument_contract": true,
+      "left_owner_start_file_offset": 1689866,
+      "owner_pair_ordinal": 2,
+      "required_entry_arguments": [
+        "r4",
+        "r6"
+      ],
+      "right_owner_start_file_offset": 2012550,
+      "state_object_identity_asserted": false
+    }
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "registered_candidate_contracts": [
+    {
+      "candidate_ordinal": 1,
+      "compatibility": {
+        "bilateral_target_expression_equal": true,
+        "compatible_owner_pair_count": 0,
+        "concrete_target_resolved_in_both_releases": false,
+        "owner_pair_compatibility": [
+          {
+            "all_required_arguments_available_and_equal": false,
+            "argument_compatibility": [
+              {
+                "bilateral_argument_gate_passed": true,
+                "canonical_path_equal": true,
+                "left_available_at_call": true,
+                "left_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+                "register": "r4",
+                "right_available_at_call": true,
+                "right_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))"
+              },
+              {
+                "bilateral_argument_gate_passed": false,
+                "canonical_path_equal": true,
+                "left_available_at_call": false,
+                "left_canonical": "CALLER_SAVED_CLOBBER",
+                "register": "r6",
+                "right_available_at_call": false,
+                "right_canonical": "CALLER_SAVED_CLOBBER"
+              }
+            ],
+            "candidate_owner_caller_compatible": false,
+            "owner_pair_ordinal": 1,
+            "required_entry_arguments": [
+              "r4",
+              "r6"
+            ]
+          },
+          {
+            "all_required_arguments_available_and_equal": false,
+            "argument_compatibility": [
+              {
+                "bilateral_argument_gate_passed": true,
+                "canonical_path_equal": true,
+                "left_available_at_call": true,
+                "left_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+                "register": "r4",
+                "right_available_at_call": true,
+                "right_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))"
+              },
+              {
+                "bilateral_argument_gate_passed": false,
+                "canonical_path_equal": true,
+                "left_available_at_call": false,
+                "left_canonical": "CALLER_SAVED_CLOBBER",
+                "register": "r6",
+                "right_available_at_call": false,
+                "right_canonical": "CALLER_SAVED_CLOBBER"
+              }
+            ],
+            "candidate_owner_caller_compatible": false,
+            "owner_pair_ordinal": 2,
+            "required_entry_arguments": [
+              "r4",
+              "r6"
+            ]
+          }
+        ],
+        "unique_target_family_established": false
+      },
+      "cross_version_normalized_signature_equal": true,
+      "exact_signature_census": {
+        "left_call_sites": [
+          1455220
+        ],
+        "left_count": 1,
+        "right_call_sites": [
+          1777736
+        ],
+        "right_count": 1
+      },
+      "left_seed_call_site_file_offset": 1455220,
+      "normalized_signature_word_count": 16,
+      "right_seed_call_site_file_offset": 1777736,
+      "source": "SESSION016_CALL_RETURN_FIELD_LOAD_DISPATCH",
+      "traced_seed_contract": {
+        "left": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "LOAD",
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "CONST:3",
+              "resolution_status": "CONSTANT",
+              "root_classes": [
+                "CONSTANT"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_site_file_offset": 1455220,
+          "context_start_file_offset": 1455160,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 60,
+          "target_expression": {
+            "canonical": "LOAD32[12](LOAD32[0](LOAD32[0](CALL_RETURN)))",
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_register": "r1"
+        },
+        "right": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "LOAD",
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "CONST:3",
+              "resolution_status": "CONSTANT",
+              "root_classes": [
+                "CONSTANT"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_site_file_offset": 1777736,
+          "context_start_file_offset": 1777676,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 60,
+          "target_expression": {
+            "canonical": "LOAD32[12](LOAD32[0](LOAD32[0](CALL_RETURN)))",
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_register": "r1"
+        }
+      }
+    },
+    {
+      "candidate_ordinal": 2,
+      "compatibility": {
+        "bilateral_target_expression_equal": true,
+        "compatible_owner_pair_count": 0,
+        "concrete_target_resolved_in_both_releases": false,
+        "owner_pair_compatibility": [
+          {
+            "all_required_arguments_available_and_equal": false,
+            "argument_compatibility": [
+              {
+                "bilateral_argument_gate_passed": true,
+                "canonical_path_equal": true,
+                "left_available_at_call": true,
+                "left_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+                "register": "r4",
+                "right_available_at_call": true,
+                "right_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))"
+              },
+              {
+                "bilateral_argument_gate_passed": false,
+                "canonical_path_equal": true,
+                "left_available_at_call": false,
+                "left_canonical": "CALLER_SAVED_CLOBBER",
+                "register": "r6",
+                "right_available_at_call": false,
+                "right_canonical": "CALLER_SAVED_CLOBBER"
+              }
+            ],
+            "candidate_owner_caller_compatible": false,
+            "owner_pair_ordinal": 1,
+            "required_entry_arguments": [
+              "r4",
+              "r6"
+            ]
+          },
+          {
+            "all_required_arguments_available_and_equal": false,
+            "argument_compatibility": [
+              {
+                "bilateral_argument_gate_passed": true,
+                "canonical_path_equal": true,
+                "left_available_at_call": true,
+                "left_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+                "register": "r4",
+                "right_available_at_call": true,
+                "right_canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))"
+              },
+              {
+                "bilateral_argument_gate_passed": false,
+                "canonical_path_equal": true,
+                "left_available_at_call": false,
+                "left_canonical": "CALLER_SAVED_CLOBBER",
+                "register": "r6",
+                "right_available_at_call": false,
+                "right_canonical": "CALLER_SAVED_CLOBBER"
+              }
+            ],
+            "candidate_owner_caller_compatible": false,
+            "owner_pair_ordinal": 2,
+            "required_entry_arguments": [
+              "r4",
+              "r6"
+            ]
+          }
+        ],
+        "unique_target_family_established": false
+      },
+      "cross_version_normalized_signature_equal": true,
+      "exact_signature_census": {
+        "left_call_sites": [
+          1455274
+        ],
+        "left_count": 1,
+        "right_call_sites": [
+          1777790
+        ],
+        "right_count": 1
+      },
+      "left_seed_call_site_file_offset": 1455274,
+      "normalized_signature_word_count": 16,
+      "right_seed_call_site_file_offset": 1777790,
+      "source": "SESSION016_CALL_RETURN_FIELD_LOAD_DISPATCH",
+      "traced_seed_contract": {
+        "left": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "LOAD",
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "CONST:3",
+              "resolution_status": "CONSTANT",
+              "root_classes": [
+                "CONSTANT"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_site_file_offset": 1455274,
+          "context_start_file_offset": 1455160,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 114,
+          "target_expression": {
+            "canonical": "LOAD32[12](LOAD32[0](LOAD32[0](CALL_RETURN)))",
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_register": "r1"
+        },
+        "right": {
+          "arguments": {
+            "r4": {
+              "canonical": "ADD(LOAD32[0](CALL_RETURN),LOAD16[0](ADD(LOAD32[0](LOAD32[0](CALL_RETURN)),CONST:8)))",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "LOAD",
+                "CALL_RETURN",
+                "LOAD",
+                "LOAD",
+                "LOAD",
+                "CALL_RETURN",
+                "CONSTANT"
+              ]
+            },
+            "r5": {
+              "canonical": "CONST:3",
+              "resolution_status": "CONSTANT",
+              "root_classes": [
+                "CONSTANT"
+              ]
+            },
+            "r6": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            },
+            "r7": {
+              "canonical": "CALLER_SAVED_CLOBBER",
+              "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+              "root_classes": [
+                "CALLER_SAVED_CLOBBER"
+              ]
+            }
+          },
+          "call_site_file_offset": 1777790,
+          "context_start_file_offset": 1777676,
+          "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+          "function_boundary_asserted": false,
+          "path_dominance_asserted": false,
+          "predecessor_bytes_included": 114,
+          "target_expression": {
+            "canonical": "LOAD32[12](LOAD32[0](LOAD32[0](CALL_RETURN)))",
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          },
+          "target_register": "r1"
+        }
+      }
+    }
+  ],
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.owner-caller-compatibility-comparison/v1"
+}

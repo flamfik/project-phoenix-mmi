@@ -1,0 +1,135 @@
+{
+  "analysis_mode": "read-only-static-bounded-fixed-4k-two-delta-island-atlas",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "compile_link_layout_explanation": "CONSISTENT_NOT_PROVEN",
+    "exact_section_boundary": "OPEN",
+    "grid_control": "REPLICATED_SPARSE_ONE_SIDED_SUPPORT",
+    "island_atlas": "SPARSE_ONE_SIDED_SUPPORT_REPLICATED",
+    "multiple_interleaved_family_model": "CLOSED_BOUNDED_NEGATIVE",
+    "repeated_word_delta_morphology": "NOT_OBSERVED_UNDER_FIXED_MODEL",
+    "runtime_execution_observed": false,
+    "runtime_loader_transform": "NOT_OBSERVED",
+    "section_reorder_anchor": "CONFIRMED_PRIOR_BOUNDED_STRUCTURAL",
+    "single_dominance_change_model": "CLOSED_PRIOR_BOUNDED_NEGATIVE",
+    "transition_envelope": "UNCHANGED_FROM_SESSION034"
+  },
+  "grid_control": {
+    "assignment_agreement_ratio": 1.0,
+    "classification": "REPLICATED_SPARSE_ONE_SIDED_SUPPORT",
+    "equal_assignment_overlap_pair_count": 1,
+    "minimum_agreement_ratio": 0.75,
+    "minimum_overlap_length": 2048,
+    "minimum_pair_count_for_replication": 4,
+    "overlap_pairs": [
+      {
+        "assignment_equal": true,
+        "overlap_length": 2048,
+        "primary_tile_id": "G0000-T019",
+        "shifted_tile_id": "G0800-T018"
+      }
+    ],
+    "primary_grid_offset": 0,
+    "primary_topology": "ONE_SIDED_FAMILY_SUPPORT",
+    "resolved_overlap_pair_count": 1,
+    "schema": "phoenix-mmi.content-island-grid-control/v1",
+    "shifted_full_report_published": false,
+    "shifted_grid_offset": 2048,
+    "shifted_topology": "ONE_SIDED_FAMILY_SUPPORT"
+  },
+  "limits": [
+    "Only the unchanged Session 034 envelope is read from CD1.",
+    "Only two independently established mappings are read from CD3.",
+    "Tiles are fixed and non-overlapping within each grid.",
+    "A terminal partial tile is admitted only when at least 2 KiB.",
+    "Distribution similarity is never treated as content identity.",
+    "Repeated word differences are anonymous morphology, not relocation proof.",
+    "No exact section or runtime boundary is inferred."
+  ],
+  "mapped_envelopes": {
+    "source": {
+      "lower": 7832267,
+      "upper": 7979108,
+      "width": 146841
+    }
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "dominant_word_delta_values_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "raw_pointer_values_included": false,
+    "raw_strings_included": false,
+    "raw_tile_bytes_included": false,
+    "raw_word_values_included": false
+  },
+  "schema": "phoenix-mmi.content-island-atlas-disc/v1",
+  "search_contract": {
+    "adaptive_threshold_used": false,
+    "envelope_lower": 7832267,
+    "envelope_upper": 7979108,
+    "envelope_width": 146841,
+    "grid_offset": 0,
+    "left_delta": 61136,
+    "left_zone_id": "RZ-012",
+    "minimum_terminal_tile_length": 2048,
+    "new_delta_search_performed": false,
+    "right_delta": -7488776,
+    "right_zone_id": "RZ-013",
+    "thresholds": {
+      "byte_similarity_ratio": 0.0625,
+      "entropy_delta_maximum": 0.25,
+      "exact_word_ratio": 0.125,
+      "histogram_total_variation_maximum": 0.125,
+      "repeated_word_minimum_count": 8,
+      "repeated_word_minimum_share": 0.125,
+      "repeated_word_minimum_unequal_words": 16
+    },
+    "tile_size": 4096,
+    "whole_image_search_performed": false
+  },
+  "summary": {
+    "assignment_change_count": 0,
+    "assignment_changes": [],
+    "assignment_counts": {
+      "BILATERAL_AMBIGUOUS": 0,
+      "LEFT_FAMILY": 1,
+      "RIGHT_FAMILY": 0,
+      "UNRESOLVED": 35
+    },
+    "islands": [
+      {
+        "assignment": "LEFT_FAMILY",
+        "end": 7910091,
+        "island_id": "ISL-001",
+        "length": 4096,
+        "start": 7905995,
+        "tile_count": 1,
+        "tile_ids": [
+          "G0000-T019"
+        ]
+      }
+    ],
+    "mapping_classification_counts": {
+      "left": {
+        "BYTE_SIMILAR_SUPPORTED": 1,
+        "DISTRIBUTION_SIMILAR_ONLY": 26,
+        "DIVERGENT": 9
+      },
+      "right": {
+        "DIVERGENT": 36
+      }
+    },
+    "repeated_word_delta_candidate_tile_counts": {
+      "left": 0,
+      "right": 0
+    },
+    "resolved_family_tile_count": 1,
+    "tile_count": 36,
+    "topology": "ONE_SIDED_FAMILY_SUPPORT"
+  }
+}

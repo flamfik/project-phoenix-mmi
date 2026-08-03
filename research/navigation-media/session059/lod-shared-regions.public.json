@@ -1,0 +1,35 @@
+{
+  "analysis_mode": "read-only-fixed-256-byte-shared-content-and-aligned-region-atlas",
+  "block_size": 256,
+  "classification": {
+    "record_decoder": "NOT_ESTABLISHED",
+    "shared_content": "INCLUDES_NONTRIVIAL_BINARY_CONTENT",
+    "shared_regions": "BOUNDED_ALIGNED_SHARED_REGIONS_CONFIRMED",
+    "single_monolithic_common_core": "NOT_ESTABLISHED"
+  },
+  "longest_consecutive_same_index_run_blocks": 19,
+  "longest_consecutive_same_index_run_bytes": 4864,
+  "operational_graph_version": "v51",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "same_index_identical_block_count": 30,
+  "same_index_identical_bytes": 7680,
+  "schema": "phoenix-mmi.lod-shared-regions/v1",
+  "session": "059",
+  "shared_all_unique_content_count": 34,
+  "shared_content_classes": {
+    "homogeneous": 1,
+    "low_entropy": 3,
+    "nontrivial": 30
+  },
+  "unique_source_count": 5
+}

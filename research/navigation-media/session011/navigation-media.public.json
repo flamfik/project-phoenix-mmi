@@ -1,0 +1,993 @@
+{
+  "aggregate": {
+    "container_generated_maximum_utc": "2017-08-16T01:05:01+00:00",
+    "container_generated_minimum_utc": "2003-03-13T08:55:54+00:00",
+    "fixed_media_marker_counts": {
+      "dbinfo-footer": 2,
+      "dbinfo-header": 2,
+      "fldb-magic": 16,
+      "model-audi-d3": 7,
+      "navcd": 9,
+      "release-family-ehe721": 7064,
+      "routeact-dat-lower": 0,
+      "routeact-dat-upper": 0
+    },
+    "internal_payload_bytes": 2567005806,
+    "internal_record_count": 3599,
+    "payload_head_maximum_timestamp": "2017-05-10T13:48:24",
+    "payload_head_minimum_timestamp": "2017-05-10T06:06:00",
+    "payload_head_timestamp_count": 6926,
+    "suffix_class_counts": {
+      "suffix-b": 33,
+      "suffix-gdb": 1,
+      "suffix-gp4": 1,
+      "suffix-gpa": 1,
+      "suffix-ort": 16,
+      "suffix-plz": 16,
+      "suffix-poi": 16,
+      "suffix-ras": 1,
+      "suffix-sm5": 8,
+      "suffix-tlt": 7,
+      "suffix-v": 32,
+      "suffix-xac": 3462,
+      "suffix-xah": 1,
+      "suffix-xb1c": 2,
+      "suffix-xb7": 2
+    },
+    "validated_fldb_container_count": 7
+  },
+  "analysis_mode": "read-only-static",
+  "artifact": {
+    "artifact_id": "nav-dvd-ee-2018-2019-001",
+    "hash_verified_against_register": true,
+    "local_filename_or_path_included": false,
+    "sha256": "d11a56b2ee46de0d05548b2d6e8bf3b3b10f8d89e15e117b2ab1bcb4569cb0e3",
+    "size_bytes": 2571048960
+  },
+  "classification": {
+    "compatibility_with_modified_or_new_maps": "NOT_ESTABLISHED",
+    "inner_payload_schema": "PARTIAL_SUFFIX_FAMILIES_ONLY",
+    "map_container_format": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE",
+    "marketed_release_label": "NOT_AUTHENTICATED_FROM_FILENAME",
+    "optical_filesystem": "CONFIRMED_ISO9660_WITH_JOLIET",
+    "provenance": "UNVERIFIED_PROVENANCE_ULTRAISO_AUTHORED_IMAGE",
+    "routeact_filename_bridge": "NOT_FOUND_UNDER_EXACT_ASCII_PROBE"
+  },
+  "containers": [
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 6.761071,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.06192
+          },
+          {
+            "entropy": 6.807417,
+            "length": 65536,
+            "offset": 29184,
+            "zero_fraction": 0.02803
+          },
+          {
+            "entropy": 6.779444,
+            "length": 65536,
+            "offset": 58368,
+            "zero_fraction": 0.027939
+          },
+          {
+            "entropy": 6.761729,
+            "length": 65536,
+            "offset": 87552,
+            "zero_fraction": 0.029053
+          },
+          {
+            "entropy": 6.710634,
+            "length": 65536,
+            "offset": 116736,
+            "zero_fraction": 0.053085
+          }
+        ],
+        "summary": {
+          "maximum": 6.807417,
+          "mean": 6.764059,
+          "minimum": 6.710634,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 25,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 0,
+        "dbinfo-header": 0,
+        "fldb-magic": 1,
+        "model-audi-d3": 0,
+        "navcd": 0,
+        "release-family-ehe721": 0,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 1,
+        "generated_epoch": 1047545754,
+        "generated_timestamp_utc": "2003-03-13T08:55:54+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 1
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 0,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 1
+      },
+      "member_id": "member-001",
+      "member_sha256": "92b6f7647c18ef6a3d056360c25b3eb48a42d76a1633759ead1bc14707df8c33",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 0,
+          "dbinfo-header": 0,
+          "model-audi-d3": 0,
+          "navcd": 0,
+          "release-family-ehe721": 0,
+          "skip-db-update": 0
+        },
+        "payload_head_maximum_timestamp": null,
+        "payload_head_minimum_timestamp": null,
+        "payload_head_timestamp_count": 0,
+        "payload_head_unique_timestamp_count": 0,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db",
+      "profile": {
+        "id": "gps-resource-single",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 1,
+        "directory_end": 580,
+        "directory_order_monotonic_by_offset": true,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 2048,
+        "first_payload_offset": 2048,
+        "in_bounds_payload_count": 1,
+        "internal_payload_bytes": 179200,
+        "maximum_inter_payload_gap": 0,
+        "minimum_inter_payload_gap": 0,
+        "normalized_sha256": "f392c39bdf1ab0d2f4421659f22f6811d23a212a42d9b12f89dc63d94e28cbe4",
+        "opaque_nonzero_field_count": 1,
+        "overlap_count": 0,
+        "padding_bytes": 2492,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-gp4": 1
+        },
+        "valid_name_field_count": 1
+      },
+      "size_bytes": 182272,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    },
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 6.036916,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.185364
+          },
+          {
+            "entropy": 6.016732,
+            "length": 65536,
+            "offset": 62976,
+            "zero_fraction": 0.190735
+          },
+          {
+            "entropy": 6.147493,
+            "length": 65536,
+            "offset": 125952,
+            "zero_fraction": 0.146347
+          },
+          {
+            "entropy": 6.207495,
+            "length": 65536,
+            "offset": 188928,
+            "zero_fraction": 0.145569
+          },
+          {
+            "entropy": 6.105127,
+            "length": 65536,
+            "offset": 251904,
+            "zero_fraction": 0.194656
+          }
+        ],
+        "summary": {
+          "maximum": 6.207495,
+          "mean": 6.102753,
+          "minimum": 6.016732,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 114,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 0,
+        "dbinfo-header": 0,
+        "fldb-magic": 1,
+        "model-audi-d3": 0,
+        "navcd": 0,
+        "release-family-ehe721": 0,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 1,
+        "generated_epoch": 1158922941,
+        "generated_timestamp_utc": "2006-09-22T11:02:21+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 4
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 0,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 1
+      },
+      "member_id": "member-002",
+      "member_sha256": "aa164beb0fdebfb892e545b1e63a7b0a201ebb3d17752e637c513c7e1cb02f01",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 0,
+          "dbinfo-header": 0,
+          "model-audi-d3": 0,
+          "navcd": 0,
+          "release-family-ehe721": 0,
+          "skip-db-update": 0
+        },
+        "payload_head_maximum_timestamp": null,
+        "payload_head_minimum_timestamp": null,
+        "payload_head_timestamp_count": 0,
+        "payload_head_unique_timestamp_count": 0,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db",
+      "profile": {
+        "id": "gps-resource-single",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 1,
+        "directory_end": 580,
+        "directory_order_monotonic_by_offset": true,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 2048,
+        "first_payload_offset": 2048,
+        "in_bounds_payload_count": 1,
+        "internal_payload_bytes": 313600,
+        "maximum_inter_payload_gap": 0,
+        "minimum_inter_payload_gap": 0,
+        "normalized_sha256": "050355e0c526d415edd05ec1c07095b94c556ad056cd763614f7aee6855b2003",
+        "opaque_nonzero_field_count": 1,
+        "overlap_count": 0,
+        "padding_bytes": 3260,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-gpa": 1
+        },
+        "valid_name_field_count": 1
+      },
+      "size_bytes": 317440,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    },
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 7.85896,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.039917
+          },
+          {
+            "entropy": 7.784366,
+            "length": 65536,
+            "offset": 885760,
+            "zero_fraction": 0.016434
+          },
+          {
+            "entropy": 7.731931,
+            "length": 65536,
+            "offset": 1771520,
+            "zero_fraction": 0.041809
+          },
+          {
+            "entropy": 7.922446,
+            "length": 65536,
+            "offset": 2657280,
+            "zero_fraction": 0.009277
+          },
+          {
+            "entropy": 7.806446,
+            "length": 65536,
+            "offset": 3543040,
+            "zero_fraction": 0.012238
+          }
+        ],
+        "summary": {
+          "maximum": 7.922446,
+          "mean": 7.82083,
+          "minimum": 7.731931,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 269,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 0,
+        "dbinfo-header": 0,
+        "fldb-magic": 1,
+        "model-audi-d3": 0,
+        "navcd": 0,
+        "release-family-ehe721": 21,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 7,
+        "generated_epoch": 1502845501,
+        "generated_timestamp_utc": "2017-08-16T01:05:01+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 1
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 0,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 3
+      },
+      "member_id": "member-003",
+      "member_sha256": "862e78747161bca5fd40078dd03dbe328934b54a68125e24a1a9e8153a46388e",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 0,
+          "dbinfo-header": 0,
+          "model-audi-d3": 0,
+          "navcd": 0,
+          "release-family-ehe721": 0,
+          "skip-db-update": 0
+        },
+        "payload_head_maximum_timestamp": null,
+        "payload_head_minimum_timestamp": null,
+        "payload_head_timestamp_count": 0,
+        "payload_head_unique_timestamp_count": 0,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db",
+      "profile": {
+        "id": "location-table-bundle",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 7,
+        "directory_end": 796,
+        "directory_order_monotonic_by_offset": true,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 2048,
+        "first_payload_offset": 2048,
+        "in_bounds_payload_count": 7,
+        "internal_payload_bytes": 3599528,
+        "maximum_inter_payload_gap": 2008,
+        "minimum_inter_payload_gap": 48,
+        "normalized_sha256": "34b9499bec4c16f461cb440518f4c1dfd6fb780f1ae5078f4c1d4f52f75a524e",
+        "opaque_nonzero_field_count": 7,
+        "overlap_count": 0,
+        "padding_bytes": 8252,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-tlt": 7
+        },
+        "valid_name_field_count": 7
+      },
+      "size_bytes": 3608576,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    },
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 5.335258,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.278732
+          },
+          {
+            "entropy": 7.689487,
+            "length": 65536,
+            "offset": 383551488,
+            "zero_fraction": 0.050232
+          },
+          {
+            "entropy": 7.422706,
+            "length": 65536,
+            "offset": 767102976,
+            "zero_fraction": 0.061096
+          },
+          {
+            "entropy": 7.52239,
+            "length": 65536,
+            "offset": 1150654464,
+            "zero_fraction": 0.027313
+          },
+          {
+            "entropy": 6.330482,
+            "length": 65536,
+            "offset": 1534205952,
+            "zero_fraction": 0.259018
+          }
+        ],
+        "summary": {
+          "maximum": 7.689487,
+          "mean": 6.860065,
+          "minimum": 5.335258,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 2031,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 1,
+        "dbinfo-header": 1,
+        "fldb-magic": 6,
+        "model-audi-d3": 0,
+        "navcd": 0,
+        "release-family-ehe721": 7041,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 3577,
+        "generated_epoch": 1494422827,
+        "generated_timestamp_utc": "2017-05-10T13:27:07+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 1
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 0,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 3
+      },
+      "member_id": "member-004",
+      "member_sha256": "cab4af61c902cc5b39652644d0cd231f9951477b445c502092b141e920cfd1ba",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 1,
+          "dbinfo-header": 1,
+          "model-audi-d3": 0,
+          "navcd": 0,
+          "release-family-ehe721": 1,
+          "skip-db-update": 1
+        },
+        "payload_head_maximum_timestamp": "2017-05-10T13:48:24",
+        "payload_head_minimum_timestamp": "2017-05-10T06:06:00",
+        "payload_head_timestamp_count": 6925,
+        "payload_head_unique_timestamp_count": 2582,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db-underscore",
+      "profile": {
+        "id": "map-component-bundle",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 3577,
+        "directory_end": 129316,
+        "directory_order_monotonic_by_offset": true,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 131072,
+        "first_payload_offset": 131072,
+        "in_bounds_payload_count": 3577,
+        "internal_payload_bytes": 1530458160,
+        "maximum_inter_payload_gap": 2044,
+        "minimum_inter_payload_gap": 0,
+        "normalized_sha256": "19e5bd4b4a0a0cf09ae1a3a43a5ef7daf0f2a54279c8f4661c8df6a260cbcee6",
+        "opaque_nonzero_field_count": 3577,
+        "overlap_count": 0,
+        "padding_bytes": 3684012,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-b": 33,
+          "suffix-ort": 16,
+          "suffix-plz": 16,
+          "suffix-poi": 16,
+          "suffix-ras": 1,
+          "suffix-v": 32,
+          "suffix-xac": 3462,
+          "suffix-xah": 1
+        },
+        "valid_name_field_count": 3577
+      },
+      "size_bytes": 1534271488,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    },
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 5.487578,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.294052
+          },
+          {
+            "entropy": 7.288868,
+            "length": 65536,
+            "offset": 254400000,
+            "zero_fraction": 0.067963
+          },
+          {
+            "entropy": 7.325007,
+            "length": 65536,
+            "offset": 508800000,
+            "zero_fraction": 0.072571
+          },
+          {
+            "entropy": 7.333993,
+            "length": 65536,
+            "offset": 763200000,
+            "zero_fraction": 0.06723
+          },
+          {
+            "entropy": 7.26341,
+            "length": 65536,
+            "offset": 1017600000,
+            "zero_fraction": 0.080963
+          }
+        ],
+        "summary": {
+          "maximum": 7.333993,
+          "mean": 6.939771,
+          "minimum": 5.487578,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 751187,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 0,
+        "dbinfo-header": 0,
+        "fldb-magic": 1,
+        "model-audi-d3": 0,
+        "navcd": 0,
+        "release-family-ehe721": 2,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 1,
+        "generated_epoch": 1495180090,
+        "generated_timestamp_utc": "2017-05-19T07:48:10+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 1
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 1,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 0
+      },
+      "member_id": "member-005",
+      "member_sha256": "3c13de38a964ccda046bc98a2cc46ebdf626bcedf26687247c663ee5c6bf17d6",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 0,
+          "dbinfo-header": 0,
+          "model-audi-d3": 0,
+          "navcd": 0,
+          "release-family-ehe721": 0,
+          "skip-db-update": 0
+        },
+        "payload_head_maximum_timestamp": "2017-05-10T13:48:24",
+        "payload_head_minimum_timestamp": "2017-05-10T13:48:24",
+        "payload_head_timestamp_count": 1,
+        "payload_head_unique_timestamp_count": 1,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db-underscore",
+      "profile": {
+        "id": "single-gdb-payload",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 1,
+        "directory_end": 580,
+        "directory_order_monotonic_by_offset": true,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 2048,
+        "first_payload_offset": 2048,
+        "in_bounds_payload_count": 1,
+        "internal_payload_bytes": 1017663210,
+        "maximum_inter_payload_gap": 0,
+        "minimum_inter_payload_gap": 0,
+        "normalized_sha256": "e61c52386cb29cfa825f31fc8fd269d7c782545e50ccab6b67a7edaad66c06bc",
+        "opaque_nonzero_field_count": 1,
+        "overlap_count": 0,
+        "padding_bytes": 1746,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-gdb": 1
+        },
+        "valid_name_field_count": 1
+      },
+      "size_bytes": 1017665536,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    },
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 7.655125,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.069092
+          },
+          {
+            "entropy": 7.885249,
+            "length": 65536,
+            "offset": 1497600,
+            "zero_fraction": 0.009781
+          },
+          {
+            "entropy": 7.845686,
+            "length": 65536,
+            "offset": 2995200,
+            "zero_fraction": 0.010483
+          },
+          {
+            "entropy": 7.858802,
+            "length": 65536,
+            "offset": 4492800,
+            "zero_fraction": 0.010696
+          },
+          {
+            "entropy": 7.83344,
+            "length": 65536,
+            "offset": 5990400,
+            "zero_fraction": 0.026749
+          }
+        ],
+        "summary": {
+          "maximum": 7.885249,
+          "mean": 7.81566,
+          "minimum": 7.655125,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 1248094,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 1,
+        "dbinfo-header": 1,
+        "fldb-magic": 5,
+        "model-audi-d3": 7,
+        "navcd": 1,
+        "release-family-ehe721": 0,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 4,
+        "generated_epoch": 1221645873,
+        "generated_timestamp_utc": "2008-09-17T10:04:33+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 1
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 0,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 3
+      },
+      "member_id": "member-006",
+      "member_sha256": "6f9bb8e89de56eff531203374c2a57c502f9d0eedc36e7027a114bbb117e45d9",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 1,
+          "dbinfo-header": 1,
+          "model-audi-d3": 1,
+          "navcd": 1,
+          "release-family-ehe721": 0,
+          "skip-db-update": 0
+        },
+        "payload_head_maximum_timestamp": null,
+        "payload_head_minimum_timestamp": null,
+        "payload_head_timestamp_count": 0,
+        "payload_head_unique_timestamp_count": 0,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db",
+      "profile": {
+        "id": "runtime-update-bundle",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 4,
+        "directory_end": 688,
+        "directory_order_monotonic_by_offset": true,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 2048,
+        "first_payload_offset": 2048,
+        "in_bounds_payload_count": 4,
+        "internal_payload_bytes": 6049188,
+        "maximum_inter_payload_gap": 1332,
+        "minimum_inter_payload_gap": 1020,
+        "normalized_sha256": "1edd1fe1ce339bdbc1a70d5b769640c96ff571a09f1756caa4d0fc3126121d47",
+        "opaque_nonzero_field_count": 4,
+        "overlap_count": 0,
+        "padding_bytes": 6060,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-xb1c": 2,
+          "suffix-xb7": 2
+        },
+        "valid_name_field_count": 4
+      },
+      "size_bytes": 6055936,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    },
+    {
+      "entropy_samples": {
+        "payload_bytes_included": false,
+        "samples": [
+          {
+            "entropy": 7.575737,
+            "length": 65536,
+            "offset": 0,
+            "zero_fraction": 0.041519
+          },
+          {
+            "entropy": 7.754333,
+            "length": 65536,
+            "offset": 2207744,
+            "zero_fraction": 0.01265
+          },
+          {
+            "entropy": 7.744132,
+            "length": 65536,
+            "offset": 4415488,
+            "zero_fraction": 0.014847
+          },
+          {
+            "entropy": 7.735337,
+            "length": 65536,
+            "offset": 6623232,
+            "zero_fraction": 0.012253
+          },
+          {
+            "entropy": 7.662405,
+            "length": 65536,
+            "offset": 8830976,
+            "zero_fraction": 0.022202
+          }
+        ],
+        "summary": {
+          "maximum": 7.754333,
+          "mean": 7.694389,
+          "minimum": 7.575737,
+          "sample_count": 5
+        },
+        "window_size": 65536
+      },
+      "extent_sector": 1251051,
+      "fixed_marker_counts": {
+        "dbinfo-footer": 0,
+        "dbinfo-header": 0,
+        "fldb-magic": 1,
+        "model-audi-d3": 0,
+        "navcd": 8,
+        "release-family-ehe721": 0,
+        "routeact-dat-lower": 0,
+        "routeact-dat-upper": 0
+      },
+      "header": {
+        "directory_offset": 544,
+        "entry_count": 8,
+        "generated_epoch": 1163411574,
+        "generated_timestamp_utc": "2006-11-13T09:52:54+00:00",
+        "generated_timestamp_valid": true,
+        "magic_id": "FLDB",
+        "record_size": 36,
+        "variant": 4
+      },
+      "integrity_field_probe": {
+        "adler32_match_count": 0,
+        "crc32_ieee_match_count": 0,
+        "maximum_payload_size": 33554432,
+        "raw_fields_or_payloads_included": false,
+        "selection": "first-middle-last-record",
+        "skipped_oversize_record_count": 0,
+        "status": "OPAQUE_FIELD_COMMON_CHECKSUMS_NOT_CONFIRMED",
+        "tested_record_count": 3
+      },
+      "member_id": "member-007",
+      "member_sha256": "d79ca54360e4382aa7854ec9c512027d114dcf94a7071da1a5d588353a1ab468",
+      "metadata": {
+        "fixed_marker_counts": {
+          "dbinfo-footer": 0,
+          "dbinfo-header": 0,
+          "model-audi-d3": 0,
+          "navcd": 0,
+          "release-family-ehe721": 0,
+          "skip-db-update": 0
+        },
+        "payload_head_maximum_timestamp": null,
+        "payload_head_minimum_timestamp": null,
+        "payload_head_timestamp_count": 0,
+        "payload_head_unique_timestamp_count": 0,
+        "raw_metadata_included": false
+      },
+      "outer_suffix_class": "db",
+      "profile": {
+        "id": "speech-resource-bundle",
+        "semantic_status": "PROBABLE_FROM_SUFFIX_FAMILY"
+      },
+      "record_table": {
+        "aligned_payload_offset_count": 8,
+        "directory_end": 832,
+        "directory_order_monotonic_by_offset": false,
+        "duplicate_casefolded_name_count": 0,
+        "expected_first_payload_offset": 2048,
+        "first_payload_offset": 2048,
+        "in_bounds_payload_count": 8,
+        "internal_payload_bytes": 8742920,
+        "maximum_inter_payload_gap": 144812,
+        "minimum_inter_payload_gap": 120,
+        "normalized_sha256": "73560445a4c47d7f22dd53b88c83580df18597d728f7f6766bf16e9499e114a1",
+        "opaque_nonzero_field_count": 8,
+        "overlap_count": 0,
+        "padding_bytes": 152760,
+        "raw_names_included": false,
+        "raw_opaque_fields_included": false,
+        "suffix_class_counts": {
+          "suffix-sm5": 8
+        },
+        "valid_name_field_count": 8
+      },
+      "size_bytes": 8896512,
+      "structural_status": "CONFIRMED_FLDB_HEADER_AND_FIXED_RECORD_TABLE"
+    }
+  ],
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "member_or_internal_names_included": false,
+    "raw_metadata_strings_included": false,
+    "raw_opaque_fields_included": false
+  },
+  "schema": "phoenix-mmi.navigation-media/v1",
+  "topology": {
+    "directory_count": 0,
+    "files_are_extent_contiguous": true,
+    "files_fill_declared_volume_to_end": true,
+    "first_file_extent_sector": 25,
+    "iso_overhead_and_sector_padding_bytes": 51200,
+    "last_file_end_sector": 1255395,
+    "outer_member_bytes": 2570997760,
+    "outer_suffix_class_counts": {
+      "db": 5,
+      "db-underscore": 2
+    },
+    "raw_member_names_included": false,
+    "root_file_count": 7
+  },
+  "volume": {
+    "application_identifier_marker": "ULTRAISO_AUTHORING_FAMILY",
+    "creation_time": {
+      "local": "2018-02-15T11:33:07+02:00",
+      "utc": "2018-02-15T09:33:07+00:00",
+      "utc_offset_minutes": 120
+    },
+    "descriptor_sequence_status": "CONFIRMED_PVD_SVD_TERMINATOR",
+    "descriptors": [
+      {
+        "identifier": "CD001",
+        "joliet_escape": null,
+        "sector": 16,
+        "type": 1,
+        "version": 1
+      },
+      {
+        "identifier": "CD001",
+        "joliet_escape": "%/E",
+        "sector": 17,
+        "type": 2,
+        "version": 1
+      },
+      {
+        "identifier": "CD001",
+        "joliet_escape": null,
+        "sector": 18,
+        "type": 255,
+        "version": 1
+      }
+    ],
+    "file_structure_version": 1,
+    "joliet_status": "CONFIRMED_LEVEL_3_ESCAPE",
+    "logical_block_size": 2048,
+    "modification_time": {
+      "local": "2018-02-15T11:33:07+02:00",
+      "utc": "2018-02-15T09:33:07+00:00",
+      "utc_offset_minutes": 120
+    },
+    "path_table_size": 10,
+    "raw_identifiers_included": false,
+    "system_identifier_sha256": "dd8c0af09bbb083932c6e991a6f66bb1c861b16f67bbb2856ce79f558ddd5613",
+    "udf_status": "NOT_DETECTED_IN_SECTORS_16_255",
+    "volume_identifier": {
+      "parsed_local_timestamp": "2018-02-15T11:29:01",
+      "pattern": "YYYYMMDD_HHMMSS",
+      "raw_identifier_included": false,
+      "sha256": "33857f4572dce0f1b0d47818efeae5f20de33ec7164202f5b8b3696c528634fb"
+    },
+    "volume_recognition_marker_counts": {
+      "cd001": 3
+    },
+    "volume_space_blocks": 1255395,
+    "volume_space_bytes": 2571048960,
+    "volume_space_matches_artifact_size": true
+  }
+}

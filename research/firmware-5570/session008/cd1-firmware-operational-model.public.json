@@ -1,0 +1,312 @@
+{
+  "analysis_mode": "read-only-static",
+  "artifact": {
+    "filename": "H2_HI_EU.BIN",
+    "label": "CD1 K942 / MMI 5150",
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "size_bytes": 12954188,
+    "source_iso_filename": "MMI-5570-4L0.998.961-cd1-3.iso",
+    "source_iso_sha256": "1948443c6fb94433f7985ed6a4677006ec3bcde6d789f8a5915ba6f6f2dca03f",
+    "source_member_path": "MMI_HI/MMI/42/DEFAULT/H2_HI_EU.BIN"
+  },
+  "classification": {
+    "semantic_confirmation": false,
+    "semantic_status": "PROBABLE_1BPP_GLYPH_ATLAS",
+    "structural_status": "CONFIRMED_RELOCATED_SPARSE_ROW_BITMAP_REGION"
+  },
+  "control_scans": [
+    {
+      "name": "image-start-control",
+      "scan": {
+        "candidate_window_count": 0,
+        "candidate_window_ratio": 0.0,
+        "complete_window_count": 1113,
+        "end": 71245,
+        "length": 71245,
+        "mean_set_bit_density": 0.374761,
+        "mean_zero_byte_ratio": 0.088401,
+        "offset": 0,
+        "raw_bytes_included": false,
+        "window_size": 64
+      }
+    },
+    {
+      "name": "immediately-preceding-control",
+      "scan": {
+        "candidate_window_count": 40,
+        "candidate_window_ratio": 0.035939,
+        "complete_window_count": 1113,
+        "end": 697564,
+        "length": 71245,
+        "mean_set_bit_density": 0.388663,
+        "mean_zero_byte_ratio": 0.071723,
+        "offset": 626319,
+        "raw_bytes_included": false,
+        "window_size": 64
+      }
+    },
+    {
+      "name": "image-midpoint-control",
+      "scan": {
+        "candidate_window_count": 0,
+        "candidate_window_ratio": 0.0,
+        "complete_window_count": 1113,
+        "end": 6512717,
+        "length": 71245,
+        "mean_set_bit_density": 0.377283,
+        "mean_zero_byte_ratio": 0.087896,
+        "offset": 6441472,
+        "raw_bytes_included": false,
+        "window_size": 64
+      }
+    }
+  ],
+  "descriptor_target_windows": [
+    {
+      "field_relative_offset": 0,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 6,
+        "nonzero_row_run_height_histogram": {
+          "2": 1,
+          "5": 3,
+          "7": 2
+        },
+        "nonzero_row_run_height_median": 5.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.119141,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.515625
+      },
+      "target_delta_from_block": 256
+    },
+    {
+      "field_relative_offset": 12,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 6,
+        "nonzero_row_run_height_histogram": {
+          "3": 1,
+          "6": 1,
+          "9": 4
+        },
+        "nonzero_row_run_height_median": 9.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.183594,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.296875
+      },
+      "target_delta_from_block": 3616
+    },
+    {
+      "field_relative_offset": 16,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 5,
+        "nonzero_row_run_height_histogram": {
+          "7": 1,
+          "9": 4
+        },
+        "nonzero_row_run_height_median": 9.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.144531,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.328125
+      },
+      "target_delta_from_block": 3648
+    },
+    {
+      "field_relative_offset": 28,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 6,
+        "nonzero_row_run_height_histogram": {
+          "1": 1,
+          "4": 1,
+          "6": 3,
+          "9": 1
+        },
+        "nonzero_row_run_height_median": 6.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.134766,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.5
+      },
+      "target_delta_from_block": 3968
+    },
+    {
+      "field_relative_offset": 32,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 5,
+        "nonzero_row_run_height_histogram": {
+          "6": 3,
+          "8": 1,
+          "9": 1
+        },
+        "nonzero_row_run_height_median": 6.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.146484,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.453125
+      },
+      "target_delta_from_block": 3972
+    },
+    {
+      "field_relative_offset": 44,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 5,
+        "nonzero_row_run_height_histogram": {
+          "6": 4,
+          "8": 1
+        },
+        "nonzero_row_run_height_median": 6.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.128906,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.5
+      },
+      "target_delta_from_block": 4100
+    },
+    {
+      "field_relative_offset": 48,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 5,
+        "nonzero_row_run_height_histogram": {
+          "6": 3,
+          "8": 1,
+          "9": 1
+        },
+        "nonzero_row_run_height_median": 6.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.126953,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.453125
+      },
+      "target_delta_from_block": 4112
+    },
+    {
+      "field_relative_offset": 60,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 6,
+        "nonzero_row_run_height_histogram": {
+          "10": 1,
+          "11": 1,
+          "2": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1
+        },
+        "nonzero_row_run_height_median": 7.5,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.113281,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.3125
+      },
+      "target_delta_from_block": 4136
+    },
+    {
+      "field_relative_offset": 64,
+      "inside_equal_region": true,
+      "metrics": {
+        "aligned_runtime_pointer_count": 0,
+        "flow_control_halfword_count": 0,
+        "length": 64,
+        "nonzero_row_run_count": 6,
+        "nonzero_row_run_height_histogram": {
+          "1": 1,
+          "18": 1,
+          "3": 1,
+          "7": 1,
+          "9": 2
+        },
+        "nonzero_row_run_height_median": 8.0,
+        "raw_bytes_included": false,
+        "set_bit_density": 0.183594,
+        "sparse_row_bitmap_candidate": true,
+        "zero_byte_ratio": 0.265625
+      },
+      "target_delta_from_block": 5032
+    }
+  ],
+  "equal_region": {
+    "end": 768809,
+    "length": 71245,
+    "offset": 697564,
+    "sha256": "bb3dc59de9d12e402708eccf169fe236294708298d371aedb67815ecfd0a10ce"
+  },
+  "prior_evidence": {
+    "browser_resource_count": 12,
+    "checksum_chunk_count": 25,
+    "runtime_base": 201326592,
+    "runtime_model_status": "CONFIRMED_BOUNDED_STATIC_MODEL",
+    "source_to_atlas_edge_count": 2,
+    "startup_architecture": "SuperH SH-3 big-endian",
+    "startup_pattern_confirmed": true
+  },
+  "publication_safety": {
+    "firmware_bytes_included": false,
+    "raw_pointer_runs_included": false,
+    "raw_strings_included": false,
+    "rendered_glyphs_included": false
+  },
+  "record_block_metrics": {
+    "aligned_runtime_pointer_count": 0,
+    "flow_control_halfword_count": 0,
+    "length": 256,
+    "nonzero_row_run_count": 23,
+    "nonzero_row_run_height_histogram": {
+      "1": 1,
+      "2": 1,
+      "6": 1,
+      "7": 17,
+      "8": 1,
+      "9": 2
+    },
+    "nonzero_row_run_height_median": 7.0,
+    "raw_bytes_included": false,
+    "set_bit_density": 0.146973,
+    "sparse_row_bitmap_candidate": true,
+    "zero_byte_ratio": 0.398438
+  },
+  "schema": "phoenix-mmi.firmware-operational-model/v1",
+  "sparse_row_scan": {
+    "candidate_window_count": 793,
+    "candidate_window_ratio": 0.712489,
+    "complete_window_count": 1113,
+    "end": 768809,
+    "length": 71245,
+    "mean_set_bit_density": 0.175801,
+    "mean_zero_byte_ratio": 0.475741,
+    "offset": 697564,
+    "raw_bytes_included": false,
+    "window_size": 64
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "analysis_mode": "read-only-static-bounded-interprocedural",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "edge_count": 20,
+    "node_count": 35,
+    "optical_buffer_owner": "OPEN",
+    "sector_read_abi": "OPEN"
+  },
+  "edges": [
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "ENTRY_ARGUMENT",
+        "r6": "ENTRY_ARGUMENT",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 1777700,
+      "callee_file_offset": 2188904,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "NO_DEFINITION",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1777710,
+      "callee_file_offset": 2188964,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {},
+      "result_dereferenced": true,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CONSTANT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1777754,
+      "callee_file_offset": 2188904,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {
+        "r5": 3
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CONSTANT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1777764,
+      "callee_file_offset": 2188964,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {
+        "r5": 0
+      },
+      "result_dereferenced": true,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CONSTANT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1777804,
+      "callee_file_offset": 2188696,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {
+        "r5": 2
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CONSTANT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1777812,
+      "callee_file_offset": 2188696,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {
+        "r5": 2
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "NO_DEFINITION",
+        "r5": "NO_DEFINITION",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1777820,
+      "callee_file_offset": 2184800,
+      "caller_file_offset": 1777692,
+      "depth": 0,
+      "domain": "navigation",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "MEMORY_DEREFERENCE",
+        "r5": "ENTRY_ARGUMENT",
+        "r6": "ENTRY_ARGUMENT",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 468328,
+      "callee_file_offset": 492576,
+      "caller_file_offset": 468300,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "NO_DEFINITION",
+        "r5": "CONSTANT",
+        "r6": "NO_DEFINITION",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 468342,
+      "callee_file_offset": 473500,
+      "caller_file_offset": 468300,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {
+        "r5": 0
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CONSTANT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 468352,
+      "callee_file_offset": 490908,
+      "caller_file_offset": 468300,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {
+        "r5": 0
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "MEMORY_DEREFERENCE",
+        "r5": "ENTRY_ARGUMENT",
+        "r6": "ENTRY_ARGUMENT",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 1011564,
+      "callee_file_offset": 1146276,
+      "caller_file_offset": 1011516,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "UNSUPPORTED_WRITE",
+        "r5": "CALLER_SAVED_CLOBBER",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 1252652,
+      "callee_file_offset": 2116484,
+      "caller_file_offset": 1252612,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "UNSUPPORTED_WRITE",
+        "r5": "ENTRY_ARGUMENT",
+        "r6": "ENTRY_ARGUMENT",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 2110024,
+      "callee_file_offset": 2111128,
+      "caller_file_offset": 2109992,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "UNSUPPORTED_WRITE",
+        "r5": "CONSTANT",
+        "r6": "ENTRY_ARGUMENT",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 2216398,
+      "callee_file_offset": 2144384,
+      "caller_file_offset": 2216364,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {
+        "r5": 1
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "ENTRY_ARGUMENT",
+        "r5": "ENTRY_ARGUMENT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 2216416,
+      "callee_file_offset": 2240520,
+      "caller_file_offset": 2216364,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "UNSUPPORTED_WRITE",
+        "r5": "MEMORY_DEREFERENCE",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 2216468,
+      "callee_file_offset": 2247328,
+      "caller_file_offset": 2216364,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "UNSUPPORTED_WRITE",
+        "r5": "MEMORY_DEREFERENCE",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 2216958,
+      "callee_file_offset": 2247328,
+      "caller_file_offset": 2216868,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": true,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "ENTRY_ARGUMENT",
+        "r5": "UNSUPPORTED_WRITE",
+        "r6": "ENTRY_ARGUMENT",
+        "r7": "ENTRY_ARGUMENT"
+      },
+      "call_site_offset": 2242692,
+      "callee_file_offset": 2248792,
+      "caller_file_offset": 2242640,
+      "depth": 0,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CONSTANT",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 2248848,
+      "callee_file_offset": 2255296,
+      "caller_file_offset": 2248792,
+      "depth": 1,
+      "domain": "optical",
+      "paired_argument_constants": {
+        "r5": 2
+      },
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    },
+    {
+      "argument_role_classes": {
+        "r4": "DERIVED_POINTER_OR_VALUE",
+        "r5": "CALLER_SAVED_CLOBBER",
+        "r6": "CALLER_SAVED_CLOBBER",
+        "r7": "CALLER_SAVED_CLOBBER"
+      },
+      "call_site_offset": 2248862,
+      "callee_file_offset": 574364,
+      "caller_file_offset": 2248792,
+      "depth": 1,
+      "domain": "optical",
+      "paired_argument_constants": {},
+      "result_dereferenced": false,
+      "result_forwarded": false,
+      "sector_size_2048_argument": false,
+      "status": "CONFIRMED_PAIRED_RESOLVED_STATIC_CALL"
+    }
+  ],
+  "nodes": [
+    {
+      "call_count": 9,
+      "depth": 0,
+      "domain": "navigation",
+      "entry_file_offset": 1777692,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 2
+    },
+    {
+      "call_count": 7,
+      "depth": 0,
+      "domain": "navigation",
+      "entry_file_offset": 1777736,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 2
+    },
+    {
+      "call_count": 2,
+      "depth": 1,
+      "domain": "navigation",
+      "entry_file_offset": 2184800,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.958333,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 1,
+      "domain": "navigation",
+      "entry_file_offset": 2188696,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 52672,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.833333,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 467992,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.83871,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 3,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 468300,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 15,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 964908,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.911565,
+      "unresolved_indirect_call_count": 1
+    },
+    {
+      "call_count": 4,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 1011516,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.988764,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 1139392,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.944444,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 19,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 1252028,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.932292,
+      "unresolved_indirect_call_count": 2
+    },
+    {
+      "call_count": 4,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 1252612,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.813953,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 1253052,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.923077,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2109992,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2110020,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 9,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2115964,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.767123,
+      "unresolved_indirect_call_count": 1
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2129640,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 4,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2136812,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.9375,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 10,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2216328,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.891473,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 8,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2216364,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.918919,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 7,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2216400,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.903226,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 5,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2216868,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.931507,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 10,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2217128,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.949495,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 6,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2217200,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.936508,
+      "unresolved_indirect_call_count": 2
+    },
+    {
+      "call_count": 4,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2217236,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.933333,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 3,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2217272,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 3,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2217592,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.926829,
+      "unresolved_indirect_call_count": 1
+    },
+    {
+      "call_count": 15,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2217824,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.91411,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 0,
+      "domain": "optical",
+      "entry_file_offset": 2242640,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.875,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 1,
+      "domain": "optical",
+      "entry_file_offset": 2116484,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 1,
+      "domain": "optical",
+      "entry_file_offset": 492576,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 1,
+      "depth": 1,
+      "domain": "optical",
+      "entry_file_offset": 2111128,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.823529,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 2,
+      "depth": 1,
+      "domain": "optical",
+      "entry_file_offset": 2240520,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.9375,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 5,
+      "depth": 1,
+      "domain": "optical",
+      "entry_file_offset": 2247328,
+      "function_boundary_asserted": false,
+      "known_ratio": 1.0,
+      "unresolved_indirect_call_count": 0
+    },
+    {
+      "call_count": 3,
+      "depth": 1,
+      "domain": "optical",
+      "entry_file_offset": 2248792,
+      "function_boundary_asserted": false,
+      "known_ratio": 0.877551,
+      "unresolved_indirect_call_count": 1
+    }
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.optical-callgraph-disc/v1"
+}

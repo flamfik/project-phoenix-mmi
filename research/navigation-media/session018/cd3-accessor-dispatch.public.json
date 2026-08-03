@@ -1,0 +1,44 @@
+{
+  "analysis_mode": "read-only-static-bounded-accessor-call-family",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "accepted_optical_graph_edge": "NOT_FOUND_UNDER_REGISTERED_NODE_MODEL",
+    "cross_version_call_family": "CONFIRMED_BOUNDED_TARGET_CONVERGENCE",
+    "direct_callback_registration": "NOT_FOUND_UNDER_DIRECT_TARGET_WORD_MODEL",
+    "optical_buffer_owner": "OPEN",
+    "sector_read_abi": "OPEN"
+  },
+  "paired_accessor_profile": {
+    "adjacent_literal_jsr_count": 288,
+    "aligned_word_occurrence_count": 288,
+    "all_aligned_occurrences_are_pc_relative_literals": true,
+    "data_only_aligned_occurrence_count": 0,
+    "direct_callback_record_semantics_asserted": false,
+    "exact_word_occurrence_count": 288,
+    "image_size": 12690344,
+    "literal_pool_occurrence_used_by_adjacent_jsr_count": 288,
+    "pc_relative_load_reference_count": 290,
+    "target_file_offset": 2184992
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "raw_literal_jsr_candidate_count": 106093,
+  "registered_graph_intersection": {
+    "bilateral_call_in_same_paired_node_count": 0,
+    "bilateral_domain_counts": {},
+    "callback_registration_semantics_asserted": false,
+    "navigation_to_optical_edge": "NOT_FOUND",
+    "registered_node_pair_count": 35,
+    "right_accessor_call_in_registered_node_count": 0
+  },
+  "schema": "phoenix-mmi.accessor-call-family-disc/v1"
+}

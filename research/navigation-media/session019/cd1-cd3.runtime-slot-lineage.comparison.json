@@ -1,0 +1,1181 @@
+{
+  "analysis_mode": "read-only-static-bounded-runtime-slot-lineage",
+  "classification": {
+    "active_zero_tail_slots": "CONFIRMED_THREE_LITERAL_BACKED_CALL_TARGETS",
+    "actual_fldb_parser": "OPEN",
+    "direct_static_writer": "NOT_FOUND_UNDER_BOUNDED_PC_RELATIVE_ADDRESS_MODEL",
+    "exact_relocation_record": "NOT_FOUND_UNDER_EXACT_32_BYTE_PAIR_MODEL",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "runtime_patch_overlay_or_linkage_mechanism": "HYPOTHESIS_STRENGTHENED_BY_SHADOW_LAYOUT",
+    "sector_read_abi": "OPEN",
+    "slot_to_direct_member_mapping": {
+      "candidate": 1,
+      "confirmed": 1,
+      "probable": 1
+    },
+    "source_pointer_roles": "OPEN",
+    "specific_session017_producer_edge": "OPEN",
+    "specific_writer_or_loader_chain": "OPEN",
+    "translated_static_body_identity": "CONFIRMED_THREE_BYTE_IDENTICAL_MEMBERS"
+  },
+  "direct_writer_search": {
+    "candidate_count": 0,
+    "candidates": [],
+    "forward_instruction_limit": 64,
+    "gbr_addressing_modeled": false,
+    "helper_mediated_copy_modeled": false,
+    "linear_path_only": true,
+    "memory_loaded_base_modeled": false,
+    "models": [
+      "PC_RELATIVE_RUNTIME_BASE",
+      "PC_RELATIVE_METAINFO_FLASH_BASE",
+      "PC_RELATIVE_RAW_FILE_OFFSET",
+      "MOVA_FILE_RELATIVE"
+    ],
+    "path_dominance_asserted": false,
+    "seed_address_model_counts": {
+      "flash": 6152,
+      "mova": 3925,
+      "raw": 10540,
+      "runtime": 215247
+    },
+    "seed_count": 235864
+  },
+  "encoded_address_census": {
+    "targets": [
+      {
+        "label": "run_start",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860476
+      },
+      {
+        "label": "run_end",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860556
+      },
+      {
+        "label": "record_0_start",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860476
+      },
+      {
+        "label": "record_0_tail_0",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860480
+      },
+      {
+        "label": "record_0_tail_1",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860484
+      },
+      {
+        "label": "record_0_tail_2",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860488
+      },
+      {
+        "label": "record_1_start",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860492
+      },
+      {
+        "label": "record_1_tail_0",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860496
+      },
+      {
+        "label": "record_1_tail_1",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 286,
+            "occurrence_count": 286
+          }
+        },
+        "target_file_offset": 1860500
+      },
+      {
+        "label": "record_1_tail_2",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 1,
+            "occurrence_count": 1
+          },
+          "raw": {
+            "aligned_occurrence_count": 1,
+            "occurrence_count": 3
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860504
+      },
+      {
+        "label": "record_2_start",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860508
+      },
+      {
+        "label": "record_2_tail_0",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 302,
+            "occurrence_count": 302
+          }
+        },
+        "target_file_offset": 1860512
+      },
+      {
+        "label": "record_2_tail_1",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860516
+      },
+      {
+        "label": "record_2_tail_2",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860520
+      },
+      {
+        "label": "record_3_start",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860524
+      },
+      {
+        "label": "record_3_tail_0",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860528
+      },
+      {
+        "label": "record_3_tail_1",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860532
+      },
+      {
+        "label": "record_3_tail_2",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860536
+      },
+      {
+        "label": "record_4_start",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860540
+      },
+      {
+        "label": "record_4_tail_0",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860544
+      },
+      {
+        "label": "record_4_tail_1",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 209,
+            "occurrence_count": 209
+          }
+        },
+        "target_file_offset": 1860548
+      },
+      {
+        "label": "record_4_tail_2",
+        "models": {
+          "metainfo_flash": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "raw": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          },
+          "runtime": {
+            "aligned_occurrence_count": 0,
+            "occurrence_count": 0
+          }
+        },
+        "target_file_offset": 1860552
+      }
+    ],
+    "targets_with_occurrences_by_model": {
+      "metainfo_flash": 1,
+      "raw": 1,
+      "runtime": 3
+    },
+    "tested_target_count": 22,
+    "total_occurrences_by_model": {
+      "metainfo_flash": 1,
+      "raw": 3,
+      "runtime": 797
+    }
+  },
+  "exact_source_destination_pair_search": {
+    "candidate_count": 0,
+    "candidates": [],
+    "maximum_word_distance_bytes": 32,
+    "record_semantics_asserted": false
+  },
+  "interpretation": "Three zero-filled CD1 tail words are literal-backed call targets. Their contexts select three compact CD3 direct entries, and byte-identical bodies remain at the same translated relative offsets in CD1 with no direct call references. This confirms a shadow-dispatch layout and makes a runtime patch, overlay or linkage mechanism more plausible. The bounded direct-writer and exact relocation-pair models found no initializer, so no specific runtime mechanism is asserted.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "direct_writer_forward_instruction_limit": 64,
+    "exact_relocation_pair_distance": 32,
+    "fixed_context_gate_reused_from_session018": true,
+    "function_boundary_asserted": false,
+    "runtime_execution_observed": false,
+    "session018_unique_run_only": true,
+    "tail_word_width": 4
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "record_run": {
+    "all_pointer_fields_resolve_in_image": true,
+    "candidate_run_count": 1,
+    "pointer_target_delta_vector": [
+      -576,
+      -576,
+      -576,
+      -576
+    ],
+    "pointer_width": 4,
+    "record_count": 5,
+    "record_width": 16,
+    "run_end_file_offset": 1860556,
+    "run_start_file_offset": 1860476,
+    "runtime_patch_or_trampoline_semantics": "HYPOTHESIS",
+    "source_profiles": [
+      {
+        "bounded_code_gate_passed": true,
+        "call_count": 6,
+        "instruction_count": 108,
+        "known_ratio": 0.888889,
+        "normalized_shape_sha256": "115798cf11893853939aad838c75735bfb190bdbc25bbf026491e491d448a758",
+        "record_ordinal": 0,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 1,
+          "aligned_word_occurrence_count": 2,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 1,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 2,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 1,
+          "pc_relative_load_reference_count": 1,
+          "target_file_offset": 1868192
+        },
+        "return_count": 1,
+        "target_file_offset": 1868192,
+        "writer_role_asserted": false
+      },
+      {
+        "bounded_code_gate_passed": true,
+        "call_count": 7,
+        "instruction_count": 71,
+        "known_ratio": 0.957746,
+        "normalized_shape_sha256": "d6d30e1b5abda5a1795e527b9db475e0fe76d652ea33b41db455e4d6766d79a5",
+        "record_ordinal": 1,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 1,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 1,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 1,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1867616
+        },
+        "return_count": 1,
+        "target_file_offset": 1867616,
+        "writer_role_asserted": false
+      },
+      {
+        "bounded_code_gate_passed": false,
+        "call_count": 1,
+        "instruction_count": 6,
+        "known_ratio": 1.0,
+        "normalized_shape_sha256": "b473fa4dbbf98dde72e821e3eb772e9662f22e772f52f28131f5e0cf0f221622",
+        "record_ordinal": 2,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 1,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 1,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 1,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1867040
+        },
+        "return_count": 1,
+        "target_file_offset": 1867040,
+        "writer_role_asserted": false
+      },
+      {
+        "bounded_code_gate_passed": true,
+        "call_count": 3,
+        "instruction_count": 26,
+        "known_ratio": 1.0,
+        "normalized_shape_sha256": "a6a9d4ef7185f8a079a00232d29e31c1ff921a67bbba05ac7a3248180efdf1e0",
+        "record_ordinal": 3,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 1,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 1,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 1,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1866464
+        },
+        "return_count": 1,
+        "target_file_offset": 1866464,
+        "writer_role_asserted": false
+      },
+      {
+        "bounded_code_gate_passed": false,
+        "call_count": 0,
+        "instruction_count": 11,
+        "known_ratio": 0.909091,
+        "normalized_shape_sha256": "ecc7fbe029d9bcf14342ef3d6005577af7008e47043967797f770c68b5dc25c9",
+        "record_ordinal": 4,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 1,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 1,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 1,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1865888
+        },
+        "return_count": 1,
+        "target_file_offset": 1865888,
+        "writer_role_asserted": false
+      }
+    ],
+    "source_target_delta_vector": [
+      -576,
+      -576,
+      -576,
+      -576
+    ],
+    "source_targets": [
+      1868192,
+      1867616,
+      1867040,
+      1866464,
+      1865888
+    ],
+    "target_offset_within_record": 8,
+    "target_record_ordinal": 1,
+    "writer_role_asserted_for_pointer_fields": false,
+    "zero_bytes_from_target_to_record_end": 8,
+    "zero_tail_width": 12
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.runtime-slot-lineage-comparison/v1",
+  "shadow_accessor_cluster": {
+    "active_members": [
+      {
+        "active_adjacent_call_slot": true,
+        "body_instruction_count": 8,
+        "body_sha256": "fa45b1f0f79424a04b66db1ce52700303858b4749d73cd049d09975973974c20",
+        "body_width_bytes": 16,
+        "branch_stub_feasibility": {
+          "available_bytes_to_record_end": 8,
+          "branch_and_delay_slot_footprint_bytes": 4,
+          "footprint_fits": true,
+          "instruction_encoding_observed_on_disk": false,
+          "pc_relative_displacement_bytes": -372,
+          "pc_relative_displacement_words": -186,
+          "runtime_branch_stub_asserted": false,
+          "signed_12_bit_branch_range_satisfied": true,
+          "target_delta_from_slot": -368
+        },
+        "bytes_to_record_end": 8,
+        "classification": "CONFIRMED_BOUNDED_SLOT_TO_DIRECT_MEMBER",
+        "exact_body_at_translated_left_target": true,
+        "exact_body_occurrence_count_in_left": 12,
+        "forward_mapping": {
+          "ambiguous_right_context_match_count": 101,
+          "dominant_right_target_consensus_count": 264,
+          "dominant_right_target_consensus_coverage": 0.923077,
+          "dominant_right_target_file_offset": 2184992,
+          "left_adjacent_call_count": 286,
+          "runtime_equivalence_asserted": false,
+          "single_target_consensus_context_count": 264,
+          "unique_right_context_match_count": 178,
+          "unmatched_left_context_count": 7
+        },
+        "left_relative_to_anchor": 0,
+        "record_ordinal": 1,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 286,
+          "aligned_word_occurrence_count": 286,
+          "all_aligned_occurrences_are_pc_relative_literals": true,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 286,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 286,
+          "pc_relative_load_reference_count": 287,
+          "target_file_offset": 1860500
+        },
+        "reverse_mapping": {
+          "ambiguous_left_context_match_count": 101,
+          "cross_version_call_family_promoted": true,
+          "dominant_left_target_consensus_count": 266,
+          "dominant_left_target_consensus_coverage": 0.923611,
+          "dominant_left_target_file_offset": 1860500,
+          "minimum_consensus_coverage": 0.9,
+          "minimum_unique_context_matches": 32,
+          "multi_target_ambiguous_context_count": 14,
+          "normalized_context_after_word_count": 6,
+          "normalized_context_before_word_count": 8,
+          "normalized_context_total_word_count": 16,
+          "right_known_accessor_call_count": 288,
+          "runtime_equivalence_asserted": false,
+          "single_target_consensus_context_count": 266,
+          "unique_left_context_match_count": 179,
+          "unmatched_right_context_count": 8
+        },
+        "right_direct_target_file_offset": 2184992,
+        "right_relative_to_anchor": 0,
+        "slot_file_offset": 1860500,
+        "tail_word_ordinal": 1,
+        "translated_left_static_reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860132
+        },
+        "translated_left_static_target_file_offset": 1860132
+      },
+      {
+        "active_adjacent_call_slot": true,
+        "body_instruction_count": 11,
+        "body_sha256": "30849a6ff603349dfc1472554e830dc2b115f325434f3635754ced7d7e0fa05a",
+        "body_width_bytes": 22,
+        "branch_stub_feasibility": {
+          "available_bytes_to_record_end": 12,
+          "branch_and_delay_slot_footprint_bytes": 4,
+          "footprint_fits": true,
+          "instruction_encoding_observed_on_disk": false,
+          "pc_relative_displacement_bytes": -364,
+          "pc_relative_displacement_words": -182,
+          "runtime_branch_stub_asserted": false,
+          "signed_12_bit_branch_range_satisfied": true,
+          "target_delta_from_slot": -360
+        },
+        "bytes_to_record_end": 12,
+        "classification": "CANDIDATE_STRUCTURAL_SHADOW_MEMBER",
+        "exact_body_at_translated_left_target": true,
+        "exact_body_occurrence_count_in_left": 3,
+        "forward_mapping": {
+          "ambiguous_right_context_match_count": 113,
+          "dominant_right_target_consensus_count": 9,
+          "dominant_right_target_consensus_coverage": 0.031469,
+          "dominant_right_target_file_offset": 2185012,
+          "left_adjacent_call_count": 286,
+          "runtime_equivalence_asserted": false,
+          "single_target_consensus_context_count": 9,
+          "unique_right_context_match_count": 9,
+          "unmatched_left_context_count": 164
+        },
+        "left_relative_to_anchor": 20,
+        "record_ordinal": 2,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 286,
+          "aligned_word_occurrence_count": 302,
+          "all_aligned_occurrences_are_pc_relative_literals": true,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 302,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 286,
+          "pc_relative_load_reference_count": 303,
+          "target_file_offset": 1860512
+        },
+        "reverse_mapping": {
+          "ambiguous_left_context_match_count": 116,
+          "cross_version_call_family_promoted": false,
+          "dominant_left_target_consensus_count": 8,
+          "dominant_left_target_consensus_coverage": 0.02623,
+          "dominant_left_target_file_offset": 1860512,
+          "minimum_consensus_coverage": 0.9,
+          "minimum_unique_context_matches": 32,
+          "multi_target_ambiguous_context_count": 115,
+          "normalized_context_after_word_count": 6,
+          "normalized_context_before_word_count": 8,
+          "normalized_context_total_word_count": 16,
+          "right_known_accessor_call_count": 305,
+          "runtime_equivalence_asserted": false,
+          "single_target_consensus_context_count": 8,
+          "unique_left_context_match_count": 7,
+          "unmatched_right_context_count": 182
+        },
+        "right_direct_target_file_offset": 2185012,
+        "right_relative_to_anchor": 20,
+        "slot_file_offset": 1860512,
+        "tail_word_ordinal": 0,
+        "translated_left_static_reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860152
+        },
+        "translated_left_static_target_file_offset": 1860152
+      },
+      {
+        "active_adjacent_call_slot": true,
+        "body_instruction_count": 20,
+        "body_sha256": "934d2c4ba83af210f220ab7ee0492bcbb7baefff1898ad161a8b2eb6ff82e0ec",
+        "body_width_bytes": 40,
+        "branch_stub_feasibility": {
+          "available_bytes_to_record_end": 8,
+          "branch_and_delay_slot_footprint_bytes": 4,
+          "footprint_fits": true,
+          "instruction_encoding_observed_on_disk": false,
+          "pc_relative_displacement_bytes": -356,
+          "pc_relative_displacement_words": -178,
+          "runtime_branch_stub_asserted": false,
+          "signed_12_bit_branch_range_satisfied": true,
+          "target_delta_from_slot": -352
+        },
+        "bytes_to_record_end": 8,
+        "classification": "PROBABLE_HIGH_CONSENSUS_SHADOW_MEMBER",
+        "exact_body_at_translated_left_target": true,
+        "exact_body_occurrence_count_in_left": 12,
+        "forward_mapping": {
+          "ambiguous_right_context_match_count": 266,
+          "dominant_right_target_consensus_count": 297,
+          "dominant_right_target_consensus_coverage": 0.881306,
+          "dominant_right_target_file_offset": 2185056,
+          "left_adjacent_call_count": 337,
+          "runtime_equivalence_asserted": false,
+          "single_target_consensus_context_count": 297,
+          "unique_right_context_match_count": 31,
+          "unmatched_left_context_count": 40
+        },
+        "left_relative_to_anchor": 64,
+        "record_ordinal": 4,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 337,
+          "aligned_word_occurrence_count": 209,
+          "all_aligned_occurrences_are_pc_relative_literals": true,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 209,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 205,
+          "pc_relative_load_reference_count": 341,
+          "target_file_offset": 1860548
+        },
+        "reverse_mapping": {
+          "ambiguous_left_context_match_count": 271,
+          "cross_version_call_family_promoted": false,
+          "dominant_left_target_consensus_count": 302,
+          "dominant_left_target_consensus_coverage": 0.883041,
+          "dominant_left_target_file_offset": 1860548,
+          "minimum_consensus_coverage": 0.9,
+          "minimum_unique_context_matches": 32,
+          "multi_target_ambiguous_context_count": 0,
+          "normalized_context_after_word_count": 6,
+          "normalized_context_before_word_count": 8,
+          "normalized_context_total_word_count": 16,
+          "right_known_accessor_call_count": 342,
+          "runtime_equivalence_asserted": false,
+          "single_target_consensus_context_count": 302,
+          "unique_left_context_match_count": 31,
+          "unmatched_right_context_count": 40
+        },
+        "right_direct_target_file_offset": 2185056,
+        "right_relative_to_anchor": 64,
+        "slot_file_offset": 1860548,
+        "tail_word_ordinal": 1,
+        "translated_left_static_reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860196
+        },
+        "translated_left_static_target_file_offset": 1860196
+      }
+    ],
+    "candidate_member_count": 1,
+    "confirmed_member_count": 1,
+    "exact_translated_body_member_count": 3,
+    "left_static_anchor_file_offset": 1860132,
+    "probable_member_count": 1,
+    "right_direct_anchor_file_offset": 2184992,
+    "runtime_equivalence_asserted": false,
+    "translation_delta": -324860
+  },
+  "tail_slot_census": {
+    "active_adjacent_call_slot_count": 3,
+    "inactive_slot_count": 12,
+    "slot_count": 15,
+    "slots": [
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 12,
+        "record_ordinal": 0,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860480
+        },
+        "slot_file_offset": 1860480,
+        "tail_word_ordinal": 0
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 8,
+        "record_ordinal": 0,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860484
+        },
+        "slot_file_offset": 1860484,
+        "tail_word_ordinal": 1
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 4,
+        "record_ordinal": 0,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860488
+        },
+        "slot_file_offset": 1860488,
+        "tail_word_ordinal": 2
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 12,
+        "record_ordinal": 1,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860496
+        },
+        "slot_file_offset": 1860496,
+        "tail_word_ordinal": 0
+      },
+      {
+        "active_adjacent_call_slot": true,
+        "bytes_to_record_end": 8,
+        "record_ordinal": 1,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 286,
+          "aligned_word_occurrence_count": 286,
+          "all_aligned_occurrences_are_pc_relative_literals": true,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 286,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 286,
+          "pc_relative_load_reference_count": 287,
+          "target_file_offset": 1860500
+        },
+        "slot_file_offset": 1860500,
+        "tail_word_ordinal": 1
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 4,
+        "record_ordinal": 1,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860504
+        },
+        "slot_file_offset": 1860504,
+        "tail_word_ordinal": 2
+      },
+      {
+        "active_adjacent_call_slot": true,
+        "bytes_to_record_end": 12,
+        "record_ordinal": 2,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 286,
+          "aligned_word_occurrence_count": 302,
+          "all_aligned_occurrences_are_pc_relative_literals": true,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 302,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 286,
+          "pc_relative_load_reference_count": 303,
+          "target_file_offset": 1860512
+        },
+        "slot_file_offset": 1860512,
+        "tail_word_ordinal": 0
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 8,
+        "record_ordinal": 2,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860516
+        },
+        "slot_file_offset": 1860516,
+        "tail_word_ordinal": 1
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 4,
+        "record_ordinal": 2,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860520
+        },
+        "slot_file_offset": 1860520,
+        "tail_word_ordinal": 2
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 12,
+        "record_ordinal": 3,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860528
+        },
+        "slot_file_offset": 1860528,
+        "tail_word_ordinal": 0
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 8,
+        "record_ordinal": 3,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860532
+        },
+        "slot_file_offset": 1860532,
+        "tail_word_ordinal": 1
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 4,
+        "record_ordinal": 3,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860536
+        },
+        "slot_file_offset": 1860536,
+        "tail_word_ordinal": 2
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 12,
+        "record_ordinal": 4,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860544
+        },
+        "slot_file_offset": 1860544,
+        "tail_word_ordinal": 0
+      },
+      {
+        "active_adjacent_call_slot": true,
+        "bytes_to_record_end": 8,
+        "record_ordinal": 4,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 337,
+          "aligned_word_occurrence_count": 209,
+          "all_aligned_occurrences_are_pc_relative_literals": true,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 209,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 205,
+          "pc_relative_load_reference_count": 341,
+          "target_file_offset": 1860548
+        },
+        "slot_file_offset": 1860548,
+        "tail_word_ordinal": 1
+      },
+      {
+        "active_adjacent_call_slot": false,
+        "bytes_to_record_end": 4,
+        "record_ordinal": 4,
+        "reference_profile": {
+          "adjacent_literal_jsr_count": 0,
+          "aligned_word_occurrence_count": 0,
+          "all_aligned_occurrences_are_pc_relative_literals": false,
+          "data_only_aligned_occurrence_count": 0,
+          "direct_callback_record_semantics_asserted": false,
+          "exact_word_occurrence_count": 0,
+          "image_size": 12954188,
+          "literal_pool_occurrence_used_by_adjacent_jsr_count": 0,
+          "pc_relative_load_reference_count": 0,
+          "target_file_offset": 1860552
+        },
+        "slot_file_offset": 1860552,
+        "tail_word_ordinal": 2
+      }
+    ]
+  }
+}

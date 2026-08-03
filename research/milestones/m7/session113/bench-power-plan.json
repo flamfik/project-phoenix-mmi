@@ -1,0 +1,413 @@
+{
+  "analysis_mode": "OFFLINE_PREPARATION_ONLY",
+  "applied_transition_count": 2,
+  "bench_manifest_summary": {
+    "complete": false,
+    "metrics": {
+      "identity_complete": false,
+      "identity_field_count": 6,
+      "isolation_check_count": 4,
+      "isolation_checks_passed": 0,
+      "review_check_count": 2,
+      "review_checks_passed": 0,
+      "source_check_count": 3,
+      "source_checks_passed": 0
+    },
+    "publication_safety": {
+      "raw_identity_values_included": false,
+      "source_document_content_included": false,
+      "vehicle_identifiers_included": false
+    },
+    "schema": "phoenix-mmi.public-bench-manifest-summary/v1",
+    "summary_fingerprint": "f583603d8343e61cd9c1e41c714fe0aac1c96dc9d047b780118843d342b67c73"
+  },
+  "bench_power_plan": {
+    "classification": {
+      "device_specific_limits_known": false,
+      "electrical_plan_complete": true,
+      "hardware_power_authorized": false,
+      "synthetic_or_document_review_only": true
+    },
+    "device_specific_values": {
+      "connector_pinout": "REQUIRES_AUTHORITATIVE_SERVICE_REFERENCE",
+      "current_limit": "REQUIRES_AUTHORITATIVE_SERVICE_REFERENCE",
+      "fuse_rating": "REQUIRES_AUTHORITATIVE_SERVICE_REFERENCE",
+      "nominal_voltage": "REQUIRES_AUTHORITATIVE_SERVICE_REFERENCE",
+      "values_inferred_from_forums": false
+    },
+    "plan_version": "m7-session113-v1",
+    "pre_power_checks": [
+      "SUPPLY_OUTPUT_OFF",
+      "PINOUT_REFERENCE_FINGERPRINT_MATCHES_REVIEW",
+      "POLARITY_CONTINUITY_CHECK_COMPLETE",
+      "CURRENT_LIMIT_AND_FUSE_FROM_SAME_REFERENCE",
+      "INDEPENDENT_CUTOFF_TESTED_WITH_DUMMY_LOAD",
+      "TWO_PERSON_CHECK_RECORDED"
+    ],
+    "publication_safety": {
+      "device_specific_limits_included": false,
+      "hardware_measurements_included": false,
+      "hardware_powered": false,
+      "pinout_included": false
+    },
+    "required_controls": [
+      "REGULATED_CURRENT_LIMITED_SUPPLY",
+      "INDEPENDENT_OPERATOR_POWER_CUTOFF",
+      "INLINE_FUSE_AT_SOURCE",
+      "POLARITY_KEYED_OR_PHYSICALLY_VERIFIED_HARNESS",
+      "DOCUMENTED_SINGLE_GROUND_REFERENCE",
+      "VOLTAGE_AND_CURRENT_VISIBLE_TO_OPERATOR",
+      "INSULATED_EXPOSED_CONDUCTORS",
+      "NON_FLAMMABLE_CLEAR_WORK_AREA"
+    ],
+    "schema": "phoenix-mmi.bench-power-plan/v1",
+    "stop_response": [
+      "REMOVE_POWER_USING_INDEPENDENT_CUTOFF",
+      "DO_NOT_REAPPLY_POWER",
+      "RECORD_ONLY_AGGREGATE_STOP_REASON",
+      "QUARANTINE_HARNESS_UNTIL_REVIEW"
+    ]
+  },
+  "capabilities": [
+    {
+      "capability_id": "M7-CAP-001",
+      "evidence": "Session 111",
+      "limitation": "contract authorizes preparation only",
+      "name": "fail-closed M7 safety and evidence contract",
+      "probe_kind": "python-symbol",
+      "probe_target": "phoenix_mmi.hardware_validation_contract:build_hardware_validation_contract",
+      "status": "IMPLEMENTED",
+      "target_session": null,
+      "workstream": "contract"
+    },
+    {
+      "capability_id": "M7-CAP-002",
+      "evidence": "Session 112 and SPEC-121",
+      "limitation": "committed template contains no hardware identity",
+      "name": "private bench manifest and public identity summary",
+      "probe_kind": "python-symbol",
+      "probe_target": "phoenix_mmi.bench_manifest:build_public_bench_manifest_summary",
+      "status": "IMPLEMENTED",
+      "target_session": "112",
+      "workstream": "identity"
+    },
+    {
+      "capability_id": "M7-CAP-003",
+      "evidence": "Session 113 and SPEC-122",
+      "limitation": "device limits require authoritative private references",
+      "name": "authoritative-reference electrical safety plan",
+      "probe_kind": "python-symbol",
+      "probe_target": "phoenix_mmi.bench_power:build_bench_power_plan",
+      "status": "IMPLEMENTED",
+      "target_session": "113",
+      "workstream": "electrical"
+    },
+    {
+      "capability_id": "M7-CAP-004",
+      "evidence": "M7 requirement",
+      "limitation": "no recovery rehearsal contract",
+      "name": "abort and non-writing recovery plan",
+      "probe_kind": "none",
+      "probe_target": null,
+      "status": "MISSING",
+      "target_session": "114",
+      "workstream": "recovery"
+    },
+    {
+      "capability_id": "M7-CAP-005",
+      "evidence": "M7 requirement",
+      "limitation": "no passive observation allowlist",
+      "name": "read-only observation and aggregate capture contract",
+      "probe_kind": "none",
+      "probe_target": null,
+      "status": "MISSING",
+      "target_session": "115",
+      "workstream": "observation"
+    },
+    {
+      "capability_id": "M7-CAP-006",
+      "evidence": "M7 requirement",
+      "limitation": "no machine-checkable risk review",
+      "name": "hazard register and signed approval schema",
+      "probe_kind": "none",
+      "probe_target": null,
+      "status": "MISSING",
+      "target_session": "116",
+      "workstream": "risk"
+    },
+    {
+      "capability_id": "M7-CAP-007",
+      "evidence": "M7 requirement",
+      "limitation": "no deterministic bench sequence rehearsal",
+      "name": "pure normal and emergency state-machine rehearsal",
+      "probe_kind": "none",
+      "probe_target": null,
+      "status": "MISSING",
+      "target_session": "117",
+      "workstream": "rehearsal"
+    },
+    {
+      "capability_id": "M7-CAP-008",
+      "evidence": "M7 requirement",
+      "limitation": "no fail-closed physical evidence gate",
+      "name": "private evidence intake and public summary validator",
+      "probe_kind": "none",
+      "probe_target": null,
+      "status": "MISSING",
+      "target_session": "118",
+      "workstream": "evidence"
+    },
+    {
+      "capability_id": "M7-CAP-009",
+      "evidence": "M7 requirement",
+      "limitation": "no complete preparation-package verdict",
+      "name": "deterministic M7 preparation integration",
+      "probe_kind": "none",
+      "probe_target": null,
+      "status": "MISSING",
+      "target_session": "119",
+      "workstream": "integration"
+    },
+    {
+      "capability_id": "M7-CAP-010",
+      "evidence": "M7 physical gate",
+      "limitation": "requires private hardware evidence and signed approval",
+      "name": "real isolated read-only bench evidence",
+      "probe_kind": "external-evidence",
+      "probe_target": null,
+      "status": "BLOCKED",
+      "target_session": "120",
+      "workstream": "physical"
+    }
+  ],
+  "capability_audit": {
+    "implemented_probe_failures": 0,
+    "status_counts": {
+      "BLOCKED": 1,
+      "IMPLEMENTED": 3,
+      "MISSING": 6
+    },
+    "total": 10
+  },
+  "classification": {
+    "installable_artifact_ready": false,
+    "m7_entry": "PASS",
+    "m7_status": "IN_PROGRESS",
+    "physical_bench_validation_performed": false,
+    "physical_criteria_passed": 0,
+    "physical_criteria_total": 1,
+    "preparation_criteria_passed": 2,
+    "preparation_criteria_total": 8,
+    "safe_mutation_ready": false,
+    "vehicle_operations_authorized": false
+  },
+  "entry_gate": {
+    "m6_complete": true,
+    "m6_exit_criteria": "8/8",
+    "m7_ready": true,
+    "physical_observation_authorized": false
+  },
+  "exit_criteria": [
+    {
+      "capability_id": "M7-CAP-002",
+      "criterion_id": "M7-X1",
+      "description": "private identity manifest and safe public summary",
+      "passed": true,
+      "target_session": "112"
+    },
+    {
+      "capability_id": "M7-CAP-003",
+      "criterion_id": "M7-X2",
+      "description": "power and isolation plan without guessed limits",
+      "passed": true,
+      "target_session": "113"
+    },
+    {
+      "capability_id": "M7-CAP-004",
+      "criterion_id": "M7-X3",
+      "description": "abort and recovery plan rehearsable without hardware",
+      "passed": false,
+      "target_session": "114"
+    },
+    {
+      "capability_id": "M7-CAP-005",
+      "criterion_id": "M7-X4",
+      "description": "passive observation and aggregate capture contract",
+      "passed": false,
+      "target_session": "115"
+    },
+    {
+      "capability_id": "M7-CAP-006",
+      "criterion_id": "M7-X5",
+      "description": "complete risk register and unsigned approval gate",
+      "passed": false,
+      "target_session": "116"
+    },
+    {
+      "capability_id": "M7-CAP-007",
+      "criterion_id": "M7-X6",
+      "description": "deterministic normal and abort rehearsal",
+      "passed": false,
+      "target_session": "117"
+    },
+    {
+      "capability_id": "M7-CAP-008",
+      "criterion_id": "M7-X7",
+      "description": "private evidence intake rejects incomplete claims",
+      "passed": false,
+      "target_session": "118"
+    },
+    {
+      "capability_id": "M7-CAP-009",
+      "criterion_id": "M7-X8",
+      "description": "deterministic preparation integration",
+      "passed": false,
+      "target_session": "119"
+    },
+    {
+      "capability_id": "M7-CAP-010",
+      "criterion_id": "M7-X9",
+      "description": "accepted real isolated bench evidence",
+      "passed": false,
+      "target_session": "120"
+    }
+  ],
+  "exit_criteria_passed": 2,
+  "exit_criteria_total": 9,
+  "m7_contract": {
+    "classification": {
+      "installable_artifact_ready": false,
+      "m7_preparation_authorized": true,
+      "physical_bench_observation_authorized_now": false,
+      "safe_mutation_ready": false,
+      "vehicle_operations_authorized": false
+    },
+    "contract_version": "m7-session111-v1",
+    "entry_evidence": {
+      "installable_artifact_ready": false,
+      "m6_exit_criteria": "8/8",
+      "m6_status": "COMPLETE",
+      "operational_graph_version": "v102",
+      "safe_mutation_ready": false
+    },
+    "evidence_policy": {
+      "physical_claim_without_evidence_allowed": false,
+      "private_raw_evidence_required_for_physical_claim": true,
+      "public_aggregate_report_allowed": true,
+      "raw_firmware_or_storage_capture_allowed": false,
+      "raw_identifiers_publication_allowed": false,
+      "raw_vehicle_data_publication_allowed": false,
+      "signed_approval_required": true
+    },
+    "external_bench_candidate": {
+      "candidate_actions": [
+        "VISUAL_INSPECTION_WITH_POWER_OFF",
+        "PASSIVE_VOLTAGE_AND_CURRENT_OBSERVATION",
+        "PASSIVE_DISPLAY_AND_BOOT_TIMING_OBSERVATION",
+        "CONTROLLED_POWER_REMOVAL"
+      ],
+      "prerequisites": [
+        "HARDWARE_IDENTITY_RECORDED_PRIVATELY",
+        "UNIT_CONFIRMED_DISCONNECTED_FROM_VEHICLE",
+        "AUTHORITATIVE_PINOUT_AND_POWER_LIMITS_AVAILABLE",
+        "CURRENT_LIMITED_REGULATED_SUPPLY",
+        "INDEPENDENT_FUSED_POWER_CUTOFF",
+        "POLARITY_AND_GROUND_PLAN_VERIFIED",
+        "NON_INVASIVE_CAPTURE_ONLY",
+        "RECOVERY_AND_ABORT_PROCEDURE_REHEARSED",
+        "SIGNED_RISK_REVIEW",
+        "TWO_PERSON_PRE_POWER_CHECK"
+      ],
+      "prohibited_actions": [
+        "FIRMWARE_UPDATE_OR_DOWNGRADE",
+        "STORAGE_WRITE_OR_ERASE",
+        "SERVICE_MENU_CONFIGURATION_CHANGE",
+        "COMPONENT_PROTECTION_ACCESS",
+        "VEHICLE_OR_LIVE_MOST_CONNECTION",
+        "DIAGNOSTIC_COMMAND_WITH_UNKNOWN_SIDE_EFFECTS",
+        "BYPASS_OF_FUSE_CURRENT_LIMIT_OR_INTERLOCK"
+      ],
+      "requires_all_prerequisites": true,
+      "scope": "ISOLATED_ORIGINAL_HARDWARE_READ_ONLY_OBSERVATION"
+    },
+    "publication_safety": {
+      "electrical_measurements_included": false,
+      "firmware_bytes_included": false,
+      "hardware_identifiers_included": false,
+      "hardware_powered": false,
+      "installable_artifacts_included": false,
+      "offline_planning_only": true,
+      "signatures_included": false,
+      "storage_capture_included": false,
+      "target_firmware_execution_performed": false,
+      "vehicle_communication_performed": false,
+      "vehicle_identifiers_included": false
+    },
+    "schema": "phoenix-mmi.hardware-validation-contract/v1",
+    "scope": "CONTROLLED_READ_ONLY_BENCH_PREPARATION",
+    "sdk_authorized_operations": {
+      "build_bench_templates": true,
+      "change_component_protection": false,
+      "execute_target_firmware": false,
+      "generate_installable_artifacts": false,
+      "power_hardware": false,
+      "publish_aggregate_evidence": true,
+      "run_synthetic_rehearsals": true,
+      "transmit_vehicle_or_most_messages": false,
+      "validate_user_supplied_metadata": true,
+      "write_target_storage": false
+    },
+    "stop_conditions": [
+      "UNEXPECTED_CURRENT_RISE",
+      "REVERSE_POLARITY_OR_GROUND_UNCERTAINTY",
+      "THERMAL_ODOR_SMOKE_OR_NOISE",
+      "UNEXPECTED_WRITE_OR_UPDATE_PROMPT",
+      "LOSS_OF_CAPTURE_OR_INDEPENDENT_CUTOFF",
+      "IDENTITY_PINOUT_OR_POWER_LIMIT_MISMATCH",
+      "UNPLANNED_NETWORK_OR_VEHICLE_CONNECTION",
+      "ANY_OPERATOR_UNCERTAINTY"
+    ]
+  },
+  "milestone_transition": {
+    "m7": "IN_PROGRESS",
+    "m8": "NOT_READY",
+    "next_session": "120",
+    "required_external_evidence": "PRIVATE_SIGNED_ISOLATED_BENCH_BUNDLE"
+  },
+  "operational_graph_delta": {
+    "change": "ADD",
+    "node_id": "m7-electrical-safety-plan"
+  },
+  "operational_graph_version": "v105",
+  "ordered_session_backlog": [
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120"
+  ],
+  "previous_state": {
+    "operational_graph_version": "v104",
+    "preparation_criteria_passed": 1,
+    "session": "112"
+  },
+  "publication_safety": {
+    "electrical_measurements_included": false,
+    "firmware_bytes_included": false,
+    "hardware_identifiers_included": false,
+    "hardware_powered": false,
+    "installable_artifacts_included": false,
+    "offline_planning_only": true,
+    "signatures_included": false,
+    "storage_capture_included": false,
+    "target_firmware_execution_performed": false,
+    "vehicle_communication_performed": false,
+    "vehicle_identifiers_included": false
+  },
+  "schema": "phoenix-mmi.m7-hardware-validation-progress/v1",
+  "session": "113"
+}

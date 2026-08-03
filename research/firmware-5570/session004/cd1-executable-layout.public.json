@@ -1,0 +1,712 @@
+{
+  "analysis_mode": "read-only-static",
+  "artifact": {
+    "filename": "H2_HI_EU.BIN",
+    "flash_base_from_metainfo": 393216,
+    "label": "CD1 K942 / MMI 5150",
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "size_bytes": 12954188,
+    "source_iso_filename": "MMI-5570-4L0.998.961-cd1-3.iso",
+    "source_iso_sha256": "1948443c6fb94433f7985ed6a4677006ec3bcde6d789f8a5915ba6f6f2dca03f",
+    "source_member_path": "MMI_HI/MMI/42/DEFAULT/H2_HI_EU.BIN"
+  },
+  "publication_safety": {
+    "instruction_bytes_included": false,
+    "payload_bytes_included": false,
+    "raw_strings_included": false,
+    "resources_exported": false
+  },
+  "resources": {
+    "address_models_tested": [
+      "big-endian file offset",
+      "big-endian flash-base + offset"
+    ],
+    "cluster": {
+      "end": 8582484,
+      "length": 13672,
+      "offset": 8568812
+    },
+    "direct_reference_candidate_count": 0,
+    "direct_reference_candidates": [],
+    "filler_bounded_island": {
+      "end": 8587668,
+      "length": 20444,
+      "offset": 8567224,
+      "resource_cluster_offset_within_island": 1588,
+      "status": "PROBABLE_RESOURCE_ISLAND"
+    },
+    "flash_base": 393216,
+    "following_filler": {
+      "end": 8678759,
+      "length": 91091,
+      "offset": 8587668,
+      "value": "0x00"
+    },
+    "gap_after_preceding_filler": 1588,
+    "gap_before_following_filler": 5184,
+    "interpretation": "Zero exact candidates is a bounded negative result for the two tested absolute address encodings. Relative, indexed or runtime-built resource tables remain possible.",
+    "preceding_filler": {
+      "end": 8567224,
+      "length": 148036,
+      "offset": 8419188,
+      "value": "0x00"
+    },
+    "resource_count": 12,
+    "status": "TESTED"
+  },
+  "schema": "phoenix-mmi.executable-layout/v1",
+  "startup": {
+    "absolute_address_candidates_from_mov_l": [
+      {
+        "instruction_offset": 322,
+        "literal_offset": 488,
+        "models": [
+          {
+            "model": "file-offset",
+            "target_file_offset": 2176
+          }
+        ]
+      },
+      {
+        "instruction_offset": 394,
+        "literal_offset": 480,
+        "models": [
+          {
+            "model": "file-offset",
+            "target_file_offset": 393216
+          },
+          {
+            "model": "flash-address",
+            "target_file_offset": 0
+          }
+        ]
+      }
+    ],
+    "architecture": "SuperH SH-3 big-endian",
+    "entry_file_offset": 0,
+    "flow_counts": {
+      "branch": 31,
+      "conditional": 48,
+      "indirect-call": 68,
+      "linear": 642,
+      "return": 1
+    },
+    "initial_sr_literal": 1073742064,
+    "instruction_bytes_included": false,
+    "maximum_reached_offset": 4078,
+    "pc_relative_literal_count": 198,
+    "pc_relative_literal_offsets": [
+      76,
+      420,
+      422,
+      424,
+      426,
+      428,
+      430,
+      432,
+      434,
+      436,
+      438,
+      440,
+      442,
+      444,
+      446,
+      448,
+      450,
+      452,
+      454,
+      456,
+      458,
+      460,
+      462,
+      464,
+      466,
+      468,
+      472,
+      476,
+      480,
+      484,
+      488,
+      504,
+      506,
+      508,
+      510,
+      512,
+      514,
+      516,
+      518,
+      520,
+      522,
+      524,
+      526,
+      528,
+      530,
+      532,
+      2530,
+      2532,
+      2534,
+      2544,
+      2556,
+      2592,
+      2596,
+      2600,
+      2604,
+      2608,
+      2882,
+      2884,
+      2886,
+      2888,
+      2892,
+      2896,
+      2900,
+      2904,
+      2908,
+      2912,
+      2916,
+      2920,
+      2924,
+      2928,
+      2932,
+      2936,
+      2940,
+      2944,
+      2948,
+      2952,
+      2956,
+      2960,
+      2964,
+      2968,
+      2972,
+      2976,
+      2980,
+      2984,
+      2988,
+      2992,
+      2996,
+      3000,
+      3004,
+      3008,
+      3296,
+      3298,
+      3300,
+      3302,
+      3304,
+      3308,
+      3312,
+      3316,
+      3320,
+      3324,
+      3328,
+      3332,
+      3336,
+      3340,
+      3344,
+      3348,
+      3352,
+      3356,
+      3360,
+      3592,
+      3594,
+      3596,
+      3598,
+      3600,
+      3604,
+      3608,
+      3612,
+      3616,
+      3620,
+      3624,
+      3628,
+      3632,
+      3636,
+      3640,
+      3644,
+      3648,
+      3652,
+      3656,
+      3660,
+      3746,
+      3748,
+      3752,
+      3756,
+      3760,
+      3764,
+      3768,
+      3772,
+      4080,
+      4082,
+      4084,
+      4086,
+      4088,
+      4090,
+      4092,
+      4094,
+      4096,
+      4100,
+      4104,
+      4108,
+      4112,
+      4116,
+      4120,
+      4124,
+      4128,
+      4132,
+      4136,
+      4140,
+      4144,
+      4148,
+      4152,
+      4156,
+      4160,
+      4164,
+      4168,
+      4172,
+      4176,
+      4180,
+      4184,
+      4188,
+      4192,
+      4196,
+      4200
+    ],
+    "public_trace": [
+      {
+        "delayed": true,
+        "flow": "branch",
+        "mnemonic": "bra",
+        "offset": 0,
+        "operands": "0x8",
+        "target": 8
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "nop",
+        "offset": 2,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 76,
+        "literal_value": 1073742064,
+        "mnemonic": "mov.l",
+        "offset": 8,
+        "operands": "@(0x4c,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "ldc",
+        "offset": 10,
+        "operands": "r0,sr"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mova",
+        "offset": 12,
+        "operands": "@(0x1f0,pc),r0",
+        "target": 496
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "ldc.l",
+        "offset": 14,
+        "operands": "@r0+,gbr"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 530,
+        "literal_value": -23296,
+        "mnemonic": "mov.w",
+        "offset": 16,
+        "operands": "@(0x212,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 18,
+        "operands": "r0,@(134,gbr)"
+      },
+      {
+        "delayed": true,
+        "flow": "branch",
+        "mnemonic": "bra",
+        "offset": 20,
+        "operands": "0x50",
+        "target": 80
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "nop",
+        "offset": 22,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mova",
+        "offset": 80,
+        "operands": "@(0x1a0,pc),r0",
+        "target": 416
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "ldc.l",
+        "offset": 82,
+        "operands": "@r0+,gbr"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 454,
+        "literal_value": 207,
+        "mnemonic": "mov.w",
+        "offset": 84,
+        "operands": "@(0x1c6,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.b",
+        "offset": 86,
+        "operands": "r0,@(48,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 452,
+        "literal_value": -23228,
+        "mnemonic": "mov.w",
+        "offset": 88,
+        "operands": "@(0x1c4,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 90,
+        "operands": "r0,@(16,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 422,
+        "literal_value": 215,
+        "mnemonic": "mov.w",
+        "offset": 92,
+        "operands": "@(0x1a6,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.b",
+        "offset": 94,
+        "operands": "r0,@(36,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 420,
+        "literal_value": -23170,
+        "mnemonic": "mov.w",
+        "offset": 96,
+        "operands": "@(0x1a4,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 98,
+        "operands": "r0,@(4,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 426,
+        "literal_value": 255,
+        "mnemonic": "mov.w",
+        "offset": 100,
+        "operands": "@(0x1aa,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.b",
+        "offset": 102,
+        "operands": "r0,@(38,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 424,
+        "literal_value": 65,
+        "mnemonic": "mov.w",
+        "offset": 104,
+        "operands": "@(0x1a8,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 106,
+        "operands": "r0,@(6,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 432,
+        "literal_value": 221,
+        "mnemonic": "mov.w",
+        "offset": 108,
+        "operands": "@(0x1b0,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.b",
+        "offset": 110,
+        "operands": "r0,@(40,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 112,
+        "operands": "@(8,gbr),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 430,
+        "literal_value": -16381,
+        "mnemonic": "mov.w",
+        "offset": 114,
+        "operands": "@(0x1ae,pc),r1"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "unknown",
+        "offset": 116,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 428,
+        "literal_value": 9620,
+        "mnemonic": "mov.w",
+        "offset": 118,
+        "operands": "@(0x1ac,pc),r1"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "unknown",
+        "offset": 120,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 122,
+        "operands": "r0,@(8,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 438,
+        "literal_value": 254,
+        "mnemonic": "mov.w",
+        "offset": 124,
+        "operands": "@(0x1b6,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.b",
+        "offset": 126,
+        "operands": "r0,@(42,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 128,
+        "operands": "@(10,gbr),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 436,
+        "literal_value": -256,
+        "mnemonic": "mov.w",
+        "offset": 130,
+        "operands": "@(0x1b4,pc),r1"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "unknown",
+        "offset": 132,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 434,
+        "literal_value": 171,
+        "mnemonic": "mov.w",
+        "offset": 134,
+        "operands": "@(0x1b2,pc),r1"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "unknown",
+        "offset": 136,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 138,
+        "operands": "r0,@(10,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 444,
+        "literal_value": 255,
+        "mnemonic": "mov.w",
+        "offset": 140,
+        "operands": "@(0x1bc,pc),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.b",
+        "offset": 142,
+        "operands": "r0,@(44,gbr)"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 144,
+        "operands": "@(12,gbr),r0"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 442,
+        "literal_value": 15615,
+        "mnemonic": "mov.w",
+        "offset": 146,
+        "operands": "@(0x1ba,pc),r1"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "unknown",
+        "offset": 148,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "literal_address": 440,
+        "literal_value": -32256,
+        "mnemonic": "mov.w",
+        "offset": 150,
+        "operands": "@(0x1b8,pc),r1"
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "unknown",
+        "offset": 152,
+        "operands": ""
+      },
+      {
+        "delayed": false,
+        "flow": "linear",
+        "mnemonic": "mov.w",
+        "offset": 154,
+        "operands": "r0,@(12,gbr)"
+      }
+    ],
+    "reachable_instruction_count": 790,
+    "startup_pattern_confirmed": true,
+    "trace_limit": 65536,
+    "traced_region_end": 4080,
+    "traced_region_sha256": "1ab11f4a3b6ff8fa046789580c77a9d31c46e9620b14b542bef622b23162d5ef",
+    "unknown_instruction_count": 157,
+    "wind_river_banner_file_offset": 32,
+    "wind_river_banner_skipped_by_branch": true
+  },
+  "vxworks": {
+    "canonical_symbol_names_found": [],
+    "interpretation": "Fixed-name probes can reject or nominate a table candidate; they do not prove a VxWorks symbol/module table without a validated record layout.",
+    "runtime_markers": {
+      "Copyright 1984-1998 Wind River Systems, Inc.": {
+        "count": 1,
+        "offsets": [
+          32
+        ]
+      },
+      "VxWorks": {
+        "count": 5,
+        "offsets": [
+          7996029,
+          8203787,
+          8276669,
+          8283348,
+          8288842
+        ]
+      },
+      "Wind River": {
+        "count": 7,
+        "offsets": [
+          52,
+          3602304,
+          8288954,
+          8983836,
+          9062280,
+          9062355,
+          9063656
+        ]
+      }
+    },
+    "symbol_or_module_table_status": "NOT_CONFIRMED",
+    "symbol_probe_references": {},
+    "symbol_probe_set": [
+      "sysSymTbl",
+      "symTbl",
+      "usrInit",
+      "usrRoot",
+      "sysInit",
+      "kernelInit",
+      "moduleLib",
+      "loadModule",
+      "taskSpawn"
+    ],
+    "symbol_probes_present": {
+      "taskSpawn": {
+        "count": 1,
+        "offsets": [
+          8277844
+        ]
+      }
+    }
+  }
+}

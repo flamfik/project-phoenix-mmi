@@ -1,0 +1,150 @@
+{
+  "accessor_occurrence_count": 12,
+  "analysis_mode": "read-only-static-bounded-producer-and-field-lineage",
+  "artifact": {
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "source_path_included": false
+  },
+  "classification": {
+    "cross_version_producer_to_accessor_edge": "OPEN",
+    "descriptor_initializer": "NOT_FOUND_UNDER_CODE_GATED_MIXED_WIDTH_MODEL",
+    "optical_buffer_owner": "OPEN",
+    "producer_call_count": 2,
+    "sector_read_abi": "OPEN"
+  },
+  "field_initializer_census": {
+    "analyzable_pair_count": 18,
+    "bounded_code_gate_pair_count": 0,
+    "initializer_semantics_asserted": false,
+    "long_store_at_target_offset_count": 14824,
+    "same_base_within_0x100_raw_pair_count": 20,
+    "word_store_at_adjustment_offset_count": 637
+  },
+  "producer_calls": [
+    {
+      "arguments": {
+        "r4": {
+          "path": "ADD(ENTRY:r4,CONST:8)",
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r5": {
+          "constant": 0,
+          "path": "CONST:0",
+          "static_status": "CONSTANT"
+        },
+        "r6": {
+          "path": "CALLER_SAVED_CLOBBER",
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r7": {
+          "path": "CALLER_SAVED_CLOBBER",
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        }
+      },
+      "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+      "delay_slot_accounted_for": true,
+      "dispatch_call_site_offset": 1455220,
+      "function_boundary_asserted": false,
+      "path_dominance_asserted": false,
+      "predecessor_bytes_included": 16,
+      "producer_call_site_offset": 1455194,
+      "producer_child_code_evidence": {
+        "bounded_code_gate_passed": false,
+        "function_boundary_asserted": false,
+        "known_ratio": 1.0,
+        "normalized_shape_sha256": "66ce9682a34d58e61e7579ce405c6a2b5ba9d88f40fde8cb7cf184ef16cb0fe1",
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 0,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0
+      },
+      "producer_child_return_path": "CONST:-1",
+      "producer_child_target_file_offset": 8062132,
+      "producer_relative_to_dispatch": -26,
+      "producer_return_path": "CALL_RETURN",
+      "producer_target_code_evidence": {
+        "bounded_code_gate_passed": false,
+        "function_boundary_asserted": false,
+        "known_ratio": 0.190476,
+        "normalized_shape_sha256": "eb888ec2f1e3df9ba52e9b5f4ea22ee4e7ab32e85f34c2b6cf3853288c3258a3",
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 1,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0
+      },
+      "producer_target_file_offset": 1864324,
+      "producer_target_path": "IN_IMAGE_POINTER",
+      "producer_target_static_status": "RESOLVED_IN_IMAGE_POINTER"
+    },
+    {
+      "arguments": {
+        "r4": {
+          "path": "ADD(ENTRY:r4,CONST:36)",
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r5": {
+          "constant": 0,
+          "path": "CONST:0",
+          "static_status": "CONSTANT"
+        },
+        "r6": {
+          "path": "CALLER_SAVED_CLOBBER",
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        },
+        "r7": {
+          "path": "CALLER_SAVED_CLOBBER",
+          "static_status": "DYNAMIC_OR_UNSUPPORTED"
+        }
+      },
+      "context_start_reason": "LATEST_SAVE_PR_PROLOGUE",
+      "delay_slot_accounted_for": true,
+      "dispatch_call_site_offset": 1455274,
+      "function_boundary_asserted": false,
+      "path_dominance_asserted": false,
+      "predecessor_bytes_included": 16,
+      "producer_call_site_offset": 1455248,
+      "producer_child_code_evidence": {
+        "bounded_code_gate_passed": false,
+        "function_boundary_asserted": false,
+        "known_ratio": 1.0,
+        "normalized_shape_sha256": "66ce9682a34d58e61e7579ce405c6a2b5ba9d88f40fde8cb7cf184ef16cb0fe1",
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 0,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0
+      },
+      "producer_child_return_path": "CONST:-1",
+      "producer_child_target_file_offset": 8062132,
+      "producer_relative_to_dispatch": -26,
+      "producer_return_path": "CALL_RETURN",
+      "producer_target_code_evidence": {
+        "bounded_code_gate_passed": false,
+        "function_boundary_asserted": false,
+        "known_ratio": 0.190476,
+        "normalized_shape_sha256": "eb888ec2f1e3df9ba52e9b5f4ea22ee4e7ab32e85f34c2b6cf3853288c3258a3",
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 1,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0
+      },
+      "producer_target_file_offset": 1864324,
+      "producer_target_path": "IN_IMAGE_POINTER",
+      "producer_target_static_status": "RESOLVED_IN_IMAGE_POINTER"
+    }
+  ],
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.descriptor-producer-lineage-disc/v1",
+  "static_descriptor_census": {
+    "candidate_base_referenced_as_aligned_runtime_word_count": 4493,
+    "candidate_targeting_accepted_optical_node_count": 96,
+    "descriptor_identity_asserted": false,
+    "raw_candidate_count": 109043
+  }
+}

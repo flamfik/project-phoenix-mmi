@@ -1,0 +1,1004 @@
+{
+  "analysis_mode": "read-only-static",
+  "band_gap": 16384,
+  "constant_delta_band_count": 15,
+  "external_context": {
+    "sources": [
+      {
+        "purpose": "dosFs is a FAT-compatible VxWorks filesystem",
+        "url": "https://www.windriver.com/resource/vxworks-datasheet"
+      },
+      {
+        "purpose": "TFFS identifies True Flash File System support",
+        "url": "https://labs.windriver.com/downloads/vxw-sr0620-sdk-lab-release/NOTICES/VxWorks7__ThirdPartyNotices_v4.5.pdf"
+      },
+      {
+        "purpose": "ECMA-119 volume descriptors place CD001 at bytes 2-6",
+        "url": "https://ecma-international.org/wp-content/uploads/ECMA-119_5th_edition_december_2024.pdf"
+      }
+    ],
+    "used_as_firmware_evidence": false
+  },
+  "interpretation": "The principal image contains code-coupled navigation evidence and a VxWorks storage stack in both releases. Ordered marker bands are structural boundaries, not proof of one monolithic navigation module or of the map-disc data format.",
+  "left": "CD1 K942 / MMI 5150",
+  "navigation": {
+    "cross_version_band_count": 11,
+    "left_pc_relative_referrer_count": 40,
+    "map_format": "OPEN",
+    "region_boundary": "PARTIAL_MULTIPLE_RELOCATED_MARKER_BANDS",
+    "right_pc_relative_referrer_count": 6,
+    "subsystem_presence": "CONFIRMED_CROSS_VERSION_NAVIGATION_SUBSYSTEM_EVIDENCE"
+  },
+  "operational_graph": {
+    "confirmed_node_count": 13,
+    "edges": [
+      {
+        "relation": "describes component payloads and policies",
+        "source": "update-media",
+        "status": "CONFIRMED",
+        "target": "metainfo-selector"
+      },
+      {
+        "relation": "contains device-specific application and bootloader payloads",
+        "source": "update-media",
+        "status": "CONFIRMED_PACKAGE_TOPOLOGY",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "provides target tuple for selection",
+        "source": "most-inventory",
+        "status": "PROBABLE",
+        "target": "metainfo-selector"
+      },
+      {
+        "relation": "matches installed hardware to device-specific records",
+        "source": "most-inventory",
+        "status": "PROBABLE_RUNTIME_BEHAVIOR",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "selects, checks and stages the head-unit payload",
+        "source": "metainfo-selector",
+        "status": "PROBABLE_RUNTIME_BEHAVIOR",
+        "target": "principal-image"
+      },
+      {
+        "relation": "provides segmented integrity expectations",
+        "source": "metainfo-selector",
+        "status": "CONFIRMED_METADATA_RELATION",
+        "target": "checksum-grid"
+      },
+      {
+        "relation": "begins execution at file offset zero",
+        "source": "principal-image",
+        "status": "CONFIRMED",
+        "target": "startup-runtime"
+      },
+      {
+        "relation": "initializes the linked runtime image",
+        "source": "startup-runtime",
+        "status": "PROBABLE",
+        "target": "runtime-address-space"
+      },
+      {
+        "relation": "hosts network-facing service tasks",
+        "source": "startup-runtime",
+        "status": "PROBABLE",
+        "target": "most-transport"
+      },
+      {
+        "relation": "coordinates device control and staged downloads",
+        "source": "most-transport",
+        "status": "PROBABLE",
+        "target": "peripheral-firmware"
+      },
+      {
+        "relation": "is immediately followed by runtime-address tables",
+        "source": "browser-bundle",
+        "status": "CONFIRMED_PHYSICAL_LAYOUT",
+        "target": "post-cluster-table"
+      },
+      {
+        "relation": "contains two exact edges to the atlas block",
+        "source": "post-cluster-table",
+        "status": "CONFIRMED_STRUCTURE",
+        "target": "bitmap-atlas"
+      },
+      {
+        "relation": "contains additional mapped but semantically unresolved runs",
+        "source": "post-cluster-table",
+        "status": "PARTIAL",
+        "target": "unresolved-runtime-tables"
+      },
+      {
+        "relation": "provides bitmap glyph data",
+        "source": "bitmap-atlas",
+        "status": "PROBABLE",
+        "target": "browser-renderer"
+      },
+      {
+        "relation": "selects a version/CRC-specific migration",
+        "source": "metainfo-selector",
+        "status": "CONFIRMED_METADATA_CHAIN",
+        "target": "eeprom-state"
+      },
+      {
+        "relation": "contains code-coupled navigation marker families",
+        "source": "startup-runtime",
+        "status": "CONFIRMED_IMAGE_INTEGRATION",
+        "target": "navigation-runtime"
+      },
+      {
+        "relation": "requires a backing volume whose layout remains unresolved",
+        "source": "startup-runtime",
+        "status": "HYPOTHESIS",
+        "target": "internal-filesystem"
+      },
+      {
+        "relation": "embeds code-coupled dosFs/FAT/TFFS support",
+        "source": "startup-runtime",
+        "status": "CONFIRMED_BOUNDED",
+        "target": "runtime-storage-stack"
+      },
+      {
+        "relation": "mounts an unresolved flash or block-device volume",
+        "source": "runtime-storage-stack",
+        "status": "PROBABLE",
+        "target": "internal-filesystem"
+      },
+      {
+        "relation": "provides block and filesystem services",
+        "source": "runtime-storage-stack",
+        "status": "PROBABLE",
+        "target": "optical-volume-reader"
+      },
+      {
+        "relation": "may expose external navigation data",
+        "source": "optical-volume-reader",
+        "status": "HYPOTHESIS",
+        "target": "map-media-format"
+      },
+      {
+        "relation": "supplies map and routing data",
+        "source": "map-media-format",
+        "status": "HYPOTHESIS",
+        "target": "navigation-runtime"
+      }
+    ],
+    "interpretation": "Session 009 confirms subsystem presence and the runtime storage stack, while keeping exact navigation boundaries, backing-volume layout and map format open.",
+    "nodes": [
+      {
+        "evidence": [
+          "S001",
+          "S002"
+        ],
+        "id": "update-media",
+        "label": "Three-disc multi-device update set",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S002-01",
+          "S002-02",
+          "S002-03"
+        ],
+        "id": "metainfo-selector",
+        "label": "METAINFO target selection and integrity metadata",
+        "status": "CONFIRMED_STRUCTURE"
+      },
+      {
+        "evidence": [
+          "S002-06"
+        ],
+        "id": "most-inventory",
+        "label": "Installed MOST component discovery",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S001",
+          "S002"
+        ],
+        "id": "peripheral-firmware",
+        "label": "Separate amplifier, tuner, telephone, Bluetooth, AMI and DSP firmware",
+        "status": "CONFIRMED_PACKAGE_TOPOLOGY"
+      },
+      {
+        "evidence": [
+          "S002-06",
+          "S002-08"
+        ],
+        "id": "most-transport",
+        "label": "Head-unit control and update transport over MOST",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S003",
+          "S004-01"
+        ],
+        "id": "principal-image",
+        "label": "Flat big-endian SH-3 principal image",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S004-01",
+          "S004-02",
+          "S004-05"
+        ],
+        "id": "startup-runtime",
+        "label": "SH-3 startup and Wind River/VxWorks runtime fingerprint",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S006-01",
+          "S006-02"
+        ],
+        "id": "runtime-address-space",
+        "label": "Runtime-linked principal image at 0x0C000000",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S003",
+          "RQ-004"
+        ],
+        "id": "checksum-grid",
+        "label": "Twenty-five sequential 512 KiB CRC32 integrity regions",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S007-02",
+          "S008-01",
+          "S008-02"
+        ],
+        "id": "bitmap-atlas",
+        "label": "Relocated sparse-row bitmap region",
+        "semantic_status": "PROBABLE_1BPP_GLYPH_ATLAS",
+        "status": "CONFIRMED_RELOCATED_SPARSE_ROW_BITMAP_REGION"
+      },
+      {
+        "evidence": [
+          "S005"
+        ],
+        "id": "browser-bundle",
+        "label": "Embedded HTML and GIF/JPEG browser bundle",
+        "status": "CONFIRMED"
+      },
+      {
+        "evidence": [
+          "S005",
+          "S006-03",
+          "S007-01"
+        ],
+        "id": "post-cluster-table",
+        "label": "Post-cluster runtime-address tables",
+        "status": "CONFIRMED_STRUCTURE"
+      },
+      {
+        "evidence": [
+          "S007-03",
+          "S007-05",
+          "S008-03"
+        ],
+        "id": "browser-renderer",
+        "label": "Browser/UI renderer consuming the bitmap atlas",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "S006-05",
+          "RQ-015"
+        ],
+        "id": "unresolved-runtime-tables",
+        "label": "Post-cluster address runs 1 and 3",
+        "status": "PARTIAL"
+      },
+      {
+        "evidence": [
+          "S002-05"
+        ],
+        "id": "eeprom-state",
+        "label": "Versioned EEPROM migration state",
+        "status": "CONFIRMED_CHAIN"
+      },
+      {
+        "boundary_status": "PARTIAL_MULTIPLE_RELOCATED_MARKER_BANDS",
+        "evidence": [
+          "RQ-009",
+          "S009-01",
+          "S009-02"
+        ],
+        "id": "navigation-runtime",
+        "label": "Embedded navigation subsystem; multi-band boundary",
+        "map_format_status": "OPEN",
+        "status": "CONFIRMED_SUBSYSTEM_PRESENCE"
+      },
+      {
+        "evidence": [
+          "RQ-010",
+          "S009-04"
+        ],
+        "id": "internal-filesystem",
+        "label": "Internal backing volume and object layout",
+        "status": "OPEN",
+        "tested_embedded_volume_status": "NOT_FOUND_UNDER_TESTED_ISO9660_FAT_VALIDATORS"
+      },
+      {
+        "evidence": [
+          "S009-03",
+          "S009-04"
+        ],
+        "id": "runtime-storage-stack",
+        "label": "VxWorks dosFs/FAT/TFFS runtime support",
+        "status": "CONFIRMED_BOUNDED"
+      },
+      {
+        "evidence": [
+          "S009-03"
+        ],
+        "id": "optical-volume-reader",
+        "label": "CD-ROM / ISO-9660 reader support",
+        "status": "PROBABLE"
+      },
+      {
+        "evidence": [
+          "RQ-022"
+        ],
+        "id": "map-media-format",
+        "label": "Navigation map-media schema and compatibility boundary",
+        "status": "OPEN"
+      }
+    ],
+    "open_node_count": 2,
+    "probable_node_count": 4,
+    "schema": "phoenix-mmi.operational-graph/v2"
+  },
+  "publication_safety": {
+    "filesystem_payload_included": false,
+    "firmware_bytes_included": false,
+    "map_payload_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false
+  },
+  "relocation_band_count": 25,
+  "relocation_bands": [
+    {
+      "category_counts": {
+        "navigation": 1,
+        "storage": 7
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 1,
+      "left_end": 25182,
+      "left_start": 1464,
+      "marker_counts": {
+        "dosfs": 1,
+        "map": 1,
+        "sector": 4,
+        "tffs": 3
+      },
+      "maximum_relocation_delta": 4,
+      "minimum_relocation_delta": 0,
+      "pair_count": 7,
+      "raw_strings_included": false,
+      "right_end": 25186,
+      "right_start": 1464,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "storage": 4
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 306344,
+      "left_start": 306160,
+      "marker_counts": {
+        "dosfs": 1,
+        "filesystem": 1,
+        "tffs": 2
+      },
+      "maximum_relocation_delta": -11772,
+      "minimum_relocation_delta": -11772,
+      "pair_count": 4,
+      "raw_strings_included": false,
+      "right_end": 294572,
+      "right_start": 294388,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "storage": 44
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 416519,
+      "left_start": 393368,
+      "marker_counts": {
+        "blk-dev": 1,
+        "cbio": 9,
+        "dosfs": 16,
+        "fat12": 4,
+        "fat16": 3,
+        "fat32": 2,
+        "mount": 2,
+        "sector": 15,
+        "volume": 9
+      },
+      "maximum_relocation_delta": -13128,
+      "minimum_relocation_delta": -13128,
+      "pair_count": 44,
+      "raw_strings_included": false,
+      "right_end": 403391,
+      "right_start": 380240,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "storage": 3
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 1,
+      "left_end": 445292,
+      "left_start": 440964,
+      "marker_counts": {
+        "directory": 3
+      },
+      "maximum_relocation_delta": -13128,
+      "minimum_relocation_delta": -13128,
+      "pair_count": 3,
+      "raw_strings_included": false,
+      "right_end": 432164,
+      "right_start": 427836,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 9,
+        "storage": 1
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 1083533,
+      "left_start": 1067924,
+      "marker_counts": {
+        "map": 1,
+        "navigation": 8,
+        "volume": 1
+      },
+      "maximum_relocation_delta": 316752,
+      "minimum_relocation_delta": 315360,
+      "pair_count": 10,
+      "raw_strings_included": false,
+      "right_end": 1398893,
+      "right_start": 1384676,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 3
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 1106419,
+      "left_start": 1106384,
+      "marker_counts": {
+        "map": 3,
+        "position": 1,
+        "route": 1
+      },
+      "maximum_relocation_delta": 314716,
+      "minimum_relocation_delta": 314716,
+      "pair_count": 3,
+      "raw_strings_included": false,
+      "right_end": 1421135,
+      "right_start": 1421100,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 7,
+        "storage": 1
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 1171398,
+      "left_start": 1152900,
+      "marker_counts": {
+        "destination": 1,
+        "mount": 1,
+        "route": 6
+      },
+      "maximum_relocation_delta": 315160,
+      "minimum_relocation_delta": 315068,
+      "pair_count": 7,
+      "raw_strings_included": false,
+      "right_end": 1486550,
+      "right_start": 1467968,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 3,
+        "storage": 1
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 1238498,
+      "left_start": 1226316,
+      "marker_counts": {
+        "destination": 1,
+        "directory": 1,
+        "route": 3
+      },
+      "maximum_relocation_delta": 319200,
+      "minimum_relocation_delta": 316732,
+      "pair_count": 4,
+      "raw_strings_included": false,
+      "right_end": 1557698,
+      "right_start": 1543048,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 9
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 1334908,
+      "left_start": 1313692,
+      "marker_counts": {
+        "destination": 2,
+        "route": 3,
+        "waypoint": 6
+      },
+      "maximum_relocation_delta": 321564,
+      "minimum_relocation_delta": 321144,
+      "pair_count": 9,
+      "raw_strings_included": false,
+      "right_end": 1656472,
+      "right_start": 1634836,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 16
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 1797600,
+      "left_start": 1797160,
+      "marker_counts": {
+        "map": 16,
+        "street": 3
+      },
+      "maximum_relocation_delta": 323396,
+      "minimum_relocation_delta": 323396,
+      "pair_count": 16,
+      "raw_strings_included": false,
+      "right_end": 2120996,
+      "right_start": 2120556,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "storage": 4
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 6154615,
+      "left_start": 6153052,
+      "marker_counts": {
+        "filesystem": 4
+      },
+      "maximum_relocation_delta": 148920,
+      "minimum_relocation_delta": 148920,
+      "pair_count": 4,
+      "raw_strings_included": false,
+      "right_end": 6303535,
+      "right_start": 6301972,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 6
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 6207549,
+      "left_start": 6199436,
+      "marker_counts": {
+        "navigation": 1,
+        "route": 5
+      },
+      "maximum_relocation_delta": 148144,
+      "minimum_relocation_delta": 148116,
+      "pair_count": 6,
+      "raw_strings_included": false,
+      "right_end": 6355693,
+      "right_start": 6347552,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 27
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 6385116,
+      "left_start": 6384552,
+      "marker_counts": {
+        "destination": 1,
+        "map": 3,
+        "navigation": 27,
+        "poi": 1
+      },
+      "maximum_relocation_delta": 137316,
+      "minimum_relocation_delta": 137316,
+      "pair_count": 27,
+      "raw_strings_included": false,
+      "right_end": 6522432,
+      "right_start": 6521868,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 9
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 6437925,
+      "left_start": 6437600,
+      "marker_counts": {
+        "destination": 3,
+        "map": 2,
+        "route": 3,
+        "street": 2
+      },
+      "maximum_relocation_delta": 133260,
+      "minimum_relocation_delta": 133260,
+      "pair_count": 9,
+      "raw_strings_included": false,
+      "right_end": 6571185,
+      "right_start": 6570860,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 4
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 6785096,
+      "left_start": 6758832,
+      "marker_counts": {
+        "map": 1,
+        "position": 1,
+        "route": 2
+      },
+      "maximum_relocation_delta": 100288,
+      "minimum_relocation_delta": 95712,
+      "pair_count": 4,
+      "raw_strings_included": false,
+      "right_end": 6880808,
+      "right_start": 6859120,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 3
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 6875762,
+      "left_start": 6875680,
+      "marker_counts": {
+        "map": 2,
+        "navigation": 1
+      },
+      "maximum_relocation_delta": 80804,
+      "minimum_relocation_delta": 80804,
+      "pair_count": 3,
+      "raw_strings_included": false,
+      "right_end": 6956566,
+      "right_start": 6956484,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 207,
+        "storage": 2
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 7832261,
+      "left_start": 7828248,
+      "marker_counts": {
+        "mount": 2,
+        "poi": 182,
+        "route": 15,
+        "street": 19
+      },
+      "maximum_relocation_delta": 61136,
+      "minimum_relocation_delta": 61136,
+      "pair_count": 207,
+      "raw_strings_included": false,
+      "right_end": 7893397,
+      "right_start": 7889384,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 2,
+        "storage": 35
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 1,
+      "left_end": 8053107,
+      "left_start": 8015784,
+      "marker_counts": {
+        "cbio": 1,
+        "destination": 1,
+        "directory": 14,
+        "dosfs": 10,
+        "fat12": 1,
+        "filesystem": 6,
+        "map": 1,
+        "mount": 1,
+        "sector": 2,
+        "volume": 2
+      },
+      "maximum_relocation_delta": -7488776,
+      "minimum_relocation_delta": -7488776,
+      "pair_count": 36,
+      "raw_strings_included": false,
+      "right_end": 564331,
+      "right_start": 527008,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 4,
+        "storage": 16
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 8097654,
+      "left_start": 8073136,
+      "marker_counts": {
+        "blk-dev": 3,
+        "cbio": 8,
+        "dosfs": 4,
+        "fat12": 1,
+        "fat16": 1,
+        "map": 4,
+        "sector": 3
+      },
+      "maximum_relocation_delta": -7499116,
+      "minimum_relocation_delta": -7499116,
+      "pair_count": 20,
+      "raw_strings_included": false,
+      "right_end": 598538,
+      "right_start": 574020,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 2,
+        "storage": 12
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 8224241,
+      "left_start": 8184632,
+      "marker_counts": {
+        "directory": 1,
+        "dosfs": 1,
+        "fat12": 2,
+        "fat32": 2,
+        "filesystem": 2,
+        "map": 2,
+        "volume": 9
+      },
+      "maximum_relocation_delta": -7499116,
+      "minimum_relocation_delta": -7499116,
+      "pair_count": 14,
+      "raw_strings_included": false,
+      "right_end": 725125,
+      "right_start": 685516,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 1,
+        "storage": 19
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "storage",
+      "dual_release_code_referenced_pair_count": 2,
+      "left_end": 8263138,
+      "left_start": 8244864,
+      "marker_counts": {
+        "dosfs": 16,
+        "mount": 3,
+        "route": 1,
+        "tffs": 1
+      },
+      "maximum_relocation_delta": -7499116,
+      "minimum_relocation_delta": -7507372,
+      "pair_count": 20,
+      "raw_strings_included": false,
+      "right_end": 755766,
+      "right_start": 745748,
+      "semantic_status": "PROBABLE_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 3
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 8280237,
+      "left_start": 8280044,
+      "marker_counts": {
+        "route": 3
+      },
+      "maximum_relocation_delta": -7507372,
+      "minimum_relocation_delta": -7507372,
+      "pair_count": 3,
+      "raw_strings_included": false,
+      "right_end": 772865,
+      "right_start": 772672,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 211,
+        "storage": 63
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "navigation",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 11685858,
+      "left_start": 11512047,
+      "marker_counts": {
+        "cdrom": 2,
+        "destination": 40,
+        "directory": 24,
+        "dvd": 23,
+        "filesystem": 3,
+        "gps": 5,
+        "guidance": 8,
+        "map": 9,
+        "navigation": 73,
+        "poi": 2,
+        "position": 29,
+        "route": 53,
+        "street": 4,
+        "tffs": 1,
+        "volume": 10
+      },
+      "maximum_relocation_delta": -264872,
+      "minimum_relocation_delta": -265614,
+      "pair_count": 270,
+      "raw_strings_included": false,
+      "right_end": 11420986,
+      "right_start": 11246433,
+      "semantic_status": "PROBABLE_NAVIGATION_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 93,
+        "storage": 47
+      },
+      "constant_relocation_delta": false,
+      "dominant_domain": "mixed-navigation-storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 11856437,
+      "left_start": 11703830,
+      "marker_counts": {
+        "cdrom": 8,
+        "dvd": 21,
+        "filesystem": 2,
+        "gps": 3,
+        "map": 9,
+        "navigation": 52,
+        "poi": 3,
+        "route": 26,
+        "volume": 16
+      },
+      "maximum_relocation_delta": -264012,
+      "minimum_relocation_delta": -264839,
+      "pair_count": 136,
+      "raw_strings_included": false,
+      "right_end": 11592425,
+      "right_start": 11438991,
+      "semantic_status": "PROBABLE_MIXED_NAVIGATION_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    },
+    {
+      "category_counts": {
+        "navigation": 5,
+        "storage": 7
+      },
+      "constant_relocation_delta": true,
+      "dominant_domain": "mixed-navigation-storage",
+      "dual_release_code_referenced_pair_count": 0,
+      "left_end": 11880964,
+      "left_start": 11873140,
+      "marker_counts": {
+        "dvd": 4,
+        "gps": 3,
+        "map": 2,
+        "volume": 3
+      },
+      "maximum_relocation_delta": -263811,
+      "minimum_relocation_delta": -263811,
+      "pair_count": 12,
+      "raw_strings_included": false,
+      "right_end": 11617153,
+      "right_start": 11609329,
+      "semantic_status": "PROBABLE_MIXED_NAVIGATION_STORAGE_REGION",
+      "structural_status": "CONFIRMED_ORDERED_CROSS_VERSION_MARKER_BAND"
+    }
+  ],
+  "right": "CD3 K1006 / MMI 5570",
+  "schema": "phoenix-mmi.navigation-storage-boundary-comparison/v1",
+  "storage": {
+    "backing_device_and_volume_layout": "OPEN",
+    "cross_version_band_count": 8,
+    "iso9660_reader_support": "PROBABLE_IDENTIFIER_CONSTANT_AND_CDROM_RUNTIME_MARKERS",
+    "left_pc_relative_referrer_count": 23,
+    "principal_image_embedded_volume": "NOT_FOUND_UNDER_TESTED_ISO9660_FAT_VALIDATORS",
+    "right_pc_relative_referrer_count": 22,
+    "runtime_stack": "CONFIRMED_CROSS_VERSION_STORAGE_RUNTIME_EVIDENCE"
+  }
+}

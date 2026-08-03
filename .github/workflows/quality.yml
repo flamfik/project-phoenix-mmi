@@ -10,7 +10,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Compile Python tools
-        run: python -m compileall tools
+      - name: Install Phoenix SDK
+        run: python -m pip install -e .
+      - name: Compile Python sources
+        run: python -m compileall sdk tools tests
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
       - name: Smoke test inventory tool
         run: python tools/inventory/verify_artifacts.py tests/fixtures --json

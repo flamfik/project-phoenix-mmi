@@ -1,0 +1,222 @@
+{
+  "analysis_mode": "read-only-strict-embedded-xim2-envelope-and-rle-validation",
+  "artifacts": [
+    {
+      "artifact": "cd1",
+      "case_insensitive_yim_suffix_occurrence_count": 2,
+      "decoded_raster_bytes": 790484,
+      "distinct_codec_word_count": 1,
+      "distinct_geometry_count": 15,
+      "geometries": [
+        {
+          "height": 11,
+          "resource_count": 2,
+          "width": 13
+        },
+        {
+          "height": 13,
+          "resource_count": 1,
+          "width": 14
+        },
+        {
+          "height": 16,
+          "resource_count": 1,
+          "width": 16
+        },
+        {
+          "height": 23,
+          "resource_count": 2,
+          "width": 25
+        },
+        {
+          "height": 18,
+          "resource_count": 11,
+          "width": 31
+        },
+        {
+          "height": 18,
+          "resource_count": 15,
+          "width": 34
+        },
+        {
+          "height": 20,
+          "resource_count": 12,
+          "width": 34
+        },
+        {
+          "height": 18,
+          "resource_count": 9,
+          "width": 43
+        },
+        {
+          "height": 18,
+          "resource_count": 15,
+          "width": 46
+        },
+        {
+          "height": 122,
+          "resource_count": 8,
+          "width": 59
+        },
+        {
+          "height": 122,
+          "resource_count": 1,
+          "width": 60
+        },
+        {
+          "height": 15,
+          "resource_count": 2,
+          "width": 480
+        },
+        {
+          "height": 20,
+          "resource_count": 2,
+          "width": 480
+        },
+        {
+          "height": 45,
+          "resource_count": 1,
+          "width": 480
+        },
+        {
+          "height": 240,
+          "resource_count": 2,
+          "width": 480
+        }
+      ],
+      "raw_magic_occurrence_count": 1282,
+      "rejected_magic_occurrence_count": 1198,
+      "strict_validated_resource_count": 84,
+      "unique_decoded_content_count": 84,
+      "unique_encoded_content_count": 84
+    },
+    {
+      "artifact": "cd3",
+      "case_insensitive_yim_suffix_occurrence_count": 2,
+      "decoded_raster_bytes": 790484,
+      "distinct_codec_word_count": 1,
+      "distinct_geometry_count": 15,
+      "geometries": [
+        {
+          "height": 11,
+          "resource_count": 2,
+          "width": 13
+        },
+        {
+          "height": 13,
+          "resource_count": 1,
+          "width": 14
+        },
+        {
+          "height": 16,
+          "resource_count": 1,
+          "width": 16
+        },
+        {
+          "height": 23,
+          "resource_count": 2,
+          "width": 25
+        },
+        {
+          "height": 18,
+          "resource_count": 11,
+          "width": 31
+        },
+        {
+          "height": 18,
+          "resource_count": 15,
+          "width": 34
+        },
+        {
+          "height": 20,
+          "resource_count": 12,
+          "width": 34
+        },
+        {
+          "height": 18,
+          "resource_count": 9,
+          "width": 43
+        },
+        {
+          "height": 18,
+          "resource_count": 15,
+          "width": 46
+        },
+        {
+          "height": 122,
+          "resource_count": 8,
+          "width": 59
+        },
+        {
+          "height": 122,
+          "resource_count": 1,
+          "width": 60
+        },
+        {
+          "height": 15,
+          "resource_count": 2,
+          "width": 480
+        },
+        {
+          "height": 20,
+          "resource_count": 2,
+          "width": 480
+        },
+        {
+          "height": 45,
+          "resource_count": 1,
+          "width": 480
+        },
+        {
+          "height": 240,
+          "resource_count": 2,
+          "width": 480
+        }
+      ],
+      "raw_magic_occurrence_count": 1287,
+      "rejected_magic_occurrence_count": 1203,
+      "strict_validated_resource_count": 84,
+      "unique_decoded_content_count": 84,
+      "unique_encoded_content_count": 84
+    }
+  ],
+  "classification": {
+    "consumer_code_owner": "NOT_IDENTIFIED",
+    "cross_version_resource_set": "IDENTICAL_UNDER_STRICT_CONTENT_COMPARISON",
+    "embedded_xim2": "CONFIRMED_IN_CD1_AND_CD3_MAIN_IMAGES",
+    "yim_main_image_link": "EXACT_STANDALONE_TO_EMBEDDED_MATCH_CONFIRMED"
+  },
+  "cross_version": {
+    "cd1_only_encoded_content_count": 0,
+    "cd3_only_encoded_content_count": 0,
+    "resource_sets_equal_by_decoded_content": true,
+    "resource_sets_equal_by_encoded_content": true,
+    "shared_decoded_content_count": 84,
+    "shared_encoded_content_count": 84
+  },
+  "operational_graph_version": "v45",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "integrity_field_values_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.embedded-xim2-census/v1",
+  "session": "053",
+  "standalone_yim_correlation": {
+    "cd1_decoded_match_count": 1,
+    "cd1_encoded_match_count": 1,
+    "cd3_decoded_match_count": 1,
+    "cd3_encoded_match_count": 1,
+    "codec_sets_equal": true,
+    "standalone_unique_source_count": 5
+  }
+}

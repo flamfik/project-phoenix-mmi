@@ -1,0 +1,85 @@
+{
+  "analysis_mode": "read-only-common-integrity-candidate-census",
+  "candidate_16bit_algorithms_tested": 4,
+  "candidate_32bit_algorithms_tested": 3,
+  "candidate_ranges_tested": 4,
+  "classification": {
+    "safe_repack": "BLOCKED",
+    "yim_integrity_fields": "UNRESOLVED_UNDER_TESTED_COMMON_ALGORITHMS"
+  },
+  "integrity16_total_match_count": 0,
+  "integrity32_total_match_count": 0,
+  "operational_graph_version": "v39",
+  "publication_safety": {
+    "decoded_raster_bytes_included": false,
+    "decoded_raster_hashes_included": false,
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.yim-integrity/v1",
+  "session": "047",
+  "sources": [
+    {
+      "candidate_16bit_algorithms_tested": 4,
+      "candidate_32bit_algorithms_tested": 3,
+      "candidate_ranges_tested": 4,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "integrity_fields_interpreted": false,
+      "source_id": "YIM-U01"
+    },
+    {
+      "candidate_16bit_algorithms_tested": 4,
+      "candidate_32bit_algorithms_tested": 3,
+      "candidate_ranges_tested": 4,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "integrity_fields_interpreted": false,
+      "source_id": "YIM-U02"
+    },
+    {
+      "candidate_16bit_algorithms_tested": 4,
+      "candidate_32bit_algorithms_tested": 3,
+      "candidate_ranges_tested": 4,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "integrity_fields_interpreted": false,
+      "source_id": "YIM-U03"
+    },
+    {
+      "candidate_16bit_algorithms_tested": 4,
+      "candidate_32bit_algorithms_tested": 3,
+      "candidate_ranges_tested": 4,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "integrity_fields_interpreted": false,
+      "source_id": "YIM-U04"
+    },
+    {
+      "candidate_16bit_algorithms_tested": 4,
+      "candidate_32bit_algorithms_tested": 3,
+      "candidate_ranges_tested": 4,
+      "integrity16_match_count": 0,
+      "integrity16_matches": [],
+      "integrity32_match_count": 0,
+      "integrity32_matches": [],
+      "integrity_fields_interpreted": false,
+      "source_id": "YIM-U05"
+    }
+  ],
+  "unique_source_count": 5
+}

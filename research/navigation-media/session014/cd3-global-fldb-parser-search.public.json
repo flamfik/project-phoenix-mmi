@@ -1,0 +1,730 @@
+{
+  "analysis_mode": "read-only-static-global-role-sensitive",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "size_bytes": 12690344,
+    "source_path_included": false
+  },
+  "classification": {
+    "optical_buffer_provenance": "OPEN",
+    "parser_status": "NOT_IDENTIFIED_UNDER_MULTI_SIGNAL_GATE",
+    "record_stride_loop_candidate_count": 7,
+    "targeted_dataflow_candidate_count": 0,
+    "write_only_initializer_candidate_count": 1
+  },
+  "navigation_adjacent_numeric_clusters": [
+    {
+      "center": 1761662,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r14",
+        "best_header_read_offsets": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "best_header_write_base_register": "r15",
+        "best_header_write_offsets": [
+          0
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.9375,
+      "normalized_window_shape_sha256": "c6859a0981d3d05f69bc3931a6cb39fac4ae489128a514ebe0aa2afa1e265c3a",
+      "observed_backward_loop_steps": [],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 0,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1763738,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r2",
+        "best_header_read_offsets": [
+          0,
+          4
+        ],
+        "best_header_write_base_register": "r14",
+        "best_header_write_offsets": [
+          0,
+          4,
+          16,
+          20
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.864583,
+      "normalized_window_shape_sha256": "e85b2e6c67e95552ae05c27aa4fe891f21211880222182f88c3e5623d5fc4b45",
+      "observed_backward_loop_steps": [],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 1,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1765228,
+      "classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r12",
+        "best_header_read_offsets": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "best_header_write_base_register": "r11",
+        "best_header_write_offsets": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.927083,
+      "normalized_window_shape_sha256": "d06316c61578c1ff1dd23893cdd23ef354bc8984a7ebc43a8fe5c038a9edfbfa",
+      "observed_backward_loop_steps": [
+        -40,
+        40
+      ],
+      "record_size_add_count": 2,
+      "record_size_call_argument_count": 2,
+      "record_size_call_delay_count": 1
+    },
+    {
+      "center": 1767426,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 1,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r9",
+        "best_header_read_offsets": [
+          0,
+          4,
+          8
+        ],
+        "best_header_write_base_register": "r9",
+        "best_header_write_offsets": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.921875,
+      "normalized_window_shape_sha256": "87242f9ff9d65280d50020b5239fa70789b0dacc1de859cca28338b715cd1d0e",
+      "observed_backward_loop_steps": [
+        -40
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 0,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1772782,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r4",
+        "best_header_read_offsets": [
+          0,
+          4,
+          8
+        ],
+        "best_header_write_base_register": "r2",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.786458,
+      "normalized_window_shape_sha256": "5b27ae69827207b2a2f6da09a23fa10cf43021ceff72c078910926564bdc7370",
+      "observed_backward_loop_steps": [
+        -16,
+        -1,
+        16
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 0,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1775950,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 2,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r0",
+        "best_header_write_offsets": [
+          0
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.916667,
+      "normalized_window_shape_sha256": "0c318f00f1178396cdc4d1bd941c17d15da1217e202d4b951c9170c879afebdc",
+      "observed_backward_loop_steps": [],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 1,
+      "record_size_call_delay_count": 1
+    },
+    {
+      "center": 1776038,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 2,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r0",
+        "best_header_write_offsets": [
+          0
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.921875,
+      "normalized_window_shape_sha256": "c5962ca04519f6945f1fed922b4c8dbbff7b93ef5253f291256a89b3ca2d9848",
+      "observed_backward_loop_steps": [],
+      "record_size_add_count": 2,
+      "record_size_call_argument_count": 2,
+      "record_size_call_delay_count": 1
+    },
+    {
+      "center": 1776226,
+      "classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "endian_instruction_count": 1,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r0",
+        "best_header_write_offsets": [
+          0
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.921875,
+      "normalized_window_shape_sha256": "1cca5b5de54d683c5bb8332ca6ea7e3a5ec42f97046c5004b448d1db0862ee48",
+      "observed_backward_loop_steps": [
+        1
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 1,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1776302,
+      "classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r14",
+        "best_header_read_offsets": [
+          0,
+          12
+        ],
+        "best_header_write_base_register": "r14",
+        "best_header_write_offsets": [
+          0,
+          16
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.958333,
+      "normalized_window_shape_sha256": "0712b2d6fe94a30da6119bbb80f8377bc1d6af430b5b4ae25954d3d94be09796",
+      "observed_backward_loop_steps": [
+        1
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 1,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1776478,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r14",
+        "best_header_write_offsets": [
+          0,
+          16
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.942708,
+      "normalized_window_shape_sha256": "d0e8a27decf9f0c8116dc37116475a5f1008a0359be4d576df40ca38b412e3be",
+      "observed_backward_loop_steps": [
+        1
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 0,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1777490,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 1,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r9",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.901042,
+      "normalized_window_shape_sha256": "fbf1395ec132b33f977c9aa3d9bb1eef38dd41d842c50049a09f3b2054d06f9d",
+      "observed_backward_loop_steps": [],
+      "record_size_add_count": 2,
+      "record_size_call_argument_count": 0,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1777626,
+      "classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "endian_instruction_count": 1,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r9",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.932292,
+      "normalized_window_shape_sha256": "003f53bf2ce1fb5cb7b0aaa6c79f2a2662e5a6fd79f7d8cd5855558fade58075",
+      "observed_backward_loop_steps": [
+        1
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 1,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1777748,
+      "classification": "UNRESOLVED_NAVIGATION_ADJACENT_NUMERIC_WINDOW",
+      "endian_instruction_count": 2,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r9",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.895833,
+      "normalized_window_shape_sha256": "0bc99e8fce64dcf13fbb8cd61b9124412ed26558f16249f804a658bf10b33091",
+      "observed_backward_loop_steps": [
+        1
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 0,
+      "record_size_call_delay_count": 0
+    },
+    {
+      "center": 1777800,
+      "classification": "REJECTED_CALL_FIELD_OFFSET_NOT_RECORD_STRIDE",
+      "endian_instruction_count": 2,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r0",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r9",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.901042,
+      "normalized_window_shape_sha256": "445193dfc6808a819e257412200558164958af25c6454437aaa214b509c9a5f7",
+      "observed_backward_loop_steps": [
+        1
+      ],
+      "record_size_add_count": 1,
+      "record_size_call_argument_count": 1,
+      "record_size_call_delay_count": 0
+    }
+  ],
+  "navigation_reference_centers": [
+    1769670,
+    1769808
+  ],
+  "numeric_role_census": {
+    "add_immediate_36": 2892,
+    "backward_branch_delay_loop_step": 7,
+    "call_delay_field_candidate": 299,
+    "mov_immediate_36": 541
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "record_stride_loop_candidates": [
+    {
+      "call_count": 2,
+      "classification": "PROBABLE_FIXED_RECORD_ARRAY_INITIALIZER",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r8",
+        "best_header_read_offsets": [
+          0,
+          16
+        ],
+        "best_header_write_base_register": "r8",
+        "best_header_write_offsets": [
+          0,
+          8,
+          12,
+          16,
+          20
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 1.0,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 3125210,
+      "loop_length": 20,
+      "loop_start": 3125190,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": 170700,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "5c8704808741a4d77bc995a35491aa930a58c6a7d4d5f0cc3c6c81c488a94414",
+      "raw_loop_sha256": "00846246d7f8e1f1f08d2120179ed810d512c5280d30370a7d21078f80f4f647",
+      "role": "WRITE_ONLY_36_BYTE_RECORD_LOOP",
+      "seed_offset": 3125208,
+      "stepped_register": "r0",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 6
+    },
+    {
+      "call_count": 6,
+      "classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r15",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r15",
+        "best_header_write_offsets": [
+          0
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.875,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 4663588,
+      "loop_length": 16,
+      "loop_start": 4663572,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": -1329394,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "f64447958d157f35e115fde2ce4d2d3fd3c6f8ab57233b2a6cfd0b54fe908963",
+      "raw_loop_sha256": "619444dc886f4eeb25269a0453f8dd9f0b432c6da03a9b76c44c4660bc6cf6b3",
+      "role": "ARITHMETIC_36_BYTE_LOOP_STEP",
+      "seed_offset": 4663586,
+      "stepped_register": "r9",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 0
+    },
+    {
+      "call_count": 7,
+      "classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r15",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r2",
+        "best_header_write_offsets": [
+          0
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.909091,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 7142944,
+      "loop_length": 22,
+      "loop_start": 7142922,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": -3808750,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "02972a19dadfffe2860d6dcc0300e343597c660d02eb5a83cd4a15fbdb1e5f00",
+      "raw_loop_sha256": "e7a1b8ff479ffe34af7fc2e88a2f1b95f0b7c7e4c09b8f2685826c48e54eae4a",
+      "role": "ARITHMETIC_36_BYTE_LOOP_STEP",
+      "seed_offset": 7142942,
+      "stepped_register": "r8",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 0
+    },
+    {
+      "call_count": 8,
+      "classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r13",
+        "best_header_read_offsets": [
+          0,
+          8
+        ],
+        "best_header_write_base_register": "r8",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.857143,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 7323232,
+      "loop_length": 14,
+      "loop_start": 7323218,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": -3989038,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "69f342f55750feabbabe63952125bca1f2021f76e03a0524fee0e8ec69e0b4a3",
+      "raw_loop_sha256": "8e0eedb95692bad6ccb737811bd36b2cfe2d221f40012c246fceab0744874260",
+      "role": "ARITHMETIC_36_BYTE_LOOP_STEP",
+      "seed_offset": 7323230,
+      "stepped_register": "r9",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 0
+    },
+    {
+      "call_count": 9,
+      "classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r12",
+        "best_header_read_offsets": [
+          0,
+          8
+        ],
+        "best_header_write_base_register": "r5",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.857143,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 7324104,
+      "loop_length": 14,
+      "loop_start": 7324090,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": -3989910,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "07bba8948ec67faadc127ab4f5fc00e6f49cc05b7193f07a23ad65fb09a05a49",
+      "raw_loop_sha256": "d13211dca86dd7ce851b8064749946556efb5fad6a167ba9a4ab1737664c9719",
+      "role": "ARITHMETIC_36_BYTE_LOOP_STEP",
+      "seed_offset": 7324102,
+      "stepped_register": "r9",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 0
+    },
+    {
+      "call_count": 11,
+      "classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r12",
+        "best_header_read_offsets": [
+          0,
+          8
+        ],
+        "best_header_write_base_register": "r5",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.875,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 7325746,
+      "loop_length": 16,
+      "loop_start": 7325730,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": -3991552,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "a12c5c48b43b4062bce2634d50aaa02ded657724af5f65012999fecd72f42feb",
+      "raw_loop_sha256": "663bd0e4e1d2b12cebb8d2e8b7b1d058cd1f2db2ab546e30c8ec99da02cc9e2c",
+      "role": "ARITHMETIC_36_BYTE_LOOP_STEP",
+      "seed_offset": 7325744,
+      "stepped_register": "r9",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 0
+    },
+    {
+      "call_count": 2,
+      "classification": "GENERIC_36_BYTE_LOOP_NOT_PROMOTED",
+      "endian_instruction_count": 0,
+      "function_boundary_asserted": false,
+      "header_access": {
+        "absolute_pointer_values_included": false,
+        "best_header_read_base_register": "r15",
+        "best_header_read_offsets": [
+          0
+        ],
+        "best_header_write_base_register": "r1",
+        "best_header_write_offsets": [
+          0,
+          4
+        ]
+      },
+      "independent_signal_count_beyond_stride": 0,
+      "instruction_bytes_included": false,
+      "known_instruction_ratio": 0.857143,
+      "literal_signals": {
+        "directory_offset_0x220": 0,
+        "logical_sector_size_2048": 0
+      },
+      "loop_end": 7795860,
+      "loop_length": 14,
+      "loop_start": 7795846,
+      "nearest_registered_context": {
+        "buffer_provenance_established": false,
+        "domain": "route-data",
+        "signed_distance": 3562268,
+        "status": "OUTSIDE_THRESHOLD",
+        "threshold": 65536
+      },
+      "normalized_loop_shape_sha256": "4fffa3a0ec94574a10aab53d88708b74cde39e08289794bf5525fa0e8627d60d",
+      "raw_loop_sha256": "d21ab204733d65a37f29e7e605d6bef909af830a7cd774f2bf684742a7d092a0",
+      "role": "ARITHMETIC_36_BYTE_LOOP_STEP",
+      "seed_offset": 7795858,
+      "stepped_register": "r10",
+      "stepped_register_load_count": 0,
+      "stepped_register_store_count": 0
+    }
+  ],
+  "schema": "phoenix-mmi.global-fldb-parser-search/v1"
+}

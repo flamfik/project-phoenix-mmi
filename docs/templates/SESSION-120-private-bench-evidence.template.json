@@ -1,0 +1,23 @@
+{
+  "approval_record_sha256": null,
+  "bundle_version": "m7-session118-v1",
+  "evidence_kind": "PHYSICAL_BENCH_PRIVATE",
+  "incident_record_sha256": null,
+  "observation": {
+    "physical_observation_performed": false,
+    "safe_shutdown_confirmed": false,
+    "stop_condition_triggered": false,
+    "stop_response_completed": false
+  },
+  "prerequisites": {
+    "authoritative_power_reference_verified": false,
+    "bench_manifest_complete": false,
+    "dummy_load_recovery_rehearsal_complete": false,
+    "observation_contract_accepted": false,
+    "risk_review_signed_by_independent_reviewer": false,
+    "risk_review_signed_by_operator": false,
+    "two_person_pre_power_check_complete": false
+  },
+  "private_capture_sha256": [],
+  "schema": "phoenix-mmi.bench-evidence-bundle/v1"
+}

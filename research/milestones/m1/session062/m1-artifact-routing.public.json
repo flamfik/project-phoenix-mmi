@@ -1,0 +1,127 @@
+{
+  "analysis_mode": "read-only-bounded-signature-and-extension-family-routing",
+  "artifact_count": 593,
+  "classification": {
+    "artifact_family_coverage": "COMPLETE",
+    "deeper_analysis_routing": "COMPLETE",
+    "m1_artifact_understanding": "PASS"
+  },
+  "classified_artifact_count": 593,
+  "disc_family_counts": {
+    "cd1": {
+      "ELF_EXECUTABLE": 4,
+      "INTEL_HEX_TEXT": 72,
+      "LOD_LANGUAGE_PAYLOAD": 15,
+      "OPAQUE_BIN_PAYLOAD": 114,
+      "OPAQUE_SW": 3,
+      "PRINCIPAL_MMI_SUPERH_IMAGE": 1,
+      "UPDATE_DESCRIPTOR_METAINFO": 1,
+      "YIM_XIM2_RESOURCE": 5
+    },
+    "cd2": {
+      "OPAQUE_BIN_PAYLOAD": 67,
+      "UBOOT_LEGACY_IMAGE": 25,
+      "UPDATE_DESCRIPTOR_METAINFO": 1
+    },
+    "cd3": {
+      "ELF_EXECUTABLE": 4,
+      "INTEL_HEX_TEXT": 82,
+      "LOD_LANGUAGE_PAYLOAD": 30,
+      "OPAQUE_BIN_PAYLOAD": 159,
+      "OPAQUE_SW": 3,
+      "PRINCIPAL_MMI_SUPERH_IMAGE": 1,
+      "UPDATE_DESCRIPTOR_METAINFO": 1,
+      "YIM_XIM2_RESOURCE": 5
+    }
+  },
+  "extension_counts": {
+    ".BIN": 375,
+    ".HEX": 154,
+    ".LOD": 45,
+    ".SW": 6,
+    ".TXT": 3,
+    ".YIM": 10
+  },
+  "families": [
+    {
+      "artifact_count": 8,
+      "evidence": "Session 001",
+      "family": "ELF_EXECUTABLE",
+      "next_milestone": "M4",
+      "route": "target-specific runtime analysis"
+    },
+    {
+      "artifact_count": 154,
+      "evidence": "Sessions 001-002 and 041",
+      "family": "INTEL_HEX_TEXT",
+      "next_milestone": "M2",
+      "route": "validated record normalization and checksums"
+    },
+    {
+      "artifact_count": 45,
+      "evidence": "Sessions 044, 048 and 055-059",
+      "family": "LOD_LANGUAGE_PAYLOAD",
+      "next_milestone": "M2/M3",
+      "route": "record model and speech-resource research"
+    },
+    {
+      "artifact_count": 340,
+      "evidence": "Sessions 001-002 and 040",
+      "family": "OPAQUE_BIN_PAYLOAD",
+      "next_milestone": "M2/M4",
+      "route": "format classification before component semantics"
+    },
+    {
+      "artifact_count": 6,
+      "evidence": "Session 041",
+      "family": "OPAQUE_SW",
+      "next_milestone": "M2",
+      "route": "format validation before decoding"
+    },
+    {
+      "artifact_count": 2,
+      "evidence": "Sessions 003-010 and 053",
+      "family": "PRINCIPAL_MMI_SUPERH_IMAGE",
+      "next_milestone": "M3/M4",
+      "route": "resource laboratory and runtime ownership"
+    },
+    {
+      "artifact_count": 25,
+      "evidence": "Session 001",
+      "family": "UBOOT_LEGACY_IMAGE",
+      "next_milestone": "M4",
+      "route": "ARM/INTEGRITY component runtime analysis"
+    },
+    {
+      "artifact_count": 3,
+      "evidence": "Sessions 002-003",
+      "family": "UPDATE_DESCRIPTOR_METAINFO",
+      "next_milestone": "M2",
+      "route": "descriptor checksums and package tooling"
+    },
+    {
+      "artifact_count": 10,
+      "evidence": "Sessions 044-054",
+      "family": "YIM_XIM2_RESOURCE",
+      "next_milestone": "M2/M3",
+      "route": "integrity writer and resource semantics"
+    }
+  ],
+  "operational_graph_version": "v54",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "local_paths_included": false,
+    "member_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "routed_artifact_count": 593,
+  "schema": "phoenix-mmi.m1-artifact-routing/v1",
+  "session": "062"
+}

@@ -1,0 +1,85 @@
+{
+  "analysis_mode": "read-only-registered-identity-and-session001-aggregate-replay",
+  "classification": {
+    "media_readiness_for_m1": "PASS",
+    "registered_artifact_identity": "CONFIRMED",
+    "session001_inventory": "REPRODUCED"
+  },
+  "disc_count": 3,
+  "discs": [
+    {
+      "directory_count": 332,
+      "disc": "cd1",
+      "extension_counts": {
+        ".BIN": 119,
+        ".HEX": 72,
+        ".LOD": 15,
+        ".SW": 3,
+        ".TXT": 1,
+        ".YIM": 5
+      },
+      "file_count": 215,
+      "iso_size": 150089728,
+      "logical_block_size": 2048,
+      "payload_bytes": 148185748,
+      "registered_identity_verified": true,
+      "session001_aggregate_reproduced": true,
+      "volume_identifier": "H2_HI_EU_K942"
+    },
+    {
+      "directory_count": 199,
+      "disc": "cd2",
+      "extension_counts": {
+        ".BIN": 92,
+        ".TXT": 1
+      },
+      "file_count": 93,
+      "iso_size": 98762752,
+      "logical_block_size": 2048,
+      "payload_bytes": 95351480,
+      "registered_identity_verified": true,
+      "session001_aggregate_reproduced": true,
+      "volume_identifier": "DISC"
+    },
+    {
+      "directory_count": 437,
+      "disc": "cd3",
+      "extension_counts": {
+        ".BIN": 164,
+        ".HEX": 82,
+        ".LOD": 30,
+        ".SW": 3,
+        ".TXT": 1,
+        ".YIM": 5
+      },
+      "file_count": 285,
+      "iso_size": 194539520,
+      "logical_block_size": 2048,
+      "payload_bytes": 192171275,
+      "registered_identity_verified": true,
+      "session001_aggregate_reproduced": true,
+      "volume_identifier": "DISK"
+    }
+  ],
+  "operational_graph_version": "v53",
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "local_paths_included": false,
+    "member_paths_included": false,
+    "payload_bytes_included": false,
+    "raw_header_values_included": false,
+    "raw_offsets_included": false,
+    "raw_strings_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.m1-media-reproduction/v1",
+  "session": "061",
+  "totals": {
+    "directory_count": 968,
+    "file_count": 593,
+    "payload_bytes": 435708503
+  }
+}

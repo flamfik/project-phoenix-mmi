@@ -1,0 +1,1764 @@
+{
+  "analysis_mode": "read-only-static",
+  "artifact": {
+    "filename": "H2_HI_EU.BIN",
+    "label": "CD1 K942 / MMI 5150",
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "size_bytes": 12954188,
+    "source_iso_filename": "MMI-5570-4L0.998.961-cd1-3.iso",
+    "source_iso_sha256": "1948443c6fb94433f7985ed6a4677006ec3bcde6d789f8a5915ba6f6f2dca03f",
+    "source_member_path": "MMI_HI/MMI/42/DEFAULT/H2_HI_EU.BIN"
+  },
+  "classification": {
+    "map_media_format": "OPEN",
+    "navigation_region_boundary": "PARTIAL_MULTIPLE_MARKER_CLUSTERS",
+    "navigation_subsystem_presence": "CONFIRMED_EMBEDDED_NAVIGATION_SUBSYSTEM_EVIDENCE",
+    "principal_image_embedded_filesystem": "NOT_FOUND_UNDER_TESTED_ISO9660_FAT_VALIDATORS",
+    "runtime_storage_stack": "CONFIRMED_VXWORKS_DOSFS_FAT_TFFS_SUPPORT"
+  },
+  "marker_inventory": {
+    "candidate_clusters": [
+      {
+        "category_counts": {
+          "navigation": 2,
+          "storage": 11
+        },
+        "end": 42664,
+        "marker_counts": {
+          "cdrom": 1,
+          "dosfs": 1,
+          "map": 1,
+          "mount": 1,
+          "position": 1,
+          "sector": 4,
+          "tffs": 6
+        },
+        "raw_strings_included": false,
+        "record_count": 12,
+        "span": 41200,
+        "start": 1464
+      },
+      {
+        "category_counts": {
+          "storage": 5
+        },
+        "end": 306344,
+        "marker_counts": {
+          "dosfs": 1,
+          "filesystem": 1,
+          "tffs": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 5,
+        "span": 573,
+        "start": 305771
+      },
+      {
+        "category_counts": {
+          "storage": 51
+        },
+        "end": 417837,
+        "marker_counts": {
+          "blk-dev": 1,
+          "cbio": 9,
+          "dosfs": 21,
+          "fat12": 5,
+          "fat16": 4,
+          "fat32": 2,
+          "mount": 2,
+          "sector": 15,
+          "volume": 9
+        },
+        "raw_strings_included": false,
+        "record_count": 51,
+        "span": 24469,
+        "start": 393368
+      },
+      {
+        "category_counts": {
+          "storage": 4
+        },
+        "end": 445292,
+        "marker_counts": {
+          "directory": 4
+        },
+        "raw_strings_included": false,
+        "record_count": 4,
+        "span": 4328,
+        "start": 440964
+      },
+      {
+        "category_counts": {
+          "navigation": 1,
+          "storage": 2
+        },
+        "end": 679597,
+        "marker_counts": {
+          "cdrom": 2,
+          "map": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 5073,
+        "start": 674524
+      },
+      {
+        "category_counts": {
+          "navigation": 19,
+          "storage": 1
+        },
+        "end": 1106419,
+        "marker_counts": {
+          "map": 8,
+          "navigation": 8,
+          "position": 2,
+          "route": 3,
+          "volume": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 20,
+        "span": 38495,
+        "start": 1067924
+      },
+      {
+        "category_counts": {
+          "navigation": 12,
+          "storage": 1
+        },
+        "end": 1182254,
+        "marker_counts": {
+          "destination": 1,
+          "map": 4,
+          "mount": 1,
+          "navigation": 1,
+          "position": 1,
+          "route": 7
+        },
+        "raw_strings_included": false,
+        "record_count": 12,
+        "span": 29354,
+        "start": 1152900
+      },
+      {
+        "category_counts": {
+          "navigation": 5,
+          "storage": 1
+        },
+        "end": 1246588,
+        "marker_counts": {
+          "destination": 1,
+          "directory": 1,
+          "map": 1,
+          "route": 4
+        },
+        "raw_strings_included": false,
+        "record_count": 6,
+        "span": 20272,
+        "start": 1226316
+      },
+      {
+        "category_counts": {
+          "navigation": 16,
+          "storage": 2
+        },
+        "end": 1347875,
+        "marker_counts": {
+          "destination": 2,
+          "directory": 2,
+          "map": 1,
+          "route": 5,
+          "waypoint": 10
+        },
+        "raw_strings_included": false,
+        "record_count": 18,
+        "span": 50136,
+        "start": 1297739
+      },
+      {
+        "category_counts": {
+          "navigation": 3
+        },
+        "end": 1458651,
+        "marker_counts": {
+          "navigation": 1,
+          "navigation-internal-data": 1,
+          "route": 2
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 143,
+        "start": 1458508
+      },
+      {
+        "category_counts": {
+          "navigation": 3
+        },
+        "end": 1542954,
+        "marker_counts": {
+          "map": 3,
+          "route": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 15406,
+        "start": 1527548
+      },
+      {
+        "category_counts": {
+          "navigation": 22
+        },
+        "end": 1797618,
+        "marker_counts": {
+          "destination": 1,
+          "map": 22,
+          "navigation": 1,
+          "street": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 22,
+        "span": 475,
+        "start": 1797143
+      },
+      {
+        "category_counts": {
+          "storage": 4
+        },
+        "end": 1909329,
+        "marker_counts": {
+          "cd001": 1,
+          "cdrom": 3,
+          "filesystem": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 4,
+        "span": 25753,
+        "start": 1883576
+      },
+      {
+        "category_counts": {
+          "navigation": 4
+        },
+        "end": 2025049,
+        "marker_counts": {
+          "map": 4
+        },
+        "raw_strings_included": false,
+        "record_count": 4,
+        "span": 15017,
+        "start": 2010032
+      },
+      {
+        "category_counts": {
+          "navigation": 5
+        },
+        "end": 2281681,
+        "marker_counts": {
+          "map": 4,
+          "navigation": 2,
+          "route": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 5,
+        "span": 14622,
+        "start": 2267059
+      },
+      {
+        "category_counts": {
+          "navigation": 3
+        },
+        "end": 2633761,
+        "marker_counts": {
+          "destination": 1,
+          "map": 3,
+          "navigation": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 7553,
+        "start": 2626208
+      },
+      {
+        "category_counts": {
+          "navigation": 7
+        },
+        "end": 2965681,
+        "marker_counts": {
+          "map": 2,
+          "navigation": 1,
+          "route": 4,
+          "routeact-dat": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 7,
+        "span": 27026,
+        "start": 2938655
+      },
+      {
+        "category_counts": {
+          "navigation": 4
+        },
+        "end": 3004848,
+        "marker_counts": {
+          "navigation": 2,
+          "route": 1,
+          "routeact-dat": 1,
+          "street": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 4,
+        "span": 12508,
+        "start": 2992340
+      },
+      {
+        "category_counts": {
+          "navigation": 3
+        },
+        "end": 3071101,
+        "marker_counts": {
+          "destination": 1,
+          "map": 1,
+          "navigation": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 584,
+        "start": 3070517
+      },
+      {
+        "category_counts": {
+          "storage": 6
+        },
+        "end": 6154615,
+        "marker_counts": {
+          "filesystem": 6
+        },
+        "raw_strings_included": false,
+        "record_count": 6,
+        "span": 1716,
+        "start": 6152899
+      },
+      {
+        "category_counts": {
+          "navigation": 6
+        },
+        "end": 6207549,
+        "marker_counts": {
+          "navigation": 1,
+          "route": 5
+        },
+        "raw_strings_included": false,
+        "record_count": 6,
+        "span": 8113,
+        "start": 6199436
+      },
+      {
+        "category_counts": {
+          "navigation": 27
+        },
+        "end": 6385116,
+        "marker_counts": {
+          "destination": 1,
+          "map": 3,
+          "navigation": 27,
+          "poi": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 27,
+        "span": 564,
+        "start": 6384552
+      },
+      {
+        "category_counts": {
+          "navigation": 10
+        },
+        "end": 6453382,
+        "marker_counts": {
+          "destination": 3,
+          "map": 3,
+          "navigation": 1,
+          "route": 3,
+          "street": 2
+        },
+        "raw_strings_included": false,
+        "record_count": 10,
+        "span": 15782,
+        "start": 6437600
+      },
+      {
+        "category_counts": {
+          "navigation": 4
+        },
+        "end": 6493300,
+        "marker_counts": {
+          "navigation": 4,
+          "street": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 4,
+        "span": 15328,
+        "start": 6477972
+      },
+      {
+        "category_counts": {
+          "navigation": 4
+        },
+        "end": 6647420,
+        "marker_counts": {
+          "navigation": 3,
+          "poi": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 4,
+        "span": 4556,
+        "start": 6642864
+      },
+      {
+        "category_counts": {
+          "navigation": 7
+        },
+        "end": 6785096,
+        "marker_counts": {
+          "map": 2,
+          "navigation": 1,
+          "position": 1,
+          "route": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 7,
+        "span": 33061,
+        "start": 6752035
+      },
+      {
+        "category_counts": {
+          "navigation": 3
+        },
+        "end": 6875762,
+        "marker_counts": {
+          "map": 2,
+          "navigation": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 82,
+        "start": 6875680
+      },
+      {
+        "category_counts": {
+          "navigation": 5
+        },
+        "end": 7195773,
+        "marker_counts": {
+          "map": 5,
+          "street": 2
+        },
+        "raw_strings_included": false,
+        "record_count": 5,
+        "span": 6684,
+        "start": 7189089
+      },
+      {
+        "category_counts": {
+          "navigation": 3
+        },
+        "end": 7433990,
+        "marker_counts": {
+          "map": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 3,
+        "span": 2270,
+        "start": 7431720
+      },
+      {
+        "category_counts": {
+          "navigation": 9
+        },
+        "end": 7558430,
+        "marker_counts": {
+          "map": 9
+        },
+        "raw_strings_included": false,
+        "record_count": 9,
+        "span": 13862,
+        "start": 7544568
+      },
+      {
+        "category_counts": {
+          "navigation": 10
+        },
+        "end": 7590840,
+        "marker_counts": {
+          "map": 10
+        },
+        "raw_strings_included": false,
+        "record_count": 10,
+        "span": 3176,
+        "start": 7587664
+      },
+      {
+        "category_counts": {
+          "navigation": 10
+        },
+        "end": 7644418,
+        "marker_counts": {
+          "map": 10
+        },
+        "raw_strings_included": false,
+        "record_count": 10,
+        "span": 3354,
+        "start": 7641064
+      },
+      {
+        "category_counts": {
+          "navigation": 212,
+          "storage": 2
+        },
+        "end": 7832261,
+        "marker_counts": {
+          "map": 4,
+          "mount": 2,
+          "poi": 182,
+          "route": 15,
+          "street": 20
+        },
+        "raw_strings_included": false,
+        "record_count": 212,
+        "span": 18341,
+        "start": 7813920
+      },
+      {
+        "category_counts": {
+          "navigation": 7,
+          "storage": 73
+        },
+        "end": 8097654,
+        "marker_counts": {
+          "blk-dev": 3,
+          "cbio": 10,
+          "destination": 2,
+          "directory": 17,
+          "dosfs": 14,
+          "fat12": 3,
+          "fat16": 3,
+          "fat32": 1,
+          "filesystem": 10,
+          "map": 5,
+          "mount": 8,
+          "sector": 7,
+          "tffs": 2,
+          "volume": 5
+        },
+        "raw_strings_included": false,
+        "record_count": 78,
+        "span": 82494,
+        "start": 8015160
+      },
+      {
+        "category_counts": {
+          "navigation": 3,
+          "storage": 18
+        },
+        "end": 8224241,
+        "marker_counts": {
+          "directory": 3,
+          "dosfs": 1,
+          "fat12": 2,
+          "fat32": 2,
+          "filesystem": 2,
+          "map": 3,
+          "sector": 4,
+          "volume": 9
+        },
+        "raw_strings_included": false,
+        "record_count": 21,
+        "span": 39662,
+        "start": 8184579
+      },
+      {
+        "category_counts": {
+          "navigation": 3,
+          "storage": 21
+        },
+        "end": 8263341,
+        "marker_counts": {
+          "dosfs": 17,
+          "map": 1,
+          "mount": 4,
+          "route": 2,
+          "tffs": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 24,
+        "span": 18477,
+        "start": 8244864
+      },
+      {
+        "category_counts": {
+          "navigation": 7
+        },
+        "end": 8313584,
+        "marker_counts": {
+          "map": 4,
+          "route": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 7,
+        "span": 33540,
+        "start": 8280044
+      },
+      {
+        "category_counts": {
+          "navigation": 4,
+          "storage": 1
+        },
+        "end": 9063685,
+        "marker_counts": {
+          "map": 4,
+          "volume": 1
+        },
+        "raw_strings_included": false,
+        "record_count": 5,
+        "span": 11441,
+        "start": 9052244
+      },
+      {
+        "category_counts": {
+          "navigation": 342,
+          "storage": 146
+        },
+        "end": 11856437,
+        "marker_counts": {
+          "cdrom": 10,
+          "destination": 50,
+          "directory": 28,
+          "dvd": 55,
+          "filesystem": 21,
+          "gps": 8,
+          "guidance": 8,
+          "map": 18,
+          "navigation": 148,
+          "poi": 5,
+          "position": 29,
+          "route": 84,
+          "street": 4,
+          "tffs": 1,
+          "volume": 31
+        },
+        "raw_strings_included": false,
+        "record_count": 471,
+        "span": 344520,
+        "start": 11511917
+      },
+      {
+        "category_counts": {
+          "navigation": 7,
+          "storage": 7
+        },
+        "end": 11880964,
+        "marker_counts": {
+          "dvd": 4,
+          "gps": 3,
+          "map": 4,
+          "volume": 3
+        },
+        "raw_strings_included": false,
+        "record_count": 14,
+        "span": 7824,
+        "start": 11873140
+      }
+    ],
+    "category_counts": {
+      "navigation": 846,
+      "storage": 370
+    },
+    "cluster_gap": 16384,
+    "marker_counts": {
+      "blk-dev": 4,
+      "cbio": 19,
+      "cd001": 1,
+      "cdrom": 19,
+      "destination": 63,
+      "directory": 60,
+      "dosfs": 55,
+      "dvd": 60,
+      "fat12": 10,
+      "fat16": 7,
+      "fat32": 5,
+      "filesystem": 43,
+      "gps": 11,
+      "guidance": 9,
+      "map": 175,
+      "mount": 18,
+      "navigation": 216,
+      "navigation-internal-data": 1,
+      "poi": 191,
+      "position": 36,
+      "route": 151,
+      "routeact-dat": 2,
+      "sector": 30,
+      "street": 36,
+      "tffs": 14,
+      "volume": 61,
+      "waypoint": 12
+    },
+    "matched_record_count": 1193,
+    "printable_record_count": 112124,
+    "raw_strings_included": false
+  },
+  "marker_vocabulary": [
+    {
+      "category": "navigation",
+      "id": "navigation"
+    },
+    {
+      "category": "navigation",
+      "id": "gps"
+    },
+    {
+      "category": "navigation",
+      "id": "route"
+    },
+    {
+      "category": "navigation",
+      "id": "destination"
+    },
+    {
+      "category": "navigation",
+      "id": "guidance"
+    },
+    {
+      "category": "navigation",
+      "id": "map"
+    },
+    {
+      "category": "navigation",
+      "id": "position"
+    },
+    {
+      "category": "navigation",
+      "id": "waypoint"
+    },
+    {
+      "category": "navigation",
+      "id": "street"
+    },
+    {
+      "category": "navigation",
+      "id": "poi"
+    },
+    {
+      "category": "navigation",
+      "id": "navigation-internal-data"
+    },
+    {
+      "category": "navigation",
+      "id": "routeact-dat"
+    },
+    {
+      "category": "storage",
+      "id": "cdrom"
+    },
+    {
+      "category": "storage",
+      "id": "dvd"
+    },
+    {
+      "category": "storage",
+      "id": "dosfs"
+    },
+    {
+      "category": "storage",
+      "id": "filesystem"
+    },
+    {
+      "category": "storage",
+      "id": "mount"
+    },
+    {
+      "category": "storage",
+      "id": "sector"
+    },
+    {
+      "category": "storage",
+      "id": "volume"
+    },
+    {
+      "category": "storage",
+      "id": "directory"
+    },
+    {
+      "category": "storage",
+      "id": "tffs"
+    },
+    {
+      "category": "storage",
+      "id": "cbio"
+    },
+    {
+      "category": "storage",
+      "id": "blk-dev"
+    },
+    {
+      "category": "storage",
+      "id": "fat12"
+    },
+    {
+      "category": "storage",
+      "id": "fat16"
+    },
+    {
+      "category": "storage",
+      "id": "fat32"
+    },
+    {
+      "category": "storage",
+      "id": "cd001"
+    }
+  ],
+  "publication_safety": {
+    "filesystem_payload_included": false,
+    "firmware_bytes_included": false,
+    "map_payload_included": false,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false
+  },
+  "references": {
+    "category_referrer_counts": {
+      "navigation": 40,
+      "storage": 23
+    },
+    "edges": [
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 3356,
+        "markers": [
+          "dosfs",
+          "sector"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          3242
+        ],
+        "target_record_offset": 13056
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 4128,
+        "markers": [
+          "dosfs",
+          "sector"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          3852
+        ],
+        "target_record_offset": 13056
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 435708,
+        "markers": [
+          "directory"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          435282
+        ],
+        "target_record_offset": 445244
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 436848,
+        "markers": [
+          "directory"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          436424,
+          436676
+        ],
+        "target_record_offset": 445244
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 437632,
+        "markers": [
+          "directory"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          437294,
+          437448,
+          437476
+        ],
+        "target_record_offset": 445244
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 646932,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          646912
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 646968,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          646948
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 647752,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          647684
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 649444,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          649214
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 942940,
+        "markers": [
+          "tffs"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          942862
+        ],
+        "target_record_offset": 306324
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1066812,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 1075244
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1067552,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1067522
+        ],
+        "target_record_offset": 1075632
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1087508,
+        "markers": [
+          "route"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 1094960
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1320436,
+        "markers": [
+          "destination",
+          "route"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1320394,
+          1320406
+        ],
+        "target_record_offset": 1313692
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1447264,
+        "markers": [
+          "navigation",
+          "navigation-internal-data"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1447154
+        ],
+        "target_record_offset": 1458508
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1447412,
+        "markers": [
+          "navigation",
+          "navigation-internal-data"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1447292
+        ],
+        "target_record_offset": 1458508
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1786260,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1786048
+        ],
+        "target_record_offset": 1797276
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1786264,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1786052
+        ],
+        "target_record_offset": 1797228
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1786624,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1786322
+        ],
+        "target_record_offset": 1797276
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 1786628,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          1786326
+        ],
+        "target_record_offset": 1797228
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 3353708,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          3353630
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 3370328,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 3373428
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 5040340,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          5040138
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 5130668,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          5130488
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6280648,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6280586
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6280908,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6280826
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6282084,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6281662,
+          6281868,
+          6281978
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6283620,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6283548
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6284236,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6284128
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6284572,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6284540
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6284744,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6284652
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6284924,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6284902
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6285128,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6285042
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6306372,
+        "markers": [
+          "route"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6306324
+        ],
+        "target_record_offset": 2940600
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6306496,
+        "markers": [
+          "route"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6306448
+        ],
+        "target_record_offset": 2940600
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6336680,
+        "markers": [
+          "route"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6336470
+        ],
+        "target_record_offset": 2940600
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6376772,
+        "markers": [
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6376756
+        ],
+        "target_record_offset": 6385004
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 6895500,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          6895206,
+          6895300,
+          6895394
+        ],
+        "target_record_offset": 674524
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7802376,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          7802220
+        ],
+        "target_record_offset": 7831224
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821012,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          7820976
+        ],
+        "target_record_offset": 7829324
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821068,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          7821032
+        ],
+        "target_record_offset": 7829324
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821404,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7829148
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821412,
+        "markers": [
+          "street"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7828344
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821420,
+        "markers": [
+          "route",
+          "street"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7828460
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821436,
+        "markers": [
+          "route",
+          "street"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7828532
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821484,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7829148
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7821532,
+        "markers": [
+          "street"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7828280
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7825088,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7829900
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7825200,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7829840
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7856616,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          7856470
+        ],
+        "target_record_offset": 7862988
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7857196,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          7857040
+        ],
+        "target_record_offset": 7862988
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 7857312,
+        "markers": [
+          "map"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          7857272
+        ],
+        "target_record_offset": 7862988
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8047268,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8047100
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8047576,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8047270,
+          8047356
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8048376,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8048224
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8048924,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8048798,
+          8048808
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8049712,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8049520,
+          8049534
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8050120,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8050024
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8051168,
+        "markers": [
+          "filesystem"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8051074
+        ],
+        "target_record_offset": 8052300
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8241128,
+        "markers": [
+          "dosfs"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8241028
+        ],
+        "target_record_offset": 8249136
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8241132,
+        "markers": [
+          "dosfs"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8241030
+        ],
+        "target_record_offset": 8249948
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8241740,
+        "markers": [
+          "dosfs"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [
+          8241632,
+          8241664
+        ],
+        "target_record_offset": 8249948
+      },
+      {
+        "categories": [
+          "storage"
+        ],
+        "literal_word_offset": 8877852,
+        "markers": [
+          "dosfs",
+          "sector"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 13056
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 9086648,
+        "markers": [
+          "map",
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 6453320
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 9091536,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7829376
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 9095060,
+        "markers": [
+          "map",
+          "navigation"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 6453320
+      },
+      {
+        "categories": [
+          "navigation"
+        ],
+        "literal_word_offset": 9099944,
+        "markers": [
+          "poi"
+        ],
+        "pc_relative_mov_l_referrer_offsets": [],
+        "target_record_offset": 7829376
+      }
+    ],
+    "exact_runtime_word_count": 67,
+    "marker_pointer_counts": {
+      "destination": 1,
+      "directory": 3,
+      "dosfs": 6,
+      "filesystem": 7,
+      "map": 17,
+      "navigation": 17,
+      "navigation-internal-data": 2,
+      "poi": 9,
+      "route": 7,
+      "sector": 3,
+      "street": 4,
+      "tffs": 1
+    },
+    "marker_referrer_counts": {
+      "destination": 2,
+      "directory": 6,
+      "dosfs": 6,
+      "filesystem": 10,
+      "map": 17,
+      "navigation": 15,
+      "navigation-internal-data": 2,
+      "poi": 3,
+      "route": 5,
+      "sector": 2,
+      "street": 0,
+      "tffs": 1
+    },
+    "pc_relative_mov_l_referrer_count": 63,
+    "raw_runtime_addresses_included": false,
+    "raw_strings_included": false,
+    "referenced_target_record_count": 29,
+    "runtime_model": {
+      "base": 201326592,
+      "status": "REUSED_CONFIRMED_SESSION006_MODEL"
+    }
+  },
+  "schema": "phoenix-mmi.navigation-storage-boundary/v1",
+  "storage_signature_validation": {
+    "fat": {
+      "status": "RUNTIME_MARKERS_WITHOUT_EMBEDDED_VOLUME",
+      "type_marker_counts": {
+        "fat12": 9,
+        "fat16": 7,
+        "fat32": 5
+      },
+      "validated_boot_sector_count": 0,
+      "validated_boot_sector_offsets": []
+    },
+    "iso9660": {
+      "standard_identifier_occurrence_count": 1,
+      "standard_identifier_offsets": [
+        1898056
+      ],
+      "status": "IDENTIFIER_CONSTANT_ONLY",
+      "validated_volume_descriptor_count": 0,
+      "validated_volume_descriptor_offsets": []
+    },
+    "raw_filesystem_payload_included": false,
+    "udf": {
+      "descriptor_marker_counts": {
+        "bea01": 0,
+        "nsr02": 0,
+        "nsr03": 0,
+        "tea01": 0
+      },
+      "descriptor_marker_total": 0,
+      "status": "NOT_DETECTED"
+    }
+  }
+}

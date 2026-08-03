@@ -1,0 +1,1200 @@
+{
+  "analysis_mode": "read-only-static-session025-call-return-producer-correlation",
+  "candidate_producer_contracts": [
+    {
+      "bilateral_gates": {
+        "bilateral_producer_reference_gate_passed": true,
+        "producer_arguments_r4_r7_equal": true,
+        "producer_relative_byte_offset_equal": true,
+        "producer_relative_instruction_index_equal": true,
+        "producer_target_expression_equal": true,
+        "producer_target_owner_relative_offset_equal": true,
+        "producer_target_resolved_both": true,
+        "returned_object_geometry_equal": true,
+        "returned_object_geometry_passed_both": true,
+        "same_preceding_call_confirmed_both": true
+      },
+      "candidate_family_ordinal": 3,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "left": {
+        "consumer_call_relative_instruction_index": 21,
+        "consumer_call_site_file_offset": 1533200,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533158,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1533176,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5994,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "owner_shape_sha256": "5b469bc254f9df6b3bbf843082a48d8242a970c970683bc5a163cd1a9047f625",
+      "right": {
+        "consumer_call_relative_instruction_index": 21,
+        "consumer_call_site_file_offset": 1855728,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:24)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[28](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 28,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1855686,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1855704,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1861680
+        },
+        "producer_target_owner_relative_offset": 5994,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 24,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 28
+        }
+      },
+      "runtime_equivalence_asserted": false,
+      "selected_owner_target_link_established": false
+    },
+    {
+      "bilateral_gates": {
+        "bilateral_producer_reference_gate_passed": true,
+        "producer_arguments_r4_r7_equal": true,
+        "producer_relative_byte_offset_equal": true,
+        "producer_relative_instruction_index_equal": true,
+        "producer_target_expression_equal": true,
+        "producer_target_owner_relative_offset_equal": true,
+        "producer_target_resolved_both": true,
+        "returned_object_geometry_equal": true,
+        "returned_object_geometry_passed_both": true,
+        "same_preceding_call_confirmed_both": true
+      },
+      "candidate_family_ordinal": 4,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "left": {
+        "consumer_call_relative_instruction_index": 21,
+        "consumer_call_site_file_offset": 1533388,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:32)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[36](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 36,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533346,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1533364,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5806,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 32,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 36
+        }
+      },
+      "owner_shape_sha256": "5f049cc9448ace8966ce1a4ae3068bf945bb87b5e28f08e0476b3e707b839c9f",
+      "right": {
+        "consumer_call_relative_instruction_index": 21,
+        "consumer_call_site_file_offset": 1855916,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:32)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[36](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 36,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1855874,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1855892,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1861680
+        },
+        "producer_target_owner_relative_offset": 5806,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 32,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 36
+        }
+      },
+      "runtime_equivalence_asserted": false,
+      "selected_owner_target_link_established": false
+    },
+    {
+      "bilateral_gates": {
+        "bilateral_producer_reference_gate_passed": true,
+        "producer_arguments_r4_r7_equal": true,
+        "producer_relative_byte_offset_equal": true,
+        "producer_relative_instruction_index_equal": true,
+        "producer_target_expression_equal": true,
+        "producer_target_owner_relative_offset_equal": true,
+        "producer_target_resolved_both": true,
+        "returned_object_geometry_equal": true,
+        "returned_object_geometry_passed_both": true,
+        "same_preceding_call_confirmed_both": true
+      },
+      "candidate_family_ordinal": 5,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "left": {
+        "consumer_call_relative_instruction_index": 20,
+        "consumer_call_site_file_offset": 1533580,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533540,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 14,
+        "producer_call_relative_instruction_index": 7,
+        "producer_call_site_file_offset": 1533554,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5612,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "owner_shape_sha256": "7be1c2de3cc7cde96d6386b4ee06c6f3283d0853bb12081078146b73a043cdd2",
+      "right": {
+        "consumer_call_relative_instruction_index": 20,
+        "consumer_call_site_file_offset": 1856108,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1856068,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 14,
+        "producer_call_relative_instruction_index": 7,
+        "producer_call_site_file_offset": 1856082,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1861680
+        },
+        "producer_target_owner_relative_offset": 5612,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "runtime_equivalence_asserted": false,
+      "selected_owner_target_link_established": false
+    },
+    {
+      "bilateral_gates": {
+        "bilateral_producer_reference_gate_passed": true,
+        "producer_arguments_r4_r7_equal": true,
+        "producer_relative_byte_offset_equal": true,
+        "producer_relative_instruction_index_equal": true,
+        "producer_target_expression_equal": true,
+        "producer_target_owner_relative_offset_equal": true,
+        "producer_target_resolved_both": true,
+        "returned_object_geometry_equal": true,
+        "returned_object_geometry_passed_both": true,
+        "same_preceding_call_confirmed_both": true
+      },
+      "candidate_family_ordinal": 11,
+      "classification": "CONFIRMED_BILATERAL_CALL_RETURN_PRODUCER_REFERENCE",
+      "left": {
+        "consumer_call_relative_instruction_index": 22,
+        "consumer_call_site_file_offset": 1533504,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1533460,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1533478,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1539152
+        },
+        "producer_target_owner_relative_offset": 5692,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "owner_shape_sha256": "e513f41c94f00fd5a1f01ce97f6fd9a130e256f6e6d0a7b9703d5bfdea5e9f6d",
+      "right": {
+        "consumer_call_relative_instruction_index": 22,
+        "consumer_call_site_file_offset": 1856032,
+        "consumer_contract": {
+          "r4": {
+            "canonical": "ADD(CALL_RETURN,LOAD16[0](ADD(LOAD32[0](CALL_RETURN),CONST:40)))",
+            "load_path": [
+              {
+                "displacement": 0,
+                "width_bits": 16
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "CALL_RETURN",
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN",
+              "CONSTANT"
+            ]
+          },
+          "r6": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          },
+          "target": {
+            "canonical": "LOAD32[44](LOAD32[0](CALL_RETURN))",
+            "load_path": [
+              {
+                "displacement": 44,
+                "width_bits": 32
+              },
+              {
+                "displacement": 0,
+                "width_bits": 32
+              }
+            ],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "LOAD",
+              "LOAD",
+              "CALL_RETURN"
+            ]
+          }
+        },
+        "function_boundary_asserted": false,
+        "gates": {
+          "producer_target_resolved_in_image": true,
+          "receiver_slice_crosses_call_return": true,
+          "returned_object_geometry_passed": true,
+          "same_immediately_preceding_producer_call": true,
+          "target_slice_crosses_call_return": true
+        },
+        "owner_start_file_offset": 1855988,
+        "path_dominance_asserted": false,
+        "producer_arguments": {
+          "r4": {
+            "canonical": "ENTRY:r4",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r4"
+            ]
+          },
+          "r5": {
+            "canonical": "ENTRY:r5",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r5"
+            ]
+          },
+          "r6": {
+            "canonical": "CONST:0",
+            "load_path": [],
+            "resolution_status": "CONSTANT",
+            "root_classes": [
+              "CONSTANT"
+            ]
+          },
+          "r7": {
+            "canonical": "ENTRY:r7",
+            "load_path": [],
+            "resolution_status": "DYNAMIC_OR_UNSUPPORTED",
+            "root_classes": [
+              "ENTRY:r7"
+            ]
+          }
+        },
+        "producer_call_form": "INDIRECT_JSR",
+        "producer_call_relative_byte_offset": 18,
+        "producer_call_relative_instruction_index": 9,
+        "producer_call_site_file_offset": 1856006,
+        "producer_target": {
+          "canonical": "IN_IMAGE_POINTER",
+          "load_path": [],
+          "resolution_status": "RESOLVED_IN_IMAGE_POINTER",
+          "root_classes": [
+            "IN_IMAGE_POINTER"
+          ],
+          "target_file_offset": 1861680
+        },
+        "producer_target_owner_relative_offset": 5692,
+        "returned_object_geometry": {
+          "receiver_adjustment_field_displacement": 40,
+          "shared_call_return_vtable_grammar": true,
+          "target_after_adjustment_stride": 4,
+          "target_field_displacement": 44
+        }
+      },
+      "runtime_equivalence_asserted": false,
+      "selected_owner_target_link_established": false
+    }
+  ],
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "bilateral_producer_reference_pass_count": 4,
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "producer_target_code_entry": "NOT_VALIDATED",
+    "producer_target_cross_version_shape": "NOT_EQUAL",
+    "producer_target_runtime_equivalence": "NOT_ESTABLISHED",
+    "returned_object_creator_or_writer": "OPEN",
+    "returned_object_field_geometry": "CONFIRMED_STABLE_STRUCTURAL_GRAMMAR",
+    "returned_object_target_fields": [
+      28,
+      36,
+      44
+    ],
+    "returned_object_type": "OPEN",
+    "sector_read_abi": "OPEN",
+    "selected_owner_target_link": "NOT_ESTABLISHED",
+    "semantic_owner_identity": "OPEN",
+    "session025_candidate_reference_pair_count": 4,
+    "session025_promoted_candidate_count": 4,
+    "single_resolved_producer_target_pair": "CONFIRMED",
+    "target_specific_contexts_all_bilateral": "CONFIRMED",
+    "target_specific_literal_jsr_reference_pairs": 7,
+    "unique_bilateral_owner_entry_caller": "NOT_ESTABLISHED"
+  },
+  "interpretation": "All four Session 025 dispatches cross the same immediately preceding producer-call family. In each release the four calls resolve to one in-image target, and the target-specific census contains seven co-relocated call pairs with equal normalized contexts. Producer arguments r4-r7 and returned-object field geometry agree bilaterally. The resolved target pair does not pass the bounded code gate and its normalized target windows differ, so function identity, runtime equivalence, object type, writer and selected-owner target registration remain open.",
+  "left_artifact_sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+  "limits": {
+    "arbitrary_raw_image_code_scan_performed": false,
+    "candidate_count": 4,
+    "candidate_source_session": 25,
+    "function_boundaries_asserted": false,
+    "owner_forward_bytes": 384,
+    "path_dominance_asserted": false,
+    "runtime_execution_observed": false,
+    "target_call_census_is_syntactic": true,
+    "whole_image_executable_map_available": false
+  },
+  "producer_call_family_census": {
+    "all_normalized_contexts_equal": true,
+    "all_offsets_co_relocated": true,
+    "count_equal": true,
+    "global_census_is_target_specific_and_syntactic": true,
+    "left_literal_jsr_reference_count": 7,
+    "paired_reference_count": 7,
+    "pairs": [
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1531152,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "3ebc5034dec60ce72b28115af0ec8b1bee0efab091d55147634e07d7c4f61cfe",
+        "ordinal": 1,
+        "right_call_site_file_offset": 1853680,
+        "session025_candidate_family_ordinal": null
+      },
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1531542,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "08f516ecd9a0ca43710a26a73b9cba4dc6da81811d16fce605826f0b2f0b8c6a",
+        "ordinal": 2,
+        "right_call_site_file_offset": 1854070,
+        "session025_candidate_family_ordinal": null
+      },
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1531808,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "86f22e6d7e6d12326e2482fa6b49acef404bef319f9e98f4e8ccae17205c5b21",
+        "ordinal": 3,
+        "right_call_site_file_offset": 1854336,
+        "session025_candidate_family_ordinal": null
+      },
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1533176,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "d6f5649c8ffe85b00da76b54e832a21d785df2864f31c974e278a84b787fb09d",
+        "ordinal": 4,
+        "right_call_site_file_offset": 1855704,
+        "session025_candidate_family_ordinal": 3
+      },
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1533364,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "5f3d189f946c61e670448ae4e0beddf2ea9e84e208d28f9597a42c04ea3b3534",
+        "ordinal": 5,
+        "right_call_site_file_offset": 1855892,
+        "session025_candidate_family_ordinal": 4
+      },
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1533478,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "5d271894aef5c40484012c45d5e411368dbb61a262d915b2753046b4f3013c6f",
+        "ordinal": 6,
+        "right_call_site_file_offset": 1856006,
+        "session025_candidate_family_ordinal": 11
+      },
+      {
+        "delta_matches_producer_target": true,
+        "file_offset_delta": 322528,
+        "left_call_site_file_offset": 1533554,
+        "normalized_context_equal": true,
+        "normalized_context_sha256": "40ceeadad703a93bf7fb2ac9b93246665d952e255a6ebcb6ca7299ed5f97a8d3",
+        "ordinal": 7,
+        "right_call_site_file_offset": 1856082,
+        "session025_candidate_family_ordinal": 5
+      }
+    ],
+    "right_literal_jsr_reference_count": 7,
+    "session025_candidate_reference_pair_count": 4
+  },
+  "producer_target_pair": {
+    "bounded_code_gate_passed_both": false,
+    "bounded_summaries": {
+      "left": {
+        "bounded_code_gate_passed": false,
+        "call_count": 1,
+        "entry_file_offset": 1539152,
+        "function_boundary_asserted": false,
+        "instruction_bytes_included": false,
+        "instruction_count": 83,
+        "known_instruction_count": 28,
+        "known_ratio": 0.337349,
+        "normalized_shape_sha256": "d460a120b519c9e4c186eb3717ee2b985275172bae1e57a22bbae0710a3e9c66",
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 1,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0,
+        "window_length": 166
+      },
+      "right": {
+        "bounded_code_gate_passed": false,
+        "call_count": 1,
+        "entry_file_offset": 1861680,
+        "function_boundary_asserted": false,
+        "instruction_bytes_included": false,
+        "instruction_count": 83,
+        "known_instruction_count": 39,
+        "known_ratio": 0.46988,
+        "normalized_shape_sha256": "24bce32f208c28f1ac6dadbe149f71db608f289fa1000706ef96652c71317acc",
+        "prologue_save_pr_in_first_12_instructions": false,
+        "resolved_static_call_count": 1,
+        "return_count": 1,
+        "unresolved_indirect_call_count": 0,
+        "window_length": 166
+      }
+    },
+    "file_offset_delta": 322528,
+    "function_boundary_asserted": false,
+    "left_target_file_offset": 1539152,
+    "normalized_target_shape_equal": false,
+    "one_target_per_release_for_all_candidates": true,
+    "right_target_file_offset": 1861680,
+    "runtime_equivalence_asserted": false
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "right_artifact_sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+  "schema": "phoenix-mmi.call-return-producer-comparison/v1"
+}

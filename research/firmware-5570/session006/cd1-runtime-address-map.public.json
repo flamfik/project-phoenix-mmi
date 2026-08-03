@@ -1,0 +1,248 @@
+{
+  "address_model_evaluations": [
+    {
+      "in_image_count": 0,
+      "in_image_four_byte_aligned_count": 0,
+      "mapped_maximum": null,
+      "mapped_minimum": null,
+      "maps_model_base_value_to_entry": false,
+      "model": {
+        "base": 0,
+        "name": "raw-file-address",
+        "rationale": "Treat the stored value directly as a file offset."
+      },
+      "out_of_image_count": 69,
+      "region_counts": {
+        "out-of-image": 69
+      },
+      "target_count": 69,
+      "unique_runtime_address_count": 65
+    },
+    {
+      "in_image_count": 0,
+      "in_image_four_byte_aligned_count": 0,
+      "mapped_maximum": null,
+      "mapped_minimum": null,
+      "maps_model_base_value_to_entry": false,
+      "model": {
+        "base": 393216,
+        "name": "metainfo-flash-address",
+        "rationale": "Subtract METAINFO FlashStartAddress."
+      },
+      "out_of_image_count": 69,
+      "region_counts": {
+        "out-of-image": 69
+      },
+      "target_count": 69,
+      "unique_runtime_address_count": 65
+    },
+    {
+      "in_image_count": 69,
+      "in_image_four_byte_aligned_count": 69,
+      "mapped_maximum": 1381916,
+      "mapped_minimum": 393216,
+      "maps_model_base_value_to_entry": false,
+      "model": {
+        "base": 200933376,
+        "name": "runtime-base-minus-flash",
+        "rationale": "Test a runtime base shifted down by FlashStartAddress."
+      },
+      "out_of_image_count": 0,
+      "region_counts": {
+        "pre-browser-unresolved": 69
+      },
+      "target_count": 69,
+      "unique_runtime_address_count": 65
+    },
+    {
+      "in_image_count": 69,
+      "in_image_four_byte_aligned_count": 69,
+      "mapped_maximum": 988700,
+      "mapped_minimum": 0,
+      "maps_model_base_value_to_entry": true,
+      "model": {
+        "base": 201326592,
+        "name": "runtime-link-base",
+        "rationale": "Subtract the runtime base observed in bounded MOV.L/JSR code probes."
+      },
+      "out_of_image_count": 0,
+      "region_counts": {
+        "image-entry": 1,
+        "pre-browser-unresolved": 68
+      },
+      "target_count": 69,
+      "unique_runtime_address_count": 65
+    },
+    {
+      "in_image_count": 68,
+      "in_image_four_byte_aligned_count": 68,
+      "mapped_maximum": 595484,
+      "mapped_minimum": 294632,
+      "maps_model_base_value_to_entry": false,
+      "model": {
+        "base": 201719808,
+        "name": "runtime-base-plus-flash",
+        "rationale": "Test a runtime base shifted up by FlashStartAddress."
+      },
+      "out_of_image_count": 1,
+      "region_counts": {
+        "out-of-image": 1,
+        "pre-browser-unresolved": 68
+      },
+      "target_count": 69,
+      "unique_runtime_address_count": 65
+    }
+  ],
+  "analysis_mode": "read-only-static",
+  "artifact": {
+    "filename": "H2_HI_EU.BIN",
+    "label": "CD1 K942 / MMI 5150",
+    "sha256": "8f0b6062e0aaa74e68a80f97e7eff8a5deb7cd5b43146283b22ddc79f49786e5",
+    "size_bytes": 12954188,
+    "source_iso_filename": "MMI-5570-4L0.998.961-cd1-3.iso",
+    "source_iso_sha256": "1948443c6fb94433f7985ed6a4677006ec3bcde6d789f8a5915ba6f6f2dca03f",
+    "source_member_path": "MMI_HI/MMI/42/DEFAULT/H2_HI_EU.BIN"
+  },
+  "inputs": {
+    "metainfo_flash_base": 393216,
+    "pointer_entry_count": 69,
+    "pointer_run_count_signature": [
+      21,
+      9,
+      3,
+      36
+    ],
+    "runtime_base_candidate": 201326592
+  },
+  "link_base_evidence": {
+    "base_literal_load_count": 2,
+    "base_literal_loads": [
+      {
+        "destination_register": 4,
+        "instruction_offset": 672,
+        "literal_offset": 804
+      },
+      {
+        "destination_register": 4,
+        "instruction_offset": 6052,
+        "literal_offset": 6160
+      }
+    ],
+    "coherent_indirect_call_sequence_count": 2,
+    "coherent_indirect_call_sequences": [
+      {
+        "base_destination_register": 4,
+        "base_literal_offset": 804,
+        "base_load_offset": 672,
+        "call_offset": 676,
+        "call_register": 8,
+        "target_file_offset": 9232,
+        "target_literal_offset": 808,
+        "target_load_offset": 674,
+        "target_runtime_address": 201335824
+      },
+      {
+        "base_destination_register": 4,
+        "base_literal_offset": 6160,
+        "base_load_offset": 6052,
+        "call_offset": 6056,
+        "call_register": 1,
+        "target_file_offset": 8001968,
+        "target_literal_offset": 6164,
+        "target_load_offset": 6054,
+        "target_runtime_address": 209328560
+      }
+    ],
+    "instruction_bytes_included": false,
+    "interpretation": "A base literal plus a same-range target load and matching JSR is stronger evidence than a bare 32-bit occurrence, but remains a bounded static probe.",
+    "runtime_base": 201326592,
+    "search_end": 8192,
+    "search_start": 0
+  },
+  "ownership": {
+    "browser_resource_target_count": 0,
+    "interpretation": "Mapping a stored table to earlier principal-image regions does not identify the code or subsystem that owns the table.",
+    "status": "NOT_CONFIRMED"
+  },
+  "publication_safety": {
+    "code_probe_addresses_included": true,
+    "firmware_bytes_included": false,
+    "raw_pointer_run_values_included": false,
+    "raw_strings_included": false,
+    "target_window_bytes_included": false
+  },
+  "region_boundaries": {
+    "browser_core_end": 8582484,
+    "browser_core_offset": 8567224,
+    "browser_island_end": 8587668,
+    "browser_island_offset": 8567224,
+    "startup_end": 65536
+  },
+  "schema": "phoenix-mmi.runtime-address-map/v1",
+  "selected_model": {
+    "base": 201326592,
+    "name": "runtime-link-base",
+    "selection_basis": [
+      "bounded coherent MOV.L/JSR sequences",
+      "all pointer-run values map inside the principal image",
+      "the exact base value maps to the confirmed image entry"
+    ],
+    "selection_was_score_optimized": false,
+    "status": "CONFIRMED_BOUNDED_STATIC_MODEL"
+  },
+  "selected_model_runs": [
+    {
+      "entry_count": 21,
+      "four_byte_aligned_count": 21,
+      "in_image_count": 21,
+      "mapped_maximum": 705740,
+      "mapped_minimum": 687848,
+      "region_counts": {
+        "pre-browser-unresolved": 21
+      },
+      "unique_entry_count": 17,
+      "unique_target_stride_mode": 16,
+      "unique_target_stride_mode_support": 15
+    },
+    {
+      "entry_count": 9,
+      "four_byte_aligned_count": 9,
+      "in_image_count": 9,
+      "mapped_maximum": 862756,
+      "mapped_minimum": 862720,
+      "region_counts": {
+        "pre-browser-unresolved": 9
+      },
+      "unique_entry_count": 9,
+      "unique_target_stride_mode": 4,
+      "unique_target_stride_mode_support": 7
+    },
+    {
+      "entry_count": 3,
+      "four_byte_aligned_count": 3,
+      "in_image_count": 3,
+      "mapped_maximum": 911092,
+      "mapped_minimum": 0,
+      "region_counts": {
+        "image-entry": 1,
+        "pre-browser-unresolved": 2
+      },
+      "unique_entry_count": 3,
+      "unique_target_stride_mode": 911080,
+      "unique_target_stride_mode_support": 1
+    },
+    {
+      "entry_count": 36,
+      "four_byte_aligned_count": 36,
+      "in_image_count": 36,
+      "mapped_maximum": 988700,
+      "mapped_minimum": 988244,
+      "region_counts": {
+        "pre-browser-unresolved": 36
+      },
+      "unique_entry_count": 36,
+      "unique_target_stride_mode": 8,
+      "unique_target_stride_mode_support": 11
+    }
+  ]
+}

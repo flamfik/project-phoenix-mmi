@@ -1,0 +1,71 @@
+{
+  "analysis_mode": "read-only-static-bounded-linkage-owner-lineage",
+  "artifact": {
+    "sha256": "8b5f2efec7426fe30b2b56fb1a3a3500f6a725cf13f00bada636e8f8a2558a1f",
+    "source_path_included": false
+  },
+  "classification": {
+    "actual_fldb_parser": "OPEN",
+    "dominant_left_target": "CONFIRMED_BY_TWO_EXACT_CONTEXT_MAPPINGS",
+    "left_target_shape": "CONFIRMED_LITERAL_BACKED_SHORT_RETURN_SHAPE",
+    "memory_loaded_base_writer": "OPEN",
+    "optical_buffer_owner": "OPEN",
+    "optical_buffer_provenance": "OPEN",
+    "owner_pairing": {
+      "confirmed": 1,
+      "probable": 1
+    },
+    "residual_call_lineage": "CONFIRMED_TWO_EXACT_PLUS_TWO_PROBABLE_SEQUENCE_ALIGNED",
+    "right_residual_calls": "CONFIRMED_FOUR_CALLS_IN_TWO_PROLOGUE_CODE_GATED_OWNERS",
+    "runtime_linkage_family_owner_semantics": "OPEN",
+    "runtime_patch_overlay_or_linkage_mechanism": "HYPOTHESIS_STRENGTHENED_BY_RESIDUAL_OWNER_LINEAGE",
+    "sector_read_abi": "OPEN",
+    "specific_session017_producer_edge": "OPEN",
+    "specific_writer_or_loader_chain": "OPEN"
+  },
+  "global_owner_census": {
+    "active_call_count_per_owner_histogram": {
+      "1": 302,
+      "2": 7,
+      "3": 1
+    },
+    "active_pointer_zero_call_count": 319,
+    "active_pointer_zero_target_count": 112,
+    "active_target_count_per_owner_histogram": {
+      "1": 307,
+      "2": 3
+    },
+    "bounded_owner_count": 310,
+    "code_gated_active_call_count": 266,
+    "code_gated_owner_count": 257,
+    "context_start_reason_counts": {
+      "BACKWARD_LIMIT": 66,
+      "LATEST_SAVE_PR_PROLOGUE": 244
+    },
+    "exact_prologue_owner_shape_count": 184,
+    "function_boundaries_asserted": false,
+    "global_call_census_is_syntactic": true,
+    "prologue_code_gated_active_call_count": 252,
+    "prologue_code_gated_owner_count": 243
+  },
+  "publication_safety": {
+    "absolute_runtime_addresses_included": false,
+    "firmware_bytes_included": false,
+    "instruction_bytes_included": false,
+    "local_paths_included": false,
+    "map_payload_included": false,
+    "raw_strings_included": false
+  },
+  "schema": "phoenix-mmi.linkage-owner-lineage-disc/v1",
+  "selected_lineage": {
+    "aligned_residual_call_count": 4,
+    "confirmed_owner_pair_count": 1,
+    "dominant_left_target_file_offset": 1860824,
+    "left_target_call_count": 4,
+    "left_target_owner_count": 2,
+    "probable_owner_pair_count": 1,
+    "right_residual_call_count": 4,
+    "right_residual_owner_count": 2,
+    "right_residual_target_file_offset": 2185372
+  }
+}

@@ -28,6 +28,10 @@ Build a reproducible technical knowledge base and open tooling for Audi MMI 2G H
 
 M1 is complete when another researcher can reproduce the inventory and understand which artifacts require deeper analysis without relying on undocumented assumptions.
 
+**Completion:** achieved by Session 065. The machine-readable closure record
+passes the registered-media, complete-routing, update-model, newcomer-path and
+no-mutation gates. Deep semantic work remains assigned to M2-M7.
+
 ## Out of scope for M1
 
 - flashing modified software to a vehicle;

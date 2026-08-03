@@ -1,0 +1,625 @@
+{
+  "analysis_mode": "explicit-capability-transition-and-probe-audit",
+  "applied_transition_count": 1,
+  "capability_audit": {
+    "capabilities": [
+      {
+        "capability_id": "M2-CAP-001",
+        "evidence": "Sessions 003-065",
+        "limitation": "read-only bounded access only",
+        "name": "bounded binary reader",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.binary:BinaryReader",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "core"
+      },
+      {
+        "capability_id": "M2-CAP-002",
+        "evidence": "Phase 0 and Session 061",
+        "limitation": "tool output has no versioned SDK manifest model",
+        "name": "artifact hash inventory",
+        "probe_kind": "repository-file",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "tools/inventory/verify_artifacts.py",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "manifest"
+      },
+      {
+        "capability_id": "M2-CAP-003",
+        "evidence": "Session 061",
+        "limitation": "currently specialized to the registered MMI 5570 set",
+        "name": "registered-media identity verifier",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.m1_closure:audit_m1_media",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "manifest"
+      },
+      {
+        "capability_id": "M2-CAP-004",
+        "evidence": "Sessions 003-065",
+        "limitation": "fixed signatures do not constitute a declarative format registry",
+        "name": "validated static fingerprint scanner",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.fingerprint:scan_fingerprints",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "classifier"
+      },
+      {
+        "capability_id": "M2-CAP-005",
+        "evidence": "Session 062",
+        "limitation": "routing rules are embedded in the M1 closure module",
+        "name": "update-member family router",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.m1_closure:classify_m1_members",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "classifier"
+      },
+      {
+        "capability_id": "M2-CAP-006",
+        "evidence": "Sessions 001 and 061",
+        "limitation": "read-only primary-directory model",
+        "name": "ISO 9660 reader",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.iso9660:ISO9660Image",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-007",
+        "evidence": "Sessions 002 and 063",
+        "limitation": "multiple historical parser implementations remain",
+        "name": "METAINFO structural parser",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.m1_closure:parse_metainfo_text",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-008",
+        "evidence": "Session 041",
+        "limitation": "vendor records remain bounded opaque metadata",
+        "name": "Intel HEX decoder",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.record_normalization:decode_intel_hex",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-009",
+        "evidence": "Session 041",
+        "limitation": "invalid and opaque envelope material remains isolated",
+        "name": "Motorola S-record decoder",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.record_normalization:decode_srecord_envelope",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-010",
+        "evidence": "Sessions 045-054",
+        "limitation": "write integrity and encoding remain blocked",
+        "name": "YIM/XIM2 read model",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.yim:parse_yim_envelope",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-011",
+        "evidence": "Sessions 011-014",
+        "limitation": "payload semantics and runtime parser remain open",
+        "name": "FLDB container read model",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.map_media:parse_fldb_container",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-012",
+        "evidence": "Session 069 and SPEC-077",
+        "limitation": "LOD parsing exposes topology only; record semantics remain unresolved",
+        "name": "LOD bounded parser",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.parse_result:parse_lod_bounded",
+        "status": "IMPLEMENTED",
+        "target_session": "069",
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-013",
+        "evidence": "Sessions 002-003",
+        "limitation": "one algorithm does not identify protected ranges",
+        "name": "CRC32/IEEE engine",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.checksum:crc32_region",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "checksum"
+      },
+      {
+        "capability_id": "M2-CAP-014",
+        "evidence": "Session 003",
+        "limitation": "region and algorithm experiments are hard-coded",
+        "name": "candidate-region checksum mapper",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.checksum:map_crc32_expectations",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "checksum"
+      },
+      {
+        "capability_id": "M2-CAP-015",
+        "evidence": "Sessions 047 and 051-054",
+        "limitation": "tested catalogues produce no match",
+        "name": "YIM integrity algorithm",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": "070",
+        "workstream": "checksum"
+      },
+      {
+        "capability_id": "M2-CAP-016",
+        "evidence": "Sessions 002 and 063",
+        "limitation": "declared field exists but its algorithm is unresolved",
+        "name": "METAINFO metafile checksum algorithm",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "BLOCKED",
+        "target_session": "070",
+        "workstream": "checksum"
+      },
+      {
+        "capability_id": "M2-CAP-017",
+        "evidence": "Session 003",
+        "limitation": "specialized report comparison, not a generic structure diff",
+        "name": "sanitized analysis-report comparison",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.analysis:compare_reports",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "diff"
+      },
+      {
+        "capability_id": "M2-CAP-018",
+        "evidence": "Session 071 and SPEC-079",
+        "limitation": "generic structural differences do not imply semantic change",
+        "name": "generic structural diff",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.structural_diff:structural_diff",
+        "status": "IMPLEMENTED",
+        "target_session": "071",
+        "workstream": "diff"
+      },
+      {
+        "capability_id": "M2-CAP-019",
+        "evidence": "Sessions 003-065",
+        "limitation": "schemas are named but not centrally registered",
+        "name": "deterministic JSON writer",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.report:write_json",
+        "status": "IMPLEMENTED",
+        "target_session": null,
+        "workstream": "report"
+      },
+      {
+        "capability_id": "M2-CAP-020",
+        "evidence": "Session 072 and SPEC-080",
+        "limitation": "schema validation proves shape and invariants, not research truth",
+        "name": "schema registry and validator",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.schema_registry:DEFAULT_SCHEMA_REGISTRY",
+        "status": "IMPLEMENTED",
+        "target_session": "072",
+        "workstream": "report"
+      },
+      {
+        "capability_id": "M2-CAP-021",
+        "evidence": "Session 003",
+        "limitation": "single legacy command surface",
+        "name": "static-analysis CLI",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.cli:main",
+        "status": "PARTIAL",
+        "target_session": null,
+        "workstream": "cli"
+      },
+      {
+        "capability_id": "M2-CAP-022",
+        "evidence": "M2 requirement",
+        "limitation": "manifest, classify, parse, checksum and diff are not unified",
+        "name": "unified toolkit subcommands",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "073",
+        "workstream": "cli"
+      },
+      {
+        "capability_id": "M2-CAP-023",
+        "evidence": "Session 067 and SPEC-075",
+        "limitation": "schema v1 is read-only; public summaries omit source identities and locators",
+        "name": "versioned SDK manifest schema",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.manifest:ArtifactManifest",
+        "status": "IMPLEMENTED",
+        "target_session": "067",
+        "workstream": "manifest"
+      },
+      {
+        "capability_id": "M2-CAP-024",
+        "evidence": "Session 068 and SPEC-076",
+        "limitation": "classification remains bounded by declared structural validators",
+        "name": "declarative format registry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.format_registry:DEFAULT_FORMAT_REGISTRY",
+        "status": "IMPLEMENTED",
+        "target_session": "068",
+        "workstream": "classifier"
+      },
+      {
+        "capability_id": "M2-CAP-025",
+        "evidence": "Session 069 and SPEC-077",
+        "limitation": "only registered format adapters produce normalized results",
+        "name": "normalized parse-result contract",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.parse_result:ParseResult",
+        "status": "IMPLEMENTED",
+        "target_session": "069",
+        "workstream": "parser"
+      },
+      {
+        "capability_id": "M2-CAP-026",
+        "evidence": "Session 070 and SPEC-078",
+        "limitation": "does not infer or bypass unresolved vendor integrity algorithms",
+        "name": "declarative checksum experiment registry",
+        "probe_kind": "python-symbol",
+        "probe_matches_declaration": true,
+        "probe_observed": true,
+        "probe_target": "phoenix_mmi.checksum_experiments:ChecksumExperiment",
+        "status": "IMPLEMENTED",
+        "target_session": "070",
+        "workstream": "checksum"
+      },
+      {
+        "capability_id": "M2-CAP-027",
+        "evidence": "M2 exit criterion",
+        "limitation": "end-to-end sanitized-fixture workflow does not yet exist",
+        "name": "M2 deterministic integration gate",
+        "probe_kind": "none",
+        "probe_matches_declaration": true,
+        "probe_observed": false,
+        "probe_target": null,
+        "status": "MISSING",
+        "target_session": "074",
+        "workstream": "integration"
+      }
+    ],
+    "capability_count": 27,
+    "probe_integrity": true,
+    "registry_version": "m2-session072-v1",
+    "status_counts": {
+      "BLOCKED": 2,
+      "IMPLEMENTED": 15,
+      "MISSING": 2,
+      "PARTIAL": 8
+    },
+    "workstreams": [
+      {
+        "capability_count": 5,
+        "open_capability_count": 2,
+        "status_counts": {
+          "BLOCKED": 2,
+          "IMPLEMENTED": 2,
+          "PARTIAL": 1
+        },
+        "workstream": "checksum"
+      },
+      {
+        "capability_count": 3,
+        "open_capability_count": 0,
+        "status_counts": {
+          "IMPLEMENTED": 2,
+          "PARTIAL": 1
+        },
+        "workstream": "classifier"
+      },
+      {
+        "capability_count": 2,
+        "open_capability_count": 1,
+        "status_counts": {
+          "MISSING": 1,
+          "PARTIAL": 1
+        },
+        "workstream": "cli"
+      },
+      {
+        "capability_count": 1,
+        "open_capability_count": 0,
+        "status_counts": {
+          "IMPLEMENTED": 1
+        },
+        "workstream": "core"
+      },
+      {
+        "capability_count": 2,
+        "open_capability_count": 0,
+        "status_counts": {
+          "IMPLEMENTED": 1,
+          "PARTIAL": 1
+        },
+        "workstream": "diff"
+      },
+      {
+        "capability_count": 1,
+        "open_capability_count": 1,
+        "status_counts": {
+          "MISSING": 1
+        },
+        "workstream": "integration"
+      },
+      {
+        "capability_count": 3,
+        "open_capability_count": 0,
+        "status_counts": {
+          "IMPLEMENTED": 2,
+          "PARTIAL": 1
+        },
+        "workstream": "manifest"
+      },
+      {
+        "capability_count": 8,
+        "open_capability_count": 0,
+        "status_counts": {
+          "IMPLEMENTED": 5,
+          "PARTIAL": 3
+        },
+        "workstream": "parser"
+      },
+      {
+        "capability_count": 2,
+        "open_capability_count": 0,
+        "status_counts": {
+          "IMPLEMENTED": 2
+        },
+        "workstream": "report"
+      }
+    ]
+  },
+  "classification": {
+    "capability_state": "CONFIRMED",
+    "installable_artifact_ready": false,
+    "m2_entry": "PASS",
+    "m2_exit": "OPEN",
+    "m2_status": "IN_PROGRESS",
+    "safe_mutation_ready": false
+  },
+  "exit_criteria": [
+    {
+      "criterion_id": "M2-X1",
+      "name": "versioned manifest and identity model",
+      "passed": true,
+      "required_capabilities": [
+        "M2-CAP-023"
+      ],
+      "target_session": "067"
+    },
+    {
+      "criterion_id": "M2-X2",
+      "name": "declarative format registry",
+      "passed": true,
+      "required_capabilities": [
+        "M2-CAP-024"
+      ],
+      "target_session": "068"
+    },
+    {
+      "criterion_id": "M2-X3",
+      "name": "normalized parser results and bounded LOD handling",
+      "passed": true,
+      "required_capabilities": [
+        "M2-CAP-012",
+        "M2-CAP-025"
+      ],
+      "target_session": "069"
+    },
+    {
+      "criterion_id": "M2-X4",
+      "name": "declarative checksum experiment framework",
+      "passed": true,
+      "required_capabilities": [
+        "M2-CAP-026"
+      ],
+      "target_session": "070"
+    },
+    {
+      "criterion_id": "M2-X5",
+      "name": "generic structural diff engine",
+      "passed": true,
+      "required_capabilities": [
+        "M2-CAP-018"
+      ],
+      "target_session": "071"
+    },
+    {
+      "criterion_id": "M2-X6",
+      "name": "schema registry and validation",
+      "passed": true,
+      "required_capabilities": [
+        "M2-CAP-020"
+      ],
+      "target_session": "072"
+    },
+    {
+      "criterion_id": "M2-X7",
+      "name": "unified toolkit CLI",
+      "passed": false,
+      "required_capabilities": [
+        "M2-CAP-022"
+      ],
+      "target_session": "073"
+    },
+    {
+      "criterion_id": "M2-X8",
+      "name": "deterministic sanitized-fixture integration gate",
+      "passed": false,
+      "required_capabilities": [
+        "M2-CAP-027"
+      ],
+      "target_session": "074"
+    }
+  ],
+  "exit_criteria_passed": 6,
+  "exit_criteria_total": 8,
+  "operational_graph_delta": {
+    "base": "phoenix-mmi.operational-graph/v63",
+    "edges": [
+      {
+        "relation": "implements-ordered-exit-criterion",
+        "source": "m2-analysis-toolkit",
+        "status": "CONFIRMED",
+        "target": "m2-schema-registry"
+      }
+    ],
+    "nodes": [
+      {
+        "evidence_session": "072",
+        "id": "m2-schema-registry",
+        "status": "CONFIRMED"
+      }
+    ]
+  },
+  "operational_graph_version": "v64",
+  "ordered_session_backlog": [
+    {
+      "criterion_id": "M2-X1",
+      "objective": "versioned manifest and identity model",
+      "session": "067"
+    },
+    {
+      "criterion_id": "M2-X2",
+      "objective": "declarative format registry",
+      "session": "068"
+    },
+    {
+      "criterion_id": "M2-X3",
+      "objective": "normalized parser results and bounded LOD handling",
+      "session": "069"
+    },
+    {
+      "criterion_id": "M2-X4",
+      "objective": "declarative checksum experiment framework",
+      "session": "070"
+    },
+    {
+      "criterion_id": "M2-X5",
+      "objective": "generic structural diff engine",
+      "session": "071"
+    },
+    {
+      "criterion_id": "M2-X6",
+      "objective": "schema registry and validation",
+      "session": "072"
+    },
+    {
+      "criterion_id": "M2-X7",
+      "objective": "unified toolkit CLI",
+      "session": "073"
+    },
+    {
+      "criterion_id": "M2-X8",
+      "objective": "deterministic sanitized-fixture integration gate",
+      "session": "074"
+    }
+  ],
+  "previous_state": {
+    "operational_graph_version": "v63",
+    "schema": "phoenix-mmi.m2-toolkit-progress/v1",
+    "session": "071"
+  },
+  "publication_safety": {
+    "extracted_resources_included": false,
+    "firmware_bytes_included": false,
+    "installable_artifacts_included": false,
+    "local_paths_included": false,
+    "payload_bytes_included": false,
+    "runtime_execution_observed": false,
+    "source_content_hashes_included": false
+  },
+  "schema": "phoenix-mmi.m2-toolkit-progress/v1",
+  "schema_registry": {
+    "raw_artifact_bytes_included": false,
+    "registered_schema_count": 4,
+    "registered_schemas": [
+      "phoenix-mmi.artifact-manifest/v1",
+      "phoenix-mmi.checksum-experiment/v1",
+      "phoenix-mmi.parse-result/v1",
+      "phoenix-mmi.structural-diff/v1"
+    ],
+    "registry_schema": "phoenix-mmi.schema-registry/v1",
+    "schema": "phoenix-mmi.schema-registry-summary/v1",
+    "self_description_registered": true,
+    "unknown_schemas_rejected": true
+  },
+  "session": "072"
+}

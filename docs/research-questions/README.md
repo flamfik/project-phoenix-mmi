@@ -1,0 +1,485 @@
+# Research Questions
+
+| ID | Question | Current status | Evidence / target |
+|---|---|---|---|
+| RQ-001 | Does the principal BIN have a vendor container header? | CLOSED | Offset zero is executable SH-3 control flow, not a separate container header. SPEC-001, SPEC-005. |
+| RQ-002 | One ELF, several executables or a flat image? | PARTIAL | A flat SH-3/VxWorks executable start is CONFIRMED; later internal module boundaries remain open. SPEC-001, SPEC-005. |
+| RQ-003 | Which offsets are genuine segments? | PARTIAL | Startup is executable and the filler-bounded island contains a CONFIRMED browser-resource core plus post-cluster data; no vendor segment directory is known. SPEC-002, SPEC-006, SPEC-007. |
+| RQ-004 | How do `CheckSum` and `CheckSum1`-`24` map to the image? | CLOSED | CRC32/IEEE of 25 consecutive 512 KiB chunks, final chunk truncated. SPEC-002. |
+| RQ-005 | Are regions compressed with standard algorithms? | PARTIAL | All apparent gzip/xz/bzip2/zlib candidates failed complete-stream validation. |
+| RQ-006 | Are standard graphics embedded? | CLOSED | Three JPEG and nine GIF89a resources, identical in CD1/CD3. SPEC-003. |
+| RQ-007 | Are standard fonts embedded? | PARTIAL | Apparent TTF/OTF magics failed validation, but Session 008 confirms a sparse-row bitmap region with probable 1 bpp glyph-atlas semantics. SPEC-011. |
+| RQ-008 | How are strings encoded and grouped? | PARTIAL | ASCII/UTF-16 inventory and domain markers are reproducible; tables remain unknown. |
+| RQ-009 | Is navigation a distinct internal region? | PARTIAL | Session 009 confirms code-coupled navigation subsystem evidence across multiple relocated marker bands. No single loader/module boundary is known. SPEC-013. |
+| RQ-010 | Known filesystem or proprietary table? | PARTIAL | The VxWorks dosFs/FAT/TFFS runtime stack is confirmed. No ISO-9660 descriptor or FAT volume validates inside the principal BIN; backing-volume/object layout remains open. SPEC-014. |
+| RQ-011 | Is the entry point valid big-endian SH-3 code? | CLOSED | Documented branch, delayed-slot, PC-relative load and control-register semantics form a coherent startup path. SPEC-005. |
+| RQ-012 | Is a VxWorks symbol or module table present? | PARTIAL | Runtime markers and `taskSpawn` exist, but canonical names/record layout and references did not confirm a table. SPEC-006. |
+| RQ-013 | How does code address the standard resource cluster? | PARTIAL | Direct address models from Session 004 failed, and Session 005 found no complete fixed-width/stride island-relative or cluster-relative resource-start table under the tested models. Other indexed/runtime models remain open. SPEC-006, SPEC-007. |
+| RQ-014 | Is the stable 1,588-byte pre-resource area a proprietary header? | CLOSED | It is a 1,587-byte HTML document followed by one separator byte. The HTML plus the 12-image cluster is byte-identical across CD1/CD3. SPEC-007. |
+| RQ-015 | What are the `0x0C000000`-range runs after the image cluster? | PARTIAL | All 69 entries map in bounds. Run 0 and the descriptor select a confirmed relocated bitmap-like region; runs 1/3 lack exact target matches and remain unresolved. SPEC-008, SPEC-009, SPEC-011. |
+| RQ-016 | What runtime base maps linked addresses to principal-image offsets? | CLOSED | `file_offset = runtime_address - 0x0C000000` is supported by two bounded MOV.L/JSR sequences in both releases, maps the base value to the confirmed entry, maps all 69 entries in bounds and is the only tested model with cross-version target matches. SPEC-009. |
+| RQ-017 | Which subsystem owns the post-cluster address runs? | PARTIAL | Run 0 and the descriptor select a confirmed bitmap-like region; browser/glyph ownership is probable, but no direct renderer consumer identifies an owner. SPEC-010, SPEC-011. |
+| RQ-018 | Does a normalized relocated descriptor graph surround the confirmed record block? | CLOSED | A nine-field normalized graph remains at block `-0x1FF4` and relocates by the same `0x4F0DC` in both releases. SPEC-010. |
+| RQ-019 | Which code consumes the source table or descriptor graph? | OPEN | Exact absolute-word and PC-relative `MOV.L` probes found no consumer; bounded register/dataflow analysis is required. SPEC-010. |
+| RQ-020 | Is the Session 006 target code, generic data or graphics? | PARTIAL | A 71,245-byte relocated sparse-row bitmap region is structurally confirmed; 1 bpp glyph-atlas semantics remain probable. SPEC-011. |
+| RQ-021 | What end-to-end firmware operation can be stated from current evidence? | PARTIAL | Operational graph v12 adds a three-member CD1 zero-slot/CD3 direct-accessor shadow layout while preserving the runtime writer, parser, sector ABI, partition consumer and renderer gaps. SPEC-012, SPEC-028. |
+| RQ-022 | What format and object schema does the navigation map medium use? | PARTIAL | ISO-9660/Joliet, seven FLDB tables, family headers/directories, a speech index/data split and a 16-partition topology are confirmed. Routing/coordinate semantics remain open. SPEC-017 to SPEC-020. |
+| RQ-023 | Which device and volume layout back persistent runtime storage? | OPEN | dosFs/FAT/TFFS support is present, but the mounted device, partitions and proprietary objects are not identified. SPEC-014. |
+| RQ-024 | Does the principal BIN itself embed an ISO-9660 or FAT volume? | CLOSED, BOUNDED NEGATIVE | One `CD001` constant per release fails ECMA-119 descriptor structure; all FAT markers fail boot-sector validation. SPEC-014. |
+| RQ-025 | Which routines consume the internal navigation-data anchor? | PARTIAL | Two bounded cross-version call-site pairs and six adjacent indirect-call pairs are structurally confirmed. Function boundaries, names and ABI remain open. SPEC-015. |
+| RQ-026 | Do the CD-ROM event/task records connect directly to navigation? | OPEN | Five optical-service neighborhoods remain stable, but Session 018 finds zero accessor-family intersections with the 35 registered paired graph nodes. Runtime callbacks and unregistered dispatch remain open. SPEC-016, SPEC-027. |
+| RQ-027 | Which code consumes the stable route-data records? | OPEN | Both firmware record neighborhoods are stable, but the exact route-data filename marker is absent from the map medium and no direct consumer is known. SPEC-015, SPEC-016, SPEC-018. |
+| RQ-028 | Is the supplied navigation image an authenticated OEM release matching its marketed filename? | PARTIAL, UNVERIFIED | Metadata gives a plausible 2017-2018 build timeline, but an UltraISO authoring marker prevents an original-master claim and the filename is not authenticated metadata. SPEC-017. |
+| RQ-029 | What is the FLDB outer container grammar? | PARTIAL | The little-endian header, `0x220` table location, 36-byte records and range invariants remain confirmed on media. The former firmware `0x220` bridge is disproved for its traced pair. SPEC-018, SPEC-021, SPEC-022. |
+| RQ-030 | What does the FLDB opaque field mean and how are inner payloads encoded? | PARTIAL | Family headers, B/V directories, XAC header fields and the speech split are confirmed. Common name-hash/structural models fail for every opaque field; routing and coordinate encodings remain open. SPEC-019, SPEC-020. |
+| RQ-031 | Can current or converted map data be made compatible safely? | OPEN | No firmware FLDB parser, sector ABI, inner consumer or dynamic compatibility evidence exists. Modification/repacking is out of scope until these contracts are understood. SPEC-012, SPEC-018. |
+| RQ-032 | Do independent payload families share one partition domain? | CLOSED, STRUCTURAL | XAC, three index families and both B/V two-level families independently cover the same 16 IDs. Semantic/geographical meaning is not implied. SPEC-020. |
+| RQ-033 | Does the Session 012 firmware pair couple to the fixed FLDB directory offset? | CLOSED, DISPROVED | Full bounded dataflow shows `0x220` passed as an expected value to a memory-mapped probe call, with `0x204` as an alternative at the same pointer. It is not used as an offset or pointer. SPEC-021, SPEC-022. |
+| RQ-034 | Which firmware routine selects and consumes the 16 partitions? | OPEN | No direct edge connects XAC/B/V partition IDs to navigation-runtime control flow. SPEC-020, SPEC-021. |
+| RQ-035 | What is the speech payload grammar and consumer? | PARTIAL | A declared text-index/binary-data split and in-bounds numeric references are confirmed across eight payloads. Encoding, vocabulary semantics and firmware consumer remain open. SPEC-019. |
+| RQ-036 | Where is the actual FLDB parser? | OPEN | The former `0x220` candidate is rejected. Session 014 found no cross-version 36-byte loop satisfying the parser promotion gate; other iteration forms and interprocedural consumers remain open. SPEC-022, SPEC-023. |
+| RQ-037 | What is the optical sector-read ABI feeding map data? | OPEN | Session 018 confirms an accessor call-family transition but finds zero registered optical-node intersections, `2048` argument or verified buffer provenance. SPEC-016, SPEC-022, SPEC-023, SPEC-024, SPEC-025, SPEC-026, SPEC-027. |
+| RQ-038 | What does the corrected memory-mapped probe block test? | PARTIAL | Its identical structure, high non-image base, six shared calls and seven mixed-bit patterns are confirmed. Boot memory/hardware probe semantics remain probable, not component-specific. SPEC-022. |
+| RQ-039 | Do cross-version 36-byte loops implement FLDB record iteration? | CLOSED, BOUNDED NEGATIVE | Seven relocation-normalized loop pairs were found. One is a byte-identical write-only initializer and six are generic arithmetic loops; none combines stride, header access, endian evidence and optical-buffer provenance. SPEC-023. |
+| RQ-040 | Where are FLDB endian conversion and optical-buffer provenance established? | OPEN | Session 018 pairs the broad accessor call family to one CD1 structural slot but finds no optical intersection, endian helper, buffer origin or cross-domain edge. SPEC-023, SPEC-024, SPEC-025, SPEC-026, SPEC-027. |
+| RQ-041 | Can optical-service record pointers seed reproducible bounded code analysis? | CLOSED, STRUCTURAL | Of 102 paired pointer slots and 69 unique target pairs, 25 pass the two-release bounded-code gate. They remain unnamed code entries, not asserted functions or methods. SPEC-024. |
+| RQ-042 | Does the depth-two static graph connect navigation targets to optical services? | CLOSED, BOUNDED NEGATIVE | The 35-node-pair, 20-edge graph has zero shared cross-domain nodes and zero direct edges. Session 018 additionally finds zero accessor-call-family intersections inside the same paired nodes. Runtime callbacks remain outside the model. SPEC-024, SPEC-025, SPEC-026, SPEC-027. |
+| RQ-043 | What `r4`-`r7` and return-value roles occur on the paired graph edges? | PARTIAL | Session 016 confirms two dynamic dispatch sites whose object path begins at `CALL_RETURN` and whose delayed selector is `r5 = 3`; no `2048` argument or buffer role follows. SPEC-024, SPEC-025. |
+| RQ-044 | Can bounded predecessor context recover targets loaded before a Session 015 seed? | CLOSED, STRUCTURAL | Four unique paired unresolved call sites were revisited. Two optical pairs resolve to in-image literal-backed `JSR` targets, but zero pass the independent graph-expansion code gate. SPEC-025. |
+| RQ-045 | Is there a stable cross-version dynamic descriptor contract? | CLOSED, STRUCTURAL | Two navigation call sites share one shape rooted in a prior call return, with a 32-bit target field at displacement `12`, a receiver adjustment path containing `8`, and delayed selector `r5 = 3`. Vtable and method semantics are not asserted. SPEC-025. |
+| RQ-046 | Which producer creates and initializes the dynamic descriptor/object? | PARTIAL | Session 018 maps the broad CD3 accessor call family to a dominant CD1 structural slot, but the specific Session 017 producer path still lacks a bilateral target and writer. SPEC-025, SPEC-026, SPEC-027. |
+| RQ-047 | Does the field-12 accessor belong to a stable cross-version family? | CLOSED, STRUCTURAL | The exact semantic accessor appears 12 times per release; one six-member cluster has an identical gap vector and contains the CD3-linked accessor. Class, method and owner semantics remain open. SPEC-026. |
+| RQ-048 | Where are the descriptor `+8` and `+12` fields initialized? | OPEN, BOUNDED NEGATIVE | Twenty nearby same-base mixed-width store pairs occur per release and 18 paired signatures are analyzable, but zero pass the executable-context gate. Helper, template and computed initialization remain untested. SPEC-026. |
+| RQ-049 | Does the static descriptor grammar connect the dynamic descriptor to optical records? | PARTIAL, STRUCTURAL | Matching field-role signatures occur for 20 of 31 accepted optical target pairs, but the raw candidate space is broad and zero matching signatures have directly referenced bases in both releases. Identity and lineage are not asserted. SPEC-026. |
+| RQ-050 | What does CD1 use at call sites corresponding to the CD3 field-12 accessor? | CLOSED, STRUCTURAL | Of 288 CD3 calls, 179 have unique 16-word CD1 context matches and 266 contexts converge exclusively on one CD1 target. Runtime equivalence is not asserted. SPEC-027. |
+| RQ-051 | Is the dominant CD1 target static code or a runtime linkage slot? | PARTIAL | It lies at `+8` in the second of five `in-image pointer + 12 zero` records whose pointer-target deltas are all `-576`. The structure is confirmed; patch/linkage/trampoline behavior and its writer remain hypotheses. SPEC-027. |
+| RQ-052 | Does the accessor family expose a static callback or accepted optical-graph edge? | CLOSED, BOUNDED NEGATIVE | All selected target words are PC-relative literals, leaving zero data-only registration seeds. Zero calls intersect the same pair among 35 registered graph nodes. Encoded and runtime-created callbacks remain open. SPEC-027. |
+| RQ-053 | How many words in the five-record CD1 zero-tail run are actual call targets? | CLOSED, STRUCTURAL | Three of 15 words have literal-backed adjacent calls; 12 have none. The three active targets receive 286, 286 and 337 adjacent calls. SPEC-028. |
+| RQ-054 | Do the active CD1 slots correspond to direct code retained across releases? | PARTIAL | Three compact CD3 direct entries have byte-identical translated bodies in CD1 with zero direct calls. One slot mapping passes the fixed gate, one is probable below it and one remains a structural candidate. SPEC-028. |
+| RQ-055 | Which writer, loader or relocation record initializes the active CD1 slots? | OPEN, BOUNDED NEGATIVE | A 235,864-seed PC-relative/raw/flash/MOVA trace found zero direct stores, and an exact 32-byte source/destination-pair model found zero records. GBR, memory-loaded bases, helper copies and section-relative loader metadata remain open. SPEC-028. |
+| RQ-056 | Does the five-record pointer-zero run persist in CD3? | CLOSED, STRUCTURAL | Exactly one CD3 run has the same five-record geometry, `-576` pointer-delta vector and `+7,716` first-pointer relationship. Its start and all five pointer targets translate by `+324,860`. SPEC-029. |
+| RQ-057 | Is the selected zero-filled literal-call pattern isolated? | PARTIAL, SYNTACTIC | The exact scanner finds 751/606 zero-filled targets and 195/112 active pointer-zero runs in CD1/CD3. The selected run is bilateral and retains one CD3 active slot, but whole-image code semantics and a common runtime owner are unproven. SPEC-029. |
+| RQ-058 | Can bounded GBR, helper, coherent copy-table or named cache models identify the run initializer? | OPEN, BOUNDED NEGATIVE | Zero GBR stores, exact-address helper arguments and referenced coherent copy tables cover the selected run; five exact cache markers are absent. Memory-loaded/interprocedural bases, other table grammars, stripped/inlined cache operations and external loaders remain open. SPEC-029. |
+| RQ-059 | Do the four residual CD3 calls share a bounded CD1 lineage? | CLOSED, STRUCTURAL | They form two prologue-backed code-gated owners. Two calls have unique exact-context matches and full owner-sequence alignment maps all four to four CD1 calls targeting one short return shape. One pair is confirmed and one remains probable. SPEC-030. |
+| RQ-060 | Can the bounded owner pairs identify the runtime-linkage subsystem or semantics? | PARTIAL | The two owner pairs and one CD1 target are structurally characterized, but owner windows are not function boundaries and no task, class, subsystem or runtime behavior is identified. SPEC-030. |
+| RQ-061 | Do global exact owner shapes prove a common semantic runtime-linkage class? | OPEN | Twenty-nine exact prologue-backed code-gated shapes occur in both releases, covering 235/44 instances. This is a syntactic census without a complete executable map or semantic class evidence. SPEC-030. |
+| RQ-062 | Do static calls identify a unique incoming caller for either selected owner pair? | CLOSED, BOUNDED NEGATIVE | Zero adjacent literal/JSR or direct BSR calls target an owner start or enter any selected owner window from outside. Indirect runtime callbacks and computed entries remain open. SPEC-031. |
+| RQ-063 | Where do the selected owners obtain their memory/state bases? | CLOSED, STRUCTURAL | Both pairs preserve entry-argument-rooted bases. Every owner has four load-rooted bases descending from `r4`; no selected-owner memory base is rooted in a static image pointer. Creator and type are unproven. SPEC-031. |
+| RQ-064 | Do address-taken internal owner locations provide a bilateral registration edge? | CLOSED, BOUNDED NEGATIVE | Session 023 shows both seeds are internal labels, not owner entries. CD1 invokes one label with preserved-register context; CD3 passes another to a record helper. The selected CD3 context has zero exact CD1 matches. SPEC-031, SPEC-032. |
+| RQ-065 | Which producer supplies the owner entry arguments and creates the state object? | PARTIAL | Session 026 resolves one static producer-reference pair supplying all four candidates and stable `r4`-`r7` inputs. Its target fails the bounded code gate; object creation, writing and selected-owner linkage remain unknown. SPEC-031, SPEC-032, SPEC-034, SPEC-035. |
+| RQ-066 | Are the Session 022 address seeds standalone ABI entries? | CLOSED, DISPROVED | Both are positive-offset internal labels without entry prologues. CD1 reads preserved `r8/r10/r14`; CD3 reads prior `r2/r14` context before its first call. SPEC-032. |
+| RQ-067 | Does the CD3 address argument belong to a stable cross-version helper family? | CLOSED, STRUCTURAL | The adjacent family has 231/232 calls, all with in-image `r5` addresses. 215/232 CD3 contexts converge on one CD1 target and pass the fixed family gate. Runtime equivalence is not asserted. SPEC-032. |
+| RQ-068 | What record geometry does the selected CD3 helper initialize? | CLOSED, STRUCTURAL | Six entry-`r4` long-word fields occur at offsets `0, 4, 8, 12, 16, 24`; branch-merged field values and semantic type remain unassigned. SPEC-032. |
+| RQ-069 | Is the generic address-record family compiler landing-pad/frame/unwind registration? | PARTIAL, PROBABLE | Stack-local records, internal labels and ubiquitous in-image `r5` addresses support the hypothesis, but no exception/unwind ABI or runtime behavior is identified. SPEC-032. |
+| RQ-070 | Which entry arguments are required by both selected owner pairs? | CLOSED, STRUCTURAL | Both CD1/CD3 owner pairs consume runtime entry roots `r4` and `r6`; `r6` is used as a base with displacement `+2`. Types and object identity remain unknown. SPEC-031, SPEC-033. |
+| RQ-071 | Can the Session 016 call-return/field-load family call the selected owners? | CLOSED, BOUNDED NEGATIVE | Both bilateral candidates preserve equal target and `r4` expressions, but `r6` is `CALLER_SAVED_CLOBBER` in every tested contract. Zero of four candidate/owner combinations pass the entry-argument gate. SPEC-033. |
+| RQ-072 | Which memory-loaded indirect caller supplies owner entry `r4` and `r6`? | PARTIAL | Four Session 025 families provide equal bilateral `r4`/`r6` contracts. Session 026 identifies their shared return producer, but the dispatch targets remain unresolved and unlinked to either selected owner. SPEC-033-SPEC-035. |
+| RQ-073 | Are the two tested indirect-call contexts stable across firmware releases? | CLOSED, STRUCTURAL | Each 16-word normalized signature is equal across CD1/CD3 and occurs exactly once per image. Signature stability does not establish a concrete target or runtime equivalence. SPEC-033. |
+| RQ-074 | Can the Session 021 owner registry be reproduced as a safe Session 025 search boundary? | CLOSED, CONFIRMED | All four per-release census fields, 29 shared shapes and 235/44 shared-shape instances reproduce exactly. This confirms the registry boundary, not owner semantics. SPEC-034. |
+| RQ-075 | How many registered indirect contexts explicitly rebuild available `r4` and `r6` after their last call? | CLOSED, STRUCTURAL | The bilateral funnel is 26/26 memory-loaded targets, 12/12 explicit argument contexts and 4/4 contexts with available provenance. Eight explicit families are rejected. SPEC-034. |
+| RQ-076 | What contracts do the four producer-first candidates expose? | CLOSED, STRUCTURAL | Target fields are `28`, `36` and twice `44`; receiver adjustment inputs are `24`, `32` and `40`; `r6` is zero in two families and `ENTRY:r7` in two. SPEC-034. |
+| RQ-077 | Does any producer-first candidate target a selected owner entry? | OPEN | All four targets remain call-return-rooted memory loads. No concrete target address or selected-owner registration edge is established. SPEC-034. |
+| RQ-078 | Which call produces the descriptor/object returned immediately before the four candidate dispatches? | CLOSED, STRUCTURAL | All four slices cross one bilateral in-image producer-reference pair. Producer position, owner-relative target, `r4`-`r7` arguments and returned-object geometry agree; target code validation, type and writer remain open. SPEC-034, SPEC-035. |
+| RQ-079 | Does the resolved producer belong to a stable bilateral call family? | CLOSED, STRUCTURAL | Session 027 expands the seven adjacent calls to all 18 PC-relative references. Every bilateral call/owner flow is co-relocated, exact-shape and code-gated. The census remains syntactic. SPEC-035, SPEC-036. |
+| RQ-080 | Is the returned-object field geometry stable across all four candidates? | CLOSED, STRUCTURAL | Target fields `28`, `36`, `44`, `44` pair with receiver-adjustment fields `24`, `32`, `40`, `40`, preserving a `+4` stride in both releases. Object type is unknown. SPEC-035. |
+| RQ-081 | Is the resolved producer target a validated cross-version code entry? | OPEN, BOUNDED NEGATIVE | Neither bounded target window passes the code gate and their normalized shapes differ. Session 027 finds code-gated callers but no bilateral producer implementation. SPEC-035, SPEC-036. |
+| RQ-082 | Does the producer-return object register a dynamic target to either selected owner? | OPEN, BOUNDED NEGATIVE | All 17 exact target words per release are PC-relative call literals feeding 18 indirect calls; there are zero data-only pointers and direct BSR targets. Computed/runtime registration remains open. SPEC-035, SPEC-036. |
+| RQ-083 | How is the producer return used across its complete exact-reference family? | CLOSED, STRUCTURAL | Eighteen bilateral flows contain 15 returned-object dispatches, two static-helper handoffs and one null test. They occupy 17 exact code-gated owner pairs. SPEC-036. |
+| RQ-084 | What dispatch-grid geometry does the returned object expose? | CLOSED, STRUCTURAL | Fifteen dispatches cover target fields `28` through `92` in eight-byte steps; every target is paired with a 16-bit receiver-adjustment field at `target - 4`. Type and semantics remain unknown. SPEC-036. |
+| RQ-085 | Does the expanded family contain another complete owner-entry argument contract? | PARTIAL, STRUCTURAL | The fully decoded field-`60` / adjustment-`56` owner clears memory through entry `r5/r6`, reuses both pointers for dispatch and returns an unsigned byte. Its memory-loaded target remains unresolved. SPEC-036, SPEC-037. |
+| RQ-086 | Do the two static handoff helpers prove object consumption or registration? | OPEN, PRIOR DISPROOF WITHDRAWN | Session 030 proves that the analyzed bodies are adjacent to literal-pool ends but are not validated runtime callees. Actual consumption and registration remain unresolved. SPEC-036-SPEC-039. |
+| RQ-087 | Are all exact producer-call owners stable across releases? | CLOSED, STRUCTURAL | All 18 flows occur in 17 unique bilateral owner pairs with equal normalized shapes and passing code gates. Owner semantics and runtime equivalence are not asserted. SPEC-036. |
+| RQ-088 | What observable side effects precede the field-60 dispatch? | CLOSED, STRUCTURAL | Both releases preserve entry `r5/r6`, write a long-word zero through each pointer before the producer call and reuse both pointers as dispatch arguments. Types and path dominance remain unassigned. SPEC-037. |
+| RQ-089 | What width does the field-60 wrapper return? | CLOSED, STRUCTURAL | Both releases apply `EXTU.B` to dispatch `r0` and return the zero-extended byte in `r0`. Semantic meaning remains unknown. SPEC-037. |
+| RQ-090 | Do the two static handoff pointers map to validated exact code entries? | CLOSED, DISPROVED UNDER BASE MODEL | Both raw targets map inside fully referenced PC-relative literal pools. Code at each pool end is adjacent but has no established runtime target edge. SPEC-037-SPEC-039. |
+| RQ-091 | Does either corrected handoff expose a selected-owner pointer or bilateral entry-`r5` consumer? | OPEN, MAPPING BLOCKED | The adjacent pool-end bodies ignore `r5`, but they are not proven callees. Entry-`r5` use by the actual targets cannot yet be tested. SPEC-037-SPEC-039. |
+| RQ-092 | Can a deterministic local runtime-pointer prefix correct both handoff target pairs? | CLOSED, DISPROVED AS RUNTIME MAPPING | The forward runs are suffixes of larger literal pools. Their ends locate stable adjacent code, not validated runtime targets. SPEC-038, SPEC-039. |
+| RQ-093 | Is the producer return actually consumed by either corrected callee through entry `r5`? | OPEN, PRIOR DISPROOF WITHDRAWN | Session 029's negative result belongs only to pool-end successor bodies. The actual runtime callees remain unresolved. SPEC-036, SPEC-039. |
+| RQ-094 | Are the local prefixes loader, section, relocation or function-descriptor records? | CLOSED, DISPROVED LOCALLY | Every local word belongs to a complete PC-relative literal pool with one preceding referrer. Broader loader and piecewise mapping questions remain open. SPEC-039. |
+| RQ-095 | Does the same prefix correction validate the Session 026 producer target? | CLOSED, BOUNDED NEGATIVE | Both producer targets have zero leading runtime-pointer words. Correction is not applicable and Phoenix performs no forward code-entry search. SPEC-038. |
+| RQ-096 | Are the Session 029 target runs complete PC-relative literal pools? | CLOSED, BILATERAL STRUCTURAL | The pools contain four and six words; all ten words per release have one preceding PC-relative referrer and equal relative use-role signatures. SPEC-039. |
+| RQ-097 | Is the code at either literal-pool end the runtime handoff callee? | OPEN, BOUNDED NEGATIVE | All four successors are strict, shape-equal code entries, but have zero exact runtime-word references and zero direct `BSR` targets. Computed or loader-created edges remain possible. SPEC-039. |
+| RQ-098 | Why do the registered runtime addresses map inside structurally paired literal pools? | PARTIAL, MULTI-FAMILY | Session 031 confirms five link-relocation families across eight unique value pairs. No constant-correction code anchor exists inside the declared `±2048`-byte model; loader/section transformation remains open. SPEC-039, SPEC-040. |
+| RQ-099 | Is the complete literal-pool use grammar stable across releases? | CLOSED, BILATERAL STRUCTURAL | Pool sizes, relative referrer positions, loaded-register roles and modeled use classes agree for both pairs. SPEC-039. |
+| RQ-100 | Do the complete literal-pool values share one cross-release relocation delta? | CLOSED, DISPROVED | Ten occurrences reduce to eight unique pairs and five deltas. One cross-release link-delta model cannot describe the tested pools. SPEC-040. |
+| RQ-101 | Can a fixed structural-delta-preserving correction locate bilateral code anchors? | CLOSED, BOUNDED NEGATIVE | Seven control pairs and 14,343 corrections yield 68 bilateral strict entries but zero fully decoded equal code shapes inside `±2048` bytes. SPEC-040. |
+| RQ-102 | Does any relocation family satisfy the independent-anchor gate for a map piece? | CLOSED, BOUNDED NEGATIVE | Neither the two-pair nor three-pair populated family has one passing common correction; singleton families cannot independently confirm a piece. SPEC-040. |
+| RQ-103 | Are link addresses transformed by section, relocation or loader metadata? | PARTIAL, SECTION REORDER CONFIRMED | Session 032 proves one file-layout reorder bracket and many delta changes, but no descriptor table, exact boundary or loader operation. SPEC-040, SPEC-041. |
+| RQ-104 | Do the prior direct-link code anchors survive independent revalidation? | CLOSED, BILATERAL CODE | All 27 Session 015 pairs pass the bounded code gate again and form 15 relocation-delta families. Only three have equal normalized shape; runtime equivalence is not asserted. SPEC-041. |
+| RQ-105 | Which relocation intervals and local plateaus are directly supported? | CLOSED, SPARSE STRUCTURAL | Two byte-identical intervals cover 86,505 bytes, 15 marker bands contain 405 pairs and six code plateaus contain repeated equal-delta anchors. Gaps are not interpolated. SPEC-041. |
+| RQ-106 | Does the CD1/CD3 file layout contain a section reorder? | CLOSED, BOUNDED STRUCTURAL | One of 19 breakpoint brackets reverses right-side order. In CD1 it lies between offsets 7,832,261 and 8,015,784; the exact boundary and mechanism remain open. SPEC-041. |
+| RQ-107 | Do any Session 031 pool pairs match an independently verified anchor? | CLOSED, BOUNDED NEGATIVE | Zero of eight pairs match exact code/data/marker anchors. LP-001 and LP-004 share delta `323440` with CA-016 but not target identity; the other six have no coverage. SPEC-041. |
+| RQ-108 | Can the sparse anchor model be promoted to a continuous file map? | OPEN | Twenty-three support zones bound changes, but only two byte-identical regions support continuous intervals. Exact section boundaries and loader/relocation descriptors are required. SPEC-041. |
+| RQ-109 | Are the exact `RB-015` support-zone endpoints stored under the raw, flash or runtime-link models? | CLOSED, BOUNDED NEGATIVE | Neither release contains an exact encoded start or end for either zone. Only the exact `RZ-012` scalar length occurs, twice per image. SPEC-042. |
+| RQ-110 | Does a simple bilateral `source/destination/length` table describe the confirmed reorder? | CLOSED, BOUNDED NEGATIVE | The closed 12/16-byte, six-order, three-address-model search yields 438/604 multi-record interpretations but zero coherent two-zone candidates and zero bilateral pairs. SPEC-042. |
+| RQ-111 | Is `RB-015` caused by runtime loader relocation or compile/link-time placement? | OPEN | Session 033 finds no simple internal descriptor table. Variable, indirect or external metadata and ordinary link-layout change remain possible. SPEC-042. |
+| RQ-112 | Do byte-identical blocks independently support both sides of the confirmed reorder? | CLOSED, CONFIRMED | Fourteen `RZ-012` blocks and 263 `RZ-013` blocks match their independently known deltas, covering 6,040 and 57,912 exact bytes. SPEC-043. |
+| RQ-113 | Can exact blocks narrow the `RB-015` transition envelope? | CLOSED, BOUNDED | The range narrows from `[7,832,261, 8,015,784)` to `[7,832,267, 7,979,108)`, reducing width by 36,682 bytes without asserting one breakpoint. SPEC-043. |
+| RQ-114 | Is the narrowed envelope stable under a stricter exact-match seed? | CLOSED, CONFIRMED | The 64-byte primary and 128-byte control produce identical lower/upper bounds and width; both retain exact support for both lanes. SPEC-043. |
+| RQ-115 | Does exact file-content movement distinguish link placement from a runtime loader transform? | OPEN | The result is consistent with compile/link placement and no loader transform is observed, but indirect, encoded or external loader metadata remains possible. SPEC-043. |
+| RQ-116 | Does a fixed two-delta exact-byte profile reveal one monotonic transition inside `RB-015`? | CLOSED, BOUNDED NEGATIVE | None of the 256/512/1024-byte profiles has exactly one forward change without a reverse change. The model is limited to the frozen ratios, step and two prior deltas. SPEC-044. |
+| RQ-117 | Is the proposed dominance transition stable across window sizes? | CLOSED, DISPROVED UNDER MODEL | The 256-byte profile has multiple reversals, the 512-byte profile has one forward and one reverse change, and the 1024-byte profile is one-sided. SPEC-044. |
+| RQ-118 | Does shifting the sampling grid change the bounded conclusion? | CLOSED, REPLICATED NEGATIVE | A 64-byte half-step shift retains the same topology classification at all three scales, so the negative result is not an origin-grid artifact. SPEC-044. |
+| RQ-119 | Can Session 035 safely narrow the exact-block transition envelope? | CLOSED, BOUNDED NEGATIVE | No stable similarity band is promoted. `[7,832,267, 7,979,108)` remains the narrowest supported bound and the exact boundary stays open. SPEC-043, SPEC-044. |
+| RQ-120 | Does the remaining envelope contain multiple interleaved content families or relocation-patched islands? | OPEN | Sparse, non-monotonic dominance islands are observed, but their grammar and ownership are not decoded. A fixed island atlas is required. SPEC-044. |
+| RQ-121 | Does a fixed 4 KiB atlas support multiple interleaved content families? | CLOSED, BOUNDED NEGATIVE | The origin grid has one `RZ-012` tile, zero `RZ-013` tiles and 35 unresolved tiles; the shifted grid has the same one-sided topology. SPEC-045. |
+| RQ-122 | Is any local content-family support reproducible across a half-tile grid shift? | PARTIAL, REPLICATED | One accepted `RZ-012` tile per grid overlaps over 2,048 bytes. Both pass only the byte-similarity gate, not the exact-word gate. SPEC-045. |
+| RQ-123 | Does `RZ-013` content appear inside the remaining envelope at 4 KiB scale? | CLOSED, BOUNDED NEGATIVE | Zero `RIGHT_FAMILY` tiles occur in either grid; every tested `RZ-013` mapping is divergent under the fixed atlas classes. SPEC-045. |
+| RQ-124 | Do concentrated unequal-word differences expose relocation-patch morphology? | CLOSED, BOUNDED NEGATIVE | No mapping tile in either grid passes the fixed anonymous repeated word-difference gate. Other encodings and smaller structures remain open. SPEC-045. |
+| RQ-125 | Does entropy and byte-distribution similarity establish content identity? | CLOSED, DISPROVED AS IDENTITY | Twenty-six primary and 25 shifted `RZ-012` tiles are distribution-similar only, but fail byte and word content gates. They remain morphology, not identity. SPEC-045. |
+| RQ-126 | Can the fixed island atlas narrow the exact transition envelope? | CLOSED, BOUNDED NEGATIVE | The atlas promotes no continuous boundary. `[7,832,267, 7,979,108)` remains authoritative and the exact section boundary stays open. SPEC-045. |
+| RQ-127 | Is the replicated 2 KiB `RZ-012` support clustered or scattered? | CLOSED, CONFIRMED BOUNDED STRUCTURAL | `RZ-012` has 236 equal bytes versus 15 under `RZ-013`; more than 89% of covered equality lies in two adjacent microbins in both phases. SPEC-046. |
+| RQ-128 | Do exact runs and naturally aligned units distinguish the micro-island from the control? | CLOSED, CONFIRMED | `RZ-012` has a 25-byte maximum run, 92 exact halfwords and 32 exact words; `RZ-013` has a three-byte maximum, one halfword and zero words. SPEC-046. |
+| RQ-129 | Does SH decoder morphology establish that the clustered micro-island is executable code? | CLOSED, BOUNDED NEGATIVE UNDER GATE | Same-known-mnemonic counts are 238 versus 126, a ratio of `1.888889`; the frozen `2x` gate fails and code is not asserted. SPEC-046. |
+| RQ-130 | Does the micro-atlas identify an exact section boundary? | CLOSED, BOUNDED NEGATIVE | Bin edges are sampling boundaries and run endpoints delimit equality only. The Session 034 envelope remains authoritative. SPEC-043, SPEC-046. |
+| RQ-131 | What record or resource grammar owns the clustered correspondence? | OPEN | Local structure is confirmed, but field layout, semantic owner and compile/link placement versus loader transformation remain unresolved. SPEC-046. |
+| RQ-132 | Do the Session 037 exact runs form one bounded run-gap component? | CLOSED, CONFIRMED CONTROLLED STRUCTURAL | One 240-byte `RZ-012` component contains 30 runs, 211 equal bytes and 29 singleton gaps; `RZ-013` has zero promoted components. SPEC-047. |
+| RQ-133 | Is the dominant component stable when the gap cap is relaxed? | CLOSED, CONFIRMED | Gap caps one and two preserve its start, end and equal-byte count. SPEC-047. |
+| RQ-134 | Do the singleton differences follow a fixed record stride? | CLOSED, BOUNDED NEGATIVE | The dominant direct stride covers `42.857143%`; the best phase lattice covers `62.068966%`. Both fail the frozen `75%` gate. SPEC-047. |
+| RQ-135 | Do the five 25-byte exact runs establish a repeated field or record? | CLOSED, BOUNDED NEGATIVE | Their four start spacings are all different; the deterministic dominant spacing has only `25%` share. SPEC-047. |
+| RQ-136 | Can the 2 KiB micro-island be closed with a stable structural model? | CLOSED, CONFIRMED STRUCTURAL | It is a control-distinguished, gap-cap-stable 240-byte sparse-single-byte-difference skeleton. Record semantics are not implied. SPEC-047. |
+| RQ-137 | Which subsystem or section owns the 240-byte skeleton? | OPEN | The microanalysis provides no direct reference, descriptor or runtime evidence for semantic ownership. External provenance is required. SPEC-047. |
+| RQ-138 | Do previously registered bilateral reference or descriptor families intersect the 240-byte skeleton? | CLOSED, BOUNDED NEGATIVE | None of 81 pairs from nine fixed families intersects the component under RZ-012. SPEC-048. |
+| RQ-139 | Is any registered pair adjacent to or near the component? | CLOSED, BOUNDED NEGATIVE | Zero pairs are within 64 bytes or 4 KiB bilaterally. The nearest is the contextual RZ-012 support zone at 74,281 bytes. SPEC-048. |
+| RQ-140 | Does the RZ-013 mapping provide a competing owner candidate? | CLOSED, CONTROLLED NEGATIVE | RZ-013 has zero exact, adjacent and near registered pairs; its nearest support zone is 109,002 bytes away. SPEC-048. |
+| RQ-141 | Does containment inside `RB-015` assign component ownership? | CLOSED, DISPROVED AS OWNER EVIDENCE | The component is fully contained in the reorder bracket, but the bracket is neither a continuous mapping nor a semantic edge. SPEC-048. |
+| RQ-142 | Can the frozen prior registry identify the semantic owner? | CLOSED, BOUNDED NEGATIVE | It contains no exact component intersection and no prior explicit owner-edge pair. Encoded, computed, external and runtime-created references remain open. SPEC-048. |
+| RQ-143 | Which subsystem or external payload owns the component? | OPEN | New provenance must come from independent evidence outside the exhausted principal-image microanalysis, such as a registered cross-payload homolog or external loader/link material. SPEC-048. |
+| RQ-144 | Can the five 25-byte exact runs form a safe cross-payload signature? | CLOSED, CONFIRMED | All pass the fixed entropy/distinct-byte gates, occupy five positions, contain three distinct patterns and have zero control-pattern overlap. SPEC-049. |
+| RQ-145 | What raw update-payload corpus can be searched reproducibly? | CLOSED, CONFIRMED | CD1-CD3 contain 590 eligible members; four principal copies are excluded and 586 members reduce to 133 unique contents by SHA-256. SPEC-049. |
+| RQ-146 | Does even the first target anchor occur in another unique raw payload? | CLOSED, BOUNDED NEGATIVE | Zero occurrences exist across 81,647,732 unique payload bytes. No geometry promotion is possible under the fixed model. SPEC-049. |
+| RQ-147 | Does another raw payload reproduce the complete five-anchor geometry? | CLOSED, BOUNDED NEGATIVE | Target geometry and strong-match counts are both zero; no scan limit saturates. SPEC-049. |
+| RQ-148 | Does the equal-geometry control collide with the payload corpus? | CLOSED, CONTROLLED NEGATIVE | The control has zero first-anchor, geometry and strong matches. SPEC-049. |
+| RQ-149 | Can the raw cross-payload census identify the component owner? | CLOSED, BOUNDED NEGATIVE | No contiguous homolog is found; semantic owner, section boundary and loader mechanism remain open. SPEC-049. |
+| RQ-150 | Could a homolog exist only after decoding a payload container? | OPEN | HEX, LOD and related record formats may encode address-ordered flash bytes. Format validation and private reconstruction are required before repeating the fixed signature search. SPEC-049. |
+| RQ-151 | Which update members have a validated record encoding? | CLOSED, CONFIRMED | Sixteen unique Intel HEX contents and one unique SW S-record subset are normalized; ten unique LOD/YIM contents remain unsupported. SPEC-050. |
+| RQ-152 | Are standard Intel HEX records internally consistent? | CLOSED, CONFIRMED | All line, byte-count, checksum, EOF, address-state and overlap gates pass for 16 unique contents. SPEC-050. |
+| RQ-153 | Can vendor Intel records be interpreted safely? | CLOSED, BOUNDED OPAQUE | Types 0x10/0x11 pass fixed first-record geometry and checksum gates, but their four-byte payload remains uninterpreted and does not change address state. SPEC-050. |
+| RQ-154 | Can the SW S-record material be reconstructed completely? | CLOSED, PARTIAL | 73,534 S3/S7 records are valid, but 2,743 candidate lines and 329,914 envelope bytes remain unvalidated. No opaque gap is bridged. SPEC-050. |
+| RQ-155 | What decoded corpus is reproducibly searchable? | CLOSED, CONFIRMED | Content deduplication produces 3,109 regions and 3,570,586 bytes; 3,012 regions meet the 240-byte search gate. SPEC-050. |
+| RQ-156 | Does the fixed homolog occur after validated record decoding? | CLOSED, BOUNDED NEGATIVE | Target and equal-geometry control each have zero first-anchor, geometry and strong matches; no limit saturates. SPEC-050. |
+| RQ-157 | Are LOD and YIM record formats resolved? | CLOSED, SPLIT RESULT | YIM now has a validated read-only XIM2 envelope and RLE decoder; its integrity fields remain open. LOD remains opaque without record, address or integrity semantics. SPEC-050, SPEC-053-SPEC-056. |
+| RQ-158 | Can shorter seeds remain discriminating after the 25-byte anchors fail? | CLOSED, CONFIRMED | Ten 12-byte target subanchors pass entropy/distinctness gates, contain six patterns and have zero overlap with ten equal-geometry control patterns. SPEC-051. |
+| RQ-159 | What geometry is required for a near-homolog candidate? | CLOSED, FIXED CONTRACT | At least four exact subanchors from at least three parent zones are required before full-window similarity is evaluated. SPEC-051. |
+| RQ-160 | Can the Session 040 and 041 corpora be independently reproduced? | CLOSED, CONFIRMED | All raw member/content and decoded source/region counts exactly match the registered prior reports. SPEC-051. |
+| RQ-161 | Does any 12-byte target seed occur in raw payloads? | CLOSED, BOUNDED NEGATIVE | Zero occurrences exist across 133 unique units and 81,647,732 bytes. SPEC-051. |
+| RQ-162 | Does any 12-byte target seed occur in normalized record regions? | CLOSED, BOUNDED NEGATIVE | Zero occurrences exist across 3,012 scannable units and 3,566,108 bytes. SPEC-051. |
+| RQ-163 | Does the shorter equal-geometry control collide? | CLOSED, CONTROLLED NEGATIVE | It has zero occurrences, candidates and strong results in both domains. SPEC-051. |
+| RQ-164 | Is a distributed near-homolog established? | CLOSED, BOUNDED NEGATIVE | No seed, multi-parent constellation or 60-percent similarity candidate exists; no limit saturates. SPEC-051. |
+| RQ-165 | What provenance path remains after the raw, decoded and distributed searches? | OPEN, NARROWED | Decoded YIM is now closed as bounded-negative. LOD semantics, other transformed representations and external/runtime loader provenance remain; further signature shortening is not justified. SPEC-051, SPEC-056, SPEC-057. |
+| RQ-166 | What is the complete LOD/YIM update-member corpus? | CLOSED, CONFIRMED | Fifty-five members reduce to five unique LOD and five unique YIM contents. SPEC-052. |
+| RQ-167 | Are LOD and YIM one format family? | CLOSED, DISPROVED | YIM has a fixed XIM2 envelope; LOD lacks that envelope and remains a separate opaque binary family. SPEC-052. |
+| RQ-168 | Are the unique contents reused across releases? | CLOSED, CONFIRMED | Every unique LOD/YIM content occurs on both CD1 and CD3. SPEC-052. |
+| RQ-169 | Does YIM have a reproducible envelope? | CLOSED, CONFIRMED | Five of five sources satisfy the same 60-byte ASCII/XIM2 envelope. SPEC-053. |
+| RQ-170 | Do the independent YIM length fields close? | CLOSED, CONFIRMED | ASCII file size, outer span, header size and payload-block span all equal their physical relationships. SPEC-053. |
+| RQ-171 | What raster geometry is declared? | CLOSED, CONFIRMED | All five sources declare 480 by 240 two-byte units after decoding. SPEC-053, SPEC-054. |
+| RQ-172 | Is the XIM2 payload a bounded RLE stream? | CLOSED, CONFIRMED | One high-bit literal/repeat grammar consumes all five streams exactly. SPEC-054. |
+| RQ-173 | Does decoded size agree with geometry? | CLOSED, CONFIRMED | Every source expands to 230,400 bytes and the corpus to 1,152,000 bytes. SPEC-054. |
+| RQ-174 | Are pixel-channel semantics established? | OPEN | Two-byte unit width is validated, but renderer or palette evidence is required before assigning RGB555 or another layout. SPEC-054. |
+| RQ-175 | Do common integrity candidates explain the leading YIM fields? | CLOSED, BOUNDED NEGATIVE | Fixed CRC32, Adler, CRC16 and sum candidates over four ranges produce zero matches. SPEC-055. |
+| RQ-176 | Is the actual YIM integrity algorithm known? | OPEN | Polynomial, initialization, byte order, protected range or chained computation may differ. SPEC-055. |
+| RQ-177 | Is safe YIM repacking justified? | CLOSED, BLOCKED | Read-only decoding is validated; encoding and installation remain blocked by unresolved integrity. SPEC-055. |
+| RQ-178 | Do LOD sources share structural content? | CLOSED, CONFIRMED | Common prefix/suffix, 104,369 aligned common bytes and 34 all-source 256-byte contents establish cross-language reuse. SPEC-056. |
+| RQ-179 | Does LOD have a validated record/address model? | OPEN | Topology alone does not establish record lengths, addresses, checksums or compression. SPEC-056. |
+| RQ-180 | Can LOD be reconstructed safely? | CLOSED, BLOCKED | Independent record, address and integrity gates are absent. SPEC-056. |
+| RQ-181 | Does any target seed occur in decoded YIM rasters? | CLOSED, BOUNDED NEGATIVE | Zero target anchor occurrences exist across five rasters and 1,152,000 bytes. SPEC-057. |
+| RQ-182 | Does the equal-geometry control collide with decoded YIM? | CLOSED, CONTROLLED NEGATIVE | The control also has zero seeds, candidates, strong units and saturation events. SPEC-057. |
+| RQ-183 | Can decoded YIM assign the reorder component owner? | CLOSED, BOUNDED NEGATIVE | No homolog exists under the fixed model; semantic ownership remains open. SPEC-057. |
+| RQ-184 | Can the firmware evidence be represented as one layered model? | CLOSED, PARTIAL MODEL | Update media, distributed payloads, main image, records, display, speech and navigation layers are linked with explicit confidence. SPEC-058. |
+| RQ-185 | Does the integrated graph preserve uncertainty? | CLOSED, CONFIRMED | Graph v42 adds no runtime or semantic-owner edge unsupported by prior evidence. SPEC-058. |
+| RQ-186 | Is M1 complete after Session 050? | CLOSED, NOT YET | LOD/integrity, exact section, semantic owner and loader-transform gaps remain. SPEC-058. |
+| RQ-187 | Is mutation or installable repacking ready? | CLOSED, NO | The integrated safety gate remains false. SPEC-058. |
+| RQ-188 | Do additional named CRC families explain the 32-bit YIM preamble field? | CLOSED, BOUNDED NEGATIVE | Seven frozen CRC-32 variants across seven ranges and two result representations produce zero matches in five sources. SPEC-059. |
+| RQ-189 | Do additional named CRC families explain the 16-bit YIM preamble field? | CLOSED, BOUNDED NEGATIVE | Nine frozen CRC-16 variants under the same range contract produce zero matches. SPEC-059. |
+| RQ-190 | Does the expanded catalogue justify YIM repacking? | CLOSED, NO | The catalogue excludes common candidates but does not identify either field; repacking remains blocked. SPEC-059. |
+| RQ-191 | Are YIM integrity fields simple functions of validated sizes or geometry? | CLOSED, BOUNDED NEGATIVE | No predeclared exact size or geometry relation matches the corpus. SPEC-060. |
+| RQ-192 | Are YIM integrity fields simple functions of RLE counts or byte sums? | CLOSED, BOUNDED NEGATIVE | No command-count, byte-sum, complement, fold or byte-swap relation matches. SPEC-060. |
+| RQ-193 | Are the two YIM integrity fields directly related? | CLOSED, BOUNDED NEGATIVE | Low-half, high-half and XOR-fold cross-field relations all fail. SPEC-060. |
+| RQ-194 | Are strict XIM2 resources embedded in the principal images? | CLOSED, CONFIRMED | CD1 and CD3 each contain 84 records satisfying the complete envelope and bounded RLE contract. SPEC-061. |
+| RQ-195 | Is the embedded XIM2 set stable from MMI 5150 to 5570? | CLOSED, CONFIRMED | All 84 encoded and decoded contents are shared, with zero release-only contents. SPEC-061. |
+| RQ-196 | Does a standalone YIM relate exactly to the embedded XIM2 set? | CLOSED, CONFIRMED PARTIAL | One of five unique standalone sources matches one embedded resource in both encoded and decoded form on both releases. SPEC-061. |
+| RQ-197 | Is the XIM2 consumer routine identified? | OPEN | Physical containment and suffix markers do not identify the loader or renderer. SPEC-061. |
+| RQ-198 | Which YIM operations are currently safe? | CLOSED, READ ONLY | Strict parsing, bounded decoding, private comparison and metadata reporting are allowed. SPEC-062. |
+| RQ-199 | Is the YIM write model established? | CLOSED, NO | Integrity-field synthesis, encoding and installation contracts remain absent. SPEC-062. |
+| RQ-200 | Can a YIM or firmware mutation be produced now? | CLOSED, BLOCKED | The explicit mutation gate remains false. SPEC-062. |
+| RQ-201 | Do LOD sources exhibit fixed-width phase bias? | CLOSED, CANDIDATE | Width 3 alone exceeds the predeclared 0.05 spread threshold. SPEC-063. |
+| RQ-202 | Do widths 2, 4, 8 or 16 show comparable bias? | CLOSED, NO | Their phase spreads remain below 0.0048. SPEC-063. |
+| RQ-203 | Does phase bias establish a three-byte record? | CLOSED, NO | It establishes an alignment candidate only. SPEC-063. |
+| RQ-204 | Do long fill runs define repeatable LOD topology? | CLOSED, CONFIRMED | All sources have the same `FF -> ZERO -> ZERO` delimiter sequence and four regions. SPEC-064. |
+| RQ-205 | Is the first LOD delimiter aligned consistently? | CLOSED, CONFIRMED | Every 192-byte `0xFF` delimiter begins at phase zero modulo three. SPEC-064. |
+| RQ-206 | Are semantic roles of the four LOD regions known? | OPEN | Fill boundaries alone cannot assign code, index, audio or integrity roles. SPEC-064. |
+| RQ-207 | Is LOD shared content an artifact of the 256-byte grid? | CLOSED, DISPROVED | Shared-all content persists for 128, 256, 512 and 1,024-byte grids. SPEC-065. |
+| RQ-208 | Is LOD reuse dependent on grid origin? | CLOSED, DISPROVED | It persists at zero, quarter, half and three-quarter block shifts. SPEC-065. |
+| RQ-209 | Does robust reuse identify record semantics? | CLOSED, NO | It proves an exact content relationship only. SPEC-065. |
+| RQ-210 | How many fixed tests support three-byte LOD alignment? | CLOSED, THREE OF SEVEN | Prefix, common-byte phase and `0xFF` start phase support it. SPEC-066. |
+| RQ-211 | Which observations prevent record promotion? | CLOSED, CONFIRMED | Delimiter divisibility and token-phase behavior fail; header and address/length fields remain absent. SPEC-066. |
+| RQ-212 | Is there a validated LOD record/address/length model? | OPEN | No; three-byte alignment remains only a candidate. SPEC-066. |
+| RQ-213 | Do all LOD variants share nontrivial exact content? | CLOSED, CONFIRMED | Thirty of 34 all-source 256-byte contents are nontrivial. SPEC-067. |
+| RQ-214 | Do exact shared LOD contents form aligned regions? | CLOSED, CONFIRMED BOUNDED | Thirty same-index blocks are identical; the longest run spans 19 blocks. SPEC-067. |
+| RQ-215 | Is there one monolithic common LOD core? | OPEN | Bounded shared regions are proven, but one core and its semantics are not. SPEC-067. |
+| RQ-216 | How are display resources connected to the main image? | CLOSED, CONFIRMED PARTIAL | Both main images physically contain the same 84 strict XIM2 resources and one exact standalone-YIM counterpart. SPEC-068. |
+| RQ-217 | How far is the LOD speech model understood? | PARTIAL | Ordered delimiters, alignment bias and bounded exact reuse are known; record and consumer models are not. SPEC-068. |
+| RQ-218 | Does graph v52 preserve negative and open evidence? | CLOSED, CONFIRMED | It adds no renderer, LOD decoder or write path unsupported by direct evidence. SPEC-068. |
+| RQ-219 | Is M1 complete after Session 060? | CLOSED, NOT YET | Consumer ownership, YIM integrity, LOD semantics and section boundaries remain open. SPEC-068. |
+| RQ-220 | Is safe mutation ready after Session 060? | CLOSED, NO | The integrated gate remains false and no installable artifact is produced. SPEC-068. |
+| RQ-221 | Do all three update images still match the registered artifact identities? | CLOSED, CONFIRMED | Filename, byte size and SHA-256 match before inventory evidence is accepted. SPEC-069. |
+| RQ-222 | Can the complete Session 001 media inventory be reproduced independently? | CLOSED, CONFIRMED | Volume labels, block size, 593 files, 968 directories and all payload-byte totals reproduce. SPEC-069. |
+| RQ-223 | Does the three-disc extension census reproduce? | CLOSED, CONFIRMED | The fixed totals are 375 BIN, 154 HEX, 45 LOD, 10 YIM, 6 SW and 3 TXT members. SPEC-069. |
+| RQ-224 | Does the M1 media replay publish firmware or extracted resources? | CLOSED, NO | Only aggregate structural evidence is emitted; source bytes, paths and source hashes are excluded. SPEC-069. |
+| RQ-225 | Can every update member be assigned to one bounded artifact family? | CLOSED, CONFIRMED | All 593 members have exactly one classification under the fixed family gates. SPEC-070. |
+| RQ-226 | Which positive families require structural validation rather than suffix alone? | CLOSED, FIXED CONTRACT | METAINFO, ELF, U-Boot, Intel HEX and YIM/XIM2 use their documented structural gates. SPEC-070. |
+| RQ-227 | Does an opaque family label imply decoded semantics? | CLOSED, NO | Opaque BIN, SW and LOD labels are routing results, not semantic claims. SPEC-070. |
+| RQ-228 | Does every family have an evidence-backed deeper-analysis route? | CLOSED, CONFIRMED | All families name prior evidence, a destination milestone and a research route. SPEC-070. |
+| RQ-229 | Does complete routing close the deeper format questions? | CLOSED, NO | It satisfies M1 discovery scope while preserving decoding, ownership and integrity work for M2-M4. SPEC-070. |
+| RQ-230 | Does the Session 002 METAINFO topology reproduce? | CLOSED, CONFIRMED | The replay finds 706 sections, 59 device families, 589 payloads, 40 links and 15 options. SPEC-071. |
+| RQ-231 | How are declared long filenames correlated with the primary ISO directory? | CLOSED, CONFIRMED STRUCTURAL | Exact names are preferred; otherwise deterministic ISO 9660 Level 1 8.3 alias plus exact declared size is required. SPEC-071. |
+| RQ-232 | Do all 589 payload records resolve in the registered set? | CLOSED, CONFIRMED | 565 resolve on their descriptor disc and 24 CD1 declarations resolve only on CD3. SPEC-071. |
+| RQ-233 | Is the staged CD1-to-CD3 EEPROM dependency reproducible? | CLOSED, CONFIRMED | A CD1 target version/CRC pair exactly intersects a CD3 source pair. SPEC-071. |
+| RQ-234 | Does payload resolution identify every checksum or updater branch? | CLOSED, NO | Metafile checksum semantics and complete policy/state-machine behavior remain M2 work. SPEC-071. |
+| RQ-235 | Are the Session, SPEC and RQ identifier sequences machine-audited? | CLOSED, CONFIRMED | Session 000-065 except the declared gap, SPEC-001-073 and RQ-001-242 are required. SPEC-072. |
+| RQ-236 | Is the missing Session 043 an undocumented gap? | CLOSED, NO | It is explicitly recorded as not executed and reserved by Session 044. SPEC-072. |
+| RQ-237 | Is the publication-safe JSON evidence corpus parseable? | CLOSED, CONFIRMED | Every input report through Session 060 parses; the closure subtree is excluded from its own deterministic count. SPEC-072. |
+| RQ-238 | Can a newcomer reproduce M1 without undocumented assumptions? | CLOSED, CONFIRMED | Charter, milestone guide, safety rules, registered artifacts, runner and routing table form an audited path. SPEC-072. |
+| RQ-239 | Are the formal Project Charter exit criteria for M1 satisfied? | CLOSED, CONFIRMED | Media, inventory, routing, update relationships, reproduction guidance and the safety boundary all pass. SPEC-073. |
+| RQ-240 | Does M1 closure claim that deep resource, runtime or navigation semantics are solved? | CLOSED, NO | Those questions are explicitly reclassified to M2-M7 rather than inferred closed. SPEC-073. |
+| RQ-241 | Is safe mutation or an installable artifact ready at M1 closure? | CLOSED, NO | Both machine-readable gates remain false. SPEC-073. |
+| RQ-242 | Which milestone is authorized to begin after M1? | CLOSED, M2 READY | The Analysis Toolkit may start; vehicle-side validation remains reserved for M7. SPEC-073. |
+| RQ-243 | Does M2 satisfy its entry gate? | CLOSED, PASS | The authoritative M1 record is complete, mutation remains blocked and every declared existing capability passes its probe. SPEC-074. |
+| RQ-244 | What is the Session 066 toolkit baseline? | CLOSED, CONFIRMED | The registry contains 27 capabilities: 8 implemented, 8 partial, 9 missing and 2 blocked. SPEC-074. |
+| RQ-245 | Are implemented and partial capability declarations backed by real code or files? | CLOSED, CONFIRMED | All 16 positive probes resolve to an importable SDK symbol or repository-relative tool. SPEC-074. |
+| RQ-246 | Which checksum capabilities remain blocked? | CLOSED, EXPLICIT | YIM integrity and METAINFO MetafileChecksum remain unknown; M2 must preserve rather than bypass those results. SPEC-074. |
+| RQ-247 | How many formal M2 exit criteria exist? | CLOSED, EIGHT | Manifest, format registry, parser contract, checksum experiments, structural diff, schemas, CLI and integration must all pass. SPEC-074. |
+| RQ-248 | What is the frozen M2 session order? | CLOSED, CONFIRMED | Sessions 067-074 map one-to-one to M2-X1 through M2-X8. SPEC-074. |
+| RQ-249 | Does entering M2 authorize mutation, repacking or vehicle communication? | CLOSED, NO | All such gates remain false; M2 is a read-only analysis-tooling milestone. SPEC-074. |
+| RQ-250 | What is the next implementation step? | CLOSED, SESSION 067 | Build the versioned manifest and artifact identity model before moving classifier rules into a registry. SPEC-074. |
+| RQ-251 | Can local files, media images and container members share one versioned identity model? | CLOSED, CONFIRMED | Schema v1 represents all three with one strict artifact record and origin graph. SPEC-075. |
+| RQ-252 | How are logical, byte-content and artifact-instance identities separated? | CLOSED, CONFIRMED | Logical IDs are caller-assigned, content IDs are SHA-256 and artifact IDs deterministically bind logical identity, content and provenance. SPEC-075. |
+| RQ-253 | Can parent-member provenance be validated without extracting members? | CLOSED, CONFIRMED | The runner hashes bounded ISO member streams and validates all 593 relationships with zero orphans. SPEC-075. |
+| RQ-254 | Are duplicate logical and duplicate content identities equivalent errors? | CLOSED, NO | Duplicate logical IDs are rejected; equal byte content is valid and tracked in 104 groups. SPEC-075. |
+| RQ-255 | Does equal content prove equal purpose or behavior? | CLOSED, NO | SHA-256 establishes byte equality only; semantic equivalence remains unclaimed. SPEC-075. |
+| RQ-256 | Can schema v1 detect artifact-set changes? | CLOSED, CONFIRMED BOUNDED | Manifest comparison reports additions, removals and changed identity fields; generic structural diff remains Session 071 work. SPEC-075. |
+| RQ-257 | Does the schema reproduce the registered MMI 5570 corpus? | CLOSED, CONFIRMED | Three verified roots plus 593 members reproduce 435,708,503 member bytes, 104 duplicate groups and zero orphans. SPEC-075. |
+| RQ-258 | Does Session 067 pass M2-X1 without authorizing mutation? | CLOSED, PASS | M2-CAP-023 is implemented, exactly one of eight M2 criteria passes and all mutation/installable gates remain false. SPEC-075. |
+| RQ-259 | Can format knowledge be represented as one deterministic registry? | CLOSED, CONFIRMED | Fourteen ordered rules serialize under one versioned schema with unique IDs and resolved validators. SPEC-076. |
+| RQ-260 | Is a complex magic-byte hit sufficient for positive classification? | CLOSED, NO | ELF, U-Boot, ISO, record, YIM, METAINFO, FLDB, PNG and GIF rules require bounded structural validation. SPEC-076. |
+| RQ-261 | Does LOD suffix routing imply a decoded format? | CLOSED, NO | LOD is explicitly OPAQUE_ROUTED and retains unresolved semantics. SPEC-076. |
+| RQ-262 | Does Session 068 pass M2-X2? | CLOSED, PASS | M2-CAP-024 is implemented and probed; graph v60. SPEC-076. |
+| RQ-263 | Can supported parsers return one normalized contract? | CLOSED, CONFIRMED | ParseResult standardizes validation state, bounds, regions, diagnostics and metrics. SPEC-077. |
+| RQ-264 | Are decoded region bytes published by default? | CLOSED, NO | The public/default representation includes sizes and hashes but omits region data. SPEC-077. |
+| RQ-265 | Is a safe LOD record decoder now established? | CLOSED, NO | The bounded LOD parser reports topology only and keeps record, address and integrity models false. SPEC-077. |
+| RQ-266 | Does Session 069 pass M2-X3? | CLOSED, PASS | M2-CAP-012 and M2-CAP-025 are implemented and probed; graph v61. SPEC-077. |
+| RQ-267 | Can checksum hypotheses be expressed reproducibly? | CLOSED, CONFIRMED | Each experiment fixes algorithm, bounded region and optional expectation. SPEC-078. |
+| RQ-268 | Are negative checksum results retained? | CLOSED, CONFIRMED | NO_MATCH is a first-class deterministic outcome alongside MATCH and OBSERVED. SPEC-078. |
+| RQ-269 | Does the framework solve YIM integrity or MetafileChecksum? | CLOSED, NO | Both capability blockers remain explicit and no bypass is introduced. SPEC-078. |
+| RQ-270 | Does Session 070 pass M2-X4? | CLOSED, PASS | M2-CAP-026 is implemented and probed; graph v62. SPEC-078. |
+| RQ-271 | Can arbitrary report structures be compared deterministically? | CLOSED, CONFIRMED BOUNDED | JSON-compatible objects and ordered arrays produce stable path-ordered differences. SPEC-079. |
+| RQ-272 | Are changed scalar values exposed? | CLOSED, NO | Values are redacted and represented only by short digests. SPEC-079. |
+| RQ-273 | Does structural difference imply semantic difference? | CLOSED, NO | The engine makes no semantic inference. SPEC-079. |
+| RQ-274 | Does Session 071 pass M2-X5? | CLOSED, PASS | M2-CAP-018 is implemented and probed; graph v63. SPEC-079. |
+| RQ-275 | Can machine-readable outputs use one schema lookup path? | CLOSED, CONFIRMED | Four central schemas are registered under exact version identifiers. SPEC-080. |
+| RQ-276 | What happens to an unknown schema? | CLOSED, FAIL CLOSED | Unknown and absent schema IDs return invalid results. SPEC-080. |
+| RQ-277 | Does schema validity prove a research conclusion? | CLOSED, NO | Validation proves declared shape and invariants only. SPEC-080. |
+| RQ-278 | Does Session 072 pass M2-X6? | CLOSED, PASS | M2-CAP-020 is implemented and probed; graph v64. SPEC-080. |
+| RQ-279 | Can M2 capabilities be used through one CLI? | CLOSED, CONFIRMED | Seven read-only subcommands cover manifest, classification, parsing, checksum, diff, validation and legacy analysis. SPEC-081. |
+| RQ-280 | Are new direct artifact reads bounded? | CLOSED, CONFIRMED | Classify, parse and checksum use the shared 64 MiB safety bound. SPEC-081. |
+| RQ-281 | Does the CLI expose write, repack or vehicle operations? | CLOSED, NO | No mutation, installation, execution or vehicle-communication command exists. SPEC-081. |
+| RQ-282 | Does Session 073 pass M2-X7? | CLOSED, PASS | M2-CAP-022 is implemented and probed; graph v65. SPEC-081. |
+| RQ-283 | Does the full M2 chain reproduce deterministically? | CLOSED, CONFIRMED | Two runs on the synthetic non-firmware fixture produce identical integration objects and fingerprints. SPEC-082. |
+| RQ-284 | How many M2 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M2-X1 through M2-X8 pass with capability probes intact. SPEC-082. |
+| RQ-285 | Does M2 closure authorize firmware mutation? | CLOSED, NO | Safe-mutation and installable-artifact gates remain false. SPEC-082. |
+| RQ-286 | Which milestone may begin next? | CLOSED, M3 READY | The read-only Resource Laboratory is authorized to begin with a new baseline and exit-gate session. SPEC-082. |
+| RQ-287 | Does M3 satisfy its M2 entry gate? | CLOSED, PASS | M2 is COMPLETE, M3 is READY and mutation remains disabled. SPEC-083. |
+| RQ-288 | What is the initial M3 capability state? | CLOSED, CONFIRMED | Sixteen capabilities begin as 3 implemented, 2 partial, 9 missing and 2 blocked. SPEC-083. |
+| RQ-289 | How many formal M3 exit criteria exist? | CLOSED, EIGHT | Sessions 076-083 map to eight ordered criteria. SPEC-083. |
+| RQ-290 | Does entering M3 authorize firmware modification? | CLOSED, NO | M3 is a read-only resource-research milestone. SPEC-083. |
+| RQ-291 | How many strict resource records are in the registered corpus? | CLOSED, 173 | CD1 and CD3 contribute 84 embedded XIM2 records each and the suite contributes five standalone YIM contents. SPEC-084. |
+| RQ-292 | How many unique decoded resource contents exist? | CLOSED, 88 | Strict decoded SHA-256 deduplication yields 88 contents. SPEC-084. |
+| RQ-293 | Did embedded resource content change from MMI 5150 to 5570? | CLOSED, NO BYTE CHANGE FOUND | The decoded-content sets are equal across the two principal images. SPEC-084. |
+| RQ-294 | Does resource byte identity establish its UI role? | CLOSED, NO | Logical semantics and runtime owners remain unassigned. SPEC-084. |
+| RQ-295 | Is decoded raster geometry validated? | CLOSED, CONFIRMED | Strict envelope and decoded-length checks establish geometry for all cataloged records. SPEC-085. |
+| RQ-296 | What neutral shape classes occur? | CLOSED, FIVE | Compact, wide, tall, display-sized 480x240 and full-width-strip classes cover 88 unique contents. SPEC-085. |
+| RQ-297 | Do geometry classes imply icon, screen or glyph purpose? | CLOSED, NO | Shape classification is deliberately semantic-neutral. SPEC-085. |
+| RQ-298 | How many full display-sized unique rasters occur? | CLOSED, SIX | Six unique decoded contents have 480x240 geometry. SPEC-085. |
+| RQ-299 | What pixel-unit width is confirmed? | CLOSED, 16 BIT | Strict decoded lengths equal width times height times two. SPEC-086. |
+| RQ-300 | Is the exact color/pixel layout established? | OPEN, NO | No independent renderer, palette or known-image evidence selects one layout. SPEC-086. |
+| RQ-301 | Which candidates were evaluated? | CLOSED, EIGHT | Fixed RGB/BGR 565 and XRGB/XBGR 1555 big/little-endian models were compared. SPEC-086. |
+| RQ-302 | May smoothness ranking be treated as a format decision? | CLOSED, NO | The ranking is heuristic only. SPEC-086. |
+| RQ-303 | Can decoded resources be previewed without firmware execution? | CLOSED, CONFIRMED | Explicit candidate layouts render bounded PPM output offline. SPEC-087. |
+| RQ-304 | Are previews or raster bytes committed? | CLOSED, NO | Candidate previews stay in a caller-selected private directory. SPEC-087. |
+| RQ-305 | How many default candidate previews are generated? | CLOSED, FOUR | Two RGB565 and two XRGB1555 endian variants form the default set. SPEC-087. |
+| RQ-306 | Does a successful preview confirm the candidate layout? | CLOSED, NO | Preview is a hypothesis inspection tool only. SPEC-087. |
+| RQ-307 | How many printable records were found in the principal images? | CLOSED, CONFIRMED | The fixed extractor reports 112,124 for CD1 and 113,925 for CD3. SPEC-088. |
+| RQ-308 | How many exact unique text records are shared? | CLOSED, 57,976 | Cross-release private set comparison establishes the intersection count. SPEC-088. |
+| RQ-309 | Is text semantic ownership established? | OPEN, NO | Resource, subsystem and renderer ownership remain unresolved. SPEC-088. |
+| RQ-310 | Does the public text catalog include raw strings? | CLOSED, NO | Only aggregate counts are published. SPEC-088. |
+| RQ-311 | Are structurally valid standard font containers present? | CLOSED, CONFIRMED | Four validated TrueType SFNT containers occur in each principal image. SPEC-089. |
+| RQ-312 | Did those font container contents change between CD1 and CD3? | CLOSED, NO BYTE CHANGE FOUND | All four validated contents are shared. SPEC-089. |
+| RQ-313 | Is the earlier bitmap-font atlas model confirmed? | OPEN, PROBABLE ONLY | Structural evidence remains insufficient for semantic promotion. SPEC-089. |
+| RQ-314 | Is the consuming font renderer identified? | OPEN, NO | Runtime consumer ownership is deferred to M4. SPEC-089. |
+| RQ-315 | Which locale families are confirmed by provenance? | CLOSED, FIVE | de-DE, en-GB, es-ES, fr-FR and it-IT occur on both principal update discs. SPEC-090. |
+| RQ-316 | Is the LOD payload semantic decoder established? | BLOCKED, NO | Record, address and integrity semantics remain unresolved. SPEC-090. |
+| RQ-317 | What is the M3 resource-graph scope? | CLOSED, 13 NODES/11 EDGES | The graph connects media, raster, geometry, preview, text, font and language evidence with confidence labels. SPEC-090. |
+| RQ-318 | Does the resource graph authorize mutation? | CLOSED, NO | The safe-mutation gate remains false. SPEC-090. |
+| RQ-319 | Does the complete M3 chain reproduce deterministically? | CLOSED, CONFIRMED | Two synthetic non-firmware runs produce identical reports and fingerprints. SPEC-091. |
+| RQ-320 | How many M3 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M3-X1 through M3-X8 pass with repository probes intact. SPEC-091. |
+| RQ-321 | Which milestone may begin next? | CLOSED, M4 READY | Static-first Runtime Research may begin with a new capability baseline. SPEC-091. |
+| RQ-322 | Are pixel layout, renderer, LOD semantics and write integrity solved by M3 closure? | CLOSED, NO | These limitations remain explicit and mutation stays unauthorized. SPEC-091. |
+| RQ-323 | Does M4 satisfy its M3 entry gate? | CLOSED, PASS | M3 is COMPLETE, M4 is READY and mutation remains disabled. SPEC-092. |
+| RQ-324 | What is the initial M4 capability state? | CLOSED, CONFIRMED | Seventeen capabilities begin as 4 implemented, 3 partial, 8 missing and 2 blocked. SPEC-092. |
+| RQ-325 | How many formal M4 exit criteria exist? | CLOSED, EIGHT | Sessions 085-092 map to eight ordered criteria. SPEC-092. |
+| RQ-326 | Does M4 permit firmware execution or vehicle observation? | CLOSED, NO | Both capabilities remain blocked by the project safety boundary. SPEC-092. |
+| RQ-327 | How many runtime-label records are observed? | CLOSED, CONFIRMED BOUNDED | CD1 has 623 and CD3 has 614 fixed-classified records. SPEC-093. |
+| RQ-328 | How many exact unique runtime labels are shared? | CLOSED, 354 | Private cross-release comparison establishes the shared cardinality. SPEC-093. |
+| RQ-329 | Which fixed task API probe is present bilaterally? | CLOSED, TASKSPAWN ONLY | One identifier-bounded occurrence exists in each principal image. SPEC-093. |
+| RQ-330 | Does the lexical inventory establish the scheduled task set? | CLOSED, NO | Task entries, scheduling and runtime instances remain unknown. SPEC-093. |
+| RQ-331 | Are fixed msgQ, semaphore, event or watchdog API probes present? | CLOSED, NOT FOUND | Neither image contains a member of the fixed probe set. SPEC-094. |
+| RQ-332 | Is there aggregate IPC-related lexical evidence? | CLOSED, CONFIRMED BOUNDED | CD1 has 317 records, CD3 has 318 and 146 exact unique records are shared. SPEC-094. |
+| RQ-333 | Are IPC payload schemas or producer-consumer pairs known? | OPEN, NO | No validated primitive or direct dataflow closes those models. SPEC-094. |
+| RQ-334 | Does a negative fixed probe prove that IPC is absent? | CLOSED, NO | Stripped, imported, indirect or proprietary mechanisms remain possible. SPEC-094. |
+| RQ-335 | Are exact resource-address words present? | CLOSED, ONE-SIDED | One CD1 resource has ten data-word occurrences; CD3 has none. SPEC-095. |
+| RQ-336 | Do those resource words have PC-relative code referrers? | CLOSED, NO | The exact SH referrer gate is negative in both releases. SPEC-095. |
+| RQ-337 | Are validated font containers directly referenced under this model? | CLOSED, NO | No exact font-address word or PC-relative referrer is found. SPEC-095. |
+| RQ-338 | Is the renderer or resource lifecycle identified? | OPEN, NO | The bounded consumer search remains negative. SPEC-095. |
+| RQ-339 | Which device-family boundaries are bilaterally represented? | CLOSED, SEVEN | Audio/DSP, display/input, filesystem/flash, navigation/GPS, network, optical and vehicle-network families have shared lexical support. SPEC-096. |
+| RQ-340 | Are all seven fixed families present on both releases? | CLOSED, YES LEXICALLY | Cross-release private-set intersections are non-empty for every family. SPEC-096. |
+| RQ-341 | Are driver entry points or hardware register maps known? | OPEN, NO | Lexical boundaries do not establish implementation details. SPEC-096. |
+| RQ-342 | Are MOST/CAN message or authorization semantics decoded? | OPEN, NO | Vehicle protocol semantics remain outside the evidence. SPEC-096. |
+| RQ-343 | How many aligned runtime-range words occur? | CLOSED, STRUCTURAL COUNT | CD1 has 279,308 and CD3 has 257,155 under the fixed model. SPEC-097. |
+| RQ-344 | How many anonymous source-target band edges occur? | CLOSED, STRUCTURAL COUNT | CD1 has 4,797 and CD3 has 4,477. SPEC-097. |
+| RQ-345 | How many anonymous band edges are shared? | CLOSED, 1,505 | The fixed 64 KiB topology comparison yields the intersection. SPEC-097. |
+| RQ-346 | Do pointer-shaped words prove objects or vtables? | CLOSED, NO | Object identity, allocation lifetime and dispatch semantics remain open. SPEC-097. |
+| RQ-347 | Is the host contract deterministic? | CLOSED, CONFIRMED | Metadata events process in a fixed sequence with a stable state fingerprint. SPEC-098. |
+| RQ-348 | What is the synthetic contract scope? | CLOSED, THREE SERVICES/SIX EVENT TYPES | Only abstract UI-facing metadata contracts are present. SPEC-098. |
+| RQ-349 | Does the harness load firmware or access a vehicle? | CLOSED, NO | Firmware, network, filesystem, CAN/MOST and vehicle I/O are absent. SPEC-098. |
+| RQ-350 | Is the host contract an MMI emulator? | CLOSED, NO | It is an isolated contract-testing primitive only. SPEC-098. |
+| RQ-351 | What is the M4 runtime graph scope? | CLOSED, 20 NODES/21 EDGES | It joins static platform, services, resources, devices, topology and host-contract evidence. SPEC-099. |
+| RQ-352 | Does the graph establish dynamic runtime behavior? | CLOSED, NO | No firmware execution or runtime observation occurred. SPEC-099. |
+| RQ-353 | Which graph operations remain blocked? | CLOSED, EXPLICIT | Firmware execution and vehicle communication remain blocked nodes. SPEC-099. |
+| RQ-354 | What does M4 contribute to M5? | CLOSED, SAFE HOST BOUNDARIES | M5 may build an offline UI prototype against synthetic contracts, not firmware. SPEC-099. |
+| RQ-355 | Does the complete M4 chain reproduce deterministically? | CLOSED, CONFIRMED | Two synthetic non-firmware runs produce identical reports and fingerprints. SPEC-100. |
+| RQ-356 | How many M4 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M4-X1 through M4-X8 pass with repository probes intact. SPEC-100. |
+| RQ-357 | Which milestone may begin next? | CLOSED, M5 READY | The offline Phoenix UI Prototype may begin with a new capability baseline. SPEC-100. |
+| RQ-358 | Does M4 closure authorize firmware modification or vehicle integration? | CLOSED, NO | Mutation, repacking, installation, execution and vehicle I/O remain unauthorized. SPEC-100. |
+| RQ-359 | Does M5 satisfy its M4 entry gate? | CLOSED, PASS | M4 is COMPLETE, M5 is READY and the authorized scope is the offline Phoenix UI prototype. SPEC-101. |
+| RQ-360 | What is the initial M5 capability state? | CLOSED, CONFIRMED | Seventeen capabilities begin as 2 implemented, 3 partial, 8 missing and 4 blocked. SPEC-101. |
+| RQ-361 | How many formal M5 exit criteria exist? | CLOSED, EIGHT | Sessions 094-101 map to eight ordered criteria. SPEC-101. |
+| RQ-362 | Does M5 permit firmware integration, mutation or vehicle communication? | CLOSED, NO | Renderer integration, replacement, installable artifacts and vehicle services remain blocked. SPEC-101. |
+| RQ-363 | What viewport does the offline prototype use? | CLOSED, 480X240 | Validated resource geometry establishes the fixed prototype canvas but not display-controller behavior. SPEC-102. |
+| RQ-364 | Are the five prototype actions recovered hardware codes? | CLOSED, NO | They are abstract focus actions; physical mappings and vehicle messages remain unknown. SPEC-102. |
+| RQ-365 | Which assets may M5 use? | CLOSED, ORIGINAL OR SYNTHETIC | Firmware-extracted and navigation-media assets are excluded from the prototype. SPEC-102. |
+| RQ-366 | What is the first Phoenix UI information model? | CLOSED, FIVE SCREENS | One root and four original section screens contain 16 focusable entries. SPEC-103. |
+| RQ-367 | Is every section reachable without a cycle? | CLOSED, YES | Four explicit home-to-section edges cover every non-root screen and the hierarchy is acyclic. SPEC-103. |
+| RQ-368 | Does the model reconstruct the firmware menu? | CLOSED, NO | Screen names, tokens and topology are independently authored for the Phoenix prototype. SPEC-103. |
+| RQ-369 | Are vehicle, firmware or protected-service bindings present? | CLOSED, NO | Every entry declares `service_binding = NONE` and uses only static-original or synthetic data. SPEC-103. |
+| RQ-370 | Does Session 094 close the first M5 criterion? | CLOSED, YES | M5-X1 passes; M5 progress is 1/8 at operational graph v86. SPEC-103. |
+| RQ-371 | What is the complete reducer state space? | CLOSED, 16 STATES/80 TRANSITIONS | Five abstract actions are evaluated from every base focus state. SPEC-104. |
+| RQ-372 | How does prototype focus move? | CLOSED, CYCLIC AND DETERMINISTIC | Next and previous wrap within each ordered screen. SPEC-104. |
+| RQ-373 | Are physical MMI input mappings recovered? | OPEN, NO | Reducer actions are host abstractions only. SPEC-104. |
+| RQ-374 | Does the reducer perform service or vehicle I/O? | CLOSED, NO | Transitions are pure and emit only typed host state. SPEC-104. |
+| RQ-375 | What is the bounded layout scope? | CLOSED, 5 LAYOUTS/16 ENTRY RECTANGLES | Every typed screen and focusable entry has deterministic host geometry. SPEC-105. |
+| RQ-376 | Do layout rectangles overlap or overflow? | CLOSED, ZERO/ZERO | Full-catalog validation finds neither condition. SPEC-105. |
+| RQ-377 | What minimum focus-target height is enforced? | CLOSED, 34 PIXELS | Every entry meets the fixed host threshold. SPEC-105. |
+| RQ-378 | Does the layout reconstruct firmware geometry? | OPEN, NO | Display safe area and firmware pixel layout remain unknown. SPEC-105. |
+| RQ-379 | What does the original theme registry contain? | CLOSED, 8/7/23/6 | It contains eight colors, seven metrics, 23 text tokens and six icons. SPEC-106. |
+| RQ-380 | What is the asset provenance? | CLOSED, PROJECT PHOENIX ORIGINAL | All vector commands and tokens were independently authored. SPEC-106. |
+| RQ-381 | Are external or extracted assets present? | CLOSED, ZERO | Firmware, navigation-media and third-party assets are excluded. SPEC-106. |
+| RQ-382 | Is target renderer compatibility established? | OPEN, NO | Theme structure and byte counts are host-only evidence. SPEC-106. |
+| RQ-383 | How many public static previews are generated? | CLOSED, FIVE | One deterministic 480x240 SVG represents each typed screen. SPEC-107. |
+| RQ-384 | Do previews contain scripts, links or embedded rasters? | CLOSED, NO | The renderer prohibits all three and external references. SPEC-107. |
+| RQ-385 | Are preview manifests deterministic? | CLOSED, YES | Repeated builds have identical SHA-256 manifests. SPEC-107. |
+| RQ-386 | Do SVG previews establish firmware rendering? | OPEN, NO | SVG is an offline host preview format only. SPEC-107. |
+| RQ-387 | What is the fixed playback scope? | CLOSED, 19 ACTIONS/19 SNAPSHOTS | Each reducer result is rendered and hashed in sequence. SPEC-108. |
+| RQ-388 | Does playback visit every model screen? | CLOSED, YES | All five screens occur in the fixed path. SPEC-108. |
+| RQ-389 | Is playback deterministic? | CLOSED, YES | The aggregate fingerprint is equal across repeated runs. SPEC-108. |
+| RQ-390 | Does playback establish target timing? | OPEN, NO | Hardware timing and physical input behavior remain unknown. SPEC-108. |
+| RQ-391 | How many host UI quality criteria pass? | CLOSED, EIGHT OF EIGHT | The complete quality gate passes. SPEC-109. |
+| RQ-392 | Is focus unambiguous in every base state? | CLOSED, 16 OF 16 | Each rendered state contains exactly one focus indicator. SPEC-109. |
+| RQ-393 | Do declared contrast checks pass? | CLOSED, YES | Text and focus ratios meet their host thresholds. SPEC-109. |
+| RQ-394 | Does the prototype stay within fixed complexity bounds? | CLOSED, YES | Screen, entry, command and synthetic-asset counts stay bounded. SPEC-109. |
+| RQ-395 | Does host quality prove vehicle suitability? | OPEN, NO | Target performance, display and in-vehicle factors remain unmeasured. SPEC-109. |
+| RQ-396 | Does complete M5 integration reproduce? | CLOSED, YES | Both eight-stage runs share one integration fingerprint. SPEC-110. |
+| RQ-397 | How many M5 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M5-X1 through M5-X8 pass at graph v93. SPEC-110. |
+| RQ-398 | Which milestone may begin next? | CLOSED, M6 READY | Static navigation feasibility research is the authorized next scope. SPEC-110. |
+| RQ-399 | Does M5 closure authorize mutation or installation? | CLOSED, NO | Safe mutation and installable-artifact readiness remain false. SPEC-110. |
+| RQ-400 | Does M6 satisfy the M5 entry gate? | CLOSED, PASS | M5 is COMPLETE and authorizes static navigation feasibility research. SPEC-111. |
+| RQ-401 | What is the initial M6 capability state? | CLOSED, 17 CAPABILITIES | Two are implemented, three partial, eight missing and four blocked. SPEC-111. |
+| RQ-402 | How many formal M6 exit criteria exist? | CLOSED, EIGHT | Sessions 103-110 map to ordered M6-X1 through M6-X8. SPEC-111. |
+| RQ-403 | Does M6 authorize target media generation or vehicle access? | CLOSED, NO | Writer, integrity, repacking, installation and vehicle operations remain prohibited. SPEC-111. |
+| RQ-404 | Does the available local navigation ISO still match its register? | CLOSED, YES | Size 2,571,048,960 and registered SHA-256 were reverified locally without publication. SPEC-112. |
+| RQ-405 | How many public source reports form the M6 ledger? | CLOSED, THREE | Media, payload-family and firmware-evidence reports agree on the registered identity. SPEC-112. |
+| RQ-406 | Which registered structural counts are stable? | CLOSED, 7/7/3599/16 | Seven files, seven FLDB containers, 3,599 records and 16 partition IDs reproduce. SPEC-112. |
+| RQ-407 | Does identity consistency authenticate the marketed release? | OPEN, NO | The artifact remains locally registered with unverified provenance. SPEC-112. |
+| RQ-408 | What is the M6 knowledge-matrix scope? | CLOSED, 14 ROWS | Storage through safety boundaries are confidence graded. SPEC-113. |
+| RQ-409 | How many rows have confirmed structural support? | CLOSED, FIVE | Outer storage/container and bounded payload topology are supported. SPEC-113. |
+| RQ-410 | How many direct-replacement blockers remain open? | CLOSED, NINE | Semantics, runtime, writer, integrity, budgets and recovery remain incomplete. SPEC-113. |
+| RQ-411 | Is current knowledge sufficient for a proprietary writer? | CLOSED, NO | Inner format and integrity evidence are insufficient. SPEC-113. |
+| RQ-412 | What is the consumer-boundary graph scope? | CLOSED, 12 NODES/11 EDGES | Static media, payload and firmware boundaries are joined. SPEC-114. |
+| RQ-413 | Is there a fully confirmed medium-to-runtime path? | CLOSED, NO | Open semantic and ABI edges interrupt the chain. SPEC-114. |
+| RQ-414 | Is a direct FLDB consumer identified in firmware? | OPEN, NO | Inner consumer ownership remains unresolved. SPEC-114. |
+| RQ-415 | Is the boundary graph a runtime trace? | CLOSED, NO | It represents static confidence-graded evidence only. SPEC-114. |
+| RQ-416 | Under which license is OSM data accepted? | CLOSED, ODbL-1.0 | The source policy records the current OSM data license. SPEC-115. |
+| RQ-417 | Is OpenStreetMap attribution mandatory? | CLOSED, YES | Attribution and a copyright/license entry point are required. SPEC-115. |
+| RQ-418 | What provenance must a real snapshot carry? | CLOSED, URI AND SHA-256 | Source identity, license and attribution must accompany it. SPEC-115. |
+| RQ-419 | Does the policy automatically clear distribution? | CLOSED, NO | License and derivative-database review remain required. SPEC-115. |
+| RQ-420 | Is real OSM source data committed in M6? | CLOSED, NO | Only original synthetic fixtures exercise the adapter. SPEC-115. |
+| RQ-421 | What does the neutral model represent? | CLOSED, DIRECTED WEIGHTED GRAPH | Ordered WGS84-E7 nodes and validated edges form a target-independent model. SPEC-116. |
+| RQ-422 | Are invalid coordinates and unknown endpoints accepted? | CLOSED, NO | Validation fails closed. SPEC-116. |
+| RQ-423 | Does the neutral model serialize proprietary MMI maps? | CLOSED, NO | No target serializer or compatibility claim exists. SPEC-116. |
+| RQ-424 | Do public graph summaries expose IDs or coordinates? | CLOSED, NO | Only aggregate metrics, provenance and fingerprints are published. SPEC-116. |
+| RQ-425 | Which open input format is supported? | CLOSED, BOUNDED OSM XML 0.6 | Nodes and highway ways are mapped to the neutral graph. SPEC-117. |
+| RQ-426 | What are the parser bounds? | CLOSED, 1 MIB/10000 ELEMENTS | Both byte and element limits are enforced. SPEC-117. |
+| RQ-427 | Are DTD and entity declarations accepted? | CLOSED, NO | The adapter rejects both before XML parsing. SPEC-117. |
+| RQ-428 | Are relations and turn restrictions implemented? | OPEN, NO | They remain explicit adapter limitations. SPEC-117. |
+| RQ-429 | Can the adapter emit target navigation media? | CLOSED, NO | Proprietary target output is prohibited. SPEC-117. |
+| RQ-430 | What is the fixed routing fixture scope? | CLOSED, 5 NODES/7 EDGES | The fixture is original Project Phoenix data. SPEC-118. |
+| RQ-431 | How many routing checks pass? | CLOSED, FOUR OF FOUR | Forward, reverse alternative, disconnected and one-way checks pass. SPEC-118. |
+| RQ-432 | Is route output deterministic? | CLOSED, YES | Repeated host runs have identical fingerprints. SPEC-118. |
+| RQ-433 | Is the one-way direction preserved? | CLOSED, YES | The prohibited reverse edge is absent. SPEC-118. |
+| RQ-434 | Is this a production or MMI-compatible router? | OPEN, NO | Timing, turn semantics and target compatibility remain unestablished. SPEC-118. |
+| RQ-435 | Does complete M6 integration reproduce? | CLOSED, YES | All eight stages repeat with one fingerprint. SPEC-119. |
+| RQ-436 | What is the final dual-track verdict? | CLOSED, BLOCKED/PROTOTYPE FEASIBLE | Direct MMI replacement is blocked; the independent host path is feasible as a prototype. SPEC-119. |
+| RQ-437 | How many M6 exit criteria pass? | CLOSED, EIGHT OF EIGHT | M6-X1 through M6-X8 pass at graph v102. SPEC-119. |
+| RQ-438 | Which milestone may begin next? | CLOSED, M7 READY | Only controlled read-only bench planning and signed risk review are authorized. SPEC-119. |
+| RQ-439 | Does M6 closure authorize mutation, installation or vehicle communication? | CLOSED, NO | All three gates remain false. SPEC-119. |
+| RQ-440 | Does M7 satisfy its M6 entry gate? | CLOSED, PASS | M6 is complete at 8/8 and graph v102. SPEC-120. |
+| RQ-441 | May Phoenix SDK power hardware or execute target firmware? | CLOSED, NO | SDK operations remain offline preparation and validation only. SPEC-120. |
+| RQ-442 | How many external bench prerequisites are mandatory? | CLOSED, TEN | Every prerequisite must pass before a physical candidate exists. SPEC-120. |
+| RQ-443 | Does one stop condition terminate the plan? | CLOSED, YES | The M7 contract is fail-closed on any listed stop condition. SPEC-120. |
+| RQ-444 | How many private hardware identity fields are defined? | CLOSED, SIX | Family, part, index, serial, software and connector fields are fixed. SPEC-121. |
+| RQ-445 | Does the public manifest summary expose identity values? | CLOSED, NO | It publishes counts, completeness and a derived fingerprint only. SPEC-121. |
+| RQ-446 | Is the committed manifest complete? | CLOSED, NO | It is an empty privacy-preserving template. SPEC-121. |
+| RQ-447 | Is isolation from a vehicle currently evidenced? | OPEN, NO | A private completed manifest is required in Session 120. SPEC-121. |
+| RQ-448 | Are device-specific pinout and power values established? | OPEN, NO | Authoritative device references are still required. SPEC-122. |
+| RQ-449 | May electrical values be inferred from forums? | CLOSED, NO | The power validator rejects guessed values. SPEC-122. |
+| RQ-450 | Which core electrical controls are mandatory? | CLOSED, FOUR CORE | Current limiting, independent cutoff, source fuse and verified polarity are required. SPEC-122. |
+| RQ-451 | Was hardware powered during Session 113? | CLOSED, NO | The session produced a planning contract only. SPEC-122. |
+| RQ-452 | What does M7 recovery cover? | CLOSED, POWER AND EVIDENCE | It covers safe shutdown, quarantine, sealing and review. SPEC-123. |
+| RQ-453 | Is target-write recovery allowed? | CLOSED, NO | Flash, EEPROM and Component Protection recovery are excluded. SPEC-123. |
+| RQ-454 | Has the dummy-load rehearsal been physically performed? | OPEN, NO | It remains external evidence for Session 120. SPEC-123. |
+| RQ-455 | May power be reapplied automatically after an abort? | CLOSED, NO | Review and explicit lockout clearance are required. SPEC-123. |
+| RQ-456 | What can future read-only observation record? | CLOSED, PASSIVE AGGREGATES | Supply, timing, display class, stop reason and shutdown state are bounded. SPEC-124. |
+| RQ-457 | Are active diagnostics or live MOST allowed? | CLOSED, NO | Both are on the permanent denylist. SPEC-124. |
+| RQ-458 | Must raw capture remain private? | CLOSED, YES | Public reports contain aggregates only. SPEC-124. |
+| RQ-459 | Has physical observation occurred? | CLOSED, NO | The current contract remains ungated and unexecuted. SPEC-124. |
+| RQ-460 | How many hazards are in the fixed register? | CLOSED, EIGHT | Electrical, thermal, write, network, physical and recovery risks are covered. SPEC-125. |
+| RQ-461 | Is the committed risk review signed? | CLOSED, NO | Operator and independent-reviewer signatures remain private and absent. SPEC-125. |
+| RQ-462 | Can a reduced score automatically accept risk? | CLOSED, NO | Acceptance is always an explicit human decision. SPEC-125. |
+| RQ-463 | Does the register authorize observation? | CLOSED, NO | It provides a gate and fingerprint, not approval. SPEC-125. |
+| RQ-464 | What paths does the synthetic rehearsal cover? | CLOSED, 9 NORMAL/8 ABORT EVENTS | Both end in sealed terminal states. SPEC-126. |
+| RQ-465 | Is the abort terminal state power-capable? | CLOSED, NO | Abort removes the power candidate and locks the sequence. SPEC-126. |
+| RQ-466 | Is the rehearsal deterministic? | CLOSED, YES | Repeated runs produce one report and fingerprint. SPEC-126. |
+| RQ-467 | Does the rehearsal prove physical hardware safety? | CLOSED, NO | It proves state logic only and performs no I/O. SPEC-126. |
+| RQ-468 | What evidence does Session 120 require? | CLOSED, PRIVATE METADATA AND HASHES | Prerequisites, observation, approval and capture fingerprints are required. SPEC-127. |
+| RQ-469 | Does an incomplete bundle fail closed? | CLOSED, YES | Every missing prerequisite or shutdown proof becomes a blocker. SPEC-127. |
+| RQ-470 | Are private capture hashes included publicly? | CLOSED, NO | Only their count contributes to the public summary. SPEC-127. |
+| RQ-471 | Can complete private metadata pass the validator? | CLOSED, YES | A synthetic unit test proves the schema and gate logic. SPEC-127. |
+| RQ-472 | Is accepted real bench evidence currently present? | OPEN, NO | The committed template remains blocked. SPEC-127. |
+| RQ-473 | How many M7 preparation integration stages pass? | CLOSED, EIGHT OF EIGHT | All host-only stages reproduce. SPEC-128. |
+| RQ-474 | Is the preparation package complete? | CLOSED, YES | Templates, policies, rehearsal and validator are complete. SPEC-128. |
+| RQ-475 | How many full M7 criteria pass? | CLOSED, EIGHT OF NINE | The physical criterion remains open. SPEC-128. |
+| RQ-476 | What is the current M7 status? | CLOSED, AWAITING BENCH EVIDENCE | Preparation alone cannot close controlled hardware validation. SPEC-128. |
+| RQ-477 | Is M8 ready? | CLOSED, NO | M7 physical evidence has not passed. SPEC-128. |
+| RQ-478 | What is the next authorized session? | CLOSED, SESSION 120 | It may validate a private signed isolated-bench bundle. SPEC-128. |
+| RQ-479 | Do Sessions 111-119 authorize hardware, vehicle, mutation or installation activity? | CLOSED, NO | All four claims remain false. SPEC-128. |
+
+A bare magic-byte occurrence never closes a question. Positive formats require structural validation; negative results are limited to the formats, address models and validators documented in Phoenix SDK.
